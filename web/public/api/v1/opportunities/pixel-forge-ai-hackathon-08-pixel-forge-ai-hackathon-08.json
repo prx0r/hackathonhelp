@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08",
@@ -12,7 +12,7 @@
     "registrants": 810,
     "starts_at": null,
     "ends_at": null,
-    "time_left": "about 19 hours left",
+    "time_left": "about 18 hours left",
     "location_type": "online",
     "location": "Online",
     "themes": [
@@ -24,7 +24,7 @@
     "source_url": "https://pixel-forge-ai-hackathon-08.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.392Z",
+    "observed_at": "2026-08-22T22:05:20.477Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 9,
+        "winnability": 44,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 0
+      "opportunity_score": 26
     },
     "metrics": {
       "equal_share_naive": null,
@@ -107,15 +114,16 @@
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20000,
+    "order_key": 20023.4,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 0,
+      "score": 26,
       "formula": "WATCH - deadline not published"
     }
   },

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-adtc-2026-adtc-2026",
@@ -9,7 +9,7 @@
     "organizer": "Africa",
     "prize_usd": 16500,
     "prize_raw": "$16,500",
-    "registrants": 1784,
+    "registrants": 1785,
     "starts_at": "2026-06-17T00:00:00.000Z",
     "ends_at": "2026-08-25T23:59:00.000Z",
     "time_left": "2 days left",
@@ -23,7 +23,7 @@
     "source_url": "https://adtc-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:31.884Z",
+    "observed_at": "2026-08-22T22:05:19.952Z",
     "days_left": 4,
     "gates": {
       "registration_open": true,
@@ -48,7 +48,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 1784,
+      "registrations": 1785,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -65,17 +65,24 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 70,
-        "winnability": 4,
+        "expected_prize_value": 92,
+        "winnability": 44,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 38
+      "opportunity_score": 61
     },
     "metrics": {
-      "equal_share_naive": 9.25,
+      "equal_share_naive": 9.24,
       "fair_share_serious": 185.39,
       "days_left": 4
     },
@@ -96,15 +103,16 @@
       "reason": "weak opportunity for remaining time",
       "feasibility": 0.65,
       "feasibility_label": "3-5d",
-      "latest_safe_start": "2026-08-13",
+      "latest_safe_start": "2026-08-14",
       "p_finish_proxy": 0.65,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": {
       "score": 35,
@@ -113,11 +121,11 @@
       ],
       "category": "value_competition_gap"
     },
-    "order_key": -50.8,
+    "order_key": -30.1,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 38,
+      "score": 61,
       "formula": "SKIP - weak opportunity for remaining time"
     }
   },

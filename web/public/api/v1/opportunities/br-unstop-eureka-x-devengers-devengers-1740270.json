@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-eureka-x-devengers-devengers-1740270",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/eureka-x-devengers-devengers-1740270",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T21:30:38.495Z",
+    "observed_at": "2026-08-22T22:05:24.872Z",
     "eligibility_flags": [
       "All"
     ],
@@ -65,14 +65,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 67,
+        "winnability": 57,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 45
+      "opportunity_score": 37
     },
     "metrics": {
       "equal_share_naive": null,
@@ -99,22 +106,23 @@
       "reason": "weak opportunity for remaining time · capped: prize unconfirmed",
       "feasibility": 0.9,
       "feasibility_label": "7-10d",
-      "latest_safe_start": "2026-08-20",
+      "latest_safe_start": "2026-08-21",
       "p_finish_proxy": 0.9,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": -59.5,
+    "order_key": -66.69999999999999,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 45,
+      "score": 37,
       "formula": "SKIP - weak opportunity for remaining time · capped: prize unconfirmed"
     }
   },

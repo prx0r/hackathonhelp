@@ -91,6 +91,35 @@ if(KEY){
   }
 }
 
+// ---- source 3: curated manual events (operator-verified, highest authority) ----
+let manualKept=0;
+try{
+  const man=JSON.parse(fs.readFileSync(path.join(ROOT,'data/manual-events.json'),'utf8'));
+  for(const e of man.events){
+    if(seen.has(e.source_url)) continue;
+    const mkey='man|'+(e.title||'').toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,40);
+    if(seen.has(mkey)) continue; seen.add(mkey); seen.add(e.source_url);
+    opportunities.push({
+      id:'man-'+e.id, slug:e.slug,
+      title:e.title, organizer:e.organizer,
+      prize_usd:e.prize.cash ?? e.prize.advertised ?? null,
+      prize_raw:e.prize._note ?? null,
+      registrants:e.registrants??null,
+      starts_at:e.starts_at??null, ends_at:e.ends_at??null,
+      time_left:null,
+      location_type:e.location_type, location:e.location,
+      themes:e.themes??[], open_to_all:e.open_to_all!==false,
+      source_url:e.source_url, source:'manual', source_authority:e.source_authority,
+      observed_at:new Date().toISOString(),
+      manual:{ prize_breakdown:e.prize, eligibility_note:e.eligibility_note??null,
+        field_note:e.field_note??null, judging:e.judging??null,
+        organizer_quality:e.organizer_quality??null,
+        technical_depth_prior:e.technical_depth_prior??null,
+        family_prior_override:e.family_prior??null },
+    });
+    manualKept++;
+  }
+}catch(e){ console.error('manual merge:',e.message); }
 opportunities.sort((a,b)=>(b.prize_usd||0)-(a.prize_usd||0));
 fs.mkdirSync(path.join(ROOT,'data'),{recursive:true});
 fs.writeFileSync(path.join(ROOT,'data/seed.json'), JSON.stringify({
@@ -100,4 +129,4 @@ fs.writeFileSync(path.join(ROOT,'data/seed.json'), JSON.stringify({
   count:opportunities.length,
   opportunities
 },null,2));
-console.log(`fetch: devpost=${devpostCount} + brabble=${brabbleKept} (skipped student:${brabbleSkippedStudent}, offline:${brabbleSkippedOffline}) = ${opportunities.length}`);
+console.log(`fetch: devpost=${devpostCount} + brabble=${brabbleKept} + manual=${manualKept} = ${opportunities.length}`);

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/craftverse-20-pimpri-chinchwad-college-of-engineering-research-pccoer-ravet-pimpri-chinchwad-pune-1719658",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T21:30:39.985Z",
+    "observed_at": "2026-08-22T22:05:28.139Z",
     "eligibility_flags": [
       "Undergraduate",
       "Postgraduate",
@@ -68,14 +68,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 20,
+        "winnability": 43,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 7
+      "opportunity_score": 25
     },
     "metrics": {
       "equal_share_naive": null,
@@ -102,22 +109,23 @@
       "reason": "marginal — recheck as field matures · capped: prize unconfirmed",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-03",
+      "latest_safe_start": "2026-09-04",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20006.3,
+    "order_key": 20022.5,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 7,
+      "score": 25,
       "formula": "WATCH - marginal — recheck as field matures · capped: prize unconfirmed"
     }
   },

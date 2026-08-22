@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T21:30:39.985Z",
+    "observed_at": "2026-08-22T22:05:28.139Z",
     "eligibility_flags": [
       "Undergraduate",
       "Postgraduate",
@@ -68,14 +68,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 59,
+        "winnability": 50,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 38
+      "opportunity_score": 31
     },
     "metrics": {
       "equal_share_naive": null,
@@ -99,26 +106,27 @@
     },
     "decision": {
       "action": "WATCH",
-      "reason": "marginal — recheck as field matures · capped: prize unconfirmed",
+      "reason": "marginal — recheck as field matures",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-05",
+      "latest_safe_start": "2026-09-06",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20034.2,
+    "order_key": 20027.9,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 38,
-      "formula": "WATCH - marginal — recheck as field matures · capped: prize unconfirmed"
+      "score": 31,
+      "formula": "WATCH - marginal — recheck as field matures"
     }
   },
   "links": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
@@ -24,7 +24,7 @@
     "source_url": "https://gatewayhacks-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:33.453Z",
+    "observed_at": "2026-08-22T22:05:21.575Z",
     "days_left": 42,
     "gates": {
       "registration_open": true,
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 90,
+        "winnability": 51,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 85
+      "opportunity_score": 52
     },
     "metrics": {
       "equal_share_naive": 216.94,
@@ -99,22 +106,23 @@
       "reason": "prize unconfirmed — waiting reveals tracks/prizes",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-20",
+      "latest_safe_start": "2026-09-21",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20076.5,
+    "order_key": 20046.8,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 85,
+      "score": 52,
       "formula": "WATCH - prize unconfirmed — waiting reveals tracks/prizes"
     }
   },

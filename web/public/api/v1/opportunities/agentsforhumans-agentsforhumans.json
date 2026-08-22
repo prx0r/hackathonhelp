@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-agentsforhumans-agentsforhumans",
@@ -24,7 +24,7 @@
     "source_url": "https://agentsforhumans.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:31.884Z",
+    "observed_at": "2026-08-22T22:05:19.951Z",
     "days_left": 24,
     "gates": {
       "registration_open": true,
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0.22,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 70,
-        "winnability": 10,
+        "expected_prize_value": 92,
+        "winnability": 35,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 40
+      "opportunity_score": 59
     },
     "metrics": {
       "equal_share_naive": 8.73,
@@ -97,15 +104,16 @@
       "reason": "marginal — recheck as field matures",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-02",
+      "latest_safe_start": "2026-09-03",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": {
       "score": 35,
@@ -114,11 +122,11 @@
       ],
       "category": "value_competition_gap"
     },
-    "order_key": 20051,
+    "order_key": 20068.1,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 40,
+      "score": 59,
       "formula": "WATCH - marginal — recheck as field matures"
     }
   },

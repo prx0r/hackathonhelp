@@ -9,6 +9,20 @@ const OV = JSON.parse(fs.readFileSync(path.join(ROOT,'data/overrides.json'),'utf
 const now = Date.now();
 
 function findOverride(o){
+  // manual entries carry their own verified metadata
+  if(o.source==='manual' && o.manual){
+    const m=o.manual;
+    return { patch:{
+      match:o.slug,
+      organizer_quality:m.organizer_quality,
+      family_prior:m.family_prior_override,
+      note:m.eligibility_note||m.judging||null,
+      prize_cash:m.prize_breakdown.cash ?? undefined,
+      prize_credits:m.prize_breakdown.credits ?? undefined,
+      prize_advertised:m.prize_breakdown.advertised ?? undefined,
+      eligibility_unverified: o.source_authority!=='official_rules'
+    }, exclusion:null };
+  }
   const hay = `${o.slug} ${o.title}`.toLowerCase().replace(/[^a-z0-9]+/g,'-');
   return {
     patch: OV.patches.find(p => hay.includes(p.match)) ?? null,
@@ -49,8 +63,9 @@ function normalizePrize(o){
   const credits = p?.prize_credits ?? null;
   const advertised = p?.prize_advertised ?? cash ?? credits;
   const M = OV.multipliers;
-  const normalized = cash!=null || credits!=null
-    ? Math.round((cash??0)*M.cash + (credits??0)*M.compute_api_credits) : null;
+  const normalized = (cash!=null || credits!=null)
+    ? Math.round((cash??0)*M.cash + (credits??0)*M.compute_api_credits)
+    : (p?.prize_advertised!=null ? null : null);
   return {advertised_value:advertised, cash_value:cash, credits_value:credits,
     hardware_value:null, normalized_value:normalized,
     headline_inflation: advertised&&normalized ? +(100*(1-normalized/advertised)).toFixed(0) : null};
@@ -104,35 +119,69 @@ function winnability(fieldP50, payingSlots){
   const pPaid = 1/(1+Math.exp(-(logit + 0)));  // skill_edge = 0 until builder profile exists
   return Math.round(pPaid*100);
 }
-const WEIGHTS = [ // user spec v0.1; null components are renormalized away
-  ['expected_prize_value', .25], ['winnability', .15], ['organizer_quality', .10],
-];
-function computeScore(o, np, field){
-  const p = OV.patches.find(x=>`${o.slug} ${o.title}`.toLowerCase().includes(x.match));
-  const comps = {};
-  comps.expected_prize_value = expectedPrizeValueScore(np.normalized_value, field.estimated_serious_field);
-  comps.winnability = winnability(field.estimated_serious_field, o.days_left);
-  comps.organizer_quality = p?.organizer_quality != null ? Math.round(p.organizer_quality*100) : null;
-  // fit/judging/winner-quality/portfolio: require builder profile or richer data — v0.2
-  const avail = WEIGHTS.filter(([k])=>comps[k]!=null);
-  const tw = avail.reduce((s,[,w])=>s+w,0);
-  const score = avail.reduce((s,[k,w])=>s+comps[k]*w/tw, 0);
-  const CONF_MULT = { official_rules:1.00, platform_metadata_verified:0.95, platform_metadata_unverified:0.80, inferred:0.65 };
-  const confMul = CONF_MULT[o.eligibility.confidence] ?? 0.60;
-  const known = Object.values(comps).filter(v=>v!=null).length;
-  const completeness_bonus = Math.round((known/7)*8); // up to +8 for fully-characterized opps
-  return {components:comps, known_components:known,
-    opportunity_score: Math.round(score*confMul)+completeness_bonus};
+// ---- Opportunity Score v0.1 (operator spec) — deadline-free ----
+const EV_TIERS=[[200,100],[100,92],[50,84],[25,74],[10,60],[4,45]];
+function evScore(normValue, fieldP50){
+  if (normValue==null || !fieldP50) return null;
+  const per=normValue/fieldP50;
+  for(const [t,v] of EV_TIERS) if(per>=t) return v;
+  return 25;
 }
+const FIELD_TIERS=[[50,95],[150,85],[400,70],[1000,50],[3000,35]];
+function fieldTier(fieldP50){
+  if (fieldP50==null) return null;
+  for(const [t,v] of FIELD_TIERS) if(fieldP50<=t) return v;
+  return 20;
+}
+function computeScore(o, np, field){
+  const p = o.source==='manual' && o.manual ? {
+    organizer_quality:o.manual.organizer_quality,
+    technical_depth_prior:o.manual.technical_depth_prior,
+    judging:o.manual.judging
+  } : OV.patches.find(x=>`${o.slug} ${o.title}`.toLowerCase().replace(/[^a-z0-9]+/g,'-').includes(x.match)) ?? {};
+
+  const comps = {};
+  comps.expected_prize_value = evScore(np.normalized_value, field.field_p50);
+  // Winnability blends field-size tier with payout-slot probability
+  const ftier = fieldTier(field.field_p50);
+  const K = r_slots_p50();
+  const pPaid = (ftier!=null && field.field_p50) ?
+    (1/(1+Math.exp(-(Math.log(Math.min(0.9,(K/field.field_p50))/(1-Math.min(0.9,K/field.field_p50)))) + SKILL_EDGE))) : null;
+  comps.winnability = (ftier!=null&&pPaid!=null) ? Math.round(ftier*0.5+pPaid*100*0.5) : (ftier!=null? Math.round(ftier*0.75):null);
+  const depthMap={high:85,medium:65};
+  comps.historical_winner_quality = p?.technical_depth_prior ? depthMap[p.technical_depth_prior] : null;
+  comps.judging_tractability = (p?.judging||p?.note&&/judg|rubric/i.test(p.note)) ? 82 : null;
+  comps.organizer_quality = p?.organizer_quality != null ? Math.round(p.organizer_quality*100) : null;
+
+  // Personal fit / reusability require a builder profile — v0.2 personalization
+  const WEIGHTS=[['expected_prize_value',.25],['winnability',.15],
+    ['historical_winner_quality',.15],['judging_tractability',.10],
+    ['organizer_quality',.10],['reusability_portfolio',.10],['personal_fit',.15]];
+  const avail=WEIGHTS.filter(([k])=>comps[k]!=null);
+  if(!avail.length) return {components:comps, known_components:0, opportunity_score:null};
+  const tw=avail.reduce((s,[,w])=>s+w,0);
+  let score=avail.reduce((s,[k,w])=>s+comps[k]*w/tw,0);
+  const CONF_MULT={official_rules:1.00,platform_metadata_verified:0.95,platform_metadata_unverified:0.80,inferred:0.65};
+  const confMul=CONF_MULT[o.eligibility.confidence] ?? 0.60;
+  const known=Object.values(comps).filter(v=>v!=null).length;
+  const completeness_bonus=Math.round((known/WEIGHTS.length)*8);
+  return {components:comps, known_components:known,
+    opportunity_score:Math.round(score*confMul)+completeness_bonus};
+}
+function r_slots_p50(){ return SLOTS_DEFAULT.p50; }
+
 
 // ---------- run pipeline in order ----------
 let rows = seed.opportunities.map(o => applyGates(o))
   .map(o => ({...o, prize:normalizePrize(o)}))
   .map(o => ({...o, field:estimateField(o)}));
 
-// ---- CONFIG: build model (replaced by reference-class history later) ----
-const BUILD = { p50_hours:25, p80_hours:40, hours_per_day:4, buffer_days:2, reuse_fraction:0 };
+const SKILL_EDGE = 1.1;   // strong-builder prior until personal profile exists
 const SLOTS_DEFAULT = { p10:3, p50:6, p90:12 };
+const PROFILE = JSON.parse(fs.readFileSync(path.join(ROOT,'data/builder-profile.json'),'utf8'));
+// ---- CONFIG: build model (replaced by reference-class history later) ----
+const BUILD = { p50_hours:25, p80_hours:40, hours_per_day:4, buffer_days:2,
+  shadow_hour_value_usd:PROFILE.shadow_hour_value_usd };
 
 function feasibilityPrior(d){
   if (d==null) return 0.35;
@@ -147,9 +196,23 @@ function feasibilityPrior(d){
 }
 const FEAS_LABEL={0.1:'<1d',0.25:'1-2d',0.45:'2-3d',0.65:'3-5d',0.8:'5-7d',0.9:'7-10d',0.97:'10-14d',1:'14d+'};
 
+function eventReuse(r){
+  const key=Object.keys(PROFILE.reuse_by_event).find(k=>k!=='_default' && (r.slug.includes(k)||r.title.toLowerCase().replace(/[^a-z0-9]+/g,'-').includes(k)));
+  return PROFILE.reuse_by_event[key ?? '_default'] ?? PROFILE.reuse_by_event._default;
+}
+function strategicFit(r){
+  const hay=(r.title+' '+(r.themes||[]).join(' ')).toLowerCase();
+  let hits=0;
+  for(const t of PROFILE.thesis_tags) if(hay.includes(t)) hits++;
+  const assetHit=PROFILE.assets.some(a=>a.tags.some(t=>hay.includes(t)));
+  return Math.min(1,(hits*0.22)+(assetHit?0.3:0));
+}
 for (const r of rows){
   const slotsKnown = false;          // ladder data not yet collected from pages
   r.slots = slotsKnown ? null : SLOTS_DEFAULT;
+  r.fit={ strategic_fit:+strategicFit(r).toFixed(2),
+    code_reuse:+eventReuse(r).toFixed(2),
+    effective_p80_hours:Math.max(4,Math.round(BUILD.p80_hours*(1-eventReuse(r)))) };
   r.score_v01 = r.eligibility.eligible ? computeScore(r, r.prize, r.field) : {opportunity_score:null};
   // fair-shares
   r.metrics = {
@@ -191,9 +254,11 @@ for (const r of rows){
   // ---- DECISION LAYER (v0.2): feasibility + latest safe start + state ----
   const dl=r.days_left;
   const feas=feasibilityPrior(dl);
-  const p80Days=Math.ceil((BUILD.p80_hours*(1-BUILD.reuse_fraction))/BUILD.hours_per_day);
-  const latestSafeStart = (dl!=null && r.ends_at)
-    ? new Date(new Date(r.ends_at).getTime() - (p80Days+BUILD.buffer_days)*86400000).toISOString().slice(0,10)
+  const p80Days=Math.max(1,Math.ceil((r.fit?.effective_p80_hours ?? BUILD.p80_hours)/BUILD.hours_per_day));
+  const endsOk = (r.ends_at&&!isNaN(Date.parse(r.ends_at))?r.ends_at:null) && !isNaN(Date.parse((r.ends_at&&!isNaN(Date.parse(r.ends_at))?r.ends_at:null)));
+  const msEnd = Date.parse(r.ends_at||'');
+  const latestSafeStart = (dl!=null && !isNaN(msEnd))
+    ? new Date(msEnd - (p80Days+BUILD.buffer_days)*86400000).toISOString().slice(0,10)
     : null;
   const daysUntilMustStart = (dl!=null)? dl-(p80Days+BUILD.buffer_days) : null;
 
@@ -222,7 +287,7 @@ for (const r of rows){
   }
   r.decision={action, reason:action_reason, feasibility:+feas.toFixed(2),
     feasibility_label:FEAS_LABEL[feas]||String(feas), latest_safe_start:latestSafeStart,
-    p_finish_proxy:+feas.toFixed(2), build_model:BUILD};
+    p_finish_proxy:+feas.toFixed(2), build_model:{...BUILD}, opportunity_cost_usd: Math.round((r.fit?.effective_p80_hours??BUILD.p80_hours)*PROFILE.shadow_hour_value_usd)};
 
   // Unconfirmed prizes rank below verified ones regardless of other factors
   // (user spec: 'Real cash known now' column matters; ETHGlobal reputation is the exception via organizer quality)

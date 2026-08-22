@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hack-away-hunger-hack-away-hunger",
@@ -23,7 +23,7 @@
     "source_url": "https://hack-away-hunger.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:33.100Z",
+    "observed_at": "2026-08-22T22:05:21.219Z",
     "days_left": 48,
     "gates": {
       "registration_open": true,
@@ -67,6 +67,11 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "opportunity_score": null
     },
@@ -92,15 +97,16 @@
       "reason": "eligibility gate failed",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-26",
+      "latest_safe_start": "2026-09-27",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
     "order_key": -100,

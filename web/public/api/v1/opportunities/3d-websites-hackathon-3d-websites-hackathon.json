@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-3d-websites-hackathon-3d-websites-hackathon",
@@ -9,7 +9,7 @@
     "organizer": "3D",
     "prize_usd": 55,
     "prize_raw": "$55",
-    "registrants": 1353,
+    "registrants": 1354,
     "starts_at": "2026-06-22T00:00:00.000Z",
     "ends_at": "2026-08-31T23:59:00.000Z",
     "time_left": "9 days left",
@@ -24,7 +24,7 @@
     "source_url": "https://3d-websites-hackathon.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.392Z",
+    "observed_at": "2026-08-22T22:05:20.477Z",
     "days_left": 10,
     "gates": {
       "registration_open": true,
@@ -49,7 +49,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 1353,
+      "registrations": 1354,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 20,
-        "winnability": 15,
+        "expected_prize_value": 25,
+        "winnability": 44,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 17
+      "opportunity_score": 28
     },
     "metrics": {
       "equal_share_naive": 0.04,
@@ -97,22 +104,23 @@
       "reason": "weak opportunity for remaining time",
       "feasibility": 0.9,
       "feasibility_label": "7-10d",
-      "latest_safe_start": "2026-08-19",
+      "latest_safe_start": "2026-08-20",
       "p_finish_proxy": 0.9,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": -84.7,
+    "order_key": -74.8,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 17,
+      "score": 28,
       "formula": "SKIP - weak opportunity for remaining time"
     }
   },

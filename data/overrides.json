@@ -48,6 +48,26 @@
       "match": "x402",
       "reason": "18+ age-of-majority per official rules (Algorand x402 Challenge)",
       "eligible": false
+    },
+    {
+      "match": "rice-urban-sustainability",
+      "reason": "18+, college students only, US-only, team required (official rules)",
+      "eligible": false
+    },
+    {
+      "match": "gibc-v2",
+      "reason": "headline is sponsor products/credits not cash; student eligibility restrictions (official rules)",
+      "eligible": false
+    },
+    {
+      "match": "global-innovation-build",
+      "reason": "headline is sponsor products/credits not cash; student eligibility restrictions",
+      "eligible": false
+    },
+    {
+      "match": "lexhack",
+      "reason": "project must be created during event window; verify before considering (official rules)",
+      "eligible": false
     }
   ],
   "patches": [

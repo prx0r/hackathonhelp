@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-arbiter-hacks-v1-arbiter-hacks-v1",
@@ -20,7 +20,7 @@
     "source_url": "https://arbiter-hacks-v1.devpost.com/",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T21:30:42.402Z",
+    "observed_at": "2026-08-22T22:05:29.573Z",
     "eligibility_flags": [
       "Beginner Friendly",
       "Machine Learning/AI",
@@ -67,14 +67,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
         "winnability": null,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 0,
-      "opportunity_score": 0
+      "opportunity_score": null
     },
     "metrics": {
       "equal_share_naive": 5.56,
@@ -94,27 +101,28 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "WATCH",
-      "reason": "far out; latest safe start 2026-12-09",
+      "action": "SKIP",
+      "reason": "unscoreable",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-12-09",
+      "latest_safe_start": "2026-12-10",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20000,
+    "order_key": -100,
     "attention": -1,
     "attention_breakdown": {
-      "action": "WATCH",
-      "score": 0,
-      "formula": "WATCH - far out; latest safe start 2026-12-09"
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - unscoreable"
     }
   },
   "links": {

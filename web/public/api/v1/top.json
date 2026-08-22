@@ -1,7 +1,278 @@
 {
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
+    {
+      "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "organizer": "DevNetwork",
+      "prize_usd": 39500,
+      "prize_raw": "$39,500",
+      "registrants": 885,
+      "starts_at": "2026-08-17T00:00:00.000Z",
+      "ends_at": "2026-09-03T23:59:00.000Z",
+      "time_left": "12 days left",
+      "location_type": "online",
+      "location": "Santa Clara Convention Center and Online",
+      "themes": [
+        "IoT",
+        "Low/No Code",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T22:05:20.477Z",
+      "days_left": 13,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": null,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 39500,
+        "cash_value": 39500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 39500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 885,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 71,
+        "field_p10": 46,
+        "field_p50": 71,
+        "field_p90": 110,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 0.22,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 44,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 65
+      },
+      "metrics": {
+        "equal_share_naive": 44.63,
+        "fair_share_serious": 556.34,
+        "days_left": 13
+      },
+      "cautions": [],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "baseline_any_payout": 0.085,
+        "p_paid": 0.085,
+        "ev_cash_heuristic": 3338,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "SPRINT",
+        "reason": "tight but real (10-14d finish prior 97%)",
+        "feasibility": 0.97,
+        "feasibility_label": "10-14d",
+        "latest_safe_start": "2026-08-23",
+        "p_finish_proxy": 0.97,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$556.34 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      },
+      "order_key": 35073.5,
+      "attention": 35073.5,
+      "attention_breakdown": {
+        "action": "SPRINT",
+        "score": 65,
+        "formula": "SPRINT - tight but real (10-14d finish prior 97%)"
+      }
+    },
+    {
+      "id": "man-ai-infra-summit-hackathon",
+      "slug": "ai-infra-summit-hackathon",
+      "title": "AI Infra Summit Hackathon",
+      "organizer": "lablab.ai x Kisaco Research",
+      "prize_usd": 10500,
+      "prize_raw": "$10,500 confirmed + partner prizes being finalized (Intel VLA track $2k/$1.5k/$1k)",
+      "registrants": 1859,
+      "starts_at": "2026-09-10",
+      "ends_at": "2026-09-17",
+      "time_left": null,
+      "location_type": "online",
+      "location": "Hybrid - online build Sep 10-16",
+      "themes": [
+        "ai-infrastructure",
+        "intel",
+        "qualcomm",
+        "production-ai"
+      ],
+      "open_to_all": true,
+      "source_url": "https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon",
+      "source": "manual",
+      "source_authority": "official_rules",
+      "observed_at": "2026-08-22T22:05:29.573Z",
+      "manual": {
+        "prize_breakdown": {
+          "advertised": 10500,
+          "cash": 10500,
+          "credits": null,
+          "_note": "$10,500 confirmed + partner prizes being finalized (Intel VLA track $2k/$1.5k/$1k)"
+        },
+        "eligibility_note": null,
+        "field_note": null,
+        "judging": "application of tech, business value, originality",
+        "organizer_quality": 0.85,
+        "technical_depth_prior": null,
+        "family_prior_override": null
+      },
+      "days_left": 26,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "official_rules",
+        "notes": "application of tech, business value, originality"
+      },
+      "prize": {
+        "advertised_value": 10500,
+        "cash_value": 10500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 10500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1859,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 93,
+        "field_p10": 60,
+        "field_p50": 93,
+        "field_p90": 144,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 0,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 92,
+          "winnability": 44,
+          "historical_winner_quality": null,
+          "judging_tractability": 82,
+          "organizer_quality": 85
+        },
+        "known_components": 4,
+        "opportunity_score": 82
+      },
+      "metrics": {
+        "equal_share_naive": 5.65,
+        "fair_share_serious": 112.9,
+        "days_left": 26
+      },
+      "cautions": [],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "baseline_any_payout": 0.065,
+        "p_paid": 0.065,
+        "ev_cash_heuristic": 677,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "PREP",
+        "reason": "commit by 2026-09-06",
+        "feasibility": 1,
+        "feasibility_label": "14d+",
+        "latest_safe_start": "2026-09-06",
+        "p_finish_proxy": 1,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$112.9 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      },
+      "order_key": 30088.8,
+      "attention": 30088.8,
+      "attention_breakdown": {
+        "action": "PREP",
+        "score": 82,
+        "formula": "PREP - commit by 2026-09-06"
+      }
+    },
     {
       "id": "br-boss-battle-boss-battle",
       "slug": "br-boss-battle-boss-battle",
@@ -20,7 +291,7 @@
       "source_url": "https://boss-battle.devfolio.co",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:30:41.361Z",
+      "observed_at": "2026-08-22T22:05:28.917Z",
       "eligibility_flags": [],
       "days_left": 37,
       "gates": {
@@ -63,14 +334,21 @@
         "p50": 6,
         "p90": 12
       },
+      "fit": {
+        "strategic_fit": 0,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
       "score_v01": {
         "components": {
-          "expected_prize_value": 85,
-          "winnability": 90,
+          "expected_prize_value": 100,
+          "winnability": 60,
+          "historical_winner_quality": null,
+          "judging_tractability": 82,
           "organizer_quality": null
         },
-        "known_components": 2,
-        "opportunity_score": 79
+        "known_components": 3,
+        "opportunity_score": 77
       },
       "metrics": {
         "equal_share_naive": 90.91,
@@ -93,18 +371,19 @@
       },
       "decision": {
         "action": "PREP",
-        "reason": "far out; latest safe start 2026-09-16 · capped: prize unconfirmed",
+        "reason": "far out; latest safe start 2026-09-17",
         "feasibility": 1,
         "feasibility_label": "14d+",
-        "latest_safe_start": "2026-09-16",
+        "latest_safe_start": "2026-09-17",
         "p_finish_proxy": 1,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
           "hours_per_day": 4,
           "buffer_days": 2,
-          "reuse_fraction": 0
-        }
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
       },
       "mega": {
         "score": 35,
@@ -113,71 +392,86 @@
         ],
         "category": "value_competition_gap"
       },
-      "order_key": 30086.1,
-      "attention": 30086.1,
+      "order_key": 30084.3,
+      "attention": 30084.3,
       "attention_breakdown": {
         "action": "PREP",
-        "score": 79,
-        "formula": "PREP - far out; latest safe start 2026-09-16 · capped: prize unconfirmed"
+        "score": 77,
+        "formula": "PREP - far out; latest safe start 2026-09-17"
       }
     },
     {
-      "id": "dp-opencv26-opencv26",
-      "slug": "opencv26-opencv26",
-      "title": "OpenCV AI Competition 2026, powered by AWS",
-      "organizer": "OpenCV",
-      "prize_usd": 12000,
-      "prize_raw": "$12,000",
-      "registrants": 543,
-      "starts_at": "2026-08-26T00:00:00.000Z",
-      "ends_at": "2026-10-27T23:59:00.000Z",
-      "time_left": "Upcoming",
+      "id": "man-ethonline-2026",
+      "slug": "ethonline-2026",
+      "title": "ETHOnline 2026",
+      "organizer": "ETHGlobal",
+      "prize_usd": null,
+      "prize_raw": "TBA; ETHGlobal Lisbon 2026 had $100K sponsor pool - depth expected",
+      "registrants": null,
+      "starts_at": "2026-09-04",
+      "ends_at": "2026-09-16",
+      "time_left": null,
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "IoT",
-        "Machine Learning/AI",
-        "Serverless"
+        "ethereum",
+        "agents",
+        "verification",
+        "payments"
       ],
       "open_to_all": true,
-      "source_url": "https://opencv26.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:30:33.286Z",
-      "days_left": 67,
+      "source_url": "https://ethglobal.com/events/online2026",
+      "source": "manual",
+      "source_authority": "official_rules",
+      "observed_at": "2026-08-22T22:05:29.573Z",
+      "manual": {
+        "prize_breakdown": {
+          "advertised": null,
+          "cash": null,
+          "credits": null,
+          "_note": "TBA; ETHGlobal Lisbon 2026 had $100K sponsor pool - depth expected"
+        },
+        "eligibility_note": "Under-18 route exists w/ guardian consent (official rules)",
+        "field_note": "curated admission, count not public",
+        "judging": null,
+        "organizer_quality": 0.95,
+        "technical_depth_prior": "high",
+        "family_prior_override": null
+      },
+      "days_left": 25,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
         "remote_ok": true,
-        "age_confirmed": null,
+        "age_confirmed": true,
         "student_only": false,
         "country_restricted": null
       },
       "eligibility": {
         "eligible": true,
         "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
+        "confidence": "official_rules",
+        "notes": "Under-18 route exists w/ guardian consent (official rules)"
       },
       "prize": {
-        "advertised_value": 12000,
-        "cash_value": 12000,
+        "advertised_value": null,
+        "cash_value": null,
         "credits_value": null,
         "hardware_value": null,
-        "normalized_value": 12000,
-        "headline_inflation": 0
+        "normalized_value": null,
+        "headline_inflation": null
       },
       "field": {
-        "registrations": 543,
+        "registrations": null,
         "family_prior": {
           "submissions_per_registration": 0.05,
           "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
         },
-        "field_status": "usable",
-        "estimated_serious_field": 43,
-        "field_p10": 28,
-        "field_p50": 43,
-        "field_p90": 67,
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "field_p10": null,
+        "field_p50": null,
+        "field_p90": null,
         "funnel": null
       },
       "slots": {
@@ -185,143 +479,29 @@
         "p50": 6,
         "p90": 12
       },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 85,
-          "winnability": 90,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 72
-      },
-      "metrics": {
-        "equal_share_naive": 22.1,
-        "fair_share_serious": 279.07,
-        "days_left": 67
-      },
-      "cautions": [],
-      "payout": {
-        "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
-        },
-        "baseline_any_payout": 0.14,
-        "p_paid": 0.14,
-        "ev_cash_heuristic": 1674,
-        "note": "slot count assumed until prize ladders are verified on official pages"
-      },
-      "decision": {
-        "action": "PREP",
-        "reason": "far out; latest safe start 2026-10-15",
-        "feasibility": 1,
-        "feasibility_label": "14d+",
-        "latest_safe_start": "2026-10-15",
-        "p_finish_proxy": 1,
-        "build_model": {
-          "p50_hours": 25,
-          "p80_hours": 40,
-          "hours_per_day": 4,
-          "buffer_days": 2,
-          "reuse_fraction": 0
-        }
-      },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$279.07 normalized prize per estimated submission"
-        ],
-        "category": "value_competition_gap"
-      },
-      "order_key": 30079.8,
-      "attention": 30079.8,
-      "attention_breakdown": {
-        "action": "PREP",
-        "score": 72,
-        "formula": "PREP - far out; latest safe start 2026-10-15"
-      }
-    },
-    {
-      "id": "br-lexhack-2026-lexhack-2026",
-      "slug": "br-lexhack-2026-lexhack-2026",
-      "title": "LexHack 2026",
-      "organizer": "Lexhack",
-      "prize_usd": 43560,
-      "prize_raw": "$43,560",
-      "registrants": 34,
-      "starts_at": null,
-      "ends_at": "2026-09-27T23:59:00.000Z",
-      "time_left": "37 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [],
-      "open_to_all": true,
-      "source_url": "https://lexhack-2026.devpost.com/",
-      "source": "brabble",
-      "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:30:41.361Z",
-      "eligibility_flags": [
-        "Beginner Friendly",
-        "Low/No Code",
-        "Social Good"
-      ],
-      "days_left": 37,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": null,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 43560,
-        "cash_value": 43560,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 43560,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 34,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 12,
-        "field_p10": 8,
-        "field_p50": 12,
-        "field_p90": 19,
-        "funnel": null
-      },
-      "slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+      "fit": {
+        "strategic_fit": 0.74,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
       },
       "score_v01": {
         "components": {
-          "expected_prize_value": 100,
-          "winnability": 90,
-          "organizer_quality": null
+          "expected_prize_value": null,
+          "winnability": null,
+          "historical_winner_quality": 85,
+          "judging_tractability": null,
+          "organizer_quality": 95
         },
         "known_components": 2,
-        "opportunity_score": 69
+        "opportunity_score": 85
       },
       "metrics": {
-        "equal_share_naive": 1281.18,
-        "fair_share_serious": 3630,
-        "days_left": 37
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 25
       },
       "cautions": [
-        "extraordinary per-submission value — verify payout history"
+        "prize pool not yet announced — rescore when tracks land"
       ],
       "payout": {
         "paying_slots": {
@@ -329,307 +509,59 @@
           "p50": 6,
           "p90": 12
         },
-        "baseline_any_payout": 0.5,
-        "p_paid": 0.5,
-        "ev_cash_heuristic": 21780,
+        "baseline_any_payout": null,
+        "p_paid": null,
+        "ev_cash_heuristic": null,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
         "action": "PREP",
-        "reason": "far out; latest safe start 2026-09-15 · capped: prize unconfirmed",
+        "reason": "commit by 2026-09-05",
         "feasibility": 1,
         "feasibility_label": "14d+",
-        "latest_safe_start": "2026-09-15",
+        "latest_safe_start": "2026-09-05",
         "p_finish_proxy": 1,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
           "hours_per_day": 4,
           "buffer_days": 2,
-          "reuse_fraction": 0
-        }
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
       },
-      "mega": {
-        "score": 65,
-        "reasons": [
-          "$3630 normalized prize per estimated submission",
-          "$44K cash with below-median registration"
-        ],
-        "category": "value_competition_gap"
-      },
-      "order_key": 30077.1,
-      "attention": 30077.1,
+      "mega": null,
+      "order_key": 30076.5,
+      "attention": 30076.5,
       "attention_breakdown": {
         "action": "PREP",
-        "score": 69,
-        "formula": "PREP - far out; latest safe start 2026-09-15 · capped: prize unconfirmed"
+        "score": 85,
+        "formula": "PREP - commit by 2026-09-05"
       }
     },
     {
-      "id": "dp-gibc-v2-gibc-v2",
-      "slug": "gibc-v2-gibc-v2",
-      "title": "Global Innovation Build Challenge V2",
-      "organizer": "Global",
-      "prize_usd": 148445,
-      "prize_raw": "$148,445",
-      "registrants": 319,
-      "starts_at": "2026-07-11T00:00:00.000Z",
-      "ends_at": "2026-09-21T23:59:00.000Z",
-      "time_left": "30 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "Machine Learning/AI",
-        "Social Good",
-        "Beginner Friendly"
-      ],
-      "open_to_all": true,
-      "source_url": "https://gibc-v2.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:30:32.570Z",
-      "days_left": 31,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": null,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 148445,
-        "cash_value": 148445,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 148445,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 319,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 38,
-        "field_p10": 25,
-        "field_p50": 38,
-        "field_p90": 59,
-        "funnel": null
-      },
-      "slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 100,
-          "winnability": 82,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 67
-      },
-      "metrics": {
-        "equal_share_naive": 465.34,
-        "fair_share_serious": 3906.45,
-        "days_left": 31
-      },
-      "cautions": [
-        "extraordinary per-submission value — verify payout history"
-      ],
-      "payout": {
-        "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
-        },
-        "baseline_any_payout": 0.158,
-        "p_paid": 0.158,
-        "ev_cash_heuristic": 23439,
-        "note": "slot count assumed until prize ladders are verified on official pages"
-      },
-      "decision": {
-        "action": "PREP",
-        "reason": "commit by 2026-09-09",
-        "feasibility": 1,
-        "feasibility_label": "14d+",
-        "latest_safe_start": "2026-09-09",
-        "p_finish_proxy": 1,
-        "build_model": {
-          "p50_hours": 25,
-          "p80_hours": 40,
-          "hours_per_day": 4,
-          "buffer_days": 2,
-          "reuse_fraction": 0
-        }
-      },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$3906.45 normalized prize per estimated submission"
-        ],
-        "category": "value_competition_gap"
-      },
-      "order_key": 30075.3,
-      "attention": 30075.3,
-      "attention_breakdown": {
-        "action": "PREP",
-        "score": 67,
-        "formula": "PREP - commit by 2026-09-09"
-      }
-    },
-    {
-      "id": "dp-rice-urban-sustainability-rice-urban-sustainability",
-      "slug": "rice-urban-sustainability-rice-urban-sustainability",
-      "title": "The Rice University Urban Sustainability Hackathon",
-      "organizer": "The",
-      "prize_usd": 17500,
-      "prize_raw": "$17,500",
-      "registrants": 339,
-      "starts_at": "2026-06-23T00:00:00.000Z",
-      "ends_at": "2026-09-18T23:59:00.000Z",
-      "time_left": "26 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "Design",
-        "Social Good",
-        "Databases"
-      ],
-      "open_to_all": true,
-      "source_url": "https://rice-urban-sustainability.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:30:32.570Z",
-      "days_left": 28,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": null,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 17500,
-        "cash_value": 17500,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 17500,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 339,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 41,
-        "field_p10": 27,
-        "field_p50": 41,
-        "field_p90": 64,
-        "funnel": null
-      },
-      "slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 85,
-          "winnability": 68,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 65
-      },
-      "metrics": {
-        "equal_share_naive": 51.62,
-        "fair_share_serious": 426.83,
-        "days_left": 28
-      },
-      "cautions": [],
-      "payout": {
-        "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
-        },
-        "baseline_any_payout": 0.146,
-        "p_paid": 0.146,
-        "ev_cash_heuristic": 2561,
-        "note": "slot count assumed until prize ladders are verified on official pages"
-      },
-      "decision": {
-        "action": "PREP",
-        "reason": "commit by 2026-09-06",
-        "feasibility": 1,
-        "feasibility_label": "14d+",
-        "latest_safe_start": "2026-09-06",
-        "p_finish_proxy": 1,
-        "build_model": {
-          "p50_hours": 25,
-          "p80_hours": 40,
-          "hours_per_day": 4,
-          "buffer_days": 2,
-          "reuse_fraction": 0
-        }
-      },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$426.83 normalized prize per estimated submission"
-        ],
-        "category": "value_competition_gap"
-      },
-      "order_key": 30073.5,
-      "attention": 30073.5,
-      "attention_breakdown": {
-        "action": "PREP",
-        "score": 65,
-        "formula": "PREP - commit by 2026-09-06"
-      }
-    },
-    {
-      "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
-      "slug": "prometheus-sept-ai-classic-prometheus-sept-ai-classic",
-      "title": "Prometheus September AI Challenge",
-      "organizer": "Prometheus",
-      "prize_usd": 1500,
-      "prize_raw": "$1,500",
-      "registrants": 86,
-      "starts_at": "2026-08-19T00:00:00.000Z",
+      "id": "dp-volthacks-volthacks",
+      "slug": "volthacks-volthacks",
+      "title": "VoltHacks",
+      "organizer": "VoltHacks",
+      "prize_usd": 35785,
+      "prize_raw": "$35,785",
+      "registrants": 1697,
+      "starts_at": "2026-05-22T00:00:00.000Z",
       "ends_at": "2026-09-05T23:59:00.000Z",
       "time_left": "14 days left",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "Beginner Friendly",
-        "Design",
-        "Machine Learning/AI"
+        "IoT",
+        "Machine Learning/AI",
+        "Beginner Friendly"
       ],
       "open_to_all": true,
-      "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
+      "source_url": "https://volthacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:30:32.934Z",
+      "observed_at": "2026-08-22T22:05:19.952Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -646,24 +578,24 @@
         "notes": null
       },
       "prize": {
-        "advertised_value": 1500,
-        "cash_value": 1500,
+        "advertised_value": 35785,
+        "cash_value": 35785,
         "credits_value": null,
         "hardware_value": null,
-        "normalized_value": 1500,
+        "normalized_value": 35785,
         "headline_inflation": 0
       },
       "field": {
-        "registrations": 86,
+        "registrations": 1697,
         "family_prior": {
           "submissions_per_registration": 0.05,
           "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
         },
         "field_status": "usable",
-        "estimated_serious_field": 17,
-        "field_p10": 11,
-        "field_p50": 17,
-        "field_p90": 26,
+        "estimated_serious_field": 85,
+        "field_p10": 55,
+        "field_p50": 85,
+        "field_p90": 132,
         "funnel": null
       },
       "slots": {
@@ -671,18 +603,25 @@
         "p50": 6,
         "p90": 12
       },
+      "fit": {
+        "strategic_fit": 0,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
       "score_v01": {
         "components": {
-          "expected_prize_value": 70,
-          "winnability": 88,
+          "expected_prize_value": 100,
+          "winnability": 44,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
           "organizer_quality": null
         },
         "known_components": 2,
-        "opportunity_score": 63
+        "opportunity_score": 65
       },
       "metrics": {
-        "equal_share_naive": 17.44,
-        "fair_share_serious": 88.24,
+        "equal_share_naive": 21.09,
+        "fair_share_serious": 421,
         "days_left": 15
       },
       "cautions": [],
@@ -692,59 +631,66 @@
           "p50": 6,
           "p90": 12
         },
-        "baseline_any_payout": 0.353,
-        "p_paid": 0.353,
-        "ev_cash_heuristic": 529,
+        "baseline_any_payout": 0.071,
+        "p_paid": 0.071,
+        "ev_cash_heuristic": 2526,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
         "action": "PREP",
-        "reason": "commit by 2026-08-24",
+        "reason": "commit by 2026-08-25",
         "feasibility": 1,
         "feasibility_label": "14d+",
-        "latest_safe_start": "2026-08-24",
+        "latest_safe_start": "2026-08-25",
         "p_finish_proxy": 1,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
           "hours_per_day": 4,
           "buffer_days": 2,
-          "reuse_fraction": 0
-        }
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
       },
-      "mega": null,
-      "order_key": 30056.7,
-      "attention": 30056.7,
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$421 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      },
+      "order_key": 30073.5,
+      "attention": 30073.5,
       "attention_breakdown": {
         "action": "PREP",
-        "score": 63,
-        "formula": "PREP - commit by 2026-08-24"
+        "score": 65,
+        "formula": "PREP - commit by 2026-08-25"
       }
     },
     {
-      "id": "dp-buuniex-hackathon-buuniex-hackathon",
-      "slug": "buuniex-hackathon-buuniex-hackathon",
-      "title": "BunnieX Hackathon",
-      "organizer": "BunnieX",
-      "prize_usd": null,
-      "prize_raw": "",
-      "registrants": 176,
-      "starts_at": "2026-06-22T00:00:00.000Z",
-      "ends_at": "2026-09-22T23:59:00.000Z",
-      "time_left": "about 1 month left",
+      "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
+      "slug": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
+      "title": "AI Builders Hackathon",
+      "organizer": "AI",
+      "prize_usd": 33900,
+      "prize_raw": "$33,900",
+      "registrants": 1996,
+      "starts_at": "2026-08-21T00:00:00.000Z",
+      "ends_at": "2026-09-15T23:59:00.000Z",
+      "time_left": "24 days left",
       "location_type": "online",
       "location": "Online",
       "themes": [
         "Machine Learning/AI",
         "Open Ended",
-        "Productivity"
+        "Beginner Friendly"
       ],
       "open_to_all": true,
-      "source_url": "https://buuniex-hackathon.devpost.com/",
+      "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:30:32.732Z",
-      "days_left": 32,
+      "observed_at": "2026-08-22T22:05:19.952Z",
+      "days_left": 25,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -760,24 +706,24 @@
         "notes": null
       },
       "prize": {
-        "advertised_value": null,
-        "cash_value": null,
+        "advertised_value": 33900,
+        "cash_value": 33900,
         "credits_value": null,
         "hardware_value": null,
-        "normalized_value": null,
-        "headline_inflation": null
+        "normalized_value": 33900,
+        "headline_inflation": 0
       },
       "field": {
-        "registrations": 176,
+        "registrations": 1996,
         "family_prior": {
           "submissions_per_registration": 0.05,
           "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
         },
         "field_status": "usable",
-        "estimated_serious_field": 35,
-        "field_p10": 23,
-        "field_p50": 35,
-        "field_p90": 54,
+        "estimated_serious_field": 100,
+        "field_p10": 65,
+        "field_p50": 100,
+        "field_p90": 155,
         "funnel": null
       },
       "slots": {
@@ -785,83 +731,246 @@
         "p50": 6,
         "p90": 12
       },
+      "fit": {
+        "strategic_fit": 0,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
       "score_v01": {
         "components": {
-          "expected_prize_value": null,
-          "winnability": 90,
+          "expected_prize_value": 100,
+          "winnability": 44,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
           "organizer_quality": null
         },
-        "known_components": 1,
-        "opportunity_score": 63
+        "known_components": 2,
+        "opportunity_score": 65
       },
       "metrics": {
-        "equal_share_naive": null,
-        "fair_share_serious": null,
-        "days_left": 32
+        "equal_share_naive": 16.98,
+        "fair_share_serious": 339,
+        "days_left": 25
       },
-      "cautions": [
-        "prize not published on platform card — see official page",
-        "prize pool not yet announced — rescore when tracks land"
-      ],
+      "cautions": [],
       "payout": {
         "paying_slots": {
           "p10": 3,
           "p50": 6,
           "p90": 12
         },
-        "baseline_any_payout": 0.171,
-        "p_paid": 0.171,
-        "ev_cash_heuristic": null,
+        "baseline_any_payout": 0.06,
+        "p_paid": 0.06,
+        "ev_cash_heuristic": 2034,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
         "action": "PREP",
-        "reason": "commit by 2026-09-10 · capped: prize unconfirmed",
+        "reason": "commit by 2026-09-04",
         "feasibility": 1,
         "feasibility_label": "14d+",
-        "latest_safe_start": "2026-09-10",
+        "latest_safe_start": "2026-09-04",
         "p_finish_proxy": 1,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
           "hours_per_day": 4,
           "buffer_days": 2,
-          "reuse_fraction": 0
-        }
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
       },
-      "mega": null,
-      "order_key": 30056.7,
-      "attention": 30056.7,
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$339 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      },
+      "order_key": 30073.5,
+      "attention": 30073.5,
       "attention_breakdown": {
         "action": "PREP",
-        "score": 63,
-        "formula": "PREP - commit by 2026-09-10 · capped: prize unconfirmed"
+        "score": 65,
+        "formula": "PREP - commit by 2026-09-04"
       }
     },
     {
-      "id": "dp-evorozen-apex-evorozen-apex",
-      "slug": "evorozen-apex-evorozen-apex",
-      "title": "Evorozen Apex: NextGen AI Buildathon",
-      "organizer": "Evorozen",
-      "prize_usd": null,
-      "prize_raw": "",
-      "registrants": 155,
-      "starts_at": "2026-07-17T00:00:00.000Z",
-      "ends_at": "2026-09-20T23:59:00.000Z",
-      "time_left": "29 days left",
+      "id": "man-telegraph-h1",
+      "slug": "telegraph-h1",
+      "title": "Telegraph H1 Hackathon",
+      "organizer": "Telegraph Protocol",
+      "prize_usd": 5000,
+      "prize_raw": null,
+      "registrants": null,
+      "starts_at": "2026-08-17",
+      "ends_at": "2026-09-07",
+      "time_left": null,
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "Databases",
-        "Machine Learning/AI",
-        "Web"
+        "api",
+        "machine-intelligence",
+        "evaluation",
+        "agents"
       ],
       "open_to_all": true,
-      "source_url": "https://evorozen-apex.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:30:32.732Z",
-      "days_left": 30,
+      "source_url": "https://hackathon.telegraphprotocol.com/",
+      "source": "manual",
+      "source_authority": "official_rules",
+      "observed_at": "2026-08-22T22:05:29.573Z",
+      "manual": {
+        "prize_breakdown": {
+          "advertised": 5000,
+          "cash": 5000,
+          "credits": null
+        },
+        "eligibility_note": "Open to developers per official site; explicit age/prize rules not found - confirm before EV math",
+        "field_note": "early, no useful count",
+        "judging": null,
+        "organizer_quality": 0.85,
+        "technical_depth_prior": null,
+        "family_prior_override": null
+      },
+      "days_left": 16,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "official_rules",
+        "notes": "Open to developers per official site; explicit age/prize rules not found - confirm before EV math"
+      },
+      "prize": {
+        "advertised_value": 5000,
+        "cash_value": 5000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 5000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": null,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "field_p10": null,
+        "field_p50": null,
+        "field_p90": null,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 1,
+        "code_reuse": 0.55,
+        "effective_p80_hours": 18
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": 85
+        },
+        "known_components": 1,
+        "opportunity_score": 76
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 16
+      },
+      "cautions": [
+        "prize not published on platform card — see official page"
+      ],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "baseline_any_payout": null,
+        "p_paid": null,
+        "ev_cash_heuristic": null,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "PREP",
+        "reason": "commit by 2026-08-31",
+        "feasibility": 1,
+        "feasibility_label": "14d+",
+        "latest_safe_start": "2026-08-31",
+        "p_finish_proxy": 1,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 450
+      },
+      "mega": null,
+      "order_key": 30068.4,
+      "attention": 30068.4,
+      "attention_breakdown": {
+        "action": "PREP",
+        "score": 76,
+        "formula": "PREP - commit by 2026-08-31"
+      }
+    },
+    {
+      "id": "man-boss-battle",
+      "slug": "boss-battle-bitshala",
+      "title": "BOSS Battle",
+      "organizer": "Bitshala",
+      "prize_usd": 3000,
+      "prize_raw": null,
+      "registrants": null,
+      "starts_at": "2026-09-07",
+      "ends_at": "2026-10-05",
+      "time_left": null,
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "bitcoin",
+        "nostr",
+        "privacy",
+        "ai"
+      ],
+      "open_to_all": true,
+      "source_url": "https://boss-battle.devfolio.co/",
+      "source": "manual",
+      "source_authority": "platform_metadata_unverified",
+      "observed_at": "2026-08-22T22:05:29.573Z",
+      "manual": {
+        "prize_breakdown": {
+          "advertised": 3000,
+          "cash": 3000,
+          "credits": null
+        },
+        "eligibility_note": "Age/prize eligibility not explicit on public page - asterisk until verified",
+        "field_note": "not published",
+        "judging": "originality, technical depth, working demo, market insight",
+        "organizer_quality": 0.75,
+        "technical_depth_prior": null,
+        "family_prior_override": null
+      },
+      "days_left": 44,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -873,28 +982,28 @@
       "eligibility": {
         "eligible": true,
         "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
+        "confidence": "official_rules",
+        "notes": "Age/prize eligibility not explicit on public page - asterisk until verified"
       },
       "prize": {
-        "advertised_value": null,
-        "cash_value": null,
+        "advertised_value": 3000,
+        "cash_value": 3000,
         "credits_value": null,
         "hardware_value": null,
-        "normalized_value": null,
-        "headline_inflation": null
+        "normalized_value": 3000,
+        "headline_inflation": 0
       },
       "field": {
-        "registrations": 155,
+        "registrations": null,
         "family_prior": {
           "submissions_per_registration": 0.05,
           "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
         },
-        "field_status": "usable",
-        "estimated_serious_field": 31,
-        "field_p10": 20,
-        "field_p50": 31,
-        "field_p90": 48,
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "field_p10": null,
+        "field_p50": null,
+        "field_p90": null,
         "funnel": null
       },
       "slots": {
@@ -902,23 +1011,29 @@
         "p50": 6,
         "p90": 12
       },
+      "fit": {
+        "strategic_fit": 0,
+        "code_reuse": 0.4,
+        "effective_p80_hours": 24
+      },
       "score_v01": {
         "components": {
           "expected_prize_value": null,
-          "winnability": 90,
-          "organizer_quality": null
+          "winnability": null,
+          "historical_winner_quality": null,
+          "judging_tractability": 82,
+          "organizer_quality": 75
         },
-        "known_components": 1,
-        "opportunity_score": 63
+        "known_components": 2,
+        "opportunity_score": 71
       },
       "metrics": {
         "equal_share_naive": null,
         "fair_share_serious": null,
-        "days_left": 30
+        "days_left": 44
       },
       "cautions": [
-        "prize not published on platform card — see official page",
-        "prize pool not yet announced — rescore when tracks land"
+        "prize not published on platform card — see official page"
       ],
       "payout": {
         "paying_slots": {
@@ -926,33 +1041,34 @@
           "p50": 6,
           "p90": 12
         },
-        "baseline_any_payout": 0.194,
-        "p_paid": 0.194,
+        "baseline_any_payout": null,
+        "p_paid": null,
         "ev_cash_heuristic": null,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
         "action": "PREP",
-        "reason": "commit by 2026-09-08 · capped: prize unconfirmed",
+        "reason": "far out; latest safe start 2026-09-27",
         "feasibility": 1,
         "feasibility_label": "14d+",
-        "latest_safe_start": "2026-09-08",
+        "latest_safe_start": "2026-09-27",
         "p_finish_proxy": 1,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
           "hours_per_day": 4,
           "buffer_days": 2,
-          "reuse_fraction": 0
-        }
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 600
       },
       "mega": null,
-      "order_key": 30056.7,
-      "attention": 30056.7,
+      "order_key": 30063.9,
+      "attention": 30063.9,
       "attention_breakdown": {
         "action": "PREP",
-        "score": 63,
-        "formula": "PREP - commit by 2026-09-08 · capped: prize unconfirmed"
+        "score": 71,
+        "formula": "PREP - far out; latest safe start 2026-09-27"
       }
     }
   ]

@@ -58,7 +58,9 @@ const scoreNull = o.score_v01.opportunity_score == null;
       <tr><td>Finish-feasibility at deadline</td><td>{Math.round(o.decision.p_finish_proxy*100)}% <span style="color:var(--text-dim)">({o.decision.feasibility_label})</span></td></tr>
       <tr><td>P(any payout) if competitive entry</td><td>{o.payout.baseline_any_payout!=null? Math.round(o.payout.baseline_any_payout*100)+'%':'—'} <span style="color:var(--text-dim)">(assumes {o.payout.paying_slots.p50}-{o.payout.paying_slots.p90} slots)</span></td></tr>
       <tr><td>Heuristic cash EV</td><td>{o.payout.ev_cash_heuristic!=null? '$'+o.payout.ev_cash_heuristic.toLocaleString():'—'}</td></tr>
-      <tr><td>Build model</td><td>P50 {o.decision.build_model.p50_hours}h / P80 {o.decision.build_model.p80_hours}h at {o.decision.build_model.hours_per_day}h per day</td></tr>
+      <tr><td>Build model</td><td>P80 <strong>{o.fit.effective_p80_hours}h effective</strong> after {Math.round(o.fit.code_reuse*100)}% reuse <span style="color:var(--text-dim)">(raw {o.decision.build_model.p80_hours}h)</span></td></tr>
+      <tr><td>Strategic fit (agent reliability)</td><td>{Math.round(o.fit.strategic_fit*100)}%</td></tr>
+      <tr class="hl"><td>Opportunity cost of entering</td><td>${o.decision.opportunity_cost_usd.toLocaleString()} <span style="color:var(--text-dim)">({o.fit.effective_p80_hours}h x ${25}/h shadow rate)</span></td></tr>
       {o.decision.latest_safe_start && <tr><td>Latest safe start</td><td>{o.decision.latest_safe_start}</td></tr>}
     </table>
   </section>

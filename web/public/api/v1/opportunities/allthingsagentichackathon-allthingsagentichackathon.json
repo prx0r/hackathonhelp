@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
@@ -9,7 +9,7 @@
     "organizer": "All",
     "prize_usd": 180000,
     "prize_raw": "$180,000",
-    "registrants": 6982,
+    "registrants": 6990,
     "starts_at": null,
     "ends_at": null,
     "time_left": "9 days left",
@@ -24,7 +24,7 @@
     "source_url": "https://allthingsagentichackathon.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:31.884Z",
+    "observed_at": "2026-08-22T22:05:19.951Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -51,16 +51,16 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 6982,
+      "registrations": 6990,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 349,
-      "field_p10": 227,
-      "field_p50": 349,
-      "field_p90": 541,
+      "estimated_serious_field": 350,
+      "field_p10": 228,
+      "field_p50": 350,
+      "field_p90": 543,
       "funnel": null
     },
     "slots": {
@@ -68,12 +68,17 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 25.78,
-      "fair_share_serious": 515.76,
+      "equal_share_naive": 25.75,
+      "fair_share_serious": 514.29,
       "days_left": null
     },
     "cautions": [],
@@ -85,7 +90,7 @@
       },
       "baseline_any_payout": 0.017,
       "p_paid": 0.017,
-      "ev_cash_heuristic": 3095,
+      "ev_cash_heuristic": 3086,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
@@ -100,8 +105,9 @@
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
     "order_key": -100,

@@ -1,0 +1,151 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:17:35.422Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "man-ai-genesis-2026",
+    "slug": "ai-genesis-2026",
+    "title": "AI GENESIS 2026",
+    "organizer": "lablab.ai x /function1 Dubai",
+    "prize_usd": null,
+    "prize_raw": "tracks not finalized",
+    "registrants": 1104,
+    "starts_at": "2026-10-26",
+    "ends_at": "2026-11-03",
+    "time_left": null,
+    "location_type": "online",
+    "location": "Hybrid - Dubai onsite selected",
+    "themes": [
+      "ai",
+      "multimodal",
+      "agentic-workflows"
+    ],
+    "open_to_all": true,
+    "source_url": "https://lablab.ai/ai-hackathons/ai-genesis-2026",
+    "source": "manual",
+    "source_authority": "official_rules",
+    "observed_at": "2026-08-22T22:05:29.573Z",
+    "manual": {
+      "prize_breakdown": {
+        "advertised": null,
+        "cash": null,
+        "credits": null,
+        "_note": "tracks not finalized"
+      },
+      "eligibility_note": null,
+      "field_note": null,
+      "judging": null,
+      "organizer_quality": 0.82,
+      "technical_depth_prior": "high",
+      "family_prior_override": {
+        "submissions_per_registration": 0.053,
+        "source": "prior edition: 4,841 reg -> 258 final apps (5.3%)"
+      }
+    },
+    "days_left": 73,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "official_rules",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 1104,
+      "family_prior": {
+        "submissions_per_registration": 0.053,
+        "source": "AI Genesis recap: 4841 reg -> 258 final apps"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 59,
+      "field_p10": 38,
+      "field_p50": 59,
+      "field_p90": 91,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 44,
+        "historical_winner_quality": 85,
+        "judging_tractability": null,
+        "organizer_quality": 82
+      },
+      "known_components": 3,
+      "opportunity_score": 72
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 73
+    },
+    "cautions": [
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.102,
+      "p_paid": 0.102,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-10-23",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
+    },
+    "mega": null,
+    "order_key": 20064.8,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 72,
+      "formula": "WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/ai-genesis-2026",
+    "official": "https://lablab.ai/ai-hackathons/ai-genesis-2026",
+    "changes": "/api/v1/changes.json"
+  }
+}

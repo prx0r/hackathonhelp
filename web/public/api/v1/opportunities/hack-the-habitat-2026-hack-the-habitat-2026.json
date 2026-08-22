@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hack-the-habitat-2026-hack-the-habitat-2026",
@@ -24,7 +24,7 @@
     "source_url": "https://hack-the-habitat-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.732Z",
+    "observed_at": "2026-08-22T22:05:20.826Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 55,
-        "winnability": 19,
+        "expected_prize_value": 74,
+        "winnability": 51,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 35
+      "opportunity_score": 54
     },
     "metrics": {
       "equal_share_naive": 6.25,
@@ -104,15 +111,16 @@
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20031.5,
+    "order_key": 20048.6,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 35,
+      "score": 54,
       "formula": "WATCH - deadline not published"
     }
   },

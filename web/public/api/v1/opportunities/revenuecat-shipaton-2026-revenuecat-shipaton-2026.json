@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
@@ -9,7 +9,7 @@
     "organizer": "RevenueCat",
     "prize_usd": 740000,
     "prize_raw": "$740,000",
-    "registrants": 19455,
+    "registrants": 19461,
     "starts_at": "2026-07-31T00:00:00.000Z",
     "ends_at": "2026-10-01T23:59:00.000Z",
     "time_left": "about 1 month left",
@@ -24,7 +24,7 @@
     "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:31.883Z",
+    "observed_at": "2026-08-22T22:05:19.951Z",
     "days_left": 41,
     "gates": {
       "registration_open": true,
@@ -51,7 +51,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 19455,
+      "registrations": 19461,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -68,11 +68,16 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 38.04,
+      "equal_share_naive": 38.02,
       "fair_share_serious": 760.53,
       "days_left": 41
     },
@@ -93,15 +98,16 @@
       "reason": "eligibility gate failed",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-19",
+      "latest_safe_start": "2026-09-20",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
     "order_key": -100,

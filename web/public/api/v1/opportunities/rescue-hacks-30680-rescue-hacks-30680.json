@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-rescue-hacks-30680-rescue-hacks-30680",
@@ -24,7 +24,7 @@
     "source_url": "https://rescue-hacks-30680.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.934Z",
+    "observed_at": "2026-08-22T22:05:21.012Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 25,
+        "winnability": 52,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 11
+      "opportunity_score": 33
     },
     "metrics": {
       "equal_share_naive": null,
@@ -107,15 +114,16 @@
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20009.9,
+    "order_key": 20029.7,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 11,
+      "score": 33,
       "formula": "WATCH - deadline not published · capped: prize unconfirmed"
     }
   },

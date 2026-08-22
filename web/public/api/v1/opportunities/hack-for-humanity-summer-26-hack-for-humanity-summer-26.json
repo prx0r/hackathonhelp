@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hack-for-humanity-summer-26-hack-for-humanity-summer-26",
@@ -24,7 +24,7 @@
     "source_url": "https://hack-for-humanity-summer-26.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.392Z",
+    "observed_at": "2026-08-22T22:05:20.477Z",
     "days_left": 14,
     "gates": {
       "registration_open": true,
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 20,
-        "winnability": 26,
+        "expected_prize_value": 25,
+        "winnability": 45,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 20
+      "opportunity_score": 28
     },
     "metrics": {
       "equal_share_naive": 0.09,
@@ -97,22 +104,23 @@
       "reason": "weak opportunity for remaining time",
       "feasibility": 0.97,
       "feasibility_label": "10-14d",
-      "latest_safe_start": "2026-08-23",
+      "latest_safe_start": "2026-08-24",
       "p_finish_proxy": 0.97,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": -82,
+    "order_key": -74.8,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 20,
+      "score": 28,
       "formula": "SKIP - weak opportunity for remaining time"
     }
   },

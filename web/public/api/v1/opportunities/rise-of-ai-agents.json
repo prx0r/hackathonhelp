@@ -1,0 +1,155 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:17:35.422Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "man-rise-of-ai-agents",
+    "slug": "rise-of-ai-agents",
+    "title": "The Rise of AI Agents Hackathon",
+    "organizer": "lablab.ai x Dubai AI Week",
+    "prize_usd": 9000,
+    "prize_raw": "Vultr $5k+$3k+$1k CASH + Gemini GCP credits $25k/$15k/$10k",
+    "registrants": 629,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": null,
+    "location_type": "online",
+    "location": "Hybrid - Dubai onsite by invitation",
+    "themes": [
+      "ai-agents",
+      "autonomous-agents",
+      "multi-step-workflows"
+    ],
+    "open_to_all": true,
+    "source_url": "https://lablab.ai/ai-hackathons/the-rise-of-ai-agents-hackathon",
+    "source": "manual",
+    "source_authority": "official_rules",
+    "observed_at": "2026-08-22T22:05:29.573Z",
+    "manual": {
+      "prize_breakdown": {
+        "advertised": 62000,
+        "cash": 9000,
+        "credits": 53000,
+        "_note": "Vultr $5k+$3k+$1k CASH + Gemini GCP credits $25k/$15k/$10k"
+      },
+      "eligibility_note": null,
+      "field_note": null,
+      "judging": null,
+      "organizer_quality": 0.8,
+      "technical_depth_prior": null,
+      "family_prior_override": null
+    },
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "official_rules",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 62000,
+      "cash_value": 9000,
+      "credits_value": 53000,
+      "hardware_value": null,
+      "normalized_value": 22250,
+      "headline_inflation": 64
+    },
+    "field": {
+      "registrations": 629,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 50,
+      "field_p10": 33,
+      "field_p50": 50,
+      "field_p90": 78,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "fit": {
+      "strategic_fit": 0.22,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 50,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": 80
+      },
+      "known_components": 3,
+      "opportunity_score": 74
+    },
+    "metrics": {
+      "equal_share_naive": 98.57,
+      "fair_share_serious": 445,
+      "days_left": null
+    },
+    "cautions": [
+      "64% of headline is non-cash"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.12,
+      "p_paid": 0.12,
+      "ev_cash_heuristic": 2670,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "deadline not published",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$445 normalized prize per estimated submission",
+        "⚠ 64% of headline is non-cash"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 20081.6,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 74,
+      "formula": "WATCH - deadline not published"
+    }
+  },
+  "links": {
+    "html": "/opps/rise-of-ai-agents",
+    "official": "https://lablab.ai/ai-hackathons/the-rise-of-ai-agents-hackathon",
+    "changes": "/api/v1/changes.json"
+  }
+}

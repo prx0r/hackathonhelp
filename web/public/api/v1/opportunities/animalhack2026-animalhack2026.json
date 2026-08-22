@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-animalhack2026-animalhack2026",
@@ -9,7 +9,7 @@
     "organizer": "AnimalHack",
     "prize_usd": null,
     "prize_raw": "",
-    "registrants": 176,
+    "registrants": 177,
     "starts_at": "2026-06-14T00:00:00.000Z",
     "ends_at": "2026-09-12T23:59:00.000Z",
     "time_left": "21 days left",
@@ -24,7 +24,7 @@
     "source_url": "https://animalhack2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.732Z",
+    "observed_at": "2026-08-22T22:05:20.825Z",
     "days_left": 22,
     "gates": {
       "registration_open": true,
@@ -49,7 +49,7 @@
       "headline_inflation": null
     },
     "field": {
-      "registrations": 176,
+      "registrations": 177,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -66,14 +66,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 63,
+        "winnability": 51,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 41
+      "opportunity_score": 32
     },
     "metrics": {
       "equal_share_naive": null,
@@ -100,22 +107,23 @@
       "reason": "marginal — recheck as field matures · capped: prize unconfirmed",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-08-31",
+      "latest_safe_start": "2026-09-01",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20036.9,
+    "order_key": 20028.8,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 41,
+      "score": 32,
       "formula": "WATCH - marginal — recheck as field matures · capped: prize unconfirmed"
     }
   },

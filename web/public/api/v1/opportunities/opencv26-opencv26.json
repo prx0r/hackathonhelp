@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-opencv26-opencv26",
@@ -9,7 +9,7 @@
     "organizer": "OpenCV",
     "prize_usd": 12000,
     "prize_raw": "$12,000",
-    "registrants": 543,
+    "registrants": 544,
     "starts_at": "2026-08-26T00:00:00.000Z",
     "ends_at": "2026-10-27T23:59:00.000Z",
     "time_left": "Upcoming",
@@ -24,7 +24,7 @@
     "source_url": "https://opencv26.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:33.286Z",
+    "observed_at": "2026-08-22T22:05:21.402Z",
     "days_left": 67,
     "gates": {
       "registration_open": true,
@@ -49,16 +49,16 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 543,
+      "registrations": 544,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 43,
-      "field_p10": 28,
-      "field_p50": 43,
-      "field_p90": 67,
+      "estimated_serious_field": 44,
+      "field_p10": 29,
+      "field_p50": 44,
+      "field_p90": 68,
       "funnel": null
     },
     "slots": {
@@ -66,18 +66,25 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.45,
+      "effective_p80_hours": 22
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 85,
-        "winnability": 90,
+        "expected_prize_value": 100,
+        "winnability": 50,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 72
+      "opportunity_score": 67
     },
     "metrics": {
-      "equal_share_naive": 22.1,
-      "fair_share_serious": 279.07,
+      "equal_share_naive": 22.06,
+      "fair_share_serious": 272.73,
       "days_left": 67
     },
     "cautions": [],
@@ -87,39 +94,40 @@
         "p50": 6,
         "p90": 12
       },
-      "baseline_any_payout": 0.14,
-      "p_paid": 0.14,
-      "ev_cash_heuristic": 1674,
+      "baseline_any_payout": 0.136,
+      "p_paid": 0.136,
+      "ev_cash_heuristic": 1636,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "PREP",
-      "reason": "far out; latest safe start 2026-10-15",
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-10-19",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-10-15",
+      "latest_safe_start": "2026-10-19",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 550
     },
     "mega": {
       "score": 35,
       "reasons": [
-        "$279.07 normalized prize per estimated submission"
+        "$272.73 normalized prize per estimated submission"
       ],
       "category": "value_competition_gap"
     },
-    "order_key": 30079.8,
-    "attention": 30079.8,
+    "order_key": 20075.3,
+    "attention": -1,
     "attention_breakdown": {
-      "action": "PREP",
-      "score": 72,
-      "formula": "PREP - far out; latest safe start 2026-10-15"
+      "action": "WATCH",
+      "score": 67,
+      "formula": "WATCH - far out; latest safe start 2026-10-19"
     }
   },
   "links": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T21:30:37.335Z",
+    "observed_at": "2026-08-22T22:05:24.104Z",
     "eligibility_flags": [
       "Undergraduate",
       "Postgraduate",
@@ -68,14 +68,21 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
-        "expected_prize_value": 20,
-        "winnability": 15,
+        "expected_prize_value": 25,
+        "winnability": 52,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 17
+      "opportunity_score": 30
     },
     "metrics": {
       "equal_share_naive": 0.01,
@@ -99,22 +106,23 @@
       "reason": "weak opportunity for remaining time",
       "feasibility": 0.65,
       "feasibility_label": "3-5d",
-      "latest_safe_start": "2026-08-14",
+      "latest_safe_start": "2026-08-15",
       "p_finish_proxy": 0.65,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": -84.7,
+    "order_key": -73,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 17,
+      "score": 30,
       "formula": "SKIP - weak opportunity for remaining time"
     }
   },

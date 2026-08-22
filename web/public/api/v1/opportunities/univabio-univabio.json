@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:00:22.242Z",
+  "generated_at": "2026-08-22T22:17:35.422Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-univabio-univabio",
@@ -9,7 +9,7 @@
     "organizer": "UnivaBio",
     "prize_usd": 35845,
     "prize_raw": "$35,845",
-    "registrants": 198,
+    "registrants": 199,
     "starts_at": "2026-08-07T00:00:00.000Z",
     "ends_at": "2026-10-06T23:59:00.000Z",
     "time_left": "about 2 months left",
@@ -24,7 +24,7 @@
     "source_url": "https://univabio.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T21:30:32.732Z",
+    "observed_at": "2026-08-22T22:05:20.825Z",
     "days_left": 46,
     "gates": {
       "registration_open": true,
@@ -49,7 +49,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 198,
+      "registrations": 199,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -66,17 +66,24 @@
       "p50": 6,
       "p90": 12
     },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.1,
+      "effective_p80_hours": 36
+    },
     "score_v01": {
       "components": {
         "expected_prize_value": null,
         "winnability": null,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 0,
-      "opportunity_score": 0
+      "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 181.04,
+      "equal_share_naive": 180.13,
       "fair_share_serious": null,
       "days_left": 46
     },
@@ -93,19 +100,20 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "WATCH",
-      "reason": "far out; latest safe start 2026-09-24",
+      "action": "SKIP",
+      "reason": "unscoreable",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-24",
+      "latest_safe_start": "2026-09-25",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
         "hours_per_day": 4,
         "buffer_days": 2,
-        "reuse_fraction": 0
-      }
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 900
     },
     "mega": {
       "score": 30,
@@ -114,12 +122,12 @@
       ],
       "category": "high_fair_share"
     },
-    "order_key": 20015,
+    "order_key": -85,
     "attention": -1,
     "attention_breakdown": {
-      "action": "WATCH",
-      "score": 0,
-      "formula": "WATCH - far out; latest safe start 2026-09-24"
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - unscoreable"
     }
   },
   "links": {
