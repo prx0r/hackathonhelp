@@ -1,0 +1,22 @@
+{
+  "slug":"ai-infra-summit-hackathon",
+  "extracted_via":"operator_verified_2026-08-23",
+  "eligibility":{"open_to_all":true,"student_only":false,"age_restricted":false,"online_participation":true},
+  "tracks":[
+    {"name":"Intel Bimanual VLA (online)","prize_usd":[2000,1500,1000],"source":"https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon"}
+  ],
+  "required_tech":["modern AI infrastructure stack"],
+  "optional_sponsor_tech":["Intel","Qualcomm","SiMa.ai","Speechmatics"],
+  "judging":{"application_of_technology":"HIGH","business_value":"HIGH","originality":"HIGH","presentation":"LOW"},
+  "deliverables":["working demo","public repo","app URL"],
+  "originality":{"new_project_required":"UNKNOWN","preexisting_code_allowed":"UNKNOWN","disclosure_required":true},
+  "team":{"solo_ok":true,"max_size":null},
+  "submission":{"deadline":"2026-09-17","platform":"lablab.ai"},
+  "build_window":{"start":"2026-09-10","end":"2026-09-17"},
+  "requirement_vector":{
+    "production_grade":"HIGH","ai_infrastructure":"REQUIRED",
+    "agents":"GOOD_FIT","multimodal":"GOOD_FIT","optimization":"GOOD_FIT",
+    "online":true,"sponsor_tracks_announced":false
+  },
+  "sources":[{"url":"https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon","authority":"official","observed_at":"2026-08-23"}]
+}

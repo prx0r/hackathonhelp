@@ -179,6 +179,19 @@ let rows = seed.opportunities.map(o => applyGates(o))
 const SKILL_EDGE = 1.1;   // strong-builder prior until personal profile exists
 const SLOTS_DEFAULT = { p10:3, p50:6, p90:12 };
 const PROFILE = JSON.parse(fs.readFileSync(path.join(ROOT,'data/builder-profile.json'),'utf8'));
+
+// ---- HackathonContracts (v0.3): extracted via hermes, deterministically validated ----
+const CONTRACT_DIR=path.join(ROOT,'data/contracts');
+function loadContract(r){
+  try{
+    const f=path.join(CONTRACT_DIR,`${r.slug}.json`);
+    if(fs.existsSync(f)){
+      const c=JSON.parse(fs.readFileSync(f,'utf8'));
+      if(c.slug===r.slug && c.validated) return c;
+    }
+  }catch{}
+  return null;
+}
 // ---- CONFIG: build model (replaced by reference-class history later) ----
 const BUILD = { p50_hours:25, p80_hours:40, hours_per_day:4, buffer_days:2,
   shadow_hour_value_usd:PROFILE.shadow_hour_value_usd };
@@ -210,7 +223,16 @@ function strategicFit(r){
 for (const r of rows){
   const slotsKnown = false;          // ladder data not yet collected from pages
   r.slots = slotsKnown ? null : SLOTS_DEFAULT;
-  r.fit={ strategic_fit:+strategicFit(r).toFixed(2),
+  const contract=loadContract(r);
+  if(contract){
+    // requirement-vector overlap with builder thesis tags (deterministic)
+    const rv=contract.requirement_vector||{};
+    const reqTags=Object.entries(rv).filter(([k,v])=>v==='REQUIRED'||v==='HIGH').map(([k])=>k);
+    const thesisHits=reqTags.filter(k=>PROFILE.thesis_tags.some(t=>k.includes(t)||t.includes(k)));
+    contract.fit_boost=Math.min(0.25, thesisHits.length*0.08);
+    r.contract=contract;
+  }
+  r.fit={ strategic_fit:+Math.min(1,strategicFit(r)+(contract?.fit_boost??0)).toFixed(2),
     code_reuse:+eventReuse(r).toFixed(2),
     effective_p80_hours:Math.max(4,Math.round(BUILD.p80_hours*(1-eventReuse(r)))) };
   r.score_v01 = r.eligibility.eligible ? computeScore(r, r.prize, r.field) : {opportunity_score:null};
@@ -428,6 +450,52 @@ fs.writeFileSync(path.join(ROOT,'web/public/sitemap.xml'),
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(u=>`<url><loc>https://hackathonhelp.pages.dev${u}</loc></url>`).join('\n')}
 </urlset>`);
+
+// ---------- PORTFOLIO PLANNER (v0.3) ----------
+// Chain value: consecutive events with overlapping requirements make each next
+// entry cheaper. Reuse% estimated from shared requirement vectors + thesis tags.
+function reqTags(r){
+  const fromContract=Object.entries(r.contract?.requirement_vector||{})
+    .filter(([k,v])=>v==='REQUIRED'||v==='HIGH').map(([k])=>k);
+  const themes=(r.themes||[]).map(t=>t.toLowerCase());
+  return [...new Set([...fromContract,...themes,...PROFILE.thesis_tags.filter(t=>(r.title||'').toLowerCase().includes(t))])];
+}
+function pairReuse(a,b){
+  const A=new Set(reqTags(a)), B=new Set(reqTags(b));
+  if(!A.size||!B.size) return PROFILE.reuse_by_event._default+0.15;
+  const inter=[...A].filter(x=>B.has(x)).length;
+  return Math.min(0.85, +(0.25 + 0.6*inter/Math.max(A.size,B.size)).toFixed(2));
+}
+const chainEvents=rows.filter(r=>r.eligibility.eligible && r.status!=='ended'
+    && ['ENTER NOW','SPRINT','PREP','WATCH'].includes(r.decision.action))
+  .sort((a,b)=>{
+    const da=a.metrics.days_left??999, db=b.metrics.days_left??999;
+    // order by deadline, but rank strong-fit first within similar windows
+    return da-db || b.order_key-a.order_key;
+  })
+  .filter(r=>r.fit.strategic_fit>=0.3 || r.decision.action==='ENTER NOW')
+  .slice(0,8);
+
+const portfolio={specialism:PROFILE.specialism,
+  generated_at:payload.generated_at,
+  path:chainEvents.map((r,i)=>({
+    step:i+1, slug:r.slug, title:r.title, action:r.decision.action,
+    deadline:r.ends_at, days_left:r.metrics.days_left,
+    opportunity_score:r.score_v01.opportunity_score,
+    strategic_fit:+r.fit.strategic_fit.toFixed(2),
+    effective_p80_hours:r.fit.effective_p80_hours,
+    unique_work_remaining: r.contract? Object.keys(r.contract.required_tech||{}).length+' hard requirements' : 'per official page',
+  })),
+  reuse_between:[]
+};
+for(let i=1;i<portfolio.path.length;i++){
+  const a=rows.find(r=>r.slug===portfolio.path[i-1].slug);
+  const b=rows.find(r=>r.slug===portfolio.path[i].slug);
+  portfolio.reuse_between.push({from:portfolio.path[i-1].slug,to:portfolio.path[i].slug,reuse_pct:Math.round(pairReuse(a,b)*100)});
+}
+payload.portfolio=portfolio;
+fs.writeFileSync(path.join(ROOT,'web/public/api/v1/portfolio.json'), JSON.stringify(portfolio,null,2));
+fs.writeFileSync(path.join(ROOT,'web/src/data/derived.json'), JSON.stringify(payload,null,2)); // refresh with portfolio
 
 // api docs payload for /api page
 fs.writeFileSync(path.join(ROOT,'web/src/data/apidocs.json'), JSON.stringify({generated_at:payload.generated_at,endpoints:[

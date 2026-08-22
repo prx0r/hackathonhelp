@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:17:35.422Z",
+  "generated_at": "2026-08-22T22:52:38.771Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-opencv26-opencv26",
@@ -65,6 +65,119 @@
       "p10": 3,
       "p50": 6,
       "p90": 12
+    },
+    "contract": {
+      "slug": "opencv26-opencv26",
+      "eligibility": {
+        "open_to_all": "FALSE",
+        "student_only": "UNKNOWN",
+        "age_restricted": "TRUE",
+        "min_age": null,
+        "countries_restricted": [
+          "Brazil",
+          "Crimea",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Quebec",
+          "Russia"
+        ],
+        "online_participation": "TRUE",
+        "team_required": "TRUE",
+        "max_team_size": null
+      },
+      "tracks": [
+        {
+          "name": "Cloud-Optimized Vision with COOL",
+          "prize_usd": 1000
+        },
+        {
+          "name": "Agentic Vision with OpenCV 5",
+          "prize_usd": 1000
+        }
+      ],
+      "required_tech": [
+        "OpenCV 5",
+        "AWS"
+      ],
+      "optional_sponsor_tech": [
+        "COOL (Cloud-Optimized OpenCV Library)"
+      ],
+      "judging": {
+        "Technical execution": "30%",
+        "Innovation": "20%",
+        "Real-world impact": "20%",
+        "User experience": "10%",
+        "Documentation and presentation": "10%",
+        "Cloud delivery, reproducibility, and responsible operation": "10%"
+      },
+      "deliverables": [
+        "technical report",
+        "code repository or archive",
+        "build, deployment, and test instructions",
+        "architecture diagram",
+        "working web endpoint or live demonstration",
+        "video (no more than 5 minutes)",
+        "evaluation evidence"
+      ],
+      "originality": {
+        "new_project_required": "UNKNOWN",
+        "preexisting_code_allowed": "UNKNOWN",
+        "disclosure_required": "UNKNOWN"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "First Place Grand Prize",
+          "cash_usd": 5000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Second Place",
+          "cash_usd": 3000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Third Place",
+          "cash_usd": 2000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Best Use of COOL Award",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Agentic Vision Award",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        }
+      ],
+      "build_window": {
+        "start": "2026-08-26",
+        "end": "2026-10-26"
+      },
+      "sources": [
+        {
+          "url": "https://opencv26.devpost.com/",
+          "quote": "All countries/territories, excluding standard exceptions (Brazil, Crimea, Cuba, Iran, North Korea, Quebec, Russia)"
+        },
+        {
+          "url": "https://opencv26.devpost.com/",
+          "quote": "From August 26 through October 26, all teams that submitted the required proposal will build, evaluate, document, and submit their final projects."
+        },
+        {
+          "url": "https://opencv26.devpost.com/",
+          "quote": "Every entry must use OpenCV 5 for substantive image or video analysis and run a meaningful component on AWS."
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
     },
     "fit": {
       "strategic_fit": 0,

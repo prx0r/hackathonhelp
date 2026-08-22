@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:17:35.422Z",
+  "generated_at": "2026-08-22T22:52:38.771Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-telegraph-h1",
@@ -79,6 +79,153 @@
       "p10": 3,
       "p50": 6,
       "p90": 12
+    },
+    "contract": {
+      "slug": "telegraph-h1",
+      "eligibility": {
+        "open_to_all": "TRUE",
+        "student_only": "FALSE",
+        "age_restricted": "UNKNOWN",
+        "min_age": null,
+        "countries_restricted": [],
+        "online_participation": "TRUE",
+        "team_required": "UNKNOWN",
+        "max_team_size": null
+      },
+      "tracks": [
+        {
+          "name": "Miner Track",
+          "prize_usd": 2000
+        },
+        {
+          "name": "Script Author Track",
+          "prize_usd": 1000
+        },
+        {
+          "name": "Application Track",
+          "prize_usd": 2000
+        }
+      ],
+      "required_tech": [
+        "Telegraph protocol"
+      ],
+      "optional_sponsor_tech": [],
+      "judging": {
+        "Normalized Performance (within Intent)": "75%",
+        "Engagement & Updates on X": "25%",
+        "Telegraph's automated eval of script": "HIGH",
+        "Accuracy of miner rankings produced": "HIGH",
+        "Resistance to gaming": "HIGH",
+        "Users acquired & activity": "HIGH",
+        "Usage and adoption": "HIGH",
+        "Creativity and usefulness": "HIGH",
+        "Must use Telegraph miners": "HIGH"
+      },
+      "deliverables": [
+        "live Miner integration",
+        "evaluation script",
+        "working application or agent",
+        "X posts with progress updates",
+        "Discord participation"
+      ],
+      "originality": {
+        "new_project_required": "UNKNOWN",
+        "preexisting_code_allowed": "UNKNOWN",
+        "disclosure_required": "UNKNOWN"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "Miner Track 1st",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Miner Track 2nd",
+          "cash_usd": 600,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Miner Track 3rd",
+          "cash_usd": 400,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Script Author Track 1st",
+          "cash_usd": 500,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Script Author Track 2nd",
+          "cash_usd": 300,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Script Author Track 3rd",
+          "cash_usd": 200,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Application Track 1st",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Application Track 2nd",
+          "cash_usd": 600,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Application Track 3rd",
+          "cash_usd": 400,
+          "credits_usd": null,
+          "other": null
+        }
+      ],
+      "build_window": {
+        "start": "2026-08-17",
+        "end": "2026-09-07T12:00:00Z"
+      },
+      "sources": [
+        {
+          "url": "https://hackathon.telegraphprotocol.com/",
+          "quote": "SEASON I · 2026 · OPEN TO ANY DEVELOPER"
+        },
+        {
+          "url": "https://hackathon.telegraphprotocol.com/rules",
+          "quote": "TOTAL PRIZE POOL $5,000 USD"
+        },
+        {
+          "url": "https://hackathon.telegraphprotocol.com/rules",
+          "quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent) 25 points — X Engagement & Transparency"
+        },
+        {
+          "url": "https://hackathon.telegraphprotocol.com/rules",
+          "quote": "Applications in Track 3 must use real Telegraph Miners. Simulated or mocked data is not allowed."
+        },
+        {
+          "url": "https://hackathon.telegraphprotocol.com/rules",
+          "quote": "All participants must join the official Hackathon Discord."
+        },
+        {
+          "url": "https://hackathon.telegraphprotocol.com/rules",
+          "quote": "All updates used for judging must be publicly posted on X and properly tagged."
+        },
+        {
+          "url": "https://hackathon.telegraphprotocol.com/",
+          "quote": "SEP 7, 2026 · 12:00 UTC · SUBMISSIONS CLOSE"
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
     },
     "fit": {
       "strategic_fit": 1,

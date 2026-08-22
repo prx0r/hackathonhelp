@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import derived from '../data/derived.json';
+const portfolio = derived.portfolio;
 
 
 
@@ -65,6 +66,17 @@ const tableRows = JSON.stringify(open.map(o=>({
   days:o.metrics.days_left, loc:o.location_type, themes:o.themes.join(' '), status:o.status,
 })));
 
+const pathHtml = portfolio.path.map((step,i) => {
+  const link = i>0 && portfolio.reuse_between[i-1]
+    ? '<div class="path-link">↓ carries ~'+portfolio.reuse_between[i-1].reuse_pct+'% work</div>'
+    : '';
+  return link+'<a href="/opps/'+step.slug+'" class="path-node">'+
+    '<span class="path-step">'+(i+1)+'</span>'+
+    '<span class="path-title">'+esc(step.title)+'</span>'+
+    '<span class="path-meta">'+step.action+' · '+(step.days_left??'?')+'d · fit '+Math.round(step.strategic_fit*100)+'% · '+step.effective_p80_hours+'h eff.</span>'+
+    '</a>';
+}).join('');
+
 const tilesHtml = open.map(o => {
   const c = timeColor(daysLeft(o));
   const score = o.score_v01.opportunity_score;
@@ -98,6 +110,14 @@ const tilesHtml = open.map(o => {
     <div class="eyebrow">Opportunity intelligence for builders</div>
     <h1>Hackathons worth entering</h1>
     <p class="subtitle">Tracking {derived.counts.opportunities} events for online individual builders — no student-only, no age-gated noise. Prize pools normalized to real cash, fields estimated from historical submission rates, so you see expected value per serious competitor, not headline numbers. Updated {new Date().toISOString().slice(0,10)}.</p>
+  </section>
+
+  <section class="spotlight-card" style="margin-bottom:48px;padding:24px">
+    <div class="spotlight-badge" style="margin-bottom:10px">Portfolio planner</div>
+    <h2 style="font-size:20px;margin-bottom:6px">Best path: {portfolio.specialism}</h2>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Each event compounds the same specialism — effective hours drop as reusable assets accumulate.</p>
+    <div class="path" set:html={pathHtml} />
+
   </section>
 
   <section style="margin-bottom:48px">

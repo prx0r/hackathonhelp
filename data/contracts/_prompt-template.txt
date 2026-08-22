@@ -1,0 +1,20 @@
+You are extracting a structured HackathonContract from an official hackathon page.
+URL: {URL}
+
+Fetch/read the page. Extract ONLY what the page supports. Use "UNKNOWN" for anything not stated.
+Return ONLY this JSON (no markdown, no commentary):
+
+{
+ "slug":"{SLUG}",
+ "eligibility":{"open_to_all":"TRUE|FALSE|UNKNOWN","student_only":"...","age_restricted":"...","min_age":null,"countries_restricted":[],"online_participation":"...","team_required":"...","max_team_size":null},
+ "tracks":[{"name":"...","prize_usd":null}],
+ "required_tech":["only tech explicitly required"],
+ "optional_sponsor_tech":["sponsor tools mentioned"],
+ "judging":{"criterion_name":"weight-or-HIGH|MEDIUM|LOW"},
+ "deliverables":["demo","repo",...],
+ "originality":{"new_project_required":"...","preexisting_code_allowed":"...","disclosure_required":"..."},
+ "prizes":[{"rank_or_track":"...","cash_usd":null,"credits_usd":null,"other":"..."}],
+ "build_window":{"start":null,"end":null},
+ "sources":[{"url":"the official url you read","quote":"exact sentence supporting the most important claim"}]
+}
+Rules: numbers as numbers when known; strings "TRUE"/"FALSE"/"UNKNOWN" elsewhere; never guess.

@@ -1,0 +1,24 @@
+{
+  "slug":"amd-developer-hackathon-act-iii",
+  "extracted_via":"operator_verified_2026-08-23",
+  "eligibility":{"open_to_all":true,"student_only":false,"age_restricted":false,"online_participation":true,"amd_ai_developer_program_signup":true},
+  "tracks":[{"name":"AI agents/apps on AMD infrastructure","prize_usd":null}],
+  "required_tech":["AMD GPU (central)","ROCm (central)"],
+  "optional_sponsor_tech":["AMD cloud (supplied)"],
+  "judging":{"technical_depth":"HIGH","performance":"VALUABLE"},
+  "deliverables":["working project","repo"],
+  "originality":{"new_project_required":"UNKNOWN","preexisting_code_allowed":"UNKNOWN","disclosure_required":"UNKNOWN"},
+  "team":{"solo_ok":true,"max_size":null},
+  "submission":{"deadline":"2026-10-17","platform":"lablab.ai"},
+  "build_window":{"start":"2026-10-12","end":"2026-10-17"},
+  "historical_family":{
+    "prior_editions":[
+      {"participants":10775,"teams":2619,"submissions":481},
+      {"participants":20728,"teams":4890,"submissions":1151}
+    ],
+    "submission_per_registration":0.056,
+    "technical_depth_prior":"high"
+  },
+  "requirement_vector":{"agent_or_app":"REQUIRED","amd_gpu":"REQUIRED","rocm":"REQUIRED","high_performance":"VALUABLE","cloud":"SUPPLIED","online":true},
+  "sources":[{"url":"https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii","authority":"official","observed_at":"2026-08-23"}]
+}

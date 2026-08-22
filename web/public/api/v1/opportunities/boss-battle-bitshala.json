@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T22:17:35.422Z",
+  "generated_at": "2026-08-22T22:52:38.771Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-boss-battle",
@@ -79,6 +79,87 @@
       "p10": 3,
       "p50": 6,
       "p90": 12
+    },
+    "contract": {
+      "slug": "boss-battle-bitshala",
+      "eligibility": {
+        "open_to_all": "TRUE",
+        "student_only": "UNKNOWN",
+        "age_restricted": "UNKNOWN",
+        "min_age": null,
+        "countries_restricted": [],
+        "online_participation": "TRUE",
+        "team_required": "TRUE",
+        "max_team_size": 3
+      },
+      "tracks": [
+        {
+          "name": "Machine Money",
+          "prize_usd": 1000
+        },
+        {
+          "name": "Freedom Stack",
+          "prize_usd": 1000
+        },
+        {
+          "name": "Cypherpunk",
+          "prize_usd": 1000
+        }
+      ],
+      "required_tech": [],
+      "optional_sponsor_tech": [],
+      "judging": {},
+      "deliverables": [],
+      "originality": {
+        "new_project_required": "UNKNOWN",
+        "preexisting_code_allowed": "UNKNOWN",
+        "disclosure_required": "UNKNOWN"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "Machine Money",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Freedom Stack",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        },
+        {
+          "rank_or_track": "Cypherpunk",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": null
+        }
+      ],
+      "build_window": {
+        "start": "2026-09-07",
+        "end": "2026-10-05"
+      },
+      "sources": [
+        {
+          "url": "https://boss-battle.devfolio.co/overview",
+          "quote": "BOSS Battle flips that: it's virtual, it's open, and it's a hackathon instead of a summit."
+        },
+        {
+          "url": "https://boss-battle.devfolio.co/prizes",
+          "quote": "PRIZE POOL $3,000 — Bitshala Upto $3,000 — TRACKS: $1,000: Machine Money, $1,000: Freedom Stack, $1,000: Cypherpunk"
+        },
+        {
+          "url": "https://boss-battle.devfolio.co/schedule",
+          "quote": "07 SEP 2026 (MON) 12:00 AM Hackathon starts — 05 OCT 2026 (MON) 11:59 PM Hackathon ends"
+        },
+        {
+          "url": "https://boss-battle.devfolio.co/overview",
+          "quote": "Team size: 1 - 3"
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
     },
     "fit": {
       "strategic_fit": 0,

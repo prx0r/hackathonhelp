@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T22:17:35.422Z",
+  "generated_at": "2026-08-22T22:52:38.771Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 154,
@@ -879,6 +879,153 @@
         "p50": 6,
         "p90": 12
       },
+      "contract": {
+        "slug": "telegraph-h1",
+        "eligibility": {
+          "open_to_all": "TRUE",
+          "student_only": "FALSE",
+          "age_restricted": "UNKNOWN",
+          "min_age": null,
+          "countries_restricted": [],
+          "online_participation": "TRUE",
+          "team_required": "UNKNOWN",
+          "max_team_size": null
+        },
+        "tracks": [
+          {
+            "name": "Miner Track",
+            "prize_usd": 2000
+          },
+          {
+            "name": "Script Author Track",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Application Track",
+            "prize_usd": 2000
+          }
+        ],
+        "required_tech": [
+          "Telegraph protocol"
+        ],
+        "optional_sponsor_tech": [],
+        "judging": {
+          "Normalized Performance (within Intent)": "75%",
+          "Engagement & Updates on X": "25%",
+          "Telegraph's automated eval of script": "HIGH",
+          "Accuracy of miner rankings produced": "HIGH",
+          "Resistance to gaming": "HIGH",
+          "Users acquired & activity": "HIGH",
+          "Usage and adoption": "HIGH",
+          "Creativity and usefulness": "HIGH",
+          "Must use Telegraph miners": "HIGH"
+        },
+        "deliverables": [
+          "live Miner integration",
+          "evaluation script",
+          "working application or agent",
+          "X posts with progress updates",
+          "Discord participation"
+        ],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Miner Track 1st",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Miner Track 2nd",
+            "cash_usd": 600,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Miner Track 3rd",
+            "cash_usd": 400,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Script Author Track 1st",
+            "cash_usd": 500,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Script Author Track 2nd",
+            "cash_usd": 300,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Script Author Track 3rd",
+            "cash_usd": 200,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Application Track 1st",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Application Track 2nd",
+            "cash_usd": 600,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Application Track 3rd",
+            "cash_usd": 400,
+            "credits_usd": null,
+            "other": null
+          }
+        ],
+        "build_window": {
+          "start": "2026-08-17",
+          "end": "2026-09-07T12:00:00Z"
+        },
+        "sources": [
+          {
+            "url": "https://hackathon.telegraphprotocol.com/",
+            "quote": "SEASON I · 2026 · OPEN TO ANY DEVELOPER"
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "TOTAL PRIZE POOL $5,000 USD"
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent) 25 points — X Engagement & Transparency"
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "Applications in Track 3 must use real Telegraph Miners. Simulated or mocked data is not allowed."
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "All participants must join the official Hackathon Discord."
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "All updates used for judging must be publicly posted on X and properly tagged."
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/",
+            "quote": "SEP 7, 2026 · 12:00 UTC · SUBMISSIONS CLOSE"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
+      },
       "fit": {
         "strategic_fit": 1,
         "code_reuse": 0.55,
@@ -1016,6 +1163,87 @@
         "p10": 3,
         "p50": 6,
         "p90": 12
+      },
+      "contract": {
+        "slug": "boss-battle-bitshala",
+        "eligibility": {
+          "open_to_all": "TRUE",
+          "student_only": "UNKNOWN",
+          "age_restricted": "UNKNOWN",
+          "min_age": null,
+          "countries_restricted": [],
+          "online_participation": "TRUE",
+          "team_required": "TRUE",
+          "max_team_size": 3
+        },
+        "tracks": [
+          {
+            "name": "Machine Money",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Freedom Stack",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Cypherpunk",
+            "prize_usd": 1000
+          }
+        ],
+        "required_tech": [],
+        "optional_sponsor_tech": [],
+        "judging": {},
+        "deliverables": [],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Machine Money",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Freedom Stack",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Cypherpunk",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          }
+        ],
+        "build_window": {
+          "start": "2026-09-07",
+          "end": "2026-10-05"
+        },
+        "sources": [
+          {
+            "url": "https://boss-battle.devfolio.co/overview",
+            "quote": "BOSS Battle flips that: it's virtual, it's open, and it's a hackathon instead of a summit."
+          },
+          {
+            "url": "https://boss-battle.devfolio.co/prizes",
+            "quote": "PRIZE POOL $3,000 — Bitshala Upto $3,000 — TRACKS: $1,000: Machine Money, $1,000: Freedom Stack, $1,000: Cypherpunk"
+          },
+          {
+            "url": "https://boss-battle.devfolio.co/schedule",
+            "quote": "07 SEP 2026 (MON) 12:00 AM Hackathon starts — 05 OCT 2026 (MON) 11:59 PM Hackathon ends"
+          },
+          {
+            "url": "https://boss-battle.devfolio.co/overview",
+            "quote": "Team size: 1 - 3"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
       },
       "fit": {
         "strategic_fit": 0,
@@ -1950,6 +2178,153 @@
         "p50": 6,
         "p90": 12
       },
+      "contract": {
+        "slug": "telegraph-h1",
+        "eligibility": {
+          "open_to_all": "TRUE",
+          "student_only": "FALSE",
+          "age_restricted": "UNKNOWN",
+          "min_age": null,
+          "countries_restricted": [],
+          "online_participation": "TRUE",
+          "team_required": "UNKNOWN",
+          "max_team_size": null
+        },
+        "tracks": [
+          {
+            "name": "Miner Track",
+            "prize_usd": 2000
+          },
+          {
+            "name": "Script Author Track",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Application Track",
+            "prize_usd": 2000
+          }
+        ],
+        "required_tech": [
+          "Telegraph protocol"
+        ],
+        "optional_sponsor_tech": [],
+        "judging": {
+          "Normalized Performance (within Intent)": "75%",
+          "Engagement & Updates on X": "25%",
+          "Telegraph's automated eval of script": "HIGH",
+          "Accuracy of miner rankings produced": "HIGH",
+          "Resistance to gaming": "HIGH",
+          "Users acquired & activity": "HIGH",
+          "Usage and adoption": "HIGH",
+          "Creativity and usefulness": "HIGH",
+          "Must use Telegraph miners": "HIGH"
+        },
+        "deliverables": [
+          "live Miner integration",
+          "evaluation script",
+          "working application or agent",
+          "X posts with progress updates",
+          "Discord participation"
+        ],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Miner Track 1st",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Miner Track 2nd",
+            "cash_usd": 600,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Miner Track 3rd",
+            "cash_usd": 400,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Script Author Track 1st",
+            "cash_usd": 500,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Script Author Track 2nd",
+            "cash_usd": 300,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Script Author Track 3rd",
+            "cash_usd": 200,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Application Track 1st",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Application Track 2nd",
+            "cash_usd": 600,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Application Track 3rd",
+            "cash_usd": 400,
+            "credits_usd": null,
+            "other": null
+          }
+        ],
+        "build_window": {
+          "start": "2026-08-17",
+          "end": "2026-09-07T12:00:00Z"
+        },
+        "sources": [
+          {
+            "url": "https://hackathon.telegraphprotocol.com/",
+            "quote": "SEASON I · 2026 · OPEN TO ANY DEVELOPER"
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "TOTAL PRIZE POOL $5,000 USD"
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent) 25 points — X Engagement & Transparency"
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "Applications in Track 3 must use real Telegraph Miners. Simulated or mocked data is not allowed."
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "All participants must join the official Hackathon Discord."
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/rules",
+            "quote": "All updates used for judging must be publicly posted on X and properly tagged."
+          },
+          {
+            "url": "https://hackathon.telegraphprotocol.com/",
+            "quote": "SEP 7, 2026 · 12:00 UTC · SUBMISSIONS CLOSE"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
+      },
       "fit": {
         "strategic_fit": 1,
         "code_reuse": 0.55,
@@ -2087,6 +2462,87 @@
         "p10": 3,
         "p50": 6,
         "p90": 12
+      },
+      "contract": {
+        "slug": "boss-battle-bitshala",
+        "eligibility": {
+          "open_to_all": "TRUE",
+          "student_only": "UNKNOWN",
+          "age_restricted": "UNKNOWN",
+          "min_age": null,
+          "countries_restricted": [],
+          "online_participation": "TRUE",
+          "team_required": "TRUE",
+          "max_team_size": 3
+        },
+        "tracks": [
+          {
+            "name": "Machine Money",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Freedom Stack",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Cypherpunk",
+            "prize_usd": 1000
+          }
+        ],
+        "required_tech": [],
+        "optional_sponsor_tech": [],
+        "judging": {},
+        "deliverables": [],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Machine Money",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Freedom Stack",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Cypherpunk",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          }
+        ],
+        "build_window": {
+          "start": "2026-09-07",
+          "end": "2026-10-05"
+        },
+        "sources": [
+          {
+            "url": "https://boss-battle.devfolio.co/overview",
+            "quote": "BOSS Battle flips that: it's virtual, it's open, and it's a hackathon instead of a summit."
+          },
+          {
+            "url": "https://boss-battle.devfolio.co/prizes",
+            "quote": "PRIZE POOL $3,000 — Bitshala Upto $3,000 — TRACKS: $1,000: Machine Money, $1,000: Freedom Stack, $1,000: Cypherpunk"
+          },
+          {
+            "url": "https://boss-battle.devfolio.co/schedule",
+            "quote": "07 SEP 2026 (MON) 12:00 AM Hackathon starts — 05 OCT 2026 (MON) 11:59 PM Hackathon ends"
+          },
+          {
+            "url": "https://boss-battle.devfolio.co/overview",
+            "quote": "Team size: 1 - 3"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
       },
       "fit": {
         "strategic_fit": 0,
@@ -2484,6 +2940,119 @@
         "p10": 3,
         "p50": 6,
         "p90": 12
+      },
+      "contract": {
+        "slug": "opencv26-opencv26",
+        "eligibility": {
+          "open_to_all": "FALSE",
+          "student_only": "UNKNOWN",
+          "age_restricted": "TRUE",
+          "min_age": null,
+          "countries_restricted": [
+            "Brazil",
+            "Crimea",
+            "Cuba",
+            "Iran",
+            "North Korea",
+            "Quebec",
+            "Russia"
+          ],
+          "online_participation": "TRUE",
+          "team_required": "TRUE",
+          "max_team_size": null
+        },
+        "tracks": [
+          {
+            "name": "Cloud-Optimized Vision with COOL",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Agentic Vision with OpenCV 5",
+            "prize_usd": 1000
+          }
+        ],
+        "required_tech": [
+          "OpenCV 5",
+          "AWS"
+        ],
+        "optional_sponsor_tech": [
+          "COOL (Cloud-Optimized OpenCV Library)"
+        ],
+        "judging": {
+          "Technical execution": "30%",
+          "Innovation": "20%",
+          "Real-world impact": "20%",
+          "User experience": "10%",
+          "Documentation and presentation": "10%",
+          "Cloud delivery, reproducibility, and responsible operation": "10%"
+        },
+        "deliverables": [
+          "technical report",
+          "code repository or archive",
+          "build, deployment, and test instructions",
+          "architecture diagram",
+          "working web endpoint or live demonstration",
+          "video (no more than 5 minutes)",
+          "evaluation evidence"
+        ],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "First Place Grand Prize",
+            "cash_usd": 5000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Second Place",
+            "cash_usd": 3000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Third Place",
+            "cash_usd": 2000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Best Use of COOL Award",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          },
+          {
+            "rank_or_track": "Agentic Vision Award",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": null
+          }
+        ],
+        "build_window": {
+          "start": "2026-08-26",
+          "end": "2026-10-26"
+        },
+        "sources": [
+          {
+            "url": "https://opencv26.devpost.com/",
+            "quote": "All countries/territories, excluding standard exceptions (Brazil, Crimea, Cuba, Iran, North Korea, Quebec, Russia)"
+          },
+          {
+            "url": "https://opencv26.devpost.com/",
+            "quote": "From August 26 through October 26, all teams that submitted the required proposal will build, evaluate, document, and submit their final projects."
+          },
+          {
+            "url": "https://opencv26.devpost.com/",
+            "quote": "Every entry must use OpenCV 5 for substantive image or video analysis and run a meaningful component on AWS."
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
       },
       "fit": {
         "strategic_fit": 0,

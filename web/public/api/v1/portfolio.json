@@ -1,0 +1,54 @@
+{
+  "specialism": "agent reliability and evaluation",
+  "generated_at": "2026-08-22T22:52:38.771Z",
+  "path": [
+    {
+      "step": 1,
+      "slug": "telegraph-h1",
+      "title": "Telegraph H1 Hackathon",
+      "action": "PREP",
+      "deadline": "2026-09-07",
+      "days_left": 16,
+      "opportunity_score": 76,
+      "strategic_fit": 1,
+      "effective_p80_hours": 18,
+      "unique_work_remaining": "1 hard requirements"
+    },
+    {
+      "step": 2,
+      "slug": "ethonline-2026",
+      "title": "ETHOnline 2026",
+      "action": "PREP",
+      "deadline": "2026-09-16",
+      "days_left": 25,
+      "opportunity_score": 85,
+      "strategic_fit": 0.74,
+      "effective_p80_hours": 36,
+      "unique_work_remaining": "per official page"
+    },
+    {
+      "step": 3,
+      "slug": "amd-developer-hackathon-act-iii",
+      "title": "AMD Developer Hackathon: ACT III",
+      "action": "WATCH",
+      "deadline": "2026-10-17",
+      "days_left": 56,
+      "opportunity_score": 78,
+      "strategic_fit": 0.44,
+      "effective_p80_hours": 36,
+      "unique_work_remaining": "per official page"
+    }
+  ],
+  "reuse_between": [
+    {
+      "from": "telegraph-h1",
+      "to": "ethonline-2026",
+      "reuse_pct": 40
+    },
+    {
+      "from": "ethonline-2026",
+      "to": "amd-developer-hackathon-act-iii",
+      "reuse_pct": 40
+    }
+  ]
+}
