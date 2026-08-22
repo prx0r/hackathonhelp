@@ -1,71 +1,89 @@
-// Deterministic fetch from Devpost public API → data/seed.json
+// Multi-source discovery: Devpost official API + Brabble API (key).
+// Audience filter: online, individual-friendly, non-student, English/global.
 import fs from 'node:fs';
 import path from 'node:path';
+import 'dotenv/config';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const PAGES = parseInt(process.env.PAGES || '8');
+const KEY = process.env.BRABBLE_API_KEY;
 
-function parsePrize(html) {
-  if (!html) return null;
-  const m = String(html).match(/data-currency-value>([\d,.]+)</);
-  if (!m) {
-    const m2 = String(html).match(/([\d,.]+)/);
-    if (!m2) return null;
-    return parseFloat(m2[1].replace(/,/g, '')) || null;
-  }
-  return parseFloat(m[1].replace(/,/g, '')) || null;
-}
+function parsePrize(html){ if(!html) return null; const m=String(html).match(/data-currency-value>([\d,.]+)</); const n=m?m[1]:(String(html).match(/([\d,.]+)/)?.[1]); return n?parseFloat(n.replace(/,/g,''))||null:null; }
+function parseDates(str){ const m=str?.match(/(\w{3}) (\d+) - (\w{3}) (\d+), (\d+)/); if(!m) return {}; const M={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11}; return { starts_at:new Date(Date.UTC(+m[5],M[m[1]],+m[2])).toISOString(), ends_at:new Date(Date.UTC(+m[5],M[m[3]],+m[4],23,59)).toISOString() }; }
+function slugify(u){ try{ return new URL(u).hostname.split('.')[0]; }catch{ return u.slice(0,40); } }
 
-function parseDates(str) {
-  // "Jul 31 - Oct 01, 2026"
-  const m = str.match(/(\w{3}) (\d+) - (\w{3}) (\d+), (\d+)/);
-  if (!m) return {};
-  const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
-  const year = +m[5];
-  return {
-    starts_at: new Date(Date.UTC(year, months[m[1]], +m[2])).toISOString(),
-    ends_at: new Date(Date.UTC(year, months[m[3]], +m[4], 23, 59)).toISOString(),
-  };
-}
+const seen=new Set(); const opportunities=[];
 
-const seen = new Set();
-const opportunities = [];
-for (let p = 1; p <= PAGES; p++) {
-  const res = await fetch(`https://devpost.com/api/hackathons?page=${p}`);
-  const d = await res.json();
-  for (const h of d.hackathons ?? []) {
-    if (!h.url || seen.has(h.url)) continue;
-    seen.add(h.url);
-    const dates = parseDates(h.submission_period_dates || '');
-    const loc = h.displayed_location?.location || 'Unknown';
+// ---- source 1: Devpost (official platform API) ----
+for(let p=1;p<=PAGES;p++){
+  const d=await (await fetch(`https://devpost.com/api/hackathons?page=${p}`)).json();
+  for(const h of d.hackathons??[]){
+    if(!h.url||seen.has(h.url)) continue; seen.add(h.url);
+    const dates=parseDates(h.submission_period_dates);
     opportunities.push({
-      id: h.url.replace(/https:\/\/([^./]+)\.devpost\.com\/?/, '$1'),
-      slug: h.url.replace(/https:\/\/([^./]+)\.devpost\.com\/?/, '$1'),
-      title: h.title,
-      organizer: h.organization || h.title.split(' ')[0],
-      prize_usd: parsePrize(h.prize_amount),
-      prize_raw: (h.prize_amount || '').replace(/<[^>]*>/g, '').trim(),
-      registrants: h.registrations_count ?? null,
-      starts_at: dates.starts_at ?? null,
-      ends_at: dates.ends_at ?? null,
-      time_left: h.time_left_to_submission || null,
-      location_type: /online/i.test(loc) ? 'online' : 'in-person',
-      location: loc,
-      themes: (h.themes || []).map(t => t.name),
-      open_to_all: !h.private,
-      source_url: h.url,
-      source_authority: 'official_platform_api',
-      observed_at: new Date().toISOString(),
+      id:'dp-'+slugify(h.url), slug:slugify(h.url),
+      title:h.title, organizer:h.organization||h.title.split(' ')[0],
+      prize_usd:parsePrize(h.prize_amount), prize_raw:(h.prize_amount||'').replace(/<[^>]*>/g,'').trim(),
+      registrants:h.registrations_count??null,
+      starts_at:dates.starts_at??null, ends_at:dates.ends_at??null,
+      time_left:h.time_left_to_submission||null,
+      location_type:/online/i.test(h.displayed_location?.location||'')?'online':'in-person',
+      location:h.displayed_location?.location||'Unknown',
+      themes:(h.themes||[]).map(t=>t.name), open_to_all:!h.private,
+      source_url:h.url, source:'devpost', source_authority:'official_platform_api',
+      observed_at:new Date().toISOString(),
     });
   }
 }
-opportunities.sort((a,b) => (b.prize_usd||0)-(a.prize_usd||0));
-fs.mkdirSync(path.join(ROOT,'data'), {recursive:true});
+const devpostCount = opportunities.length;
+
+// ---- source 2: Brabble (key) → global-online-non-student filter ----
+let brabbleKept=0, brabbleSkippedStudent=0, brabbleSkippedOffline=0;
+if(KEY){
+  for(let offset=0; offset<700; offset+=100){
+    let d;
+    try{
+      const r=await fetch(`https://brabble.ai/api/listings?limit=100&offset=${offset}`,
+        {headers:{'Authorization':`Bearer ${KEY}`}});
+      if(!r.ok){ console.error('brabble',r.status); break; }
+      d=await r.json();
+    }catch(e){ console.error('brabble fail',e.message); break; }
+    for(const l of (d.listings??[])){
+      if(l.type!=='HACKATHON') continue;
+      if(seen.has(l.url)){ continue; }
+      if(l.mode!=='ONLINE'){ brabbleSkippedOffline++; continue; }          // audience: online
+      const el=l.eligibility??[];
+      if(el.includes('Education')){ brabbleSkippedStudent++; continue; }   // audience: non-student
+      if(/india|indian/i.test(`${l.title} ${l.organiser} ${el.join(' ')}`)&&!el.includes('Open to all')){ brabbleSkippedStudent++; continue; }
+      seen.add(l.url);
+      const prizeNum = l.prize?.label ? parseFloat(String(l.prize.label).replace(/[^0-9.]/g,''))||null : null;
+      opportunities.push({
+        id:'br-'+l.id, slug:'br-'+l.id,
+        title:l.title, organizer:l.organiser||null,
+        prize_usd: prizeNum, prize_raw:l.prize?.label||null,
+        registrants:l.registered??null,
+        starts_at:null, ends_at:l.deadline||null,
+        time_left:l.deadline?Math.ceil((new Date(l.deadline)-Date.now())/86400000)+' days left':null,
+        location_type:'online', location:'Online',
+        themes:[], open_to_all:true,
+        source_url:l.url, source:'brabble',
+        source_authority: el.length? 'platform_metadata_unverified':'unverified',
+        observed_at:new Date().toISOString(),
+        eligibility_flags: el,
+      });
+      brabbleKept++;
+    }
+    if((d.offset??0)+(d.count??0)>=d.total) break;
+  }
+}
+
+opportunities.sort((a,b)=>(b.prize_usd||0)-(a.prize_usd||0));
+fs.mkdirSync(path.join(ROOT,'data'),{recursive:true});
 fs.writeFileSync(path.join(ROOT,'data/seed.json'), JSON.stringify({
-  schema_version:'hackathonhelp.seed.v1',
+  schema_version:'hackathonhelp.seed.v2',
   generated_at:new Date().toISOString(),
-  source:'devpost.com/api/hackathons (official platform API)',
-  count: opportunities.length,
+  sources:{devpost:devpostCount, brabble_kept:brabbleKept},
+  count:opportunities.length,
   opportunities
-}, null, 2));
-console.log(`fetch: ${opportunities.length} opportunities across ${PAGES} pages`);
+},null,2));
+console.log(`fetch: devpost=${devpostCount} + brabble=${brabbleKept} (skipped student:${brabbleSkippedStudent}, offline:${brabbleSkippedOffline}) = ${opportunities.length}`);

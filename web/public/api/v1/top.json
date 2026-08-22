@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-22T20:58:02.165Z",
+  "generated_at": "2026-08-22T21:05:13.635Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
-      "id": "dialedin",
+      "id": "dp-dialedin",
       "slug": "dialedin",
       "title": "DIALED IN Builder Challenge",
       "organizer": "DIALED",
@@ -22,8 +22,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://dialedin.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.691Z",
+      "observed_at": "2026-08-22T21:04:33.377Z",
       "days_left": 18,
       "gates": {
         "registration_open": true,
@@ -81,7 +82,7 @@
       }
     },
     {
-      "id": "api-cloud-ai-hackathon-2026",
+      "id": "dp-api-cloud-ai-hackathon-2026",
       "slug": "api-cloud-ai-hackathon-2026",
       "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
       "organizer": "DevNetwork",
@@ -100,8 +101,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:06.924Z",
+      "observed_at": "2026-08-22T21:04:32.566Z",
       "days_left": 13,
       "gates": {
         "registration_open": true,
@@ -160,7 +162,86 @@
       }
     },
     {
-      "id": "the-great-agent-hackathon",
+      "id": "dp-hacktitan",
+      "slug": "hacktitan",
+      "title": "HackTitan",
+      "organizer": "HackTitan",
+      "prize_usd": 10000,
+      "prize_raw": "$10,000",
+      "registrants": 80,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Databases",
+        "DevOps"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hacktitan.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T21:04:33.735Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 10000,
+        "cash_value": 10000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 10000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 80,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 16,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 96
+      },
+      "metrics": {
+        "equal_share_naive": 125,
+        "fair_share_serious": 625,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$625 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "dp-the-great-agent-hackathon",
       "slug": "the-great-agent-hackathon",
       "title": "The Great Agent Hackathon",
       "organizer": "The",
@@ -179,8 +260,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://the-great-agent-hackathon.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.104Z",
+      "observed_at": "2026-08-22T21:04:32.740Z",
       "days_left": 4,
       "gates": {
         "registration_open": true,
@@ -241,7 +323,7 @@
       }
     },
     {
-      "id": "rice-urban-sustainability",
+      "id": "dp-rice-urban-sustainability",
       "slug": "rice-urban-sustainability",
       "title": "The Rice University Urban Sustainability Hackathon",
       "organizer": "The",
@@ -260,8 +342,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://rice-urban-sustainability.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.104Z",
+      "observed_at": "2026-08-22T21:04:32.739Z",
       "days_left": 28,
       "gates": {
         "registration_open": true,
@@ -319,7 +402,7 @@
       }
     },
     {
-      "id": "gibc-v2",
+      "id": "dp-gibc-v2",
       "slug": "gibc-v2",
       "title": "Global Innovation Build Challenge V2",
       "organizer": "Global",
@@ -338,8 +421,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://gibc-v2.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.104Z",
+      "observed_at": "2026-08-22T21:04:32.739Z",
       "days_left": 31,
       "gates": {
         "registration_open": true,
@@ -399,7 +483,90 @@
       }
     },
     {
-      "id": "volthacks",
+      "id": "br-devpost-31018",
+      "slug": "br-devpost-31018",
+      "title": "LexHack 2026",
+      "organizer": "Lexhack",
+      "prize_usd": 43560,
+      "prize_raw": "$43,560",
+      "registrants": 34,
+      "starts_at": null,
+      "ends_at": "2026-09-27T23:59:00.000Z",
+      "time_left": "37 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [],
+      "open_to_all": true,
+      "source_url": "https://lexhack-2026.devpost.com/",
+      "source": "brabble",
+      "source_authority": "platform_metadata_unverified",
+      "observed_at": "2026-08-22T21:04:41.039Z",
+      "eligibility_flags": [
+        "Beginner Friendly",
+        "Low/No Code",
+        "Social Good"
+      ],
+      "days_left": 37,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 43560,
+        "cash_value": 43560,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 43560,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 34,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 12,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 88
+      },
+      "metrics": {
+        "equal_share_naive": 1281.18,
+        "fair_share_serious": 3630,
+        "days_left": 37
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
+      "mega": {
+        "score": 65,
+        "reasons": [
+          "$3630 normalized prize per estimated submission",
+          "$44K cash with below-median registration"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "dp-volthacks",
       "slug": "volthacks",
       "title": "VoltHacks",
       "organizer": "VoltHacks",
@@ -418,8 +585,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://volthacks.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:06.231Z",
+      "observed_at": "2026-08-22T21:04:32.025Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -477,13 +645,13 @@
       }
     },
     {
-      "id": "opencv26",
+      "id": "dp-opencv26",
       "slug": "opencv26",
       "title": "OpenCV AI Competition 2026, powered by AWS",
       "organizer": "OpenCV",
       "prize_usd": 12000,
       "prize_raw": "$12,000",
-      "registrants": 542,
+      "registrants": 543,
       "starts_at": "2026-08-26T00:00:00.000Z",
       "ends_at": "2026-10-27T23:59:00.000Z",
       "time_left": "Upcoming",
@@ -496,8 +664,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://opencv26.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:08.052Z",
+      "observed_at": "2026-08-22T21:04:33.565Z",
       "days_left": 67,
       "gates": {
         "registration_open": true,
@@ -522,7 +691,7 @@
         "headline_inflation": 0
       },
       "field": {
-        "registrations": 542,
+        "registrations": 543,
         "family_prior": {
           "submissions_per_registration": 0.05,
           "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -541,7 +710,7 @@
         "opportunity_score": 87
       },
       "metrics": {
-        "equal_share_naive": 22.14,
+        "equal_share_naive": 22.1,
         "fair_share_serious": 279.07,
         "days_left": 67
       },
@@ -555,7 +724,7 @@
       }
     },
     {
-      "id": "codelinc11",
+      "id": "dp-codelinc11",
       "slug": "codelinc11",
       "title": "codeLinc 11 with Lincoln Financial & AWS",
       "organizer": "codeLinc",
@@ -574,8 +743,9 @@
       ],
       "open_to_all": true,
       "source_url": "https://codelinc11.devpost.com/",
+      "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:08.052Z",
+      "observed_at": "2026-08-22T21:04:33.735Z",
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -628,166 +798,6 @@
         "score": 35,
         "reasons": [
           "$277.78 normalized prize per estimated submission"
-        ],
-        "category": "value_competition_gap"
-      }
-    },
-    {
-      "id": "hackapertus",
-      "slug": "hackapertus",
-      "title": "Hack Apertus",
-      "organizer": "Hack",
-      "prize_usd": 8010,
-      "prize_raw": "€8,010",
-      "registrants": 148,
-      "starts_at": null,
-      "ends_at": null,
-      "time_left": "Upcoming",
-      "location_type": "in-person",
-      "location": "Grand Finals 2027 ",
-      "themes": [
-        "Education",
-        "Machine Learning/AI",
-        "Social Good"
-      ],
-      "open_to_all": true,
-      "source_url": "https://hackapertus.devpost.com/",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:08.052Z",
-      "days_left": null,
-      "gates": {
-        "registration_open": null,
-        "deadline_future": null,
-        "remote_ok": null,
-        "age_confirmed": true,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 8010,
-        "cash_value": 8010,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 8010,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 148,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 30,
-        "funnel": null
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 85,
-          "winnability": 84,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 87
-      },
-      "metrics": {
-        "equal_share_naive": 54.12,
-        "fair_share_serious": 267,
-        "days_left": null
-      },
-      "cautions": [],
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$267 normalized prize per estimated submission"
-        ],
-        "category": "value_competition_gap"
-      }
-    },
-    {
-      "id": "innovik6-indore",
-      "slug": "innovik6-indore",
-      "title": "INNOVIK 6.0 – International Hackathon 2026 | Indore Edition",
-      "organizer": "INNOVIK",
-      "prize_usd": 200000,
-      "prize_raw": "₹ 200,000",
-      "registrants": 69,
-      "starts_at": null,
-      "ends_at": null,
-      "time_left": "2 days left",
-      "location_type": "in-person",
-      "location": "VITM Indore",
-      "themes": [
-        "Education",
-        "Machine Learning/AI",
-        "Social Good"
-      ],
-      "open_to_all": true,
-      "source_url": "https://innovik6-indore.devpost.com/",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.446Z",
-      "days_left": null,
-      "gates": {
-        "registration_open": null,
-        "deadline_future": null,
-        "remote_ok": null,
-        "age_confirmed": true,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 200000,
-        "cash_value": 200000,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 200000,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 69,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 24,
-        "funnel": null
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 100,
-          "winnability": 84,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 86
-      },
-      "metrics": {
-        "equal_share_naive": 2898.55,
-        "fair_share_serious": 8333.33,
-        "days_left": null
-      },
-      "cautions": [
-        "extraordinary per-submission value — verify payout history",
-        "large pool, very early/small field — confirm organizer track record"
-      ],
-      "mega": {
-        "score": 65,
-        "reasons": [
-          "$8333.33 normalized prize per estimated submission",
-          "$200K cash with below-median registration"
         ],
         "category": "value_competition_gap"
       }
