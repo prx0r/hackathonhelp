@@ -10,7 +10,47 @@ const m = o.metrics;
 const fmt$ = v => v==null?'—':'$'+Math.round(v).toLocaleString();
 const dl = m.days_left;
 const ended = o.status==='ended' || (dl!=null && dl<0);
+function esc(x){return String(x??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,">")}
 const scoreNull = o.score_v01.opportunity_score == null;
+
+// Contract panel (v0.3): rendered only when an extracted contract exists
+let contractPanel = '';
+if (o.contract) {
+  const c = o.contract;
+  const tri = v => v===true||v==='TRUE' ? '<span style="color:#86efac">YES</span>'
+    : v===false||v==='FALSE' ? '<span style="color:#fca5a5">NO</span>'
+    : '<span style="color:var(--text-dim)">UNKNOWN</span>';
+  const tracksHtml = (c.tracks||[]).map(t =>
+    '<div>• '+esc(t.name)+(t.prize_usd?' — <strong>$'+Number(t.prize_usd).toLocaleString()+'</strong>':'')+'</div>').join('') || '<div class="mathnote">none published</div>';
+  const judgingHtml = Object.entries(c.judging||{}).map(([k,v]) =>
+    '<div>• '+esc(k)+(typeof v==='string'&&v.includes('%')?' <strong>'+esc(v)+'</strong>':' — <span style="color:var(--text-dim)">'+esc(v)+'</span>')+'</div>').join('');
+  const reqChips = Object.entries(c.requirement_vector||{}).map(([k,v]) =>
+    '<span class="req-chip req-'+(v==='REQUIRED'?'req':v==='HIGH'?'high':'opt')+'">'+esc(k.replace(/_/g,' '))+(v==='REQUIRED'?' ●':v==='HIGH'?' ◆':'')+'</span>').join(' ');
+  const orig = c.originality||{};
+  contractPanel = `
+  <section class="panel">
+    <div class="label">Extracted contract ${c.extracted_via?'· '+esc(c.extracted_via):''}</div>
+    <div class="grid2" style="margin-bottom:12px">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:6px">Tracks & prizes</div>
+        ${tracksHtml}
+        <div style="font-size:11px;font-weight:700;color:var(--text);margin:10px 0 6px">Judging</div>
+        ${judgingHtml || '<div class=mathnote>not published</div>'}
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:6px">Requirement vector</div>
+        <div style="margin-bottom:10px">${reqChips || '<span class=mathnote>no vector yet</span>'}</div>
+        <div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:6px">Originality rules</div>
+        <table class="math">
+          <tr><td>New project required</td><td>${tri(orig.new_project_required)}</td></tr>
+          <tr><td>Pre-existing code allowed</td><td>${tri(orig.preexisting_code_allowed)}</td></tr>
+          <tr><td>Disclosure required</td><td>${tri(orig.disclosure_required)}</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="observed">Extracted by hermes/mimo from official page · deterministically validated · every UNKNOWN is a fact we could not verify, not a guess</div>
+  </section>`;
+}
 ---
 <Base title={`${o.title} - HackathonHelp`}>
   <a href="/opps" class="back">All opportunities</a>
@@ -64,6 +104,8 @@ const scoreNull = o.score_v01.opportunity_score == null;
       {o.decision.latest_safe_start && <tr><td>Latest safe start</td><td>{o.decision.latest_safe_start}</td></tr>}
     </table>
   </section>
+
+  {contractPanel}
 
   <section class="grid2">
     <div class="panel">
@@ -175,6 +217,10 @@ const scoreNull = o.score_v01.opportunity_score == null;
   .act-WATCH{background:rgba(148,163,163,.15);color:var(--text-dim)}
   .act-SKIP{background:rgba(239,68,68,.12);color:#fca5a5}
   .act-ENDED{background:rgba(100,116,139,.12);color:var(--text-dim)}
+  .req-chip{display:inline-block;padding:2px 8px;border-radius:5px;font-size:10px;font-weight:700;margin:2px;text-transform:uppercase;letter-spacing:.03em}
+  .req-req{background:rgba(239,68,68,.15);color:#fca5a5}
+  .req-high{background:rgba(59,130,246,.15);color:#93c5fd}
+  .req-opt{background:rgba(148,163,184,.12);color:var(--text-dim)}
   .scorebig{font-size:42px;font-weight:900;color:var(--accent);letter-spacing:-.03em;margin-bottom:8px}
   @media(max-width:700px){.grid2{grid-template-columns:1fr}}
 </style>
