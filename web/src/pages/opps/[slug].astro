@@ -1,0 +1,87 @@
+---
+import Base from '../../layouts/Base.astro';
+import derived from '../../data/derived.json';
+
+export function getStaticPaths(){
+  return derived.opportunities.map(o=>({params:{slug:o.slug},props:{o}}));
+}
+const { o } = Astro.props;
+const m = o.metrics;
+const fmt$ = v => v==null?'—':'$'+Math.round(v).toLocaleString();
+const dl = m.days_left;
+const ended = o.status==='ended' || (dl!=null && dl<0);
+---
+<Base title={`${o.title} - HackathonHelp`}>
+  <a href="/opps" class="back">All opportunities</a>
+  <section class="head">
+    <div class="provider-line"><span class="pdot" style="background:var(--accent)"></span>{o.organizer} · {o.location} · {o.location_type}</div>
+    <h1>{o.title}</h1>
+    <div class="badges">
+      <span class="score">{m.opportunity_score}/100</span>
+      {o.mega && <span class="score" style="background:rgba(249,115,22,.15);color:var(--orange)">🔥 Mega: {o.mega.category.replace(/_/g,' ')}</span>}
+      <span class="conf">{ended ? 'submission closed' : o.time_left || ''}</span>
+    </div>
+  </section>
+
+  {o.mega && (
+    <section class="panel verdict">
+      <div class="label">Why it's flagged</div>
+      <p>{o.mega.reasons.map(r=>'• '+r).join('  ·  ')}</p>
+    </section>
+  )}
+
+  <section class="grid2">
+    <div class="panel">
+      <div class="label">The facts</div>
+      <ul class="terms">
+        <li><strong>Prize pool:</strong> {fmt$(o.prize_usd)} {o.prize_raw && o.prize_raw!==fmt$(o.prize_usd) ? `(${o.prize_raw})`:''}</li>
+        <li><strong>Entrants:</strong> {(o.registrants??0).toLocaleString()} — top {100-m.registrant_percentile}% of events by registration</li>
+        <li><strong>Dates:</strong> {o.starts_at && new Date(o.starts_at).toLocaleDateString()} → {o.ends_at && new Date(o.ends_at).toLocaleDateString()}</li>
+        <li><strong>Format:</strong> {o.location_type}{o.open_to_all?'':' · restricted entry'}</li>
+        {o.themes.length>0 && <li><strong>Themes:</strong> {o.themes.join(', ')}</li>}
+      </ul>
+      <a href={o.source_url} target="_blank" rel="noopener" class="src-link">{ended?'View results':'Register'} at devpost.com →</a>
+      <div class="observed">Data from official Devpost API · observed {o.observed_at.slice(0,10)}</div>
+    </div>
+
+    <div class="panel">
+      <div class="label">The math</div>
+      {ended ? <p class="mathnote">This event's submission window has closed.</p> : (
+      <>
+        <table class="math">
+          <tr class="hl"><td>Fair-share per entrant</td><td>${m.equal_share ?? '—'}</td></tr>
+          <tr><td>Your odds if entrants stay flat</td><td>{o.registrants? '1 in '+o.registrants.toLocaleString():'—'}</td></tr>
+          <tr><td>Value score</td><td>{m.value_score ?? '—'}/100</td></tr>
+          <tr><td>Odds score</td><td>{m.odds_score ?? '—'}/100</td></tr>
+          <tr><td>Days left</td><td>{dl ?? '—'}</td></tr>
+        </table>
+        <p class="mathnote" style="margin-top:10px">Fair-share = prize ÷ current entrants. It's the naive equal split — a proxy for how much prize money chases each competitor. High fair-share + low registrant growth = the real alpha.</p>
+      </>
+      )}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .back{font-size:13px;color:var(--text-dim);display:inline-block;margin-bottom:20px}
+  .provider-line{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:8px}
+  .pdot{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--accent)}
+  h1{font-size:clamp(24px,4vw,36px);letter-spacing:-.03em}
+  .badges{display:flex;gap:12px;align-items:center;margin-top:10px;flex-wrap:wrap}
+  .score{background:rgba(249,115,22,.15);color:var(--accent);padding:3px 10px;border-radius:6px;font-weight:800;font-size:14px}
+  .conf{color:var(--text-dim);font-size:12px}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:14px}
+  .verdict p{font-size:15px;line-height:1.6}
+  .label{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--accent);margin-bottom:8px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .terms{margin:0;padding-left:18px}
+  .terms li{font-size:13px;color:var(--text-muted);margin-bottom:7px;line-height:1.5}
+  .terms strong{color:var(--text)}
+  .src-link{display:inline-block;margin-top:10px;font-size:12px;font-weight:600}
+  .observed{font-size:11px;color:var(--text-dim);margin-top:6px}
+  .math td{padding:5px 0;font-size:13px;color:var(--text-muted)}
+  .math td:last-child{text-align:right;color:var(--text);font-variant-numeric:tabular-nums;font-weight:600}
+  .math tr.hl td{color:var(--accent);font-weight:800}
+  .mathnote{font-size:13px;color:var(--text-muted);line-height:1.6}
+  @media(max-width:700px){.grid2{grid-template-columns:1fr}}
+</style>

@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-08-22T20:44:44.252Z",
+  "schema_version": "hackathonhelp.api.v1",
+  "deals": [
+    {
+      "id": "reverie-hacks-2026",
+      "slug": "reverie-hacks-2026",
+      "title": "Reverie Hacks 2026",
+      "organizer": "Reverie",
+      "prize_usd": 3047814,
+      "prize_raw": "$3,047,814",
+      "registrants": 2012,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://reverie-hacks-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 1514.82,
+        "value_score": 100,
+        "odds_score": 100,
+        "registrant_percentile": 92,
+        "opportunity_score": 94
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$1514.82 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "gibc-v2",
+      "slug": "gibc-v2",
+      "title": "Global Innovation Build Challenge V2",
+      "organizer": "Global",
+      "prize_usd": 148445,
+      "prize_raw": "$148,445",
+      "registrants": 319,
+      "starts_at": "2026-07-11T00:00:00.000Z",
+      "ends_at": "2026-09-21T23:59:00.000Z",
+      "time_left": "30 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Social Good",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gibc-v2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 31,
+        "equal_share": 465.34,
+        "value_score": 86,
+        "odds_score": 100,
+        "registrant_percentile": 65,
+        "opportunity_score": 90
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$465.34 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "revenuecat-shipaton-2026",
+      "slug": "revenuecat-shipaton-2026",
+      "title": "RevenueCat Shipaton 2026",
+      "organizer": "RevenueCat",
+      "prize_usd": 740000,
+      "prize_raw": "$740,000",
+      "registrants": 19447,
+      "starts_at": "2026-07-31T00:00:00.000Z",
+      "ends_at": "2026-10-01T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Gaming",
+        "Mobile"
+      ],
+      "open_to_all": true,
+      "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 41,
+        "equal_share": 38.05,
+        "value_score": 98,
+        "odds_score": 85,
+        "registrant_percentile": 100,
+        "opportunity_score": 89
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$38.05 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "the-great-agent-hackathon",
+      "slug": "the-great-agent-hackathon",
+      "title": "The Great Agent Hackathon",
+      "organizer": "The",
+      "prize_usd": 100000,
+      "prize_raw": "₹ 100,000",
+      "registrants": 304,
+      "starts_at": "2026-07-23T00:00:00.000Z",
+      "ends_at": "2026-08-25T23:59:00.000Z",
+      "time_left": "3 days left",
+      "location_type": "in-person",
+      "location": "Freshworks",
+      "themes": [
+        "Enterprise",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://the-great-agent-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 4,
+        "equal_share": 328.95,
+        "value_score": 83,
+        "odds_score": 100,
+        "registrant_percentile": 64,
+        "opportunity_score": 89
+      },
+      "mega": {
+        "score": 50,
+        "reasons": [
+          "$328.95 fair-share per entrant",
+          "closing soon with good odds"
+        ],
+        "category": "deadline_edge"
+      },
+      "status": "closing_soon"
+    },
+    {
+      "id": "gatewayhacks-2026",
+      "slug": "gatewayhacks-2026",
+      "title": "GatewayHacks 2026 | Software & AI ",
+      "organizer": "GatewayHacks",
+      "prize_usd": 53585,
+      "prize_raw": "$53,585",
+      "registrants": 247,
+      "starts_at": "2026-09-01T00:00:00.000Z",
+      "ends_at": "2026-10-02T23:59:00.000Z",
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gatewayhacks-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": 42,
+        "equal_share": 216.94,
+        "value_score": 79,
+        "odds_score": 100,
+        "registrant_percentile": 60,
+        "opportunity_score": 87
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$216.94 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    }
+  ]
+}

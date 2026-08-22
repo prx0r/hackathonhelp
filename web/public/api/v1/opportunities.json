@@ -1,0 +1,2720 @@
+{
+  "generated_at": "2026-08-22T20:44:44.252Z",
+  "schema_version": "hackathonhelp.api.v1",
+  "counts": {
+    "opportunities": 72,
+    "open": 72,
+    "mega": 23
+  },
+  "top": [
+    {
+      "id": "reverie-hacks-2026",
+      "slug": "reverie-hacks-2026",
+      "title": "Reverie Hacks 2026",
+      "organizer": "Reverie",
+      "prize_usd": 3047814,
+      "prize_raw": "$3,047,814",
+      "registrants": 2012,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://reverie-hacks-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 1514.82,
+        "value_score": 100,
+        "odds_score": 100,
+        "registrant_percentile": 92,
+        "opportunity_score": 94
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$1514.82 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "gibc-v2",
+      "slug": "gibc-v2",
+      "title": "Global Innovation Build Challenge V2",
+      "organizer": "Global",
+      "prize_usd": 148445,
+      "prize_raw": "$148,445",
+      "registrants": 319,
+      "starts_at": "2026-07-11T00:00:00.000Z",
+      "ends_at": "2026-09-21T23:59:00.000Z",
+      "time_left": "30 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Social Good",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gibc-v2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 31,
+        "equal_share": 465.34,
+        "value_score": 86,
+        "odds_score": 100,
+        "registrant_percentile": 65,
+        "opportunity_score": 90
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$465.34 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "revenuecat-shipaton-2026",
+      "slug": "revenuecat-shipaton-2026",
+      "title": "RevenueCat Shipaton 2026",
+      "organizer": "RevenueCat",
+      "prize_usd": 740000,
+      "prize_raw": "$740,000",
+      "registrants": 19447,
+      "starts_at": "2026-07-31T00:00:00.000Z",
+      "ends_at": "2026-10-01T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Gaming",
+        "Mobile"
+      ],
+      "open_to_all": true,
+      "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 41,
+        "equal_share": 38.05,
+        "value_score": 98,
+        "odds_score": 85,
+        "registrant_percentile": 100,
+        "opportunity_score": 89
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$38.05 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "the-great-agent-hackathon",
+      "slug": "the-great-agent-hackathon",
+      "title": "The Great Agent Hackathon",
+      "organizer": "The",
+      "prize_usd": 100000,
+      "prize_raw": "₹ 100,000",
+      "registrants": 304,
+      "starts_at": "2026-07-23T00:00:00.000Z",
+      "ends_at": "2026-08-25T23:59:00.000Z",
+      "time_left": "3 days left",
+      "location_type": "in-person",
+      "location": "Freshworks",
+      "themes": [
+        "Enterprise",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://the-great-agent-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 4,
+        "equal_share": 328.95,
+        "value_score": 83,
+        "odds_score": 100,
+        "registrant_percentile": 64,
+        "opportunity_score": 89
+      },
+      "mega": {
+        "score": 50,
+        "reasons": [
+          "$328.95 fair-share per entrant",
+          "closing soon with good odds"
+        ],
+        "category": "deadline_edge"
+      },
+      "status": "closing_soon"
+    },
+    {
+      "id": "gatewayhacks-2026",
+      "slug": "gatewayhacks-2026",
+      "title": "GatewayHacks 2026 | Software & AI ",
+      "organizer": "GatewayHacks",
+      "prize_usd": 53585,
+      "prize_raw": "$53,585",
+      "registrants": 247,
+      "starts_at": "2026-09-01T00:00:00.000Z",
+      "ends_at": "2026-10-02T23:59:00.000Z",
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gatewayhacks-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": 42,
+        "equal_share": 216.94,
+        "value_score": 79,
+        "odds_score": 100,
+        "registrant_percentile": 60,
+        "opportunity_score": 87
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$216.94 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "reverie-hacks-2026",
+      "slug": "reverie-hacks-2026",
+      "title": "Reverie Hacks 2026",
+      "organizer": "Reverie",
+      "prize_usd": 3047814,
+      "prize_raw": "$3,047,814",
+      "registrants": 2012,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://reverie-hacks-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 1514.82,
+        "value_score": 100,
+        "odds_score": 100,
+        "registrant_percentile": 92,
+        "opportunity_score": 94
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$1514.82 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "revenuecat-shipaton-2026",
+      "slug": "revenuecat-shipaton-2026",
+      "title": "RevenueCat Shipaton 2026",
+      "organizer": "RevenueCat",
+      "prize_usd": 740000,
+      "prize_raw": "$740,000",
+      "registrants": 19447,
+      "starts_at": "2026-07-31T00:00:00.000Z",
+      "ends_at": "2026-10-01T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Gaming",
+        "Mobile"
+      ],
+      "open_to_all": true,
+      "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 41,
+        "equal_share": 38.05,
+        "value_score": 98,
+        "odds_score": 85,
+        "registrant_percentile": 100,
+        "opportunity_score": 89
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$38.05 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "innovik6-indore",
+      "slug": "innovik6-indore",
+      "title": "INNOVIK 6.0 – International Hackathon 2026 | Indore Edition",
+      "organizer": "INNOVIK",
+      "prize_usd": 200000,
+      "prize_raw": "₹ 200,000",
+      "registrants": 69,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "2 days left",
+      "location_type": "in-person",
+      "location": "VITM Indore",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://innovik6-indore.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 2898.55,
+        "value_score": 88,
+        "odds_score": 100,
+        "registrant_percentile": 25,
+        "opportunity_score": 85
+      },
+      "mega": {
+        "score": 65,
+        "reasons": [
+          "$2898.55 fair-share per entrant",
+          "$200K prize with below-median competition"
+        ],
+        "category": "value_competition_gap"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "allthingsagentichackathon",
+      "slug": "allthingsagentichackathon",
+      "title": "All Things Agentic Hackathon",
+      "organizer": "All",
+      "prize_usd": 180000,
+      "prize_raw": "$180,000",
+      "registrants": 6976,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "9 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Enterprise",
+        "Machine Learning/AI",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://allthingsagentichackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 25.8,
+        "value_score": 88,
+        "odds_score": 85,
+        "registrant_percentile": 97,
+        "opportunity_score": 84
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$25.8 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "gibc-v2",
+      "slug": "gibc-v2",
+      "title": "Global Innovation Build Challenge V2",
+      "organizer": "Global",
+      "prize_usd": 148445,
+      "prize_raw": "$148,445",
+      "registrants": 319,
+      "starts_at": "2026-07-11T00:00:00.000Z",
+      "ends_at": "2026-09-21T23:59:00.000Z",
+      "time_left": "30 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Social Good",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gibc-v2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 31,
+        "equal_share": 465.34,
+        "value_score": 86,
+        "odds_score": 100,
+        "registrant_percentile": 65,
+        "opportunity_score": 90
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$465.34 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "the-great-agent-hackathon",
+      "slug": "the-great-agent-hackathon",
+      "title": "The Great Agent Hackathon",
+      "organizer": "The",
+      "prize_usd": 100000,
+      "prize_raw": "₹ 100,000",
+      "registrants": 304,
+      "starts_at": "2026-07-23T00:00:00.000Z",
+      "ends_at": "2026-08-25T23:59:00.000Z",
+      "time_left": "3 days left",
+      "location_type": "in-person",
+      "location": "Freshworks",
+      "themes": [
+        "Enterprise",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://the-great-agent-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 4,
+        "equal_share": 328.95,
+        "value_score": 83,
+        "odds_score": 100,
+        "registrant_percentile": 64,
+        "opportunity_score": 89
+      },
+      "mega": {
+        "score": 50,
+        "reasons": [
+          "$328.95 fair-share per entrant",
+          "closing soon with good odds"
+        ],
+        "category": "deadline_edge"
+      },
+      "status": "closing_soon"
+    },
+    {
+      "id": "agentic-cinema",
+      "slug": "agentic-cinema",
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "organizer": "Agentic",
+      "prize_usd": 75000,
+      "prize_raw": "$75,000",
+      "registrants": 7681,
+      "starts_at": "2026-07-27T00:00:00.000Z",
+      "ends_at": "2026-09-09T23:59:00.000Z",
+      "time_left": "18 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Databases",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://agentic-cinema.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 19,
+        "equal_share": 9.76,
+        "value_score": 81,
+        "odds_score": 55,
+        "registrant_percentile": 99,
+        "opportunity_score": 74
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "gatewayhacks-2026",
+      "slug": "gatewayhacks-2026",
+      "title": "GatewayHacks 2026 | Software & AI ",
+      "organizer": "GatewayHacks",
+      "prize_usd": 53585,
+      "prize_raw": "$53,585",
+      "registrants": 247,
+      "starts_at": "2026-09-01T00:00:00.000Z",
+      "ends_at": "2026-10-02T23:59:00.000Z",
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gatewayhacks-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": 42,
+        "equal_share": 216.94,
+        "value_score": 79,
+        "odds_score": 100,
+        "registrant_percentile": 60,
+        "opportunity_score": 87
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$216.94 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "agentsforhumans",
+      "slug": "agentsforhumans",
+      "title": "Agents for Humans Hackathon",
+      "organizer": "Agents",
+      "prize_usd": 40000,
+      "prize_raw": "$40,000",
+      "registrants": 4581,
+      "starts_at": "2026-08-10T00:00:00.000Z",
+      "ends_at": "2026-09-14T23:59:00.000Z",
+      "time_left": "23 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://agentsforhumans.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 24,
+        "equal_share": 8.73,
+        "value_score": 77,
+        "odds_score": 55,
+        "registrant_percentile": 96,
+        "opportunity_score": 70
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "api-cloud-ai-hackathon-2026",
+      "slug": "api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "organizer": "DevNetwork",
+      "prize_usd": 39500,
+      "prize_raw": "$39,500",
+      "registrants": 883,
+      "starts_at": "2026-08-17T00:00:00.000Z",
+      "ends_at": "2026-09-03T23:59:00.000Z",
+      "time_left": "12 days left",
+      "location_type": "online",
+      "location": "Santa Clara Convention Center and Online",
+      "themes": [
+        "IoT",
+        "Low/No Code",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 13,
+        "equal_share": 44.73,
+        "value_score": 77,
+        "odds_score": 85,
+        "registrant_percentile": 79,
+        "opportunity_score": 83
+      },
+      "mega": {
+        "score": 50,
+        "reasons": [
+          "$44.73 fair-share per entrant",
+          "closing soon with good odds"
+        ],
+        "category": "deadline_edge"
+      },
+      "status": "open"
+    },
+    {
+      "id": "univabio",
+      "slug": "univabio",
+      "title": "UnivaBio",
+      "organizer": "UnivaBio",
+      "prize_usd": 35845,
+      "prize_raw": "$35,845",
+      "registrants": 198,
+      "starts_at": "2026-08-07T00:00:00.000Z",
+      "ends_at": "2026-10-06T23:59:00.000Z",
+      "time_left": "about 2 months left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Health",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://univabio.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": 46,
+        "equal_share": 181.04,
+        "value_score": 76,
+        "odds_score": 100,
+        "registrant_percentile": 54,
+        "opportunity_score": 86
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$181.04 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "volthacks",
+      "slug": "volthacks",
+      "title": "VoltHacks",
+      "organizer": "VoltHacks",
+      "prize_usd": 35785,
+      "prize_raw": "$35,785",
+      "registrants": 1697,
+      "starts_at": "2026-05-22T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "IoT",
+        "Machine Learning/AI",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://volthacks.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.231Z",
+      "metrics": {
+        "days_left": 15,
+        "equal_share": 21.09,
+        "value_score": 76,
+        "odds_score": 85,
+        "registrant_percentile": 88,
+        "opportunity_score": 83
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$21.09 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "tiktoktechjam2026",
+      "slug": "tiktoktechjam2026",
+      "title": "TikTok TechJam 2026",
+      "organizer": "TikTok",
+      "prize_usd": 34500,
+      "prize_raw": "$34,500",
+      "registrants": 2123,
+      "starts_at": "2026-08-29T00:00:00.000Z",
+      "ends_at": "2026-09-01T23:59:00.000Z",
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Cybersecurity",
+        "E-commerce/Retail"
+      ],
+      "open_to_all": true,
+      "source_url": "https://tiktoktechjam2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": 11,
+        "equal_share": 16.25,
+        "value_score": 76,
+        "odds_score": 70,
+        "registrant_percentile": 93,
+        "opportunity_score": 78
+      },
+      "mega": {
+        "score": 37,
+        "reasons": [
+          "$16.25 fair-share per entrant",
+          "closing soon with good odds"
+        ],
+        "category": "deadline_edge"
+      },
+      "status": "open"
+    },
+    {
+      "id": "ai-builders-hackathon-2026",
+      "slug": "ai-builders-hackathon-2026",
+      "title": "AI Builders Hackathon",
+      "organizer": "AI",
+      "prize_usd": 33900,
+      "prize_raw": "$33,900",
+      "registrants": 1995,
+      "starts_at": "2026-08-21T00:00:00.000Z",
+      "ends_at": "2026-09-15T23:59:00.000Z",
+      "time_left": "24 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 25,
+        "equal_share": 16.99,
+        "value_score": 76,
+        "odds_score": 70,
+        "registrant_percentile": 90,
+        "opportunity_score": 75
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "launchhacks-v",
+      "slug": "launchhacks-v",
+      "title": "LaunchHacks V",
+      "organizer": "LaunchHacks",
+      "prize_usd": 17575,
+      "prize_raw": "$17,575",
+      "registrants": 1229,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://launchhacks-v.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 14.3,
+        "value_score": 71,
+        "odds_score": 70,
+        "registrant_percentile": 85,
+        "opportunity_score": 72
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "rice-urban-sustainability",
+      "slug": "rice-urban-sustainability",
+      "title": "The Rice University Urban Sustainability Hackathon",
+      "organizer": "The",
+      "prize_usd": 17500,
+      "prize_raw": "$17,500",
+      "registrants": 339,
+      "starts_at": "2026-06-23T00:00:00.000Z",
+      "ends_at": "2026-09-18T23:59:00.000Z",
+      "time_left": "26 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Social Good",
+        "Databases"
+      ],
+      "open_to_all": true,
+      "source_url": "https://rice-urban-sustainability.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 28,
+        "equal_share": 51.62,
+        "value_score": 71,
+        "odds_score": 100,
+        "registrant_percentile": 67,
+        "opportunity_score": 84
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$51.62 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "adtc-2026",
+      "slug": "adtc-2026",
+      "title": "Africa Deep Tech Challenge 2026",
+      "organizer": "Africa",
+      "prize_usd": 16500,
+      "prize_raw": "$16,500",
+      "registrants": 1783,
+      "starts_at": "2026-06-17T00:00:00.000Z",
+      "ends_at": "2026-08-25T23:59:00.000Z",
+      "time_left": "2 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://adtc-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 4,
+        "equal_share": 9.25,
+        "value_score": 70,
+        "odds_score": 55,
+        "registrant_percentile": 89,
+        "opportunity_score": 72
+      },
+      "mega": {
+        "score": 37,
+        "reasons": [
+          "$9.25 fair-share per entrant",
+          "closing soon with good odds"
+        ],
+        "category": "deadline_edge"
+      },
+      "status": "closing_soon"
+    },
+    {
+      "id": "opencv26",
+      "slug": "opencv26",
+      "title": "OpenCV AI Competition 2026, powered by AWS",
+      "organizer": "OpenCV",
+      "prize_usd": 12000,
+      "prize_raw": "$12,000",
+      "registrants": 542,
+      "starts_at": "2026-08-26T00:00:00.000Z",
+      "ends_at": "2026-10-27T23:59:00.000Z",
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "IoT",
+        "Machine Learning/AI",
+        "Serverless"
+      ],
+      "open_to_all": true,
+      "source_url": "https://opencv26.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": 67,
+        "equal_share": 22.14,
+        "value_score": 68,
+        "odds_score": 85,
+        "registrant_percentile": 72,
+        "opportunity_score": 75
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$22.14 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "call-e",
+      "slug": "call-e",
+      "title": "CALL-E: Your Code Is Calling",
+      "organizer": "CALL-E:",
+      "prize_usd": 10000,
+      "prize_raw": "$10,000",
+      "registrants": 2395,
+      "starts_at": "2026-07-23T00:00:00.000Z",
+      "ends_at": "2026-09-14T23:59:00.000Z",
+      "time_left": "23 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Communication",
+        "Enterprise",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://call-e.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.230Z",
+      "metrics": {
+        "days_left": 24,
+        "equal_share": 4.18,
+        "value_score": 67,
+        "odds_score": 40,
+        "registrant_percentile": 94,
+        "opportunity_score": 61
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "codelinc11",
+      "slug": "codelinc11",
+      "title": "codeLinc 11 with Lincoln Financial & AWS",
+      "organizer": "codeLinc",
+      "prize_usd": 10000,
+      "prize_raw": "$10,000",
+      "registrants": 180,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Lincoln Financial Group - Greensboro, NC",
+      "themes": [
+        "Enterprise",
+        "Fintech",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://codelinc11.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 55.56,
+        "value_score": 67,
+        "odds_score": 100,
+        "registrant_percentile": 53,
+        "opportunity_score": 77
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$55.56 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "hackapertus",
+      "slug": "hackapertus",
+      "title": "Hack Apertus",
+      "organizer": "Hack",
+      "prize_usd": 8010,
+      "prize_raw": "€8,010",
+      "registrants": 148,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Grand Finals 2027 ",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hackapertus.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 54.12,
+        "value_score": 65,
+        "odds_score": 100,
+        "registrant_percentile": 42,
+        "opportunity_score": 76
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$54.12 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "hack-away-hunger",
+      "slug": "hack-away-hunger",
+      "title": "Hack Away Hunger: Food Insecurity Challenge",
+      "organizer": "Hack",
+      "prize_usd": 5000,
+      "prize_raw": "$5,000",
+      "registrants": 28,
+      "starts_at": "2026-07-18T00:00:00.000Z",
+      "ends_at": "2026-10-08T23:59:00.000Z",
+      "time_left": "about 2 months left",
+      "location_type": "in-person",
+      "location": "Corteva's Pioneer Shull Building",
+      "themes": [
+        "Open Ended",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hack-away-hunger.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 48,
+        "equal_share": 178.57,
+        "value_score": 62,
+        "odds_score": 100,
+        "registrant_percentile": 13,
+        "opportunity_score": 76
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$178.57 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "dialedin",
+      "slug": "dialedin",
+      "title": "DIALED IN Builder Challenge",
+      "organizer": "DIALED",
+      "prize_usd": 5000,
+      "prize_raw": "$5,000",
+      "registrants": 27,
+      "starts_at": "2026-08-04T00:00:00.000Z",
+      "ends_at": "2026-09-08T23:59:00.000Z",
+      "time_left": "18 days left",
+      "location_type": "in-person",
+      "location": "The Hub @ Office Logic",
+      "themes": [
+        "AR/VR",
+        "Voice skills",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://dialedin.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 18,
+        "equal_share": 185.19,
+        "value_score": 62,
+        "odds_score": 100,
+        "registrant_percentile": 11,
+        "opportunity_score": 79
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$185.19 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "hacksocial2026",
+      "slug": "hacksocial2026",
+      "title": "Hacksocial 2026",
+      "organizer": "Hacksocial",
+      "prize_usd": 3979,
+      "prize_raw": "$3,979",
+      "registrants": 426,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "9 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hacksocial2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 9.34,
+        "value_score": 60,
+        "odds_score": 55,
+        "registrant_percentile": 71,
+        "opportunity_score": 62
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "oneaquahealth-ieee-hackathon",
+      "slug": "oneaquahealth-ieee-hackathon",
+      "title": "OneAquaHealth IEEE Global Hackathon",
+      "organizer": "OneAquaHealth",
+      "prize_usd": 3000,
+      "prize_raw": "$3,000",
+      "registrants": 554,
+      "starts_at": "2026-09-14T00:00:00.000Z",
+      "ends_at": "2026-10-01T23:59:00.000Z",
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Health",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": 41,
+        "equal_share": 5.42,
+        "value_score": 58,
+        "odds_score": 55,
+        "registrant_percentile": 74,
+        "opportunity_score": 63
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "ieee-climatechain-hack",
+      "slug": "ieee-climatechain-hack",
+      "title": "IEEE ClimateChain Global Hackathon",
+      "organizer": "IEEE",
+      "prize_usd": 3000,
+      "prize_raw": "$3,000",
+      "registrants": 149,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Blockchain",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://ieee-climatechain-hack.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 20.13,
+        "value_score": 58,
+        "odds_score": 85,
+        "registrant_percentile": 43,
+        "opportunity_score": 72
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$20.13 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "galuxium-nexus-v2-29411",
+      "slug": "galuxium-nexus-v2-29411",
+      "title": "Galuxium Nexus V2",
+      "organizer": "Galuxium",
+      "prize_usd": 2600,
+      "prize_raw": "$2,600",
+      "registrants": 416,
+      "starts_at": "2026-07-15T00:00:00.000Z",
+      "ends_at": "2026-10-31T23:59:00.000Z",
+      "time_left": "2 months left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Enterprise",
+        "Machine Learning/AI",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://galuxium-nexus-v2-29411.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 71,
+        "equal_share": 6.25,
+        "value_score": 57,
+        "odds_score": 55,
+        "registrant_percentile": 69,
+        "opportunity_score": 60
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "nextstep2026",
+      "slug": "nextstep2026",
+      "title": "NextStep Hacks 2026",
+      "organizer": "NextStep",
+      "prize_usd": 1750,
+      "prize_raw": "$1,750",
+      "registrants": 254,
+      "starts_at": "2026-08-21T00:00:00.000Z",
+      "ends_at": "2026-09-13T23:59:00.000Z",
+      "time_left": "22 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://nextstep2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 23,
+        "equal_share": 6.89,
+        "value_score": 54,
+        "odds_score": 55,
+        "registrant_percentile": 61,
+        "opportunity_score": 61
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "cissa-catalyst-2026",
+      "slug": "cissa-catalyst-2026",
+      "title": "Catalyst 2026",
+      "organizer": "Catalyst",
+      "prize_usd": 1700,
+      "prize_raw": "$1,700",
+      "registrants": 78,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "about 3 hours left",
+      "location_type": "in-person",
+      "location": "The University of Melbourne, Parkville",
+      "themes": [
+        "Beginner Friendly",
+        "Cybersecurity",
+        "Design"
+      ],
+      "open_to_all": true,
+      "source_url": "https://cissa-catalyst-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 21.79,
+        "value_score": 54,
+        "odds_score": 85,
+        "registrant_percentile": 31,
+        "opportunity_score": 66
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$21.79 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "august-ai-challenge-31059",
+      "slug": "august-ai-challenge-31059",
+      "title": "Prometheus August AI Challenge",
+      "organizer": "Prometheus",
+      "prize_usd": 1500,
+      "prize_raw": "$1,500",
+      "registrants": 165,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "7 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Design",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://august-ai-challenge-31059.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 9.09,
+        "value_score": 53,
+        "odds_score": 55,
+        "registrant_percentile": 49,
+        "opportunity_score": 59
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "prometheus-sept-ai-classic",
+      "slug": "prometheus-sept-ai-classic",
+      "title": "Prometheus September AI Challenge",
+      "organizer": "Prometheus",
+      "prize_usd": 1500,
+      "prize_raw": "$1,500",
+      "registrants": 85,
+      "starts_at": "2026-08-19T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Design",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": 15,
+        "equal_share": 17.65,
+        "value_score": 53,
+        "odds_score": 70,
+        "registrant_percentile": 35,
+        "opportunity_score": 68
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "prometheus-september-ai-2",
+      "slug": "prometheus-september-ai-2",
+      "title": "Prometheus September AI Challenge 2",
+      "organizer": "Prometheus",
+      "prize_usd": 1500,
+      "prize_raw": "$1,500",
+      "registrants": 53,
+      "starts_at": "2026-08-19T00:00:00.000Z",
+      "ends_at": "2026-09-12T23:59:00.000Z",
+      "time_left": "21 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Beginner Friendly",
+        "Design"
+      ],
+      "open_to_all": true,
+      "source_url": "https://prometheus-september-ai-2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 22,
+        "equal_share": 28.3,
+        "value_score": 53,
+        "odds_score": 85,
+        "registrant_percentile": 19,
+        "opportunity_score": 71
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$28.3 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "compsphere12",
+      "slug": "compsphere12",
+      "title": "COMPSPHERE 12",
+      "organizer": "COMPSPHERE",
+      "prize_usd": 1247,
+      "prize_raw": "$1,247",
+      "registrants": 146,
+      "starts_at": "2026-08-03T00:00:00.000Z",
+      "ends_at": "2026-09-17T23:59:00.000Z",
+      "time_left": "26 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Blockchain",
+        "Machine Learning/AI",
+        "Cybersecurity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://compsphere12.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": 27,
+        "equal_share": 8.54,
+        "value_score": 52,
+        "odds_score": 55,
+        "registrant_percentile": 40,
+        "opportunity_score": 60
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "quantumhacks",
+      "slug": "quantumhacks",
+      "title": "QuantumHacks",
+      "organizer": "QuantumHacks",
+      "prize_usd": 1000,
+      "prize_raw": "$1,000",
+      "registrants": 923,
+      "starts_at": "2026-06-21T00:00:00.000Z",
+      "ends_at": "2026-08-24T23:59:00.000Z",
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Databases",
+        "Fintech",
+        "Quantum"
+      ],
+      "open_to_all": true,
+      "source_url": "https://quantumhacks.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 3,
+        "equal_share": 1.08,
+        "value_score": 50,
+        "odds_score": 25,
+        "registrant_percentile": 81,
+        "opportunity_score": 54
+      },
+      "mega": null,
+      "status": "closing_soon"
+    },
+    {
+      "id": "hack-the-habitat-2026",
+      "slug": "hack-the-habitat-2026",
+      "title": "Hack the Habitat",
+      "organizer": "Hack",
+      "prize_usd": 1000,
+      "prize_raw": "$1,000",
+      "registrants": 160,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "8 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "IoT",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hack-the-habitat-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 6.25,
+        "value_score": 50,
+        "odds_score": 55,
+        "registrant_percentile": 46,
+        "opportunity_score": 58
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "melbourne-hack-2026",
+      "slug": "melbourne-hack-2026",
+      "title": "Melbourne Hack 2026",
+      "organizer": "Melbourne",
+      "prize_usd": 900,
+      "prize_raw": "$900",
+      "registrants": 13,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "1 day left",
+      "location_type": "in-person",
+      "location": "University of Melbourne",
+      "themes": [
+        "Education",
+        "Fintech",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://melbourne-hack-2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 69.23,
+        "value_score": 49,
+        "odds_score": 100,
+        "registrant_percentile": 4,
+        "opportunity_score": 70
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$69.23 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "unknown"
+    },
+    {
+      "id": "3rd-web-hack",
+      "slug": "3rd-web-hack",
+      "title": "3rd-Web-Hack",
+      "organizer": "3rd-Web-Hack",
+      "prize_usd": 750,
+      "prize_raw": "$750",
+      "registrants": 10,
+      "starts_at": "2026-08-22T00:00:00.000Z",
+      "ends_at": "2026-09-27T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Blockchain",
+        "Open Ended",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://3rd-web-hack.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": 37,
+        "equal_share": 75,
+        "value_score": 48,
+        "odds_score": 100,
+        "registrant_percentile": 3,
+        "opportunity_score": 74
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$75 fair-share per entrant"
+        ],
+        "category": "high_fair_share"
+      },
+      "status": "open"
+    },
+    {
+      "id": "unitedhacksv8",
+      "slug": "unitedhacksv8",
+      "title": "United Hacks V8",
+      "organizer": "United",
+      "prize_usd": 700,
+      "prize_raw": "$700",
+      "registrants": 85,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Design",
+        "Education"
+      ],
+      "open_to_all": true,
+      "source_url": "https://unitedhacksv8.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 8.24,
+        "value_score": 47,
+        "odds_score": 55,
+        "registrant_percentile": 35,
+        "opportunity_score": 57
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "smart-city-hackathon-lahore",
+      "slug": "smart-city-hackathon-lahore",
+      "title": "Smart City Hackathon Lahore",
+      "organizer": "Smart",
+      "prize_usd": 642,
+      "prize_raw": "$642",
+      "registrants": 70,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "8 days left",
+      "location_type": "in-person",
+      "location": "Lahore Garrison University",
+      "themes": [
+        "Communication",
+        "Design",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://smart-city-hackathon-lahore.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 9.17,
+        "value_score": 47,
+        "odds_score": 55,
+        "registrant_percentile": 26,
+        "opportunity_score": 53
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "hack-the-limit-1",
+      "slug": "hack-the-limit-1",
+      "title": "Hack The Limit",
+      "organizer": "Hack",
+      "prize_usd": 350,
+      "prize_raw": "$350",
+      "registrants": 630,
+      "starts_at": "2026-06-18T00:00:00.000Z",
+      "ends_at": "2026-08-30T23:59:00.000Z",
+      "time_left": "7 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Open Ended",
+        "Productivity",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hack-the-limit-1.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 9,
+        "equal_share": 0.56,
+        "value_score": 42,
+        "odds_score": 25,
+        "registrant_percentile": 75,
+        "opportunity_score": 48
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "impactforge",
+      "slug": "impactforge",
+      "title": "ImpactForge",
+      "organizer": "ImpactForge",
+      "prize_usd": 300,
+      "prize_raw": "$300",
+      "registrants": 946,
+      "starts_at": "2026-06-19T00:00:00.000Z",
+      "ends_at": "2026-08-24T23:59:00.000Z",
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Low/No Code",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://impactforge.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 3,
+        "equal_share": 0.32,
+        "value_score": 41,
+        "odds_score": 10,
+        "registrant_percentile": 82,
+        "opportunity_score": 45
+      },
+      "mega": null,
+      "status": "closing_soon"
+    },
+    {
+      "id": "next-founders",
+      "slug": "next-founders",
+      "title": "Next Founders Hackathon",
+      "organizer": "Next",
+      "prize_usd": 275,
+      "prize_raw": "$275",
+      "registrants": 58,
+      "starts_at": "2026-08-16T00:00:00.000Z",
+      "ends_at": "2026-10-15T23:59:00.000Z",
+      "time_left": "about 2 months left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Low/No Code",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://next-founders.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 55,
+        "equal_share": 4.74,
+        "value_score": 41,
+        "odds_score": 40,
+        "registrant_percentile": 22,
+        "opportunity_score": 51
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "brainwave-2026-midnight-track",
+      "slug": "brainwave-2026-midnight-track",
+      "title": "Brainwave 2026 – Midnight Track",
+      "organizer": "Brainwave",
+      "prize_usd": 220,
+      "prize_raw": "$220",
+      "registrants": 140,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "4 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Blockchain",
+        "Fintech"
+      ],
+      "open_to_all": true,
+      "source_url": "https://brainwave-2026-midnight-track.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.445Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 1.57,
+        "value_score": 39,
+        "odds_score": 25,
+        "registrant_percentile": 39,
+        "opportunity_score": 43
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "neuralsprint",
+      "slug": "neuralsprint",
+      "title": "NeuralSprint",
+      "organizer": "NeuralSprint",
+      "prize_usd": 150,
+      "prize_raw": "$150",
+      "registrants": 636,
+      "starts_at": "2026-06-18T00:00:00.000Z",
+      "ends_at": "2026-08-24T23:59:00.000Z",
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Social Good",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://neuralsprint.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 3,
+        "equal_share": 0.24,
+        "value_score": 36,
+        "odds_score": 10,
+        "registrant_percentile": 76,
+        "opportunity_score": 43
+      },
+      "mega": null,
+      "status": "closing_soon"
+    },
+    {
+      "id": "evensonarisnord",
+      "slug": "evensonarisnord",
+      "title": "evensonarisnord",
+      "organizer": "evensonarisnord",
+      "prize_usd": 150,
+      "prize_raw": "$150",
+      "registrants": 90,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Communication",
+        "Databases"
+      ],
+      "open_to_all": true,
+      "source_url": "https://evensonarisnord.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": 1.67,
+        "value_score": 36,
+        "odds_score": 25,
+        "registrant_percentile": 36,
+        "opportunity_score": 42
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "hack-for-humanity-summer-26",
+      "slug": "hack-for-humanity-summer-26",
+      "title": "Hack for Humanity | Summer 2026 (+13 non-cash prizes)",
+      "organizer": "Hack",
+      "prize_usd": 100,
+      "prize_raw": "$100",
+      "registrants": 1058,
+      "starts_at": "2026-08-07T00:00:00.000Z",
+      "ends_at": "2026-09-04T23:59:00.000Z",
+      "time_left": "13 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Health",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hack-for-humanity-summer-26.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 14,
+        "equal_share": 0.09,
+        "value_score": 33,
+        "odds_score": 10,
+        "registrant_percentile": 83,
+        "opportunity_score": 39
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "3d-websites-hackathon",
+      "slug": "3d-websites-hackathon",
+      "title": "3D Websites Hackathon",
+      "organizer": "3D",
+      "prize_usd": 55,
+      "prize_raw": "$55",
+      "registrants": 1351,
+      "starts_at": "2026-06-22T00:00:00.000Z",
+      "ends_at": "2026-08-31T23:59:00.000Z",
+      "time_left": "9 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Web",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://3d-websites-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": 10,
+        "equal_share": 0.04,
+        "value_score": 29,
+        "odds_score": 10,
+        "registrant_percentile": 86,
+        "opportunity_score": 38
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "gatewaygs-ai-4-earth-hackathon",
+      "slug": "gatewaygs-ai-4-earth-hackathon",
+      "title": "GatewayGS & The AEI Initiative:  AI 4 Earth Hackathon",
+      "organizer": "GatewayGS",
+      "prize_usd": 25,
+      "prize_raw": "$25",
+      "registrants": 244,
+      "starts_at": "2026-07-25T00:00:00.000Z",
+      "ends_at": "2026-08-22T23:59:00.000Z",
+      "time_left": "22 minutes left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gatewaygs-ai-4-earth-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 1,
+        "equal_share": 0.1,
+        "value_score": 24,
+        "odds_score": 10,
+        "registrant_percentile": 57,
+        "opportunity_score": 38
+      },
+      "mega": null,
+      "status": "closing_soon"
+    },
+    {
+      "id": "pixel-forge-ai-hackathon-08",
+      "slug": "pixel-forge-ai-hackathon-08",
+      "title": "Pixel Forge AI Hackathon ($18,000+ in Prizes)",
+      "organizer": "Pixel",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 810,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "about 19 hours left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Web",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://pixel-forge-ai-hackathon-08.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 78,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "inspire-hackathon",
+      "slug": "inspire-hackathon",
+      "title": "Inspire Hackathon ",
+      "organizer": "Inspire",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 410,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "2 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Enterprise",
+        "Fintech",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://inspire-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 68,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "ai-yes-competition-30441",
+      "slug": "ai-yes-competition-30441",
+      "title": "AI YES :International Youth AI Competition",
+      "organizer": "AI",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 259,
+      "starts_at": "2026-06-17T00:00:00.000Z",
+      "ends_at": "2026-09-01T23:59:00.000Z",
+      "time_left": "10 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://ai-yes-competition-30441.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 11,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 63,
+        "opportunity_score": 23
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "hackonomics27",
+      "slug": "hackonomics27",
+      "title": "Hackonomics 2027",
+      "organizer": "Hackonomics",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 245,
+      "starts_at": "2026-07-01T00:00:00.000Z",
+      "ends_at": "2026-08-29T23:59:00.000Z",
+      "time_left": "7 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hackonomics27.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "metrics": {
+        "days_left": 8,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 58,
+        "opportunity_score": 23
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "code-for-humanity",
+      "slug": "code-for-humanity",
+      "title": "Code for Humanity",
+      "organizer": "Code",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 205,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "5 months left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://code-for-humanity.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 56,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "animalhack2026",
+      "slug": "animalhack2026",
+      "title": "AnimalHack 2026",
+      "organizer": "AnimalHack",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 176,
+      "starts_at": "2026-06-14T00:00:00.000Z",
+      "ends_at": "2026-09-12T23:59:00.000Z",
+      "time_left": "21 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Open Ended",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://animalhack2026.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": 22,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 51,
+        "opportunity_score": 20
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "buuniex-hackathon",
+      "slug": "buuniex-hackathon",
+      "title": "BunnieX Hackathon",
+      "organizer": "BunnieX",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 176,
+      "starts_at": "2026-06-22T00:00:00.000Z",
+      "ends_at": "2026-09-22T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://buuniex-hackathon.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": 32,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 51,
+        "opportunity_score": 20
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "dsh-hacks-v2",
+      "slug": "dsh-hacks-v2",
+      "title": "DSH Hacks V2 ",
+      "organizer": "DSH",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 164,
+      "starts_at": "2026-06-24T00:00:00.000Z",
+      "ends_at": "2026-11-08T23:59:00.000Z",
+      "time_left": "3 months left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Low/No Code",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://dsh-hacks-v2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": 79,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 47,
+        "opportunity_score": 18
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "evorozen-apex",
+      "slug": "evorozen-apex",
+      "title": "Evorozen Apex: NextGen AI Buildathon",
+      "organizer": "Evorozen",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 155,
+      "starts_at": "2026-07-17T00:00:00.000Z",
+      "ends_at": "2026-09-20T23:59:00.000Z",
+      "time_left": "29 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Databases",
+        "Machine Learning/AI",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://evorozen-apex.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.263Z",
+      "metrics": {
+        "days_left": 30,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 44,
+        "opportunity_score": 20
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "syntax-summit",
+      "slug": "syntax-summit",
+      "title": "Syntax Summit",
+      "organizer": "Syntax",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 121,
+      "starts_at": "2026-07-18T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "DevOps",
+        "Machine Learning/AI",
+        "Robotic Process Automation"
+      ],
+      "open_to_all": true,
+      "source_url": "https://syntax-summit.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": 15,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 38,
+        "opportunity_score": 23
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "luma-hackathon-fall",
+      "slug": "luma-hackathon-fall",
+      "title": "LUMA Hackathon (September 20th - 28th)",
+      "organizer": "LUMA",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 75,
+      "starts_at": "2026-06-26T00:00:00.000Z",
+      "ends_at": "2026-09-28T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://luma-hackathon-fall.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": 38,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 29,
+        "opportunity_score": 20
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "firstcommit",
+      "slug": "firstcommit",
+      "title": "Beginner's Paradise - FirstCommit",
+      "organizer": "Beginner's",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 73,
+      "starts_at": "2026-08-21T00:00:00.000Z",
+      "ends_at": "2026-09-30T23:59:00.000Z",
+      "time_left": "about 1 month left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Mobile",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://firstcommit.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": 40,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 28,
+        "opportunity_score": 20
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "rescue-hacks-30680",
+      "slug": "rescue-hacks-30680",
+      "title": "RescueHacks",
+      "organizer": "RescueHacks",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 67,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "7 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Low/No Code",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://rescue-hacks-30680.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 24,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "creation-code-30750",
+      "slug": "creation-code-30750",
+      "title": "Build With Gemini - Creation Code",
+      "organizer": "Build",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 57,
+      "starts_at": "2026-07-17T00:00:00.000Z",
+      "ends_at": "2026-09-03T23:59:00.000Z",
+      "time_left": "12 days left",
+      "location_type": "in-person",
+      "location": "Jaipur, India",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended"
+      ],
+      "open_to_all": true,
+      "source_url": "https://creation-code-30750.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 13,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 21,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "create-with-gemini",
+      "slug": "create-with-gemini",
+      "title": "Create with Gemini",
+      "organizer": "Create",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 52,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "3 days left",
+      "location_type": "in-person",
+      "location": "Applyhub ",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://create-with-gemini.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 18,
+        "opportunity_score": 15
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "htcj-aviation-futures",
+      "slug": "htcj-aviation-futures",
+      "title": "HTCJ Aviation Futures Innovation Challenge",
+      "organizer": "HTCJ",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 44,
+      "starts_at": "2026-06-25T00:00:00.000Z",
+      "ends_at": "2026-10-08T23:59:00.000Z",
+      "time_left": "about 2 months left",
+      "location_type": "in-person",
+      "location": "San Diego Convention Center ",
+      "themes": [
+        "Enterprise",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://htcj-aviation-futures.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 48,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 17,
+        "opportunity_score": 16
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "gemini-builds",
+      "slug": "gemini-builds",
+      "title": "Gemini Builds",
+      "organizer": "Gemini",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 34,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "1 day left",
+      "location_type": "in-person",
+      "location": "LBS College ",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gemini-builds.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 15,
+        "opportunity_score": 15
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "gemini-event-hackmatrix",
+      "slug": "gemini-event-hackmatrix",
+      "title": "Gemini Event - HackMatrix",
+      "organizer": "Gemini",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 34,
+      "starts_at": "2026-08-09T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "in-person",
+      "location": "Jaipur",
+      "themes": [
+        "Blockchain",
+        "Cybersecurity",
+        "Low/No Code"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gemini-event-hackmatrix.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "metrics": {
+        "days_left": 15,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 15,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "technisa-hacks",
+      "slug": "technisa-hacks",
+      "title": "TechNisa Hacks ",
+      "organizer": "TechNisa",
+      "prize_usd": null,
+      "prize_raw": "$CAD 0",
+      "registrants": 21,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "about 15 hours left",
+      "location_type": "in-person",
+      "location": "Toronto Metropolitan University",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://technisa-hacks.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 10,
+        "opportunity_score": 15
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "8-bit-jam",
+      "slug": "8-bit-jam",
+      "title": "8-Bit Jam",
+      "organizer": "8-Bit",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 20,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "about 1 hour left",
+      "location_type": "in-person",
+      "location": "Great Falls, Virginia",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Gaming"
+      ],
+      "open_to_all": true,
+      "source_url": "https://8-bit-jam.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 8,
+        "opportunity_score": 15
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "graphiques-challenge",
+      "slug": "graphiques-challenge",
+      "title": "Graphiques Innovation Challenge ",
+      "organizer": "Graphiques",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 19,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "about 13 hours left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Enterprise",
+        "Fintech",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://graphiques-challenge.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 7,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "mca-2026-projects",
+      "slug": "mca-2026-projects",
+      "title": "MCA 2026 projects",
+      "organizer": "MCA",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 17,
+      "starts_at": "2026-02-27T00:00:00.000Z",
+      "ends_at": "2026-12-25T23:59:00.000Z",
+      "time_left": "4 months left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://mca-2026-projects.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": 126,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 6,
+        "opportunity_score": 18
+      },
+      "mega": null,
+      "status": "open"
+    },
+    {
+      "id": "ai-innovation-day-31076",
+      "slug": "ai-innovation-day-31076",
+      "title": "AI & Innovation Day @ AITR Indore",
+      "organizer": "AI",
+      "prize_usd": null,
+      "prize_raw": "₹ 0",
+      "registrants": 9,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "about 22 hours left",
+      "location_type": "in-person",
+      "location": "Indore",
+      "themes": [
+        "Education"
+      ],
+      "open_to_all": true,
+      "source_url": "https://ai-innovation-day-31076.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.871Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 1,
+        "opportunity_score": 15
+      },
+      "mega": null,
+      "status": "unknown"
+    },
+    {
+      "id": "devonomicsv1",
+      "slug": "devonomicsv1",
+      "title": "United Hackathons V1",
+      "organizer": "United",
+      "prize_usd": null,
+      "prize_raw": "$0",
+      "registrants": 85,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://devonomicsv1.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "metrics": {
+        "days_left": null,
+        "equal_share": null,
+        "value_score": null,
+        "odds_score": null,
+        "registrant_percentile": 35,
+        "opportunity_score": 19
+      },
+      "mega": null,
+      "status": "unknown"
+    }
+  ],
+  "changes": []
+}

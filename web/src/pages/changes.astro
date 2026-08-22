@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import derived from '../data/derived.json';
+
+const changes = derived.changes;
+const fmt = (iso) => new Date(iso).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+const rowsHtml = changes.map(c => {
+  let detail;
+  if (c.type === 'added') detail = '<span class="badge badge-verified">Added</span>';
+  else if (c.type === 'removed') detail = '<span class="badge" style="background:rgba(239,68,68,.15);color:var(--red)">Removed</span>';
+  else detail = '<span class="badge badge-deal">' + esc(c.field) + '</span> <span style="color:var(--text-dim)">' + esc(JSON.stringify(c.old)) + ' &rarr; ' + esc(JSON.stringify(c.new)) + '</span>';
+  return '<tr><td style="font-size:12px;color:var(--text-dim)">' + fmt(c.detected_at) +
+    '</td><td><span class="model-name">' + esc(c.offer_id) + '</span></td><td style="font-size:13px">' + detail + '</td></tr>';
+}).join('');
+---
+<Base title="Changes - HackathonHelp">
+  <section class="hero">
+    <div class="eyebrow">Tracking</div>
+    <h1>What changed</h1>
+    <p class="subtitle">Daily runs snapshot every opportunity and diff against the previous state. Prize changes, registration surges, deadline shifts, additions.</p>
+  </section>
+
+  {changes.length === 0 ? (
+    <div class="panel empty-state">
+      <p>No changes detected since tracking began ({fmt('2026-08-23T00:00:00Z')}).</p>
+      <p style="margin-top:8px">History accrues automatically: each daily research run snapshots offers to <code>data/history/</code>, the build diffs them, and anything that moved shows up here — plus in <a href="/api/v1/changes.json">changes.json</a> for agents.</p>
+    </div>
+  ) : (
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Date</th><th>Offer</th><th>Change</th></tr></thead>
+        <tbody set:html={rowsHtml} />
+      </table>
+    </div>
+  )}
+</Base>
+
+<style>
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  .empty-state p { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+  code { background: #0b0f15; border: 1px solid var(--border); border-radius: 6px; padding: 2px 6px; font-size: 12px; }
+</style>

@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import derived from '../data/derived.json';
+
+const open = derived.opportunities.filter(o => o.status !== 'ended');
+const megas = open.filter(o => o.mega).sort((a,b)=>b.mega.score-a.mega.score);
+const top = derived.top;
+
+function fmt$(v){ return v==null?'—':'$'+Math.round(v).toLocaleString(); }
+function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+const topCardsHtml = top.map((o,i)=>{
+  const m=o.metrics;
+  return `<div class="deal-full">
+    <div class="deal-rank">#${i+1}</div>
+    <div class="deal-body">
+      <div class="deal-head"><h3 class="deal-title">${esc(o.title)}</h3><span class="deal-tagline">${esc(o.organizer||'')} · ${o.location_type}</span></div>
+      <div class="deal-section"><div class="deal-section-label">Prize pool</div><div class="deal-section-text" style="font-weight:800;color:var(--accent);font-size:18px">${fmt$(o.prize_usd)}</div></div>
+      <div class="deal-section"><div class="deal-section-label">Competition</div><div class="deal-section-text">${(o.registrants||0).toLocaleString()} entrants · <strong>$${m.equal_share ?? '—'} fair-share each</strong> · top ${100-m.registrant_percentile}% by prize size</div></div>
+      <div class="deal-section"><div class="deal-section-label">Deadline</div><div class="deal-section-text">${o.time_left || 'see event page'} ${o.ends_at?`(${new Date(o.ends_at).toLocaleDateString('en-US',{month:'short',day:'numeric'})})`:''}</div></div>
+      ${o.themes.length?`<div class="deal-section"><div class="deal-section-label">Themes</div><div class="deal-section-text">${o.themes.slice(0,4).map(esc).join(' · ')}</div></div>`:''}
+      <div class="deal-footer">
+        <a href="/opps/${o.slug}" class="deal-link">Full analysis</a>
+        <span style="color:var(--border)">|</span>
+        <a href="${o.source_url}" target="_blank" rel="noopener" class="deal-link">Register →</a>
+      </div>
+    </div>
+  </div>`;
+}).join('');
+
+const megaRowsHtml = megas.slice(0,10).map(o=>`
+  <tr style="cursor:pointer" onclick="window.location='/opps/${o.slug}'">
+    <td class="price" style="color:var(--accent);font-weight:800;font-size:15px">${o.mega.score}</td>
+    <td><div class="model-name">${esc(o.title)}</div><div class="model-sub">${o.mega.reasons.join(' · ')}</div></td>
+    <td style="font-variant-numeric:tabular-nums;font-weight:700">${fmt$(o.prize_usd)}</td>
+    <td style="font-variant-numeric:tabular-nums">${(o.registrants||0).toLocaleString()}</td>
+    <td class="price price-input">$${o.metrics.equal_share ?? '—'}</td>
+    <td style="font-size:12px;color:${o.metrics.days_left<=7?'var(--orange)':'var(--text-dim)'}">${o.time_left||'—'}</td>
+  </tr>`).join('');
+
+const tableRows = JSON.stringify(open.map(o=>({
+  slug:o.slug, title:o.title, prize:o.prize_usd, reg:o.registrants,
+  share:o.metrics.equal_share, score:o.metrics.opportunity_score,
+  days:o.metrics.days_left, loc:o.location_type, themes:o.themes.join(' '), status:o.status,
+})));
+---
+<Base title="HackathonHelp - Hackathons actually worth entering">
+  <section class="hero">
+    <div class="eyebrow">Opportunity intelligence for builders</div>
+    <h1>Hackathons worth entering</h1>
+    <p class="subtitle">{derived.counts.open} live events analyzed. We normalize prize pools against real competition so you can see the actual expected value — not just the biggest headline number. Updated {new Date().toISOString().slice(0,10)}.</p>
+  </section>
+
+  <section style="margin-bottom:48px" set:html={topCardsHtml} />
+
+  <section style="margin-bottom:48px">
+    <div class="section-header">
+      <h2>🔥 Mega opportunities</h2>
+      <span class="stats">high fair-share ÷ low competition — full rules on /methodology</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Score</th><th>Event</th><th>Prize</th><th>Entrants</th><th>Fair-share/entrant</th><th>Deadline</th></tr></thead>
+        <tbody set:html={megaRowsHtml} />
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <h2>All live opportunities</h2>
+      <span class="stats">{open.length} events</span>
+    </div>
+    <div class="toolbar">
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <input type="search" id="q" placeholder="Search title, organizer, theme..." />
+        <select id="f-loc"><option value="">Online + IRL</option><option value="online">Online only</option><option value="in-person">In-person</option></select>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th data-col="score" data-num>Score</th><th>Event</th><th data-col="prize" data-num>Prize</th>
+          <th data-col="reg" data-num>Entrants</th><th data-col="share" data-num>Fair-share</th><th data-col="days" data-num>Days left</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script define:vars={{ rows: tableRows }}>
+    const all = JSON.parse(rows);
+    let sort = {col:'score', dir:'desc'};
+    function render(){
+      const q=(document.getElementById('q')?.value||'').toLowerCase();
+      const fl=document.getElementById('f-loc')?.value||'';
+      let f=all.filter(r=>{
+        if(q && !(r.title+r.themes).toLowerCase().includes(q)) return false;
+        if(fl && r.loc!==fl) return false;
+        return true;});
+      f.sort((a,b)=>{let va=a[sort.col]??-1,vb=b[sort.col]??-1;return sort.dir==='asc'?va-vb:vb-va;});
+      document.getElementById('tbody').innerHTML=f.map(r=>`<tr style="cursor:pointer" onclick="window.location='/opps/${r.slug}'">
+        <td class="price" style="color:var(--accent);font-weight:800">${r.status==='closing_soon'?'⏳ ':''}${r.score}</td>
+        <td><div class="model-name">${r.title}</div><div class="model-sub">${r.loc}</div></td>
+        <td class="price">$${r.prize!=null?Math.round(r.prize).toLocaleString():'—'}</td>
+        <td style="font-variant-numeric:tabular-nums">${r.reg!=null?r.reg.toLocaleString():'—'}</td>
+        <td class="price price-input">${r.share!=null?'$'+r.share:'—'}</td>
+        <td style="font-size:12px;color:${r.days!=null&&r.days<=7?'var(--orange)':'var(--text-dim)'}">${r.days==null?'—':r.days<0?'ended':r.days+'d'}</td>
+      </tr>`).join('');
+      document.getElementById('stats').textContent=f.length+' events';
+    }
+    document.querySelectorAll('th[data-col]').forEach(th=>th.addEventListener('click',()=>{
+      const c=th.dataset.col;
+      if(sort.col===c) sort.dir=sort.dir==='asc'?'desc':'asc'; else {sort.col=c;sort.dir='desc';}
+      render();}));
+    document.getElementById('q')?.addEventListener('input',render);
+    document.getElementById('f-loc')?.addEventListener('change',render);
+    render();
+  </script>
+</Base>

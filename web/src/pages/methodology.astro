@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Methodology - HackathonHelp">
+  <section class="hero">
+    <div class="eyebrow">How scoring works</div>
+    <h1>Methodology</h1>
+    <p class="subtitle">Every number is computed from official Devpost platform data. Deterministic formulas, shown work.</p>
+  </section>
+  <div class="content">
+    <section class="section">
+      <h2>Fair-share per entrant — the core metric</h2>
+      <pre>fair_share = prize_pool_usd / current_registrant_count</pre>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-dim)">The naive equal split. Not a prediction of winnings — a proxy for how much prize money chases each competitor. A $100K event with 300 entrants ($333/share) is a very different animal from $100K with 20,000 ($5/share).</p>
+    </section>
+    <section class="section">
+      <h2>Opportunity score (0-100)</h2>
+      <pre>opportunity_score =
+    value_score   x 0.40   (log-scaled prize pool, $1M ceiling)
+  + odds_score    x 0.35   (fair-share tiers: ≥$50=100 ... <$0.50=10)
+  + urgency       x 12     (≤7 days = full marks, >60 days = partial)
+  + access        x 13     (online = full, IRL = discounted)</pre>
+    </section>
+    <section class="section">
+      <h2>🔥 Mega-opportunity detector</h2>
+      <p>A flag requires stated facts crossing thresholds — never a vibe:</p>
+      <ul class="dont-list">
+        <li>Fair-share ≥ $20/entrant (strong flag, +35)</li>
+        <li>Prize ≥ $100K AND below-median competition (+30)</li>
+        <li>Closing within 14 days with odds-score ≥ 55 (+15)</li>
+        <li>Total score must reach 30 to display</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2>What we don't do</h2>
+      <ul class="dont-list">
+        <li>We don't rank by sponsorship or affiliate relationships</li>
+        <li>We don't predict winners — we normalize competition</li>
+        <li>We don't hide declining events; ended events show as closed</li>
+        <li>Data comes from the official Devpost API only — no scraping, no guesses</li>
+      </ul>
+    </section>
+  </div>
+</Base>
+<style>
+  .content{max-width:800px}.section{margin-bottom:44px}
+  h2{font-size:19px;font-weight:700;margin-bottom:12px}
+  p{color:var(--text-muted);font-size:14px;line-height:1.6}
+  pre{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;font-size:12px;color:var(--text-muted);overflow-x:auto}
+  .dont-list{margin:0;padding-left:18px}.dont-list li{font-size:13px;color:var(--text-dim);margin-bottom:6px}
+</style>
