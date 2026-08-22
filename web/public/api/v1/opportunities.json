@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:52:39.984Z",
+  "generated_at": "2026-08-22T23:53:16.247Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 154,
@@ -21619,78 +21619,5 @@
       "reason": "in-person event (Munich, Germany)"
     }
   ],
-  "changes": [
-    {
-      "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
-      "type": "changed",
-      "field": "registrants",
-      "old": 19475,
-      "new": 19476,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
-      "type": "changed",
-      "field": "registrants",
-      "old": 7000,
-      "new": 7001,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-gibc-v2-gibc-v2",
-      "type": "changed",
-      "field": "registrants",
-      "old": 319,
-      "new": 320,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-agentic-cinema-agentic-cinema",
-      "type": "changed",
-      "field": "registrants",
-      "old": 7706,
-      "new": 7707,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-tiktoktechjam2026-tiktoktechjam2026",
-      "type": "changed",
-      "field": "registrants",
-      "old": 2124,
-      "new": 2126,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-call-e-call-e",
-      "type": "changed",
-      "field": "registrants",
-      "old": 2397,
-      "new": 2398,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
-      "type": "changed",
-      "field": "registrants",
-      "old": 86,
-      "new": 87,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-hack-the-habitat-2026-hack-the-habitat-2026",
-      "type": "changed",
-      "field": "registrants",
-      "old": 160,
-      "new": 161,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    },
-    {
-      "id": "dp-3rd-web-hack-3rd-web-hack",
-      "type": "changed",
-      "field": "registrants",
-      "old": 10,
-      "new": 11,
-      "detected_at": "2026-08-22T23:52:39.982Z"
-    }
-  ]
+  "changes": []
 }
