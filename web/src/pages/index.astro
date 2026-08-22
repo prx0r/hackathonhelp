@@ -6,7 +6,9 @@ import derived from '../data/derived.json';
 
 
 const megas = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.mega).sort((a,b)=>b.mega.score-a.mega.score);
-const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible);
+// Grid = actionable only: attention>0 excludes <3-day events and TBA deadlines
+const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.attention > 0);
+const toolate = derived.opportunities.filter(o => o.status==='open' && o.eligibility.eligible && o.attention <= 0 && o.metrics.days_left != null && o.metrics.days_left >= 0);
 // LIVE = usable field or closing soon; UPCOMING/FORMING = field still maturing
 const live = open.filter(o => o.field.field_status==='usable')
   .sort((a,b)=>b.score_v01.opportunity_score-a.score_v01.opportunity_score);
@@ -18,7 +20,7 @@ function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
 
 function daysLeft(o){ return o.metrics.days_left; }
 function timeColor(d){
-  if (d==null) return {bg:'rgba(148,163,184,0.08)', border:'var(--border)', text:'var(--text-dim)', label:'?'};
+  if (d==null) return {bg:'rgba(148,163,184,0.08)', border:'var(--border)', text:'var(--text-dim)', label:'TBA'};
   if (d<0) return {bg:'rgba(100,116,139,0.10)', border:'rgba(100,116,139,0.25)', text:'var(--text-dim)', label:'ended'};
   if (d<=1) return {bg:'rgba(239,68,68,0.18)', border:'rgba(239,68,68,0.55)', text:'#fca5a5', label:d+'d'};
   if (d<=3) return {bg:'rgba(249,115,22,0.16)', border:'rgba(249,115,22,0.45)', text:'#fdba74', label:d+'d'};
@@ -87,7 +89,7 @@ const tilesHtml = open.map(o => {
       <span class="stats">{open.length} live events · tile colour = time left (red → blue)</span>
     </div>
     <div class="tile-grid" set:html={tilesHtml} />
-    <p class="mathnote" style="margin-top:10px;font-size:11px;color:var(--text-dim)">Colour scale: red ≤1d · orange ≤3d · yellow ≤7d · green ≤14d · blue ≤30d · indigo 30d+.</p>
+    <p class="mathnote" style="margin-top:10px;font-size:11px;color:var(--text-dim)">Ordered by attention (score × time-window). Colour scale: red ≤1d · orange ≤3d · yellow ≤7d · green ≤14d · blue ≤30d · indigo 30d+. Events under 3 days are hidden — too late to build anything real.{toolate.length ? ` ${toolate.length} event${toolate.length>1?'s':''} in final sprint hidden.` : ''}</p>
   </section>
   </section>
 

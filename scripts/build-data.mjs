@@ -31,6 +31,8 @@ function applyGates(o){
   let eligible = true; const failed = [];
   if (exclusion){ eligible=false; failed.push(exclusion.reason); }
   if (gates.deadline_future === false) eligible=false, failed.push('deadline passed');
+  // Audience gate: online-only (builder cannot attend physical venues)
+  if (o.location_type !== 'online'){ eligible=false; failed.push(`in-person event (${o.location||'venue-based'})`); }
   if (!o.prize_usd && !patch) {/* no prize data yet — not disqualifying */}
   return {...o, days_left:dl, gates,
     eligibility:{ eligible, failed, confidence: exclusion?'official_rules':(patch?'official_rules':'platform_metadata_unverified'),
@@ -153,8 +155,28 @@ for (const r of rows){
 }
 function medianReg(rows){const a=rows.map(r=>r.field.registrations).filter(x=>x>0).sort((x,y)=>x-y);return a.length?a[Math.floor(a.length/2)]:500;}
 
-const live = rows.filter(r=>r.eligibility.eligible && r.status!=='ended' && (r.score_v01.opportunity_score??null)!==null);
-const top = [...live].sort((a,b)=>b.score_v01.opportunity_score-a.score_v01.opportunity_score).slice(0,10);
+// ---------- ATTENTION MODEL ----------
+// Where should a builder look FIRST? Raw score isn't enough: a 96 with 1 day
+// left is unusable; a 70 with perfect timing may be the best next action.
+function urgencyMultiplier(d){
+  if (d==null) return 0.35;          // unknown deadline -> deprioritize
+  if (d<=2)    return 0;             // too late to build anything real
+  if (d<=6)    return 0.55;          // sprint-only
+  if (d<=13)   return 0.85;
+  if (d<=30)   return 1.00;          // sweet spot: enough runway, real urgency
+  if (d<=60)   return 0.90;
+  return 0.75;                       // far out: watch, don't commit
+}
+for (const r of rows){
+  const sc = r.score_v01.opportunity_score;
+  const d  = r.metrics.days_left;
+  r.attention = (sc!=null && r.eligibility.eligible)
+    ? +(sc * urgencyMultiplier(d)).toFixed(1)
+    : -1;
+}
+
+const live = rows.filter(r=>r.eligibility.eligible && r.status!=='ended' && (r.score_v01.opportunity_score??null)!==null && r.attention>0);
+const top = [...live].sort((a,b)=>b.attention-a.attention).slice(0,10);
 
 // excluded-but-listed for transparency
 const excluded = rows.filter(r=>!r.eligibility.eligible).map(r=>({slug:r.slug,title:r.title,reason:r.eligibility.failed.join('; ')}));
@@ -173,11 +195,13 @@ fs.writeFileSync(latestPath,JSON.stringify(seed,null,2));
 const payload={generated_at:new Date().toISOString(),schema_version:'hackathonhelp.api.v2',
 counts:{opportunities:rows.length,live:live.length,mega:rows.filter(r=>r.mega).length,excluded:excluded.length},
 top,opportunities:rows,excluded,changes};
+rows.sort((a,b)=>(b.attention??-1)-(a.attention??-1));
 fs.mkdirSync(path.join(ROOT,'web/src/data'),{recursive:true});
 fs.mkdirSync(path.join(ROOT,'web/public/api/v1'),{recursive:true});
 for(const [f,obj] of [['top',{deals:top}],['opportunities',payload],['changes',{changes}]])
 fs.writeFileSync(path.join(ROOT,`web/public/api/v1/${f}.json`),JSON.stringify({generated_at:payload.generated_at,schema_version:payload.schema_version,...obj},null,2));
 fs.writeFileSync(path.join(ROOT,'web/src/data/derived.json'),JSON.stringify(payload,null,2));
+rows.forEach(r=>{ if(r.metrics.days_left==null) r.cautions=[...(r.cautions||[]),'deadline not published']; });
 console.log(`build-data v2: ${rows.length} opps | live-scored ${live.length} | excluded ${excluded.length} | mega ${payload.counts.mega}`);
 console.log('TOP:');
 for(const t of top.slice(0,10)) console.log(`  ${String(t.score_v01.opportunity_score).padStart(3)} ${t.title.slice(0,42).padEnd(42)} norm $${String(t.prize.normalized_value).padStart(7)} est.field ${String(t.field.estimated_serious_field).padStart(5)} share $${t.metrics.fair_share_serious}`);

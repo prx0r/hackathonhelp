@@ -10,7 +10,16 @@ const KEY = process.env.BRABBLE_API_KEY;
 
 function parsePrize(html){ if(!html) return null; const m=String(html).match(/data-currency-value>([\d,.]+)</); const n=m?m[1]:(String(html).match(/([\d,.]+)/)?.[1]); return n?parseFloat(n.replace(/,/g,''))||null:null; }
 function parseDates(str){ const m=str?.match(/(\w{3}) (\d+) - (\w{3}) (\d+), (\d+)/); if(!m) return {}; const M={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11}; return { starts_at:new Date(Date.UTC(+m[5],M[m[1]],+m[2])).toISOString(), ends_at:new Date(Date.UTC(+m[5],M[m[3]],+m[4],23,59)).toISOString() }; }
-function slugify(u){ try{ return new URL(u).hostname.split('.')[0]; }catch{ return u.slice(0,40); } }
+function slugify(u){
+  try{
+    const url=new URL(u);
+    const parts=url.pathname.split('/').filter(Boolean);
+    const tail=parts[parts.length-1]||'';
+    const host=url.hostname.replace(/^www\./,'').split('.')[0];
+    const base=(tail&&tail.length>3?tail:host)||'event';
+    return `${host}-${base}`.toLowerCase().replace(/[^a-z0-9-]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'event';
+  }catch{ return 'ev-'+Math.abs([...u].reduce((a,c)=>a*31+c.charCodeAt(0)|0,7)).toString(36); }
+}
 
 const seen=new Set(); const opportunities=[];
 
@@ -58,7 +67,7 @@ if(KEY){
       seen.add(l.url);
       const prizeNum = l.prize?.label ? parseFloat(String(l.prize.label).replace(/[^0-9.]/g,''))||null : null;
       opportunities.push({
-        id:'br-'+l.id, slug:'br-'+l.id,
+        id:'br-'+slugify(l.url), slug:'br-'+slugify(l.url),
         title:l.title, organizer:l.organiser||null,
         prize_usd: prizeNum, prize_raw:l.prize?.label||null,
         registrants:l.registered??null,

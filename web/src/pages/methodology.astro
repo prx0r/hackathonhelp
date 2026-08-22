@@ -22,6 +22,15 @@ import Base from '../layouts/Base.astro';
   + access        x 13     (online = full, IRL = discounted)</pre>
     </section>
     <section class="section">
+      <h2>Attention model (grid ordering)</h2>
+      <pre>attention = opportunity_score x urgency_multiplier(deadline)
+
+urgency: ≤2d excluded · 3-6d ×0.55 · 7-13d ×0.85
+         14-30d ×1.00 (sweet spot) · 31-60d ×0.90 · 60d+ ×0.75</pre>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-dim)">Raw quality isn't where attention goes first: a 96/100 with one day left is unusable, a 70/100 with perfect timing may be your best next action. Unknown deadlines are deprioritized until published.</p>
+    </section>
+
+    <section class="section">
       <h2>🔥 Mega-opportunity detector</h2>
       <p>A flag requires stated facts crossing thresholds — never a vibe:</p>
       <ul class="dont-list">
