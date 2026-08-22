@@ -97,7 +97,15 @@ const tilesHtml = open.map(o => {
   <section style="margin-bottom:48px">
     <div class="section-header">
       <h2>Opportunity grid</h2>
-      <span class="stats">{open.length} live events · tile colour = time left (red → blue)</span>
+      <span class="stats">{open.length} events · ordered by attention</span>
+    </div>
+
+    <div class="legend">
+      <div class="legend-bar"></div>
+      <div class="legend-ticks">
+        <span style="color:#f87171">1d</span><span style="color:#fb923c">3d</span><span style="color:#facc15">7d</span><span style="color:#4ade80">14d</span><span style="color:#22d3ee">21d</span><span style="color:#60a5fa">30d</span><span style="color:#c084fc">45d+</span>
+      </div>
+      <div class="legend-note">tile colour = days left · badge = today's action · faded tiles scored weak for their window (incl. <3d sprints)</div>
     </div>
     <div class="tile-grid" set:html={tilesHtml} />
     <p class="mathnote" style="margin-top:10px;font-size:11px;color:var(--text-dim)">Ordered by attention = opportunity score × urgency multiplier (hover a score to see the math). Colour scale: red ≤1d · orange ≤3d · yellow ≤7d · green ≤14d · blue ≤30d · indigo 30d+. Events under 3 days are hidden — too late to build anything real.{toolate.length ? ` ${toolate.length} event${toolate.length>1?'s':''} in final sprint hidden.` : ''}</p>
