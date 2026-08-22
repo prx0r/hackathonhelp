@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-cissa-catalyst-2026-cissa-catalyst-2026",
@@ -9,10 +9,10 @@
     "organizer": "Catalyst",
     "prize_usd": 1700,
     "prize_raw": "$1,700",
-    "registrants": 84,
+    "registrants": 89,
     "starts_at": null,
     "ends_at": null,
-    "time_left": "about 2 hours left",
+    "time_left": "24 minutes left",
     "location_type": "in-person",
     "location": "The University of Melbourne, Parkville",
     "themes": [
@@ -24,7 +24,7 @@
     "source_url": "https://cissa-catalyst-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:21.012Z",
+    "observed_at": "2026-08-22T23:36:17.991Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -51,16 +51,16 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 84,
+      "registrations": 89,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 17,
-      "field_p10": 11,
-      "field_p50": 17,
-      "field_p90": 26,
+      "estimated_serious_field": 18,
+      "field_p10": 12,
+      "field_p50": 18,
+      "field_p90": 28,
       "funnel": null
     },
     "slots": {
@@ -77,8 +77,8 @@
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 20.24,
-      "fair_share_serious": 100,
+      "equal_share_naive": 19.1,
+      "fair_share_serious": 94.44,
       "days_left": null
     },
     "cautions": [],
@@ -88,9 +88,9 @@
         "p50": 6,
         "p90": 12
       },
-      "baseline_any_payout": 0.353,
-      "p_paid": 0.353,
-      "ev_cash_heuristic": 600,
+      "baseline_any_payout": 0.333,
+      "p_paid": 0.333,
+      "ev_cash_heuristic": 567,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {

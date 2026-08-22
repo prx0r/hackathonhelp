@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-hack47-offgrid-hack47-offgrid",
@@ -20,7 +20,7 @@
     "source_url": "https://hack47-offgrid.devpost.com/",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T22:05:28.917Z",
+    "observed_at": "2026-08-22T23:36:25.622Z",
     "eligibility_flags": [
       "Enterprise",
       "Open Ended",

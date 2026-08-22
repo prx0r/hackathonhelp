@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-firstcommit-firstcommit",
@@ -9,7 +9,7 @@
     "organizer": "Beginner's",
     "prize_usd": null,
     "prize_raw": "",
-    "registrants": 73,
+    "registrants": 75,
     "starts_at": "2026-08-21T00:00:00.000Z",
     "ends_at": "2026-09-30T23:59:00.000Z",
     "time_left": "about 1 month left",
@@ -24,7 +24,7 @@
     "source_url": "https://firstcommit.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:21.012Z",
+    "observed_at": "2026-08-22T23:36:17.991Z",
     "days_left": 40,
     "gates": {
       "registration_open": true,
@@ -49,16 +49,16 @@
       "headline_inflation": null
     },
     "field": {
-      "registrations": 73,
+      "registrations": 75,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 26,
-      "field_p10": 17,
-      "field_p50": 26,
-      "field_p90": 40,
+      "estimated_serious_field": 15,
+      "field_p10": 10,
+      "field_p50": 15,
+      "field_p90": 23,
       "funnel": null
     },
     "slots": {
@@ -74,13 +74,13 @@
     "score_v01": {
       "components": {
         "expected_prize_value": null,
-        "winnability": 52,
+        "winnability": 57,
         "historical_winner_quality": null,
         "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 1,
-      "opportunity_score": 33
+      "opportunity_score": 37
     },
     "metrics": {
       "equal_share_naive": null,
@@ -97,8 +97,8 @@
         "p50": 6,
         "p90": 12
       },
-      "baseline_any_payout": 0.231,
-      "p_paid": 0.231,
+      "baseline_any_payout": 0.4,
+      "p_paid": 0.4,
       "ev_cash_heuristic": null,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
@@ -119,11 +119,11 @@
       "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20029.7,
+    "order_key": 20033.3,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 33,
+      "score": 37,
       "formula": "WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed"
     }
   },

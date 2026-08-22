@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-mca-2026-projects-mca-2026-projects",
@@ -22,7 +22,7 @@
     "source_url": "https://mca-2026-projects.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:21.402Z",
+    "observed_at": "2026-08-22T23:36:18.362Z",
     "days_left": 126,
     "gates": {
       "registration_open": true,

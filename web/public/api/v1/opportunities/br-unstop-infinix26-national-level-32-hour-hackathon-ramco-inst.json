@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-infinix26-national-level-32-hour-hackathon-ramco-inst",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/infinix26-national-level-32-hour-hackathon-ramco-institute-of-technology-1730876",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T22:05:26.621Z",
+    "observed_at": "2026-08-22T23:36:24.282Z",
     "eligibility_flags": [
       "Undergraduate",
       "Postgraduate",

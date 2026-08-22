@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
@@ -24,7 +24,7 @@
     "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:20.477Z",
+    "observed_at": "2026-08-22T23:36:17.469Z",
     "days_left": 13,
     "gates": {
       "registration_open": true,

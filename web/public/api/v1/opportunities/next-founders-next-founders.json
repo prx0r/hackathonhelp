@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-next-founders-next-founders",
@@ -9,7 +9,7 @@
     "organizer": "Next",
     "prize_usd": 275,
     "prize_raw": "$275",
-    "registrants": 59,
+    "registrants": 60,
     "starts_at": "2026-08-16T00:00:00.000Z",
     "ends_at": "2026-10-15T23:59:00.000Z",
     "time_left": "about 2 months left",
@@ -24,7 +24,7 @@
     "source_url": "https://next-founders.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:21.012Z",
+    "observed_at": "2026-08-22T23:36:17.992Z",
     "days_left": 55,
     "gates": {
       "registration_open": true,
@@ -49,7 +49,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 59,
+      "registrations": 60,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -83,7 +83,7 @@
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 4.66,
+      "equal_share_naive": 4.58,
       "fair_share_serious": null,
       "days_left": 55
     },

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-adtc-2026-adtc-2026",
@@ -9,7 +9,7 @@
     "organizer": "Africa",
     "prize_usd": 16500,
     "prize_raw": "$16,500",
-    "registrants": 1785,
+    "registrants": 1786,
     "starts_at": "2026-06-17T00:00:00.000Z",
     "ends_at": "2026-08-25T23:59:00.000Z",
     "time_left": "2 days left",
@@ -23,7 +23,7 @@
     "source_url": "https://adtc-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:19.952Z",
+    "observed_at": "2026-08-22T23:36:16.967Z",
     "days_left": 4,
     "gates": {
       "registration_open": true,
@@ -48,7 +48,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 1785,
+      "registrations": 1786,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"

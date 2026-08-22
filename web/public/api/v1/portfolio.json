@@ -1,14 +1,14 @@
 {
   "specialism": "agent reliability and evaluation",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "path": [
     {
       "step": 1,
       "slug": "telegraph-h1",
       "title": "Telegraph H1 Hackathon",
-      "action": "PREP",
+      "action": "SPRINT",
       "deadline": "2026-09-07",
-      "days_left": 16,
+      "days_left": 9,
       "opportunity_score": 76,
       "strategic_fit": 1,
       "effective_p80_hours": 18,

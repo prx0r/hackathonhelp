@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
@@ -9,7 +9,7 @@
     "organizer": "All",
     "prize_usd": 180000,
     "prize_raw": "$180,000",
-    "registrants": 6990,
+    "registrants": 7000,
     "starts_at": null,
     "ends_at": null,
     "time_left": "9 days left",
@@ -24,7 +24,7 @@
     "source_url": "https://allthingsagentichackathon.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:19.951Z",
+    "observed_at": "2026-08-22T23:36:16.967Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -51,7 +51,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 6990,
+      "registrations": 7000,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -77,7 +77,7 @@
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 25.75,
+      "equal_share_naive": 25.71,
       "fair_share_serious": 514.29,
       "days_left": null
     },

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-code-for-humanity-code-for-humanity",
@@ -9,7 +9,7 @@
     "organizer": "Code",
     "prize_usd": null,
     "prize_raw": "",
-    "registrants": 205,
+    "registrants": 206,
     "starts_at": null,
     "ends_at": null,
     "time_left": "5 months left",
@@ -24,7 +24,7 @@
     "source_url": "https://code-for-humanity.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:20.656Z",
+    "observed_at": "2026-08-22T23:36:17.640Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -49,7 +49,7 @@
       "headline_inflation": null
     },
     "field": {
-      "registrations": 205,
+      "registrations": 206,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"

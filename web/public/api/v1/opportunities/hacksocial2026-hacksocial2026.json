@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hacksocial2026-hacksocial2026",
@@ -9,7 +9,7 @@
     "organizer": "Hacksocial",
     "prize_usd": 3979,
     "prize_raw": "$3,979",
-    "registrants": 426,
+    "registrants": 427,
     "starts_at": null,
     "ends_at": null,
     "time_left": "9 days left",
@@ -24,7 +24,7 @@
     "source_url": "https://hacksocial2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:20.477Z",
+    "observed_at": "2026-08-22T23:36:17.469Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -49,7 +49,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 426,
+      "registrations": 427,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -83,7 +83,7 @@
       "opportunity_score": 58
     },
     "metrics": {
-      "equal_share_naive": 9.34,
+      "equal_share_naive": 9.32,
       "fair_share_serious": 78.02,
       "days_left": null
     },

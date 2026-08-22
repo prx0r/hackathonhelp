@@ -106,6 +106,7 @@ try{
       prize_raw:e.prize._note ?? null,
       registrants:e.registrants??null,
       starts_at:e.starts_at??null, ends_at:e.ends_at??null,
+      first_deadline:e.first_deadline??null, deadline_note:e.deadline_note??null,
       time_left:null,
       location_type:e.location_type, location:e.location,
       themes:e.themes??[], open_to_all:e.open_to_all!==false,

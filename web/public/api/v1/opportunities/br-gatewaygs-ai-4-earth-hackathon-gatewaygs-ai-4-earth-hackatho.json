@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-gatewaygs-ai-4-earth-hackathon-gatewaygs-ai-4-earth-hackatho",
@@ -20,7 +20,7 @@
     "source_url": "https://gatewaygs-ai-4-earth-hackathon.devpost.com/",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T22:05:22.852Z",
+    "observed_at": "2026-08-22T23:36:21.272Z",
     "eligibility_flags": [
       "Beginner Friendly",
       "Machine Learning/AI",

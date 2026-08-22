@@ -33,7 +33,8 @@ function findOverride(o){
 // ---------- stage 1: rule verification / hard gates ----------
 function applyGates(o){
   const {patch, exclusion} = findOverride(o);
-  const dl = o.ends_at ? Math.ceil((new Date(o.ends_at)-now)/86400000) : null;
+  const effDeadline = (o.first_deadline && (!o.ends_at || o.first_deadline < o.ends_at)) ? o.first_deadline : o.ends_at;
+  const dl = effDeadline ? Math.ceil((new Date(effDeadline)-now)/86400000) : null;
   const gates = {
     registration_open: dl==null ? null : dl>=0,
     deadline_future: dl==null ? null : dl>0,

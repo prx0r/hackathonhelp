@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
@@ -9,7 +9,7 @@
     "organizer": "RevenueCat",
     "prize_usd": 740000,
     "prize_raw": "$740,000",
-    "registrants": 19461,
+    "registrants": 19475,
     "starts_at": "2026-07-31T00:00:00.000Z",
     "ends_at": "2026-10-01T23:59:00.000Z",
     "time_left": "about 1 month left",
@@ -24,7 +24,7 @@
     "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:19.951Z",
+    "observed_at": "2026-08-22T23:36:16.967Z",
     "days_left": 41,
     "gates": {
       "registration_open": true,
@@ -51,16 +51,16 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 19461,
+      "registrations": 19475,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 973,
-      "field_p10": 632,
-      "field_p50": 973,
-      "field_p90": 1508,
+      "estimated_serious_field": 974,
+      "field_p10": 633,
+      "field_p50": 974,
+      "field_p90": 1510,
       "funnel": null
     },
     "slots": {
@@ -77,8 +77,8 @@
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 38.02,
-      "fair_share_serious": 760.53,
+      "equal_share_naive": 38,
+      "fair_share_serious": 759.75,
       "days_left": 41
     },
     "cautions": [],
@@ -90,7 +90,7 @@
       },
       "baseline_any_payout": 0.006,
       "p_paid": 0.006,
-      "ev_cash_heuristic": 4563,
+      "ev_cash_heuristic": 4559,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:20:43.988Z",
+  "generated_at": "2026-08-22T23:36:27.123Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-create-with-gemini-create-with-gemini",
@@ -9,7 +9,7 @@
     "organizer": "Create",
     "prize_usd": null,
     "prize_raw": "",
-    "registrants": 52,
+    "registrants": 53,
     "starts_at": null,
     "ends_at": null,
     "time_left": "3 days left",
@@ -24,7 +24,7 @@
     "source_url": "https://create-with-gemini.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T22:05:21.219Z",
+    "observed_at": "2026-08-22T23:36:18.163Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -51,16 +51,16 @@
       "headline_inflation": null
     },
     "field": {
-      "registrations": 52,
+      "registrations": 53,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 18,
+      "estimated_serious_field": 19,
       "field_p10": 12,
-      "field_p50": 18,
-      "field_p90": 28,
+      "field_p50": 19,
+      "field_p90": 29,
       "funnel": null
     },
     "slots": {
@@ -90,8 +90,8 @@
         "p50": 6,
         "p90": 12
       },
-      "baseline_any_payout": 0.333,
-      "p_paid": 0.333,
+      "baseline_any_payout": 0.316,
+      "p_paid": 0.316,
       "ev_cash_heuristic": null,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
