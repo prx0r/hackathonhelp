@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:29:08.954Z",
+  "generated_at": "2026-08-22T21:30:42.696Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
@@ -24,7 +24,7 @@
       "source_url": "https://rice-urban-sustainability.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:22.083Z",
+      "observed_at": "2026-08-22T21:30:32.570Z",
       "days_left": 28,
       "gates": {
         "registration_open": true,
@@ -110,7 +110,7 @@
       "source_url": "https://volthacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:21.113Z",
+      "observed_at": "2026-08-22T21:30:31.884Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -196,7 +196,7 @@
       "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:21.112Z",
+      "observed_at": "2026-08-22T21:30:31.884Z",
       "days_left": 25,
       "gates": {
         "registration_open": true,
@@ -282,7 +282,7 @@
       "source_url": "https://syntax-summit.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:22.423Z",
+      "observed_at": "2026-08-22T21:30:32.934Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -361,7 +361,7 @@
       "source_url": "https://unstop.com/hackathons/the-frontend-odyssey-2026-frontend-arena-1740316",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:28:27.470Z",
+      "observed_at": "2026-08-22T21:30:39.232Z",
       "eligibility_flags": [
         "All"
       ],
@@ -447,7 +447,7 @@
       "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:21.908Z",
+      "observed_at": "2026-08-22T21:30:32.392Z",
       "days_left": 13,
       "gates": {
         "registration_open": true,
@@ -534,7 +534,7 @@
       "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:22.423Z",
+      "observed_at": "2026-08-22T21:30:32.934Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -614,7 +614,7 @@
       "source_url": "https://animalhack2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:22.248Z",
+      "observed_at": "2026-08-22T21:30:32.732Z",
       "days_left": 22,
       "gates": {
         "registration_open": true,
@@ -697,7 +697,7 @@
       "source_url": "https://evorozen-apex.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:28:22.248Z",
+      "observed_at": "2026-08-22T21:30:32.732Z",
       "days_left": 30,
       "gates": {
         "registration_open": true,
@@ -776,7 +776,7 @@
       "source_url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:28:28.139Z",
+      "observed_at": "2026-08-22T21:30:39.985Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",

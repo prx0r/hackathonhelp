@@ -73,7 +73,7 @@ if(KEY){
       const prizeNum = l.prize?.label ? parseFloat(String(l.prize.label).replace(/[^0-9.]/g,''))||null : null;
       opportunities.push({
         id:'br-'+slugify(l.url), slug:'br-'+slugify(l.url),
-        title:l.title, organizer:(l.organiser&&l.organiser!=='null'&&l.organiser!=='—')?l.organiser:null,
+        title:l.title, organizer:(l.organiser&&!/^null|—|see listing$/i.test(l.organiser))?l.organiser:null,
         prize_usd: prizeNum, prize_raw:(v=>/^(\$0|see listing|null|tba)$/i.test(v||'')?null:v)((l.prize?.label||'').trim()),
         registrants:l.registered??null,
         starts_at:null, ends_at:l.deadline||null,
