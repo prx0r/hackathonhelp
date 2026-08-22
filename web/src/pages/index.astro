@@ -7,7 +7,7 @@ import derived from '../data/derived.json';
 
 const megas = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.mega).sort((a,b)=>b.mega.score-a.mega.score);
 // Grid = actionable only: attention>0 excludes <3-day events and TBA deadlines
-const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.decision.action !== 'SKIP');
+const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible);
 const toolate = derived.opportunities.filter(o => o.status==='open' && o.eligibility.eligible && o.attention <= 0 && o.metrics.days_left != null && o.metrics.days_left >= 0);
 // LIVE = usable field or closing soon; UPCOMING/FORMING = field still maturing
 const live = open.filter(o => o.field.field_status==='usable')
@@ -19,16 +19,21 @@ function fmt$(v){ return v==null?'—':'$'+Math.round(v).toLocaleString(); }
 function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 function daysLeft(o){ return o.metrics.days_left; }
-function timeColor(d){
-  if (d==null) return {bg:'rgba(148,163,184,0.08)', border:'var(--border)', text:'var(--text-dim)', label:'TBA'};
-  if (d<0) return {bg:'rgba(100,116,139,0.10)', border:'rgba(100,116,139,0.25)', text:'var(--text-dim)', label:'ended'};
-  if (d<=1) return {bg:'rgba(239,68,68,0.18)', border:'rgba(239,68,68,0.55)', text:'#fca5a5', label:d+'d'};
-  if (d<=3) return {bg:'rgba(249,115,22,0.16)', border:'rgba(249,115,22,0.45)', text:'#fdba74', label:d+'d'};
-  if (d<=7) return {bg:'rgba(234,179,8,0.13)', border:'rgba(234,179,8,0.38)', text:'#fde047', label:d+'d'};
-  if (d<=14) return {bg:'rgba(34,197,94,0.12)', border:'rgba(34,197,94,0.35)', text:'#86efac', label:d+'d'};
-  if (d<=30) return {bg:'rgba(59,130,246,0.12)', border:'rgba(59,130,246,0.35)', text:'#93c5fd', label:d+'d'};
-  return {bg:'rgba(99,102,241,0.10)', border:'rgba(99,102,241,0.30)', text:'#a5b4fc', label:d+'d+'};
+const HUE_ANCHORS=[[0,2],[1,8],[3,30],[7,52],[10,85],[14,120],[21,172],[30,212],[45,252],[60,282]];
+function hueFor(d){
+  const P=HUE_ANCHORS;
+  if(d<=P[0][0]) return P[0][1];
+  for(let i=1;i<P.length;i++){
+    if(d<=P[i][0]){ const [d0,h0]=P[i-1],[d1,h1]=P[i]; return h0+(h1-h0)*((d-d0)/(d1-d0)); }
+  }
+  return P[P.length-1][1];
 }
+function timeColor(d){
+  if(d==null) return {bg:'rgba(148,163,184,0.08)', border:'var(--border)', text:'var(--text-dim)', label:'TBA'};
+  if(d<0) return {bg:'rgba(100,116,139,0.10)', border:'rgba(100,116,139,0.25)', text:'var(--text-dim)', label:'ended'};
+  const h=hueFor(d);
+  return { bg:`hsla(${h},72%,50%,0.14)`, border:`hsla(${h},70%,48%,0.5)`, text:`hsl(${h},85%,70%)`, label:(d>=60?'60d+':d+'d') };
+};
 
 function oppCard(o,i){
   const m=o.metrics;
@@ -67,7 +72,8 @@ const tilesHtml = open.map(o => {
   const shownPrize = o.prize.normalized_value!=null ? '$'+Math.round(o.prize.normalized_value).toLocaleString()
     : o.prize.advertised_value!=null ? '$'+Math.round(o.prize.advertised_value).toLocaleString()
     : (o.prize_raw && o.prize_raw !== '$0' ? o.prize_raw : 'Prize TBA');
-  return `<div class="tile" style="background:${c.bg};border-color:${c.border}">
+  const dimmed = o.decision.action==='SKIP';
+  return `<div class="tile${dimmed?' tile-skip':''}" style="background:${c.bg};border-color:${c.border}">
           <div class="tile-top">
             <span style="display:flex;gap:4px;align-items:center">
               <span class="tile-action act-${o.decision.action.replace(/ /g,'')}">${o.decision.action}</span>
