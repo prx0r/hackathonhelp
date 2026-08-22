@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:12:28.170Z",
+  "generated_at": "2026-08-22T21:19:48.271Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
@@ -80,7 +80,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 89
+      "attention": 89,
+      "attention_breakdown": {
+        "score": 89,
+        "urgency_multiplier": 1,
+        "days_left": 28,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-volthacks-volthacks",
@@ -160,7 +166,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 87
+      "attention": 87,
+      "attention_breakdown": {
+        "score": 87,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
@@ -240,7 +252,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 86
+      "attention": 86,
+      "attention_breakdown": {
+        "score": 86,
+        "urgency_multiplier": 1,
+        "days_left": 25,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-animalhack2026-animalhack2026",
@@ -316,7 +334,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-evorozen-apex-evorozen-apex",
@@ -392,7 +416,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 30,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-syntax-summit-syntax-summit",
@@ -468,7 +498,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-the-frontend-odyssey-2026-frontend-arena-1740316",
@@ -543,7 +579,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 18,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
@@ -621,7 +663,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 26,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
@@ -702,7 +750,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 82.5
+      "attention": 82.5,
+      "attention_breakdown": {
+        "score": 97,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
@@ -775,7 +829,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 82
+      "attention": 82,
+      "attention_breakdown": {
+        "score": 82,
+        "urgency_multiplier": 1,
+        "days_left": 23,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     }
   ]
 }

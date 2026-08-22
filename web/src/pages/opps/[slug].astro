@@ -18,6 +18,7 @@ const scoreNull = o.score_v01.opportunity_score == null;
     <div class="provider-line"><span class="pdot"></span>{o.organizer} · {o.location} · {o.location_type}</div>
     <h1>{o.title}</h1>
     <div class="badges">
+      {!ended && <a class="register-btn" href={o.source_url} target="_blank" rel="noopener">Register on official page ↗</a>}
       {!scoreNull && <span class="score">{o.score_v01.opportunity_score}/100</span>}
       {ended && <span class="conf" style="color:var(--red)">submission closed</span>}
       {!ended && o.time_left && <span class="conf">{o.time_left}</span>}
@@ -83,6 +84,13 @@ const scoreNull = o.score_v01.opportunity_score == null;
     ) : (
       <>
       <div class="scorebig">{o.score_v01.opportunity_score}<span>/100</span></div>
+      <p class="mathnote" style="margin-bottom:10px">
+        <strong>Grid order (attention)</strong> = {o.attention_breakdown.score} × {o.attention_breakdown.urgency_multiplier}
+        ({o.attention_breakdown.days_left==null?'deadline TBA':o.attention_breakdown.days_left+' days left'}) = <strong>{o.attention}</strong>
+      </p>
+      {o.prize_raw && o.prize_raw !== '$0' && (
+        <p class="mathnote" style="margin-bottom:8px">Platform-listed prize: <strong>{o.prize_raw}</strong></p>
+      )}
       <table class="math">
         {Object.entries(o.score_v01.components).map(([k,v]) => (
           <tr><td>{k.replace(/_/g,' ')}</td><td>{v!=null? v+'/100' : 'no data yet'}</td></tr>
@@ -123,6 +131,7 @@ const scoreNull = o.score_v01.opportunity_score == null;
   .terms strong{color:var(--text)}
   .src-link{display:inline-block;margin-top:10px;font-size:12px;font-weight:600}
   .observed{font-size:11px;color:var(--text-dim);margin-top:6px}
+  .register-btn{background:var(--accent);color:#431407 !important;font-weight:800;font-size:12px;padding:6px 14px;border-radius:8px;text-decoration:none !important}
   .math td{padding:5px 0;font-size:13px;color:var(--text-muted)}
   .math td:last-child{text-align:right;color:var(--text);font-variant-numeric:tabular-nums;font-weight:600}
   .math tr.hl td{color:var(--accent);font-weight:800}

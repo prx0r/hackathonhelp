@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:12:28.170Z",
+  "generated_at": "2026-08-22T21:19:48.271Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 144,
@@ -86,7 +86,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 89
+      "attention": 89,
+      "attention_breakdown": {
+        "score": 89,
+        "urgency_multiplier": 1,
+        "days_left": 28,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-volthacks-volthacks",
@@ -166,7 +172,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 87
+      "attention": 87,
+      "attention_breakdown": {
+        "score": 87,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
@@ -246,7 +258,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 86
+      "attention": 86,
+      "attention_breakdown": {
+        "score": 86,
+        "urgency_multiplier": 1,
+        "days_left": 25,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-animalhack2026-animalhack2026",
@@ -322,7 +340,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-evorozen-apex-evorozen-apex",
@@ -398,7 +422,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 30,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-syntax-summit-syntax-summit",
@@ -474,7 +504,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-the-frontend-odyssey-2026-frontend-arena-1740316",
@@ -549,7 +585,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 18,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
@@ -627,7 +669,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 26,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
@@ -708,7 +756,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 82.5
+      "attention": 82.5,
+      "attention_breakdown": {
+        "score": 97,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
@@ -781,7 +835,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 82
+      "attention": 82,
+      "attention_breakdown": {
+        "score": 82,
+        "urgency_multiplier": 1,
+        "days_left": 23,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     }
   ],
   "opportunities": [
@@ -863,7 +923,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 89
+      "attention": 89,
+      "attention_breakdown": {
+        "score": 89,
+        "urgency_multiplier": 1,
+        "days_left": 28,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-volthacks-volthacks",
@@ -943,7 +1009,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 87
+      "attention": 87,
+      "attention_breakdown": {
+        "score": 87,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
@@ -1023,7 +1095,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 86
+      "attention": 86,
+      "attention_breakdown": {
+        "score": 86,
+        "urgency_multiplier": 1,
+        "days_left": 25,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-animalhack2026-animalhack2026",
@@ -1099,7 +1177,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-evorozen-apex-evorozen-apex",
@@ -1175,7 +1259,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 30,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-syntax-summit-syntax-summit",
@@ -1251,7 +1341,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-the-frontend-odyssey-2026-frontend-arena-1740316",
@@ -1326,7 +1422,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 18,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
@@ -1404,7 +1506,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85
+      "attention": 85,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 1,
+        "days_left": 26,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
@@ -1485,7 +1593,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 82.5
+      "attention": 82.5,
+      "attention_breakdown": {
+        "score": 97,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
@@ -1558,7 +1672,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 82
+      "attention": 82,
+      "attention_breakdown": {
+        "score": 82,
+        "urgency_multiplier": 1,
+        "days_left": 23,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering",
@@ -1636,7 +1756,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 82
+      "attention": 82,
+      "attention_breakdown": {
+        "score": 82,
+        "urgency_multiplier": 1,
+        "days_left": 24,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
@@ -1710,7 +1836,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 81
+      "attention": 81,
+      "attention_breakdown": {
+        "score": 81,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-boss-battle-boss-battle",
@@ -1787,7 +1919,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 80.1
+      "attention": 80.1,
+      "attention_breakdown": {
+        "score": 89,
+        "urgency_multiplier": 0.9,
+        "days_left": 37,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-gibc-v2-gibc-v2",
@@ -1869,7 +2007,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 79.2
+      "attention": 79.2,
+      "attention_breakdown": {
+        "score": 88,
+        "urgency_multiplier": 0.9,
+        "days_left": 31,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-lexhack-2026-lexhack-2026",
@@ -1953,7 +2097,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 79.2
+      "attention": 79.2,
+      "attention_breakdown": {
+        "score": 88,
+        "urgency_multiplier": 0.9,
+        "days_left": 37,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
@@ -2029,7 +2179,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 76.5
+      "attention": 76.5,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.9,
+        "days_left": 42,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-buuniex-hackathon-buuniex-hackathon",
@@ -2105,7 +2261,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 76.5
+      "attention": 76.5,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.9,
+        "days_left": 32,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-luma-hackathon-fall-luma-hackathon-fall",
@@ -2181,7 +2343,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 76.5
+      "attention": 76.5,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.9,
+        "days_left": 38,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-firstcommit-firstcommit",
@@ -2257,7 +2425,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 76.5
+      "attention": 76.5,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.9,
+        "days_left": 40,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-code-x-novas-innovathon-2026-national-software-ai-hac",
@@ -2335,7 +2509,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 76.5
+      "attention": 76.5,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.9,
+        "days_left": 38,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-cloud-innovation-challenge-jawaharlal-nehru-technolog",
@@ -2408,7 +2588,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 76
+      "attention": 76,
+      "attention_breakdown": {
+        "score": 76,
+        "urgency_multiplier": 1,
+        "days_left": 14,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-aethos-day-zero-together-we-solve-1730263",
@@ -2483,7 +2669,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 73.8
+      "attention": 73.8,
+      "attention_breakdown": {
+        "score": 82,
+        "urgency_multiplier": 0.9,
+        "days_left": 31,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-ai-yes-competition-30441-ai-yes-competition-30441",
@@ -2559,7 +2751,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 11,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hackonomics27-hackonomics27",
@@ -2635,7 +2833,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 8,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-elucode-2-edulinkup-1740124",
@@ -2708,7 +2912,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 7,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-hackfinity-30-ramco-institute-of-technology-rit-tamil",
@@ -2786,7 +2996,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 8,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-morrow-10-makers-need-more-mnm-1727667",
@@ -2861,7 +3077,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 8,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-hackblox-open-source-hackathon-hackers-cult-1731738",
@@ -2936,7 +3158,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 8,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-code-to-creation-project-submission-samrat-ashok-tech",
@@ -3014,7 +3242,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 9,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-crp-eon-future-makers-challenge-infosys-1739537",
@@ -3092,7 +3326,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 9,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-eureka-x-devengers-devengers-1740270",
@@ -3167,7 +3407,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 10,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-orvix-hackathon-nimblux-1730437",
@@ -3245,7 +3491,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 72.3
+      "attention": 72.3,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-agentsforhumans-agentsforhumans",
@@ -3325,7 +3577,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 72
+      "attention": 72,
+      "attention_breakdown": {
+        "score": 72,
+        "urgency_multiplier": 1,
+        "days_left": 24,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-nextstep2026-nextstep2026",
@@ -3399,7 +3657,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 70
+      "attention": 70,
+      "attention_breakdown": {
+        "score": 70,
+        "urgency_multiplier": 1,
+        "days_left": 23,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-prometheus-september-ai-2-prometheus-september-ai-2",
@@ -3473,7 +3737,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 70
+      "attention": 70,
+      "attention_breakdown": {
+        "score": 70,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-compsphere12-compsphere12",
@@ -3547,7 +3817,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 70
+      "attention": 70,
+      "attention_breakdown": {
+        "score": 70,
+        "urgency_multiplier": 1,
+        "days_left": 27,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-opencv26-opencv26",
@@ -3627,7 +3903,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 65.3
+      "attention": 65.3,
+      "attention_breakdown": {
+        "score": 87,
+        "urgency_multiplier": 0.75,
+        "days_left": 67,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-oneaquahealth-ieee-hackathon-oneaquahealth-ieee-hackathon",
@@ -3701,7 +3983,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 63
+      "attention": 63,
+      "attention_breakdown": {
+        "score": 70,
+        "urgency_multiplier": 0.9,
+        "days_left": 41,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-data-analytics-hackathon-gradient-1742481",
@@ -3774,7 +4062,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 50
+      "attention": 50,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-mosip-decode-2026-synergy-26-international-institute-",
@@ -3850,7 +4144,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 48
+      "attention": 48,
+      "attention_breakdown": {
+        "score": 48,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hack-for-humanity-summer-26-hack-for-humanity-summer-26",
@@ -3924,7 +4224,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 47
+      "attention": 47,
+      "attention_breakdown": {
+        "score": 47,
+        "urgency_multiplier": 1,
+        "days_left": 14,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-pace-where-logic-meets-expression-technocrats-institu",
@@ -4000,7 +4306,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 47
+      "attention": 47,
+      "attention_breakdown": {
+        "score": 47,
+        "urgency_multiplier": 1,
+        "days_left": 18,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-neuramorphix-hackforge-2026-srm-institute-of-science-",
@@ -4077,7 +4389,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 46.8
+      "attention": 46.8,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-codestorm-futureforge-codestorm-futureforge",
@@ -4153,7 +4471,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 46.8
+      "attention": 46.8,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-muba-hackathon-muba-hackathon",
@@ -4226,7 +4550,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 46.8
+      "attention": 46.8,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.55,
+        "days_left": 4,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-resolve26-national-level-48-hour-game-jam-srm-insitut",
@@ -4304,7 +4634,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 46.8
+      "attention": 46.8,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.55,
+        "days_left": 4,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-adtc-2026-adtc-2026",
@@ -4384,7 +4720,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 43.5
+      "attention": 43.5,
+      "attention_breakdown": {
+        "score": 79,
+        "urgency_multiplier": 0.55,
+        "days_left": 4,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hack-the-limit-1-hack-the-limit-1",
@@ -4458,7 +4800,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 42.5
+      "attention": 42.5,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0.85,
+        "days_left": 9,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-ai-product-hackathon-product-space-1742507",
@@ -4531,7 +4879,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 42.5
+      "attention": 42.5,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0.85,
+        "days_left": 8,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-ml-bubble-2026-machine-learning-awareness-skill-build",
@@ -4607,7 +4961,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 40.8
+      "attention": 40.8,
+      "attention_breakdown": {
+        "score": 48,
+        "urgency_multiplier": 0.85,
+        "days_left": 7,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku",
@@ -4680,7 +5040,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 40.5
+      "attention": 40.5,
+      "attention_breakdown": {
+        "score": 45,
+        "urgency_multiplier": 0.9,
+        "days_left": 34,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-3d-websites-hackathon-3d-websites-hackathon",
@@ -4754,7 +5120,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 39.9
+      "attention": 39.9,
+      "attention_breakdown": {
+        "score": 47,
+        "urgency_multiplier": 0.85,
+        "days_left": 10,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-startupx-hackathon-2026-gamnexis-1733546",
@@ -4827,7 +5199,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 39.9
+      "attention": 39.9,
+      "attention_breakdown": {
+        "score": 47,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-techno-vbiquity-2o-technical-coding-competition-techn",
@@ -4902,7 +5280,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 39.9
+      "attention": 39.9,
+      "attention_breakdown": {
+        "score": 47,
+        "urgency_multiplier": 0.85,
+        "days_left": 9,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-nextgen-hackathon-rhinon-tech-pvt-lmt-1731840",
@@ -4978,7 +5362,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 39.9
+      "attention": 39.9,
+      "attention_breakdown": {
+        "score": 47,
+        "urgency_multiplier": 0.85,
+        "days_left": 8,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hacktitan-hacktitan",
@@ -5058,7 +5448,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 33.6
+      "attention": 33.6,
+      "attention_breakdown": {
+        "score": 96,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-quantumhacks-quantumhacks",
@@ -5132,7 +5528,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 33
+      "attention": 33,
+      "attention_breakdown": {
+        "score": 60,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-inspire-hackathon-inspire-hackathon",
@@ -5208,7 +5610,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 29.7
+      "attention": 29.7,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-code-for-humanity-code-for-humanity",
@@ -5284,7 +5692,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 29.7
+      "attention": 29.7,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-rescue-hacks-30680-rescue-hacks-30680",
@@ -5360,7 +5774,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 29.7
+      "attention": 29.7,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-devonomicsv1-devonomicsv1",
@@ -5436,7 +5856,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 29.7
+      "attention": 29.7,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-launchhacks-v-launchhacks-v",
@@ -5516,7 +5942,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 29.4
+      "attention": 29.4,
+      "attention_breakdown": {
+        "score": 84,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-reverie-hacks-2026-reverie-hacks-2026",
@@ -5598,7 +6030,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 29
+      "attention": 29,
+      "attention_breakdown": {
+        "score": 83,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-gameathon-2026-amrita-vishwa-vidyapeetham-chennai-173",
@@ -5671,7 +6109,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 27.5
+      "attention": 27.5,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-rebuild-the-classroom-build-the-tool-that-teaches-whe",
@@ -5744,7 +6188,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 27.5
+      "attention": 27.5,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0.55,
+        "days_left": 5,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-codesprint-2o-one-shot-challenge-oriental-college-of-",
@@ -5820,7 +6270,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 27.5
+      "attention": 27.5,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0.55,
+        "days_left": 5,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu",
@@ -5896,7 +6352,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 27.5
+      "attention": 27.5,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0.55,
+        "days_left": 4,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-ieee-climatechain-hack-ieee-climatechain-hack",
@@ -5976,7 +6438,13 @@
         ],
         "category": "value_competition_gap"
       },
-      "attention": 26.9
+      "attention": 26.9,
+      "attention_breakdown": {
+        "score": 77,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08",
@@ -6052,7 +6520,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 26.9
+      "attention": 26.9,
+      "attention_breakdown": {
+        "score": 77,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-impactforge-impactforge",
@@ -6126,7 +6600,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 26.4
+      "attention": 26.4,
+      "attention_breakdown": {
+        "score": 48,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-neuralsprint-neuralsprint",
@@ -6200,7 +6680,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 26.4
+      "attention": 26.4,
+      "attention_breakdown": {
+        "score": 48,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-webverse-hackathon-modern-education-societys-college-",
@@ -6276,7 +6762,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 26.4
+      "attention": 26.4,
+      "attention_breakdown": {
+        "score": 48,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-ai-innovation-hackathon-2026-build-real-world-ai-solu",
@@ -6349,7 +6841,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 24.2
+      "attention": 24.2,
+      "attention_breakdown": {
+        "score": 44,
+        "urgency_multiplier": 0.55,
+        "days_left": 6,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-crp-precision-care-challenge-2026-ge-healthcare-17312",
@@ -6424,7 +6922,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 24.2
+      "attention": 24.2,
+      "attention_breakdown": {
+        "score": 44,
+        "urgency_multiplier": 0.55,
+        "days_left": 4,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-zero-dependency-72-hour-hackathon-hackathon-raptors-1",
@@ -6497,7 +7001,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 24.2
+      "attention": 24.2,
+      "attention_breakdown": {
+        "score": 44,
+        "urgency_multiplier": 0.55,
+        "days_left": 6,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-august-ai-challenge-31059-august-ai-challenge-31059",
@@ -6571,7 +7081,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 23.8
+      "attention": 23.8,
+      "attention_breakdown": {
+        "score": 68,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hack-the-habitat-2026-hack-the-habitat-2026",
@@ -6645,7 +7161,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 23.8
+      "attention": 23.8,
+      "attention_breakdown": {
+        "score": 68,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-unitedhacksv8-unitedhacksv8",
@@ -6719,7 +7241,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 23.8
+      "attention": 23.8,
+      "attention_breakdown": {
+        "score": 68,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hacksocial2026-hacksocial2026",
@@ -6793,7 +7321,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 22.8
+      "attention": 22.8,
+      "attention_breakdown": {
+        "score": 65,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-brainwave-2026-midnight-track-brainwave-2026-midnight-track",
@@ -6866,7 +7400,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 16.1
+      "attention": 16.1,
+      "attention_breakdown": {
+        "score": 46,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-evensonarisnord-evensonarisnord",
@@ -6939,7 +7479,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 16.1
+      "attention": 16.1,
+      "attention_breakdown": {
+        "score": 46,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-univabio-univabio",
@@ -7019,7 +7565,13 @@
         ],
         "category": "high_fair_share"
       },
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 46,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-galuxium-nexus-v2-29411-galuxium-nexus-v2-29411",
@@ -7093,7 +7645,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 71,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-suvidha-ai-virtual-hackathon-suvidha-ai-virtual-hackathon",
@@ -7168,7 +7726,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 63,
+        "urgency_multiplier": 0,
+        "days_left": 1,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-3rd-web-hack-3rd-web-hack",
@@ -7242,7 +7806,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 37,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-hyperbloom-september-hyperbloom-september",
@@ -7317,7 +7887,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 24,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-build-beyond-hackathon-build-beyond-hackathon",
@@ -7392,7 +7968,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 48,
+        "urgency_multiplier": 0,
+        "days_left": 1,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-arbiter-hacks-v1-arbiter-hacks-v1",
@@ -7467,7 +8049,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 122,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-next-founders-next-founders",
@@ -7541,7 +8129,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 55,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-lake-oswego-hacks-lake-oswego-hacks",
@@ -7616,7 +8210,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 37,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-forgehacks-2026-forgehacks-2026",
@@ -7691,7 +8291,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 50,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-gatewaygs-ai-4-earth-hackathon-gatewaygs-ai-4-earth-hackatho",
@@ -7766,7 +8372,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0,
+        "days_left": 1,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-rulebound-the-sealed-build-challenge-lv8-tech-1739500",
@@ -7839,7 +8451,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 50,
+        "urgency_multiplier": 0,
+        "days_left": 2,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-identity-under-attack-amrita-vishwa-vidyapeetham-avv-",
@@ -7915,7 +8533,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 16,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-ec-council-hackai-challenge-racex360-reva-academy-for",
@@ -7988,7 +8612,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 25,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-dsh-hacks-v2-dsh-hacks-v2",
@@ -8064,7 +8694,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 79,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-graphiques-challenge-graphiques-challenge",
@@ -8140,7 +8776,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-mca-2026-projects-mca-2026-projects",
@@ -8214,7 +8856,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 126,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-z0d1ak-ctf-gravitas26-vit-vellore-1735740",
@@ -8289,7 +8937,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0,
+        "days_left": 1,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-oosc-4-0-hackathon-2026",
@@ -8364,7 +9018,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0,
+        "days_left": 1,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-breakpoint-hackathon-2026-invoqe-1734966",
@@ -8439,7 +9099,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 85,
+        "urgency_multiplier": 0,
+        "days_left": 1,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-echosphere-2026-win-from-a-3000-prize-pool",
@@ -8514,7 +9180,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-nyaya-setu-2026-by-nmims-indore-ai-justice-polic",
@@ -8589,7 +9261,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-cyberhack-2026-srms-cetr",
@@ -8664,7 +9342,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.55,
+        "days_left": 3,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-demcon-2026-unforget-tech-innovation-hackathon",
@@ -8739,7 +9423,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.85,
+        "days_left": 9,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-strk20-private-sprint-2026-win-5000-usd",
@@ -8814,7 +9504,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.85,
+        "days_left": 9,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-unstop-infinix26-national-level-32-hour-hackathon-ramco-inst",
@@ -8892,7 +9588,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-infinix26-2026-win--e2-82-b915000-2",
@@ -8967,7 +9669,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 14,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-infinix26-2026-win--e2-82-b915000",
@@ -9042,7 +9750,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 14,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-cyber-kushti-2026",
@@ -9117,7 +9831,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 19,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-animalhack-animalhack",
@@ -9192,7 +9912,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-venturefix-venturefix",
@@ -9269,7 +9995,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 23,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-gatewaygs-hackathon-2-gatewaygs-hackathon-2",
@@ -9346,7 +10078,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 26,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-hackerearth-github-repo-value-check",
@@ -9419,7 +10157,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 1,
+        "days_left": 29,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-hackerearth-abb-accelerator-2026-2",
@@ -9492,7 +10236,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 37,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-hackerearth-yuva-yodha-energy-tech-hackathon",
@@ -9565,7 +10315,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 43,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-bananahacks-bananahacks",
@@ -9640,7 +10396,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 48,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-ai-for-good-hackathon-2026",
@@ -9715,7 +10477,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 54,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-hack47-offgrid-hack47-offgrid",
@@ -9792,7 +10560,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.9,
+        "days_left": 55,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-internshala-bharat-agentic-ai-hackathon-win-from--e2-82-b918",
@@ -9867,7 +10641,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 85,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-sq-hacks-sq-hacks",
@@ -9944,7 +10724,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 92,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "br-eurekadev-eurekadev",
@@ -10021,7 +10807,13 @@
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 0
+      "attention": 0,
+      "attention_breakdown": {
+        "score": 0,
+        "urgency_multiplier": 0.75,
+        "days_left": 378,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
@@ -10091,7 +10883,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.9,
+        "days_left": 41,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-innovik6-indore-innovik6-indore",
@@ -10164,7 +10962,13 @@
         "large pool, very early/small field — confirm organizer track record"
       ],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
@@ -10234,7 +11038,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-the-great-agent-hackathon-the-great-agent-hackathon",
@@ -10306,7 +11116,13 @@
         "extraordinary per-submission value — verify payout history"
       ],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.55,
+        "days_left": 4,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-agentic-cinema-agentic-cinema",
@@ -10376,7 +11192,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 1,
+        "days_left": 19,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-tiktoktechjam2026-tiktoktechjam2026",
@@ -10446,7 +11268,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.85,
+        "days_left": 11,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-call-e-call-e",
@@ -10516,7 +11344,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 1,
+        "days_left": 24,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-codelinc11-codelinc11",
@@ -10586,7 +11420,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hackapertus-hackapertus",
@@ -10656,7 +11496,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-hack-away-hunger-hack-away-hunger",
@@ -10725,7 +11571,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.9,
+        "days_left": 48,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-dialedin-dialedin",
@@ -10795,7 +11647,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 1,
+        "days_left": 18,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-cissa-catalyst-2026-cissa-catalyst-2026",
@@ -10865,7 +11723,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-melbourne-hack-2026-melbourne-hack-2026",
@@ -10935,7 +11799,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-smart-city-hackathon-lahore-smart-city-hackathon-lahore",
@@ -11005,7 +11875,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-creation-code-30750-creation-code-30750",
@@ -11074,7 +11950,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-create-with-gemini-create-with-gemini",
@@ -11144,7 +12026,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-htcj-aviation-futures-htcj-aviation-futures",
@@ -11214,7 +12102,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.9,
+        "days_left": 48,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-gemini-builds-gemini-builds",
@@ -11284,7 +12178,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-gemini-event-hackmatrix-gemini-event-hackmatrix",
@@ -11354,7 +12254,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-technisa-hacks-technisa-hacks",
@@ -11424,7 +12330,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-8-bit-jam-8-bit-jam",
@@ -11494,7 +12406,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     },
     {
       "id": "dp-ai-innovation-day-31076-ai-innovation-day-31076",
@@ -11562,7 +12480,13 @@
       },
       "cautions": [],
       "mega": null,
-      "attention": -1
+      "attention": -1,
+      "attention_breakdown": {
+        "score": null,
+        "urgency_multiplier": 0.35,
+        "days_left": null,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
     }
   ],
   "excluded": [

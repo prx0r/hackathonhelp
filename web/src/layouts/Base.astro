@@ -147,6 +147,14 @@ const { title, description = "Find hackathons actually worth entering - OpenCode
         display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
         margin-bottom:6px;
       }
+      .tile-title { color:var(--text); text-decoration:none; }
+      .tile:hover .tile-title { color:var(--accent); }
+      .tile-official {
+        font-size:12px; font-weight:800; color:var(--text-dim);
+        border:1px solid var(--border); border-radius:5px; padding:0 5px; line-height:16px;
+        text-decoration:none !important; background:rgba(255,255,255,0.04);
+      }
+      .tile-official:hover { color:var(--accent); border-color:var(--accent); }
       .tile-org { font-size:10px; color:var(--text-dim); margin-bottom:8px;
         white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
       .tile-bottom { display:flex; justify-content:space-between; align-items:center; }

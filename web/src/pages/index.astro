@@ -54,26 +54,34 @@ const megaRowsHtml = megas.slice(0,10).map(o=>`
   </tr>`).join('');
 
 const tableRows = JSON.stringify(open.map(o=>({
-  slug:o.slug, title:o.title, prize:o.prize_usd, reg:o.registrants,
-  share:o.metrics.equal_share, score:o.metrics.opportunity_score,
+  slug:o.slug, title:o.title, prize:o.prize.normalized_value ?? o.prize.advertised_value, reg:o.registrants,
+  share:o.metrics.fair_share_serious ?? o.metrics.equal_share_naive, score:o.score_v01.opportunity_score,
+  attention:o.attention, url:o.source_url,
   days:o.metrics.days_left, loc:o.location_type, themes:o.themes.join(' '), status:o.status,
 })));
 
 const tilesHtml = open.map(o => {
   const c = timeColor(daysLeft(o));
   const score = o.score_v01.opportunity_score;
-  return `<a class="tile" style="background:${c.bg};border-color:${c.border}" href="/opps/${o.slug}">
+  const ab = o.attention_breakdown;
+  const shownPrize = o.prize.normalized_value!=null ? '$'+Math.round(o.prize.normalized_value).toLocaleString()
+    : o.prize.advertised_value!=null ? '$'+Math.round(o.prize.advertised_value).toLocaleString()
+    : (o.prize_raw && o.prize_raw !== '$0' ? o.prize_raw : 'Prize TBA');
+  return `<div class="tile" style="background:${c.bg};border-color:${c.border}">
           <div class="tile-top">
-            <span class="tile-score">${score ?? '—'}</span>
+            <span class="tile-score" title="attention ${o.attention} = score ${ab.score} x urgency ${ab.urgency_multiplier} (${ab.days_left==null?'TBA':ab.days_left+'d'})">${score ?? '—'}</span>
             ${o.mega?`<span class="tile-mega">🔥</span>`:''}
           </div>
-          <div class="tile-title">${esc(o.title)}</div>
+          <a class="tile-title" href="/opps/${o.slug}" title="${esc(o.title)}">${esc(o.title)}</a>
           <div class="tile-org">${esc(o.organizer||'')}</div>
           <div class="tile-bottom">
-            <span class="tile-prize">${fmt$(o.prize.normalized_value ?? o.prize.advertised_value)}</span>
-            <span class="tile-days" style="color:${c.text}">${c.label}</span>
+            <span class="tile-prize" title="${o.prize.cash_value!=null?'verified cash':'unverified/normalized'}">${shownPrize}</span>
+            <span style="display:flex;gap:6px;align-items:center">
+              <span class="tile-days" style="color:${c.text}">${c.label}</span>
+              <a class="tile-official" href="${o.source_url}" target="_blank" rel="noopener" title="Official event page">↗</a>
+            </span>
           </div>
-        </a>`;
+        </div>`;
 }).join('');
 ---
 <Base title="HackathonHelp - Hackathons actually worth entering">
@@ -89,7 +97,7 @@ const tilesHtml = open.map(o => {
       <span class="stats">{open.length} live events · tile colour = time left (red → blue)</span>
     </div>
     <div class="tile-grid" set:html={tilesHtml} />
-    <p class="mathnote" style="margin-top:10px;font-size:11px;color:var(--text-dim)">Ordered by attention (score × time-window). Colour scale: red ≤1d · orange ≤3d · yellow ≤7d · green ≤14d · blue ≤30d · indigo 30d+. Events under 3 days are hidden — too late to build anything real.{toolate.length ? ` ${toolate.length} event${toolate.length>1?'s':''} in final sprint hidden.` : ''}</p>
+    <p class="mathnote" style="margin-top:10px;font-size:11px;color:var(--text-dim)">Ordered by attention = opportunity score × urgency multiplier (hover a score to see the math). Colour scale: red ≤1d · orange ≤3d · yellow ≤7d · green ≤14d · blue ≤30d · indigo 30d+. Events under 3 days are hidden — too late to build anything real.{toolate.length ? ` ${toolate.length} event${toolate.length>1?'s':''} in final sprint hidden.` : ''}</p>
   </section>
   </section>
 
@@ -137,7 +145,7 @@ const tilesHtml = open.map(o => {
     <div class="table-wrap">
       <table>
         <thead><tr>
-          <th data-col="score" data-num>Score</th><th>Event</th><th data-col="prize" data-num>Prize</th>
+          <th data-col="attention" data-num title="opportunity score × urgency multiplier">Attention</th><th>Event</th><th data-col="prize" data-num>Prize</th>
           <th data-col="reg" data-num>Entrants</th><th data-col="share" data-num>Fair-share</th><th data-col="days" data-num>Days left</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
@@ -147,7 +155,7 @@ const tilesHtml = open.map(o => {
 
   <script define:vars={{ rows: tableRows }}>
     const all = JSON.parse(rows);
-    let sort = {col:'score', dir:'desc'};
+    let sort = {col:'attention', dir:'desc'};
     function render(){
       const q=(document.getElementById('q')?.value||'').toLowerCase();
       const fl=document.getElementById('f-loc')?.value||'';
@@ -158,7 +166,7 @@ const tilesHtml = open.map(o => {
       f.sort((a,b)=>{let va=a[sort.col]??-1,vb=b[sort.col]??-1;return sort.dir==='asc'?va-vb:vb-va;});
       document.getElementById('tbody').innerHTML=f.map(r=>`<tr style="cursor:pointer" onclick="window.location='/opps/${r.slug}'">
         <td class="price" style="color:var(--accent);font-weight:800">${r.status==='closing_soon'?'⏳ ':''}${r.score}</td>
-        <td><div class="model-name">${r.title}</div><div class="model-sub">${r.loc}</div></td>
+        <td><a href="/opps/${r.slug}" style="color:inherit"><div class="model-name">${r.title}</div></a><div class="model-sub">${r.loc} · <a href="${r.url}" target="_blank" rel="noopener" style="color:var(--accent)">official ↗</a></div></td>
         <td class="price">$${r.prize!=null?Math.round(r.prize).toLocaleString():'—'}</td>
         <td style="font-variant-numeric:tabular-nums">${r.reg!=null?r.reg.toLocaleString():'—'}</td>
         <td class="price price-input">${r.share!=null?'$'+r.share:'—'}</td>

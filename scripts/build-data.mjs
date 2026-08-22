@@ -170,9 +170,10 @@ function urgencyMultiplier(d){
 for (const r of rows){
   const sc = r.score_v01.opportunity_score;
   const d  = r.metrics.days_left;
-  r.attention = (sc!=null && r.eligibility.eligible)
-    ? +(sc * urgencyMultiplier(d)).toFixed(1)
-    : -1;
+  const um = urgencyMultiplier(d);
+  r.attention = (sc!=null && r.eligibility.eligible) ? +(sc*um).toFixed(1) : -1;
+  r.attention_breakdown = { score: sc ?? null, urgency_multiplier: um,
+    days_left: d, formula: 'attention = opportunity_score x urgency(days)' };
 }
 
 const live = rows.filter(r=>r.eligibility.eligible && r.status!=='ended' && (r.score_v01.opportunity_score??null)!==null && r.attention>0);
