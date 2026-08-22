@@ -1,123 +1,163 @@
 {
-  "generated_at": "2026-08-22T20:44:44.252Z",
-  "schema_version": "hackathonhelp.api.v1",
+  "generated_at": "2026-08-22T20:58:02.165Z",
+  "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
-      "id": "reverie-hacks-2026",
-      "slug": "reverie-hacks-2026",
-      "title": "Reverie Hacks 2026",
-      "organizer": "Reverie",
-      "prize_usd": 3047814,
-      "prize_raw": "$3,047,814",
-      "registrants": 2012,
-      "starts_at": null,
-      "ends_at": null,
-      "time_left": "1 day left",
-      "location_type": "online",
-      "location": "Online",
+      "id": "dialedin",
+      "slug": "dialedin",
+      "title": "DIALED IN Builder Challenge",
+      "organizer": "DIALED",
+      "prize_usd": 5000,
+      "prize_raw": "$5,000",
+      "registrants": 27,
+      "starts_at": "2026-08-04T00:00:00.000Z",
+      "ends_at": "2026-09-08T23:59:00.000Z",
+      "time_left": "18 days left",
+      "location_type": "in-person",
+      "location": "The Hub @ Office Logic",
       "themes": [
-        "Beginner Friendly",
-        "Machine Learning/AI",
-        "Open Ended"
-      ],
-      "open_to_all": true,
-      "source_url": "https://reverie-hacks-2026.devpost.com/",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 1514.82,
-        "value_score": 100,
-        "odds_score": 100,
-        "registrant_percentile": 92,
-        "opportunity_score": 94
-      },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$1514.82 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
-    },
-    {
-      "id": "gibc-v2",
-      "slug": "gibc-v2",
-      "title": "Global Innovation Build Challenge V2",
-      "organizer": "Global",
-      "prize_usd": 148445,
-      "prize_raw": "$148,445",
-      "registrants": 319,
-      "starts_at": "2026-07-11T00:00:00.000Z",
-      "ends_at": "2026-09-21T23:59:00.000Z",
-      "time_left": "30 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "Machine Learning/AI",
-        "Social Good",
+        "AR/VR",
+        "Voice skills",
         "Beginner Friendly"
       ],
       "open_to_all": true,
-      "source_url": "https://gibc-v2.devpost.com/",
+      "source_url": "https://dialedin.devpost.com/",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 31,
-        "equal_share": 465.34,
-        "value_score": 86,
-        "odds_score": 100,
-        "registrant_percentile": 65,
-        "opportunity_score": 90
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "days_left": 18,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 5000,
+        "cash_value": 5000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 5000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 27,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 9,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 100
+      },
+      "metrics": {
+        "equal_share_naive": 185.19,
+        "fair_share_serious": 555.56,
+        "days_left": 18
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$465.34 fair-share per entrant"
+          "$555.56 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
-      "id": "revenuecat-shipaton-2026",
-      "slug": "revenuecat-shipaton-2026",
-      "title": "RevenueCat Shipaton 2026",
-      "organizer": "RevenueCat",
-      "prize_usd": 740000,
-      "prize_raw": "$740,000",
-      "registrants": 19447,
-      "starts_at": "2026-07-31T00:00:00.000Z",
-      "ends_at": "2026-10-01T23:59:00.000Z",
-      "time_left": "about 1 month left",
+      "id": "api-cloud-ai-hackathon-2026",
+      "slug": "api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "organizer": "DevNetwork",
+      "prize_usd": 39500,
+      "prize_raw": "$39,500",
+      "registrants": 883,
+      "starts_at": "2026-08-17T00:00:00.000Z",
+      "ends_at": "2026-09-03T23:59:00.000Z",
+      "time_left": "12 days left",
       "location_type": "online",
-      "location": "Online",
+      "location": "Santa Clara Convention Center and Online",
       "themes": [
-        "Design",
-        "Gaming",
-        "Mobile"
+        "IoT",
+        "Low/No Code",
+        "Machine Learning/AI"
       ],
       "open_to_all": true,
-      "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
+      "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:06.230Z",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "days_left": 13,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 39500,
+        "cash_value": 39500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 39500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 883,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 71,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 97
+      },
       "metrics": {
-        "days_left": 41,
-        "equal_share": 38.05,
-        "value_score": 98,
-        "odds_score": 85,
-        "registrant_percentile": 100,
-        "opportunity_score": 89
+        "equal_share_naive": 44.73,
+        "fair_share_serious": 556.34,
+        "days_left": 13
       },
+      "cautions": [],
       "mega": {
-        "score": 35,
+        "score": 50,
         "reasons": [
-          "$38.05 fair-share per entrant"
+          "$556.34 normalized prize per estimated submission",
+          "closing soon with good odds"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "the-great-agent-hackathon",
@@ -141,62 +181,616 @@
       "source_url": "https://the-great-agent-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 4,
-        "equal_share": 328.95,
-        "value_score": 83,
-        "odds_score": 100,
-        "registrant_percentile": 64,
-        "opportunity_score": 89
+      "days_left": 4,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 100000,
+        "cash_value": 100000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 100000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 304,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 36,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 96,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 91
+      },
+      "metrics": {
+        "equal_share_naive": 328.95,
+        "fair_share_serious": 2777.78,
+        "days_left": 4
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
       "mega": {
         "score": 50,
         "reasons": [
-          "$328.95 fair-share per entrant",
+          "$2777.78 normalized prize per estimated submission",
           "closing soon with good odds"
         ],
-        "category": "deadline_edge"
-      },
-      "status": "closing_soon"
+        "category": "value_competition_gap"
+      }
     },
     {
-      "id": "gatewayhacks-2026",
-      "slug": "gatewayhacks-2026",
-      "title": "GatewayHacks 2026 | Software & AI ",
-      "organizer": "GatewayHacks",
-      "prize_usd": 53585,
-      "prize_raw": "$53,585",
-      "registrants": 247,
-      "starts_at": "2026-09-01T00:00:00.000Z",
-      "ends_at": "2026-10-02T23:59:00.000Z",
+      "id": "rice-urban-sustainability",
+      "slug": "rice-urban-sustainability",
+      "title": "The Rice University Urban Sustainability Hackathon",
+      "organizer": "The",
+      "prize_usd": 17500,
+      "prize_raw": "$17,500",
+      "registrants": 339,
+      "starts_at": "2026-06-23T00:00:00.000Z",
+      "ends_at": "2026-09-18T23:59:00.000Z",
+      "time_left": "26 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Social Good",
+        "Databases"
+      ],
+      "open_to_all": true,
+      "source_url": "https://rice-urban-sustainability.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "days_left": 28,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 17500,
+        "cash_value": 17500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 17500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 339,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 41,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 89
+      },
+      "metrics": {
+        "equal_share_naive": 51.62,
+        "fair_share_serious": 426.83,
+        "days_left": 28
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$426.83 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "gibc-v2",
+      "slug": "gibc-v2",
+      "title": "Global Innovation Build Challenge V2",
+      "organizer": "Global",
+      "prize_usd": 148445,
+      "prize_raw": "$148,445",
+      "registrants": 319,
+      "starts_at": "2026-07-11T00:00:00.000Z",
+      "ends_at": "2026-09-21T23:59:00.000Z",
+      "time_left": "30 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Social Good",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gibc-v2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "days_left": 31,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 148445,
+        "cash_value": 148445,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 148445,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 319,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 38,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 88
+      },
+      "metrics": {
+        "equal_share_naive": 465.34,
+        "fair_share_serious": 3906.45,
+        "days_left": 31
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$3906.45 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "volthacks",
+      "slug": "volthacks",
+      "title": "VoltHacks",
+      "organizer": "VoltHacks",
+      "prize_usd": 35785,
+      "prize_raw": "$35,785",
+      "registrants": 1697,
+      "starts_at": "2026-05-22T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "IoT",
+        "Machine Learning/AI",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://volthacks.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.231Z",
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 35785,
+        "cash_value": 35785,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 35785,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1697,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 85,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 21.09,
+        "fair_share_serious": 421,
+        "days_left": 15
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$421 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "opencv26",
+      "slug": "opencv26",
+      "title": "OpenCV AI Competition 2026, powered by AWS",
+      "organizer": "OpenCV",
+      "prize_usd": 12000,
+      "prize_raw": "$12,000",
+      "registrants": 542,
+      "starts_at": "2026-08-26T00:00:00.000Z",
+      "ends_at": "2026-10-27T23:59:00.000Z",
       "time_left": "Upcoming",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "Beginner Friendly",
+        "IoT",
         "Machine Learning/AI",
-        "Open Ended"
+        "Serverless"
       ],
       "open_to_all": true,
-      "source_url": "https://gatewayhacks-2026.devpost.com/",
+      "source_url": "https://opencv26.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": 42,
-        "equal_share": 216.94,
-        "value_score": 79,
-        "odds_score": 100,
-        "registrant_percentile": 60,
+      "days_left": 67,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 12000,
+        "cash_value": 12000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 12000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 542,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 43,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
         "opportunity_score": 87
       },
+      "metrics": {
+        "equal_share_naive": 22.14,
+        "fair_share_serious": 279.07,
+        "days_left": 67
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$216.94 fair-share per entrant"
+          "$279.07 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "codelinc11",
+      "slug": "codelinc11",
+      "title": "codeLinc 11 with Lincoln Financial & AWS",
+      "organizer": "codeLinc",
+      "prize_usd": 10000,
+      "prize_raw": "$10,000",
+      "registrants": 180,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Lincoln Financial Group - Greensboro, NC",
+      "themes": [
+        "Enterprise",
+        "Fintech",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://codelinc11.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 10000,
+        "cash_value": 10000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 10000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 180,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 36,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 55.56,
+        "fair_share_serious": 277.78,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$277.78 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "hackapertus",
+      "slug": "hackapertus",
+      "title": "Hack Apertus",
+      "organizer": "Hack",
+      "prize_usd": 8010,
+      "prize_raw": "€8,010",
+      "registrants": 148,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Grand Finals 2027 ",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hackapertus.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 8010,
+        "cash_value": 8010,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 8010,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 148,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 30,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 54.12,
+        "fair_share_serious": 267,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$267 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "innovik6-indore",
+      "slug": "innovik6-indore",
+      "title": "INNOVIK 6.0 – International Hackathon 2026 | Indore Edition",
+      "organizer": "INNOVIK",
+      "prize_usd": 200000,
+      "prize_raw": "₹ 200,000",
+      "registrants": 69,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "2 days left",
+      "location_type": "in-person",
+      "location": "VITM Indore",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://innovik6-indore.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 200000,
+        "cash_value": 200000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 200000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 69,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 24,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 86
+      },
+      "metrics": {
+        "equal_share_naive": 2898.55,
+        "fair_share_serious": 8333.33,
+        "days_left": null
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history",
+        "large pool, very early/small field — confirm organizer track record"
+      ],
+      "mega": {
+        "score": 65,
+        "reasons": [
+          "$8333.33 normalized prize per estimated submission",
+          "$200K cash with below-median registration"
+        ],
+        "category": "value_competition_gap"
+      }
     }
   ]
 }

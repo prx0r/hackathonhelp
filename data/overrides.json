@@ -1,0 +1,128 @@
+{
+  "_comment": "Hand-verified facts from official rules pages (2026-08-23 research pass). Overrides beat API metadata. Official rules > platform cards.",
+  "multipliers": {
+    "cash": 1.0,
+    "widely_redeemable_award": 0.8,
+    "hardware": 0.5,
+    "compute_api_credits": 0.25,
+    "niche_saas_credits": 0.1,
+    "coupons": 0.02,
+    "funding_opportunity": 0.0
+  },
+  "default_family_prior": {
+    "submissions_per_registration": 0.05,
+    "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+  },
+  "exclusions": [
+    {
+      "match": "tiktok",
+      "reason": "18+/college-student-only per official rules",
+      "eligible": false
+    },
+    {
+      "match": "revenuecat-shipaton",
+      "reason": "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification",
+      "eligible": false
+    },
+    {
+      "match": "all-things-agentic",
+      "reason": "18+ / age-of-majority requirement per official rules",
+      "eligible": false
+    },
+    {
+      "match": "call-e",
+      "reason": "age-of-majority eligibility per official rules",
+      "eligible": false
+    },
+    {
+      "match": "agentic-cinema",
+      "reason": "age-of-majority eligibility per official rules",
+      "eligible": false
+    },
+    {
+      "match": "trainium",
+      "reason": "18+ age-of-majority per official rules (AWS Trainium Frontier)",
+      "eligible": false
+    },
+    {
+      "match": "x402",
+      "reason": "18+ age-of-majority per official rules (Algorand x402 Challenge)",
+      "eligible": false
+    }
+  ],
+  "patches": [
+    {
+      "match": "telegraph",
+      "prize_cash": 5000,
+      "organizer_quality": 0.8,
+      "note": "$5K H1 season, open to developers per official site"
+    },
+    {
+      "match": "ai-infra-summit",
+      "prize_cash": 10500,
+      "judging_tractability": 0.9,
+      "note": "$10.5K cash confirmed, Intel/Qualcomm partners, judged on application/business value/originality"
+    },
+    {
+      "match": "amd-developer-hackathon",
+      "family_prior": {
+        "submissions_per_registration": 0.056,
+        "source": "AMD ACT II: 20728 reg -> 1151 submissions"
+      },
+      "technical_depth_prior": "high",
+      "organizer_quality": 0.85
+    },
+    {
+      "match": "rise-of-ai-agents",
+      "prize_cash": 9000,
+      "prize_credits": 53000,
+      "prize_advertised": 62000
+    },
+    {
+      "match": "ai-genesis",
+      "family_prior": {
+        "submissions_per_registration": 0.053,
+        "source": "AI Genesis recap: 4841 reg -> 258 final apps"
+      },
+      "technical_depth_prior": "high",
+      "organizer_quality": 0.8
+    },
+    {
+      "match": "alpaca",
+      "prize_cash": 5000,
+      "note": "$5K cash, paper-trading env"
+    },
+    {
+      "match": "gatewayhacks",
+      "prize_cash": null,
+      "prize_advertised": 53585,
+      "headline_caution": true,
+      "note": "Headline includes non-cash items; cash portion unconfirmed"
+    },
+    {
+      "match": "ibm-bob",
+      "prize_cash": 10000,
+      "judging_tractability": 0.85,
+      "note": "$10K, 48h, clear rubric"
+    },
+    {
+      "match": "ethonline",
+      "organizer_quality": 0.95,
+      "technical_depth_prior": "high",
+      "note": "ETHGlobal flagship; Lisbon 2026 had $100K sponsor pool; under-18 guardian route exists"
+    },
+    {
+      "match": "wearedevelopers",
+      "organizer_quality": 0.8,
+      "note": "Prizes TBA - watch, rescore when tracks land"
+    },
+    {
+      "match": "boss-battle",
+      "prize_cash": 3000,
+      "eligibility_unverified": true,
+      "judging_tractability": 0.9,
+      "note": "Bitcoin/Nostr tracks, technical judging; age rules not explicit"
+    }
+  ],
+  "manual_entries": []
+}

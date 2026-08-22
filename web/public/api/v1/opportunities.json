@@ -1,128 +1,169 @@
 {
-  "generated_at": "2026-08-22T20:44:44.252Z",
-  "schema_version": "hackathonhelp.api.v1",
+  "generated_at": "2026-08-22T20:58:02.165Z",
+  "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 72,
-    "open": 72,
-    "mega": 23
+    "live": 67,
+    "mega": 17,
+    "excluded": 5
   },
   "top": [
     {
-      "id": "reverie-hacks-2026",
-      "slug": "reverie-hacks-2026",
-      "title": "Reverie Hacks 2026",
-      "organizer": "Reverie",
-      "prize_usd": 3047814,
-      "prize_raw": "$3,047,814",
-      "registrants": 2012,
-      "starts_at": null,
-      "ends_at": null,
-      "time_left": "1 day left",
-      "location_type": "online",
-      "location": "Online",
+      "id": "dialedin",
+      "slug": "dialedin",
+      "title": "DIALED IN Builder Challenge",
+      "organizer": "DIALED",
+      "prize_usd": 5000,
+      "prize_raw": "$5,000",
+      "registrants": 27,
+      "starts_at": "2026-08-04T00:00:00.000Z",
+      "ends_at": "2026-09-08T23:59:00.000Z",
+      "time_left": "18 days left",
+      "location_type": "in-person",
+      "location": "The Hub @ Office Logic",
       "themes": [
-        "Beginner Friendly",
-        "Machine Learning/AI",
-        "Open Ended"
-      ],
-      "open_to_all": true,
-      "source_url": "https://reverie-hacks-2026.devpost.com/",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 1514.82,
-        "value_score": 100,
-        "odds_score": 100,
-        "registrant_percentile": 92,
-        "opportunity_score": 94
-      },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$1514.82 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
-    },
-    {
-      "id": "gibc-v2",
-      "slug": "gibc-v2",
-      "title": "Global Innovation Build Challenge V2",
-      "organizer": "Global",
-      "prize_usd": 148445,
-      "prize_raw": "$148,445",
-      "registrants": 319,
-      "starts_at": "2026-07-11T00:00:00.000Z",
-      "ends_at": "2026-09-21T23:59:00.000Z",
-      "time_left": "30 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "Machine Learning/AI",
-        "Social Good",
+        "AR/VR",
+        "Voice skills",
         "Beginner Friendly"
       ],
       "open_to_all": true,
-      "source_url": "https://gibc-v2.devpost.com/",
+      "source_url": "https://dialedin.devpost.com/",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 31,
-        "equal_share": 465.34,
-        "value_score": 86,
-        "odds_score": 100,
-        "registrant_percentile": 65,
-        "opportunity_score": 90
+      "observed_at": "2026-08-22T20:40:07.691Z",
+      "days_left": 18,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 5000,
+        "cash_value": 5000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 5000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 27,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 9,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 100
+      },
+      "metrics": {
+        "equal_share_naive": 185.19,
+        "fair_share_serious": 555.56,
+        "days_left": 18
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$465.34 fair-share per entrant"
+          "$555.56 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
-      "id": "revenuecat-shipaton-2026",
-      "slug": "revenuecat-shipaton-2026",
-      "title": "RevenueCat Shipaton 2026",
-      "organizer": "RevenueCat",
-      "prize_usd": 740000,
-      "prize_raw": "$740,000",
-      "registrants": 19447,
-      "starts_at": "2026-07-31T00:00:00.000Z",
-      "ends_at": "2026-10-01T23:59:00.000Z",
-      "time_left": "about 1 month left",
+      "id": "api-cloud-ai-hackathon-2026",
+      "slug": "api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "organizer": "DevNetwork",
+      "prize_usd": 39500,
+      "prize_raw": "$39,500",
+      "registrants": 883,
+      "starts_at": "2026-08-17T00:00:00.000Z",
+      "ends_at": "2026-09-03T23:59:00.000Z",
+      "time_left": "12 days left",
       "location_type": "online",
-      "location": "Online",
+      "location": "Santa Clara Convention Center and Online",
       "themes": [
-        "Design",
-        "Gaming",
-        "Mobile"
+        "IoT",
+        "Low/No Code",
+        "Machine Learning/AI"
       ],
       "open_to_all": true,
-      "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
+      "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T20:40:06.230Z",
+      "observed_at": "2026-08-22T20:40:06.924Z",
+      "days_left": 13,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 39500,
+        "cash_value": 39500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 39500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 883,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 71,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 97
+      },
       "metrics": {
-        "days_left": 41,
-        "equal_share": 38.05,
-        "value_score": 98,
-        "odds_score": 85,
-        "registrant_percentile": 100,
-        "opportunity_score": 89
+        "equal_share_naive": 44.73,
+        "fair_share_serious": 556.34,
+        "days_left": 13
       },
+      "cautions": [],
       "mega": {
-        "score": 35,
+        "score": 50,
         "reasons": [
-          "$38.05 fair-share per entrant"
+          "$556.34 normalized prize per estimated submission",
+          "closing soon with good odds"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "the-great-agent-hackathon",
@@ -146,62 +187,616 @@
       "source_url": "https://the-great-agent-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 4,
-        "equal_share": 328.95,
-        "value_score": 83,
-        "odds_score": 100,
-        "registrant_percentile": 64,
-        "opportunity_score": 89
+      "days_left": 4,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 100000,
+        "cash_value": 100000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 100000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 304,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 36,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 96,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 91
+      },
+      "metrics": {
+        "equal_share_naive": 328.95,
+        "fair_share_serious": 2777.78,
+        "days_left": 4
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
       "mega": {
         "score": 50,
         "reasons": [
-          "$328.95 fair-share per entrant",
+          "$2777.78 normalized prize per estimated submission",
           "closing soon with good odds"
         ],
-        "category": "deadline_edge"
-      },
-      "status": "closing_soon"
+        "category": "value_competition_gap"
+      }
     },
     {
-      "id": "gatewayhacks-2026",
-      "slug": "gatewayhacks-2026",
-      "title": "GatewayHacks 2026 | Software & AI ",
-      "organizer": "GatewayHacks",
-      "prize_usd": 53585,
-      "prize_raw": "$53,585",
-      "registrants": 247,
-      "starts_at": "2026-09-01T00:00:00.000Z",
-      "ends_at": "2026-10-02T23:59:00.000Z",
+      "id": "rice-urban-sustainability",
+      "slug": "rice-urban-sustainability",
+      "title": "The Rice University Urban Sustainability Hackathon",
+      "organizer": "The",
+      "prize_usd": 17500,
+      "prize_raw": "$17,500",
+      "registrants": 339,
+      "starts_at": "2026-06-23T00:00:00.000Z",
+      "ends_at": "2026-09-18T23:59:00.000Z",
+      "time_left": "26 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Design",
+        "Social Good",
+        "Databases"
+      ],
+      "open_to_all": true,
+      "source_url": "https://rice-urban-sustainability.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "days_left": 28,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 17500,
+        "cash_value": 17500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 17500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 339,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 41,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 89
+      },
+      "metrics": {
+        "equal_share_naive": 51.62,
+        "fair_share_serious": 426.83,
+        "days_left": 28
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$426.83 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "gibc-v2",
+      "slug": "gibc-v2",
+      "title": "Global Innovation Build Challenge V2",
+      "organizer": "Global",
+      "prize_usd": 148445,
+      "prize_raw": "$148,445",
+      "registrants": 319,
+      "starts_at": "2026-07-11T00:00:00.000Z",
+      "ends_at": "2026-09-21T23:59:00.000Z",
+      "time_left": "30 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Machine Learning/AI",
+        "Social Good",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://gibc-v2.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.104Z",
+      "days_left": 31,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 148445,
+        "cash_value": 148445,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 148445,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 319,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 38,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 88
+      },
+      "metrics": {
+        "equal_share_naive": 465.34,
+        "fair_share_serious": 3906.45,
+        "days_left": 31
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$3906.45 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "volthacks",
+      "slug": "volthacks",
+      "title": "VoltHacks",
+      "organizer": "VoltHacks",
+      "prize_usd": 35785,
+      "prize_raw": "$35,785",
+      "registrants": 1697,
+      "starts_at": "2026-05-22T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "IoT",
+        "Machine Learning/AI",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "source_url": "https://volthacks.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:06.231Z",
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 35785,
+        "cash_value": 35785,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 35785,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1697,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 85,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 21.09,
+        "fair_share_serious": 421,
+        "days_left": 15
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$421 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "opencv26",
+      "slug": "opencv26",
+      "title": "OpenCV AI Competition 2026, powered by AWS",
+      "organizer": "OpenCV",
+      "prize_usd": 12000,
+      "prize_raw": "$12,000",
+      "registrants": 542,
+      "starts_at": "2026-08-26T00:00:00.000Z",
+      "ends_at": "2026-10-27T23:59:00.000Z",
       "time_left": "Upcoming",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "Beginner Friendly",
+        "IoT",
         "Machine Learning/AI",
-        "Open Ended"
+        "Serverless"
       ],
       "open_to_all": true,
-      "source_url": "https://gatewayhacks-2026.devpost.com/",
+      "source_url": "https://opencv26.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": 42,
-        "equal_share": 216.94,
-        "value_score": 79,
-        "odds_score": 100,
-        "registrant_percentile": 60,
+      "days_left": 67,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 12000,
+        "cash_value": 12000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 12000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 542,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 43,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
         "opportunity_score": 87
       },
+      "metrics": {
+        "equal_share_naive": 22.14,
+        "fair_share_serious": 279.07,
+        "days_left": 67
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$216.94 fair-share per entrant"
+          "$279.07 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "codelinc11",
+      "slug": "codelinc11",
+      "title": "codeLinc 11 with Lincoln Financial & AWS",
+      "organizer": "codeLinc",
+      "prize_usd": 10000,
+      "prize_raw": "$10,000",
+      "registrants": 180,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Lincoln Financial Group - Greensboro, NC",
+      "themes": [
+        "Enterprise",
+        "Fintech",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://codelinc11.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 10000,
+        "cash_value": 10000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 10000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 180,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 36,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 55.56,
+        "fair_share_serious": 277.78,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$277.78 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "hackapertus",
+      "slug": "hackapertus",
+      "title": "Hack Apertus",
+      "organizer": "Hack",
+      "prize_usd": 8010,
+      "prize_raw": "€8,010",
+      "registrants": 148,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Grand Finals 2027 ",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://hackapertus.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:08.052Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 8010,
+        "cash_value": 8010,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 8010,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 148,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 30,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 54.12,
+        "fair_share_serious": 267,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$267 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
+    },
+    {
+      "id": "innovik6-indore",
+      "slug": "innovik6-indore",
+      "title": "INNOVIK 6.0 – International Hackathon 2026 | Indore Edition",
+      "organizer": "INNOVIK",
+      "prize_usd": 200000,
+      "prize_raw": "₹ 200,000",
+      "registrants": 69,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "2 days left",
+      "location_type": "in-person",
+      "location": "VITM Indore",
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://innovik6-indore.devpost.com/",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T20:40:07.446Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 200000,
+        "cash_value": 200000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 200000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 69,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 24,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 86
+      },
+      "metrics": {
+        "equal_share_naive": 2898.55,
+        "fair_share_serious": 8333.33,
+        "days_left": null
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history",
+        "large pool, very early/small field — confirm organizer track record"
+      ],
+      "mega": {
+        "score": 65,
+        "reasons": [
+          "$8333.33 normalized prize per estimated submission",
+          "$200K cash with below-median registration"
+        ],
+        "category": "value_competition_gap"
+      }
     }
   ],
   "opportunities": [
@@ -227,22 +822,63 @@
       "source_url": "https://reverie-hacks-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 1514.82,
-        "value_score": 100,
-        "odds_score": 100,
-        "registrant_percentile": 92,
-        "opportunity_score": 94
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 3047814,
+        "cash_value": 3047814,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 3047814,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 2012,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 101,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 76,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 83
+      },
+      "metrics": {
+        "equal_share_naive": 1514.82,
+        "fair_share_serious": 30176.38,
+        "days_left": null
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
       "mega": {
         "score": 35,
         "reasons": [
-          "$1514.82 fair-share per entrant"
+          "$30176.38 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "revenuecat-shipaton-2026",
@@ -266,22 +902,51 @@
       "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": 41,
-        "equal_share": 38.05,
-        "value_score": 98,
-        "odds_score": 85,
-        "registrant_percentile": 100,
-        "opportunity_score": 89
+      "days_left": 41,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": false,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$38.05 fair-share per entrant"
+      "eligibility": {
+        "eligible": false,
+        "failed": [
+          "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
         ],
-        "category": "high_fair_share"
+        "confidence": "official_rules",
+        "notes": "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
       },
-      "status": "open"
+      "prize": {
+        "advertised_value": 740000,
+        "cash_value": 740000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 740000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 19447,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 972,
+        "funnel": null
+      },
+      "score_v01": {
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": 38.05,
+        "fair_share_serious": 761.32,
+        "days_left": 41
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "innovik6-indore",
@@ -305,23 +970,65 @@
       "source_url": "https://innovik6-indore.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 2898.55,
-        "value_score": 88,
-        "odds_score": 100,
-        "registrant_percentile": 25,
-        "opportunity_score": 85
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 200000,
+        "cash_value": 200000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 200000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 69,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 24,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 86
+      },
+      "metrics": {
+        "equal_share_naive": 2898.55,
+        "fair_share_serious": 8333.33,
+        "days_left": null
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history",
+        "large pool, very early/small field — confirm organizer track record"
+      ],
       "mega": {
         "score": 65,
         "reasons": [
-          "$2898.55 fair-share per entrant",
-          "$200K prize with below-median competition"
+          "$8333.33 normalized prize per estimated submission",
+          "$200K cash with below-median registration"
         ],
         "category": "value_competition_gap"
-      },
-      "status": "unknown"
+      }
     },
     {
       "id": "allthingsagentichackathon",
@@ -345,22 +1052,51 @@
       "source_url": "https://allthingsagentichackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 25.8,
-        "value_score": 88,
-        "odds_score": 85,
-        "registrant_percentile": 97,
-        "opportunity_score": 84
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": false,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$25.8 fair-share per entrant"
+      "eligibility": {
+        "eligible": false,
+        "failed": [
+          "18+ / age-of-majority requirement per official rules"
         ],
-        "category": "high_fair_share"
+        "confidence": "official_rules",
+        "notes": "18+ / age-of-majority requirement per official rules"
       },
-      "status": "unknown"
+      "prize": {
+        "advertised_value": 180000,
+        "cash_value": 180000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 180000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 6976,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 349,
+        "funnel": null
+      },
+      "score_v01": {
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": 25.8,
+        "fair_share_serious": 515.76,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "gibc-v2",
@@ -384,22 +1120,63 @@
       "source_url": "https://gibc-v2.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 31,
-        "equal_share": 465.34,
-        "value_score": 86,
-        "odds_score": 100,
-        "registrant_percentile": 65,
-        "opportunity_score": 90
+      "days_left": 31,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 148445,
+        "cash_value": 148445,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 148445,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 319,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 38,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 88
+      },
+      "metrics": {
+        "equal_share_naive": 465.34,
+        "fair_share_serious": 3906.45,
+        "days_left": 31
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
       "mega": {
         "score": 35,
         "reasons": [
-          "$465.34 fair-share per entrant"
+          "$3906.45 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "the-great-agent-hackathon",
@@ -423,23 +1200,64 @@
       "source_url": "https://the-great-agent-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 4,
-        "equal_share": 328.95,
-        "value_score": 83,
-        "odds_score": 100,
-        "registrant_percentile": 64,
-        "opportunity_score": 89
+      "days_left": 4,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 100000,
+        "cash_value": 100000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 100000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 304,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 36,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 96,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 91
+      },
+      "metrics": {
+        "equal_share_naive": 328.95,
+        "fair_share_serious": 2777.78,
+        "days_left": 4
+      },
+      "cautions": [
+        "extraordinary per-submission value — verify payout history"
+      ],
       "mega": {
         "score": 50,
         "reasons": [
-          "$328.95 fair-share per entrant",
+          "$2777.78 normalized prize per estimated submission",
           "closing soon with good odds"
         ],
-        "category": "deadline_edge"
-      },
-      "status": "closing_soon"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "agentic-cinema",
@@ -463,16 +1281,51 @@
       "source_url": "https://agentic-cinema.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": 19,
-        "equal_share": 9.76,
-        "value_score": 81,
-        "odds_score": 55,
-        "registrant_percentile": 99,
-        "opportunity_score": 74
+      "days_left": 19,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": false,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": false,
+        "failed": [
+          "age-of-majority eligibility per official rules"
+        ],
+        "confidence": "official_rules",
+        "notes": "age-of-majority eligibility per official rules"
+      },
+      "prize": {
+        "advertised_value": 75000,
+        "cash_value": 75000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 75000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 7681,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 384,
+        "funnel": null
+      },
+      "score_v01": {
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": 9.76,
+        "fair_share_serious": 195.31,
+        "days_left": 19
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "gatewayhacks-2026",
@@ -496,22 +1349,57 @@
       "source_url": "https://gatewayhacks-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
+      "days_left": 42,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "official_rules",
+        "notes": "Headline includes non-cash items; cash portion unconfirmed"
+      },
+      "prize": {
+        "advertised_value": 53585,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 247,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 30,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
       "metrics": {
-        "days_left": 42,
-        "equal_share": 216.94,
-        "value_score": 79,
-        "odds_score": 100,
-        "registrant_percentile": 60,
-        "opportunity_score": 87
+        "equal_share_naive": 216.94,
+        "fair_share_serious": null,
+        "days_left": 42
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$216.94 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "agentsforhumans",
@@ -535,16 +1423,61 @@
       "source_url": "https://agentsforhumans.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": 24,
-        "equal_share": 8.73,
-        "value_score": 77,
-        "odds_score": 55,
-        "registrant_percentile": 96,
-        "opportunity_score": 70
+      "days_left": 24,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 40000,
+        "cash_value": 40000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 40000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 4581,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 229,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 70,
+          "winnability": 70,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 72
+      },
+      "metrics": {
+        "equal_share_naive": 8.73,
+        "fair_share_serious": 174.67,
+        "days_left": 24
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$174.67 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "api-cloud-ai-hackathon-2026",
@@ -568,23 +1501,62 @@
       "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 13,
-        "equal_share": 44.73,
-        "value_score": 77,
-        "odds_score": 85,
-        "registrant_percentile": 79,
-        "opportunity_score": 83
+      "days_left": 13,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 39500,
+        "cash_value": 39500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 39500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 883,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 71,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 97
+      },
+      "metrics": {
+        "equal_share_naive": 44.73,
+        "fair_share_serious": 556.34,
+        "days_left": 13
+      },
+      "cautions": [],
       "mega": {
         "score": 50,
         "reasons": [
-          "$44.73 fair-share per entrant",
+          "$556.34 normalized prize per estimated submission",
           "closing soon with good odds"
         ],
-        "category": "deadline_edge"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "univabio",
@@ -608,22 +1580,55 @@
       "source_url": "https://univabio.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
+      "days_left": 46,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 35845,
+        "cash_value": 35845,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 35845,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 198,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
       "metrics": {
-        "days_left": 46,
-        "equal_share": 181.04,
-        "value_score": 76,
-        "odds_score": 100,
-        "registrant_percentile": 54,
-        "opportunity_score": 86
+        "equal_share_naive": 181.04,
+        "fair_share_serious": null,
+        "days_left": 46
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$181.04 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "volthacks",
@@ -647,22 +1652,61 @@
       "source_url": "https://volthacks.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.231Z",
-      "metrics": {
-        "days_left": 15,
-        "equal_share": 21.09,
-        "value_score": 76,
-        "odds_score": 85,
-        "registrant_percentile": 88,
-        "opportunity_score": 83
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 35785,
+        "cash_value": 35785,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 35785,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1697,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 85,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 21.09,
+        "fair_share_serious": 421,
+        "days_left": 15
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$21.09 fair-share per entrant"
+          "$421 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "tiktoktechjam2026",
@@ -686,23 +1730,51 @@
       "source_url": "https://tiktoktechjam2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": 11,
-        "equal_share": 16.25,
-        "value_score": 76,
-        "odds_score": 70,
-        "registrant_percentile": 93,
-        "opportunity_score": 78
+      "days_left": 11,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": false,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": {
-        "score": 37,
-        "reasons": [
-          "$16.25 fair-share per entrant",
-          "closing soon with good odds"
+      "eligibility": {
+        "eligible": false,
+        "failed": [
+          "18+/college-student-only per official rules"
         ],
-        "category": "deadline_edge"
+        "confidence": "official_rules",
+        "notes": "18+/college-student-only per official rules"
       },
-      "status": "open"
+      "prize": {
+        "advertised_value": 34500,
+        "cash_value": 34500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 34500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 2123,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 106,
+        "funnel": null
+      },
+      "score_v01": {
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": 16.25,
+        "fair_share_serious": 325.47,
+        "days_left": 11
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "ai-builders-hackathon-2026",
@@ -726,16 +1798,61 @@
       "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": 25,
-        "equal_share": 16.99,
-        "value_score": 76,
-        "odds_score": 70,
-        "registrant_percentile": 90,
-        "opportunity_score": 75
+      "days_left": 25,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 33900,
+        "cash_value": 33900,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 33900,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1995,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 100,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 81,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 86
+      },
+      "metrics": {
+        "equal_share_naive": 16.99,
+        "fair_share_serious": 339,
+        "days_left": 25
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$339 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "launchhacks-v",
@@ -759,16 +1876,61 @@
       "source_url": "https://launchhacks-v.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 14.3,
-        "value_score": 71,
-        "odds_score": 70,
-        "registrant_percentile": 85,
-        "opportunity_score": 72
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 17575,
+        "cash_value": 17575,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 17575,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1229,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 61,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 76,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 84
+      },
+      "metrics": {
+        "equal_share_naive": 14.3,
+        "fair_share_serious": 288.11,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$288.11 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "rice-urban-sustainability",
@@ -792,22 +1954,61 @@
       "source_url": "https://rice-urban-sustainability.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 28,
-        "equal_share": 51.62,
-        "value_score": 71,
-        "odds_score": 100,
-        "registrant_percentile": 67,
-        "opportunity_score": 84
+      "days_left": 28,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 17500,
+        "cash_value": 17500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 17500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 339,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 41,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 89
+      },
+      "metrics": {
+        "equal_share_naive": 51.62,
+        "fair_share_serious": 426.83,
+        "days_left": 28
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$51.62 fair-share per entrant"
+          "$426.83 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "adtc-2026",
@@ -830,23 +2031,62 @@
       "source_url": "https://adtc-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": 4,
-        "equal_share": 9.25,
-        "value_score": 70,
-        "odds_score": 55,
-        "registrant_percentile": 89,
-        "opportunity_score": 72
+      "days_left": 4,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 16500,
+        "cash_value": 16500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 16500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1783,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 89,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 70,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 79
+      },
+      "metrics": {
+        "equal_share_naive": 9.25,
+        "fair_share_serious": 185.39,
+        "days_left": 4
+      },
+      "cautions": [],
       "mega": {
-        "score": 37,
+        "score": 50,
         "reasons": [
-          "$9.25 fair-share per entrant",
+          "$185.39 normalized prize per estimated submission",
           "closing soon with good odds"
         ],
-        "category": "deadline_edge"
-      },
-      "status": "closing_soon"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "opencv26",
@@ -870,22 +2110,61 @@
       "source_url": "https://opencv26.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": 67,
-        "equal_share": 22.14,
-        "value_score": 68,
-        "odds_score": 85,
-        "registrant_percentile": 72,
-        "opportunity_score": 75
+      "days_left": 67,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 12000,
+        "cash_value": 12000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 12000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 542,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 43,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 22.14,
+        "fair_share_serious": 279.07,
+        "days_left": 67
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$22.14 fair-share per entrant"
+          "$279.07 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "call-e",
@@ -909,16 +2188,51 @@
       "source_url": "https://call-e.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.230Z",
-      "metrics": {
-        "days_left": 24,
-        "equal_share": 4.18,
-        "value_score": 67,
-        "odds_score": 40,
-        "registrant_percentile": 94,
-        "opportunity_score": 61
+      "days_left": 24,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": false,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": false,
+        "failed": [
+          "age-of-majority eligibility per official rules"
+        ],
+        "confidence": "official_rules",
+        "notes": "age-of-majority eligibility per official rules"
+      },
+      "prize": {
+        "advertised_value": 10000,
+        "cash_value": 10000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 10000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 2395,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 120,
+        "funnel": null
+      },
+      "score_v01": {
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": 4.18,
+        "fair_share_serious": 83.33,
+        "days_left": 24
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "codelinc11",
@@ -942,22 +2256,61 @@
       "source_url": "https://codelinc11.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 55.56,
-        "value_score": 67,
-        "odds_score": 100,
-        "registrant_percentile": 53,
-        "opportunity_score": 77
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 10000,
+        "cash_value": 10000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 10000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 180,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 36,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 55.56,
+        "fair_share_serious": 277.78,
+        "days_left": null
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$55.56 fair-share per entrant"
+          "$277.78 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "hackapertus",
@@ -981,22 +2334,61 @@
       "source_url": "https://hackapertus.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 54.12,
-        "value_score": 65,
-        "odds_score": 100,
-        "registrant_percentile": 42,
-        "opportunity_score": 76
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 8010,
+        "cash_value": 8010,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 8010,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 148,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 30,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 85,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 87
+      },
+      "metrics": {
+        "equal_share_naive": 54.12,
+        "fair_share_serious": 267,
+        "days_left": null
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$54.12 fair-share per entrant"
+          "$267 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "hack-away-hunger",
@@ -1019,22 +2411,55 @@
       "source_url": "https://hack-away-hunger.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
+      "days_left": 48,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 5000,
+        "cash_value": 5000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 5000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 28,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
       "metrics": {
-        "days_left": 48,
-        "equal_share": 178.57,
-        "value_score": 62,
-        "odds_score": 100,
-        "registrant_percentile": 13,
-        "opportunity_score": 76
+        "equal_share_naive": 178.57,
+        "fair_share_serious": null,
+        "days_left": 48
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$178.57 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "dialedin",
@@ -1058,22 +2483,61 @@
       "source_url": "https://dialedin.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": 18,
-        "equal_share": 185.19,
-        "value_score": 62,
-        "odds_score": 100,
-        "registrant_percentile": 11,
-        "opportunity_score": 79
+      "days_left": 18,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 5000,
+        "cash_value": 5000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 5000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 27,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 9,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 100
+      },
+      "metrics": {
+        "equal_share_naive": 185.19,
+        "fair_share_serious": 555.56,
+        "days_left": 18
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$185.19 fair-share per entrant"
+          "$555.56 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "hacksocial2026",
@@ -1097,16 +2561,55 @@
       "source_url": "https://hacksocial2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 9.34,
-        "value_score": 60,
-        "odds_score": 55,
-        "registrant_percentile": 71,
-        "opportunity_score": 62
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 3979,
+        "cash_value": 3979,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 3979,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 426,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 51,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 76,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 65
+      },
+      "metrics": {
+        "equal_share_naive": 9.34,
+        "fair_share_serious": 78.02,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "oneaquahealth-ieee-hackathon",
@@ -1130,16 +2633,55 @@
       "source_url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": 41,
-        "equal_share": 5.42,
-        "value_score": 58,
-        "odds_score": 55,
-        "registrant_percentile": 74,
-        "opportunity_score": 63
+      "days_left": 41,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 3000,
+        "cash_value": 3000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 3000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 554,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 44,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 70
+      },
+      "metrics": {
+        "equal_share_naive": 5.42,
+        "fair_share_serious": 68.18,
+        "days_left": 41
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "ieee-climatechain-hack",
@@ -1163,22 +2705,61 @@
       "source_url": "https://ieee-climatechain-hack.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 20.13,
-        "value_score": 58,
-        "odds_score": 85,
-        "registrant_percentile": 43,
-        "opportunity_score": 72
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 3000,
+        "cash_value": 3000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 3000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 149,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 30,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 70,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 77
+      },
+      "metrics": {
+        "equal_share_naive": 20.13,
+        "fair_share_serious": 100,
+        "days_left": null
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$20.13 fair-share per entrant"
+          "$100 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "galuxium-nexus-v2-29411",
@@ -1202,16 +2783,55 @@
       "source_url": "https://galuxium-nexus-v2-29411.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 71,
-        "equal_share": 6.25,
-        "value_score": 57,
-        "odds_score": 55,
-        "registrant_percentile": 69,
-        "opportunity_score": 60
+      "days_left": 71,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 2600,
+        "cash_value": 2600,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 2600,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 416,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": 6.25,
+        "fair_share_serious": null,
+        "days_left": 71
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "nextstep2026",
@@ -1235,16 +2855,55 @@
       "source_url": "https://nextstep2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 23,
-        "equal_share": 6.89,
-        "value_score": 54,
-        "odds_score": 55,
-        "registrant_percentile": 61,
-        "opportunity_score": 61
+      "days_left": 23,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1750,
+        "cash_value": 1750,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1750,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 254,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 30,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 70
+      },
+      "metrics": {
+        "equal_share_naive": 6.89,
+        "fair_share_serious": 58.33,
+        "days_left": 23
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "cissa-catalyst-2026",
@@ -1268,22 +2927,61 @@
       "source_url": "https://cissa-catalyst-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 21.79,
-        "value_score": 54,
-        "odds_score": 85,
-        "registrant_percentile": 31,
-        "opportunity_score": 66
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1700,
+        "cash_value": 1700,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1700,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 78,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 16,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 70,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 77
+      },
+      "metrics": {
+        "equal_share_naive": 21.79,
+        "fair_share_serious": 106.25,
+        "days_left": null
+      },
+      "cautions": [],
       "mega": {
         "score": 35,
         "reasons": [
-          "$21.79 fair-share per entrant"
+          "$106.25 normalized prize per estimated submission"
         ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
+        "category": "value_competition_gap"
+      }
     },
     {
       "id": "august-ai-challenge-31059",
@@ -1307,16 +3005,55 @@
       "source_url": "https://august-ai-challenge-31059.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 9.09,
-        "value_score": 53,
-        "odds_score": 55,
-        "registrant_percentile": 49,
-        "opportunity_score": 59
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1500,
+        "cash_value": 1500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 165,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 33,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 68
+      },
+      "metrics": {
+        "equal_share_naive": 9.09,
+        "fair_share_serious": 45.45,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "prometheus-sept-ai-classic",
@@ -1340,16 +3077,55 @@
       "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": 15,
-        "equal_share": 17.65,
-        "value_score": 53,
-        "odds_score": 70,
-        "registrant_percentile": 35,
-        "opportunity_score": 68
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1500,
+        "cash_value": 1500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 85,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 17,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 70,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 81
+      },
+      "metrics": {
+        "equal_share_naive": 17.65,
+        "fair_share_serious": 88.24,
+        "days_left": 15
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "prometheus-september-ai-2",
@@ -1373,22 +3149,55 @@
       "source_url": "https://prometheus-september-ai-2.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
+      "days_left": 22,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1500,
+        "cash_value": 1500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 53,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 19,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 70
+      },
       "metrics": {
-        "days_left": 22,
-        "equal_share": 28.3,
-        "value_score": 53,
-        "odds_score": 85,
-        "registrant_percentile": 19,
-        "opportunity_score": 71
+        "equal_share_naive": 28.3,
+        "fair_share_serious": 78.95,
+        "days_left": 22
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$28.3 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "compsphere12",
@@ -1412,16 +3221,55 @@
       "source_url": "https://compsphere12.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": 27,
-        "equal_share": 8.54,
-        "value_score": 52,
-        "odds_score": 55,
-        "registrant_percentile": 40,
-        "opportunity_score": 60
+      "days_left": 27,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1247,
+        "cash_value": 1247,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1247,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 146,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 29,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 70
+      },
+      "metrics": {
+        "equal_share_naive": 8.54,
+        "fair_share_serious": 43,
+        "days_left": 27
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "quantumhacks",
@@ -1445,16 +3293,55 @@
       "source_url": "https://quantumhacks.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 3,
-        "equal_share": 1.08,
-        "value_score": 50,
-        "odds_score": 25,
-        "registrant_percentile": 81,
-        "opportunity_score": 54
+      "days_left": 3,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "closing_soon"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1000,
+        "cash_value": 1000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 923,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 74,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 40,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 60
+      },
+      "metrics": {
+        "equal_share_naive": 1.08,
+        "fair_share_serious": 13.51,
+        "days_left": 3
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "hack-the-habitat-2026",
@@ -1478,16 +3365,55 @@
       "source_url": "https://hack-the-habitat-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 6.25,
-        "value_score": 50,
-        "odds_score": 55,
-        "registrant_percentile": 46,
-        "opportunity_score": 58
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1000,
+        "cash_value": 1000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 160,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 32,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 68
+      },
+      "metrics": {
+        "equal_share_naive": 6.25,
+        "fair_share_serious": 31.25,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "melbourne-hack-2026",
@@ -1511,22 +3437,55 @@
       "source_url": "https://melbourne-hack-2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 900,
+        "cash_value": 900,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 900,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 13,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
       "metrics": {
-        "days_left": null,
-        "equal_share": 69.23,
-        "value_score": 49,
-        "odds_score": 100,
-        "registrant_percentile": 4,
-        "opportunity_score": 70
+        "equal_share_naive": 69.23,
+        "fair_share_serious": null,
+        "days_left": null
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$69.23 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "unknown"
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "3rd-web-hack",
@@ -1550,22 +3509,55 @@
       "source_url": "https://3rd-web-hack.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
+      "days_left": 37,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 750,
+        "cash_value": 750,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 750,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 10,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
       "metrics": {
-        "days_left": 37,
-        "equal_share": 75,
-        "value_score": 48,
-        "odds_score": 100,
-        "registrant_percentile": 3,
-        "opportunity_score": 74
+        "equal_share_naive": 75,
+        "fair_share_serious": null,
+        "days_left": 37
       },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$75 fair-share per entrant"
-        ],
-        "category": "high_fair_share"
-      },
-      "status": "open"
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "unitedhacksv8",
@@ -1589,16 +3581,55 @@
       "source_url": "https://unitedhacksv8.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 8.24,
-        "value_score": 47,
-        "odds_score": 55,
-        "registrant_percentile": 35,
-        "opportunity_score": 57
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 700,
+        "cash_value": 700,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 700,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 85,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 17,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 55,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 68
+      },
+      "metrics": {
+        "equal_share_naive": 8.24,
+        "fair_share_serious": 41.18,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "smart-city-hackathon-lahore",
@@ -1622,16 +3653,55 @@
       "source_url": "https://smart-city-hackathon-lahore.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 9.17,
-        "value_score": 47,
-        "odds_score": 55,
-        "registrant_percentile": 26,
-        "opportunity_score": 53
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 642,
+        "cash_value": 642,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 642,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 70,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 25,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 40,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 59
+      },
+      "metrics": {
+        "equal_share_naive": 9.17,
+        "fair_share_serious": 25.68,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "hack-the-limit-1",
@@ -1655,16 +3725,55 @@
       "source_url": "https://hack-the-limit-1.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 9,
-        "equal_share": 0.56,
-        "value_score": 42,
-        "odds_score": 25,
-        "registrant_percentile": 75,
-        "opportunity_score": 48
+      "days_left": 9,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 350,
+        "cash_value": 350,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 350,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 630,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 50,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 50
+      },
+      "metrics": {
+        "equal_share_naive": 0.56,
+        "fair_share_serious": 7,
+        "days_left": 9
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "impactforge",
@@ -1688,16 +3797,55 @@
       "source_url": "https://impactforge.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 3,
-        "equal_share": 0.32,
-        "value_score": 41,
-        "odds_score": 10,
-        "registrant_percentile": 82,
-        "opportunity_score": 45
+      "days_left": 3,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "closing_soon"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 300,
+        "cash_value": 300,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 300,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 946,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 76,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 48
+      },
+      "metrics": {
+        "equal_share_naive": 0.32,
+        "fair_share_serious": 3.95,
+        "days_left": 3
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "next-founders",
@@ -1721,16 +3869,55 @@
       "source_url": "https://next-founders.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": 55,
-        "equal_share": 4.74,
-        "value_score": 41,
-        "odds_score": 40,
-        "registrant_percentile": 22,
-        "opportunity_score": 51
+      "days_left": 55,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 275,
+        "cash_value": 275,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 275,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 58,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": 4.74,
+        "fair_share_serious": null,
+        "days_left": 55
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "brainwave-2026-midnight-track",
@@ -1753,16 +3940,55 @@
       "source_url": "https://brainwave-2026-midnight-track.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.445Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 1.57,
-        "value_score": 39,
-        "odds_score": 25,
-        "registrant_percentile": 39,
-        "opportunity_score": 43
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 220,
+        "cash_value": 220,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 220,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 140,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 28,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 46
+      },
+      "metrics": {
+        "equal_share_naive": 1.57,
+        "fair_share_serious": 7.86,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "neuralsprint",
@@ -1786,16 +4012,55 @@
       "source_url": "https://neuralsprint.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 3,
-        "equal_share": 0.24,
-        "value_score": 36,
-        "odds_score": 10,
-        "registrant_percentile": 76,
-        "opportunity_score": 43
+      "days_left": 3,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "closing_soon"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 150,
+        "cash_value": 150,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 150,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 636,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 51,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 48
+      },
+      "metrics": {
+        "equal_share_naive": 0.24,
+        "fair_share_serious": 2.94,
+        "days_left": 3
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "evensonarisnord",
@@ -1818,16 +4083,55 @@
       "source_url": "https://evensonarisnord.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": 1.67,
-        "value_score": 36,
-        "odds_score": 25,
-        "registrant_percentile": 36,
-        "opportunity_score": 42
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 150,
+        "cash_value": 150,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 150,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 90,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 18,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 46
+      },
+      "metrics": {
+        "equal_share_naive": 1.67,
+        "fair_share_serious": 8.33,
+        "days_left": null
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "hack-for-humanity-summer-26",
@@ -1851,16 +4155,55 @@
       "source_url": "https://hack-for-humanity-summer-26.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 14,
-        "equal_share": 0.09,
-        "value_score": 33,
-        "odds_score": 10,
-        "registrant_percentile": 83,
-        "opportunity_score": 39
+      "days_left": 14,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 100,
+        "cash_value": 100,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 100,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1058,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 53,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 47
+      },
+      "metrics": {
+        "equal_share_naive": 0.09,
+        "fair_share_serious": 1.89,
+        "days_left": 14
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "3d-websites-hackathon",
@@ -1884,16 +4227,55 @@
       "source_url": "https://3d-websites-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": 10,
-        "equal_share": 0.04,
-        "value_score": 29,
-        "odds_score": 10,
-        "registrant_percentile": 86,
-        "opportunity_score": 38
+      "days_left": 10,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 55,
+        "cash_value": 55,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 55,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1351,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 68,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 47
+      },
+      "metrics": {
+        "equal_share_naive": 0.04,
+        "fair_share_serious": 0.81,
+        "days_left": 10
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "gatewaygs-ai-4-earth-hackathon",
@@ -1917,16 +4299,55 @@
       "source_url": "https://gatewaygs-ai-4-earth-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 1,
-        "equal_share": 0.1,
-        "value_score": 24,
-        "odds_score": 10,
-        "registrant_percentile": 57,
-        "opportunity_score": 38
+      "days_left": 1,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "closing_soon"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 25,
+        "cash_value": 25,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 25,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 244,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 29,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 20,
+          "winnability": 96,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 50
+      },
+      "metrics": {
+        "equal_share_naive": 0.1,
+        "fair_share_serious": 0.86,
+        "days_left": 1
+      },
+      "cautions": [],
+      "mega": null
     },
     {
       "id": "pixel-forge-ai-hackathon-08",
@@ -1950,16 +4371,57 @@
       "source_url": "https://pixel-forge-ai-hackathon-08.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:06.924Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 78,
-        "opportunity_score": 19
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 810,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 65,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 76,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 77
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "inspire-hackathon",
@@ -1983,16 +4445,57 @@
       "source_url": "https://inspire-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 68,
-        "opportunity_score": 19
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 410,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 49,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "ai-yes-competition-30441",
@@ -2016,16 +4519,57 @@
       "source_url": "https://ai-yes-competition-30441.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 11,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 63,
-        "opportunity_score": 23
+      "days_left": 11,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 259,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 31,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 11
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "hackonomics27",
@@ -2049,16 +4593,57 @@
       "source_url": "https://hackonomics27.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.104Z",
-      "metrics": {
-        "days_left": 8,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 58,
-        "opportunity_score": 23
+      "days_left": 8,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 245,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 29,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 8
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "code-for-humanity",
@@ -2082,16 +4667,57 @@
       "source_url": "https://code-for-humanity.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 56,
-        "opportunity_score": 19
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 205,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 25,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "animalhack2026",
@@ -2115,16 +4741,57 @@
       "source_url": "https://animalhack2026.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": 22,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 51,
-        "opportunity_score": 20
+      "days_left": 22,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 176,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 35,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 22
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "buuniex-hackathon",
@@ -2148,16 +4815,57 @@
       "source_url": "https://buuniex-hackathon.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": 32,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 51,
-        "opportunity_score": 20
+      "days_left": 32,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 176,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 35,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 32
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "dsh-hacks-v2",
@@ -2181,16 +4889,57 @@
       "source_url": "https://dsh-hacks-v2.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": 79,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 47,
-        "opportunity_score": 18
+      "days_left": 79,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 164,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 79
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "evorozen-apex",
@@ -2214,16 +4963,57 @@
       "source_url": "https://evorozen-apex.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.263Z",
-      "metrics": {
-        "days_left": 30,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 44,
-        "opportunity_score": 20
+      "days_left": 30,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 155,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 31,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 30
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "syntax-summit",
@@ -2247,16 +5037,57 @@
       "source_url": "https://syntax-summit.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": 15,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 38,
-        "opportunity_score": 23
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 121,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 24,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 15
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "luma-hackathon-fall",
@@ -2280,16 +5111,57 @@
       "source_url": "https://luma-hackathon-fall.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": 38,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 29,
-        "opportunity_score": 20
+      "days_left": 38,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 75,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 15,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 38
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "firstcommit",
@@ -2313,16 +5185,57 @@
       "source_url": "https://firstcommit.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": 40,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 28,
-        "opportunity_score": 20
+      "days_left": 40,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 73,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 26,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 40
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "rescue-hacks-30680",
@@ -2346,16 +5259,57 @@
       "source_url": "https://rescue-hacks-30680.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.446Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 24,
-        "opportunity_score": 19
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 67,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 23,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "creation-code-30750",
@@ -2378,16 +5332,57 @@
       "source_url": "https://creation-code-30750.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": 13,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 21,
-        "opportunity_score": 19
+      "days_left": 13,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 57,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 20,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 13
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "create-with-gemini",
@@ -2411,16 +5406,57 @@
       "source_url": "https://create-with-gemini.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 18,
-        "opportunity_score": 15
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 52,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 18,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "htcj-aviation-futures",
@@ -2444,16 +5480,57 @@
       "source_url": "https://htcj-aviation-futures.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": 48,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 17,
-        "opportunity_score": 16
+      "days_left": 48,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 44,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 48
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "gemini-builds",
@@ -2477,16 +5554,57 @@
       "source_url": "https://gemini-builds.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 15,
-        "opportunity_score": 15
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 34,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 12,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "gemini-event-hackmatrix",
@@ -2510,16 +5628,57 @@
       "source_url": "https://gemini-event-hackmatrix.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.691Z",
-      "metrics": {
-        "days_left": 15,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 15,
-        "opportunity_score": 19
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 34,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 12,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 15
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "technisa-hacks",
@@ -2543,16 +5702,57 @@
       "source_url": "https://technisa-hacks.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 10,
-        "opportunity_score": 15
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 21,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "8-bit-jam",
@@ -2576,16 +5776,57 @@
       "source_url": "https://8-bit-jam.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 8,
-        "opportunity_score": 15
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 20,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "graphiques-challenge",
@@ -2609,16 +5850,57 @@
       "source_url": "https://graphiques-challenge.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 7,
-        "opportunity_score": 19
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 19,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "mca-2026-projects",
@@ -2640,16 +5922,57 @@
       "source_url": "https://mca-2026-projects.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": 126,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 6,
-        "opportunity_score": 18
+      "days_left": 126,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "open"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 17,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 126
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "ai-innovation-day-31076",
@@ -2671,16 +5994,57 @@
       "source_url": "https://ai-innovation-day-31076.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:07.871Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 1,
-        "opportunity_score": 15
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": null,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 9,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": 0
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
     },
     {
       "id": "devonomicsv1",
@@ -2704,16 +6068,84 @@
       "source_url": "https://devonomicsv1.devpost.com/",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T20:40:08.052Z",
-      "metrics": {
-        "days_left": null,
-        "equal_share": null,
-        "value_score": null,
-        "odds_score": null,
-        "registrant_percentile": 35,
-        "opportunity_score": 19
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
       },
-      "mega": null,
-      "status": "unknown"
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 85,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 17,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 84,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 85
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null
+    }
+  ],
+  "excluded": [
+    {
+      "slug": "revenuecat-shipaton-2026",
+      "title": "RevenueCat Shipaton 2026",
+      "reason": "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
+    },
+    {
+      "slug": "allthingsagentichackathon",
+      "title": "All Things Agentic Hackathon",
+      "reason": "18+ / age-of-majority requirement per official rules"
+    },
+    {
+      "slug": "agentic-cinema",
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "reason": "age-of-majority eligibility per official rules"
+    },
+    {
+      "slug": "tiktoktechjam2026",
+      "title": "TikTok TechJam 2026",
+      "reason": "18+/college-student-only per official rules"
+    },
+    {
+      "slug": "call-e",
+      "title": "CALL-E: Your Code Is Calling",
+      "reason": "age-of-majority eligibility per official rules"
     }
   ],
   "changes": []

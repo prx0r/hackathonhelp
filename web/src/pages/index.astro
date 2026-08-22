@@ -2,31 +2,29 @@
 import Base from '../layouts/Base.astro';
 import derived from '../data/derived.json';
 
-const open = derived.opportunities.filter(o => o.status !== 'ended');
-const megas = open.filter(o => o.mega).sort((a,b)=>b.mega.score-a.mega.score);
-const top = derived.top;
+const megas = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.mega).sort((a,b)=>b.mega.score-a.mega.score);
+const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible);
+// LIVE = usable field or closing soon; UPCOMING/FORMING = field still maturing
+const live = open.filter(o => o.field.field_status==='usable')
+  .sort((a,b)=>b.score_v01.opportunity_score-a.score_v01.opportunity_score);
+const upcoming = open.filter(o => o.field.field_status==='forming')
+  .sort((a,b)=>(b.prize.normalized_value??b.prize.advertised_value??0)-(a.prize.normalized_value??a.prize.advertised_value??0));
 
 function fmt$(v){ return v==null?'—':'$'+Math.round(v).toLocaleString(); }
 function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-const topCardsHtml = top.map((o,i)=>{
+function oppCard(o,i){
   const m=o.metrics;
   return `<div class="deal-full">
     <div class="deal-rank">#${i+1}</div>
     <div class="deal-body">
-      <div class="deal-head"><h3 class="deal-title">${esc(o.title)}</h3><span class="deal-tagline">${esc(o.organizer||'')} · ${o.location_type}</span></div>
-      <div class="deal-section"><div class="deal-section-label">Prize pool</div><div class="deal-section-text" style="font-weight:800;color:var(--accent);font-size:18px">${fmt$(o.prize_usd)}</div></div>
-      <div class="deal-section"><div class="deal-section-label">Competition</div><div class="deal-section-text">${(o.registrants||0).toLocaleString()} entrants · <strong>$${m.equal_share ?? '—'} fair-share each</strong> · top ${100-m.registrant_percentile}% by prize size</div></div>
-      <div class="deal-section"><div class="deal-section-label">Deadline</div><div class="deal-section-text">${o.time_left || 'see event page'} ${o.ends_at?`(${new Date(o.ends_at).toLocaleDateString('en-US',{month:'short',day:'numeric'})})`:''}</div></div>
+      <div class="deal-head"><h3 class="deal-title">${esc(o.title)}</h3><span class="deal-tagline">${esc(o.organizer||'')} · ${o.location_type}${o.time_left?' · '+esc(o.time_left):''}</span></div>
+      <div class="deal-section"><div class="deal-section-label">Prize</div><div class="deal-section-text"><span style="font-weight:800;color:var(--accent);font-size:17px">${fmt$(o.prize.normalized_value)}</span>${o.prize.credits_value?` <span style="font-size:11px;color:var(--text-dim)">incl. $${Math.round(o.prize.credits_value).toLocaleString()} credits</span>`:''}</div></div>
+      <div class="deal-section"><div class="deal-section-label">Competition</div><div class="deal-section-text">${(o.registrants||0).toLocaleString()} registered${o.field.estimated_serious_field?` · ~${o.field.estimated_serious_field.toLocaleString()} est. serious projects`:''}${m.fair_share_serious!=null?` · <strong>$${m.fair_share_serious.toLocaleString()}/submission</strong>`:''}</div></div>
       ${o.themes.length?`<div class="deal-section"><div class="deal-section-label">Themes</div><div class="deal-section-text">${o.themes.slice(0,4).map(esc).join(' · ')}</div></div>`:''}
-      <div class="deal-footer">
-        <a href="/opps/${o.slug}" class="deal-link">Full analysis</a>
-        <span style="color:var(--border)">|</span>
-        <a href="${o.source_url}" target="_blank" rel="noopener" class="deal-link">Register →</a>
-      </div>
-    </div>
-  </div>`;
-}).join('');
+      <div class="deal-footer"><a href="/opps/${o.slug}" class="deal-link">Full analysis</a><span style="color:var(--border)">|</span><a href="${o.source_url}" target="_blank" rel="noopener" class="deal-link">Register →</a></div>
+    </div></div>`;
+}
 
 const megaRowsHtml = megas.slice(0,10).map(o=>`
   <tr style="cursor:pointer" onclick="window.location='/opps/${o.slug}'">
@@ -48,10 +46,24 @@ const tableRows = JSON.stringify(open.map(o=>({
   <section class="hero">
     <div class="eyebrow">Opportunity intelligence for builders</div>
     <h1>Hackathons worth entering</h1>
-    <p class="subtitle">{derived.counts.open} live events analyzed. We normalize prize pools against real competition so you can see the actual expected value — not just the biggest headline number. Updated {new Date().toISOString().slice(0,10)}.</p>
+    <p class="subtitle">Tracking {derived.counts.opportunities} events for online individual builders — no student-only, no age-gated noise. Prize pools normalized to real cash, fields estimated from historical submission rates, so you see expected value per serious competitor, not headline numbers. Updated {new Date().toISOString().slice(0,10)}.</p>
   </section>
 
-  <section style="margin-bottom:48px" set:html={topCardsHtml} />
+  <section style="margin-bottom:48px">
+    <div class="section-header">
+      <h2>🔥 Best live now</h2>
+      <span class="stats">fields matured — scores reflect real competition</span>
+    </div>
+    <div class="deal-list" set:html={live.slice(0,4).map((o,i)=>oppCard(o,i)).join('')} />
+  </section>
+
+  <section style="margin-bottom:48px">
+    <div class="section-header">
+      <h2>📅 Best coming up</h2>
+      <span class="stats">fields still forming — register early, rescored daily as entrants grow</span>
+    </div>
+    <div class="deal-list" set:html={upcoming.slice(0,4).map((o,i)=>oppCard(o,i)).join('')} />
+  </section>
 
   <section style="margin-bottom:48px">
     <div class="section-header">
