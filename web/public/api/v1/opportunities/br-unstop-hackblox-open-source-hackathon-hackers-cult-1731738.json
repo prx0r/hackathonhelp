@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-hackblox-open-source-hackathon-hackers-cult-1731738",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/hackblox-open-source-hackathon-hackers-cult-1731738",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:23.626Z",
+    "observed_at": "2026-08-22T23:51:58.167Z",
     "eligibility_flags": [
       "All"
     ],
@@ -96,6 +96,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": 0.053,
       "p_paid": 0.053,
       "ev_cash_heuristic": null,

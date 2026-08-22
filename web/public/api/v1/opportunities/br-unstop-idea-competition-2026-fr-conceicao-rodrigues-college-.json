@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:24.943Z",
+    "observed_at": "2026-08-22T23:52:00.835Z",
     "eligibility_flags": [
       "Undergraduate",
       "Postgraduate",
@@ -99,6 +99,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": 0.136,
       "p_paid": 0.136,
       "ev_cash_heuristic": null,

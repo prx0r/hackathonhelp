@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-august-ai-challenge-31059-august-ai-challenge-31059",
@@ -21,10 +21,18 @@
       "Machine Learning/AI"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 3,
+      "other": 2
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://august-ai-challenge-31059.devpost.com/project-gallery",
     "source_url": "https://august-ai-challenge-31059.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:17.808Z",
+    "observed_at": "2026-08-22T23:51:51.492Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -74,7 +82,7 @@
     "score_v01": {
       "components": {
         "expected_prize_value": 74,
-        "winnability": 51,
+        "winnability": 49,
         "historical_winner_quality": null,
         "judging_tractability": null,
         "organizer_quality": null
@@ -90,13 +98,14 @@
     "cautions": [],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 2,
+        "p50": 3,
+        "p90": 6
       },
-      "baseline_any_payout": 0.182,
-      "p_paid": 0.182,
-      "ev_cash_heuristic": 273,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.091,
+      "p_paid": 0.091,
+      "ev_cash_heuristic": 136,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {

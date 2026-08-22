@@ -135,6 +135,7 @@ function fieldTier(fieldP50){
   return 20;
 }
 function computeScore(o, np, field){
+  const slotsFromApi = o.prizes_counts?.cash ?? null;
   const p = o.source==='manual' && o.manual ? {
     organizer_quality:o.manual.organizer_quality,
     technical_depth_prior:o.manual.technical_depth_prior,
@@ -145,7 +146,7 @@ function computeScore(o, np, field){
   comps.expected_prize_value = evScore(np.normalized_value, field.field_p50);
   // Winnability blends field-size tier with payout-slot probability
   const ftier = fieldTier(field.field_p50);
-  const K = r_slots_p50();
+  const K = slotsFromApi ?? r_slots_p50();
   const pPaid = (ftier!=null && field.field_p50) ?
     (1/(1+Math.exp(-(Math.log(Math.min(0.9,(K/field.field_p50))/(1-Math.min(0.9,K/field.field_p50)))) + SKILL_EDGE))) : null;
   comps.winnability = (ftier!=null&&pPaid!=null) ? Math.round(ftier*0.5+pPaid*100*0.5) : (ftier!=null? Math.round(ftier*0.75):null);
@@ -263,10 +264,11 @@ for (const r of rows){
   if (cautions.length && r.score_v01.opportunity_score!=null) r.score_v01.opportunity_score=Math.max(0,r.score_v01.opportunity_score-10);
   // ---- payout probability + cash EV heuristic ----
   const fieldN = r.field.field_status==='usable' ? r.field.field_p50 : null;
-  const K = r.slots.p50;
+  const K = r.prizes_counts?.cash ?? r.slots.p50;
   const baseP = fieldN ? Math.min(0.9, K/fieldN) : null;
   r.payout = {
-    paying_slots: r.slots,
+    paying_slots: { p10: Math.max(1,Math.round(K*0.5)), p50: K, p90: Math.round(K*2) },
+    paying_slots_source: r.prizes_counts?.cash ? 'platform_reported' : 'assumed',
     baseline_any_payout: baseP!=null? +(baseP).toFixed(3) : null,
     p_paid: baseP!=null? +(1/(1+Math.exp(-Math.log(baseP/(1-baseP))))).toFixed(3) : null,
     ev_cash_heuristic: (baseP!=null && r.prize.normalized_value!=null)

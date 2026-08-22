@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-neuramorphix-hackforge-2026-srm-institute-of-science-",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/neuramorphix-hackforge-2026-srm-institute-of-science-and-technology-kattankulathur-chennai-1708229",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:21.273Z",
+    "observed_at": "2026-08-22T23:51:56.677Z",
     "eligibility_flags": [
       "School Students",
       "Undergraduate",
@@ -98,6 +98,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": 0.13,
       "p_paid": 0.13,
       "ev_cash_heuristic": null,

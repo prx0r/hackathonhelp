@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
@@ -21,10 +21,18 @@
         "Machine Learning/AI"
       ],
       "open_to_all": true,
+      "prizes_counts": {
+        "cash": 8,
+        "other": 0
+      },
+      "open_state": "open",
+      "winners_announced": false,
+      "featured": false,
+      "submission_gallery_url": "https://api-cloud-ai-hackathon-2026.devpost.com/project-gallery",
       "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:36:17.469Z",
+      "observed_at": "2026-08-22T23:51:51.143Z",
       "days_left": 13,
       "gates": {
         "registration_open": true,
@@ -74,13 +82,13 @@
       "score_v01": {
         "components": {
           "expected_prize_value": 100,
-          "winnability": 44,
+          "winnability": 45,
           "historical_winner_quality": null,
           "judging_tractability": null,
           "organizer_quality": null
         },
         "known_components": 2,
-        "opportunity_score": 65
+        "opportunity_score": 66
       },
       "metrics": {
         "equal_share_naive": 44.63,
@@ -90,13 +98,14 @@
       "cautions": [],
       "payout": {
         "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p10": 4,
+          "p50": 8,
+          "p90": 16
         },
-        "baseline_any_payout": 0.085,
-        "p_paid": 0.085,
-        "ev_cash_heuristic": 3338,
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.113,
+        "p_paid": 0.113,
+        "ev_cash_heuristic": 4451,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
@@ -122,11 +131,11 @@
         ],
         "category": "value_competition_gap"
       },
-      "order_key": 35073.5,
-      "attention": 35073.5,
+      "order_key": 35074.4,
+      "attention": 35074.4,
       "attention_breakdown": {
         "action": "SPRINT",
-        "score": 65,
+        "score": 66,
         "formula": "SPRINT - tight but real (10-14d finish prior 97%)"
       }
     },
@@ -155,7 +164,7 @@
       "source_url": "https://hackathon.telegraphprotocol.com/",
       "source": "manual",
       "source_authority": "official_rules",
-      "observed_at": "2026-08-22T23:36:27.041Z",
+      "observed_at": "2026-08-22T23:52:03.133Z",
       "manual": {
         "prize_breakdown": {
           "advertised": 5000,
@@ -387,6 +396,7 @@
           "p50": 6,
           "p90": 12
         },
+        "paying_slots_source": "assumed",
         "baseline_any_payout": null,
         "p_paid": null,
         "ev_cash_heuristic": null,
@@ -442,7 +452,7 @@
       "source_url": "https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon",
       "source": "manual",
       "source_authority": "official_rules",
-      "observed_at": "2026-08-22T23:36:27.042Z",
+      "observed_at": "2026-08-22T23:52:03.133Z",
       "manual": {
         "prize_breakdown": {
           "advertised": 10500,
@@ -526,6 +536,7 @@
           "p50": 6,
           "p90": 12
         },
+        "paying_slots_source": "assumed",
         "baseline_any_payout": 0.065,
         "p_paid": 0.065,
         "ev_cash_heuristic": 677,
@@ -580,7 +591,7 @@
       "source_url": "https://boss-battle.devfolio.co",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T23:36:25.621Z",
+      "observed_at": "2026-08-22T23:52:02.449Z",
       "eligibility_flags": [],
       "days_left": 37,
       "gates": {
@@ -653,6 +664,7 @@
           "p50": 6,
           "p90": 12
         },
+        "paying_slots_source": "assumed",
         "baseline_any_payout": 0.5,
         "p_paid": 0.5,
         "ev_cash_heuristic": 1500,
@@ -714,7 +726,7 @@
       "source_url": "https://ethglobal.com/events/online2026",
       "source": "manual",
       "source_authority": "official_rules",
-      "observed_at": "2026-08-22T23:36:27.041Z",
+      "observed_at": "2026-08-22T23:52:03.133Z",
       "manual": {
         "prize_breakdown": {
           "advertised": null,
@@ -800,6 +812,7 @@
           "p50": 6,
           "p90": 12
         },
+        "paying_slots_source": "assumed",
         "baseline_any_payout": null,
         "p_paid": null,
         "ev_cash_heuristic": null,
@@ -849,10 +862,18 @@
         "Beginner Friendly"
       ],
       "open_to_all": true,
+      "prizes_counts": {
+        "cash": 5,
+        "other": 4
+      },
+      "open_state": "open",
+      "winners_announced": false,
+      "featured": false,
+      "submission_gallery_url": "https://volthacks.devpost.com/project-gallery",
       "source_url": "https://volthacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:36:16.967Z",
+      "observed_at": "2026-08-22T23:51:50.629Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -919,12 +940,13 @@
       "payout": {
         "paying_slots": {
           "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p50": 5,
+          "p90": 10
         },
-        "baseline_any_payout": 0.071,
-        "p_paid": 0.071,
-        "ev_cash_heuristic": 2526,
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.059,
+        "p_paid": 0.059,
+        "ev_cash_heuristic": 2105,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
@@ -977,10 +999,18 @@
         "Beginner Friendly"
       ],
       "open_to_all": true,
+      "prizes_counts": {
+        "cash": 2,
+        "other": 3
+      },
+      "open_state": "open",
+      "winners_announced": false,
+      "featured": false,
+      "submission_gallery_url": "https://ai-builders-hackathon-2026.devpost.com/project-gallery",
       "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:36:16.967Z",
+      "observed_at": "2026-08-22T23:51:50.629Z",
       "days_left": 25,
       "gates": {
         "registration_open": true,
@@ -1030,7 +1060,7 @@
       "score_v01": {
         "components": {
           "expected_prize_value": 100,
-          "winnability": 44,
+          "winnability": 43,
           "historical_winner_quality": null,
           "judging_tractability": null,
           "organizer_quality": null
@@ -1046,13 +1076,14 @@
       "cautions": [],
       "payout": {
         "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p10": 1,
+          "p50": 2,
+          "p90": 4
         },
-        "baseline_any_payout": 0.06,
-        "p_paid": 0.06,
-        "ev_cash_heuristic": 2034,
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.02,
+        "p_paid": 0.02,
+        "ev_cash_heuristic": 678,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
@@ -1111,7 +1142,7 @@
       "source_url": "https://boss-battle.devfolio.co/",
       "source": "manual",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T23:36:27.042Z",
+      "observed_at": "2026-08-22T23:52:03.133Z",
       "manual": {
         "prize_breakdown": {
           "advertised": 3000,
@@ -1277,6 +1308,7 @@
           "p50": 6,
           "p90": 12
         },
+        "paying_slots_source": "assumed",
         "baseline_any_payout": null,
         "p_paid": null,
         "ev_cash_heuristic": null,

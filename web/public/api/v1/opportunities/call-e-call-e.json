@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-call-e-call-e",
@@ -9,7 +9,7 @@
     "organizer": "CALL-E:",
     "prize_usd": 10000,
     "prize_raw": "$10,000",
-    "registrants": 2397,
+    "registrants": 2398,
     "starts_at": "2026-07-23T00:00:00.000Z",
     "ends_at": "2026-09-14T23:59:00.000Z",
     "time_left": "23 days left",
@@ -21,10 +21,18 @@
       "Machine Learning/AI"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 1,
+      "other": 0
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": true,
+    "submission_gallery_url": "https://call-e.devpost.com/project-gallery",
     "source_url": "https://call-e.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:16.967Z",
+    "observed_at": "2026-08-22T23:51:50.628Z",
     "days_left": 24,
     "gates": {
       "registration_open": true,
@@ -51,7 +59,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 2397,
+      "registrations": 2398,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -84,13 +92,14 @@
     "cautions": [],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 1,
+        "p50": 1,
+        "p90": 2
       },
-      "baseline_any_payout": 0.05,
-      "p_paid": 0.05,
-      "ev_cash_heuristic": 500,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.008,
+      "p_paid": 0.008,
+      "ev_cash_heuristic": 83,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {

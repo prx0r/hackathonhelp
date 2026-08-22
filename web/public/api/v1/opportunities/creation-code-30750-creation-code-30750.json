@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-creation-code-30750-creation-code-30750",
@@ -20,10 +20,18 @@
       "Open Ended"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 1,
+      "other": 0
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://creation-code-30750.devpost.com/project-gallery",
     "source_url": "https://creation-code-30750.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:18.163Z",
+    "observed_at": "2026-08-22T23:51:51.851Z",
     "days_left": 13,
     "gates": {
       "registration_open": true,
@@ -85,12 +93,13 @@
     ],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 1,
+        "p50": 1,
+        "p90": 2
       },
-      "baseline_any_payout": 0.3,
-      "p_paid": 0.3,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.05,
+      "p_paid": 0.05,
       "ev_cash_heuristic": null,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },

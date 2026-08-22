@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-cissa-catalyst-2026-cissa-catalyst-2026",
@@ -12,7 +12,7 @@
     "registrants": 89,
     "starts_at": null,
     "ends_at": null,
-    "time_left": "24 minutes left",
+    "time_left": "9 minutes left",
     "location_type": "in-person",
     "location": "The University of Melbourne, Parkville",
     "themes": [
@@ -21,10 +21,18 @@
       "Design"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 5,
+      "other": 0
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://cissa-catalyst-2026.devpost.com/project-gallery",
     "source_url": "https://cissa-catalyst-2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:17.991Z",
+    "observed_at": "2026-08-22T23:51:51.684Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -85,12 +93,13 @@
     "payout": {
       "paying_slots": {
         "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p50": 5,
+        "p90": 10
       },
-      "baseline_any_payout": 0.333,
-      "p_paid": 0.333,
-      "ev_cash_heuristic": 567,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.278,
+      "p_paid": 0.278,
+      "ev_cash_heuristic": 472,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {

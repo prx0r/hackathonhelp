@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-boss-battle",
@@ -27,7 +27,7 @@
     "source_url": "https://boss-battle.devfolio.co/",
     "source": "manual",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:27.042Z",
+    "observed_at": "2026-08-22T23:52:03.133Z",
     "manual": {
       "prize_breakdown": {
         "advertised": 3000,
@@ -193,6 +193,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": null,
       "p_paid": null,
       "ev_cash_heuristic": null,

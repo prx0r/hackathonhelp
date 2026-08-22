@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-dsh-hacks-v2-dsh-hacks-v2",
@@ -21,10 +21,18 @@
       "Open Ended"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 0,
+      "other": 1
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://dsh-hacks-v2.devpost.com/project-gallery",
     "source_url": "https://dsh-hacks-v2.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:17.808Z",
+    "observed_at": "2026-08-22T23:51:51.492Z",
     "days_left": 79,
     "gates": {
       "registration_open": true,
@@ -92,10 +100,11 @@
     ],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 1,
+        "p50": 0,
+        "p90": 0
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": null,
       "p_paid": null,
       "ev_cash_heuristic": null,

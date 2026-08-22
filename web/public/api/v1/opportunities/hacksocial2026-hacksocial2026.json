@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hacksocial2026-hacksocial2026",
@@ -21,10 +21,18 @@
       "Social Good"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 3,
+      "other": 2
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://hacksocial2026.devpost.com/project-gallery",
     "source_url": "https://hacksocial2026.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:17.469Z",
+    "observed_at": "2026-08-22T23:51:51.143Z",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -74,13 +82,13 @@
     "score_v01": {
       "components": {
         "expected_prize_value": 84,
-        "winnability": 45,
+        "winnability": 44,
         "historical_winner_quality": null,
         "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 58
+      "opportunity_score": 57
     },
     "metrics": {
       "equal_share_naive": 9.32,
@@ -90,13 +98,14 @@
     "cautions": [],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 2,
+        "p50": 3,
+        "p90": 6
       },
-      "baseline_any_payout": 0.118,
-      "p_paid": 0.118,
-      "ev_cash_heuristic": 468,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.059,
+      "p_paid": 0.059,
+      "ev_cash_heuristic": 234,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
@@ -116,11 +125,11 @@
       "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20052.2,
+    "order_key": 20051.3,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 58,
+      "score": 57,
       "formula": "WATCH - deadline not published"
     }
   },

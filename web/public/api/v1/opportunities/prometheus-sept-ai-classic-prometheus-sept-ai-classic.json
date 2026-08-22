@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
@@ -9,7 +9,7 @@
     "organizer": "Prometheus",
     "prize_usd": 1500,
     "prize_raw": "$1,500",
-    "registrants": 86,
+    "registrants": 87,
     "starts_at": "2026-08-19T00:00:00.000Z",
     "ends_at": "2026-09-05T23:59:00.000Z",
     "time_left": "14 days left",
@@ -21,10 +21,18 @@
       "Machine Learning/AI"
     ],
     "open_to_all": true,
+    "prizes_counts": {
+      "cash": 3,
+      "other": 2
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://prometheus-sept-ai-classic.devpost.com/project-gallery",
     "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:17.991Z",
+    "observed_at": "2026-08-22T23:51:51.684Z",
     "days_left": 15,
     "gates": {
       "registration_open": true,
@@ -49,7 +57,7 @@
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 86,
+      "registrations": 87,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -74,29 +82,30 @@
     "score_v01": {
       "components": {
         "expected_prize_value": 84,
-        "winnability": 55,
+        "winnability": 51,
         "historical_winner_quality": null,
         "judging_tractability": null,
         "organizer_quality": null
       },
       "known_components": 2,
-      "opportunity_score": 61
+      "opportunity_score": 59
     },
     "metrics": {
-      "equal_share_naive": 17.44,
+      "equal_share_naive": 17.24,
       "fair_share_serious": 88.24,
       "days_left": 15
     },
     "cautions": [],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 2,
+        "p50": 3,
+        "p90": 6
       },
-      "baseline_any_payout": 0.353,
-      "p_paid": 0.353,
-      "ev_cash_heuristic": 529,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.176,
+      "p_paid": 0.176,
+      "ev_cash_heuristic": 265,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
@@ -116,11 +125,11 @@
       "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20054.9,
+    "order_key": 20053.1,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 61,
+      "score": 59,
       "formula": "WATCH - marginal — recheck as field matures"
     }
   },

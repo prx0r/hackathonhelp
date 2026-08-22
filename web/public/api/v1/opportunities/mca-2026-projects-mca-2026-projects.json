@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-mca-2026-projects-mca-2026-projects",
@@ -18,11 +18,19 @@
     "themes": [
       "Beginner Friendly"
     ],
-    "open_to_all": true,
+    "open_to_all": false,
+    "prizes_counts": {
+      "cash": 0,
+      "other": 1
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": "https://mca-2026-projects.devpost.com/project-gallery",
     "source_url": "https://mca-2026-projects.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:36:18.362Z",
+    "observed_at": "2026-08-22T23:51:52.029Z",
     "days_left": 126,
     "gates": {
       "registration_open": true,
@@ -90,10 +98,11 @@
     ],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 1,
+        "p50": 0,
+        "p90": 0
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": null,
       "p_paid": null,
       "ev_cash_heuristic": null,

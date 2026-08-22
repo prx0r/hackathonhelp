@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-rebuild-the-classroom-build-the-tool-that-teaches-whe",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/rebuild-the-classroom-build-the-tool-that-teaches-when-ai-is-the-teacher-lv8-tech-1741171",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:22.855Z",
+    "observed_at": "2026-08-22T23:51:57.400Z",
     "eligibility_flags": [
       "All"
     ],
@@ -93,6 +93,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": 0.188,
       "p_paid": 0.188,
       "ev_cash_heuristic": 2,

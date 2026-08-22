@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-code-x-novas-innovathon-2026-national-software-ai-hac",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:25.621Z",
+    "observed_at": "2026-08-22T23:52:02.449Z",
     "eligibility_flags": [
       "Undergraduate",
       "Postgraduate",
@@ -99,6 +99,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": 0.222,
       "p_paid": 0.222,
       "ev_cash_heuristic": null,

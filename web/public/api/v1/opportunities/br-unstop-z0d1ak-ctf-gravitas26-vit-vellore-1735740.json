@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:36:27.123Z",
+  "generated_at": "2026-08-22T23:52:39.984Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-z0d1ak-ctf-gravitas26-vit-vellore-1735740",
@@ -20,7 +20,7 @@
     "source_url": "https://unstop.com/hackathons/z0d1ak-ctf-gravitas26-vit-vellore-1735740",
     "source": "brabble",
     "source_authority": "platform_metadata_unverified",
-    "observed_at": "2026-08-22T23:36:21.272Z",
+    "observed_at": "2026-08-22T23:51:56.676Z",
     "eligibility_flags": [
       "All"
     ],
@@ -96,6 +96,7 @@
         "p50": 6,
         "p90": 12
       },
+      "paying_slots_source": "assumed",
       "baseline_any_payout": 0.081,
       "p_paid": 0.081,
       "ev_cash_heuristic": null,
