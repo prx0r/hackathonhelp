@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.seed.v2",
-  "generated_at": "2026-08-22T21:12:27.836Z",
+  "generated_at": "2026-08-22T21:28:29.554Z",
   "sources": {
     "devpost": 72,
     "brabble_kept": 72
@@ -29,7 +29,7 @@
       "source_url": "https://reverie-hacks-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
@@ -38,7 +38,7 @@
       "organizer": "RevenueCat",
       "prize_usd": 740000,
       "prize_raw": "$740,000",
-      "registrants": 19452,
+      "registrants": 19454,
       "starts_at": "2026-07-31T00:00:00.000Z",
       "ends_at": "2026-10-01T23:59:00.000Z",
       "time_left": "about 1 month left",
@@ -53,7 +53,7 @@
       "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-innovik6-indore-innovik6-indore",
@@ -77,7 +77,7 @@
       "source_url": "https://innovik6-indore.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
@@ -86,7 +86,7 @@
       "organizer": "All",
       "prize_usd": 180000,
       "prize_raw": "$180,000",
-      "registrants": 6981,
+      "registrants": 6982,
       "starts_at": null,
       "ends_at": null,
       "time_left": "9 days left",
@@ -101,7 +101,7 @@
       "source_url": "https://allthingsagentichackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-gibc-v2-gibc-v2",
@@ -125,7 +125,7 @@
       "source_url": "https://gibc-v2.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-the-great-agent-hackathon-the-great-agent-hackathon",
@@ -149,7 +149,7 @@
       "source_url": "https://the-great-agent-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-agentic-cinema-agentic-cinema",
@@ -158,7 +158,7 @@
       "organizer": "Agentic",
       "prize_usd": 75000,
       "prize_raw": "$75,000",
-      "registrants": 7686,
+      "registrants": 7687,
       "starts_at": "2026-07-27T00:00:00.000Z",
       "ends_at": "2026-09-09T23:59:00.000Z",
       "time_left": "18 days left",
@@ -173,7 +173,7 @@
       "source_url": "https://agentic-cinema.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
@@ -197,7 +197,7 @@
       "source_url": "https://gatewayhacks-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "br-lexhack-2026-lexhack-2026",
@@ -217,7 +217,7 @@
       "source_url": "https://lexhack-2026.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Low/No Code",
@@ -231,7 +231,7 @@
       "organizer": "Agents",
       "prize_usd": 40000,
       "prize_raw": "$40,000",
-      "registrants": 4582,
+      "registrants": 4583,
       "starts_at": "2026-08-10T00:00:00.000Z",
       "ends_at": "2026-09-14T23:59:00.000Z",
       "time_left": "23 days left",
@@ -246,7 +246,7 @@
       "source_url": "https://agentsforhumans.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
@@ -255,7 +255,7 @@
       "organizer": "DevNetwork",
       "prize_usd": 39500,
       "prize_raw": "$39,500",
-      "registrants": 883,
+      "registrants": 884,
       "starts_at": "2026-08-17T00:00:00.000Z",
       "ends_at": "2026-09-03T23:59:00.000Z",
       "time_left": "12 days left",
@@ -270,7 +270,7 @@
       "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "dp-univabio-univabio",
@@ -294,7 +294,7 @@
       "source_url": "https://univabio.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-volthacks-volthacks",
@@ -318,7 +318,7 @@
       "source_url": "https://volthacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.113Z"
     },
     {
       "id": "dp-tiktoktechjam2026-tiktoktechjam2026",
@@ -342,7 +342,7 @@
       "source_url": "https://tiktoktechjam2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
@@ -366,7 +366,7 @@
       "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-launchhacks-v-launchhacks-v",
@@ -390,7 +390,7 @@
       "source_url": "https://launchhacks-v.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-rice-urban-sustainability-rice-urban-sustainability",
@@ -414,7 +414,7 @@
       "source_url": "https://rice-urban-sustainability.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-adtc-2026-adtc-2026",
@@ -437,7 +437,7 @@
       "source_url": "https://adtc-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.113Z"
     },
     {
       "id": "dp-opencv26-opencv26",
@@ -461,7 +461,7 @@
       "source_url": "https://opencv26.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-call-e-call-e",
@@ -485,7 +485,7 @@
       "source_url": "https://call-e.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z"
+      "observed_at": "2026-08-22T21:28:21.112Z"
     },
     {
       "id": "dp-codelinc11-codelinc11",
@@ -509,7 +509,7 @@
       "source_url": "https://codelinc11.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "dp-hacktitan-hacktitan",
@@ -533,7 +533,7 @@
       "source_url": "https://hacktitan.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "dp-hackapertus-hackapertus",
@@ -557,7 +557,7 @@
       "source_url": "https://hackapertus.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "dp-hack-away-hunger-hack-away-hunger",
@@ -580,7 +580,7 @@
       "source_url": "https://hack-away-hunger.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-dialedin-dialedin",
@@ -604,7 +604,7 @@
       "source_url": "https://dialedin.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-hacksocial2026-hacksocial2026",
@@ -628,7 +628,7 @@
       "source_url": "https://hacksocial2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "dp-oneaquahealth-ieee-hackathon-oneaquahealth-ieee-hackathon",
@@ -652,7 +652,7 @@
       "source_url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-ieee-climatechain-hack-ieee-climatechain-hack",
@@ -676,7 +676,7 @@
       "source_url": "https://ieee-climatechain-hack.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "dp-galuxium-nexus-v2-29411-galuxium-nexus-v2-29411",
@@ -700,7 +700,7 @@
       "source_url": "https://galuxium-nexus-v2-29411.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-nextstep2026-nextstep2026",
@@ -724,7 +724,7 @@
       "source_url": "https://nextstep2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-cissa-catalyst-2026-cissa-catalyst-2026",
@@ -748,7 +748,7 @@
       "source_url": "https://cissa-catalyst-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-august-ai-challenge-31059-august-ai-challenge-31059",
@@ -772,7 +772,7 @@
       "source_url": "https://august-ai-challenge-31059.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
@@ -781,7 +781,7 @@
       "organizer": "Prometheus",
       "prize_usd": 1500,
       "prize_raw": "$1,500",
-      "registrants": 85,
+      "registrants": 86,
       "starts_at": "2026-08-19T00:00:00.000Z",
       "ends_at": "2026-09-05T23:59:00.000Z",
       "time_left": "14 days left",
@@ -796,7 +796,7 @@
       "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-prometheus-september-ai-2-prometheus-september-ai-2",
@@ -820,7 +820,7 @@
       "source_url": "https://prometheus-september-ai-2.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-compsphere12-compsphere12",
@@ -844,7 +844,7 @@
       "source_url": "https://compsphere12.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-quantumhacks-quantumhacks",
@@ -868,7 +868,7 @@
       "source_url": "https://quantumhacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "dp-hack-the-habitat-2026-hack-the-habitat-2026",
@@ -892,7 +892,7 @@
       "source_url": "https://hack-the-habitat-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-melbourne-hack-2026-melbourne-hack-2026",
@@ -916,7 +916,7 @@
       "source_url": "https://melbourne-hack-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "br-suvidha-ai-virtual-hackathon-suvidha-ai-virtual-hackathon",
@@ -936,7 +936,7 @@
       "source_url": "https://suvidha-ai-virtual-hackathon.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Low/No Code",
@@ -965,7 +965,7 @@
       "source_url": "https://3rd-web-hack.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-unitedhacksv8-unitedhacksv8",
@@ -989,7 +989,7 @@
       "source_url": "https://unitedhacksv8.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "dp-smart-city-hackathon-lahore-smart-city-hackathon-lahore",
@@ -1013,7 +1013,7 @@
       "source_url": "https://smart-city-hackathon-lahore.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "br-hyperbloom-september-hyperbloom-september",
@@ -1033,7 +1033,7 @@
       "source_url": "https://hyperbloom-september.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": [
         "IoT",
         "Machine Learning/AI",
@@ -1058,7 +1058,7 @@
       "source_url": "https://build-beyond-hackathon.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Low/No Code",
@@ -1087,7 +1087,7 @@
       "source_url": "https://hack-the-limit-1.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "dp-impactforge-impactforge",
@@ -1111,7 +1111,7 @@
       "source_url": "https://impactforge.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "br-arbiter-hacks-v1-arbiter-hacks-v1",
@@ -1131,7 +1131,7 @@
       "source_url": "https://arbiter-hacks-v1.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.836Z",
+      "observed_at": "2026-08-22T21:28:29.554Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Machine Learning/AI",
@@ -1160,7 +1160,7 @@
       "source_url": "https://next-founders.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "br-lake-oswego-hacks-lake-oswego-hacks",
@@ -1180,7 +1180,7 @@
       "source_url": "https://lake-oswego-hacks.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Low/No Code",
@@ -1208,7 +1208,7 @@
       "source_url": "https://brainwave-2026-midnight-track.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "br-forgehacks-2026-forgehacks-2026",
@@ -1228,7 +1228,7 @@
       "source_url": "https://forgehacks-2026.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Lifehacks",
@@ -1257,7 +1257,7 @@
       "source_url": "https://neuralsprint.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "dp-evensonarisnord-evensonarisnord",
@@ -1280,7 +1280,7 @@
       "source_url": "https://evensonarisnord.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "dp-hack-for-humanity-summer-26-hack-for-humanity-summer-26",
@@ -1304,7 +1304,7 @@
       "source_url": "https://hack-for-humanity-summer-26.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.070Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "br-unstop-ai-product-hackathon-product-space-1742507",
@@ -1324,7 +1324,7 @@
       "source_url": "https://unstop.com/hackathons/ai-product-hackathon-product-space-1742507",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1347,7 +1347,7 @@
       "source_url": "https://unstop.com/hackathons/data-analytics-hackathon-gradient-1742481",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1374,7 +1374,7 @@
       "source_url": "https://3d-websites-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.070Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "br-unstop-ai-innovation-hackathon-2026-build-real-world-ai-solu",
@@ -1394,7 +1394,7 @@
       "source_url": "https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1417,7 +1417,7 @@
       "source_url": "https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1443,7 +1443,7 @@
       "source_url": "https://gatewaygs-ai-4-earth-hackathon.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Machine Learning/AI",
@@ -1468,7 +1468,7 @@
       "source_url": "https://unstop.com/hackathons/webverse-hackathon-modern-education-societys-college-of-engineering-mes-pune-1733529",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1494,7 +1494,7 @@
       "source_url": "https://unstop.com/hackathons/gameathon-2026-amrita-vishwa-vidyapeetham-chennai-1736083",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.248Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1517,7 +1517,7 @@
       "source_url": "https://unstop.com/hackathons/rulebound-the-sealed-build-challenge-lv8-tech-1739500",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1540,7 +1540,7 @@
       "source_url": "https://unstop.com/hackathons/rebuild-the-classroom-build-the-tool-that-teaches-when-ai-is-the-teacher-lv8-tech-1741171",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1563,7 +1563,7 @@
       "source_url": "https://unstop.com/hackathons/startupx-hackathon-2026-gamnexis-1733546",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1586,7 +1586,7 @@
       "source_url": "https://unstop.com/hackathons/identity-under-attack-amrita-vishwa-vidyapeetham-avv-chennai-1736594",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.470Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1612,7 +1612,7 @@
       "source_url": "https://unstop.com/hackathons/pace-where-logic-meets-expression-technocrats-institute-of-technology-excellence-bhopal-1719528",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.470Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1638,7 +1638,7 @@
       "source_url": "https://unstop.com/hackathons/techno-vbiquity-2o-technical-coding-competition-technocrats-group-of-institutions-bhopal-madhya-pradesh-1728481",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1663,7 +1663,7 @@
       "source_url": "https://unstop.com/hackathons/mosip-decode-2026-synergy-26-international-institute-of-information-technology-iiit-bangalore-1735221",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": [
         "Engineering Students",
         "Undergraduate",
@@ -1689,7 +1689,7 @@
       "source_url": "https://unstop.com/hackathons/crp-precision-care-challenge-2026-ge-healthcare-1731208",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1714,7 +1714,7 @@
       "source_url": "https://unstop.com/hackathons/codesprint-2o-one-shot-challenge-oriental-college-of-technology-oct-bhopal-1728495",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1740,7 +1740,7 @@
       "source_url": "https://unstop.com/hackathons/nextgen-hackathon-rhinon-tech-pvt-lmt-1731840",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1766,7 +1766,7 @@
       "source_url": "https://unstop.com/hackathons/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1789,7 +1789,7 @@
       "source_url": "https://unstop.com/hackathons/zero-dependency-72-hour-hackathon-hackathon-raptors-1733673",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1812,7 +1812,7 @@
       "source_url": "https://unstop.com/hackathons/ec-council-hackai-challenge-racex360-reva-academy-for-corporate-excellence-bangalore-karnataka-1739884",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": [
         "All"
       ]
@@ -1835,7 +1835,7 @@
       "source_url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -1849,7 +1849,7 @@
       "title": "Pixel Forge AI Hackathon ($18,000+ in Prizes)",
       "organizer": "Pixel",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 810,
       "starts_at": null,
       "ends_at": null,
@@ -1865,7 +1865,7 @@
       "source_url": "https://pixel-forge-ai-hackathon-08.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z"
+      "observed_at": "2026-08-22T21:28:21.908Z"
     },
     {
       "id": "dp-inspire-hackathon-inspire-hackathon",
@@ -1873,7 +1873,7 @@
       "title": "Inspire Hackathon ",
       "organizer": "Inspire",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 410,
       "starts_at": null,
       "ends_at": null,
@@ -1889,7 +1889,7 @@
       "source_url": "https://inspire-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-ai-yes-competition-30441-ai-yes-competition-30441",
@@ -1897,7 +1897,7 @@
       "title": "AI YES :International Youth AI Competition",
       "organizer": "AI",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 259,
       "starts_at": "2026-06-17T00:00:00.000Z",
       "ends_at": "2026-09-01T23:59:00.000Z",
@@ -1913,7 +1913,7 @@
       "source_url": "https://ai-yes-competition-30441.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-hackonomics27-hackonomics27",
@@ -1921,7 +1921,7 @@
       "title": "Hackonomics 2027",
       "organizer": "Hackonomics",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 245,
       "starts_at": "2026-07-01T00:00:00.000Z",
       "ends_at": "2026-08-29T23:59:00.000Z",
@@ -1937,7 +1937,7 @@
       "source_url": "https://hackonomics27.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-code-for-humanity-code-for-humanity",
@@ -1945,7 +1945,7 @@
       "title": "Code for Humanity",
       "organizer": "Code",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 205,
       "starts_at": null,
       "ends_at": null,
@@ -1961,7 +1961,7 @@
       "source_url": "https://code-for-humanity.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z"
+      "observed_at": "2026-08-22T21:28:22.083Z"
     },
     {
       "id": "dp-animalhack2026-animalhack2026",
@@ -1969,7 +1969,7 @@
       "title": "AnimalHack 2026",
       "organizer": "AnimalHack",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 176,
       "starts_at": "2026-06-14T00:00:00.000Z",
       "ends_at": "2026-09-12T23:59:00.000Z",
@@ -1985,7 +1985,7 @@
       "source_url": "https://animalhack2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-buuniex-hackathon-buuniex-hackathon",
@@ -1993,7 +1993,7 @@
       "title": "BunnieX Hackathon",
       "organizer": "BunnieX",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 176,
       "starts_at": "2026-06-22T00:00:00.000Z",
       "ends_at": "2026-09-22T23:59:00.000Z",
@@ -2009,7 +2009,7 @@
       "source_url": "https://buuniex-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-dsh-hacks-v2-dsh-hacks-v2",
@@ -2017,7 +2017,7 @@
       "title": "DSH Hacks V2 ",
       "organizer": "DSH",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 164,
       "starts_at": "2026-06-24T00:00:00.000Z",
       "ends_at": "2026-11-08T23:59:00.000Z",
@@ -2033,7 +2033,7 @@
       "source_url": "https://dsh-hacks-v2.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-evorozen-apex-evorozen-apex",
@@ -2041,7 +2041,7 @@
       "title": "Evorozen Apex: NextGen AI Buildathon",
       "organizer": "Evorozen",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 155,
       "starts_at": "2026-07-17T00:00:00.000Z",
       "ends_at": "2026-09-20T23:59:00.000Z",
@@ -2057,7 +2057,7 @@
       "source_url": "https://evorozen-apex.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z"
+      "observed_at": "2026-08-22T21:28:22.248Z"
     },
     {
       "id": "dp-syntax-summit-syntax-summit",
@@ -2065,7 +2065,7 @@
       "title": "Syntax Summit",
       "organizer": "Syntax",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 121,
       "starts_at": "2026-07-18T00:00:00.000Z",
       "ends_at": "2026-09-05T23:59:00.000Z",
@@ -2081,7 +2081,7 @@
       "source_url": "https://syntax-summit.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-luma-hackathon-fall-luma-hackathon-fall",
@@ -2089,7 +2089,7 @@
       "title": "LUMA Hackathon (September 20th - 28th)",
       "organizer": "LUMA",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 75,
       "starts_at": "2026-06-26T00:00:00.000Z",
       "ends_at": "2026-09-28T23:59:00.000Z",
@@ -2105,7 +2105,7 @@
       "source_url": "https://luma-hackathon-fall.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-firstcommit-firstcommit",
@@ -2113,7 +2113,7 @@
       "title": "Beginner's Paradise - FirstCommit",
       "organizer": "Beginner's",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 73,
       "starts_at": "2026-08-21T00:00:00.000Z",
       "ends_at": "2026-09-30T23:59:00.000Z",
@@ -2129,7 +2129,7 @@
       "source_url": "https://firstcommit.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-rescue-hacks-30680-rescue-hacks-30680",
@@ -2137,7 +2137,7 @@
       "title": "RescueHacks",
       "organizer": "RescueHacks",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 68,
       "starts_at": null,
       "ends_at": null,
@@ -2153,7 +2153,7 @@
       "source_url": "https://rescue-hacks-30680.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z"
+      "observed_at": "2026-08-22T21:28:22.423Z"
     },
     {
       "id": "dp-creation-code-30750-creation-code-30750",
@@ -2161,7 +2161,7 @@
       "title": "Build With Gemini - Creation Code",
       "organizer": "Build",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 57,
       "starts_at": "2026-07-17T00:00:00.000Z",
       "ends_at": "2026-09-03T23:59:00.000Z",
@@ -2176,7 +2176,7 @@
       "source_url": "https://creation-code-30750.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-create-with-gemini-create-with-gemini",
@@ -2184,7 +2184,7 @@
       "title": "Create with Gemini",
       "organizer": "Create",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 52,
       "starts_at": null,
       "ends_at": null,
@@ -2200,7 +2200,7 @@
       "source_url": "https://create-with-gemini.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-htcj-aviation-futures-htcj-aviation-futures",
@@ -2208,7 +2208,7 @@
       "title": "HTCJ Aviation Futures Innovation Challenge",
       "organizer": "HTCJ",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 44,
       "starts_at": "2026-06-25T00:00:00.000Z",
       "ends_at": "2026-10-08T23:59:00.000Z",
@@ -2224,7 +2224,7 @@
       "source_url": "https://htcj-aviation-futures.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-gemini-builds-gemini-builds",
@@ -2232,7 +2232,7 @@
       "title": "Gemini Builds",
       "organizer": "Gemini",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 34,
       "starts_at": null,
       "ends_at": null,
@@ -2248,7 +2248,7 @@
       "source_url": "https://gemini-builds.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-gemini-event-hackmatrix-gemini-event-hackmatrix",
@@ -2256,7 +2256,7 @@
       "title": "Gemini Event - HackMatrix",
       "organizer": "Gemini",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 34,
       "starts_at": "2026-08-09T00:00:00.000Z",
       "ends_at": "2026-09-05T23:59:00.000Z",
@@ -2272,7 +2272,7 @@
       "source_url": "https://gemini-event-hackmatrix.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-technisa-hacks-technisa-hacks",
@@ -2296,31 +2296,7 @@
       "source_url": "https://technisa-hacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.783Z"
-    },
-    {
-      "id": "dp-8-bit-jam-8-bit-jam",
-      "slug": "8-bit-jam-8-bit-jam",
-      "title": "8-Bit Jam",
-      "organizer": "8-Bit",
-      "prize_usd": null,
-      "prize_raw": "$0",
-      "registrants": 20,
-      "starts_at": null,
-      "ends_at": null,
-      "time_left": "about 1 hour left",
-      "location_type": "in-person",
-      "location": "Great Falls, Virginia",
-      "themes": [
-        "Beginner Friendly",
-        "Education",
-        "Gaming"
-      ],
-      "open_to_all": true,
-      "source_url": "https://8-bit-jam.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.639Z"
     },
     {
       "id": "dp-graphiques-challenge-graphiques-challenge",
@@ -2328,7 +2304,7 @@
       "title": "Graphiques Innovation Challenge ",
       "organizer": "Graphiques",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 20,
       "starts_at": null,
       "ends_at": null,
@@ -2344,7 +2320,7 @@
       "source_url": "https://graphiques-challenge.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-mca-2026-projects-mca-2026-projects",
@@ -2352,7 +2328,7 @@
       "title": "MCA 2026 projects",
       "organizer": "MCA",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 17,
       "starts_at": "2026-02-27T00:00:00.000Z",
       "ends_at": "2026-12-25T23:59:00.000Z",
@@ -2366,7 +2342,7 @@
       "source_url": "https://mca-2026-projects.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-ai-innovation-day-31076-ai-innovation-day-31076",
@@ -2388,7 +2364,7 @@
       "source_url": "https://ai-innovation-day-31076.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.960Z"
+      "observed_at": "2026-08-22T21:28:22.858Z"
     },
     {
       "id": "dp-devonomicsv1-devonomicsv1",
@@ -2396,7 +2372,7 @@
       "title": "United Hackathons V1",
       "organizer": "United",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 85,
       "starts_at": null,
       "ends_at": null,
@@ -2412,7 +2388,31 @@
       "source_url": "https://devonomicsv1.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:17.133Z"
+      "observed_at": "2026-08-22T21:28:23.023Z"
+    },
+    {
+      "id": "dp-munichtech-expo-munichtech-expo",
+      "slug": "munichtech-expo-munichtech-expo",
+      "title": "MunichTech EXPO",
+      "organizer": "MunichTech",
+      "prize_usd": null,
+      "prize_raw": "€0",
+      "registrants": 76,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Upcoming",
+      "location_type": "in-person",
+      "location": "Munich, Germany",
+      "themes": [
+        "Low/No Code",
+        "Machine Learning/AI",
+        "Productivity"
+      ],
+      "open_to_all": true,
+      "source_url": "https://munichtech-expo.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T21:28:23.023Z"
     },
     {
       "id": "br-unstop-z0d1ak-ctf-gravitas26-vit-vellore-1735740",
@@ -2420,7 +2420,7 @@
       "title": "z0d1ak CTF",
       "organizer": "Vellore Institute of Technology (VIT), Vellore",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 1488,
       "starts_at": null,
       "ends_at": "2026-08-23T04:00:00.000Z",
@@ -2432,7 +2432,7 @@
       "source_url": "https://unstop.com/hackathons/z0d1ak-ctf-gravitas26-vit-vellore-1735740",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "All"
       ]
@@ -2443,7 +2443,7 @@
       "title": "OOSC 4.0 Hackathon",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-08-23T18:29:00.000Z",
@@ -2455,7 +2455,7 @@
       "source_url": "https://internshala.com/competitions/oosc-4-0-hackathon-2026/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2466,7 +2466,7 @@
       "title": "Breakpoint Hackathon 2026",
       "organizer": "invoqe",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 2122,
       "starts_at": null,
       "ends_at": "2026-08-23T18:30:00.000Z",
@@ -2478,7 +2478,7 @@
       "source_url": "https://unstop.com/hackathons/breakpoint-hackathon-2026-invoqe-1734966",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "All"
       ]
@@ -2489,7 +2489,7 @@
       "title": "NeuraMorphix HackForge 2026",
       "organizer": "SRM Institute of Science and Technology (SRMIST), Kattankulathur, Chennai",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 573,
       "starts_at": null,
       "ends_at": "2026-08-25T17:42:35.000Z",
@@ -2501,7 +2501,7 @@
       "source_url": "https://unstop.com/hackathons/neuramorphix-hackforge-2026-srm-institute-of-science-and-technology-kattankulathur-chennai-1708229",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "School Students",
         "Undergraduate",
@@ -2514,7 +2514,7 @@
       "title": "CodeStorm 2026: FutureForge",
       "organizer": "See listing",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 942,
       "starts_at": null,
       "ends_at": "2026-08-25T18:29:00.000Z",
@@ -2526,7 +2526,7 @@
       "source_url": "https://codestorm-futureforge.devfolio.co",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Design",
         "Future Mobility"
@@ -2538,7 +2538,7 @@
       "title": "EchoSphere – Agora Conversational AI Hackathon",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-08-25T18:29:00.000Z",
@@ -2550,7 +2550,7 @@
       "source_url": "https://internshala.com/competitions/echosphere-2026-win-from-a-3000-prize-pool/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2561,7 +2561,7 @@
       "title": "NMIMS Indore Nyaya Setu : AI Justice Policy Convention 2026",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-08-25T18:29:00.000Z",
@@ -2573,7 +2573,7 @@
       "source_url": "https://internshala.com/competitions/nyaya-setu-2026-by-nmims-indore-ai-justice-policy-convention/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2584,7 +2584,7 @@
       "title": "CyberHack 2026 – SRMS CET R",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-08-25T18:29:00.000Z",
@@ -2596,7 +2596,7 @@
       "source_url": "https://internshala.com/competitions/cyberhack-2026-srms-cetr/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:21.462Z",
+      "observed_at": "2026-08-22T21:28:24.247Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2607,7 +2607,7 @@
       "title": "MUBA Blockchain Hackathon",
       "organizer": "See listing",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 811,
       "starts_at": null,
       "ends_at": "2026-08-26T12:00:00.000Z",
@@ -2619,7 +2619,7 @@
       "source_url": "https://muba-hackathon.devfolio.co",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:22.268Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": []
     },
     {
@@ -2628,7 +2628,7 @@
       "title": "Resolve'26 — National-Level Game Jam",
       "organizer": "SRM Insitute of Science and Technology",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 63,
       "starts_at": null,
       "ends_at": "2026-08-26T18:29:00.000Z",
@@ -2640,7 +2640,7 @@
       "source_url": "https://unstop.com/hackathons/resolve26-national-level-48-hour-game-jam-srm-insitute-of-science-and-technology-1731440",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.268Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -2654,7 +2654,7 @@
       "title": "ELUCode-2",
       "organizer": "EduLinkUp",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 223,
       "starts_at": null,
       "ends_at": "2026-08-29T10:30:49.000Z",
@@ -2666,7 +2666,7 @@
       "source_url": "https://unstop.com/hackathons/elucode-2-edulinkup-1740124",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": []
     },
     {
@@ -2675,7 +2675,7 @@
       "title": "Hackfinity 3.0",
       "organizer": "Ramco Institute of Technology (RIT), Tamil Nadu",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 1874,
       "starts_at": null,
       "ends_at": "2026-08-30T18:29:00.000Z",
@@ -2687,7 +2687,7 @@
       "source_url": "https://unstop.com/hackathons/hackfinity-30-ramco-institute-of-technology-rit-tamil-nadu-1722654",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -2701,7 +2701,7 @@
       "title": "Morrow 1.0",
       "organizer": "Makers Need More (MnM)",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 1197,
       "starts_at": null,
       "ends_at": "2026-08-30T18:30:00.000Z",
@@ -2713,7 +2713,7 @@
       "source_url": "https://unstop.com/hackathons/morrow-10-makers-need-more-mnm-1727667",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:22.269Z",
+      "observed_at": "2026-08-22T21:28:25.422Z",
       "eligibility_flags": [
         "All"
       ]
@@ -2724,7 +2724,7 @@
       "title": "Hackblox AI & Open Source Hackathon",
       "organizer": "Hackers Cult",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 2256,
       "starts_at": null,
       "ends_at": "2026-08-30T18:30:00.000Z",
@@ -2736,7 +2736,7 @@
       "source_url": "https://unstop.com/hackathons/hackblox-open-source-hackathon-hackers-cult-1731738",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "All"
       ]
@@ -2747,7 +2747,7 @@
       "title": "Code to Creation (Project Submission)",
       "organizer": "Samrat Ashok Technological Institute (SATI), Vidisha",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 74,
       "starts_at": null,
       "ends_at": "2026-08-31T18:29:00.000Z",
@@ -2759,7 +2759,7 @@
       "source_url": "https://unstop.com/hackathons/code-to-creation-project-submission-samrat-ashok-technological-institute-sati-vidisha-1740116",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -2773,7 +2773,7 @@
       "title": "DemCon 2026 : UNFORGET Tech Innovation Hackathon",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-08-31T18:29:00.000Z",
@@ -2785,7 +2785,7 @@
       "source_url": "https://internshala.com/competitions/demcon-2026-unforget-tech-innovation-hackathon/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2796,7 +2796,7 @@
       "title": "STRK20 Private Sprint 2026",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-08-31T18:29:00.000Z",
@@ -2808,7 +2808,7 @@
       "source_url": "https://internshala.com/competitions/strk20-private-sprint-2026-win-5000-usd/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2819,7 +2819,7 @@
       "title": "E.ON Future Makers Challenge",
       "organizer": "Infosys",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 876,
       "starts_at": null,
       "ends_at": "2026-08-31T18:29:32.000Z",
@@ -2831,7 +2831,7 @@
       "source_url": "https://unstop.com/hackathons/crp-eon-future-makers-challenge-infosys-1739537",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -2845,7 +2845,7 @@
       "title": "Eureka x Devengers",
       "organizer": "Devengers",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 42,
       "starts_at": null,
       "ends_at": "2026-09-01T18:30:00.000Z",
@@ -2857,7 +2857,7 @@
       "source_url": "https://unstop.com/hackathons/eureka-x-devengers-devengers-1740270",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:23.483Z",
+      "observed_at": "2026-08-22T21:28:26.348Z",
       "eligibility_flags": [
         "All"
       ]
@@ -2868,7 +2868,7 @@
       "title": "InfiniX'26 – National Level 32-Hour Hackathon",
       "organizer": "Ramco Institute of Technology",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 19,
       "starts_at": null,
       "ends_at": "2026-09-04T18:30:00.000Z",
@@ -2880,7 +2880,7 @@
       "source_url": "https://unstop.com/hackathons/infinix26-national-level-32-hour-hackathon-ramco-institute-of-technology-1730876",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -2894,7 +2894,7 @@
       "title": "Orvix Hackathon",
       "organizer": "NIMBLUX",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 392,
       "starts_at": null,
       "ends_at": "2026-09-04T18:30:00.000Z",
@@ -2906,7 +2906,7 @@
       "source_url": "https://unstop.com/hackathons/orvix-hackathon-nimblux-1730437",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -2920,7 +2920,7 @@
       "title": "\"National Research & Innovation Challenge Season 3 by 3SVK – 3.8K+  Registrations\"",
       "organizer": "Jawaharlal Nehru Technological University (JNTUH), Hyderabad",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 3980,
       "starts_at": null,
       "ends_at": "2026-09-05T17:29:00.000Z",
@@ -2932,7 +2932,7 @@
       "source_url": "https://unstop.com/hackathons/cloud-innovation-challenge-jawaharlal-nehru-technological-university-jntuh-hyderabad-1652247",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": []
     },
     {
@@ -2941,7 +2941,7 @@
       "title": "InfiniX&#8217;26 : National Level 32-Hour Hackathon",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-09-05T18:29:00.000Z",
@@ -2953,7 +2953,7 @@
       "source_url": "https://internshala.com/competitions/infinix26-2026-win-%e2%82%b915000-2/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2964,7 +2964,7 @@
       "title": "KNMA Art Battle Season 6",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-09-05T18:29:00.000Z",
@@ -2976,7 +2976,7 @@
       "source_url": "https://internshala.com/competitions/infinix26-2026-win-%e2%82%b915000/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.469Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -2987,7 +2987,7 @@
       "title": "The Frontend Odyssey 2026",
       "organizer": "Frontend Arena",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 172,
       "starts_at": null,
       "ends_at": "2026-09-09T18:30:00.000Z",
@@ -2999,7 +2999,7 @@
       "source_url": "https://unstop.com/hackathons/the-frontend-odyssey-2026-frontend-arena-1740316",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.470Z",
       "eligibility_flags": [
         "All"
       ]
@@ -3010,7 +3010,7 @@
       "title": "CYBER KUSHTI 2026",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-09-10T18:29:00.000Z",
@@ -3022,7 +3022,7 @@
       "source_url": "https://internshala.com/competitions/cyber-kushti-2026/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.470Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -3033,7 +3033,7 @@
       "title": "Animal Hack",
       "organizer": "Hack Club network",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-09-13T15:00:00.000Z",
@@ -3045,7 +3045,7 @@
       "source_url": "https://animalhack.org",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": [
         "School and college students"
       ]
@@ -3056,7 +3056,7 @@
       "title": "VentureFix",
       "organizer": "PropNote AI",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 20,
       "starts_at": null,
       "ends_at": "2026-09-13T23:59:00.000Z",
@@ -3068,7 +3068,7 @@
       "source_url": "https://venturefix.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Low/No Code",
@@ -3081,7 +3081,7 @@
       "title": "Null Origin - 24 Hour CTF Challenge",
       "organizer": "Cyber HX",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 1987,
       "starts_at": null,
       "ends_at": "2026-09-14T18:30:00.000Z",
@@ -3093,7 +3093,7 @@
       "source_url": "https://unstop.com/hackathons/null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": []
     },
     {
@@ -3102,7 +3102,7 @@
       "title": "CraftVerse 2.0",
       "organizer": "Pimpri Chinchwad College Of Engineering & Research (PCCOE&R), Ravet, Pimpri-Chinchwad, Pune",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 2444,
       "starts_at": null,
       "ends_at": "2026-09-15T18:29:55.000Z",
@@ -3114,7 +3114,7 @@
       "source_url": "https://unstop.com/hackathons/craftverse-20-pimpri-chinchwad-college-of-engineering-research-pccoer-ravet-pimpri-chinchwad-pune-1719658",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.138Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -3128,7 +3128,7 @@
       "title": "GatewayGS Hackathon 2",
       "organizer": "GatewayGS",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 18,
       "starts_at": null,
       "ends_at": "2026-09-16T23:59:00.000Z",
@@ -3140,7 +3140,7 @@
       "source_url": "https://gatewaygs-hackathon-2.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.139Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Machine Learning/AI",
@@ -3153,7 +3153,7 @@
       "title": "Idea Competition 2026",
       "organizer": "Fr. Conceicao Rodrigues College of Engineering (FRCRCE), Bandra",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 544,
       "starts_at": null,
       "ends_at": "2026-09-17T13:00:00.000Z",
@@ -3165,7 +3165,7 @@
       "source_url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.139Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -3179,7 +3179,7 @@
       "title": "GitHub Repo Value Check",
       "organizer": "HackerEarth partner",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-09-20T18:29:00.000Z",
@@ -3191,7 +3191,7 @@
       "source_url": "https://www.hackerearth.com/challenges/hackathon/github-repo-value-check/",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.139Z",
       "eligibility_flags": []
     },
     {
@@ -3200,7 +3200,7 @@
       "title": "AETHOS - Day Zero",
       "organizer": "Together We Solve",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 927,
       "starts_at": null,
       "ends_at": "2026-09-22T18:30:03.000Z",
@@ -3212,7 +3212,7 @@
       "source_url": "https://unstop.com/hackathons/aethos-day-zero-together-we-solve-1730263",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.139Z",
       "eligibility_flags": [
         "All"
       ]
@@ -3223,7 +3223,7 @@
       "title": "ABB Accelerator 2026",
       "organizer": "HackerEarth partner",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-09-27T21:59:00.000Z",
@@ -3235,7 +3235,7 @@
       "source_url": "https://www.hackerearth.com/challenges/hackathon/abb-accelerator-2026-2/",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": []
     },
     {
@@ -3244,7 +3244,7 @@
       "title": "BOSS Battle",
       "organizer": "See listing",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 33,
       "starts_at": null,
       "ends_at": "2026-09-28T18:29:00.000Z",
@@ -3256,7 +3256,7 @@
       "source_url": "https://boss-battle.devfolio.co",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": []
     },
     {
@@ -3265,7 +3265,7 @@
       "title": "Code-X-Novas Innovathon 2026 – National Software, AI Hackathon",
       "organizer": "Code-X-Novas",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 224,
       "starts_at": null,
       "ends_at": "2026-09-29T18:30:00.000Z",
@@ -3277,7 +3277,7 @@
       "source_url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -3291,7 +3291,7 @@
       "title": "Yuva Yodha Energy Tech Hackathon",
       "organizer": "HackerEarth partner",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-10-04T18:29:00.000Z",
@@ -3303,7 +3303,7 @@
       "source_url": "https://www.hackerearth.com/challenges/hackathon/yuva-yodha-energy-tech-hackathon/",
       "source": "brabble",
       "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": []
     },
     {
@@ -3312,7 +3312,7 @@
       "title": "Banana Hacks",
       "organizer": "Hack Club network",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-10-09T00:00:00.000Z",
@@ -3324,7 +3324,7 @@
       "source_url": "https://www.bananahacks.tech",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.159Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "School and college students"
       ]
@@ -3335,7 +3335,7 @@
       "title": "AI for Good Hackathon 2026",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-10-15T18:29:00.000Z",
@@ -3347,7 +3347,7 @@
       "source_url": "https://internshala.com/competitions/ai-for-good-hackathon-2026/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.160Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -3358,7 +3358,7 @@
       "title": "HACK47: OFFGRID",
       "organizer": "Hack47",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 9,
       "starts_at": null,
       "ends_at": "2026-10-15T23:59:00.000Z",
@@ -3370,7 +3370,7 @@
       "source_url": "https://hack47-offgrid.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.160Z",
+      "observed_at": "2026-08-22T21:28:28.903Z",
       "eligibility_flags": [
         "Enterprise",
         "Open Ended",
@@ -3383,7 +3383,7 @@
       "title": "Bharat Agentic AI Hackathon 2026",
       "organizer": "Listed on Internshala",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": null,
       "starts_at": null,
       "ends_at": "2026-11-15T18:29:00.000Z",
@@ -3395,7 +3395,7 @@
       "source_url": "https://internshala.com/competitions/bharat-agentic-ai-hackathon-win-from-%e2%82%b918-lakh-prize-pool/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.836Z",
+      "observed_at": "2026-08-22T21:28:29.554Z",
       "eligibility_flags": [
         "Students"
       ]
@@ -3406,7 +3406,7 @@
       "title": "Bridge The Gap Hacks",
       "organizer": "Bridge The Gap Hacks",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 12,
       "starts_at": null,
       "ends_at": "2026-11-21T23:59:00.000Z",
@@ -3418,7 +3418,7 @@
       "source_url": "https://sq-hacks.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.836Z",
+      "observed_at": "2026-08-22T21:28:29.554Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Machine Learning/AI",
@@ -3431,7 +3431,7 @@
       "title": "EurekaDev 2026",
       "organizer": "Eureka Institute and UnivaDev",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 30,
       "starts_at": null,
       "ends_at": "2027-09-03T23:59:00.000Z",
@@ -3443,7 +3443,7 @@
       "source_url": "https://eurekadev.devpost.com/",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:27.836Z",
+      "observed_at": "2026-08-22T21:28:29.554Z",
       "eligibility_flags": [
         "Beginner Friendly",
         "Open Ended",

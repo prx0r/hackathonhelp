@@ -137,7 +137,10 @@ for (const r of rows){
   if (r.days_left!=null && r.days_left>=3 && r.days_left<=14 && ((r.score_v01.components&&r.score_v01.components.winnability)??0)>=60){reasons.push('closing soon with good odds');ms+=15;}
   if (r.prize.headline_inflation>=50) reasons.push(`⚠ ${r.prize.headline_inflation}% of headline is non-cash`);
   // Legitimacy sanity: extraordinary per-submission value on thin fields warrants verification
-  const cautions=[];
+  const cautions = r.cautions || [];
+  if ((r.prize_raw??'')==='' || /^(see listing|null|tba)$/i.test(r.prize_raw??'')){
+    cautions.push('prize not published on platform card — see official page');
+  }
   if (r.metrics.fair_share_serious!=null && r.metrics.fair_share_serious>2500) cautions.push('extraordinary per-submission value — verify payout history');
   if ((r.prize.advertised_value??0)>=50000 && (r.field.registrations??999)<150) cautions.push('large pool, very early/small field — confirm organizer track record');
   if (r.prize.headline_inflation>=50) cautions.push(`${r.prize.headline_inflation}% of headline is non-cash`);

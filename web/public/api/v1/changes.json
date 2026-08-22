@@ -1,5 +1,22 @@
 {
-  "generated_at": "2026-08-22T21:19:48.271Z",
+  "generated_at": "2026-08-22T21:28:29.612Z",
   "schema_version": "hackathonhelp.api.v2",
-  "changes": []
+  "changes": [
+    {
+      "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
+      "type": "changed",
+      "field": "registrants",
+      "old": 19453,
+      "new": 19454,
+      "detected_at": "2026-08-22T21:28:29.611Z"
+    },
+    {
+      "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "type": "changed",
+      "field": "registrants",
+      "old": 883,
+      "new": 884,
+      "detected_at": "2026-08-22T21:28:29.611Z"
+    }
+  ]
 }

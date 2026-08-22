@@ -27,12 +27,14 @@ const seen=new Set(); const opportunities=[];
 for(let p=1;p<=PAGES;p++){
   const d=await (await fetch(`https://devpost.com/api/hackathons?page=${p}`)).json();
   for(const h of d.hackathons??[]){
-    if(!h.url||seen.has(h.url)) continue; seen.add(h.url);
+    if(!h.url||seen.has(h.url)) continue;
+    const dkey='dp|'+(h.title||'').toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,40);
+    if(seen.has(dkey)) continue; seen.add(h.url); seen.add(dkey);
     const dates=parseDates(h.submission_period_dates);
     opportunities.push({
       id:'dp-'+slugify(h.url), slug:slugify(h.url),
       title:h.title, organizer:h.organization||h.title.split(' ')[0],
-      prize_usd:parsePrize(h.prize_amount), prize_raw:(h.prize_amount||'').replace(/<[^>]*>/g,'').trim(),
+      prize_usd:parsePrize(h.prize_amount), prize_raw:(v=>v==='$0'?'':v)((h.prize_amount||'').replace(/<[^>]*>/g,'').trim()),
       registrants:h.registrations_count??null,
       starts_at:dates.starts_at??null, ends_at:dates.ends_at??null,
       time_left:h.time_left_to_submission||null,
@@ -59,7 +61,10 @@ if(KEY){
     }catch(e){ console.error('brabble fail',e.message); break; }
     for(const l of (d.listings??[])){
       if(l.type!=='HACKATHON') continue;
-      if(seen.has(l.url)){ continue; }
+      if(seen.has(l.url)) continue;
+      const bkey='br|'+(l.title||'').toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,40);
+      if(seen.has(bkey)||seen.has('dp|'+(l.title||'').toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,40))) continue;
+      seen.add(bkey);
       if(l.mode!=='ONLINE'){ brabbleSkippedOffline++; continue; }          // audience: online
       const el=l.eligibility??[];
       if(el.includes('Education')){ brabbleSkippedStudent++; continue; }   // audience: non-student
@@ -68,8 +73,8 @@ if(KEY){
       const prizeNum = l.prize?.label ? parseFloat(String(l.prize.label).replace(/[^0-9.]/g,''))||null : null;
       opportunities.push({
         id:'br-'+slugify(l.url), slug:'br-'+slugify(l.url),
-        title:l.title, organizer:l.organiser||null,
-        prize_usd: prizeNum, prize_raw:l.prize?.label||null,
+        title:l.title, organizer:(l.organiser&&l.organiser!=='null'&&l.organiser!=='—')?l.organiser:null,
+        prize_usd: prizeNum, prize_raw:(v=>/^(\$0|see listing|null|tba)$/i.test(v||'')?null:v)((l.prize?.label||'').trim()),
         registrants:l.registered??null,
         starts_at:null, ends_at:l.deadline||null,
         time_left:l.deadline?Math.ceil((new Date(l.deadline)-Date.now())/86400000)+' days left':null,

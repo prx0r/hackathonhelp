@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:19:48.271Z",
+  "generated_at": "2026-08-22T21:28:29.612Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
@@ -24,7 +24,7 @@
       "source_url": "https://rice-urban-sustainability.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.255Z",
+      "observed_at": "2026-08-22T21:28:22.083Z",
       "days_left": 28,
       "gates": {
         "registration_open": true,
@@ -110,7 +110,7 @@
       "source_url": "https://volthacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z",
+      "observed_at": "2026-08-22T21:28:21.113Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -196,7 +196,7 @@
       "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:15.581Z",
+      "observed_at": "2026-08-22T21:28:21.112Z",
       "days_left": 25,
       "gates": {
         "registration_open": true,
@@ -261,176 +261,12 @@
       }
     },
     {
-      "id": "dp-animalhack2026-animalhack2026",
-      "slug": "animalhack2026-animalhack2026",
-      "title": "AnimalHack 2026",
-      "organizer": "AnimalHack",
-      "prize_usd": null,
-      "prize_raw": "$0",
-      "registrants": 176,
-      "starts_at": "2026-06-14T00:00:00.000Z",
-      "ends_at": "2026-09-12T23:59:00.000Z",
-      "time_left": "21 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "Beginner Friendly",
-        "Open Ended",
-        "Social Good"
-      ],
-      "open_to_all": true,
-      "source_url": "https://animalhack2026.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z",
-      "days_left": 22,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": true,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": null,
-        "cash_value": null,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": null,
-        "headline_inflation": null
-      },
-      "field": {
-        "registrations": 176,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 35,
-        "funnel": null
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": null,
-          "winnability": 89,
-          "organizer_quality": null
-        },
-        "known_components": 1,
-        "opportunity_score": 85
-      },
-      "metrics": {
-        "equal_share_naive": null,
-        "fair_share_serious": null,
-        "days_left": 22
-      },
-      "cautions": [
-        "prize pool not yet announced — rescore when tracks land"
-      ],
-      "mega": null,
-      "attention": 85,
-      "attention_breakdown": {
-        "score": 85,
-        "urgency_multiplier": 1,
-        "days_left": 22,
-        "formula": "attention = opportunity_score x urgency(days)"
-      }
-    },
-    {
-      "id": "dp-evorozen-apex-evorozen-apex",
-      "slug": "evorozen-apex-evorozen-apex",
-      "title": "Evorozen Apex: NextGen AI Buildathon",
-      "organizer": "Evorozen",
-      "prize_usd": null,
-      "prize_raw": "$0",
-      "registrants": 155,
-      "starts_at": "2026-07-17T00:00:00.000Z",
-      "ends_at": "2026-09-20T23:59:00.000Z",
-      "time_left": "29 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "Databases",
-        "Machine Learning/AI",
-        "Web"
-      ],
-      "open_to_all": true,
-      "source_url": "https://evorozen-apex.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.429Z",
-      "days_left": 30,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": true,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": null,
-        "cash_value": null,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": null,
-        "headline_inflation": null
-      },
-      "field": {
-        "registrations": 155,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 31,
-        "funnel": null
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": null,
-          "winnability": 89,
-          "organizer_quality": null
-        },
-        "known_components": 1,
-        "opportunity_score": 85
-      },
-      "metrics": {
-        "equal_share_naive": null,
-        "fair_share_serious": null,
-        "days_left": 30
-      },
-      "cautions": [
-        "prize pool not yet announced — rescore when tracks land"
-      ],
-      "mega": null,
-      "attention": 85,
-      "attention_breakdown": {
-        "score": 85,
-        "urgency_multiplier": 1,
-        "days_left": 30,
-        "formula": "attention = opportunity_score x urgency(days)"
-      }
-    },
-    {
       "id": "dp-syntax-summit-syntax-summit",
       "slug": "syntax-summit-syntax-summit",
       "title": "Syntax Summit",
       "organizer": "Syntax",
       "prize_usd": null,
-      "prize_raw": "$0",
+      "prize_raw": "",
       "registrants": 121,
       "starts_at": "2026-07-18T00:00:00.000Z",
       "ends_at": "2026-09-05T23:59:00.000Z",
@@ -446,7 +282,7 @@
       "source_url": "https://syntax-summit.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.608Z",
+      "observed_at": "2026-08-22T21:28:22.423Z",
       "days_left": 15,
       "gates": {
         "registration_open": true,
@@ -495,6 +331,7 @@
         "days_left": 15
       },
       "cautions": [
+        "prize not published on platform card — see official page",
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
@@ -512,7 +349,7 @@
       "title": "The Frontend Odyssey 2026",
       "organizer": "Frontend Arena",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 172,
       "starts_at": null,
       "ends_at": "2026-09-09T18:30:00.000Z",
@@ -524,7 +361,7 @@
       "source_url": "https://unstop.com/hackathons/the-frontend-odyssey-2026-frontend-arena-1740316",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:25.023Z",
+      "observed_at": "2026-08-22T21:28:27.470Z",
       "eligibility_flags": [
         "All"
       ],
@@ -576,6 +413,7 @@
         "days_left": 18
       },
       "cautions": [
+        "prize not published on platform card — see official page",
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
@@ -588,12 +426,345 @@
       }
     },
     {
+      "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "organizer": "DevNetwork",
+      "prize_usd": 39500,
+      "prize_raw": "$39,500",
+      "registrants": 884,
+      "starts_at": "2026-08-17T00:00:00.000Z",
+      "ends_at": "2026-09-03T23:59:00.000Z",
+      "time_left": "12 days left",
+      "location_type": "online",
+      "location": "Santa Clara Convention Center and Online",
+      "themes": [
+        "IoT",
+        "Low/No Code",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T21:28:21.908Z",
+      "days_left": 13,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 39500,
+        "cash_value": 39500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 39500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 884,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 71,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 86,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 97
+      },
+      "metrics": {
+        "equal_share_naive": 44.68,
+        "fair_share_serious": 556.34,
+        "days_left": 13
+      },
+      "cautions": [],
+      "mega": {
+        "score": 50,
+        "reasons": [
+          "$556.34 normalized prize per estimated submission",
+          "closing soon with good odds"
+        ],
+        "category": "value_competition_gap"
+      },
+      "attention": 82.5,
+      "attention_breakdown": {
+        "score": 97,
+        "urgency_multiplier": 0.85,
+        "days_left": 13,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
+    },
+    {
+      "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
+      "slug": "prometheus-sept-ai-classic-prometheus-sept-ai-classic",
+      "title": "Prometheus September AI Challenge",
+      "organizer": "Prometheus",
+      "prize_usd": 1500,
+      "prize_raw": "$1,500",
+      "registrants": 86,
+      "starts_at": "2026-08-19T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Design",
+        "Machine Learning/AI"
+      ],
+      "open_to_all": true,
+      "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T21:28:22.423Z",
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 1500,
+        "cash_value": 1500,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 1500,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 86,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 17,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 70,
+          "winnability": 94,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 81
+      },
+      "metrics": {
+        "equal_share_naive": 17.44,
+        "fair_share_serious": 88.24,
+        "days_left": 15
+      },
+      "cautions": [],
+      "mega": null,
+      "attention": 81,
+      "attention_breakdown": {
+        "score": 81,
+        "urgency_multiplier": 1,
+        "days_left": 15,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
+    },
+    {
+      "id": "dp-animalhack2026-animalhack2026",
+      "slug": "animalhack2026-animalhack2026",
+      "title": "AnimalHack 2026",
+      "organizer": "AnimalHack",
+      "prize_usd": null,
+      "prize_raw": "",
+      "registrants": 176,
+      "starts_at": "2026-06-14T00:00:00.000Z",
+      "ends_at": "2026-09-12T23:59:00.000Z",
+      "time_left": "21 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Beginner Friendly",
+        "Open Ended",
+        "Social Good"
+      ],
+      "open_to_all": true,
+      "source_url": "https://animalhack2026.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T21:28:22.248Z",
+      "days_left": 22,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 176,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 35,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 80
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 22
+      },
+      "cautions": [
+        "prize not published on platform card — see official page",
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null,
+      "attention": 80,
+      "attention_breakdown": {
+        "score": 80,
+        "urgency_multiplier": 1,
+        "days_left": 22,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
+    },
+    {
+      "id": "dp-evorozen-apex-evorozen-apex",
+      "slug": "evorozen-apex-evorozen-apex",
+      "title": "Evorozen Apex: NextGen AI Buildathon",
+      "organizer": "Evorozen",
+      "prize_usd": null,
+      "prize_raw": "",
+      "registrants": 155,
+      "starts_at": "2026-07-17T00:00:00.000Z",
+      "ends_at": "2026-09-20T23:59:00.000Z",
+      "time_left": "29 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Databases",
+        "Machine Learning/AI",
+        "Web"
+      ],
+      "open_to_all": true,
+      "source_url": "https://evorozen-apex.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T21:28:22.248Z",
+      "days_left": 30,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": true,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 155,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 31,
+        "funnel": null
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 89,
+          "organizer_quality": null
+        },
+        "known_components": 1,
+        "opportunity_score": 80
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 30
+      },
+      "cautions": [
+        "prize not published on platform card — see official page",
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "mega": null,
+      "attention": 80,
+      "attention_breakdown": {
+        "score": 80,
+        "urgency_multiplier": 1,
+        "days_left": 30,
+        "formula": "attention = opportunity_score x urgency(days)"
+      }
+    },
+    {
       "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
       "slug": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
       "title": "Idea Competition 2026",
       "organizer": "Fr. Conceicao Rodrigues College of Engineering (FRCRCE), Bandra",
       "prize_usd": null,
-      "prize_raw": "See listing",
+      "prize_raw": null,
       "registrants": 544,
       "starts_at": null,
       "ends_at": "2026-09-17T13:00:00.000Z",
@@ -605,7 +776,7 @@
       "source_url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
       "source": "brabble",
       "source_authority": "platform_metadata_unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
+      "observed_at": "2026-08-22T21:28:28.139Z",
       "eligibility_flags": [
         "Undergraduate",
         "Postgraduate",
@@ -652,7 +823,7 @@
           "organizer_quality": null
         },
         "known_components": 1,
-        "opportunity_score": 85
+        "opportunity_score": 80
       },
       "metrics": {
         "equal_share_naive": null,
@@ -660,180 +831,15 @@
         "days_left": 26
       },
       "cautions": [
+        "prize not published on platform card — see official page",
         "prize pool not yet announced — rescore when tracks land"
       ],
       "mega": null,
-      "attention": 85,
+      "attention": 80,
       "attention_breakdown": {
-        "score": 85,
+        "score": 80,
         "urgency_multiplier": 1,
         "days_left": 26,
-        "formula": "attention = opportunity_score x urgency(days)"
-      }
-    },
-    {
-      "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
-      "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
-      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
-      "organizer": "DevNetwork",
-      "prize_usd": 39500,
-      "prize_raw": "$39,500",
-      "registrants": 883,
-      "starts_at": "2026-08-17T00:00:00.000Z",
-      "ends_at": "2026-09-03T23:59:00.000Z",
-      "time_left": "12 days left",
-      "location_type": "online",
-      "location": "Santa Clara Convention Center and Online",
-      "themes": [
-        "IoT",
-        "Low/No Code",
-        "Machine Learning/AI"
-      ],
-      "open_to_all": true,
-      "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T21:12:16.071Z",
-      "days_left": 13,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": true,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 39500,
-        "cash_value": 39500,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 39500,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 883,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 71,
-        "funnel": null
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 100,
-          "winnability": 86,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 97
-      },
-      "metrics": {
-        "equal_share_naive": 44.73,
-        "fair_share_serious": 556.34,
-        "days_left": 13
-      },
-      "cautions": [],
-      "mega": {
-        "score": 50,
-        "reasons": [
-          "$556.34 normalized prize per estimated submission",
-          "closing soon with good odds"
-        ],
-        "category": "value_competition_gap"
-      },
-      "attention": 82.5,
-      "attention_breakdown": {
-        "score": 97,
-        "urgency_multiplier": 0.85,
-        "days_left": 13,
-        "formula": "attention = opportunity_score x urgency(days)"
-      }
-    },
-    {
-      "id": "br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
-      "slug": "br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
-      "title": "Null Origin - 24 Hour CTF Challenge",
-      "organizer": "Cyber HX",
-      "prize_usd": null,
-      "prize_raw": "See listing",
-      "registrants": 1987,
-      "starts_at": null,
-      "ends_at": "2026-09-14T18:30:00.000Z",
-      "time_left": "23 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [],
-      "open_to_all": true,
-      "source_url": "https://unstop.com/hackathons/null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
-      "source": "brabble",
-      "source_authority": "unverified",
-      "observed_at": "2026-08-22T21:12:26.477Z",
-      "eligibility_flags": [],
-      "days_left": 23,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": true,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": null,
-        "cash_value": null,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": null,
-        "headline_inflation": null
-      },
-      "field": {
-        "registrations": 1987,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 99,
-        "funnel": null
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": null,
-          "winnability": 81,
-          "organizer_quality": null
-        },
-        "known_components": 1,
-        "opportunity_score": 82
-      },
-      "metrics": {
-        "equal_share_naive": null,
-        "fair_share_serious": null,
-        "days_left": 23
-      },
-      "cautions": [
-        "prize pool not yet announced — rescore when tracks land"
-      ],
-      "mega": null,
-      "attention": 82,
-      "attention_breakdown": {
-        "score": 82,
-        "urgency_multiplier": 1,
-        "days_left": 23,
         "formula": "attention = opportunity_score x urgency(days)"
       }
     }
