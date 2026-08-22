@@ -85,7 +85,10 @@ const tilesHtml = open.map(o => {
     : o.prize.advertised_value!=null ? '$'+Math.round(o.prize.advertised_value).toLocaleString()
     : (o.prize_raw && o.prize_raw !== '$0' ? o.prize_raw : 'Prize TBA');
   const dimmed = o.decision.action==='SKIP';
-  return `<div class="tile${dimmed?' tile-skip':''}" style="background:${c.bg};border-color:${c.border}">
+  const lookingFor = o.contract?.requirement_vector
+    ? Object.entries(o.contract.requirement_vector).filter(([k,v])=>v==='REQUIRED'||v==='HIGH').slice(0,2).map(([k])=>k.replace(/_/g,' ')).join(' + ')
+    : (o.themes||[]).slice(0,2).join(' · ');
+  return `<div class="tile${dimmed?' tile-skip':''}" style="background:${c.bg};border-color:${c.border};cursor:pointer" onclick="window.location='/opps/${o.slug}'">
           <div class="tile-top">
             <span style="display:flex;gap:4px;align-items:center">
               <span class="tile-action act-${o.decision.action.replace(/ /g,'')}">${o.decision.action}</span>
@@ -93,13 +96,14 @@ const tilesHtml = open.map(o => {
             </span>
             <span class="tile-score" title="${ab.formula}">${score ?? '—'}</span>
           </div>
-          <a class="tile-title" href="/opps/${o.slug}" title="${esc(o.title)}">${esc(o.title)}</a>
+          <div class="tile-title" title="${esc(o.title)}">${esc(o.title)}</div>
           <div class="tile-org">${esc(o.organizer||'')}</div>
+          ${lookingFor?`<div class="tile-look">Looking for: ${esc(lookingFor)}</div>`:''}
           <div class="tile-bottom">
             <span class="tile-prize" title="${o.prize.cash_value!=null?'verified cash':'unverified/normalized'}">${shownPrize}</span>
             <span style="display:flex;gap:6px;align-items:center">
               <span class="tile-days" style="color:${c.text}">${c.label}</span>
-              <a class="tile-official" href="${o.source_url}" target="_blank" rel="noopener" title="Official event page">↗</a>
+              <a class="tile-official" href="${o.source_url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Official event page">↗</a>
             </span>
           </div>
         </div>`;

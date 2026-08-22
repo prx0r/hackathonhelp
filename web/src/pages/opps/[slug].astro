@@ -105,6 +105,35 @@ if (o.contract) {
     </table>
   </section>
 
+  <section class="panel">
+    <div class="label">What they're looking for</div>
+    {(o.contract?.requirement_vector || o.contract?.judging || o.themes?.length) ? (
+      <>
+      {(o.contract?.required_tech?.length>0) && (
+        <p class="look-line"><strong>Required:</strong> {o.contract.required_tech.join(', ')}</p>
+      )}
+      {o.contract?.requirement_vector && (
+        <p class="look-line"><strong>They value:</strong> {Object.entries(o.contract.requirement_vector)
+          .filter(([k,v])=>v==='REQUIRED'||v==='HIGH'||v==='VALUABLE'||v==='GOOD_FIT')
+          .map(([k,v])=>k.replace(/_/g,' ')).join(' · ')}</p>
+      )}
+      {o.contract?.judging && Object.keys(o.contract.judging).length>0 && (
+        <p class="look-line"><strong>You win with:</strong> {Object.entries(o.contract.judging).slice(0,4).map(([k,v])=>k+' ('+v+')').join(' · ')}</p>
+      )}
+      {(o.manual?.judging) && <p class="look-line"><strong>Judged on:</strong> {o.manual.judging}</p>}
+      {(o.candidate_metadata?.requirement_notes) && <p class="look-line"><strong>Notes:</strong> {o.candidate_metadata.requirement_notes}</p>}
+      {(o.themes?.length>0) && !(o.contract?.requirement_vector) && (
+        <p class="look-line"><strong>Themes:</strong> {o.themes.join(' · ')} — detailed requirements not published yet, check the official page.</p>
+      )}
+      </>
+    ) : (
+      <p class="mathnote">Requirements not published in structured form yet. Check the official page for tracks and judging criteria.</p>
+    )}
+    {o.fit.strategic_fit >= 0.5 && (
+      <p class="fitline">✦ Strong match for your agent-reliability specialism ({Math.round(o.fit.strategic_fit*100)}% overlap)</p>
+    )}
+  </section>
+
   {contractPanel}
 
   <section class="grid2">
@@ -221,6 +250,9 @@ if (o.contract) {
   .req-req{background:rgba(239,68,68,.15);color:#fca5a5}
   .req-high{background:rgba(59,130,246,.15);color:#93c5fd}
   .req-opt{background:rgba(148,163,184,.12);color:var(--text-dim)}
+  .look-line{font-size:14px;color:var(--text);margin-bottom:9px;line-height:1.55}
+  .look-line strong{color:var(--accent)}
+  .fitline{font-size:13px;font-weight:700;color:#86efac;margin-top:10px}
   .scorebig{font-size:42px;font-weight:900;color:var(--accent);letter-spacing:-.03em;margin-bottom:8px}
   @media(max-width:700px){.grid2{grid-template-columns:1fr}}
 </style>
