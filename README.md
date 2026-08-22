@@ -7,10 +7,12 @@ Live: https://hackathonhelp.pages.dev · Agent API: `/api/v1/{top,opportunities,
 ## The alpha: fair-share per entrant
 `fair_share = prize_pool / current_registrants`
 
-A $100K event with 300 entrants ($333/share) is a different animal from $100K with 20,000 ($5/share). Every event gets:
-- **Opportunity score** (0-100): value 40% + odds 35% + urgency + access
-- **🔥 Mega flag**: fair-share ≥$20, or big-prize × below-median competition, transparent reasons shown
-- **Deadline radar**: closing-soon events with good odds
+A $100K event with 300 entrants ($333/share) is a different animal from $100K with 20,000 ($5/share).
+
+**v0.2 decision engine** - two numbers, not one:
+- **Opportunity score** (deadline-free): normalized cash, serious-field odds via payout-slot model, organizer quality
+- **Action state**: ENTER NOW / SPRINT / PREP / WATCH / SKIP - feasibility prior x latest-safe-start math decides *when*, not just *whether*
+- Eligibility hard gates first (student-only/age-gated/in-person events are excluded, never ranked)
 
 Data from the official Devpost API. Deterministic formulas, documented on /methodology.
 

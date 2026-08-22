@@ -22,12 +22,26 @@ import Base from '../layouts/Base.astro';
   + access        x 13     (online = full, IRL = discounted)</pre>
     </section>
     <section class="section">
-      <h2>Attention model (grid ordering)</h2>
-      <pre>attention = opportunity_score x urgency_multiplier(deadline)
+      <h2>The decision engine (v0.2)</h2>
+      <p>We compute two different numbers, because they answer different questions:</p>
+      <p><strong>Opportunity score</strong> — how attractive is this with plenty of time? Deadline plays almost no role.</p>
+      <p><strong>Action state</strong> — given today's date and everything else you could build, what should you do right now?</p>
+      <pre>States: ENTER NOW / SPRINT / PREP / WATCH / SKIP
 
-urgency: ≤2d excluded · 3-6d ×0.55 · 7-13d ×0.85
-         14-30d ×1.00 (sweet spot) · 31-60d ×0.90 · 60d+ ×0.75</pre>
-      <p style="margin-top:12px;font-size:13px;color:var(--text-dim)">Raw quality isn't where attention goes first: a 96/100 with one day left is unusable, a 70/100 with perfect timing may be your best next action. Unknown deadlines are deprioritized until published.</p>
+Finish-feasibility prior (planning-fallacy adjusted):
+  <1d 10% · 1-2d 25% · 2-3d 45% · 3-5d 65% · 5-7d 80%
+  7-10d 90% · 10-14d 97% · 14d+ 100%
+
+Latest safe start = deadline - P80 build time (40h @ 4h/day) - 2d buffer</pre>
+    </section>
+
+    <section class="section">
+      <h2>Payout model</h2>
+      <pre>p(any payout) = sigmoid( logit( paying_slots / serious_field ) )
+
+paying slots: 3-12 assumed until prize ladders are verified on official pages
+serious field: P50 of the distribution below</pre>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-dim)">Heuristic cash EV = normalized prize x p(any payout). Prize-ladder data upgrades this to a ranked EV sum later.</p>
     </section>
 
     <section class="section">

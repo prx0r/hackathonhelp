@@ -48,6 +48,21 @@ const scoreNull = o.score_v01.opportunity_score == null;
     </section>
   )}
 
+  <section class="panel decision-panel">
+    <div class="label">Decision — what to do today</div>
+    <div class="decision-row">
+      <span class={'action-big act-'+o.decision.action.replace(/ /g,'')}>{o.decision.action}</span>
+      <div class="decision-reason">{o.decision.reason}</div>
+    </div>
+    <table class="math" style="margin-top:10px">
+      <tr><td>Finish-feasibility at deadline</td><td>{Math.round(o.decision.p_finish_proxy*100)}% <span style="color:var(--text-dim)">({o.decision.feasibility_label})</span></td></tr>
+      <tr><td>P(any payout) if competitive entry</td><td>{o.payout.baseline_any_payout!=null? Math.round(o.payout.baseline_any_payout*100)+'%':'—'} <span style="color:var(--text-dim)">(assumes {o.payout.paying_slots.p50}-{o.payout.paying_slots.p90} slots)</span></td></tr>
+      <tr><td>Heuristic cash EV</td><td>{o.payout.ev_cash_heuristic!=null? '$'+o.payout.ev_cash_heuristic.toLocaleString():'—'}</td></tr>
+      <tr><td>Build model</td><td>P50 {o.decision.build_model.p50_hours}h / P80 {o.decision.build_model.p80_hours}h at {o.decision.build_model.hours_per_day}h per day</td></tr>
+      {o.decision.latest_safe_start && <tr><td>Latest safe start</td><td>{o.decision.latest_safe_start}</td></tr>}
+    </table>
+  </section>
+
   <section class="grid2">
     <div class="panel">
       <div class="label">Prize normalization</div>
@@ -136,6 +151,14 @@ const scoreNull = o.score_v01.opportunity_score == null;
   .math td:last-child{text-align:right;color:var(--text);font-variant-numeric:tabular-nums;font-weight:600}
   .math tr.hl td{color:var(--accent);font-weight:800}
   .mathnote{font-size:13px;color:var(--text-muted);line-height:1.6}
+  .decision-panel .decision-row{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .action-big{font-size:20px;font-weight:900;padding:6px 16px;border-radius:9px;text-transform:uppercase}
+  .act-ENTERNOW{background:rgba(34,197,94,.18);color:#86efac}
+  .act-SPRINT{background:rgba(249,115,22,.18);color:#fdba74}
+  .act-PREP{background:rgba(59,130,246,.15);color:#93c5fd}
+  .act-WATCH{background:rgba(148,163,163,.15);color:var(--text-dim)}
+  .act-SKIP{background:rgba(239,68,68,.12);color:#fca5a5}
+  .act-ENDED{background:rgba(100,116,139,.12);color:var(--text-dim)}
   .scorebig{font-size:42px;font-weight:900;color:var(--accent);letter-spacing:-.03em;margin-bottom:8px}
   @media(max-width:700px){.grid2{grid-template-columns:1fr}}
 </style>

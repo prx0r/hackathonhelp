@@ -7,7 +7,7 @@ import derived from '../data/derived.json';
 
 const megas = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.mega).sort((a,b)=>b.mega.score-a.mega.score);
 // Grid = actionable only: attention>0 excludes <3-day events and TBA deadlines
-const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.attention > 0);
+const open = derived.opportunities.filter(o => o.status !== 'ended' && o.eligibility.eligible && o.decision.action !== 'SKIP');
 const toolate = derived.opportunities.filter(o => o.status==='open' && o.eligibility.eligible && o.attention <= 0 && o.metrics.days_left != null && o.metrics.days_left >= 0);
 // LIVE = usable field or closing soon; UPCOMING/FORMING = field still maturing
 const live = open.filter(o => o.field.field_status==='usable')
@@ -69,8 +69,11 @@ const tilesHtml = open.map(o => {
     : (o.prize_raw && o.prize_raw !== '$0' ? o.prize_raw : 'Prize TBA');
   return `<div class="tile" style="background:${c.bg};border-color:${c.border}">
           <div class="tile-top">
-            <span class="tile-score" title="attention ${o.attention} = score ${ab.score} x urgency ${ab.urgency_multiplier} (${ab.days_left==null?'TBA':ab.days_left+'d'})">${score ?? '—'}</span>
-            ${o.mega?`<span class="tile-mega">🔥</span>`:''}
+            <span style="display:flex;gap:4px;align-items:center">
+              <span class="tile-action act-${o.decision.action.replace(/ /g,'')}">${o.decision.action}</span>
+              ${o.mega?`<span class="tile-mega">🔥</span>`:''}
+            </span>
+            <span class="tile-score" title="${ab.formula}">${score ?? '—'}</span>
           </div>
           <a class="tile-title" href="/opps/${o.slug}" title="${esc(o.title)}">${esc(o.title)}</a>
           <div class="tile-org">${esc(o.organizer||'')}</div>
