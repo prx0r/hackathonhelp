@@ -1,0 +1,126 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
+    "slug": "gatewayhacks-2026-gatewayhacks-2026",
+    "title": "GatewayHacks 2026 | Software & AI ",
+    "organizer": "GatewayHacks",
+    "prize_usd": 53585,
+    "prize_raw": "$53,585",
+    "registrants": 247,
+    "starts_at": "2026-09-01T00:00:00.000Z",
+    "ends_at": "2026-10-02T23:59:00.000Z",
+    "time_left": "Upcoming",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "open_to_all": true,
+    "source_url": "https://gatewayhacks-2026.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.453Z",
+    "days_left": 42,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": true,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "official_rules",
+      "notes": "Headline includes non-cash items; cash portion unconfirmed"
+    },
+    "prize": {
+      "advertised_value": 53585,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 247,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 30,
+      "field_p10": 20,
+      "field_p50": 30,
+      "field_p90": 47,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 90,
+        "organizer_quality": null
+      },
+      "known_components": 1,
+      "opportunity_score": 85
+    },
+    "metrics": {
+      "equal_share_naive": 216.94,
+      "fair_share_serious": null,
+      "days_left": 42
+    },
+    "cautions": [
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.2,
+      "p_paid": 0.2,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "prize unconfirmed — waiting reveals tracks/prizes",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-20",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20076.5,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 85,
+      "formula": "WATCH - prize unconfirmed — waiting reveals tracks/prizes"
+    }
+  },
+  "links": {
+    "html": "/opps/gatewayhacks-2026-gatewayhacks-2026",
+    "official": "https://gatewayhacks-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

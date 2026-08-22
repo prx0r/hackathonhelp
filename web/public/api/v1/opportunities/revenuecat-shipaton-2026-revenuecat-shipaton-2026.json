@@ -1,0 +1,120 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
+    "slug": "revenuecat-shipaton-2026-revenuecat-shipaton-2026",
+    "title": "RevenueCat Shipaton 2026",
+    "organizer": "RevenueCat",
+    "prize_usd": 740000,
+    "prize_raw": "$740,000",
+    "registrants": 19455,
+    "starts_at": "2026-07-31T00:00:00.000Z",
+    "ends_at": "2026-10-01T23:59:00.000Z",
+    "time_left": "about 1 month left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Design",
+      "Gaming",
+      "Mobile"
+    ],
+    "open_to_all": true,
+    "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:31.883Z",
+    "days_left": 41,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": false,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
+      ],
+      "confidence": "official_rules",
+      "notes": "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
+    },
+    "prize": {
+      "advertised_value": 740000,
+      "cash_value": 740000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 740000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 19455,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 973,
+      "field_p10": 632,
+      "field_p50": 973,
+      "field_p90": 1508,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": 38.04,
+      "fair_share_serious": 760.53,
+      "days_left": 41
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.006,
+      "p_paid": 0.006,
+      "ev_cash_heuristic": 4563,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-19",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/revenuecat-shipaton-2026-revenuecat-shipaton-2026",
+    "official": "https://revenuecat-shipaton-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

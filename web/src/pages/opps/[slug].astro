@@ -125,6 +125,20 @@ const scoreNull = o.score_v01.opportunity_score == null;
       {o.eligibility.notes && <li><strong>Research note:</strong> {o.eligibility.notes}</li>}
     </ul>
   </section>
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context':'https://schema.org',
+  '@type':'Event',
+  name:o.title,
+  organizer:{'@type':'Organization',name:o.organizer||o.title},
+  eventStatus:o.status==='ended'?'https://schema.org/EventScheduled':'https://schema.org/EventScheduled',
+  eventAttendanceMode:o.location_type==='online'?'https://schema.org/OnlineEventAttendanceMode':'https://schema.org/OfflineEventAttendanceMode',
+  startDate:o.starts_at||undefined,
+  endDate:o.ends_at||undefined,
+  location:o.location_type==='online'?{'@type':'VirtualLocation',url:o.source_url}:{'@type':'Place',name:o.location},
+  offers:{'@type':'Offer',price:o.prize.normalized_value??0,priceCurrency:'USD',url:o.source_url,availability:o.status==='ended'?'https://schema.org/SoldOut':'https://schema.org/InStock'},
+  url:o.source_url,
+  description:`Opportunity score ${o.score_v01.opportunity_score??'n/a'}. Action: ${o.decision.action}. ${o.decision.reason}`
+})} />
 </Base>
 
 <style>

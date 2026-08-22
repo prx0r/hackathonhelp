@@ -1,0 +1,124 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-oneaquahealth-ieee-hackathon-oneaquahealth-ieee-hackathon",
+    "slug": "oneaquahealth-ieee-hackathon-oneaquahealth-ieee-hackathon",
+    "title": "OneAquaHealth IEEE Global Hackathon",
+    "organizer": "OneAquaHealth",
+    "prize_usd": 3000,
+    "prize_raw": "$3,000",
+    "registrants": 554,
+    "starts_at": "2026-09-14T00:00:00.000Z",
+    "ends_at": "2026-10-01T23:59:00.000Z",
+    "time_left": "Upcoming",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Health",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.286Z",
+    "days_left": 41,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 3000,
+      "cash_value": 3000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 3000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 554,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 44,
+      "field_p10": 29,
+      "field_p50": 44,
+      "field_p90": 68,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 55,
+        "winnability": 90,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 57
+    },
+    "metrics": {
+      "equal_share_naive": 5.42,
+      "fair_share_serious": 68.18,
+      "days_left": 41
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.136,
+      "p_paid": 0.136,
+      "ev_cash_heuristic": 409,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-09-19",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-19",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20051.3,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 57,
+      "formula": "WATCH - far out; latest safe start 2026-09-19"
+    }
+  },
+  "links": {
+    "html": "/opps/oneaquahealth-ieee-hackathon-oneaquahealth-ieee-hackathon",
+    "official": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

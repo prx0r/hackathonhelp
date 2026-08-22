@@ -1,0 +1,123 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-ai-innovation-hackathon-2026-build-real-world-ai-solu",
+    "slug": "br-unstop-ai-innovation-hackathon-2026-build-real-world-ai-solu",
+    "title": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions",
+    "organizer": "Bharat Academix",
+    "prize_usd": 37,
+    "prize_raw": "₹37K",
+    "registrants": 4305,
+    "starts_at": null,
+    "ends_at": "2026-08-28T18:30:00.000Z",
+    "time_left": "6 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:37.335Z",
+    "eligibility_flags": [
+      "All"
+    ],
+    "days_left": 6,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 37,
+      "cash_value": 37,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 37,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 4305,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 215,
+      "field_p10": 140,
+      "field_p50": 215,
+      "field_p90": 333,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 3,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 13
+    },
+    "metrics": {
+      "equal_share_naive": 0.01,
+      "fair_share_serious": 0.17,
+      "days_left": 6
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.028,
+      "p_paid": 0.028,
+      "ev_cash_heuristic": 1,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.8,
+      "feasibility_label": "5-7d",
+      "latest_safe_start": "2026-08-16",
+      "p_finish_proxy": 0.8,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -88.3,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 13,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-ai-innovation-hackathon-2026-build-real-world-ai-solu",
+    "official": "https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
+    "changes": "/api/v1/changes.json"
+  }
+}

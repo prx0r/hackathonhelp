@@ -1,0 +1,120 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-agentic-cinema-agentic-cinema",
+    "slug": "agentic-cinema-agentic-cinema",
+    "title": "Agentic Cinema: The Blockbuster Hackathon",
+    "organizer": "Agentic",
+    "prize_usd": 75000,
+    "prize_raw": "$75,000",
+    "registrants": 7689,
+    "starts_at": "2026-07-27T00:00:00.000Z",
+    "ends_at": "2026-09-09T23:59:00.000Z",
+    "time_left": "18 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Databases",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "open_to_all": true,
+    "source_url": "https://agentic-cinema.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:31.884Z",
+    "days_left": 19,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": false,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "age-of-majority eligibility per official rules"
+      ],
+      "confidence": "official_rules",
+      "notes": "age-of-majority eligibility per official rules"
+    },
+    "prize": {
+      "advertised_value": 75000,
+      "cash_value": 75000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 75000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 7689,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 384,
+      "field_p10": 250,
+      "field_p50": 384,
+      "field_p90": 595,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": 9.75,
+      "fair_share_serious": 195.31,
+      "days_left": 19
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.016,
+      "p_paid": 0.016,
+      "ev_cash_heuristic": 1172,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-08-28",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/agentic-cinema-agentic-cinema",
+    "official": "https://agentic-cinema.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

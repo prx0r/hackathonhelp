@@ -1,0 +1,129 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-boss-battle-boss-battle",
+    "slug": "br-boss-battle-boss-battle",
+    "title": "BOSS Battle",
+    "organizer": null,
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 33,
+    "starts_at": null,
+    "ends_at": "2026-09-28T18:29:00.000Z",
+    "time_left": "37 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://boss-battle.devfolio.co",
+    "source": "brabble",
+    "source_authority": "unverified",
+    "observed_at": "2026-08-22T21:30:41.361Z",
+    "eligibility_flags": [],
+    "days_left": 37,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "official_rules",
+      "notes": "Bitcoin/Nostr tracks, technical judging; age rules not explicit"
+    },
+    "prize": {
+      "advertised_value": 3000,
+      "cash_value": 3000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 3000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 33,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 12,
+      "field_p10": 8,
+      "field_p50": 12,
+      "field_p90": 19,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 85,
+        "winnability": 90,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 79
+    },
+    "metrics": {
+      "equal_share_naive": 90.91,
+      "fair_share_serious": 250,
+      "days_left": 37
+    },
+    "cautions": [
+      "prize not published on platform card — see official page"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.5,
+      "p_paid": 0.5,
+      "ev_cash_heuristic": 1500,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "PREP",
+      "reason": "far out; latest safe start 2026-09-16 · capped: prize unconfirmed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-16",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$250 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 30086.1,
+    "attention": 30086.1,
+    "attention_breakdown": {
+      "action": "PREP",
+      "score": 79,
+      "formula": "PREP - far out; latest safe start 2026-09-16 · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-boss-battle-boss-battle",
+    "official": "https://boss-battle.devfolio.co",
+    "changes": "/api/v1/changes.json"
+  }
+}

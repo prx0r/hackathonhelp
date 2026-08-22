@@ -1,0 +1,120 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-technisa-hacks-technisa-hacks",
+    "slug": "technisa-hacks-technisa-hacks",
+    "title": "TechNisa Hacks ",
+    "organizer": "TechNisa",
+    "prize_usd": null,
+    "prize_raw": "$CAD 0",
+    "registrants": 22,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "about 15 hours left",
+    "location_type": "in-person",
+    "location": "Toronto Metropolitan University",
+    "themes": [
+      "Beginner Friendly",
+      "Education",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://technisa-hacks.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.100Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (Toronto Metropolitan University)"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 22,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/technisa-hacks-technisa-hacks",
+    "official": "https://technisa-hacks.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

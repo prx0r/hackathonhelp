@@ -1,0 +1,120 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-codelinc11-codelinc11",
+    "slug": "codelinc11-codelinc11",
+    "title": "codeLinc 11 with Lincoln Financial & AWS",
+    "organizer": "codeLinc",
+    "prize_usd": 10000,
+    "prize_raw": "$10,000",
+    "registrants": 180,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "Upcoming",
+    "location_type": "in-person",
+    "location": "Lincoln Financial Group - Greensboro, NC",
+    "themes": [
+      "Enterprise",
+      "Fintech",
+      "Machine Learning/AI"
+    ],
+    "open_to_all": true,
+    "source_url": "https://codelinc11.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.453Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (Lincoln Financial Group - Greensboro, NC)"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 10000,
+      "cash_value": 10000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 10000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 180,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 36,
+      "field_p10": 23,
+      "field_p50": 36,
+      "field_p90": 56,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": 55.56,
+      "fair_share_serious": 277.78,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.167,
+      "p_paid": 0.167,
+      "ev_cash_heuristic": 1667,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/codelinc11-codelinc11",
+    "official": "https://codelinc11.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

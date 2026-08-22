@@ -1,0 +1,120 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
+    "slug": "allthingsagentichackathon-allthingsagentichackathon",
+    "title": "All Things Agentic Hackathon",
+    "organizer": "All",
+    "prize_usd": 180000,
+    "prize_raw": "$180,000",
+    "registrants": 6982,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "9 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Enterprise",
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "open_to_all": true,
+    "source_url": "https://allthingsagentichackathon.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:31.884Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": true,
+      "age_confirmed": false,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "18+ / age-of-majority requirement per official rules"
+      ],
+      "confidence": "official_rules",
+      "notes": "18+ / age-of-majority requirement per official rules"
+    },
+    "prize": {
+      "advertised_value": 180000,
+      "cash_value": 180000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 180000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 6982,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 349,
+      "field_p10": 227,
+      "field_p50": 349,
+      "field_p90": 541,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": 25.78,
+      "fair_share_serious": 515.76,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.017,
+      "p_paid": 0.017,
+      "ev_cash_heuristic": 3095,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/allthingsagentichackathon-allthingsagentichackathon",
+    "official": "https://allthingsagentichackathon.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

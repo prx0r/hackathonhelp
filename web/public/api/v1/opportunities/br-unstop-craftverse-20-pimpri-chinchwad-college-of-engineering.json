@@ -1,0 +1,129 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering",
+    "slug": "br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering",
+    "title": "CraftVerse 2.0",
+    "organizer": "Pimpri Chinchwad College Of Engineering & Research (PCCOE&R), Ravet, Pimpri-Chinchwad, Pune",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 2444,
+    "starts_at": null,
+    "ends_at": "2026-09-15T18:29:55.000Z",
+    "time_left": "24 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/craftverse-20-pimpri-chinchwad-college-of-engineering-research-pccoer-ravet-pimpri-chinchwad-pune-1719658",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:39.985Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "days_left": 24,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 2444,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 122,
+      "field_p10": 79,
+      "field_p50": 122,
+      "field_p90": 189,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 20,
+        "organizer_quality": null
+      },
+      "known_components": 1,
+      "opportunity_score": 7
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 24
+    },
+    "cautions": [
+      "prize not published on platform card — see official page",
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.049,
+      "p_paid": 0.049,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "marginal — recheck as field matures · capped: prize unconfirmed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-03",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20006.3,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 7,
+      "formula": "WATCH - marginal — recheck as field matures · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering",
+    "official": "https://unstop.com/hackathons/craftverse-20-pimpri-chinchwad-college-of-engineering-research-pccoer-ravet-pimpri-chinchwad-pune-1719658",
+    "changes": "/api/v1/changes.json"
+  }
+}

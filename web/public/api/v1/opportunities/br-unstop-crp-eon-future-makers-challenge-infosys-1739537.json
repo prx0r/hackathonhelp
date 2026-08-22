@@ -1,0 +1,129 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-crp-eon-future-makers-challenge-infosys-1739537",
+    "slug": "br-unstop-crp-eon-future-makers-challenge-infosys-1739537",
+    "title": "E.ON Future Makers Challenge",
+    "organizer": "Infosys",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 876,
+    "starts_at": null,
+    "ends_at": "2026-08-31T18:29:32.000Z",
+    "time_left": "9 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/crp-eon-future-makers-challenge-infosys-1739537",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:38.495Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "days_left": 9,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 876,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 70,
+      "field_p10": 46,
+      "field_p50": 70,
+      "field_p90": 109,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 13,
+        "organizer_quality": null
+      },
+      "known_components": 1,
+      "opportunity_score": 1
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 9
+    },
+    "cautions": [
+      "prize not published on platform card — see official page",
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.086,
+      "p_paid": 0.086,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time · capped: prize unconfirmed",
+      "feasibility": 0.9,
+      "feasibility_label": "7-10d",
+      "latest_safe_start": "2026-08-19",
+      "p_finish_proxy": 0.9,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -99.1,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 1,
+      "formula": "SKIP - weak opportunity for remaining time · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-crp-eon-future-makers-challenge-infosys-1739537",
+    "official": "https://unstop.com/hackathons/crp-eon-future-makers-challenge-infosys-1739537",
+    "changes": "/api/v1/changes.json"
+  }
+}

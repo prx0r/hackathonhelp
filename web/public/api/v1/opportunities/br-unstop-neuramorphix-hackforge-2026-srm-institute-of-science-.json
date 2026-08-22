@@ -1,0 +1,128 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-neuramorphix-hackforge-2026-srm-institute-of-science-",
+    "slug": "br-unstop-neuramorphix-hackforge-2026-srm-institute-of-science-",
+    "title": "NeuraMorphix HackForge 2026",
+    "organizer": "SRM Institute of Science and Technology (SRMIST), Kattankulathur, Chennai",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 573,
+    "starts_at": null,
+    "ends_at": "2026-08-25T17:42:35.000Z",
+    "time_left": "3 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/neuramorphix-hackforge-2026-srm-institute-of-science-and-technology-kattankulathur-chennai-1708229",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:35.765Z",
+    "eligibility_flags": [
+      "School Students",
+      "Undergraduate",
+      "Engineering Students"
+    ],
+    "days_left": 3,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 573,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 46,
+      "field_p10": 30,
+      "field_p50": 46,
+      "field_p90": 71,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 7,
+        "organizer_quality": null
+      },
+      "known_components": 1,
+      "opportunity_score": 0
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 3
+    },
+    "cautions": [
+      "prize not published on platform card — see official page",
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.13,
+      "p_paid": 0.13,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "window reached, opportunity weak · capped: prize unconfirmed",
+      "feasibility": 0.45,
+      "feasibility_label": "2-3d",
+      "latest_safe_start": "2026-08-13",
+      "p_finish_proxy": 0.45,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 0,
+      "formula": "SKIP - window reached, opportunity weak · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-neuramorphix-hackforge-2026-srm-institute-of-science-",
+    "official": "https://unstop.com/hackathons/neuramorphix-hackforge-2026-srm-institute-of-science-and-technology-kattankulathur-chennai-1708229",
+    "changes": "/api/v1/changes.json"
+  }
+}

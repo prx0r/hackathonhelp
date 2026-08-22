@@ -277,6 +277,98 @@ fs.mkdirSync(path.join(ROOT,'web/public/api/v1'),{recursive:true});
 for(const [f,obj] of [['top',{deals:top}],['opportunities',payload],['changes',{changes}]])
 fs.writeFileSync(path.join(ROOT,`web/public/api/v1/${f}.json`),JSON.stringify({generated_at:payload.generated_at,schema_version:payload.schema_version,...obj},null,2));
 fs.writeFileSync(path.join(ROOT,'web/src/data/derived.json'),JSON.stringify(payload,null,2));
+
+// ---------- MACHINE-READABLE LAYER ----------
+const FIELD_DOCS = {
+  slug:{type:'string',desc:'stable URL id; /opps/<slug>'},
+  title:{type:'string',desc:'event name from source platform'},
+  organizer:{type:'string|null',desc:'hosting org; null when platform hides it'},
+  prize_usd:{type:'number|null',desc:'raw USD parsed from platform card'},
+  prize:{type:'object',desc:'advertised_value|cash_value|credits_value|normalized_value|headline_inflation (%)',unit:'USD'},
+  registrants:{type:'int|null',desc:'platform registration count'},
+  field:{type:'object',desc:'field_status(usable|forming), family_prior{submissions_per_registration,source}, estimated_serious_field P50, field_p10/p50/p90'},
+  metrics:{type:'object',desc:'equal_share_naive $/registrant, fair_share_serious $/est.submission, days_left'},
+  score_v01:{type:'object',desc:'components{expected_prize_value,winnability,organizer_quality} 0-100, known_components, opportunity_score'},
+  payout:{type:'object',desc:'paying_slots assumption p10/p50/p90, baseline_any_payout, p_paid sigmoid, ev_cash_heuristic USD',unit:'USD/%'},
+  decision:{type:'object',desc:'action ENTER NOW|SPRINT|PREP|WATCH|SKIP|ENDED, reason, feasibility 0-1, feasibility_label, latest_safe_start YYYY-MM-DD, p_finish_proxy, build_model{p50_hours,p80_hours,hours_per_day,buffer_days,reuse_fraction}'},
+  mega:{type:'object|null',desc:'outlier flag {score,reasons[],category}; null = not unusual'},
+  cautions:{type:'string[]',desc:'verification warnings (unconfirmed cash, thin-field outliers, TBA prizes)'},
+  eligibility:{type:'object',desc:'eligible bool, failed[], confidence official_rules|platform_metadata_unverified, notes; gates{} incl age_confirmed UNKNOWN semantics'},
+  themes:{type:'string[]',desc:'category tags from platform'},
+  location_type:{type:'enum',desc:'online | in-person (in-person events are gated OUT of rankings)'},
+  starts_at:{type:'ISO date|null',desc:'submission window open'},
+  ends_at:{type:'ISO date|null',desc:'deadline; drives feasibility prior'},
+  source_url:{type:'url',desc:'OFFICIAL event page - always verify before committing'},
+  source:{type:'enum',desc:'devpost | brabble'},
+  source_authority:{type:'enum',desc:'official_platform_api | platform_metadata_unverified'},
+  observed_at:{type:'ISO datetime',desc:'when facts were captured'},
+};
+
+// per-opportunity endpoints
+const oppDir = path.join(ROOT,'web/public/api/v1/opportunities');
+fs.mkdirSync(oppDir,{recursive:true});
+for(const o of rows){
+  fs.writeFileSync(path.join(oppDir,`${o.slug}.json`), JSON.stringify({
+    schema_version:'hackathonhelp.api.v2',
+    generated_at:payload.generated_at,
+    field_documentation:'see /api/v1/index.json',
+    opportunity:o,
+    links:{
+      html:`/opps/${o.slug}`,
+      official:o.source_url,
+      changes:'/api/v1/changes.json'
+    }
+  },null,2));
+}
+
+// API index / self-description
+fs.writeFileSync(path.join(ROOT,'web/public/api/v1/index.json'), JSON.stringify({
+  api:'hackathonhelp', version:'v2', generated_at:payload.generated_at,
+  description:'Opportunity intelligence for online individual builders. Deterministic pipeline; unknown=null; official sources override metadata.',
+  endpoints:[
+    {path:'/api/v1/top.json', desc:'current top by attention (decision-ranked)'},
+    {path:'/api/v1/opportunities.json', desc:'all opportunities + full computed record'},
+    {path:'/api/v1/opportunities/<slug>.json', desc:'single opportunity'},
+    {path:'/api/v1/changes.json', desc:'diff since previous snapshot (added/changed fields)'},
+    {path:'/rss.xml', desc:'feed: top actionable opportunities'},
+    {path:'/sitemap.xml', desc:'all pages'}
+  ],
+  decision_states:['ENTER NOW','SPRINT','PREP','WATCH','SKIP','ENDED'],
+  field_documentation:FIELD_DOCS
+},null,2));
+
+// RSS feed
+const feedRows=[...rows].filter(r=>r.status!=='ended'&&r.eligibility.eligible).sort((a,b)=>b.order_key-a.order_key).slice(0,50);
+const esc2=t=>String(t??'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const rssItems=feedRows.map(o=>`    <item>
+      <title>[${o.decision.action}] ${esc2(o.title)}</title>
+      <link>https://hackathonhelp.pages.dev/opps/${o.slug}</link>
+      <guid isPermaLink="false">${o.slug}-${o.observed_at}</guid>
+      <pubDate>${new Date(o.observed_at).toUTCString()}</pubDate>
+      <description>${esc2('Prize(norm) '+(o.prize.normalized_value!=null?'$'+Math.round(o.prize.normalized_value):'TBA')+' | field ~'+(o.field.field_p50??'?')+' | '+o.decision.action+' - '+o.decision.reason)}</description>
+    </item>`).join('\n');
+fs.writeFileSync(path.join(ROOT,'web/public/rss.xml'),
+`<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>HackathonHelp - actionable AI-builder opportunities</title>
+<link>https://hackathonhelp.pages.dev</link>
+<description>Decision-ranked hackathon intelligence. Credit HackathonHelp.</description>
+${rssItems}
+</channel></rss>`);
+
+// sitemap
+const urls=['/','/opps','/changes','/methodology','/api',...rows.map(r=>'/opps/'+r.slug)];
+fs.writeFileSync(path.join(ROOT,'web/public/sitemap.xml'),
+`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map(u=>`<url><loc>https://hackathonhelp.pages.dev${u}</loc></url>`).join('\n')}
+</urlset>`);
+
+// api docs payload for /api page
+fs.writeFileSync(path.join(ROOT,'web/src/data/apidocs.json'), JSON.stringify({generated_at:payload.generated_at,endpoints:[
+  {path:'/api/v1/top.json'},{path:'/api/v1/opportunities.json'},{path:'/api/v1/opportunities/<slug>.json'},{path:'/api/v1/changes.json'},{path:'/rss.xml'},{path:'/sitemap.xml'}
+],fields:FIELD_DOCS},null,2));
+
 rows.forEach(r=>{ if(r.metrics.days_left==null) r.cautions=[...(r.cautions||[]),'deadline not published']; });
 console.log(`build-data v2: ${rows.length} opps | live-scored ${live.length} | excluded ${excluded.length} | mega ${payload.counts.mega}`);
 console.log('TOP:');

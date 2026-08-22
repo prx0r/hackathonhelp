@@ -1,0 +1,126 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-ml-bubble-2026-machine-learning-awareness-skill-build",
+    "slug": "br-unstop-ml-bubble-2026-machine-learning-awareness-skill-build",
+    "title": "ML Bubble 2026 – Machine Learning Awareness & Skill Building Challenge",
+    "organizer": "Army Institute of Technology (AIT), Pune",
+    "prize_usd": 30,
+    "prize_raw": "₹30K",
+    "registrants": 2321,
+    "starts_at": null,
+    "ends_at": "2026-08-29T18:30:00.000Z",
+    "time_left": "7 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:37.335Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "days_left": 7,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 30,
+      "cash_value": 30,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 30,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 2321,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 116,
+      "field_p10": 75,
+      "field_p50": 116,
+      "field_p90": 180,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 6,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 14
+    },
+    "metrics": {
+      "equal_share_naive": 0.01,
+      "fair_share_serious": 0.26,
+      "days_left": 7
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.052,
+      "p_paid": 0.052,
+      "ev_cash_heuristic": 2,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.8,
+      "feasibility_label": "5-7d",
+      "latest_safe_start": "2026-08-17",
+      "p_finish_proxy": 0.8,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -87.4,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 14,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-ml-bubble-2026-machine-learning-awareness-skill-build",
+    "official": "https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558",
+    "changes": "/api/v1/changes.json"
+  }
+}

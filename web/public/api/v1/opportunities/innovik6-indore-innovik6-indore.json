@@ -1,0 +1,123 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-innovik6-indore-innovik6-indore",
+    "slug": "innovik6-indore-innovik6-indore",
+    "title": "INNOVIK 6.0 – International Hackathon 2026 | Indore Edition",
+    "organizer": "INNOVIK",
+    "prize_usd": 200000,
+    "prize_raw": "₹ 200,000",
+    "registrants": 69,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "2 days left",
+    "location_type": "in-person",
+    "location": "VITM Indore",
+    "themes": [
+      "Education",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://innovik6-indore.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.934Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (VITM Indore)"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 200000,
+      "cash_value": 200000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 200000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 69,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 24,
+      "field_p10": 16,
+      "field_p50": 24,
+      "field_p90": 37,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": 2898.55,
+      "fair_share_serious": 8333.33,
+      "days_left": null
+    },
+    "cautions": [
+      "extraordinary per-submission value — verify payout history",
+      "large pool, very early/small field — confirm organizer track record"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.25,
+      "p_paid": 0.25,
+      "ev_cash_heuristic": 50000,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/innovik6-indore-innovik6-indore",
+    "official": "https://innovik6-indore.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

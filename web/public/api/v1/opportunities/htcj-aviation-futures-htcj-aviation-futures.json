@@ -1,0 +1,122 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-htcj-aviation-futures-htcj-aviation-futures",
+    "slug": "htcj-aviation-futures-htcj-aviation-futures",
+    "title": "HTCJ Aviation Futures Innovation Challenge",
+    "organizer": "HTCJ",
+    "prize_usd": null,
+    "prize_raw": "",
+    "registrants": 44,
+    "starts_at": "2026-06-25T00:00:00.000Z",
+    "ends_at": "2026-10-08T23:59:00.000Z",
+    "time_left": "about 2 months left",
+    "location_type": "in-person",
+    "location": "San Diego Convention Center ",
+    "themes": [
+      "Enterprise",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://htcj-aviation-futures.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.100Z",
+    "days_left": 48,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (San Diego Convention Center )"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 44,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 48
+    },
+    "cautions": [
+      "prize not published on platform card — see official page"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-26",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/htcj-aviation-futures-htcj-aviation-futures",
+    "official": "https://htcj-aviation-futures.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

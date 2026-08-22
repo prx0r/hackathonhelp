@@ -1,0 +1,130 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-launchhacks-v-launchhacks-v",
+    "slug": "launchhacks-v-launchhacks-v",
+    "title": "LaunchHacks V",
+    "organizer": "LaunchHacks",
+    "prize_usd": 17575,
+    "prize_raw": "$17,575",
+    "registrants": 1229,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "Upcoming",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Beginner Friendly",
+      "Education",
+      "Machine Learning/AI"
+    ],
+    "open_to_all": true,
+    "source_url": "https://launchhacks-v.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.286Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 17575,
+      "cash_value": 17575,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 17575,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 1229,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 61,
+      "field_p10": 40,
+      "field_p50": 61,
+      "field_p90": 95,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 85,
+        "winnability": 10,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 48
+    },
+    "metrics": {
+      "equal_share_naive": 14.3,
+      "fair_share_serious": 288.11,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.098,
+      "p_paid": 0.098,
+      "ev_cash_heuristic": 1729,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "deadline not published",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$288.11 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 20058.2,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 48,
+      "formula": "WATCH - deadline not published"
+    }
+  },
+  "links": {
+    "html": "/opps/launchhacks-v-launchhacks-v",
+    "official": "https://launchhacks-v.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

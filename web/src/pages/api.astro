@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import docs from '../data/apidocs.json';
+
+const stateColors = {PREP:'#93c5fd', WATCH:'var(--text-dim)'};
+---
+<Base title="Machine API - HackathonHelp">
+  <section class="hero">
+    <div class="eyebrow">For agents & integrations</div>
+    <h1>Machine API</h1>
+    <p class="subtitle">Everything the human site shows, as stable JSON. CORS open. No key. Updated every research run.</p>
+  </section>
+
+  <div class="table-container" style="margin-bottom:32px">
+    <table>
+      <thead><tr><th>Endpoint</th><th>Returns</th></tr></thead>
+      <tbody>
+        {docs.endpoints.map(e => (
+          <tr>
+            <td><a href={e.path.replace('<slug>','boss-battle-boss-battle')} style="font-family:monospace;font-size:13px">{e.path}</a></td>
+            <td style="font-size:13px;color:var(--text-muted)">{e.path.includes('top') ? 'Top opportunities by attention (decision-ranked)' :
+              e.path.includes('changes') ? 'Diff vs previous snapshot: added events + changed fields' :
+              e.path.includes('slug') ? 'One opportunity, full computed record' :
+              e.path.includes('sitemap') ? 'All page URLs' : 'Every opportunity with full computed record'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 style="margin-bottom:12px">Field dictionary ({Object.keys(docs.fields).length} fields)</h2>
+  <div class="table-container">
+    <table>
+      <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+      <tbody>
+        {Object.entries(docs.fields).map(([name,f]) => (
+          <tr>
+            <td style="font-family:monospace;font-size:12px;color:var(--accent)">{name}</td>
+            <td style="font-family:monospace;font-size:11px;color:var(--text-dim)">{f.type}{f.unit ? ` (${f.unit})` : ''}</td>
+            <td style="font-size:13px;color:var(--text-muted)">{f.desc}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 style="margin:32px 0 12px">Conventions</h2>
+  <ul class="conv">
+    <li><strong>Unknown = null.</strong> Never inferred. A null prize means we could not verify one — not that it is free.</li>
+    <li><strong>Decision states:</strong> ENTER NOW → SPRINT → PREP → WATCH → SKIP (+ ENDED). Each record carries the reason.</li>
+    <li><strong>Assumptions are embedded:</strong> payout.paying_slots and decision.build_model ship inside every record so you can see what was assumed.</li>
+    <li><strong>official source_url always included</strong> — verify there before committing hours.</li>
+    <li>If you build on this API, credit hackathonhelp.pages.dev and link back.</li>
+  </ul>
+</Base>
+
+<style>
+  .table-container{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow-x:auto}
+  table{width:100%;border-collapse:collapse}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{color:var(--text-dim);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+  h2{font-size:18px;font-weight:700}
+  .conv{padding-left:18px}
+  .conv li{font-size:13px;color:var(--text-muted);margin-bottom:8px;line-height:1.6}
+</style>

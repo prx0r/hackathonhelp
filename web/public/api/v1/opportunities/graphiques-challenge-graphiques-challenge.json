@@ -1,0 +1,127 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-graphiques-challenge-graphiques-challenge",
+    "slug": "graphiques-challenge-graphiques-challenge",
+    "title": "Graphiques Innovation Challenge ",
+    "organizer": "Graphiques",
+    "prize_usd": null,
+    "prize_raw": "",
+    "registrants": 20,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "about 12 hours left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Enterprise",
+      "Fintech",
+      "Productivity"
+    ],
+    "open_to_all": true,
+    "source_url": "https://graphiques-challenge.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.286Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 20,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": null,
+        "organizer_quality": null
+      },
+      "known_components": 0,
+      "opportunity_score": 0
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": null
+    },
+    "cautions": [
+      "prize not published on platform card — see official page",
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "deadline not published",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20000,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 0,
+      "formula": "WATCH - deadline not published"
+    }
+  },
+  "links": {
+    "html": "/opps/graphiques-challenge-graphiques-challenge",
+    "official": "https://graphiques-challenge.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

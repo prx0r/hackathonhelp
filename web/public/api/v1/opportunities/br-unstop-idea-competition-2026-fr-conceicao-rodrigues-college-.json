@@ -1,0 +1,129 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
+    "slug": "br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
+    "title": "Idea Competition 2026",
+    "organizer": "Fr. Conceicao Rodrigues College of Engineering (FRCRCE), Bandra",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 544,
+    "starts_at": null,
+    "ends_at": "2026-09-17T13:00:00.000Z",
+    "time_left": "26 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:39.985Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "days_left": 26,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 544,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 44,
+      "field_p10": 29,
+      "field_p50": 44,
+      "field_p90": 68,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 59,
+        "organizer_quality": null
+      },
+      "known_components": 1,
+      "opportunity_score": 38
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 26
+    },
+    "cautions": [
+      "prize not published on platform card — see official page",
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.136,
+      "p_paid": 0.136,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "marginal — recheck as field matures · capped: prize unconfirmed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-05",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20034.2,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 38,
+      "formula": "WATCH - marginal — recheck as field matures · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-",
+    "official": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
+    "changes": "/api/v1/changes.json"
+  }
+}

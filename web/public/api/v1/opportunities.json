@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:56:10.818Z",
+  "generated_at": "2026-08-22T22:00:22.242Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 144,
@@ -8328,7 +8328,7 @@
       "source_authority": "unverified",
       "observed_at": "2026-08-22T21:30:41.361Z",
       "eligibility_flags": [],
-      "days_left": 37,
+      "days_left": 36,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -8381,7 +8381,7 @@
       "metrics": {
         "equal_share_naive": null,
         "fair_share_serious": null,
-        "days_left": 37
+        "days_left": 36
       },
       "cautions": [
         "prize not published on platform card — see official page",

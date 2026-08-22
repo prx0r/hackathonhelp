@@ -1,0 +1,124 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-hack-the-limit-1-hack-the-limit-1",
+    "slug": "hack-the-limit-1-hack-the-limit-1",
+    "title": "Hack The Limit",
+    "organizer": "Hack",
+    "prize_usd": 350,
+    "prize_raw": "$350",
+    "registrants": 630,
+    "starts_at": "2026-06-18T00:00:00.000Z",
+    "ends_at": "2026-08-30T23:59:00.000Z",
+    "time_left": "7 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Open Ended",
+      "Productivity",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://hack-the-limit-1.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.392Z",
+    "days_left": 9,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 350,
+      "cash_value": 350,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 350,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 630,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 50,
+      "field_p10": 33,
+      "field_p50": 50,
+      "field_p90": 78,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 18,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 17
+    },
+    "metrics": {
+      "equal_share_naive": 0.56,
+      "fair_share_serious": 7,
+      "days_left": 9
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.12,
+      "p_paid": 0.12,
+      "ev_cash_heuristic": 42,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.9,
+      "feasibility_label": "7-10d",
+      "latest_safe_start": "2026-08-18",
+      "p_finish_proxy": 0.9,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -84.7,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 17,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/hack-the-limit-1-hack-the-limit-1",
+    "official": "https://hack-the-limit-1.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-gibc-v2-gibc-v2",
+    "slug": "gibc-v2-gibc-v2",
+    "title": "Global Innovation Build Challenge V2",
+    "organizer": "Global",
+    "prize_usd": 148445,
+    "prize_raw": "$148,445",
+    "registrants": 319,
+    "starts_at": "2026-07-11T00:00:00.000Z",
+    "ends_at": "2026-09-21T23:59:00.000Z",
+    "time_left": "30 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Machine Learning/AI",
+      "Social Good",
+      "Beginner Friendly"
+    ],
+    "open_to_all": true,
+    "source_url": "https://gibc-v2.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.570Z",
+    "days_left": 31,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 148445,
+      "cash_value": 148445,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 148445,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 319,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 38,
+      "field_p10": 25,
+      "field_p50": 38,
+      "field_p90": 59,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 82,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 67
+    },
+    "metrics": {
+      "equal_share_naive": 465.34,
+      "fair_share_serious": 3906.45,
+      "days_left": 31
+    },
+    "cautions": [
+      "extraordinary per-submission value — verify payout history"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.158,
+      "p_paid": 0.158,
+      "ev_cash_heuristic": 23439,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "PREP",
+      "reason": "commit by 2026-09-09",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-09",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$3906.45 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 30075.3,
+    "attention": 30075.3,
+    "attention_breakdown": {
+      "action": "PREP",
+      "score": 67,
+      "formula": "PREP - commit by 2026-09-09"
+    }
+  },
+  "links": {
+    "html": "/opps/gibc-v2-gibc-v2",
+    "official": "https://gibc-v2.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

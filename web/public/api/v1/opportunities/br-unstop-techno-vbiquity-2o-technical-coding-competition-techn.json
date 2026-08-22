@@ -1,0 +1,125 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-techno-vbiquity-2o-technical-coding-competition-techn",
+    "slug": "br-unstop-techno-vbiquity-2o-technical-coding-competition-techn",
+    "title": "Techno Vbiquity 2.O – Technical Coding Competition",
+    "organizer": "Technocrats Group of Institutions, Bhopal, Madhya Pradesh",
+    "prize_usd": 5,
+    "prize_raw": "₹5K",
+    "registrants": 456,
+    "starts_at": null,
+    "ends_at": "2026-08-31T18:29:00.000Z",
+    "time_left": "9 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/techno-vbiquity-2o-technical-coding-competition-technocrats-group-of-institutions-bhopal-madhya-pradesh-1728481",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:38.495Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students"
+    ],
+    "days_left": 9,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 5,
+      "cash_value": 5,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 5,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 456,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 55,
+      "field_p10": 36,
+      "field_p50": 55,
+      "field_p90": 85,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 16,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 17
+    },
+    "metrics": {
+      "equal_share_naive": 0.01,
+      "fair_share_serious": 0.09,
+      "days_left": 9
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.109,
+      "p_paid": 0.109,
+      "ev_cash_heuristic": 1,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.9,
+      "feasibility_label": "7-10d",
+      "latest_safe_start": "2026-08-19",
+      "p_finish_proxy": 0.9,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -84.7,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 17,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-techno-vbiquity-2o-technical-coding-competition-techn",
+    "official": "https://unstop.com/hackathons/techno-vbiquity-2o-technical-coding-competition-technocrats-group-of-institutions-bhopal-madhya-pradesh-1728481",
+    "changes": "/api/v1/changes.json"
+  }
+}

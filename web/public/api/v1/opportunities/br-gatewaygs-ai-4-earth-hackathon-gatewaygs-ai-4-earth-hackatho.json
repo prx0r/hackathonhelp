@@ -1,0 +1,125 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-gatewaygs-ai-4-earth-hackathon-gatewaygs-ai-4-earth-hackatho",
+    "slug": "br-gatewaygs-ai-4-earth-hackathon-gatewaygs-ai-4-earth-hackatho",
+    "title": "GatewayGS & The AEI Initiative:  AI 4 Earth Hackathon",
+    "organizer": "GatewayGS",
+    "prize_usd": 25,
+    "prize_raw": "$25",
+    "registrants": 228,
+    "starts_at": null,
+    "ends_at": "2026-08-22T23:59:00.000Z",
+    "time_left": "1 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://gatewaygs-ai-4-earth-hackathon.devpost.com/",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:35.765Z",
+    "eligibility_flags": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "days_left": 1,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 25,
+      "cash_value": 25,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 25,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 228,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 27,
+      "field_p10": 18,
+      "field_p50": 27,
+      "field_p90": 42,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 4,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 13
+    },
+    "metrics": {
+      "equal_share_naive": 0.11,
+      "fair_share_serious": 0.93,
+      "days_left": 1
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.222,
+      "p_paid": 0.222,
+      "ev_cash_heuristic": 6,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "window reached, opportunity weak",
+      "feasibility": 0.25,
+      "feasibility_label": "1-2d",
+      "latest_safe_start": "2026-08-10",
+      "p_finish_proxy": 0.25,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -88.3,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 13,
+      "formula": "SKIP - window reached, opportunity weak"
+    }
+  },
+  "links": {
+    "html": "/opps/br-gatewaygs-ai-4-earth-hackathon-gatewaygs-ai-4-earth-hackatho",
+    "official": "https://gatewaygs-ai-4-earth-hackathon.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

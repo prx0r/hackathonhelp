@@ -1,0 +1,120 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-cissa-catalyst-2026-cissa-catalyst-2026",
+    "slug": "cissa-catalyst-2026-cissa-catalyst-2026",
+    "title": "Catalyst 2026",
+    "organizer": "Catalyst",
+    "prize_usd": 1700,
+    "prize_raw": "$1,700",
+    "registrants": 79,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "about 2 hours left",
+    "location_type": "in-person",
+    "location": "The University of Melbourne, Parkville",
+    "themes": [
+      "Beginner Friendly",
+      "Cybersecurity",
+      "Design"
+    ],
+    "open_to_all": true,
+    "source_url": "https://cissa-catalyst-2026.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.934Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (The University of Melbourne, Parkville)"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 1700,
+      "cash_value": 1700,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 1700,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 79,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 16,
+      "field_p10": 10,
+      "field_p50": 16,
+      "field_p90": 25,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": 21.52,
+      "fair_share_serious": 106.25,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.375,
+      "p_paid": 0.375,
+      "ev_cash_heuristic": 637,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/cissa-catalyst-2026-cissa-catalyst-2026",
+    "official": "https://cissa-catalyst-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

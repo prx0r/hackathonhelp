@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "endpoints": [
+    {
+      "path": "/api/v1/top.json"
+    },
+    {
+      "path": "/api/v1/opportunities.json"
+    },
+    {
+      "path": "/api/v1/opportunities/<slug>.json"
+    },
+    {
+      "path": "/api/v1/changes.json"
+    },
+    {
+      "path": "/rss.xml"
+    },
+    {
+      "path": "/sitemap.xml"
+    }
+  ],
+  "fields": {
+    "slug": {
+      "type": "string",
+      "desc": "stable URL id; /opps/<slug>"
+    },
+    "title": {
+      "type": "string",
+      "desc": "event name from source platform"
+    },
+    "organizer": {
+      "type": "string|null",
+      "desc": "hosting org; null when platform hides it"
+    },
+    "prize_usd": {
+      "type": "number|null",
+      "desc": "raw USD parsed from platform card"
+    },
+    "prize": {
+      "type": "object",
+      "desc": "advertised_value|cash_value|credits_value|normalized_value|headline_inflation (%)",
+      "unit": "USD"
+    },
+    "registrants": {
+      "type": "int|null",
+      "desc": "platform registration count"
+    },
+    "field": {
+      "type": "object",
+      "desc": "field_status(usable|forming), family_prior{submissions_per_registration,source}, estimated_serious_field P50, field_p10/p50/p90"
+    },
+    "metrics": {
+      "type": "object",
+      "desc": "equal_share_naive $/registrant, fair_share_serious $/est.submission, days_left"
+    },
+    "score_v01": {
+      "type": "object",
+      "desc": "components{expected_prize_value,winnability,organizer_quality} 0-100, known_components, opportunity_score"
+    },
+    "payout": {
+      "type": "object",
+      "desc": "paying_slots assumption p10/p50/p90, baseline_any_payout, p_paid sigmoid, ev_cash_heuristic USD",
+      "unit": "USD/%"
+    },
+    "decision": {
+      "type": "object",
+      "desc": "action ENTER NOW|SPRINT|PREP|WATCH|SKIP|ENDED, reason, feasibility 0-1, feasibility_label, latest_safe_start YYYY-MM-DD, p_finish_proxy, build_model{p50_hours,p80_hours,hours_per_day,buffer_days,reuse_fraction}"
+    },
+    "mega": {
+      "type": "object|null",
+      "desc": "outlier flag {score,reasons[],category}; null = not unusual"
+    },
+    "cautions": {
+      "type": "string[]",
+      "desc": "verification warnings (unconfirmed cash, thin-field outliers, TBA prizes)"
+    },
+    "eligibility": {
+      "type": "object",
+      "desc": "eligible bool, failed[], confidence official_rules|platform_metadata_unverified, notes; gates{} incl age_confirmed UNKNOWN semantics"
+    },
+    "themes": {
+      "type": "string[]",
+      "desc": "category tags from platform"
+    },
+    "location_type": {
+      "type": "enum",
+      "desc": "online | in-person (in-person events are gated OUT of rankings)"
+    },
+    "starts_at": {
+      "type": "ISO date|null",
+      "desc": "submission window open"
+    },
+    "ends_at": {
+      "type": "ISO date|null",
+      "desc": "deadline; drives feasibility prior"
+    },
+    "source_url": {
+      "type": "url",
+      "desc": "OFFICIAL event page - always verify before committing"
+    },
+    "source": {
+      "type": "enum",
+      "desc": "devpost | brabble"
+    },
+    "source_authority": {
+      "type": "enum",
+      "desc": "official_platform_api | platform_metadata_unverified"
+    },
+    "observed_at": {
+      "type": "ISO datetime",
+      "desc": "when facts were captured"
+    }
+  }
+}

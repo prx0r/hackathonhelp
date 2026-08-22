@@ -1,0 +1,124 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-galuxium-nexus-v2-29411-galuxium-nexus-v2-29411",
+    "slug": "galuxium-nexus-v2-29411-galuxium-nexus-v2-29411",
+    "title": "Galuxium Nexus V2",
+    "organizer": "Galuxium",
+    "prize_usd": 2600,
+    "prize_raw": "$2,600",
+    "registrants": 416,
+    "starts_at": "2026-07-15T00:00:00.000Z",
+    "ends_at": "2026-10-31T23:59:00.000Z",
+    "time_left": "2 months left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Enterprise",
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "open_to_all": true,
+    "source_url": "https://galuxium-nexus-v2-29411.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.570Z",
+    "days_left": 71,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 2600,
+      "cash_value": 2600,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 2600,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 416,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": null,
+        "organizer_quality": null
+      },
+      "known_components": 0,
+      "opportunity_score": 0
+    },
+    "metrics": {
+      "equal_share_naive": 6.25,
+      "fair_share_serious": null,
+      "days_left": 71
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-10-19",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-10-19",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20000,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 0,
+      "formula": "WATCH - far out; latest safe start 2026-10-19"
+    }
+  },
+  "links": {
+    "html": "/opps/galuxium-nexus-v2-29411-galuxium-nexus-v2-29411",
+    "official": "https://galuxium-nexus-v2-29411.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

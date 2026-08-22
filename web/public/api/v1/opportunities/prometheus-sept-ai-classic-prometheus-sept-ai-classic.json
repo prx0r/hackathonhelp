@@ -1,0 +1,124 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
+    "slug": "prometheus-sept-ai-classic-prometheus-sept-ai-classic",
+    "title": "Prometheus September AI Challenge",
+    "organizer": "Prometheus",
+    "prize_usd": 1500,
+    "prize_raw": "$1,500",
+    "registrants": 86,
+    "starts_at": "2026-08-19T00:00:00.000Z",
+    "ends_at": "2026-09-05T23:59:00.000Z",
+    "time_left": "14 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Beginner Friendly",
+      "Design",
+      "Machine Learning/AI"
+    ],
+    "open_to_all": true,
+    "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.934Z",
+    "days_left": 15,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 1500,
+      "cash_value": 1500,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 1500,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 86,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 17,
+      "field_p10": 11,
+      "field_p50": 17,
+      "field_p90": 26,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 70,
+        "winnability": 88,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 63
+    },
+    "metrics": {
+      "equal_share_naive": 17.44,
+      "fair_share_serious": 88.24,
+      "days_left": 15
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.353,
+      "p_paid": 0.353,
+      "ev_cash_heuristic": 529,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "PREP",
+      "reason": "commit by 2026-08-24",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-08-24",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 30056.7,
+    "attention": 30056.7,
+    "attention_breakdown": {
+      "action": "PREP",
+      "score": 63,
+      "formula": "PREP - commit by 2026-08-24"
+    }
+  },
+  "links": {
+    "html": "/opps/prometheus-sept-ai-classic-prometheus-sept-ai-classic",
+    "official": "https://prometheus-sept-ai-classic.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

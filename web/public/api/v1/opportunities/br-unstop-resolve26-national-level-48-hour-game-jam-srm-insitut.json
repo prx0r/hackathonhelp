@@ -1,0 +1,129 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-resolve26-national-level-48-hour-game-jam-srm-insitut",
+    "slug": "br-unstop-resolve26-national-level-48-hour-game-jam-srm-insitut",
+    "title": "Resolve'26 — National-Level Game Jam",
+    "organizer": "SRM Insitute of Science and Technology",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 63,
+    "starts_at": null,
+    "ends_at": "2026-08-26T18:29:00.000Z",
+    "time_left": "4 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/resolve26-national-level-48-hour-game-jam-srm-insitute-of-science-and-technology-1731440",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:37.335Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "days_left": 4,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 63,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 22,
+      "field_p10": 14,
+      "field_p50": 22,
+      "field_p90": 34,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": 18,
+        "organizer_quality": null
+      },
+      "known_components": 1,
+      "opportunity_score": 5
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 4
+    },
+    "cautions": [
+      "prize not published on platform card — see official page",
+      "prize pool not yet announced — rescore when tracks land"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.273,
+      "p_paid": 0.273,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time · capped: prize unconfirmed",
+      "feasibility": 0.65,
+      "feasibility_label": "3-5d",
+      "latest_safe_start": "2026-08-14",
+      "p_finish_proxy": 0.65,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -95.5,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 5,
+      "formula": "SKIP - weak opportunity for remaining time · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-resolve26-national-level-48-hour-game-jam-srm-insitut",
+    "official": "https://unstop.com/hackathons/resolve26-national-level-48-hour-game-jam-srm-insitute-of-science-and-technology-1731440",
+    "changes": "/api/v1/changes.json"
+  }
+}

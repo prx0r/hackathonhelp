@@ -1,0 +1,123 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku",
+    "slug": "br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku",
+    "title": "Hacker's Gambit 2026",
+    "organizer": "Jaihind college of Engineering Kuran",
+    "prize_usd": 2.3,
+    "prize_raw": "₹2.3L",
+    "registrants": 970,
+    "starts_at": null,
+    "ends_at": "2026-09-25T18:30:00.000Z",
+    "time_left": "34 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:41.361Z",
+    "eligibility_flags": [
+      "All"
+    ],
+    "days_left": 34,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 2.3,
+      "cash_value": 2.3,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 2,
+      "headline_inflation": 13
+    },
+    "field": {
+      "registrations": 970,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 78,
+      "field_p10": 51,
+      "field_p50": 78,
+      "field_p90": 121,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 44,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 25
+    },
+    "metrics": {
+      "equal_share_naive": 0,
+      "fair_share_serious": 0.03,
+      "days_left": 34
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.077,
+      "p_paid": 0.077,
+      "ev_cash_heuristic": 0,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-09-13",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-13",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20022.5,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 25,
+      "formula": "WATCH - far out; latest safe start 2026-09-13"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku",
+    "official": "https://unstop.com/hackathons/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+    "changes": "/api/v1/changes.json"
+  }
+}

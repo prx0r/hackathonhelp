@@ -1,0 +1,134 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-lexhack-2026-lexhack-2026",
+    "slug": "br-lexhack-2026-lexhack-2026",
+    "title": "LexHack 2026",
+    "organizer": "Lexhack",
+    "prize_usd": 43560,
+    "prize_raw": "$43,560",
+    "registrants": 34,
+    "starts_at": null,
+    "ends_at": "2026-09-27T23:59:00.000Z",
+    "time_left": "37 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://lexhack-2026.devpost.com/",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:41.361Z",
+    "eligibility_flags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Social Good"
+    ],
+    "days_left": 37,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 43560,
+      "cash_value": 43560,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 43560,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 34,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 12,
+      "field_p10": 8,
+      "field_p50": 12,
+      "field_p90": 19,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 90,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 69
+    },
+    "metrics": {
+      "equal_share_naive": 1281.18,
+      "fair_share_serious": 3630,
+      "days_left": 37
+    },
+    "cautions": [
+      "extraordinary per-submission value — verify payout history"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.5,
+      "p_paid": 0.5,
+      "ev_cash_heuristic": 21780,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "PREP",
+      "reason": "far out; latest safe start 2026-09-15 · capped: prize unconfirmed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-15",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 65,
+      "reasons": [
+        "$3630 normalized prize per estimated submission",
+        "$44K cash with below-median registration"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 30077.1,
+    "attention": 30077.1,
+    "attention_breakdown": {
+      "action": "PREP",
+      "score": 69,
+      "formula": "PREP - far out; latest safe start 2026-09-15 · capped: prize unconfirmed"
+    }
+  },
+  "links": {
+    "html": "/opps/br-lexhack-2026-lexhack-2026",
+    "official": "https://lexhack-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-hack-the-habitat-2026-hack-the-habitat-2026",
+    "slug": "hack-the-habitat-2026-hack-the-habitat-2026",
+    "title": "Hack the Habitat",
+    "organizer": "Hack",
+    "prize_usd": 1000,
+    "prize_raw": "$1,000",
+    "registrants": 160,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "8 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "IoT",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://hack-the-habitat-2026.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.732Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 1000,
+      "cash_value": 1000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 1000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 160,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 32,
+      "field_p10": 21,
+      "field_p50": 32,
+      "field_p90": 50,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 55,
+        "winnability": 19,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 35
+    },
+    "metrics": {
+      "equal_share_naive": 6.25,
+      "fair_share_serious": 31.25,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.188,
+      "p_paid": 0.188,
+      "ev_cash_heuristic": 188,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "deadline not published",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20031.5,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 35,
+      "formula": "WATCH - deadline not published"
+    }
+  },
+  "links": {
+    "html": "/opps/hack-the-habitat-2026-hack-the-habitat-2026",
+    "official": "https://hack-the-habitat-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

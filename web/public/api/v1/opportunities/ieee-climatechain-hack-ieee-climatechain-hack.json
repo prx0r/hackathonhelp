@@ -1,0 +1,130 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-ieee-climatechain-hack-ieee-climatechain-hack",
+    "slug": "ieee-climatechain-hack-ieee-climatechain-hack",
+    "title": "IEEE ClimateChain Global Hackathon",
+    "organizer": "IEEE",
+    "prize_usd": 3000,
+    "prize_raw": "$3,000",
+    "registrants": 149,
+    "starts_at": null,
+    "ends_at": null,
+    "time_left": "Upcoming",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Blockchain",
+      "Machine Learning/AI",
+      "Social Good"
+    ],
+    "open_to_all": true,
+    "source_url": "https://ieee-climatechain-hack.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:33.453Z",
+    "days_left": null,
+    "gates": {
+      "registration_open": null,
+      "deadline_future": null,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 3000,
+      "cash_value": 3000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 3000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 149,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 30,
+      "field_p10": 20,
+      "field_p50": 30,
+      "field_p90": 47,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 70,
+        "winnability": 20,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 43
+    },
+    "metrics": {
+      "equal_share_naive": 20.13,
+      "fair_share_serious": 100,
+      "days_left": null
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.2,
+      "p_paid": 0.2,
+      "ev_cash_heuristic": 600,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "deadline not published",
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$100 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 20053.7,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 43,
+      "formula": "WATCH - deadline not published"
+    }
+  },
+  "links": {
+    "html": "/opps/ieee-climatechain-hack-ieee-climatechain-hack",
+    "official": "https://ieee-climatechain-hack.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

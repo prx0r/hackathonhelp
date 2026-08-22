@@ -1,0 +1,129 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-adtc-2026-adtc-2026",
+    "slug": "adtc-2026-adtc-2026",
+    "title": "Africa Deep Tech Challenge 2026",
+    "organizer": "Africa",
+    "prize_usd": 16500,
+    "prize_raw": "$16,500",
+    "registrants": 1784,
+    "starts_at": "2026-06-17T00:00:00.000Z",
+    "ends_at": "2026-08-25T23:59:00.000Z",
+    "time_left": "2 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "open_to_all": true,
+    "source_url": "https://adtc-2026.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:31.884Z",
+    "days_left": 4,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 16500,
+      "cash_value": 16500,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 16500,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 1784,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 89,
+      "field_p10": 58,
+      "field_p50": 89,
+      "field_p90": 138,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 70,
+        "winnability": 4,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 38
+    },
+    "metrics": {
+      "equal_share_naive": 9.25,
+      "fair_share_serious": 185.39,
+      "days_left": 4
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.067,
+      "p_paid": 0.067,
+      "ev_cash_heuristic": 1112,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.65,
+      "feasibility_label": "3-5d",
+      "latest_safe_start": "2026-08-13",
+      "p_finish_proxy": 0.65,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$185.39 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": -50.8,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 38,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/adtc-2026-adtc-2026",
+    "official": "https://adtc-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

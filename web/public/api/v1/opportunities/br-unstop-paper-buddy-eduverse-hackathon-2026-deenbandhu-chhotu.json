@@ -1,0 +1,126 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu",
+    "slug": "br-unstop-paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu",
+    "title": "Paper Buddy EduVerse Hackathon 2026",
+    "organizer": "Deenbandhu Chhotu Ram University Of Science And Technology (DCRUST), Murthal, Haryana",
+    "prize_usd": 1,
+    "prize_raw": "₹1L",
+    "registrants": 131,
+    "starts_at": null,
+    "ends_at": "2026-08-26T18:30:00.000Z",
+    "time_left": "4 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:37.335Z",
+    "eligibility_flags": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management"
+    ],
+    "days_left": 4,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 1,
+      "cash_value": 1,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 1,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 131,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 26,
+      "field_p10": 17,
+      "field_p50": 26,
+      "field_p90": 40,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 20,
+        "winnability": 15,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 17
+    },
+    "metrics": {
+      "equal_share_naive": 0.01,
+      "fair_share_serious": 0.04,
+      "days_left": 4
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.231,
+      "p_paid": 0.231,
+      "ev_cash_heuristic": 0,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.65,
+      "feasibility_label": "3-5d",
+      "latest_safe_start": "2026-08-14",
+      "p_finish_proxy": 0.65,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": -84.7,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 17,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu",
+    "official": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
+    "changes": "/api/v1/changes.json"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+    "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+    "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+    "organizer": "DevNetwork",
+    "prize_usd": 39500,
+    "prize_raw": "$39,500",
+    "registrants": 884,
+    "starts_at": "2026-08-17T00:00:00.000Z",
+    "ends_at": "2026-09-03T23:59:00.000Z",
+    "time_left": "12 days left",
+    "location_type": "online",
+    "location": "Santa Clara Convention Center and Online",
+    "themes": [
+      "IoT",
+      "Low/No Code",
+      "Machine Learning/AI"
+    ],
+    "open_to_all": true,
+    "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+    "source": "devpost",
+    "source_authority": "official_platform_api",
+    "observed_at": "2026-08-22T21:30:32.392Z",
+    "days_left": 13,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 39500,
+      "cash_value": 39500,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 39500,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 884,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 71,
+      "field_p10": 46,
+      "field_p50": 71,
+      "field_p90": 110,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 18,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 57
+    },
+    "metrics": {
+      "equal_share_naive": 44.68,
+      "fair_share_serious": 556.34,
+      "days_left": 13
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": 0.085,
+      "p_paid": 0.085,
+      "ev_cash_heuristic": 3338,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.97,
+      "feasibility_label": "10-14d",
+      "latest_safe_start": "2026-08-22",
+      "p_finish_proxy": 0.97,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$556.34 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": -33.699999999999996,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": 57,
+      "formula": "SKIP - weak opportunity for remaining time"
+    }
+  },
+  "links": {
+    "html": "/opps/api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+    "official": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+    "changes": "/api/v1/changes.json"
+  }
+}

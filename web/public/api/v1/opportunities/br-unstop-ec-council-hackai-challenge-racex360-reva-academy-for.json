@@ -1,0 +1,123 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-22T22:00:22.242Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "br-unstop-ec-council-hackai-challenge-racex360-reva-academy-for",
+    "slug": "br-unstop-ec-council-hackai-challenge-racex360-reva-academy-for",
+    "title": "EC-Council HackAI Challenge: RACEx360",
+    "organizer": "REVA Academy for Corporate Excellence, Bangalore, Karnataka",
+    "prize_usd": 1.8,
+    "prize_raw": "₹1.8L",
+    "registrants": 4,
+    "starts_at": null,
+    "ends_at": "2026-09-16T18:30:00.000Z",
+    "time_left": "25 days left",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [],
+    "open_to_all": true,
+    "source_url": "https://unstop.com/hackathons/ec-council-hackai-challenge-racex360-reva-academy-for-corporate-excellence-bangalore-karnataka-1739884",
+    "source": "brabble",
+    "source_authority": "platform_metadata_unverified",
+    "observed_at": "2026-08-22T21:30:39.985Z",
+    "eligibility_flags": [
+      "All"
+    ],
+    "days_left": 25,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 1.8,
+      "cash_value": 1.8,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 2,
+      "headline_inflation": -11
+    },
+    "field": {
+      "registrations": 4,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": null,
+        "organizer_quality": null
+      },
+      "known_components": 0,
+      "opportunity_score": 0
+    },
+    "metrics": {
+      "equal_share_naive": 0.45,
+      "fair_share_serious": null,
+      "days_left": 25
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "marginal — recheck as field matures",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-04",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "reuse_fraction": 0
+      }
+    },
+    "mega": null,
+    "order_key": 20000,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 0,
+      "formula": "WATCH - marginal — recheck as field matures"
+    }
+  },
+  "links": {
+    "html": "/opps/br-unstop-ec-council-hackai-challenge-racex360-reva-academy-for",
+    "official": "https://unstop.com/hackathons/ec-council-hackai-challenge-racex360-reva-academy-for-corporate-excellence-bangalore-karnataka-1739884",
+    "changes": "/api/v1/changes.json"
+  }
+}
