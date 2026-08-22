@@ -1,0 +1,23 @@
+{
+  "specialism": "agent reliability and evaluation",
+  "thesis_tags": ["evaluation","verification","evidence","routing","benchmarks","provenance","observability","agents","api","machine-intelligence","vision-verification"],
+  "skills": {
+    "agent_evaluation":0.8,"evidence_systems":0.9,"rust_wasm":0.4,
+    "computer_vision":0.15,"aws":0.3,"benchmark_harness":0.75
+  },
+  "assets": [
+    {"name":"QDW adversarial verification","tags":["evaluation","adversarial","verification"]},
+    {"name":"Dell2 atomic claims/evidence","tags":["evidence","claims","provenance"]},
+    {"name":"Dell contextual routing","tags":["routing"]},
+    {"name":"llmdeals deterministic economics engine","tags":["normalization","pricing"]}
+  ],
+  "reuse_by_event": {
+    "telegraph-h1":0.55,
+    "alpaca-ai-trading-agents-hackathon":0.35,
+    "opencv26-opencv26":0.45,
+    "boss-battle-bitshala":0.40,
+    "ibm-bob-2-hackathon":0.30,
+    "_default":0.10
+  },
+  "shadow_hour_value_usd": 25
+}
