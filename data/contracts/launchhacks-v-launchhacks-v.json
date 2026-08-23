@@ -1,0 +1,80 @@
+{
+  "slug": "launchhacks-v-launchhacks-v",
+  "eligibility": {
+    "open_to_all": "FALSE",
+    "student_only": "TRUE",
+    "age_restricted": "TRUE",
+    "min_age": null,
+    "countries_restricted": [],
+    "online_participation": "TRUE",
+    "team_required": "UNKNOWN",
+    "max_team_size": null
+  },
+  "tracks": [],
+  "required_tech": [],
+  "optional_sponsor_tech": [
+    "Google",
+    "IBM",
+    "Hack Club"
+  ],
+  "judging": {},
+  "deliverables": [
+    "video_demo",
+    "working_code_repository"
+  ],
+  "originality": {
+    "new_project_required": "TRUE",
+    "preexisting_code_allowed": "FALSE",
+    "disclosure_required": "UNKNOWN"
+  },
+  "prizes": [
+    {
+      "rank_or_track": "First Place",
+      "cash_usd": 200,
+      "credits_usd": null,
+      "other": "1 winner; sponsor prizes to be added shortly; exclusive permanent Google domains (of participant choice) given to each winning team member, worth $240 each"
+    },
+    {
+      "rank_or_track": "Second Place",
+      "cash_usd": 150,
+      "credits_usd": null,
+      "other": "1 winner; sponsor prizes to be added shortly"
+    },
+    {
+      "rank_or_track": "Third Place",
+      "cash_usd": 100,
+      "credits_usd": null,
+      "other": "1 winner; sponsor prizes to be added shortly"
+    },
+    {
+      "rank_or_track": "Fourth Place",
+      "cash_usd": 75,
+      "credits_usd": null,
+      "other": "1 winner; sponsor prizes to be added shortly"
+    },
+    {
+      "rank_or_track": "Fifth Place",
+      "cash_usd": 50,
+      "credits_usd": null,
+      "other": "1 winner; sponsor prizes to be added shortly"
+    },
+    {
+      "rank_or_track": "Total Prize Value",
+      "cash_usd": 17000,
+      "credits_usd": null,
+      "other": "1 winner"
+    }
+  ],
+  "build_window": {
+    "start": "2026-12-11",
+    "end": "2026-12-15"
+  },
+  "sources": [
+    {
+      "url": "https://launchhacks-v.devpost.com/",
+      "quote": "Remember your project has to have been created during the hackathon timeline (PST). Cross submissions are allowed to this hackathon, but the project should be built within these dates."
+    }
+  ],
+  "validated": true,
+  "validator": "deterministic-v1"
+}

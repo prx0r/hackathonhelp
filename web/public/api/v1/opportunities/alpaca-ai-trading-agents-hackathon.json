@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-alpaca-ai-trading-agents-hackathon",
@@ -40,7 +40,7 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
-    "days_left": 13,
+    "days_left": 12,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -100,7 +100,7 @@
     "metrics": {
       "equal_share_naive": 3.01,
       "fair_share_serious": 60.24,
-      "days_left": 13
+      "days_left": 12
     },
     "cautions": [
       "prize not published on platform card — see official page"

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-volthacks-volthacks",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:50.629Z",
-    "days_left": 15,
+    "days_left": 14,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -74,6 +74,134 @@
       "p50": 6,
       "p90": 12
     },
+    "contract": {
+      "slug": "volthacks-volthacks",
+      "eligibility": {
+        "open_to_all": "UNKNOWN",
+        "student_only": "TRUE",
+        "age_restricted": "TRUE",
+        "min_age": 13,
+        "countries_restricted": [
+          "standard exceptions"
+        ],
+        "online_participation": "TRUE",
+        "team_required": "FALSE",
+        "max_team_size": null
+      },
+      "tracks": [
+        {
+          "name": "Robotics & Embedded Systems",
+          "prize_usd": null
+        },
+        {
+          "name": "AI + Hardware Integration",
+          "prize_usd": null
+        },
+        {
+          "name": "Smart Health Technology",
+          "prize_usd": null
+        },
+        {
+          "name": "Sustainability & Smart Cities",
+          "prize_usd": null
+        },
+        {
+          "name": "Open Innovation",
+          "prize_usd": null
+        }
+      ],
+      "required_tech": [],
+      "optional_sponsor_tech": [
+        "Featherless.ai",
+        "CodeCrafters",
+        "DevSwarm",
+        "Dialogate",
+        "Tin Computer",
+        "Adaption Labs",
+        ".xyz domains (Gen.xyz)"
+      ],
+      "judging": {
+        "Innovation and Creativity": "UNKNOWN",
+        "Technical Complexity": "UNKNOWN",
+        "Real World Impact": "UNKNOWN",
+        "Design and Functionality": "UNKNOWN",
+        "Presentation Quality": "UNKNOWN"
+      },
+      "deliverables": [
+        "project name and short description",
+        "explanation of the problem solved",
+        "demo video or presentation",
+        "photos/screenshots/prototype images",
+        "source code or GitHub repository (if applicable)",
+        "list of technologies/components used"
+      ],
+      "originality": {
+        "new_project_required": "TRUE",
+        "preexisting_code_allowed": "TRUE_WITH_SIGNIFICANT_NEW_DEVELOPMENT",
+        "disclosure_required": "FALSE"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "Grand Prize",
+          "cash_usd": 2120,
+          "credits_usd": 300,
+          "other": "CodeCrafters VIP Membership 2 years ($720/team member), DevSwarm Pro 1yr ($100), Adaption Labs Credits $1,000"
+        },
+        {
+          "rank_or_track": "Second Place",
+          "cash_usd": 1460,
+          "credits_usd": null,
+          "other": "CodeCrafters VIP 1yr ($360/member), DevSwarm Pro 1yr ($100), Adaption Labs Credits $1,000"
+        },
+        {
+          "rank_or_track": "Third Place",
+          "cash_usd": 1180,
+          "credits_usd": null,
+          "other": "CodeCrafters VIP 6mo ($180/member), Adaption Labs Credits $1,000"
+        },
+        {
+          "rank_or_track": "XYZ Domain Awards & Dialogate Lifetime Subscriptions",
+          "cash_usd": 75,
+          "credits_usd": null,
+          "other": "free .xyz domain for a year (~$15 value) + lifetime Dialogate subscription ($60 value); 15 winners"
+        },
+        {
+          "rank_or_track": "Tin Computer Growth Credits",
+          "cash_usd": 299,
+          "credits_usd": 299,
+          "other": "NOT cash — sponsor credits; up to 100 eligible teams"
+        },
+        {
+          "rank_or_track": "Dialogate Lifetime Subscription",
+          "cash_usd": null,
+          "credits_usd": null,
+          "other": "all participants get lifetime Dialogate Pro after event"
+        },
+        {
+          "rank_or_track": "Featherless AI + DevSwarm Pro Subscription",
+          "cash_usd": null,
+          "credits_usd": 300,
+          "other": "all users get month-long subscriptions during hackathon"
+        }
+      ],
+      "build_window": {
+        "start": "2026-05-31",
+        "end": "2026-09-05"
+      },
+      "sources": [
+        {
+          "url": "https://volthacks.devpost.com/",
+          "quote": "Ages 13+ only / Students only / Companies/professional organizations excluded from participation / All countries/territories, excluding standard exceptions"
+        },
+        {
+          "url": "https://volthacks.devpost.com/rules",
+          "quote": "Projects must be created during the hackathon period. Existing projects may not be submitted unless significant new development is completed during the event."
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
+    },
     "fit": {
       "strategic_fit": 0,
       "code_reuse": 0.1,
@@ -93,7 +221,7 @@
     "metrics": {
       "equal_share_naive": 21.09,
       "fair_share_serious": 421,
-      "days_left": 15
+      "days_left": 14
     },
     "cautions": [],
     "payout": {
@@ -109,12 +237,12 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "PREP",
-      "reason": "commit by 2026-08-25",
-      "feasibility": 1,
-      "feasibility_label": "14d+",
+      "action": "SPRINT",
+      "reason": "tight but real (10-14d finish prior 97%)",
+      "feasibility": 0.97,
+      "feasibility_label": "10-14d",
       "latest_safe_start": "2026-08-25",
-      "p_finish_proxy": 1,
+      "p_finish_proxy": 0.97,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -131,12 +259,12 @@
       ],
       "category": "value_competition_gap"
     },
-    "order_key": 30073.5,
-    "attention": 30073.5,
+    "order_key": 35073.5,
+    "attention": 35073.5,
     "attention_breakdown": {
-      "action": "PREP",
+      "action": "SPRINT",
       "score": 65,
-      "formula": "PREP - commit by 2026-08-25"
+      "formula": "SPRINT - tight but real (10-14d finish prior 97%)"
     }
   },
   "links": {

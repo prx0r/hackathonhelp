@@ -1,6 +1,6 @@
 {
   "specialism": "agent reliability and evaluation",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "path": [
     {
       "step": 1,
@@ -8,7 +8,7 @@
       "title": "Telegraph H1 Hackathon",
       "action": "SPRINT",
       "deadline": "2026-09-07",
-      "days_left": 9,
+      "days_left": 8,
       "opportunity_score": 76,
       "strategic_fit": 1,
       "effective_p80_hours": 18,
@@ -20,7 +20,7 @@
       "title": "ETHOnline 2026",
       "action": "PREP",
       "deadline": "2026-09-16",
-      "days_left": 25,
+      "days_left": 24,
       "opportunity_score": 85,
       "strategic_fit": 0.74,
       "effective_p80_hours": 36,
@@ -32,7 +32,7 @@
       "title": "AMD Developer Hackathon: ACT III",
       "action": "WATCH",
       "deadline": "2026-10-17",
-      "days_left": 56,
+      "days_left": 55,
       "opportunity_score": 78,
       "strategic_fit": 0.44,
       "effective_p80_hours": 36,

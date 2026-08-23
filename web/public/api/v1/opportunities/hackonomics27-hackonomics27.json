@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hackonomics27-hackonomics27",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.327Z",
-    "days_left": 8,
+    "days_left": 7,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -93,7 +93,7 @@
     "metrics": {
       "equal_share_naive": null,
       "fair_share_serious": null,
-      "days_left": 8
+      "days_left": 7
     },
     "cautions": [
       "prize not published on platform card — see official page",
@@ -114,10 +114,10 @@
     "decision": {
       "action": "SKIP",
       "reason": "weak opportunity for remaining time · capped: prize unconfirmed",
-      "feasibility": 0.9,
-      "feasibility_label": "7-10d",
+      "feasibility": 0.8,
+      "feasibility_label": "5-7d",
       "latest_safe_start": "2026-08-18",
-      "p_finish_proxy": 0.9,
+      "p_finish_proxy": 0.8,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,

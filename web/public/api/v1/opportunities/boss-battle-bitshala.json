@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-boss-battle",
@@ -41,7 +41,7 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
-    "days_left": 44,
+    "days_left": 43,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -182,7 +182,7 @@
     "metrics": {
       "equal_share_naive": null,
       "fair_share_serious": null,
-      "days_left": 44
+      "days_left": 43
     },
     "cautions": [
       "prize not published on platform card — see official page"

@@ -1,0 +1,385 @@
+{
+  "slug": "reverie-hacks-2026-reverie-hacks-2026",
+  "eligibility": {
+    "open_to_all": "FALSE",
+    "student_only": "TRUE",
+    "age_restricted": "TRUE",
+    "min_age": 13,
+    "countries_restricted": [
+      "Brazil",
+      "Crimea",
+      "Cuba",
+      "Iran",
+      "North Korea",
+      "Quebec",
+      "Russia"
+    ],
+    "online_participation": "TRUE",
+    "team_required": "FALSE",
+    "max_team_size": 3
+  },
+  "tracks": [
+    {
+      "name": "Ideathon",
+      "prize_usd": null
+    },
+    {
+      "name": "ML Prompt Engineering",
+      "prize_usd": null
+    },
+    {
+      "name": "Software Development",
+      "prize_usd": null
+    },
+    {
+      "name": "Datathon",
+      "prize_usd": null
+    },
+    {
+      "name": "Embedded Systems",
+      "prize_usd": null
+    },
+    {
+      "name": "App Development",
+      "prize_usd": null
+    }
+  ],
+  "required_tech": [
+    "Version-control repository such as GitHub/GitLab/Bitbucket (explicitly required in Software Development, Datathon, App Development tracks)",
+    "ECAD software for PCB/circuit design (Embedded Systems track)",
+    "LLM-based workflow via models like GPT/Gemini (defining method of ML Prompt Engineering track)"
+  ],
+  "optional_sponsor_tech": [
+    "Render (only required to win Render build-credit prizes in Software Development track)",
+    "Featherless.AI",
+    "Firecrawl",
+    "Wolfram|One",
+    "Devswarm",
+    "Mobbin",
+    "Momen",
+    "Somba",
+    "Learner Labs",
+    "Protoflow",
+    "Dialogate",
+    "Adaption Platform",
+    "Cursis AI",
+    "Neon",
+    "CodeCrafters",
+    "Formaloo",
+    "CleanShot",
+    "PerfCorp",
+    "Tin Computer"
+  ],
+  "judging": {
+    "Innovation": "UNKNOWN",
+    "Problem Solving": "UNKNOWN",
+    "Sustainability/Scalability": "UNKNOWN",
+    "User Experience & Design": "UNKNOWN",
+    "Exceptionality (bonus, up to 5 points)": "UNKNOWN"
+  },
+  "deliverables": [
+    "demo video",
+    "code repository",
+    "project documentation",
+    "pitch presentation video (Ideathon, <=5 min)",
+    "project plan PDF (Ideathon)",
+    "ML workflow flowchart PNG (ML Prompt Engineering)",
+    "sample test-case comparison video/document (ML Prompt Engineering)",
+    "dataset link in repo README (Datathon)",
+    "analysis report (Datathon)",
+    "circuit schematics/design files directory (Embedded Systems)",
+    "firmware code if MCU used (Embedded Systems)",
+    "tech report (Embedded Systems)"
+  ],
+  "originality": {
+    "new_project_required": "UNKNOWN",
+    "preexisting_code_allowed": "UNKNOWN",
+    "disclosure_required": "UNKNOWN"
+  },
+  "prizes": [
+    {
+      "rank_or_track": "1st place - any track except ML Prompt Engineering & Ideathon",
+      "cash_usd": 140,
+      "credits_usd": null,
+      "other": "4 winners"
+    },
+    {
+      "rank_or_track": "1st place - ML Prompt Engineering & Ideathon tracks",
+      "cash_usd": 100,
+      "credits_usd": null,
+      "other": "2 winners"
+    },
+    {
+      "rank_or_track": "2nd place - ML Prompt Engineering & Ideathon tracks",
+      "cash_usd": 65,
+      "credits_usd": null,
+      "other": "2 winners"
+    },
+    {
+      "rank_or_track": "2nd place - any other track",
+      "cash_usd": 90,
+      "credits_usd": null,
+      "other": "4 winners"
+    },
+    {
+      "rank_or_track": "Internships @ Learner Labs (ML Prompt Engineering and Ideathon tracks)",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "6 internship slots at AI startup; possible strong LoRs; passes to another track winner if unclaimed within a week"
+    },
+    {
+      "rank_or_track": "AI/ML track winner",
+      "cash_usd": null,
+      "credits_usd": 300,
+      "other": "Featherless.AI $300 credit for LLM API access"
+    },
+    {
+      "rank_or_track": "1st place any track",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "3 free domains for 1 year (~$50 value), 6 winners"
+    },
+    {
+      "rank_or_track": "2nd place any track",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "2 free domains for 1 year (~$30 value), 6 winners"
+    },
+    {
+      "rank_or_track": "3rd place any track",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "1 free domain for 1 year (~$15 value), 6 winners"
+    },
+    {
+      "rank_or_track": "Protoflow 1 Year Pro Subscription",
+      "cash_usd": null,
+      "credits_usd": 180,
+      "other": "For 1st/2nd/3rd overall, 3 winners"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 25,
+      "other": "Featherless.AI 1-month subscription (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 50,
+      "other": "Firecrawl complementary 10k API credits (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 160,
+      "other": "Wolfram|One 1-month subscription (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 8,
+      "other": "1 month Devswarm Pro (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 50,
+      "other": "Render building credits access 1 month (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 45,
+      "other": "3 months Mobbin (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 100,
+      "other": "$100 Momen credits (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 90,
+      "other": "Somba Regular membership 3 months (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 117,
+      "other": "3 months complementary Learner Labs (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 333,
+      "other": "10% discount on Algoverse AI Research Program, not redeemable for cash (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 30,
+      "other": "500 Protoflow credits (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 60,
+      "other": "Dialogate Pro lifetime subscription (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 300,
+      "other": "$300 Adaption Platform credits, not redeemable for cash (2,050 winners)"
+    },
+    {
+      "rank_or_track": "All participants",
+      "cash_usd": null,
+      "credits_usd": 50,
+      "other": "Cursis AI 1-month $50 plan (2,050 winners)"
+    },
+    {
+      "rank_or_track": "Winner of any track",
+      "cash_usd": null,
+      "credits_usd": 998,
+      "other": "30% discount on Algoverse AI Research Program, not redeemable for cash (18 winners)"
+    },
+    {
+      "rank_or_track": "Groups (5 winners)",
+      "cash_usd": null,
+      "credits_usd": 500,
+      "other": "Neon $500 credit, must be used within group, cannot be split"
+    },
+    {
+      "rank_or_track": "1st place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 720,
+      "other": "CodeCrafters 2-year VIP membership"
+    },
+    {
+      "rank_or_track": "2nd place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 360,
+      "other": "CodeCrafters 1-year VIP membership"
+    },
+    {
+      "rank_or_track": "3rd place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 180,
+      "other": "CodeCrafters 6-month VIP membership"
+    },
+    {
+      "rank_or_track": "1st place Datathon track",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "Mentoring session with Formaloo CEO"
+    },
+    {
+      "rank_or_track": "Eligible submitting teams (up to 100)",
+      "cash_usd": null,
+      "credits_usd": 299,
+      "other": "Tin Computer Growth Plan credits, not cash"
+    },
+    {
+      "rank_or_track": "Winner of each track",
+      "cash_usd": null,
+      "credits_usd": 180,
+      "other": "1 year Mobbin Pro (6 winners)"
+    },
+    {
+      "rank_or_track": "Winners of all 6 tracks",
+      "cash_usd": null,
+      "credits_usd": 96,
+      "other": "1 year Devswarm Pro (18 winners)"
+    },
+    {
+      "rank_or_track": "Winning team any track",
+      "cash_usd": null,
+      "credits_usd": 800,
+      "other": "$800 Adaption Platform credits, premium access, not redeemable for cash (18 winners)"
+    },
+    {
+      "rank_or_track": "1st place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 500,
+      "other": "$500 Render build credits; Render must be used in project"
+    },
+    {
+      "rank_or_track": "2nd place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 300,
+      "other": "$300 Render build credits; Render must be used in project"
+    },
+    {
+      "rank_or_track": "3rd place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 100,
+      "other": "$100 Render build credits; Render must be used in project"
+    },
+    {
+      "rank_or_track": "1st place Software Development track",
+      "cash_usd": null,
+      "credits_usd": 2000,
+      "other": "$2000 Momen credits (3 winners)"
+    },
+    {
+      "rank_or_track": "Winner of any track",
+      "cash_usd": null,
+      "credits_usd": 1500,
+      "other": "20% discount on RISE Research Program, not redeemable for cash (18 winners)"
+    },
+    {
+      "rank_or_track": "1st and 2nd place Datathon track",
+      "cash_usd": null,
+      "credits_usd": 500,
+      "other": "$500 Formaloo Forms credits (2 winners)"
+    },
+    {
+      "rank_or_track": "Winner of every track",
+      "cash_usd": null,
+      "credits_usd": 800,
+      "other": "12 months Somba Premium (18 winners)"
+    },
+    {
+      "rank_or_track": "1st/2nd/3rd place any track",
+      "cash_usd": null,
+      "credits_usd": 29,
+      "other": "CleanShot license (18 winners)"
+    },
+    {
+      "rank_or_track": "First 700 participants to redeem",
+      "cash_usd": null,
+      "credits_usd": 28,
+      "other": "500 PerfCorp API credits each, first come first serve"
+    },
+    {
+      "rank_or_track": "Certificate",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "Certificate of participation"
+    }
+  ],
+  "build_window": {
+    "start": "2026-08-03",
+    "end": "2026-08-24"
+  },
+  "sources": [
+    {
+      "url": "https://reverie-hacks-2026.devpost.com/rules",
+      "quote": "ELIGIBILITY: Any student (Ages 13-27) is eligible to enter in teams of 1-3."
+    },
+    {
+      "url": "https://reverie-hacks-2026.devpost.com/rules",
+      "quote": "DATES: 3rd August - 24th August"
+    },
+    {
+      "url": "https://reverie-hacks-2026.devpost.com/",
+      "quote": "ReverieHacks is the biggest and most unique virtual hackathon for students to showcase their projects to the world and earn prizes along the way."
+    }
+  ],
+  "validated": true,
+  "validator": "deterministic-v1"
+}

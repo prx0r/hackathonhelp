@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.684Z",
-    "days_left": 15,
+    "days_left": 14,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -74,6 +74,98 @@
       "p50": 6,
       "p90": 12
     },
+    "contract": {
+      "slug": "prometheus-sept-ai-classic-prometheus-sept-ai-classic",
+      "eligibility": {
+        "open_to_all": "FALSE",
+        "student_only": "TRUE",
+        "age_restricted": "TRUE",
+        "min_age": 13,
+        "countries_restricted": [
+          "standard exceptions"
+        ],
+        "online_participation": "TRUE",
+        "team_required": "FALSE",
+        "max_team_size": 4
+      },
+      "tracks": [
+        {
+          "name": "Educational AI/ML tool (single open track)",
+          "prize_usd": 1500
+        }
+      ],
+      "required_tech": [],
+      "optional_sponsor_tech": [],
+      "judging": {
+        "Educational Impact": "25",
+        "Creative Use of AI/ML": "25",
+        "Technical Execution": "25",
+        "The Pitch & Demo": "25"
+      },
+      "deliverables": [
+        "working prototype",
+        "2-minute demo video",
+        "source code (GitHub repository, etc)"
+      ],
+      "originality": {
+        "new_project_required": "TRUE",
+        "preexisting_code_allowed": "open-source libraries and pre-trained AI models allowed; core application logic must be new",
+        "disclosure_required": "UNKNOWN"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "1st Place",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": "Certificate"
+        },
+        {
+          "rank_or_track": "2nd place",
+          "cash_usd": 400,
+          "credits_usd": null,
+          "other": "Certificate"
+        },
+        {
+          "rank_or_track": "3rd Place",
+          "cash_usd": 100,
+          "credits_usd": null,
+          "other": "Certificate"
+        },
+        {
+          "rank_or_track": "4th and 5th Place",
+          "cash_usd": null,
+          "credits_usd": null,
+          "other": "Special Certificate"
+        },
+        {
+          "rank_or_track": "6th-10th Place",
+          "cash_usd": null,
+          "credits_usd": null,
+          "other": "Honorable Mention Certificate"
+        }
+      ],
+      "build_window": {
+        "start": "2026-08-17",
+        "end": "2026-09-05"
+      },
+      "sources": [
+        {
+          "url": "https://prometheus-sept-ai-classic.devpost.com/rules",
+          "quote": "Originality: All code must be written during the hackathon window (August 17th – 29h). Using open-source libraries and pre-trained AI models is encouraged, but core application logic must be new."
+        },
+        {
+          "url": "https://prometheus-sept-ai-classic.devpost.com/rules",
+          "quote": "August 29th - Projects should be submitted by 11:59 PM (NO EXTENSIONS)"
+        },
+        {
+          "url": "https://prometheus-sept-ai-classic.devpost.com/",
+          "quote": "Ages 13+ only / Students only / Companies/professional organizations excluded from participation / All countries/territories, excluding standard exceptions"
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
+    },
     "fit": {
       "strategic_fit": 0,
       "code_reuse": 0.1,
@@ -93,7 +185,7 @@
     "metrics": {
       "equal_share_naive": 17.24,
       "fair_share_serious": 88.24,
-      "days_left": 15
+      "days_left": 14
     },
     "cautions": [],
     "payout": {
@@ -109,12 +201,12 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "WATCH",
-      "reason": "marginal — recheck as field matures",
-      "feasibility": 1,
-      "feasibility_label": "14d+",
+      "action": "SKIP",
+      "reason": "weak opportunity for remaining time",
+      "feasibility": 0.97,
+      "feasibility_label": "10-14d",
       "latest_safe_start": "2026-08-25",
-      "p_finish_proxy": 1,
+      "p_finish_proxy": 0.97,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -125,12 +217,12 @@
       "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20053.1,
+    "order_key": -46.9,
     "attention": -1,
     "attention_breakdown": {
-      "action": "WATCH",
+      "action": "SKIP",
       "score": 59,
-      "formula": "WATCH - marginal — recheck as field matures"
+      "formula": "SKIP - weak opportunity for remaining time"
     }
   },
   "links": {

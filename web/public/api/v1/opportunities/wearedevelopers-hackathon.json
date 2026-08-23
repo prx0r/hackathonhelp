@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-wearedevelopers-hackathon",
@@ -41,7 +41,7 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
-    "days_left": 33,
+    "days_left": 32,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -101,7 +101,7 @@
     "metrics": {
       "equal_share_naive": null,
       "fair_share_serious": null,
-      "days_left": 33
+      "days_left": 32
     },
     "cautions": [
       "prize pool not yet announced — rescore when tracks land"
@@ -119,8 +119,8 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "WATCH",
-      "reason": "prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed",
+      "action": "PREP",
+      "reason": "commit by 2026-09-13 · capped: prize unconfirmed",
       "feasibility": 1,
       "feasibility_label": "14d+",
       "latest_safe_start": "2026-09-13",
@@ -135,12 +135,12 @@
       "opportunity_cost_usd": 900
     },
     "mega": null,
-    "order_key": 20058.5,
-    "attention": -1,
+    "order_key": 30058.5,
+    "attention": 30058.5,
     "attention_breakdown": {
-      "action": "WATCH",
+      "action": "PREP",
       "score": 65,
-      "formula": "WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed"
+      "formula": "PREP - commit by 2026-09-13 · capped: prize unconfirmed"
     }
   },
   "links": {

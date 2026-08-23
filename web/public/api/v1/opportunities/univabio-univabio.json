@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-univabio-univabio",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.492Z",
-    "days_left": 46,
+    "days_left": 45,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -62,11 +62,11 @@
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
-      "field_status": "forming",
-      "estimated_serious_field": null,
-      "field_p10": null,
-      "field_p50": null,
-      "field_p90": null,
+      "field_status": "usable",
+      "estimated_serious_field": 40,
+      "field_p10": 26,
+      "field_p50": 40,
+      "field_p90": 62,
       "funnel": null
     },
     "slots": {
@@ -81,19 +81,19 @@
     },
     "score_v01": {
       "components": {
-        "expected_prize_value": null,
-        "winnability": null,
+        "expected_prize_value": 100,
+        "winnability": 50,
         "historical_winner_quality": null,
         "judging_tractability": null,
         "organizer_quality": null
       },
-      "known_components": 0,
-      "opportunity_score": null
+      "known_components": 2,
+      "opportunity_score": 67
     },
     "metrics": {
       "equal_share_naive": 180.13,
-      "fair_share_serious": null,
-      "days_left": 46
+      "fair_share_serious": 896.13,
+      "days_left": 45
     },
     "cautions": [],
     "payout": {
@@ -103,14 +103,14 @@
         "p90": 10
       },
       "paying_slots_source": "platform_reported",
-      "baseline_any_payout": null,
-      "p_paid": null,
-      "ev_cash_heuristic": null,
+      "baseline_any_payout": 0.125,
+      "p_paid": 0.125,
+      "ev_cash_heuristic": 4481,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "SKIP",
-      "reason": "unscoreable",
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-09-25",
       "feasibility": 1,
       "feasibility_label": "14d+",
       "latest_safe_start": "2026-09-25",
@@ -125,18 +125,19 @@
       "opportunity_cost_usd": 900
     },
     "mega": {
-      "score": 30,
+      "score": 65,
       "reasons": [
+        "$896.13 normalized prize per estimated submission",
         "$36K cash with below-median registration"
       ],
-      "category": "high_fair_share"
+      "category": "value_competition_gap"
     },
-    "order_key": -85,
+    "order_key": 20075.3,
     "attention": -1,
     "attention_breakdown": {
-      "action": "SKIP",
-      "score": null,
-      "formula": "SKIP - unscoreable"
+      "action": "WATCH",
+      "score": 67,
+      "formula": "WATCH - far out; latest safe start 2026-09-25"
     }
   },
   "links": {

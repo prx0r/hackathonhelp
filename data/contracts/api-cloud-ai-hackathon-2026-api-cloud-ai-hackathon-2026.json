@@ -1,0 +1,145 @@
+{
+  "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+  "eligibility": {
+    "open_to_all": "TRUE",
+    "student_only": "FALSE",
+    "age_restricted": "TRUE",
+    "min_age": 18,
+    "countries_restricted": [
+      "standard exceptions (US OFAC sanctions list implied)"
+    ],
+    "online_participation": "TRUE",
+    "team_required": "UNKNOWN",
+    "max_team_size": null
+  },
+  "tracks": [],
+  "required_tech": [],
+  "optional_sponsor_tech": [
+    "Perfect Corp AI/AR API",
+    "Foxit PDF Services API / Foxit eSign API",
+    "Doctavian generation API",
+    "name.com API",
+    "Nutrient DWS (API/SDK/Viewer)",
+    "SerpApi",
+    "Xano backend"
+  ],
+  "judging": {
+    "Progress": "HIGH",
+    "Concept": "HIGH",
+    "Feasibility": "HIGH"
+  },
+  "deliverables": [
+    "demo video",
+    "project page with write-up and screenshots",
+    "public repo or shared link with setup instructions"
+  ],
+  "originality": {
+    "new_project_required": "UNKNOWN",
+    "preexisting_code_allowed": "UNKNOWN",
+    "disclosure_required": "UNKNOWN"
+  },
+  "prizes": [
+    {
+      "rank_or_track": "DevNetwork Overall Winner",
+      "cash_usd": 12500,
+      "credits_usd": 0,
+      "other": "Amazon Echos (up to 5); DevNetwork Premium All-Access Passes to all 2027 conferences; announcement in email to 60,000 subscribers"
+    },
+    {
+      "rank_or_track": "Perfect Corp 1st Place",
+      "cash_usd": 1500,
+      "credits_usd": 0,
+      "other": "API access codes"
+    },
+    {
+      "rank_or_track": "Perfect Corp 2nd Place",
+      "cash_usd": 1000,
+      "credits_usd": 0,
+      "other": "API access codes"
+    },
+    {
+      "rank_or_track": "Foxit Software 1st Place",
+      "cash_usd": 700,
+      "credits_usd": 0,
+      "other": null
+    },
+    {
+      "rank_or_track": "Foxit Software 2nd Place",
+      "cash_usd": 300,
+      "credits_usd": 0,
+      "other": null
+    },
+    {
+      "rank_or_track": "Doctavian 1st Place",
+      "cash_usd": 500,
+      "credits_usd": 150,
+      "other": "$150 Doctavian subscription"
+    },
+    {
+      "rank_or_track": "Doctavian 2nd Place",
+      "cash_usd": 200,
+      "credits_usd": 150,
+      "other": "$150 Doctavian subscription"
+    },
+    {
+      "rank_or_track": "name.com 1st Place",
+      "cash_usd": 1500,
+      "credits_usd": 0,
+      "other": "Amazon gift card"
+    },
+    {
+      "rank_or_track": "name.com 2nd Place",
+      "cash_usd": 500,
+      "credits_usd": 0,
+      "other": "Amazon gift card"
+    },
+    {
+      "rank_or_track": "Nutrient 1st Place",
+      "cash_usd": 750,
+      "credits_usd": 250,
+      "other": "DWS Credits (up to $250 cash value) + Visa Cash Giftcard"
+    },
+    {
+      "rank_or_track": "Nutrient 2nd Place",
+      "cash_usd": 250,
+      "credits_usd": 250,
+      "other": "DWS Credits (up to $250 cash value) + Visa Cash Giftcard"
+    },
+    {
+      "rank_or_track": "SerpApi 1st Place",
+      "cash_usd": 1000,
+      "credits_usd": 1000,
+      "other": "$1,000 SerpApi credits"
+    },
+    {
+      "rank_or_track": "SerpApi 2nd Place",
+      "cash_usd": 500,
+      "credits_usd": 500,
+      "other": "$500 SerpApi credits"
+    },
+    {
+      "rank_or_track": "Xano 1st Place",
+      "cash_usd": 1000,
+      "credits_usd": 500,
+      "other": "$500 Xano Credit"
+    },
+    {
+      "rank_or_track": "Xano 2nd Place",
+      "cash_usd": 500,
+      "credits_usd": 500,
+      "other": "$500 Xano Credit"
+    }
+  ],
+  "build_window": {
+    "start": "2026-08-17",
+    "end": "2026-09-03T17:00:00Z"
+  },
+  "sources": [
+    {
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "quote": "Above legal age of majority in country of residence"
+    }
+  ],
+  "validated": true,
+  "validator": "deterministic-v1"
+}

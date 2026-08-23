@@ -1,0 +1,116 @@
+{
+  "slug": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
+  "eligibility": {
+    "open_to_all": "UNKNOWN",
+    "student_only": "TRUE",
+    "age_restricted": "TRUE",
+    "min_age": null,
+    "countries_restricted": [
+      "standard exceptions (unspecified)"
+    ],
+    "online_participation": "TRUE",
+    "team_required": "FALSE",
+    "max_team_size": null
+  },
+  "tracks": [
+    {
+      "name": "Best SaaS Product",
+      "prize_usd": 4000
+    },
+    {
+      "name": "Top IDEAS will get Exposure",
+      "prize_usd": null
+    },
+    {
+      "name": "NexFellow Founder\u2019s Choice Award",
+      "prize_usd": null
+    },
+    {
+      "name": "NexFellow Product Excellence Award",
+      "prize_usd": null
+    },
+    {
+      "name": "NexFellow Innovation Award",
+      "prize_usd": null
+    },
+    {
+      "name": "Tin Computer Credits",
+      "prize_usd": 299
+    }
+  ],
+  "required_tech": [],
+  "optional_sponsor_tech": [
+    "NexFellow",
+    "Algoverse",
+    "Tin Computer",
+    "Sylus Ai"
+  ],
+  "judging": {
+    "Innovation & Creativity": "20%",
+    "Technical Implementation": "25%",
+    "Problem Solving & Impact": "25%",
+    "User Experience & Design": "15%",
+    "Presentation & Demo": "15%"
+  },
+  "deliverables": [
+    "project description",
+    "working product / functional prototype",
+    "public source code repository (GitHub)",
+    "demo video (up to 5 minutes)",
+    "presentation deck (up to 10 slides)",
+    "documentation"
+  ],
+  "originality": {
+    "new_project_required": "UNKNOWN",
+    "preexisting_code_allowed": "UNKNOWN",
+    "disclosure_required": "UNKNOWN"
+  },
+  "prizes": [
+    {
+      "rank_or_track": "Best SaaS Product",
+      "cash_usd": 4000,
+      "credits_usd": null,
+      "other": "1 winner"
+    },
+    {
+      "rank_or_track": "Tin Computer Credits",
+      "cash_usd": null,
+      "credits_usd": 299,
+      "other": "first 100 eligible teams; one claim per team; 60-day claim window; first come, first served"
+    },
+    {
+      "rank_or_track": "NexFellow Founder\u2019s Choice Award",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "3 months of NexFellow Founder Plan"
+    },
+    {
+      "rank_or_track": "NexFellow Product Excellence Award",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "2 months of NexFellow Founder Plan"
+    },
+    {
+      "rank_or_track": "NexFellow Innovation Award",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "1 month of NexFellow Founder Plan"
+    }
+  ],
+  "build_window": {
+    "start": "2026-08-21",
+    "end": "2026-09-15"
+  },
+  "sources": [
+    {
+      "url": "https://ai-builders-hackathon-2026.devpost.com/",
+      "quote": "$33,900 in cash ... Deadline Sep 16, 2026 @ 3:00am UTC ... Above legal age of majority in country of residence; Students only; Companies/professional organizations excluded from participation; All countries/territories, excluding standard exceptions"
+    },
+    {
+      "url": "https://ai-builders-hackathon-2026.devpost.com/rules",
+      "quote": "Hackathon Begins: 21 August 2026 ... Project Submission Deadline: 15 September 2026 ... All submissions must be created during the hackathon period"
+    }
+  ],
+  "validated": true,
+  "validator": "deterministic-v1"
+}

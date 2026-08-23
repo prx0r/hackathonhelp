@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hacktitan-hacktitan",
@@ -73,6 +73,71 @@
       "p10": 3,
       "p50": 6,
       "p90": 12
+    },
+    "contract": {
+      "slug": "hacktitan-hacktitan",
+      "eligibility": {
+        "open_to_all": "FALSE",
+        "student_only": "TRUE",
+        "age_restricted": "TRUE",
+        "min_age": null,
+        "countries_restricted": [
+          "Brazil",
+          "Crimea",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Quebec",
+          "Russia"
+        ],
+        "online_participation": "TRUE",
+        "team_required": "UNKNOWN",
+        "max_team_size": null
+      },
+      "tracks": [],
+      "required_tech": [],
+      "optional_sponsor_tech": [
+        "State Farm",
+        "Growmark"
+      ],
+      "judging": {
+        "presentation": "UNKNOWN"
+      },
+      "deliverables": [],
+      "originality": {
+        "new_project_required": "UNKNOWN",
+        "preexisting_code_allowed": "UNKNOWN",
+        "disclosure_required": "UNKNOWN"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "state farm",
+          "cash_usd": 5000,
+          "credits_usd": null,
+          "other": "2 winners; described as 'sf prize - 5k'; event totals $10,000 in cash prizes"
+        }
+      ],
+      "build_window": {
+        "start": "2027-02-02T18:00:00-05:00",
+        "end": "2027-02-04T14:00:00-05:00"
+      },
+      "sources": [
+        {
+          "url": "https://hacktitan.devpost.com/",
+          "quote": "Students only"
+        },
+        {
+          "url": "https://hacktitan.devpost.com/",
+          "quote": "$10,000 in prizes"
+        },
+        {
+          "url": "https://hacktitan.devpost.com/details/dates",
+          "quote": "Submissions February 02 at 5:00pm CST February 04 at 1:00pm CST"
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
     },
     "fit": {
       "strategic_fit": 0,

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-nextstep2026-nextstep2026",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.327Z",
-    "days_left": 23,
+    "days_left": 22,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -74,6 +74,87 @@
       "p50": 6,
       "p90": 12
     },
+    "contract": {
+      "slug": "nextstep2026-nextstep2026",
+      "eligibility": {
+        "open_to_all": "FALSE",
+        "student_only": "TRUE",
+        "age_restricted": "TRUE",
+        "min_age": 13,
+        "countries_restricted": [],
+        "online_participation": "TRUE",
+        "team_required": "UNKNOWN",
+        "max_team_size": 5
+      },
+      "tracks": [],
+      "required_tech": [],
+      "optional_sponsor_tech": [
+        "Claude (Anthropic credits)",
+        "Wolfram Alpha"
+      ],
+      "judging": {
+        "Originality": "UNKNOWN",
+        "Adherence to Track": "UNKNOWN",
+        "Completion": "UNKNOWN",
+        "Learning": "UNKNOWN",
+        "Design": "UNKNOWN",
+        "Technology": "UNKNOWN"
+      },
+      "deliverables": [
+        "video demo / pitch (max 5 minutes)",
+        "link to repository or code",
+        "Devpost project page",
+        "live website or application link (if applicable)"
+      ],
+      "originality": {
+        "new_project_required": "FALSE",
+        "preexisting_code_allowed": "TRUE",
+        "disclosure_required": "TRUE"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "1st Place",
+          "cash_usd": 1000,
+          "credits_usd": 500,
+          "other": "Final Round Interview @ YC Startup; 2 AoPS Coupons; XYZ Domains; 1 year of NordVPN, NordPass, Saily, & Incogni"
+        },
+        {
+          "rank_or_track": "2nd Place",
+          "cash_usd": 500,
+          "credits_usd": 250,
+          "other": "1 AoPS Coupon; XYZ Domains; 1 year of NordVPN, NordPass, Saily, & Incogni"
+        },
+        {
+          "rank_or_track": "3rd Place",
+          "cash_usd": 250,
+          "credits_usd": 100,
+          "other": "1 AoPS Coupon; XYZ Domains; 1 year of NordVPN, NordPass, Saily, & Incogni"
+        },
+        {
+          "rank_or_track": "Participation Prizes (700 winners)",
+          "cash_usd": null,
+          "credits_usd": null,
+          "other": "Wolfram Alpha full access package (worth $830); 350 XYZ Domains"
+        }
+      ],
+      "build_window": {
+        "start": "2026-08-21",
+        "end": "2026-09-13"
+      },
+      "sources": [
+        {
+          "url": "https://nextstep2026.devpost.com/rules",
+          "quote": "Anyone who is 13 to 24 years old as of August 21st, 2026 may participate in the NextStep Hackathon. Groups may have up to 5 members."
+        },
+        {
+          "url": "https://nextstep2026.devpost.com/",
+          "quote": "If you're continuing work on an old project, you MUST specify in your Devpost what was worked on 1) before the hackathon and 2) during the hackathon."
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
+    },
     "fit": {
       "strategic_fit": 0,
       "code_reuse": 0.1,
@@ -93,7 +174,7 @@
     "metrics": {
       "equal_share_naive": 6.84,
       "fair_share_serious": 56.45,
-      "days_left": 23
+      "days_left": 22
     },
     "cautions": [],
     "payout": {

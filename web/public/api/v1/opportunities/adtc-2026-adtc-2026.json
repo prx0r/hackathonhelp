@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-adtc-2026-adtc-2026",
@@ -32,7 +32,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:50.629Z",
-    "days_left": 4,
+    "days_left": 3,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -92,7 +92,7 @@
     "metrics": {
       "equal_share_naive": 9.24,
       "fair_share_serious": 185.39,
-      "days_left": 4
+      "days_left": 3
     },
     "cautions": [],
     "payout": {
@@ -109,11 +109,11 @@
     },
     "decision": {
       "action": "SKIP",
-      "reason": "weak opportunity for remaining time",
-      "feasibility": 0.65,
-      "feasibility_label": "3-5d",
+      "reason": "window reached, opportunity weak",
+      "feasibility": 0.45,
+      "feasibility_label": "2-3d",
       "latest_safe_start": "2026-08-14",
-      "p_finish_proxy": 0.65,
+      "p_finish_proxy": 0.45,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -135,7 +135,7 @@
     "attention_breakdown": {
       "action": "SKIP",
       "score": 61,
-      "formula": "SKIP - weak opportunity for remaining time"
+      "formula": "SKIP - window reached, opportunity weak"
     }
   },
   "links": {

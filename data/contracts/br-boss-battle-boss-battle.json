@@ -1,0 +1,76 @@
+{
+  "slug": "br-boss-battle-boss-battle",
+  "eligibility": {
+    "open_to_all": "TRUE",
+    "student_only": "UNKNOWN",
+    "age_restricted": "UNKNOWN",
+    "min_age": null,
+    "countries_restricted": [],
+    "online_participation": "TRUE",
+    "team_required": "FALSE",
+    "max_team_size": 3
+  },
+  "tracks": [
+    {
+      "name": "Machine Money",
+      "prize_usd": 1000
+    },
+    {
+      "name": "Freedom Stack",
+      "prize_usd": 1000
+    },
+    {
+      "name": "Cypherpunk",
+      "prize_usd": 1000
+    }
+  ],
+  "required_tech": [],
+  "optional_sponsor_tech": [],
+  "judging": {},
+  "deliverables": [],
+  "originality": {
+    "new_project_required": "UNKNOWN",
+    "preexisting_code_allowed": "UNKNOWN",
+    "disclosure_required": "UNKNOWN"
+  },
+  "prizes": [
+    {
+      "rank_or_track": "Best in Machine Money",
+      "cash_usd": 1000,
+      "credits_usd": null,
+      "other": ""
+    },
+    {
+      "rank_or_track": "Best in Freedom Stack",
+      "cash_usd": 1000,
+      "credits_usd": null,
+      "other": ""
+    },
+    {
+      "rank_or_track": "Best in Cypherpunk",
+      "cash_usd": 1000,
+      "credits_usd": null,
+      "other": ""
+    }
+  ],
+  "build_window": {
+    "start": "2026-09-07",
+    "end": "2026-10-05"
+  },
+  "sources": [
+    {
+      "url": "https://boss-battle.devfolio.co",
+      "quote": "$3,000 Available in Prizes"
+    },
+    {
+      "url": "https://boss-battle.devfolio.co",
+      "quote": "BOSS Battle flips that: it's virtual, it's open, and it's a hackathon instead of a summit."
+    },
+    {
+      "url": "https://boss-battle.devfolio.co",
+      "quote": "Runs from Sep 7 - Oct 5, 2026 \u00b7 Happening Online \u00b7 Team size 1 - 3"
+    }
+  ],
+  "validated": true,
+  "validator": "deterministic-v1"
+}

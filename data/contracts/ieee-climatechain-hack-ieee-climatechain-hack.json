@@ -1,0 +1,113 @@
+{
+  "slug": "ieee-climatechain-hack-ieee-climatechain-hack",
+  "eligibility": {
+    "open_to_all": "FALSE",
+    "student_only": "TRUE",
+    "age_restricted": "TRUE",
+    "min_age": null,
+    "countries_restricted": [],
+    "online_participation": "TRUE",
+    "team_required": "FALSE",
+    "max_team_size": 5
+  },
+  "tracks": [
+    {
+      "name": "Carbon Markets & Emissions Transparency",
+      "prize_usd": null
+    },
+    {
+      "name": "Renewable Energy & Energy Trading",
+      "prize_usd": null
+    },
+    {
+      "name": "Sustainable Supply Chains",
+      "prize_usd": null
+    },
+    {
+      "name": "Climate Data & Environmental Monitoring",
+      "prize_usd": null
+    }
+  ],
+  "required_tech": [
+    "Blockchain",
+    "AI"
+  ],
+  "optional_sponsor_tech": [],
+  "judging": {
+    "Climate Impact": "UNKNOWN",
+    "Innovation & Creativity": "UNKNOWN",
+    "Technical Execution": "UNKNOWN",
+    "Practical Usefulness": "UNKNOWN",
+    "Presentation & Storytelling": "UNKNOWN"
+  },
+  "deliverables": [
+    "track_alignment_statement",
+    "project_description",
+    "demo_video_3_5_min",
+    "public_code_repository_github_or_equivalent",
+    "working_prototype_demo_or_proof_of_concept"
+  ],
+  "originality": {
+    "new_project_required": "UNKNOWN",
+    "preexisting_code_allowed": "UNKNOWN",
+    "disclosure_required": "UNKNOWN"
+  },
+  "prizes": [
+    {
+      "rank_or_track": "1st Prize TBD",
+      "cash_usd": 1500,
+      "credits_usd": null,
+      "other": null
+    },
+    {
+      "rank_or_track": "2nd Prize",
+      "cash_usd": 1000,
+      "credits_usd": null,
+      "other": null
+    },
+    {
+      "rank_or_track": "Third Prize",
+      "cash_usd": 500,
+      "credits_usd": null,
+      "other": null
+    },
+    {
+      "rank_or_track": "Certificates of Merit",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "IEEE Certificate of Merit for the top 3 winning teams"
+    },
+    {
+      "rank_or_track": "IEEE Certificate of Participation",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "IEEE Certificate of Participation for all eligible participants"
+    },
+    {
+      "rank_or_track": "IEEE Senior Member",
+      "cash_usd": null,
+      "credits_usd": null,
+      "other": "Eligible winners who are IEEE members may be nominated for IEEE Senior Member elevation"
+    }
+  ],
+  "build_window": {
+    "start": "2026-10-05",
+    "end": "2026-10-25"
+  },
+  "sources": [
+    {
+      "url": "https://ieee-climatechain-hack.devpost.com/",
+      "quote": "The ClimateChain Global Hackathon 2026 invites innovators, developers, researchers, and climate enthusiasts from around the world to build solutions that leverage blockchain technology and AI to address real-world climate challenges."
+    },
+    {
+      "url": "https://ieee-climatechain-hack.devpost.com/rules",
+      "quote": "\u2022\u00a0\u00a0\u00a0\u00a0\u00a0 Teams of 2-5 members (individual submissions allowed)"
+    },
+    {
+      "url": "https://ieee-climatechain-hack.devpost.com/",
+      "quote": "Oct 5 \u2013 25, 2026"
+    }
+  ],
+  "validated": true,
+  "validator": "deterministic-v1"
+}

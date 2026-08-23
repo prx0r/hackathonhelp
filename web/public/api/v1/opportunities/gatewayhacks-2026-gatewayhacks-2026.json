@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:52.192Z",
-    "days_left": 42,
+    "days_left": 41,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -93,7 +93,7 @@
     "metrics": {
       "equal_share_naive": 216.07,
       "fair_share_serious": null,
-      "days_left": 42
+      "days_left": 41
     },
     "cautions": [
       "prize pool not yet announced — rescore when tracks land"

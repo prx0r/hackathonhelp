@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-agentsforhumans-agentsforhumans",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:50.628Z",
-    "days_left": 24,
+    "days_left": 23,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -74,6 +74,167 @@
       "p50": 6,
       "p90": 12
     },
+    "contract": {
+      "slug": "agentsforhumans-agentsforhumans",
+      "eligibility": {
+        "open_to_all": "FALSE",
+        "student_only": "FALSE",
+        "age_restricted": "TRUE",
+        "min_age": null,
+        "countries_restricted": [
+          "Argentina",
+          "Australia",
+          "Brazil",
+          "Hong Kong",
+          "Indonesia",
+          "Italy",
+          "Malaysia",
+          "Philippines",
+          "Thailand",
+          "Vietnam",
+          "Singapore",
+          "Belarus",
+          "Donetsk People's Republic region (DNR)",
+          "Luhansk People's Republic region (LNR)",
+          "United Arab Emirates",
+          "(Province of) Quebec",
+          "Russia",
+          "Crimea",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "online_participation": "TRUE",
+        "team_required": "FALSE",
+        "max_team_size": null
+      },
+      "tracks": [
+        {
+          "name": "Everyday Agents",
+          "prize_usd": null
+        },
+        {
+          "name": "Professional Agents",
+          "prize_usd": null
+        },
+        {
+          "name": "Good Neighbor Agents",
+          "prize_usd": null
+        }
+      ],
+      "required_tech": [
+        "Strands Agents SDK",
+        "AWS account",
+        "AWS Builder ID"
+      ],
+      "optional_sponsor_tech": [
+        "Amazon Bedrock AgentCore",
+        "$50 AWS Promotional Credits"
+      ],
+      "judging": {
+        "Technical Implementation": "EQUAL",
+        "Design": "EQUAL",
+        "Potential Impact": "EQUAL",
+        "Creativity & Originality": "EQUAL",
+        "Presentation": "EQUAL"
+      },
+      "deliverables": [
+        "text description",
+        "public code repository URL (GitHub/GitLab/Bitbucket)",
+        "all source code, assets, setup instructions",
+        "MIT or Apache open source license visible in repo About section",
+        "README",
+        "architecture diagram",
+        "demo video (max 5 minutes, public on YouTube/Vimeo)",
+        "AWS Builder ID",
+        "live demo link (optional)"
+      ],
+      "originality": {
+        "new_project_required": "TRUE",
+        "preexisting_code_allowed": "TRUE",
+        "disclosure_required": "TRUE"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "Grand Prize",
+          "cash_usd": 10000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post; Virtual Roundtable discussion with AWS Experts"
+        },
+        {
+          "rank_or_track": "Everyday Agents | Golden Agent",
+          "cash_usd": 5000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Everyday Agents | Silver Agent",
+          "cash_usd": 3000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Everyday Agents | Bronze Agent",
+          "cash_usd": 2000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Professional Agents | Golden Agent",
+          "cash_usd": 5000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Professional Agents | Silver Agent",
+          "cash_usd": 3000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Professional Agents | Bronze Agent",
+          "cash_usd": 2000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Good Neighbor Agents | Golden Agent",
+          "cash_usd": 5000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Good Neighbor Agents | Silver Agent",
+          "cash_usd": 3000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        },
+        {
+          "rank_or_track": "Good Neighbor Agents | Bronze Agent",
+          "cash_usd": 2000,
+          "credits_usd": null,
+          "other": "Featured in AWS Social Post"
+        }
+      ],
+      "build_window": {
+        "start": "2026-08-10",
+        "end": "2026-09-14"
+      },
+      "sources": [
+        {
+          "url": "https://agentsforhumans.devpost.com/",
+          "quote": "Build a new AI agent with Strands Agents SDK that does real work for people."
+        },
+        {
+          "url": "https://agentsforhumans.devpost.com/rules",
+          "quote": "New Projects Only:Projects must be newly created during the Submission Period. Participants may use standard development tools, including frameworks, libraries, starter templates, and AI coding assistants, but must disclose any other pre-existing code or work incorporated into the Project."
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
+    },
     "fit": {
       "strategic_fit": 0.22,
       "code_reuse": 0.1,
@@ -93,7 +254,7 @@
     "metrics": {
       "equal_share_naive": 8.72,
       "fair_share_serious": 174.67,
-      "days_left": 24
+      "days_left": 23
     },
     "cautions": [],
     "payout": {

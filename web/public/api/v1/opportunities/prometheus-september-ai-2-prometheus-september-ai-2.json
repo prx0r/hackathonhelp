@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-prometheus-september-ai-2-prometheus-september-ai-2",
@@ -33,7 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.851Z",
-    "days_left": 22,
+    "days_left": 21,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -74,6 +74,98 @@
       "p50": 6,
       "p90": 12
     },
+    "contract": {
+      "slug": "prometheus-september-ai-2-prometheus-september-ai-2",
+      "eligibility": {
+        "open_to_all": "FALSE",
+        "student_only": "TRUE",
+        "age_restricted": "TRUE",
+        "min_age": 13,
+        "countries_restricted": [],
+        "online_participation": "TRUE",
+        "team_required": "FALSE",
+        "max_team_size": 4
+      },
+      "tracks": [],
+      "required_tech": [
+        "AI/Machine Learning (project must leverage it as core functionality)",
+        "educational tool purpose"
+      ],
+      "optional_sponsor_tech": [],
+      "judging": {
+        "Educational Impact": "25",
+        "Creative Use of AI/ML": "25",
+        "Technical Execution": "25",
+        "The Pitch & Demo": "25"
+      },
+      "deliverables": [
+        "working prototype",
+        "2-minute demo video (max 2 minutes)",
+        "source code (GitHub repository)"
+      ],
+      "originality": {
+        "new_project_required": "TRUE",
+        "preexisting_code_allowed": "FALSE",
+        "disclosure_required": "UNKNOWN"
+      },
+      "prizes": [
+        {
+          "rank_or_track": "1st Place",
+          "cash_usd": 1000,
+          "credits_usd": null,
+          "other": "Certificate"
+        },
+        {
+          "rank_or_track": "2nd Place",
+          "cash_usd": 400,
+          "credits_usd": null,
+          "other": "Certificate"
+        },
+        {
+          "rank_or_track": "3rd Place",
+          "cash_usd": 100,
+          "credits_usd": null,
+          "other": "Certificate"
+        },
+        {
+          "rank_or_track": "4th and 5th Place",
+          "cash_usd": null,
+          "credits_usd": null,
+          "other": "Special Certificate"
+        },
+        {
+          "rank_or_track": "6th-10th Place",
+          "cash_usd": null,
+          "credits_usd": null,
+          "other": "Honorable Mention Certificate"
+        }
+      ],
+      "build_window": {
+        "start": "2026-08-18",
+        "end": "2026-09-12"
+      },
+      "sources": [
+        {
+          "url": "https://prometheus-september-ai-2.devpost.com/",
+          "quote": "Ages 13+ only / Students only / Companies/professional organizations excluded from participation / All countries/territories, excluding standard exceptions"
+        },
+        {
+          "url": "https://prometheus-september-ai-2.devpost.com/rules",
+          "quote": "Originality: All code must be written during the hackathon window (August 17th – 29h). Using open-source libraries and pre-trained AI models is encouraged, but core application logic must be new."
+        },
+        {
+          "url": "https://prometheus-september-ai-2.devpost.com/rules",
+          "quote": "September 12th - Projects should be submitted by 11:59 PM (NO EXTENSIONS)"
+        },
+        {
+          "url": "https://prometheus-september-ai-2.devpost.com/rules",
+          "quote": "Team Size: You can participate solo or in teams of up to 4 people."
+        }
+      ],
+      "validated": true,
+      "validator": "deterministic-v1",
+      "fit_boost": 0
+    },
     "fit": {
       "strategic_fit": 0,
       "code_reuse": 0.1,
@@ -93,7 +185,7 @@
     "metrics": {
       "equal_share_naive": 27.78,
       "fair_share_serious": 78.95,
-      "days_left": 22
+      "days_left": 21
     },
     "cautions": [],
     "payout": {

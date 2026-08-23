@@ -9,7 +9,7 @@ PROMPT=$(sed "s|{URL}|$URL|g; s|{SLUG}|$SLUG|g" "$TPL")
 OUT="/tmp/opencode/contract-$SLUG.json"
 mkdir -p /tmp/opencode
 echo "[extract] $SLUG <- $URL (hermes/mimo)"
-timeout 420 hermes -z "$PROMPT" > "$OUT" 2>&1 || { echo "[fail] hermes exit $?"; exit 1; }
+timeout 420 hermes ${HERMES_MODEL:+-m "$HERMES_MODEL"} -z "$PROMPT" > "$OUT" 2>&1 || { echo "[fail] hermes exit $?"; exit 1; }
 # strip to first {...} JSON blob
 python3 - "$OUT" "$ROOT/data/contracts/$SLUG.json" << 'PY'
 import json,sys,re

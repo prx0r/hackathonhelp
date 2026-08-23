@@ -11,6 +11,13 @@
       <description>Prize(norm) $39500 | field ~71 | SPRINT - tight but real (10-14d finish prior 97%)</description>
     </item>
     <item>
+      <title>[SPRINT] VoltHacks</title>
+      <link>https://hackathonhelp.pages.dev/opps/volthacks-volthacks</link>
+      <guid isPermaLink="false">volthacks-volthacks-2026-08-22T23:51:50.629Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:51:50 GMT</pubDate>
+      <description>Prize(norm) $35785 | field ~85 | SPRINT - tight but real (10-14d finish prior 97%)</description>
+    </item>
+    <item>
       <title>[SPRINT] Telegraph H1 Hackathon</title>
       <link>https://hackathonhelp.pages.dev/opps/telegraph-h1</link>
       <guid isPermaLink="false">telegraph-h1-2026-08-22T23:52:03.133Z</guid>
@@ -39,13 +46,6 @@
       <description>Prize(norm) TBA | field ~? | PREP - commit by 2026-09-05</description>
     </item>
     <item>
-      <title>[PREP] VoltHacks</title>
-      <link>https://hackathonhelp.pages.dev/opps/volthacks-volthacks</link>
-      <guid isPermaLink="false">volthacks-volthacks-2026-08-22T23:51:50.629Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:50 GMT</pubDate>
-      <description>Prize(norm) $35785 | field ~85 | PREP - commit by 2026-08-25</description>
-    </item>
-    <item>
       <title>[PREP] AI Builders Hackathon</title>
       <link>https://hackathonhelp.pages.dev/opps/ai-builders-hackathon-2026-ai-builders-hackathon-2026</link>
       <guid isPermaLink="false">ai-builders-hackathon-2026-ai-builders-hackathon-2026-2026-08-22T23:51:50.629Z</guid>
@@ -60,11 +60,25 @@
       <description>Prize(norm) $3000 | field ~? | PREP - far out; latest safe start 2026-09-27</description>
     </item>
     <item>
+      <title>[PREP] WeAreDevelopers Hackathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/wearedevelopers-hackathon</link>
+      <guid isPermaLink="false">wearedevelopers-hackathon-2026-08-22T23:52:03.133Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
+      <description>Prize(norm) TBA | field ~34 | PREP - commit by 2026-09-13 · capped: prize unconfirmed</description>
+    </item>
+    <item>
       <title>[WATCH] The Rise of AI Agents Hackathon</title>
       <link>https://hackathonhelp.pages.dev/opps/rise-of-ai-agents</link>
       <guid isPermaLink="false">rise-of-ai-agents-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
       <description>Prize(norm) $22250 | field ~50 | WATCH - deadline not published</description>
+    </item>
+    <item>
+      <title>[WATCH] UnivaBio</title>
+      <link>https://hackathonhelp.pages.dev/opps/univabio-univabio</link>
+      <guid isPermaLink="false">univabio-univabio-2026-08-22T23:51:51.492Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
+      <description>Prize(norm) $35845 | field ~40 | WATCH - far out; latest safe start 2026-09-25</description>
     </item>
     <item>
       <title>[WATCH] OpenCV AI Competition 2026, powered by AWS</title>
@@ -123,13 +137,6 @@
       <description>Prize(norm) TBA | field ~59 | WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed</description>
     </item>
     <item>
-      <title>[WATCH] WeAreDevelopers Hackathon</title>
-      <link>https://hackathonhelp.pages.dev/opps/wearedevelopers-hackathon</link>
-      <guid isPermaLink="false">wearedevelopers-hackathon-2026-08-22T23:52:03.133Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~34 | WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed</description>
-    </item>
-    <item>
       <title>[WATCH] IBM Bob 2.0 Hackathon</title>
       <link>https://hackathonhelp.pages.dev/opps/ibm-bob-2-hackathon</link>
       <guid isPermaLink="false">ibm-bob-2-hackathon-2026-08-22T23:52:03.133Z</guid>
@@ -142,13 +149,6 @@
       <guid isPermaLink="false">nextstep2026-nextstep2026-2026-08-22T23:51:51.327Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
       <description>Prize(norm) $1750 | field ~31 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
-      <title>[WATCH] Prometheus September AI Challenge</title>
-      <link>https://hackathonhelp.pages.dev/opps/prometheus-sept-ai-classic-prometheus-sept-ai-classic</link>
-      <guid isPermaLink="false">prometheus-sept-ai-classic-prometheus-sept-ai-classic-2026-08-22T23:51:51.684Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
-      <description>Prize(norm) $1500 | field ~17 | WATCH - marginal — recheck as field matures</description>
     </item>
     <item>
       <title>[WATCH] Prometheus September AI Challenge 2</title>
@@ -291,13 +291,6 @@
       <description>Prize(norm) TBA | field ~31 | WATCH - marginal — recheck as field matures</description>
     </item>
     <item>
-      <title>[WATCH] Syntax Summit</title>
-      <link>https://hackathonhelp.pages.dev/opps/syntax-summit-syntax-summit</link>
-      <guid isPermaLink="false">syntax-summit-syntax-summit-2026-08-22T23:51:51.684Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~24 | WATCH - marginal — recheck as field matures · capped: prize unconfirmed</description>
-    </item>
-    <item>
       <title>[WATCH] LUMA Hackathon (September 20th - 28th)</title>
       <link>https://hackathonhelp.pages.dev/opps/luma-hackathon-fall-luma-hackathon-fall</link>
       <guid isPermaLink="false">luma-hackathon-fall-luma-hackathon-fall-2026-08-22T23:51:51.684Z</guid>
@@ -352,5 +345,12 @@
       <guid isPermaLink="false">br-unstop-aethos-day-zero-together-we-solve-1730263-2026-08-22T23:52:00.835Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:00 GMT</pubDate>
       <description>Prize(norm) TBA | field ~74 | WATCH - marginal — recheck as field matures</description>
+    </item>
+    <item>
+      <title>[WATCH] Pixel Forge AI Hackathon ($18,000+ in Prizes)</title>
+      <link>https://hackathonhelp.pages.dev/opps/pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08</link>
+      <guid isPermaLink="false">pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08-2026-08-22T23:51:51.143Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
+      <description>Prize(norm) TBA | field ~65 | WATCH - deadline not published</description>
     </item>
 </channel></rss>

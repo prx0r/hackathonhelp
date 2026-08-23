@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:53:16.247Z",
+  "generated_at": "2026-08-23T01:17:40.139Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
@@ -33,7 +33,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
-      "days_left": 13,
+      "days_left": 12,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -74,6 +74,152 @@
         "p50": 6,
         "p90": 12
       },
+      "contract": {
+        "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+        "eligibility": {
+          "open_to_all": "TRUE",
+          "student_only": "FALSE",
+          "age_restricted": "TRUE",
+          "min_age": 18,
+          "countries_restricted": [
+            "standard exceptions (US OFAC sanctions list implied)"
+          ],
+          "online_participation": "TRUE",
+          "team_required": "UNKNOWN",
+          "max_team_size": null
+        },
+        "tracks": [],
+        "required_tech": [],
+        "optional_sponsor_tech": [
+          "Perfect Corp AI/AR API",
+          "Foxit PDF Services API / Foxit eSign API",
+          "Doctavian generation API",
+          "name.com API",
+          "Nutrient DWS (API/SDK/Viewer)",
+          "SerpApi",
+          "Xano backend"
+        ],
+        "judging": {
+          "Progress": "HIGH",
+          "Concept": "HIGH",
+          "Feasibility": "HIGH"
+        },
+        "deliverables": [
+          "demo video",
+          "project page with write-up and screenshots",
+          "public repo or shared link with setup instructions"
+        ],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "DevNetwork Overall Winner",
+            "cash_usd": 12500,
+            "credits_usd": 0,
+            "other": "Amazon Echos (up to 5); DevNetwork Premium All-Access Passes to all 2027 conferences; announcement in email to 60,000 subscribers"
+          },
+          {
+            "rank_or_track": "Perfect Corp 1st Place",
+            "cash_usd": 1500,
+            "credits_usd": 0,
+            "other": "API access codes"
+          },
+          {
+            "rank_or_track": "Perfect Corp 2nd Place",
+            "cash_usd": 1000,
+            "credits_usd": 0,
+            "other": "API access codes"
+          },
+          {
+            "rank_or_track": "Foxit Software 1st Place",
+            "cash_usd": 700,
+            "credits_usd": 0,
+            "other": null
+          },
+          {
+            "rank_or_track": "Foxit Software 2nd Place",
+            "cash_usd": 300,
+            "credits_usd": 0,
+            "other": null
+          },
+          {
+            "rank_or_track": "Doctavian 1st Place",
+            "cash_usd": 500,
+            "credits_usd": 150,
+            "other": "$150 Doctavian subscription"
+          },
+          {
+            "rank_or_track": "Doctavian 2nd Place",
+            "cash_usd": 200,
+            "credits_usd": 150,
+            "other": "$150 Doctavian subscription"
+          },
+          {
+            "rank_or_track": "name.com 1st Place",
+            "cash_usd": 1500,
+            "credits_usd": 0,
+            "other": "Amazon gift card"
+          },
+          {
+            "rank_or_track": "name.com 2nd Place",
+            "cash_usd": 500,
+            "credits_usd": 0,
+            "other": "Amazon gift card"
+          },
+          {
+            "rank_or_track": "Nutrient 1st Place",
+            "cash_usd": 750,
+            "credits_usd": 250,
+            "other": "DWS Credits (up to $250 cash value) + Visa Cash Giftcard"
+          },
+          {
+            "rank_or_track": "Nutrient 2nd Place",
+            "cash_usd": 250,
+            "credits_usd": 250,
+            "other": "DWS Credits (up to $250 cash value) + Visa Cash Giftcard"
+          },
+          {
+            "rank_or_track": "SerpApi 1st Place",
+            "cash_usd": 1000,
+            "credits_usd": 1000,
+            "other": "$1,000 SerpApi credits"
+          },
+          {
+            "rank_or_track": "SerpApi 2nd Place",
+            "cash_usd": 500,
+            "credits_usd": 500,
+            "other": "$500 SerpApi credits"
+          },
+          {
+            "rank_or_track": "Xano 1st Place",
+            "cash_usd": 1000,
+            "credits_usd": 500,
+            "other": "$500 Xano Credit"
+          },
+          {
+            "rank_or_track": "Xano 2nd Place",
+            "cash_usd": 500,
+            "credits_usd": 500,
+            "other": "$500 Xano Credit"
+          }
+        ],
+        "build_window": {
+          "start": "2026-08-17",
+          "end": "2026-09-03T17:00:00Z"
+        },
+        "sources": [
+          {
+            "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+            "quote": "Above legal age of majority in country of residence"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
+      },
       "fit": {
         "strategic_fit": 0.22,
         "code_reuse": 0.1,
@@ -93,7 +239,7 @@
       "metrics": {
         "equal_share_naive": 44.63,
         "fair_share_serious": 556.34,
-        "days_left": 13
+        "days_left": 12
       },
       "cautions": [],
       "payout": {
@@ -140,6 +286,271 @@
       }
     },
     {
+      "id": "dp-volthacks-volthacks",
+      "slug": "volthacks-volthacks",
+      "title": "VoltHacks",
+      "organizer": "VoltHacks",
+      "prize_usd": 35785,
+      "prize_raw": "$35,785",
+      "registrants": 1697,
+      "starts_at": "2026-05-22T00:00:00.000Z",
+      "ends_at": "2026-09-05T23:59:00.000Z",
+      "time_left": "14 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "IoT",
+        "Machine Learning/AI",
+        "Beginner Friendly"
+      ],
+      "open_to_all": true,
+      "prizes_counts": {
+        "cash": 5,
+        "other": 4
+      },
+      "open_state": "open",
+      "winners_announced": false,
+      "featured": false,
+      "submission_gallery_url": "https://volthacks.devpost.com/project-gallery",
+      "source_url": "https://volthacks.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "observed_at": "2026-08-22T23:51:50.629Z",
+      "days_left": 14,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": null,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 35785,
+        "cash_value": 35785,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 35785,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 1697,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 85,
+        "field_p10": 55,
+        "field_p50": 85,
+        "field_p90": 132,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "contract": {
+        "slug": "volthacks-volthacks",
+        "eligibility": {
+          "open_to_all": "UNKNOWN",
+          "student_only": "TRUE",
+          "age_restricted": "TRUE",
+          "min_age": 13,
+          "countries_restricted": [
+            "standard exceptions"
+          ],
+          "online_participation": "TRUE",
+          "team_required": "FALSE",
+          "max_team_size": null
+        },
+        "tracks": [
+          {
+            "name": "Robotics & Embedded Systems",
+            "prize_usd": null
+          },
+          {
+            "name": "AI + Hardware Integration",
+            "prize_usd": null
+          },
+          {
+            "name": "Smart Health Technology",
+            "prize_usd": null
+          },
+          {
+            "name": "Sustainability & Smart Cities",
+            "prize_usd": null
+          },
+          {
+            "name": "Open Innovation",
+            "prize_usd": null
+          }
+        ],
+        "required_tech": [],
+        "optional_sponsor_tech": [
+          "Featherless.ai",
+          "CodeCrafters",
+          "DevSwarm",
+          "Dialogate",
+          "Tin Computer",
+          "Adaption Labs",
+          ".xyz domains (Gen.xyz)"
+        ],
+        "judging": {
+          "Innovation and Creativity": "UNKNOWN",
+          "Technical Complexity": "UNKNOWN",
+          "Real World Impact": "UNKNOWN",
+          "Design and Functionality": "UNKNOWN",
+          "Presentation Quality": "UNKNOWN"
+        },
+        "deliverables": [
+          "project name and short description",
+          "explanation of the problem solved",
+          "demo video or presentation",
+          "photos/screenshots/prototype images",
+          "source code or GitHub repository (if applicable)",
+          "list of technologies/components used"
+        ],
+        "originality": {
+          "new_project_required": "TRUE",
+          "preexisting_code_allowed": "TRUE_WITH_SIGNIFICANT_NEW_DEVELOPMENT",
+          "disclosure_required": "FALSE"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Grand Prize",
+            "cash_usd": 2120,
+            "credits_usd": 300,
+            "other": "CodeCrafters VIP Membership 2 years ($720/team member), DevSwarm Pro 1yr ($100), Adaption Labs Credits $1,000"
+          },
+          {
+            "rank_or_track": "Second Place",
+            "cash_usd": 1460,
+            "credits_usd": null,
+            "other": "CodeCrafters VIP 1yr ($360/member), DevSwarm Pro 1yr ($100), Adaption Labs Credits $1,000"
+          },
+          {
+            "rank_or_track": "Third Place",
+            "cash_usd": 1180,
+            "credits_usd": null,
+            "other": "CodeCrafters VIP 6mo ($180/member), Adaption Labs Credits $1,000"
+          },
+          {
+            "rank_or_track": "XYZ Domain Awards & Dialogate Lifetime Subscriptions",
+            "cash_usd": 75,
+            "credits_usd": null,
+            "other": "free .xyz domain for a year (~$15 value) + lifetime Dialogate subscription ($60 value); 15 winners"
+          },
+          {
+            "rank_or_track": "Tin Computer Growth Credits",
+            "cash_usd": 299,
+            "credits_usd": 299,
+            "other": "NOT cash — sponsor credits; up to 100 eligible teams"
+          },
+          {
+            "rank_or_track": "Dialogate Lifetime Subscription",
+            "cash_usd": null,
+            "credits_usd": null,
+            "other": "all participants get lifetime Dialogate Pro after event"
+          },
+          {
+            "rank_or_track": "Featherless AI + DevSwarm Pro Subscription",
+            "cash_usd": null,
+            "credits_usd": 300,
+            "other": "all users get month-long subscriptions during hackathon"
+          }
+        ],
+        "build_window": {
+          "start": "2026-05-31",
+          "end": "2026-09-05"
+        },
+        "sources": [
+          {
+            "url": "https://volthacks.devpost.com/",
+            "quote": "Ages 13+ only / Students only / Companies/professional organizations excluded from participation / All countries/territories, excluding standard exceptions"
+          },
+          {
+            "url": "https://volthacks.devpost.com/rules",
+            "quote": "Projects must be created during the hackathon period. Existing projects may not be submitted unless significant new development is completed during the event."
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
+      },
+      "fit": {
+        "strategic_fit": 0,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 44,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 65
+      },
+      "metrics": {
+        "equal_share_naive": 21.09,
+        "fair_share_serious": 421,
+        "days_left": 14
+      },
+      "cautions": [],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 5,
+          "p90": 10
+        },
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.059,
+        "p_paid": 0.059,
+        "ev_cash_heuristic": 2105,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "SPRINT",
+        "reason": "tight but real (10-14d finish prior 97%)",
+        "feasibility": 0.97,
+        "feasibility_label": "10-14d",
+        "latest_safe_start": "2026-08-25",
+        "p_finish_proxy": 0.97,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$421 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      },
+      "order_key": 35073.5,
+      "attention": 35073.5,
+      "attention_breakdown": {
+        "action": "SPRINT",
+        "score": 65,
+        "formula": "SPRINT - tight but real (10-14d finish prior 97%)"
+      }
+    },
+    {
       "id": "man-telegraph-h1",
       "slug": "telegraph-h1",
       "title": "Telegraph H1 Hackathon",
@@ -178,7 +589,7 @@
         "technical_depth_prior": null,
         "family_prior_override": null
       },
-      "days_left": 9,
+      "days_left": 8,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -385,7 +796,7 @@
       "metrics": {
         "equal_share_naive": null,
         "fair_share_serious": null,
-        "days_left": 9
+        "days_left": 8
       },
       "cautions": [
         "prize not published on platform card — see official page"
@@ -467,7 +878,7 @@
         "technical_depth_prior": null,
         "family_prior_override": null
       },
-      "days_left": 26,
+      "days_left": 25,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -527,7 +938,7 @@
       "metrics": {
         "equal_share_naive": 5.65,
         "fair_share_serious": 112.9,
-        "days_left": 26
+        "days_left": 25
       },
       "cautions": [],
       "payout": {
@@ -633,6 +1044,83 @@
         "p10": 3,
         "p50": 6,
         "p90": 12
+      },
+      "contract": {
+        "slug": "br-boss-battle-boss-battle",
+        "eligibility": {
+          "open_to_all": "TRUE",
+          "student_only": "UNKNOWN",
+          "age_restricted": "UNKNOWN",
+          "min_age": null,
+          "countries_restricted": [],
+          "online_participation": "TRUE",
+          "team_required": "FALSE",
+          "max_team_size": 3
+        },
+        "tracks": [
+          {
+            "name": "Machine Money",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Freedom Stack",
+            "prize_usd": 1000
+          },
+          {
+            "name": "Cypherpunk",
+            "prize_usd": 1000
+          }
+        ],
+        "required_tech": [],
+        "optional_sponsor_tech": [],
+        "judging": {},
+        "deliverables": [],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Best in Machine Money",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": ""
+          },
+          {
+            "rank_or_track": "Best in Freedom Stack",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": ""
+          },
+          {
+            "rank_or_track": "Best in Cypherpunk",
+            "cash_usd": 1000,
+            "credits_usd": null,
+            "other": ""
+          }
+        ],
+        "build_window": {
+          "start": "2026-09-07",
+          "end": "2026-10-05"
+        },
+        "sources": [
+          {
+            "url": "https://boss-battle.devfolio.co",
+            "quote": "$3,000 Available in Prizes"
+          },
+          {
+            "url": "https://boss-battle.devfolio.co",
+            "quote": "BOSS Battle flips that: it's virtual, it's open, and it's a hackathon instead of a summit."
+          },
+          {
+            "url": "https://boss-battle.devfolio.co",
+            "quote": "Runs from Sep 7 - Oct 5, 2026 · Happening Online · Team size 1 - 3"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
       },
       "fit": {
         "strategic_fit": 0,
@@ -741,7 +1229,7 @@
         "technical_depth_prior": "high",
         "family_prior_override": null
       },
-      "days_left": 25,
+      "days_left": 24,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -801,7 +1289,7 @@
       "metrics": {
         "equal_share_naive": null,
         "fair_share_serious": null,
-        "days_left": 25
+        "days_left": 24
       },
       "cautions": [
         "prize pool not yet announced — rescore when tracks land"
@@ -844,143 +1332,6 @@
       }
     },
     {
-      "id": "dp-volthacks-volthacks",
-      "slug": "volthacks-volthacks",
-      "title": "VoltHacks",
-      "organizer": "VoltHacks",
-      "prize_usd": 35785,
-      "prize_raw": "$35,785",
-      "registrants": 1697,
-      "starts_at": "2026-05-22T00:00:00.000Z",
-      "ends_at": "2026-09-05T23:59:00.000Z",
-      "time_left": "14 days left",
-      "location_type": "online",
-      "location": "Online",
-      "themes": [
-        "IoT",
-        "Machine Learning/AI",
-        "Beginner Friendly"
-      ],
-      "open_to_all": true,
-      "prizes_counts": {
-        "cash": 5,
-        "other": 4
-      },
-      "open_state": "open",
-      "winners_announced": false,
-      "featured": false,
-      "submission_gallery_url": "https://volthacks.devpost.com/project-gallery",
-      "source_url": "https://volthacks.devpost.com/",
-      "source": "devpost",
-      "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.629Z",
-      "days_left": 15,
-      "gates": {
-        "registration_open": true,
-        "deadline_future": true,
-        "remote_ok": true,
-        "age_confirmed": null,
-        "student_only": false,
-        "country_restricted": null
-      },
-      "eligibility": {
-        "eligible": true,
-        "failed": [],
-        "confidence": "platform_metadata_unverified",
-        "notes": null
-      },
-      "prize": {
-        "advertised_value": 35785,
-        "cash_value": 35785,
-        "credits_value": null,
-        "hardware_value": null,
-        "normalized_value": 35785,
-        "headline_inflation": 0
-      },
-      "field": {
-        "registrations": 1697,
-        "family_prior": {
-          "submissions_per_registration": 0.05,
-          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
-        },
-        "field_status": "usable",
-        "estimated_serious_field": 85,
-        "field_p10": 55,
-        "field_p50": 85,
-        "field_p90": 132,
-        "funnel": null
-      },
-      "slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
-      },
-      "fit": {
-        "strategic_fit": 0,
-        "code_reuse": 0.1,
-        "effective_p80_hours": 36
-      },
-      "score_v01": {
-        "components": {
-          "expected_prize_value": 100,
-          "winnability": 44,
-          "historical_winner_quality": null,
-          "judging_tractability": null,
-          "organizer_quality": null
-        },
-        "known_components": 2,
-        "opportunity_score": 65
-      },
-      "metrics": {
-        "equal_share_naive": 21.09,
-        "fair_share_serious": 421,
-        "days_left": 15
-      },
-      "cautions": [],
-      "payout": {
-        "paying_slots": {
-          "p10": 3,
-          "p50": 5,
-          "p90": 10
-        },
-        "paying_slots_source": "platform_reported",
-        "baseline_any_payout": 0.059,
-        "p_paid": 0.059,
-        "ev_cash_heuristic": 2105,
-        "note": "slot count assumed until prize ladders are verified on official pages"
-      },
-      "decision": {
-        "action": "PREP",
-        "reason": "commit by 2026-08-25",
-        "feasibility": 1,
-        "feasibility_label": "14d+",
-        "latest_safe_start": "2026-08-25",
-        "p_finish_proxy": 1,
-        "build_model": {
-          "p50_hours": 25,
-          "p80_hours": 40,
-          "hours_per_day": 4,
-          "buffer_days": 2,
-          "shadow_hour_value_usd": 25
-        },
-        "opportunity_cost_usd": 900
-      },
-      "mega": {
-        "score": 35,
-        "reasons": [
-          "$421 normalized prize per estimated submission"
-        ],
-        "category": "value_competition_gap"
-      },
-      "order_key": 30073.5,
-      "attention": 30073.5,
-      "attention_breakdown": {
-        "action": "PREP",
-        "score": 65,
-        "formula": "PREP - commit by 2026-08-25"
-      }
-    },
-    {
       "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
       "slug": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
       "title": "AI Builders Hackathon",
@@ -1011,7 +1362,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
-      "days_left": 25,
+      "days_left": 24,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -1052,6 +1403,123 @@
         "p50": 6,
         "p90": 12
       },
+      "contract": {
+        "slug": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
+        "eligibility": {
+          "open_to_all": "UNKNOWN",
+          "student_only": "TRUE",
+          "age_restricted": "TRUE",
+          "min_age": null,
+          "countries_restricted": [
+            "standard exceptions (unspecified)"
+          ],
+          "online_participation": "TRUE",
+          "team_required": "FALSE",
+          "max_team_size": null
+        },
+        "tracks": [
+          {
+            "name": "Best SaaS Product",
+            "prize_usd": 4000
+          },
+          {
+            "name": "Top IDEAS will get Exposure",
+            "prize_usd": null
+          },
+          {
+            "name": "NexFellow Founder’s Choice Award",
+            "prize_usd": null
+          },
+          {
+            "name": "NexFellow Product Excellence Award",
+            "prize_usd": null
+          },
+          {
+            "name": "NexFellow Innovation Award",
+            "prize_usd": null
+          },
+          {
+            "name": "Tin Computer Credits",
+            "prize_usd": 299
+          }
+        ],
+        "required_tech": [],
+        "optional_sponsor_tech": [
+          "NexFellow",
+          "Algoverse",
+          "Tin Computer",
+          "Sylus Ai"
+        ],
+        "judging": {
+          "Innovation & Creativity": "20%",
+          "Technical Implementation": "25%",
+          "Problem Solving & Impact": "25%",
+          "User Experience & Design": "15%",
+          "Presentation & Demo": "15%"
+        },
+        "deliverables": [
+          "project description",
+          "working product / functional prototype",
+          "public source code repository (GitHub)",
+          "demo video (up to 5 minutes)",
+          "presentation deck (up to 10 slides)",
+          "documentation"
+        ],
+        "originality": {
+          "new_project_required": "UNKNOWN",
+          "preexisting_code_allowed": "UNKNOWN",
+          "disclosure_required": "UNKNOWN"
+        },
+        "prizes": [
+          {
+            "rank_or_track": "Best SaaS Product",
+            "cash_usd": 4000,
+            "credits_usd": null,
+            "other": "1 winner"
+          },
+          {
+            "rank_or_track": "Tin Computer Credits",
+            "cash_usd": null,
+            "credits_usd": 299,
+            "other": "first 100 eligible teams; one claim per team; 60-day claim window; first come, first served"
+          },
+          {
+            "rank_or_track": "NexFellow Founder’s Choice Award",
+            "cash_usd": null,
+            "credits_usd": null,
+            "other": "3 months of NexFellow Founder Plan"
+          },
+          {
+            "rank_or_track": "NexFellow Product Excellence Award",
+            "cash_usd": null,
+            "credits_usd": null,
+            "other": "2 months of NexFellow Founder Plan"
+          },
+          {
+            "rank_or_track": "NexFellow Innovation Award",
+            "cash_usd": null,
+            "credits_usd": null,
+            "other": "1 month of NexFellow Founder Plan"
+          }
+        ],
+        "build_window": {
+          "start": "2026-08-21",
+          "end": "2026-09-15"
+        },
+        "sources": [
+          {
+            "url": "https://ai-builders-hackathon-2026.devpost.com/",
+            "quote": "$33,900 in cash ... Deadline Sep 16, 2026 @ 3:00am UTC ... Above legal age of majority in country of residence; Students only; Companies/professional organizations excluded from participation; All countries/territories, excluding standard exceptions"
+          },
+          {
+            "url": "https://ai-builders-hackathon-2026.devpost.com/rules",
+            "quote": "Hackathon Begins: 21 August 2026 ... Project Submission Deadline: 15 September 2026 ... All submissions must be created during the hackathon period"
+          }
+        ],
+        "validated": true,
+        "validator": "deterministic-v1",
+        "fit_boost": 0
+      },
       "fit": {
         "strategic_fit": 0,
         "code_reuse": 0.1,
@@ -1071,7 +1539,7 @@
       "metrics": {
         "equal_share_naive": 16.98,
         "fair_share_serious": 339,
-        "days_left": 25
+        "days_left": 24
       },
       "cautions": [],
       "payout": {
@@ -1156,7 +1624,7 @@
         "technical_depth_prior": null,
         "family_prior_override": null
       },
-      "days_left": 44,
+      "days_left": 43,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -1297,7 +1765,7 @@
       "metrics": {
         "equal_share_naive": null,
         "fair_share_serious": null,
-        "days_left": 44
+        "days_left": 43
       },
       "cautions": [
         "prize not published on platform card — see official page"
@@ -1337,6 +1805,147 @@
         "action": "PREP",
         "score": 71,
         "formula": "PREP - far out; latest safe start 2026-09-27"
+      }
+    },
+    {
+      "id": "man-wearedevelopers-hackathon",
+      "slug": "wearedevelopers-hackathon",
+      "title": "WeAreDevelopers Hackathon",
+      "organizer": "WeAreDevelopers x lablab.ai",
+      "prize_usd": null,
+      "prize_raw": "sponsor tracks still coming",
+      "registrants": 172,
+      "starts_at": "2026-09-18",
+      "ends_at": "2026-09-24",
+      "first_deadline": null,
+      "deadline_note": null,
+      "time_left": null,
+      "location_type": "online",
+      "location": "Hybrid - online build Sep 18-24",
+      "themes": [
+        "ai",
+        "agents",
+        "industry"
+      ],
+      "open_to_all": true,
+      "source_url": "https://lablab.ai/ai-hackathons/wearedevelopers-hackathon",
+      "source": "manual",
+      "source_authority": "official_rules",
+      "observed_at": "2026-08-22T23:52:03.133Z",
+      "manual": {
+        "prize_breakdown": {
+          "advertised": null,
+          "cash": null,
+          "credits": null,
+          "_note": "sponsor tracks still coming"
+        },
+        "eligibility_note": null,
+        "field_note": null,
+        "judging": null,
+        "organizer_quality": 0.8,
+        "technical_depth_prior": null,
+        "family_prior_override": null
+      },
+      "days_left": 32,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": null,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "official_rules",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": 172,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 34,
+        "field_p10": 22,
+        "field_p50": 34,
+        "field_p90": 53,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 0.22,
+        "code_reuse": 0.1,
+        "effective_p80_hours": 36
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": 51,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": 80
+        },
+        "known_components": 2,
+        "opportunity_score": 65
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 32
+      },
+      "cautions": [
+        "prize pool not yet announced — rescore when tracks land"
+      ],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "paying_slots_source": "assumed",
+        "baseline_any_payout": 0.176,
+        "p_paid": 0.176,
+        "ev_cash_heuristic": null,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "PREP",
+        "reason": "commit by 2026-09-13 · capped: prize unconfirmed",
+        "feasibility": 1,
+        "feasibility_label": "14d+",
+        "latest_safe_start": "2026-09-13",
+        "p_finish_proxy": 1,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 900
+      },
+      "mega": null,
+      "order_key": 30058.5,
+      "attention": 30058.5,
+      "attention_breakdown": {
+        "action": "PREP",
+        "score": 65,
+        "formula": "PREP - commit by 2026-09-13 · capped: prize unconfirmed"
       }
     }
   ]
