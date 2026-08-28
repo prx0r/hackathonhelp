@@ -50,6 +50,27 @@ const buildClose = t.build_deadline ? Math.ceil((new Date(t.build_deadline) - Da
     </div>
   </section>
 
+  {/* Human Tasks — what YOU need to do */}
+  {h.human_queue?.length > 0 && (
+  <section class="panel human-panel">
+    <div class="label" style="color:#f97316">🧑 Human Tasks — do these yourself</div>
+    <p class="mathnote" style="margin-bottom:12px">These need your hands. Links and instructions included.</p>
+    {h.human_queue.map((task:any) => (
+      <div class={`human-task ${task.done ? 'done' : ''}`}>
+        <div class="ht-check">{task.done ? '✓' : '☐'}</div>
+        <div class="ht-body">
+          <div class="ht-title">{esc(task.task)}</div>
+          {task.note && <div class="ht-note">{esc(task.note)}</div>}
+          <div class="ht-meta">
+            {task.deadline && <span class={`ht-deadline ${task.deadline <= '2026-08-31' ? 'urgent' : ''}`}>Due: {esc(task.deadline)}</span>}
+            {task.url && <a href={task.url} target="_blank" rel="noopener" class="ht-link">Open ↗</a>}
+          </div>
+        </div>
+      </div>
+    ))}
+  </section>
+  )}
+
   {/* Timeline */}
   <section class="panel">
     <div class="label">Timeline</div>
@@ -222,6 +243,21 @@ const buildClose = t.build_deadline ? Math.ceil((new Date(t.build_deadline) - Da
   .math tr.hl td{color:var(--accent);font-weight:800}
   .mathnote{font-size:13px;color:var(--text-muted);line-height:1.6}
   .observed{font-size:11px;color:var(--text-dim);margin-top:6px}
+
+  .human-panel{border-color:rgba(249,115,22,.3);background:linear-gradient(135deg,rgba(249,115,22,.05),rgba(249,115,22,.02))}
+  .human-task{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
+  .human-task:last-child{border-bottom:none}
+  .human-task.done{opacity:.5}
+  .ht-check{font-size:18px;width:24px;text-align:center;color:var(--accent);flex-shrink:0;padding-top:2px}
+  .human-task.done .ht-check{color:#86efac}
+  .ht-body{flex:1;min-width:0}
+  .ht-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}
+  .ht-note{font-size:12px;color:var(--text-muted);line-height:1.5;margin-bottom:4px}
+  .ht-meta{display:flex;gap:12px;align-items:center}
+  .ht-deadline{font-size:11px;color:var(--text-dim);font-weight:600}
+  .ht-deadline.urgent{color:#ef4444}
+  .ht-link{font-size:11px;font-weight:700;color:var(--accent);text-decoration:none}
+  .ht-link:hover{text-decoration:underline}
 
   .timeline-grid{display:flex;gap:16px;flex-wrap:wrap}
   .tl-item{flex:1;min-width:140px;background:rgba(255,255,255,.03);border-radius:8px;padding:12px}
