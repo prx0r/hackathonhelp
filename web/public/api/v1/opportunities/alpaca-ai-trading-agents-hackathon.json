@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:03:25.542Z",
+  "generated_at": "2026-08-28T03:09:57.409Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-alpaca-ai-trading-agents-hackathon",
@@ -45,7 +45,6 @@
       "other": 5,
       "total_winners": 10
     },
-    "payout_ratio": 0.6,
     "days_left": 7,
     "gates": {
       "registration_open": true,

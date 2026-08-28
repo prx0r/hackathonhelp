@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:03:25.542Z",
+  "generated_at": "2026-08-28T03:09:57.409Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "scan-webmcp-devpost-com",
@@ -35,7 +35,6 @@
     "source_authority": "official_rules_verified",
     "observed_at": "2026-08-27T00:00:00Z",
     "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits",
-    "payout_ratio": 0.34,
     "days_left": 7,
     "gates": {
       "registration_open": true,

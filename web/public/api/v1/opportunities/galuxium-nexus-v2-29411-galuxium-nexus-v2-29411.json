@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:03:25.542Z",
+  "generated_at": "2026-08-28T03:09:57.409Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-galuxium-nexus-v2-29411-galuxium-nexus-v2-29411",
@@ -33,7 +33,6 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.327Z",
-    "payout_ratio": 0.96,
     "days_left": 65,
     "gates": {
       "registration_open": true,

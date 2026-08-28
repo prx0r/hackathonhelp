@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:03:25.542Z",
+  "generated_at": "2026-08-28T03:09:57.409Z",
   "schema_version": "hackathonhelp.coordination.v1",
   "hub": {
     "schema_version": "hackathonhelp.coordination.v1",
@@ -83,6 +83,16 @@
         "status": "active",
         "entry_type": null,
         "priority": "MEDIUM",
+        "summary": "Newly activated — details pending."
+      },
+      {
+        "slug": "allthingsagentichackathon",
+        "title": "All Things Agentic Hackathon",
+        "deadline": "2026-08-31T17:00:00-07:00",
+        "days_left": 4,
+        "status": "active",
+        "entry_type": null,
+        "priority": "HIGH",
         "summary": "Newly activated — details pending."
       }
     ],
@@ -876,10 +886,125 @@
       "output": null,
       "_slug": "webmcp-challenge",
       "_hackathon_title": "webmcp-challenge"
+    },
+    {
+      "id": "allthingsagentichackathon-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/allthingsagentichackathon.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/allthingsagentichackathon.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-25T00:00:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "allthingsagentichackathon",
+      "_hackathon_title": "All Things Agentic Hackathon"
+    },
+    {
+      "id": "allthingsagentichackathon-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/allthingsagentichackathon-refs/"
+      ],
+      "notes": null,
+      "deadline": "2026-08-27T00:00:00.000Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "allthingsagentichackathon",
+      "_hackathon_title": "All Things Agentic Hackathon"
+    },
+    {
+      "id": "allthingsagentichackathon-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "allthingsagentichackathon-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": "2026-08-28T00:00:00.000Z",
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null,
+      "_slug": "allthingsagentichackathon",
+      "_hackathon_title": "All Things Agentic Hackathon"
+    },
+    {
+      "id": "allthingsagentichackathon-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "allthingsagentichackathon-build-setup",
+        "allthingsagentichackathon-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": "2026-08-30T00:00:00.000Z",
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null,
+      "_slug": "allthingsagentichackathon",
+      "_hackathon_title": "All Things Agentic Hackathon"
+    },
+    {
+      "id": "allthingsagentichackathon-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "allthingsagentichackathon-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": "2026-08-31T23:00:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "allthingsagentichackathon",
+      "_hackathon_title": "All Things Agentic Hackathon"
     }
   ],
   "task_summary": {
-    "queued": 33,
+    "queued": 38,
     "claimed": 0,
     "in_progress": 0,
     "review": 0,

@@ -81,6 +81,16 @@
       "entry_type": null,
       "priority": "MEDIUM",
       "summary": "Newly activated — details pending."
+    },
+    {
+      "slug": "allthingsagentichackathon",
+      "title": "All Things Agentic Hackathon",
+      "deadline": "2026-08-31T17:00:00-07:00",
+      "days_left": 4,
+      "status": "active",
+      "entry_type": null,
+      "priority": "HIGH",
+      "summary": "Newly activated — details pending."
     }
   ],
   "agents": {},

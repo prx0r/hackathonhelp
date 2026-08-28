@@ -1,0 +1,305 @@
+{
+  "slug": "allthingsagentichackathon",
+  "title": "All Things Agentic Hackathon",
+  "url": "https://allthingsagentichackathon.devpost.com/",
+  "rules_url": null,
+  "status": "active",
+  "added_at": "2026-08-28T03:09:37.374Z",
+  "timeline": {
+    "opens": "2026-08-03",
+    "build_deadline": "2026-08-31T17:00:00-07:00",
+    "measurement_window": null,
+    "finals": null,
+    "finals_location": null
+  },
+  "prizes": {
+    "total_usd": 180000,
+    "breakdown": [
+      {
+        "rank": "Taskmaster 1st",
+        "usd": 15000
+      },
+      {
+        "rank": "Taskmaster 2nd",
+        "usd": 10000
+      },
+      {
+        "rank": "Taskmaster 3rd",
+        "usd": 5000
+      },
+      {
+        "rank": "Collaborative Partner 1st",
+        "usd": 15000
+      },
+      {
+        "rank": "Collaborative Partner 2nd",
+        "usd": 10000
+      },
+      {
+        "rank": "Collaborative Partner 3rd",
+        "usd": 5000
+      },
+      {
+        "rank": "Enterprise Fleet 1st",
+        "usd": 15000
+      },
+      {
+        "rank": "Enterprise Fleet 2nd",
+        "usd": 10000
+      },
+      {
+        "rank": "Enterprise Fleet 3rd",
+        "usd": 5000
+      },
+      {
+        "rank": "Grand Prize",
+        "usd": 25000
+      }
+    ],
+    "leaderboard_pool": "$150 Google Cloud credits per participant"
+  },
+  "judging": {
+    "criteria": [],
+    "how_to_win": [],
+    "leaderboard_formula": null
+  },
+  "submission": {
+    "types": [],
+    "checklist": [],
+    "required_tech": [],
+    "submission_url": "https://allthingsagentichackathon.devpost.com/"
+  },
+  "tracks": [],
+  "eligibility": {
+    "open_to_all": true
+  },
+  "strategy_notes": {
+    "our_entry_type": "Enterprise Fleet",
+    "our_endpoint": "Agent reliability framework \u2014 evaluation, verification, evidence",
+    "key_insight": "Enterprise Fleet track values agent registry, memory, governance. Our reliability framework fits perfectly.",
+    "reuse_from": "get-me-money, agentseolab, dell2, qwed verification"
+  },
+  "sources": [
+    {
+      "url": "https://allthingsagentichackathon.devpost.com/",
+      "quote": ""
+    }
+  ],
+  "last_crawled": "2026-08-28T03:09:37.374Z",
+  "crawl_version": 0,
+  "progress": {
+    "phase": "research",
+    "pct_complete": 0,
+    "blocks": [],
+    "last_update": "2026-08-28T03:09:37.374Z",
+    "updated_by": null
+  },
+  "tasks": [
+    {
+      "id": "allthingsagentichackathon-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/allthingsagentichackathon.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/allthingsagentichackathon.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-25T00:00:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "allthingsagentichackathon-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/allthingsagentichackathon-refs/"
+      ],
+      "notes": null,
+      "deadline": "2026-08-27T00:00:00.000Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "allthingsagentichackathon-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "allthingsagentichackathon-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": "2026-08-28T00:00:00.000Z",
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "allthingsagentichackathon-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "allthingsagentichackathon-build-setup",
+        "allthingsagentichackathon-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": "2026-08-30T00:00:00.000Z",
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "allthingsagentichackathon-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "allthingsagentichackathon-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": "2026-08-31T23:00:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    }
+  ],
+  "human_queue": [
+    {
+      "task": "Register on Devpost IMMEDIATELY",
+      "url": "https://allthingsagentichackathon.devpost.com/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "DEADLINE TOMORROW. 10,634 already registered."
+    },
+    {
+      "task": "Pick a track",
+      "url": "https://allthingsagentichackathon.devpost.com/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Taskmaster, Collaborative Partner, or Enterprise Fleet. Enterprise Fleet fits agent reliability best."
+    },
+    {
+      "task": "Get $150 Google Cloud credits",
+      "url": "https://cloud.google.com/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Provided to all participants."
+    },
+    {
+      "task": "Set up Gemini API access",
+      "url": "https://aistudio.google.com/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Need Gemini 3.5 Flash access."
+    },
+    {
+      "task": "Install Google ADK",
+      "url": "https://google.github.io/adk-docs/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Google Agent Development Kit. Required framework."
+    },
+    {
+      "task": "Join Google Cloud Discord",
+      "url": "https://discord.gg/google-cloud",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Community support and updates."
+    }
+  ],
+  "rubric": {
+    "generated_from": "Devpost page \u2014 3 judging criteria",
+    "track": "Enterprise Fleet (recommended)",
+    "criteria": [
+      {
+        "name": "Innovation & Operational Utility",
+        "weight": 40,
+        "description": "How much real-world friction does the agent remove on its own?",
+        "levels": {
+          "100": "Fully autonomous, high-value action",
+          "50": "Mostly autonomous with some guidance",
+          "25": "Basic automation",
+          "0": "Just a chatbot"
+        },
+        "what_we_need": "Agent that does tasks autonomously \u2014 evaluation, verification, evidence.",
+        "our_score": null,
+        "our_notes": null
+      },
+      {
+        "name": "Architectural Discipline & Tech Stack",
+        "weight": 30,
+        "description": "Sound engineering choices, state management, failure handling",
+        "levels": {
+          "100": "Production-grade architecture",
+          "50": "Solid engineering",
+          "25": "Basic",
+          "0": "Brittle scripts"
+        },
+        "what_we_need": "Use ADK properly, Google Cloud services, MCP integration.",
+        "our_score": null,
+        "our_notes": null
+      },
+      {
+        "name": "Demo & Production Readiness",
+        "weight": 30,
+        "description": "Clear demo, clean repo, reproducible setup",
+        "levels": {
+          "100": "Live demo + clean repo + docs",
+          "50": "Working demo",
+          "25": "Partial",
+          "0": "Incomplete"
+        },
+        "what_we_need": "3-min demo video, architecture diagram, reproducible setup.",
+        "our_score": null,
+        "our_notes": null
+      }
+    ],
+    "disqualifiers": [
+      "Must use Gemini 3.5+",
+      "Must use Google ADK or GenAI SDK",
+      "Must use Google Cloud service",
+      "Backend must run on Google Cloud"
+    ],
+    "total_possible": 100,
+    "our_total_score": null,
+    "our_confidence": null
+  }
+}

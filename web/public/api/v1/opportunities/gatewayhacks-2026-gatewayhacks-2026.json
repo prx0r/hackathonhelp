@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:03:25.542Z",
+  "generated_at": "2026-08-28T03:09:57.409Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
@@ -33,7 +33,6 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:52.192Z",
-    "payout_ratio": 3.23,
     "days_left": 36,
     "gates": {
       "registration_open": true,

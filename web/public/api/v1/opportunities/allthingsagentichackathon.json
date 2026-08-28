@@ -3,37 +3,34 @@
   "generated_at": "2026-08-28T03:09:57.409Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
-    "id": "dp-rice-urban-sustainability-rice-urban-sustainability",
-    "slug": "rice-urban-sustainability-rice-urban-sustainability",
-    "title": "The Rice University Urban Sustainability Hackathon",
-    "organizer": "The",
-    "prize_usd": 17500,
-    "prize_raw": "$17,500",
-    "registrants": 339,
-    "starts_at": "2026-06-23T00:00:00.000Z",
-    "ends_at": "2026-09-18T23:59:00.000Z",
-    "time_left": "26 days left",
+    "id": "dp-all-things-agentic",
+    "slug": "allthingsagentichackathon",
+    "title": "All Things Agentic Hackathon",
+    "organizer": "Google Cloud",
+    "prize_usd": 180000,
+    "prize_raw": "$180,000",
+    "registrants": 10634,
+    "starts_at": "2026-08-03",
+    "ends_at": "2026-08-31T17:00:00-07:00",
+    "time_left": "1 day left",
     "location_type": "online",
     "location": "Online",
     "themes": [
-      "Design",
-      "Social Good",
-      "Databases"
+      "agents",
+      "Gemini",
+      "Google Cloud",
+      "ADK"
     ],
     "open_to_all": true,
     "prizes_counts": {
-      "cash": 3,
-      "other": 0
+      "cash": 5,
+      "other": 10
     },
-    "open_state": "open",
-    "winners_announced": false,
-    "featured": false,
-    "submission_gallery_url": "https://rice-urban-sustainability.devpost.com/project-gallery",
-    "source_url": "https://rice-urban-sustainability.devpost.com/",
+    "source_url": "https://allthingsagentichackathon.devpost.com/",
     "source": "devpost",
     "source_authority": "official_platform_api",
-    "observed_at": "2026-08-22T23:51:51.327Z",
-    "days_left": 22,
+    "note": "Google's flagship agentic hackathon. $180K. 3 tracks: Taskmaster, Collaborative Partner, Enterprise Fleet. Uses Gemini 3.5 + ADK + Google Cloud. DEADLINE TOMORROW.",
+    "days_left": 4,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -45,30 +42,30 @@
     "eligibility": {
       "eligible": false,
       "failed": [
-        "18+, college students only, US-only, team required (official rules)"
+        "18+ / age-of-majority requirement per official rules"
       ],
       "confidence": "official_rules",
-      "notes": "18+, college students only, US-only, team required (official rules)"
+      "notes": "18+ / age-of-majority requirement per official rules"
     },
     "prize": {
-      "advertised_value": 17500,
-      "cash_value": 17500,
+      "advertised_value": 180000,
+      "cash_value": 180000,
       "credits_value": null,
       "hardware_value": null,
-      "normalized_value": 17500,
+      "normalized_value": 180000,
       "headline_inflation": 0
     },
     "field": {
-      "registrations": 339,
+      "registrations": 10634,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 41,
-      "field_p10": 27,
-      "field_p50": 41,
-      "field_p90": 64,
+      "estimated_serious_field": 532,
+      "field_p10": 346,
+      "field_p50": 532,
+      "field_p90": 825,
       "funnel": null
     },
     "slots": {
@@ -77,7 +74,7 @@
       "p90": 12
     },
     "fit": {
-      "strategic_fit": 0,
+      "strategic_fit": 0.52,
       "code_reuse": 0.15,
       "effective_p80_hours": 34
     },
@@ -85,30 +82,30 @@
       "opportunity_score": null
     },
     "metrics": {
-      "equal_share_naive": 51.62,
-      "fair_share_serious": 426.83,
-      "days_left": 22
+      "equal_share_naive": 16.93,
+      "fair_share_serious": 338.35,
+      "days_left": 4
     },
     "cautions": [],
     "payout": {
       "paying_slots": {
-        "p10": 2,
-        "p50": 3,
-        "p90": 6
+        "p10": 3,
+        "p50": 5,
+        "p90": 10
       },
       "paying_slots_source": "platform_reported",
-      "baseline_any_payout": 0.073,
-      "p_paid": 0.073,
-      "ev_cash_heuristic": 1280,
+      "baseline_any_payout": 0.009,
+      "p_paid": 0.009,
+      "ev_cash_heuristic": 1692,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
       "action": "SKIP",
       "reason": "eligibility gate failed",
-      "feasibility": 1,
-      "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-07",
-      "p_finish_proxy": 1,
+      "feasibility": 0.65,
+      "feasibility_label": "3-5d",
+      "latest_safe_start": "2026-08-21",
+      "p_finish_proxy": 0.65,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -128,8 +125,8 @@
     }
   },
   "links": {
-    "html": "/opps/rice-urban-sustainability-rice-urban-sustainability",
-    "official": "https://rice-urban-sustainability.devpost.com/",
+    "html": "/opps/allthingsagentichackathon",
+    "official": "https://allthingsagentichackathon.devpost.com/",
     "changes": "/api/v1/changes.json"
   }
 }

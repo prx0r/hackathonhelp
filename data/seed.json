@@ -6,7 +6,7 @@
     "brabble_kept": 72,
     "scan_discoveries": 44
   },
-  "count": 198,
+  "count": 200,
   "opportunities": [
     {
       "id": "dp-reverie-hacks-2026-reverie-hacks-2026",
@@ -38,8 +38,7 @@
       "source_url": "https://reverie-hacks-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.628Z",
-      "payout_ratio": 2.19
+      "observed_at": "2026-08-22T23:51:50.628Z"
     },
     {
       "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
@@ -71,8 +70,7 @@
       "source_url": "https://revenuecat-shipaton-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.628Z",
-      "payout_ratio": 0.29
+      "observed_at": "2026-08-22T23:51:50.628Z"
     },
     {
       "id": "dp-innovik6-indore-innovik6-indore",
@@ -104,8 +102,7 @@
       "source_url": "https://innovik6-indore.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.684Z",
-      "payout_ratio": 5.8
+      "observed_at": "2026-08-22T23:51:51.684Z"
     },
     {
       "id": "dp-allthingsagentichackathon-allthingsagentichackathon",
@@ -137,8 +134,7 @@
       "source_url": "https://allthingsagentichackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.628Z",
-      "payout_ratio": 0.01
+      "observed_at": "2026-08-22T23:51:50.628Z"
     },
     {
       "id": "dp-gibc-v2-gibc-v2",
@@ -170,8 +166,7 @@
       "source_url": "https://gibc-v2.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.327Z",
-      "payout_ratio": 1.56
+      "observed_at": "2026-08-22T23:51:51.327Z"
     },
     {
       "id": "dp-the-great-agent-hackathon-the-great-agent-hackathon",
@@ -203,8 +198,7 @@
       "source_url": "https://the-great-agent-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.327Z",
-      "payout_ratio": 1.97
+      "observed_at": "2026-08-22T23:51:51.327Z"
     },
     {
       "id": "dp-agentic-cinema-agentic-cinema",
@@ -236,8 +230,7 @@
       "source_url": "https://agentic-cinema.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.628Z",
-      "payout_ratio": 0.19
+      "observed_at": "2026-08-22T23:51:50.628Z"
     },
     {
       "id": "dp-gatewayhacks-2026-gatewayhacks-2026",
@@ -269,8 +262,7 @@
       "source_url": "https://gatewayhacks-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 3.23
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "br-lexhack-2026-lexhack-2026",
@@ -327,8 +319,7 @@
       "source_url": "https://agentsforhumans.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.628Z",
-      "payout_ratio": 0.22
+      "observed_at": "2026-08-22T23:51:50.628Z"
     },
     {
       "id": "dp-api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
@@ -361,8 +352,7 @@
       "source_url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.9
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "dp-univabio-univabio",
@@ -394,8 +384,7 @@
       "source_url": "https://univabio.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.492Z",
-      "payout_ratio": 2.51
+      "observed_at": "2026-08-22T23:51:51.492Z"
     },
     {
       "id": "dp-volthacks-volthacks",
@@ -427,8 +416,7 @@
       "source_url": "https://volthacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.629Z",
-      "payout_ratio": 0.53
+      "observed_at": "2026-08-22T23:51:50.629Z"
     },
     {
       "id": "dp-tiktoktechjam2026-tiktoktechjam2026",
@@ -460,8 +448,7 @@
       "source_url": "https://tiktoktechjam2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.029Z",
-      "payout_ratio": 0.28
+      "observed_at": "2026-08-22T23:51:52.029Z"
     },
     {
       "id": "dp-ai-builders-hackathon-2026-ai-builders-hackathon-2026",
@@ -493,8 +480,7 @@
       "source_url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.629Z",
-      "payout_ratio": 0.25
+      "observed_at": "2026-08-22T23:51:50.629Z"
     },
     {
       "id": "dp-launchhacks-v-launchhacks-v",
@@ -526,8 +512,7 @@
       "source_url": "https://launchhacks-v.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.029Z",
-      "payout_ratio": 0.49
+      "observed_at": "2026-08-22T23:51:52.029Z"
     },
     {
       "id": "dp-rice-urban-sustainability-rice-urban-sustainability",
@@ -559,8 +544,7 @@
       "source_url": "https://rice-urban-sustainability.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.327Z",
-      "payout_ratio": 0.88
+      "observed_at": "2026-08-22T23:51:51.327Z"
     },
     {
       "id": "dp-adtc-2026-adtc-2026",
@@ -591,8 +575,7 @@
       "source_url": "https://adtc-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.629Z",
-      "payout_ratio": 0.34
+      "observed_at": "2026-08-22T23:51:50.629Z"
     },
     {
       "id": "dp-opencv26-opencv26",
@@ -625,8 +608,7 @@
       "source_url": "https://opencv26.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.029Z",
-      "payout_ratio": 0.92
+      "observed_at": "2026-08-22T23:51:52.029Z"
     },
     {
       "id": "man-ai-infra-summit-hackathon",
@@ -699,8 +681,7 @@
       "source_url": "https://call-e.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:50.628Z",
-      "payout_ratio": 0.04
+      "observed_at": "2026-08-22T23:51:50.628Z"
     },
     {
       "id": "dp-codelinc11-codelinc11",
@@ -732,8 +713,7 @@
       "source_url": "https://codelinc11.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 2.22
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "dp-hacktitan-hacktitan",
@@ -765,8 +745,7 @@
       "source_url": "https://hacktitan.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 1.25
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "man-ibm-bob-2-hackathon",
@@ -877,8 +856,7 @@
       "source_url": "https://hackapertus.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 6.08
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "dp-hack-away-hunger-hack-away-hunger",
@@ -909,8 +887,7 @@
       "source_url": "https://hack-away-hunger.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.851Z",
-      "payout_ratio": 10.71
+      "observed_at": "2026-08-22T23:51:51.851Z"
     },
     {
       "id": "dp-dialedin-dialedin",
@@ -942,8 +919,7 @@
       "source_url": "https://dialedin.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.851Z",
-      "payout_ratio": 33.33
+      "observed_at": "2026-08-22T23:51:51.851Z"
     },
     {
       "id": "man-telegraph-h1",
@@ -1032,8 +1008,7 @@
         "cash": 5,
         "other": 5,
         "total_winners": 10
-      },
-      "payout_ratio": 0.6
+      }
     },
     {
       "id": "dp-hacksocial2026-hacksocial2026",
@@ -1065,8 +1040,7 @@
       "source_url": "https://hacksocial2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 1.17
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "dp-oneaquahealth-ieee-hackathon-oneaquahealth-ieee-hackathon",
@@ -1098,8 +1072,7 @@
       "source_url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.029Z",
-      "payout_ratio": 0.72
+      "observed_at": "2026-08-22T23:51:52.029Z"
     },
     {
       "id": "dp-ieee-climatechain-hack-ieee-climatechain-hack",
@@ -1131,8 +1104,7 @@
       "source_url": "https://ieee-climatechain-hack.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 4.03
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "man-boss-battle",
@@ -1204,8 +1176,7 @@
       "source_url": "https://galuxium-nexus-v2-29411.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.327Z",
-      "payout_ratio": 0.96
+      "observed_at": "2026-08-22T23:51:51.327Z"
     },
     {
       "id": "dp-nextstep2026-nextstep2026",
@@ -1237,8 +1208,7 @@
       "source_url": "https://nextstep2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.327Z",
-      "payout_ratio": 1.56
+      "observed_at": "2026-08-22T23:51:51.327Z"
     },
     {
       "id": "dp-cissa-catalyst-2026-cissa-catalyst-2026",
@@ -1270,8 +1240,7 @@
       "source_url": "https://cissa-catalyst-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.684Z",
-      "payout_ratio": 5.62
+      "observed_at": "2026-08-22T23:51:51.684Z"
     },
     {
       "id": "dp-august-ai-challenge-31059-august-ai-challenge-31059",
@@ -1303,8 +1272,7 @@
       "source_url": "https://august-ai-challenge-31059.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.492Z",
-      "payout_ratio": 3.03
+      "observed_at": "2026-08-22T23:51:51.492Z"
     },
     {
       "id": "dp-prometheus-sept-ai-classic-prometheus-sept-ai-classic",
@@ -1336,8 +1304,7 @@
       "source_url": "https://prometheus-sept-ai-classic.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.684Z",
-      "payout_ratio": 5.75
+      "observed_at": "2026-08-22T23:51:51.684Z"
     },
     {
       "id": "dp-prometheus-september-ai-2-prometheus-september-ai-2",
@@ -1369,8 +1336,7 @@
       "source_url": "https://prometheus-september-ai-2.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.851Z",
-      "payout_ratio": 9.26
+      "observed_at": "2026-08-22T23:51:51.851Z"
     },
     {
       "id": "dp-compsphere12-compsphere12",
@@ -1402,8 +1368,7 @@
       "source_url": "https://compsphere12.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.492Z",
-      "payout_ratio": 0.68
+      "observed_at": "2026-08-22T23:51:51.492Z"
     },
     {
       "id": "dp-quantumhacks-quantumhacks",
@@ -1435,8 +1400,7 @@
       "source_url": "https://quantumhacks.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.11
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "dp-hack-the-habitat-2026-hack-the-habitat-2026",
@@ -1468,8 +1432,7 @@
       "source_url": "https://hack-the-habitat-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.492Z",
-      "payout_ratio": 1.86
+      "observed_at": "2026-08-22T23:51:51.492Z"
     },
     {
       "id": "dp-melbourne-hack-2026-melbourne-hack-2026",
@@ -1501,8 +1464,7 @@
       "source_url": "https://melbourne-hack-2026.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.029Z",
-      "payout_ratio": 35.71
+      "observed_at": "2026-08-22T23:51:52.029Z"
     },
     {
       "id": "br-suvidha-ai-virtual-hackathon-suvidha-ai-virtual-hackathon",
@@ -1559,8 +1521,7 @@
       "source_url": "https://3rd-web-hack.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.029Z",
-      "payout_ratio": 9.09
+      "observed_at": "2026-08-22T23:51:52.029Z"
     },
     {
       "id": "dp-unitedhacksv8-unitedhacksv8",
@@ -1592,8 +1553,7 @@
       "source_url": "https://unitedhacksv8.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 8.24
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "dp-smart-city-hackathon-lahore-smart-city-hackathon-lahore",
@@ -1625,8 +1585,7 @@
       "source_url": "https://smart-city-hackathon-lahore.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.684Z",
-      "payout_ratio": 4.17
+      "observed_at": "2026-08-22T23:51:51.684Z"
     },
     {
       "id": "br-hyperbloom-september-hyperbloom-september",
@@ -1708,8 +1667,7 @@
       "source_url": "https://hack-the-limit-1.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.79
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "dp-impactforge-impactforge",
@@ -1741,8 +1699,7 @@
       "source_url": "https://impactforge.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.42
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "br-arbiter-hacks-v1-arbiter-hacks-v1",
@@ -1799,8 +1756,7 @@
       "source_url": "https://next-founders.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.684Z",
-      "payout_ratio": 5.0
+      "observed_at": "2026-08-22T23:51:51.684Z"
     },
     {
       "id": "br-lake-oswego-hacks-lake-oswego-hacks",
@@ -1856,8 +1812,7 @@
       "source_url": "https://brainwave-2026-midnight-track.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.492Z",
-      "payout_ratio": 2.14
+      "observed_at": "2026-08-22T23:51:51.492Z"
     },
     {
       "id": "br-forgehacks-2026-forgehacks-2026",
@@ -1914,8 +1869,7 @@
       "source_url": "https://neuralsprint.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.78
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "dp-evensonarisnord-evensonarisnord",
@@ -1946,8 +1900,7 @@
       "source_url": "https://evensonarisnord.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:52.192Z",
-      "payout_ratio": 1.11
+      "observed_at": "2026-08-22T23:51:52.192Z"
     },
     {
       "id": "dp-hack-for-humanity-summer-26-hack-for-humanity-summer-26",
@@ -1979,8 +1932,7 @@
       "source_url": "https://hack-for-humanity-summer-26.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 1.23
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "br-unstop-ai-product-hackathon-product-space-1742507",
@@ -2058,8 +2010,7 @@
       "source_url": "https://3d-websites-hackathon.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.22
+      "observed_at": "2026-08-22T23:51:51.143Z"
     },
     {
       "id": "br-unstop-ai-innovation-hackathon-2026-build-real-world-ai-solu",
@@ -2973,8 +2924,7 @@
       "source_url": "https://creation-code-30750.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.851Z",
-      "payout_ratio": 1.75
+      "observed_at": "2026-08-22T23:51:51.851Z"
     },
     {
       "id": "dp-create-with-gemini-create-with-gemini",
@@ -3006,8 +2956,7 @@
       "source_url": "https://create-with-gemini.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.851Z",
-      "payout_ratio": 1.89
+      "observed_at": "2026-08-22T23:51:51.851Z"
     },
     {
       "id": "dp-htcj-aviation-futures-htcj-aviation-futures",
@@ -3039,8 +2988,7 @@
       "source_url": "https://htcj-aviation-futures.devpost.com/",
       "source": "devpost",
       "source_authority": "official_platform_api",
-      "observed_at": "2026-08-22T23:51:51.851Z",
-      "payout_ratio": 2.27
+      "observed_at": "2026-08-22T23:51:51.851Z"
     },
     {
       "id": "dp-gemini-builds-gemini-builds",
@@ -5868,8 +5816,7 @@
       "source": "scan",
       "source_authority": "official_rules_verified",
       "observed_at": "2026-08-27T00:00:00Z",
-      "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits",
-      "payout_ratio": 0.34
+      "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits"
     },
     {
       "id": "scan-zerodepshack-com",
@@ -5937,6 +5884,65 @@
       "source_authority": "official_rules_verified",
       "observed_at": "2026-08-27T00:00:00Z",
       "note": "Convex + OpenAI + Firecrawl + AgentMail. New project required after Aug 25. 3 weeks."
+    },
+    {
+      "id": "dp-all-things-agentic",
+      "slug": "allthingsagentichackathon",
+      "title": "All Things Agentic Hackathon",
+      "organizer": "Google Cloud",
+      "prize_usd": 180000,
+      "prize_raw": "$180,000",
+      "registrants": 10634,
+      "starts_at": "2026-08-03",
+      "ends_at": "2026-08-31T17:00:00-07:00",
+      "time_left": "1 day left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "agents",
+        "Gemini",
+        "Google Cloud",
+        "ADK"
+      ],
+      "open_to_all": true,
+      "prizes_counts": {
+        "cash": 5,
+        "other": 10
+      },
+      "source_url": "https://allthingsagentichackathon.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "note": "Google's flagship agentic hackathon. $180K. 3 tracks: Taskmaster, Collaborative Partner, Enterprise Fleet. Uses Gemini 3.5 + ADK + Google Cloud. DEADLINE TOMORROW."
+    },
+    {
+      "id": "dp-agentic-cinema",
+      "slug": "agentic-cinema",
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "organizer": "Google Cloud",
+      "prize_usd": 75000,
+      "prize_raw": "$75,000",
+      "registrants": 8513,
+      "starts_at": "2026-08-18",
+      "ends_at": "2026-09-09T14:00:00-07:00",
+      "time_left": "11 days left",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "agents",
+        "Gemini",
+        "Google Cloud",
+        "enterprise",
+        "media"
+      ],
+      "open_to_all": true,
+      "prizes_counts": {
+        "cash": 10,
+        "other": 15
+      },
+      "source_url": "https://agentic-cinema.devpost.com/",
+      "source": "devpost",
+      "source_authority": "official_platform_api",
+      "note": "Google Cloud + Gemini Enterprise. Enterprise agent orchestration. Partner tracks. Media/entertainment focus."
     }
   ]
 }

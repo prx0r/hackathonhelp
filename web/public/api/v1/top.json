@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:03:25.542Z",
+  "generated_at": "2026-08-28T03:09:57.409Z",
   "schema_version": "hackathonhelp.api.v2",
   "deals": [
     {
@@ -327,7 +327,6 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
-      "payout_ratio": 0.9,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -611,7 +610,6 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
-      "payout_ratio": 0.53,
       "days_left": 9,
       "gates": {
         "registration_open": true,
@@ -879,7 +877,6 @@
       "source_authority": "official_rules_verified",
       "observed_at": "2026-08-27T00:00:00Z",
       "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits",
-      "payout_ratio": 0.34,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -1790,7 +1787,6 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
-      "payout_ratio": 0.25,
       "days_left": 19,
       "gates": {
         "registration_open": true,
