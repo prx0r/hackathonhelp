@@ -25,6 +25,13 @@
       <description>Prize(norm) $35785 | field ~85 | SPRINT - tight but real (7-10d finish prior 90%)</description>
     </item>
     <item>
+      <title>[SPRINT] The WebMCP Challenge</title>
+      <link>https://hackathonhelp.pages.dev/opps/webmcp-devpost-com</link>
+      <guid isPermaLink="false">webmcp-devpost-com-2026-08-27T00:00:00Z</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Prize(norm) $35000 | field ~148 | SPRINT - tight but real (5-7d finish prior 80%)</description>
+    </item>
+    <item>
       <title>[PREP] AI Infra Summit Hackathon</title>
       <link>https://hackathonhelp.pages.dev/opps/ai-infra-summit-hackathon</link>
       <guid isPermaLink="false">ai-infra-summit-hackathon-2026-08-22T23:52:03.133Z</guid>
@@ -44,6 +51,20 @@
       <guid isPermaLink="false">ethonline-2026-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
       <description>Prize(norm) TBA | field ~? | PREP - commit by 2026-09-09</description>
+    </item>
+    <item>
+      <title>[PREP] AssemblyAI - Voice Agent Hackathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/lablab-ai-ai-hackathons-assemblyai-voice-agent-hackathon</link>
+      <guid isPermaLink="false">lablab-ai-ai-hackathons-assemblyai-voice-agent-hackathon-2026-08-27T00:00:00Z</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Prize(norm) $10000 | field ~22 | PREP - far out; latest safe start 2026-09-19</description>
+    </item>
+    <item>
+      <title>[PREP] CUHK-X Competition Large Model Track</title>
+      <link>https://hackathonhelp.pages.dev/opps/www-kaggle-com-competitions-cuhk-x-competition-large-model-t</link>
+      <guid isPermaLink="false">www-kaggle-com-competitions-cuhk-x-competition-large-model-t-2026-08-27T00:00:00Z</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Prize(norm) $10000 | field ~40 | PREP - commit by 2026-09-04</description>
     </item>
     <item>
       <title>[PREP] AI Builders Hackathon</title>
@@ -137,11 +158,25 @@
       <description>Prize(norm) $3047814 | field ~101 | WATCH - deadline not published</description>
     </item>
     <item>
+      <title>[WATCH] Arbitrum Open House Singapore: Online Buildathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/www-hackquest-io-hackathons-arbitrum-open-house-singapore-on</link>
+      <guid isPermaLink="false">www-hackquest-io-hackathons-arbitrum-open-house-singapore-on-2026-08-27T00:00:00Z</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Prize(norm) $115000 | field ~24 | WATCH - far out; latest safe start 2026-09-23</description>
+    </item>
+    <item>
       <title>[WATCH] AI GENESIS 2026</title>
       <link>https://hackathonhelp.pages.dev/opps/ai-genesis-2026</link>
       <guid isPermaLink="false">ai-genesis-2026-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
       <description>Prize(norm) TBA | field ~59 | WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed</description>
+    </item>
+    <item>
+      <title>[WATCH] Anakin Forge Hackathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/unstop-com-hackathons-anakin-forge-hackathon-anakin-skywalke</link>
+      <guid isPermaLink="false">unstop-com-hackathons-anakin-forge-hackathon-anakin-skywalke-2026-08-27T00:00:00Z</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Prize(norm) $1000 | field ~20 | WATCH - deadline not published</description>
     </item>
     <item>
       <title>[WATCH] NextStep Hacks 2026</title>
@@ -317,40 +352,5 @@
       <guid isPermaLink="false">br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku-2026-08-22T23:52:02.449Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:02 GMT</pubDate>
       <description>Prize(norm) $2 | field ~78 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
-      <title>[WATCH] Null Origin - 24 Hour CTF Challenge</title>
-      <link>https://hackathonhelp.pages.dev/opps/br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744</link>
-      <guid isPermaLink="false">br-unstop-null-origin-24-hour-ctf-challenge-cyber-hx-1698744-2026-08-22T23:52:00.835Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:00 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~99 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
-      <title>[WATCH] AETHOS - Day Zero</title>
-      <link>https://hackathonhelp.pages.dev/opps/br-unstop-aethos-day-zero-together-we-solve-1730263</link>
-      <guid isPermaLink="false">br-unstop-aethos-day-zero-together-we-solve-1730263-2026-08-22T23:52:00.835Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:00 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~74 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
-      <title>[WATCH] Pixel Forge AI Hackathon ($18,000+ in Prizes)</title>
-      <link>https://hackathonhelp.pages.dev/opps/pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08</link>
-      <guid isPermaLink="false">pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08-2026-08-22T23:51:51.143Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~65 | WATCH - deadline not published</description>
-    </item>
-    <item>
-      <title>[WATCH] CraftVerse 2.0</title>
-      <link>https://hackathonhelp.pages.dev/opps/br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering</link>
-      <guid isPermaLink="false">br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering-2026-08-22T23:52:00.835Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:00 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~122 | WATCH - marginal — recheck as field matures · capped: prize unconfirmed</description>
-    </item>
-    <item>
-      <title>[SKIP] Alpaca AI Trading Agents Hackathon</title>
-      <link>https://hackathonhelp.pages.dev/opps/alpaca-ai-trading-agents-hackathon</link>
-      <guid isPermaLink="false">alpaca-ai-trading-agents-hackathon-2026-08-22T23:52:03.133Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
-      <description>Prize(norm) $5000 | field ~83 | SKIP - weak opportunity for remaining time</description>
     </item>
 </channel></rss>

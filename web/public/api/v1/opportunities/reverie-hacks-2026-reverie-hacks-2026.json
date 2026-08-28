@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T01:59:00.486Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-reverie-hacks-2026-reverie-hacks-2026",
@@ -33,6 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:50.628Z",
+    "payout_ratio": 2.19,
     "days_left": null,
     "gates": {
       "registration_open": null,

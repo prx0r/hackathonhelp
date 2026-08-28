@@ -45,11 +45,6 @@
       "eligible": false
     },
     {
-      "match": "x402",
-      "reason": "18+ age-of-majority per official rules (Algorand x402 Challenge)",
-      "eligible": false
-    },
-    {
       "match": "rice-urban-sustainability",
       "reason": "18+, college students only, US-only, team required (official rules)",
       "eligible": false

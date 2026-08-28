@@ -1,0 +1,144 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-28T03:03:25.542Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "scan-www-convex-dev-hackathons-all-gas",
+    "slug": "www-convex-dev-hackathons-all-gas",
+    "title": "Convex All Gas Hackathon",
+    "organizer": "Convex, with OpenAI, Firecrawl, and AgentMail",
+    "prize_usd": 16500,
+    "prize_raw": "$16,500 cash + $8,500 Codex credits",
+    "registrants": null,
+    "starts_at": "2026-08-25",
+    "ends_at": "2026-09-15T23:59:00Z",
+    "time_left": "about 26 days until the September 22, 2026 12:00 PM PT submission deadline",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "Convex",
+      "OpenAI",
+      "Firecrawl",
+      "AgentMail"
+    ],
+    "open_to_all": true,
+    "prizes_counts": {
+      "cash": 5,
+      "other": 5,
+      "total_winners": 10
+    },
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": null,
+    "source_url": "https://www.convex.dev/hackathons/all-gas",
+    "source": "scan",
+    "source_authority": "official_rules_verified",
+    "observed_at": "2026-08-27T00:00:00Z",
+    "note": "Convex + OpenAI + Firecrawl + AgentMail. New project required after Aug 25. 3 weeks.",
+    "days_left": 19,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 16500,
+      "cash_value": 16500,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 16500,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": null,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "fit": {
+      "strategic_fit": 0,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": null,
+        "winnability": null,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": null
+      },
+      "known_components": 0,
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 19
+    },
+    "cautions": [],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 5,
+        "p90": 10
+      },
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "unscoreable",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-04",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 850
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - unscoreable"
+    }
+  },
+  "links": {
+    "html": "/opps/www-convex-dev-hackathons-all-gas",
+    "official": "https://www.convex.dev/hackathons/all-gas",
+    "changes": "/api/v1/changes.json"
+  }
+}

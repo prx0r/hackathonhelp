@@ -1,0 +1,150 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-28T03:03:25.542Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "scan-www-hackquest-io-hackathons-arbitrum-open-house-singapore-on",
+    "slug": "www-hackquest-io-hackathons-arbitrum-open-house-singapore-on",
+    "title": "Arbitrum Open House Singapore: Online Buildathon",
+    "organizer": "Arbitrum Foundation",
+    "prize_usd": 115000,
+    "prize_raw": "$115,000",
+    "registrants": 201,
+    "starts_at": "2026-09-13",
+    "ends_at": "2026-10-04",
+    "time_left": "about 6 weeks until submissions close",
+    "location_type": "online",
+    "location": "Online",
+    "themes": [
+      "AI agents",
+      "agentic finance",
+      "developer infrastructure",
+      "blockchain",
+      "smart contracts",
+      "security"
+    ],
+    "open_to_all": true,
+    "prizes_counts": null,
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": null,
+    "source_url": "https://www.hackquest.io/hackathons/Arbitrum-Open-House-Singapore-Online-Buildathon",
+    "source": "scan",
+    "source_authority": "unverified",
+    "observed_at": "2026-08-27T00:00:00Z",
+    "days_left": 37,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": true,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": 115000,
+      "cash_value": 115000,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": 115000,
+      "headline_inflation": 0
+    },
+    "field": {
+      "registrations": 201,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 24,
+      "field_p10": 16,
+      "field_p50": 24,
+      "field_p90": 37,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "fit": {
+      "strategic_fit": 0.74,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
+    },
+    "score_v01": {
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 52,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 58
+    },
+    "metrics": {
+      "equal_share_naive": 572.14,
+      "fair_share_serious": 4791.67,
+      "days_left": 37
+    },
+    "cautions": [
+      "extraordinary per-submission value — verify payout history"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "paying_slots_source": "assumed",
+      "baseline_any_payout": 0.25,
+      "p_paid": 0.25,
+      "ev_cash_heuristic": 28750,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-09-23",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-23",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 850
+    },
+    "mega": {
+      "score": 65,
+      "reasons": [
+        "$4791.67 normalized prize per estimated submission",
+        "$115K cash with below-median registration"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 20067.2,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "WATCH",
+      "score": 58,
+      "formula": "WATCH - far out; latest safe start 2026-09-23"
+    }
+  },
+  "links": {
+    "html": "/opps/www-hackquest-io-hackathons-arbitrum-open-house-singapore-on",
+    "official": "https://www.hackquest.io/hackathons/Arbitrum-Open-House-Singapore-Online-Buildathon",
+    "changes": "/api/v1/changes.json"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T01:59:00.486Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-nextstep2026-nextstep2026",
@@ -33,6 +33,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:51.327Z",
+    "payout_ratio": 1.56,
     "days_left": 17,
     "gates": {
       "registration_open": true,

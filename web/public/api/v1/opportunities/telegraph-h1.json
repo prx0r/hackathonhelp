@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T01:59:00.486Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-telegraph-h1",
@@ -40,6 +40,11 @@
       "organizer_quality": 0.85,
       "technical_depth_prior": null,
       "family_prior_override": null
+    },
+    "prizes_counts": {
+      "cash": 9,
+      "other": 0,
+      "total_winners": 9
     },
     "days_left": 3,
     "gates": {
@@ -255,11 +260,11 @@
     ],
     "payout": {
       "paying_slots": {
-        "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p10": 5,
+        "p50": 9,
+        "p90": 18
       },
-      "paying_slots_source": "assumed",
+      "paying_slots_source": "platform_reported",
       "baseline_any_payout": null,
       "p_paid": null,
       "ev_cash_heuristic": null,

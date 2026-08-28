@@ -1,0 +1,138 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-28T03:03:25.542Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "scan-pioneers-agnic-ai",
+    "slug": "pioneers-agnic-ai",
+    "title": "Agentic Commerce Pioneers - Edition II · The Shopping Agent Challenge",
+    "organizer": "Agnic",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": null,
+    "starts_at": "2026-09-10",
+    "ends_at": "2026-09-20",
+    "time_left": "Applications close August 30, 2026; the remote build sprint runs September 10–20, 2026.",
+    "location_type": "hybrid",
+    "location": "Unknown",
+    "themes": [
+      "AI",
+      "agents",
+      "agentic commerce",
+      "delegated authority",
+      "payments",
+      "user consent",
+      "verifiable evidence"
+    ],
+    "open_to_all": true,
+    "prizes_counts": null,
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": null,
+    "source_url": "https://pioneers.agnic.ai/",
+    "source": "scan",
+    "source_authority": "unverified",
+    "observed_at": "2026-08-27T00:00:00Z",
+    "days_left": 23,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (Unknown)"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": null,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "forming",
+      "estimated_serious_field": null,
+      "field_p10": null,
+      "field_p50": null,
+      "field_p90": null,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "fit": {
+      "strategic_fit": 0.96,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 23
+    },
+    "cautions": [
+      "prize not published on platform card — see official page"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "paying_slots_source": "assumed",
+      "baseline_any_payout": null,
+      "p_paid": null,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-09-09",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 850
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/pioneers-agnic-ai",
+    "official": "https://pioneers.agnic.ai/",
+    "changes": "/api/v1/changes.json"
+  }
+}

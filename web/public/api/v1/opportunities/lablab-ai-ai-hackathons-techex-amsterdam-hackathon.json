@@ -1,0 +1,139 @@
+{
+  "schema_version": "hackathonhelp.api.v2",
+  "generated_at": "2026-08-28T03:03:25.542Z",
+  "field_documentation": "see /api/v1/index.json",
+  "opportunity": {
+    "id": "scan-lablab-ai-ai-hackathons-techex-amsterdam-hackathon",
+    "slug": "lablab-ai-ai-hackathons-techex-amsterdam-hackathon",
+    "title": "TechEx Amsterdam Hackathon - AI & Big Data Expo Europe",
+    "organizer": "TechEx Events and lablab.ai",
+    "prize_usd": null,
+    "prize_raw": null,
+    "registrants": 500,
+    "starts_at": "2026-10-16",
+    "ends_at": "2026-10-19",
+    "time_left": "about 8 weeks until the online build begins",
+    "location_type": "hybrid",
+    "location": "Unknown",
+    "themes": [
+      "AI",
+      "agents",
+      "cybersecurity",
+      "cloud",
+      "IoT",
+      "automation",
+      "edge computing",
+      "data infrastructure"
+    ],
+    "open_to_all": true,
+    "prizes_counts": null,
+    "open_state": "open",
+    "winners_announced": false,
+    "featured": false,
+    "submission_gallery_url": null,
+    "source_url": "https://lablab.ai/ai-hackathons/techex-amsterdam-hackathon",
+    "source": "scan",
+    "source_authority": "unverified",
+    "observed_at": "2026-08-27T00:00:00Z",
+    "days_left": 52,
+    "gates": {
+      "registration_open": true,
+      "deadline_future": true,
+      "remote_ok": null,
+      "age_confirmed": null,
+      "student_only": false,
+      "country_restricted": null
+    },
+    "eligibility": {
+      "eligible": false,
+      "failed": [
+        "in-person event (Unknown)"
+      ],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
+    },
+    "prize": {
+      "advertised_value": null,
+      "cash_value": null,
+      "credits_value": null,
+      "hardware_value": null,
+      "normalized_value": null,
+      "headline_inflation": null
+    },
+    "field": {
+      "registrations": 500,
+      "family_prior": {
+        "submissions_per_registration": 0.05,
+        "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+      },
+      "field_status": "usable",
+      "estimated_serious_field": 40,
+      "field_p10": 26,
+      "field_p50": 40,
+      "field_p90": 62,
+      "funnel": null
+    },
+    "slots": {
+      "p10": 3,
+      "p50": 6,
+      "p90": 12
+    },
+    "fit": {
+      "strategic_fit": 0.74,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
+    },
+    "score_v01": {
+      "opportunity_score": null
+    },
+    "metrics": {
+      "equal_share_naive": null,
+      "fair_share_serious": null,
+      "days_left": 52
+    },
+    "cautions": [
+      "prize not published on platform card — see official page"
+    ],
+    "payout": {
+      "paying_slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "paying_slots_source": "assumed",
+      "baseline_any_payout": 0.15,
+      "p_paid": 0.15,
+      "ev_cash_heuristic": null,
+      "note": "slot count assumed until prize ladders are verified on official pages"
+    },
+    "decision": {
+      "action": "SKIP",
+      "reason": "eligibility gate failed",
+      "feasibility": 1,
+      "feasibility_label": "14d+",
+      "latest_safe_start": "2026-10-08",
+      "p_finish_proxy": 1,
+      "build_model": {
+        "p50_hours": 25,
+        "p80_hours": 40,
+        "hours_per_day": 4,
+        "buffer_days": 2,
+        "shadow_hour_value_usd": 25
+      },
+      "opportunity_cost_usd": 850
+    },
+    "mega": null,
+    "order_key": -100,
+    "attention": -1,
+    "attention_breakdown": {
+      "action": "SKIP",
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
+    }
+  },
+  "links": {
+    "html": "/opps/lablab-ai-ai-hackathons-techex-amsterdam-hackathon",
+    "official": "https://lablab.ai/ai-hackathons/techex-amsterdam-hackathon",
+    "changes": "/api/v1/changes.json"
+  }
+}

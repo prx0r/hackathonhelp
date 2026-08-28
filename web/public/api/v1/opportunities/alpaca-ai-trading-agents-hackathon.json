@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T01:59:00.486Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-alpaca-ai-trading-agents-hackathon",
@@ -40,6 +40,12 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
+    "prizes_counts": {
+      "cash": 5,
+      "other": 5,
+      "total_winners": 10
+    },
+    "payout_ratio": 0.6,
     "days_left": 7,
     "gates": {
       "registration_open": true,
@@ -108,13 +114,13 @@
     "payout": {
       "paying_slots": {
         "p10": 3,
-        "p50": 6,
-        "p90": 12
+        "p50": 5,
+        "p90": 10
       },
-      "paying_slots_source": "assumed",
-      "baseline_any_payout": 0.072,
-      "p_paid": 0.072,
-      "ev_cash_heuristic": 361,
+      "paying_slots_source": "platform_reported",
+      "baseline_any_payout": 0.06,
+      "p_paid": 0.06,
+      "ev_cash_heuristic": 301,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {

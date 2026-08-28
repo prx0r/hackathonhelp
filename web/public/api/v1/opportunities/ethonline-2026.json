@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T01:59:00.486Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-ethonline-2026",
@@ -41,6 +41,11 @@
       "organizer_quality": 0.95,
       "technical_depth_prior": "high",
       "family_prior_override": null
+    },
+    "prizes_counts": {
+      "cash": null,
+      "other": 0,
+      "total_winners": null
     },
     "days_left": 19,
     "gates": {

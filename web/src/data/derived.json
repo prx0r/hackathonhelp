@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T02:49:58.026Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 198,
@@ -46,6 +46,11 @@
         "organizer_quality": 0.85,
         "technical_depth_prior": null,
         "family_prior_override": null
+      },
+      "prizes_counts": {
+        "cash": 9,
+        "other": 0,
+        "total_winners": 9
       },
       "days_left": 3,
       "gates": {
@@ -261,11 +266,11 @@
       ],
       "payout": {
         "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p10": 5,
+          "p50": 9,
+          "p90": 18
         },
-        "paying_slots_source": "assumed",
+        "paying_slots_source": "platform_reported",
         "baseline_any_payout": null,
         "p_paid": null,
         "ev_cash_heuristic": null,
@@ -317,7 +322,8 @@
       "open_to_all": true,
       "prizes_counts": {
         "cash": 8,
-        "other": 0
+        "other": 0,
+        "total_winners": 8
       },
       "open_state": "open",
       "winners_announced": false,
@@ -327,6 +333,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.9,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -610,6 +617,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
+      "payout_ratio": 0.53,
       "days_left": 9,
       "gates": {
         "registration_open": true,
@@ -863,7 +871,11 @@
         "Web"
       ],
       "open_to_all": true,
-      "prizes_counts": null,
+      "prizes_counts": {
+        "cash": 10,
+        "other": 0,
+        "total_winners": 10
+      },
       "open_state": "open",
       "winners_announced": false,
       "featured": false,
@@ -873,6 +885,7 @@
       "source_authority": "official_rules_verified",
       "observed_at": "2026-08-27T00:00:00Z",
       "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits",
+      "payout_ratio": 0.34,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -922,7 +935,7 @@
       "score_v01": {
         "components": {
           "expected_prize_value": 100,
-          "winnability": 43,
+          "winnability": 44,
           "historical_winner_quality": null,
           "judging_tractability": null,
           "organizer_quality": null
@@ -938,14 +951,14 @@
       "cautions": [],
       "payout": {
         "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p10": 5,
+          "p50": 10,
+          "p90": 20
         },
-        "paying_slots_source": "assumed",
-        "baseline_any_payout": 0.041,
-        "p_paid": 0.041,
-        "ev_cash_heuristic": 1419,
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.068,
+        "p_paid": 0.068,
+        "ev_cash_heuristic": 2365,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
@@ -1370,6 +1383,11 @@
         "technical_depth_prior": "high",
         "family_prior_override": null
       },
+      "prizes_counts": {
+        "cash": null,
+        "other": 0,
+        "total_winners": null
+      },
       "days_left": 19,
       "gates": {
         "registration_open": true,
@@ -1778,6 +1796,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
+      "payout_ratio": 0.25,
       "days_left": 19,
       "gates": {
         "registration_open": true,
@@ -2042,6 +2061,11 @@
         "technical_depth_prior": null,
         "family_prior_override": null
       },
+      "prizes_counts": {
+        "cash": 9,
+        "other": 0,
+        "total_winners": 9
+      },
       "days_left": 3,
       "gates": {
         "registration_open": true,
@@ -2256,11 +2280,11 @@
       ],
       "payout": {
         "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p10": 5,
+          "p50": 9,
+          "p90": 18
         },
-        "paying_slots_source": "assumed",
+        "paying_slots_source": "platform_reported",
         "baseline_any_payout": null,
         "p_paid": null,
         "ev_cash_heuristic": null,
@@ -2312,7 +2336,8 @@
       "open_to_all": true,
       "prizes_counts": {
         "cash": 8,
-        "other": 0
+        "other": 0,
+        "total_winners": 8
       },
       "open_state": "open",
       "winners_announced": false,
@@ -2322,6 +2347,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.9,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -2605,6 +2631,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
+      "payout_ratio": 0.53,
       "days_left": 9,
       "gates": {
         "registration_open": true,
@@ -2858,7 +2885,11 @@
         "Web"
       ],
       "open_to_all": true,
-      "prizes_counts": null,
+      "prizes_counts": {
+        "cash": 10,
+        "other": 0,
+        "total_winners": 10
+      },
       "open_state": "open",
       "winners_announced": false,
       "featured": false,
@@ -2868,6 +2899,7 @@
       "source_authority": "official_rules_verified",
       "observed_at": "2026-08-27T00:00:00Z",
       "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits",
+      "payout_ratio": 0.34,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -2917,7 +2949,7 @@
       "score_v01": {
         "components": {
           "expected_prize_value": 100,
-          "winnability": 43,
+          "winnability": 44,
           "historical_winner_quality": null,
           "judging_tractability": null,
           "organizer_quality": null
@@ -2933,14 +2965,14 @@
       "cautions": [],
       "payout": {
         "paying_slots": {
-          "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p10": 5,
+          "p50": 10,
+          "p90": 20
         },
-        "paying_slots_source": "assumed",
-        "baseline_any_payout": 0.041,
-        "p_paid": 0.041,
-        "ev_cash_heuristic": 1419,
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.068,
+        "p_paid": 0.068,
+        "ev_cash_heuristic": 2365,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
@@ -3365,6 +3397,11 @@
         "technical_depth_prior": "high",
         "family_prior_override": null
       },
+      "prizes_counts": {
+        "cash": null,
+        "other": 0,
+        "total_winners": null
+      },
       "days_left": 19,
       "gates": {
         "registration_open": true,
@@ -3773,6 +3810,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
+      "payout_ratio": 0.25,
       "days_left": 19,
       "gates": {
         "registration_open": true,
@@ -4678,6 +4716,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.492Z",
+      "payout_ratio": 2.51,
       "days_left": 40,
       "gates": {
         "registration_open": true,
@@ -4806,7 +4845,8 @@
       "open_to_all": true,
       "prizes_counts": {
         "cash": 5,
-        "other": 0
+        "other": 0,
+        "total_winners": 5
       },
       "open_state": "upcoming",
       "winners_announced": false,
@@ -4816,6 +4856,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.029Z",
+      "payout_ratio": 0.92,
       "days_left": 61,
       "gates": {
         "registration_open": true,
@@ -5066,6 +5107,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 1.25,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -5268,6 +5310,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.029Z",
+      "payout_ratio": 0.49,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -5486,6 +5529,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 4.03,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -5883,6 +5927,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.628Z",
+      "payout_ratio": 0.22,
       "days_left": 18,
       "gates": {
         "registration_open": true,
@@ -6181,6 +6226,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.628Z",
+      "payout_ratio": 2.19,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -7121,6 +7167,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.327Z",
+      "payout_ratio": 1.56,
       "days_left": 17,
       "gates": {
         "registration_open": true,
@@ -7333,6 +7380,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.851Z",
+      "payout_ratio": 9.26,
       "days_left": 16,
       "gates": {
         "registration_open": true,
@@ -7556,6 +7604,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.029Z",
+      "payout_ratio": 0.72,
       "days_left": 35,
       "gates": {
         "registration_open": true,
@@ -7687,6 +7736,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 1.17,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -7818,6 +7868,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 8.24,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -7949,6 +8000,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 3.23,
       "days_left": 36,
       "gates": {
         "registration_open": true,
@@ -8082,6 +8134,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.492Z",
+      "payout_ratio": 3.03,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -8213,6 +8266,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.492Z",
+      "payout_ratio": 0.68,
       "days_left": 21,
       "gates": {
         "registration_open": true,
@@ -8344,6 +8398,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.492Z",
+      "payout_ratio": 1.86,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -8598,6 +8653,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.492Z",
+      "payout_ratio": 2.14,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -8728,6 +8784,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 1.11,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -11359,6 +11416,12 @@
         "technical_depth_prior": null,
         "family_prior_override": null
       },
+      "prizes_counts": {
+        "cash": 5,
+        "other": 5,
+        "total_winners": 10
+      },
+      "payout_ratio": 0.6,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -11427,13 +11490,13 @@
       "payout": {
         "paying_slots": {
           "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p50": 5,
+          "p90": 10
         },
-        "paying_slots_source": "assumed",
-        "baseline_any_payout": 0.072,
-        "p_paid": 0.072,
-        "ev_cash_heuristic": 361,
+        "paying_slots_source": "platform_reported",
+        "baseline_any_payout": 0.06,
+        "p_paid": 0.06,
+        "ev_cash_heuristic": 301,
         "note": "slot count assumed until prize ladders are verified on official pages"
       },
       "decision": {
@@ -11492,6 +11555,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.684Z",
+      "payout_ratio": 5.75,
       "days_left": 9,
       "gates": {
         "registration_open": true,
@@ -11837,6 +11901,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.79,
       "days_left": 3,
       "gates": {
         "registration_open": true,
@@ -13495,6 +13560,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 1.23,
       "days_left": 8,
       "gates": {
         "registration_open": true,
@@ -13626,6 +13692,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.22,
       "days_left": 4,
       "gates": {
         "registration_open": true,
@@ -15978,6 +16045,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.628Z",
+      "payout_ratio": 0.29,
       "days_left": 35,
       "gates": {
         "registration_open": true,
@@ -16103,6 +16171,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.684Z",
+      "payout_ratio": 5.8,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -16231,6 +16300,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.628Z",
+      "payout_ratio": 0.01,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -16356,6 +16426,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.327Z",
+      "payout_ratio": 1.56,
       "days_left": 25,
       "gates": {
         "registration_open": true,
@@ -16483,6 +16554,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.327Z",
+      "payout_ratio": 1.97,
       "days_left": -2,
       "gates": {
         "registration_open": false,
@@ -16611,6 +16683,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.628Z",
+      "payout_ratio": 0.19,
       "days_left": 13,
       "gates": {
         "registration_open": true,
@@ -16856,6 +16929,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.029Z",
+      "payout_ratio": 0.28,
       "days_left": 5,
       "gates": {
         "registration_open": true,
@@ -16981,6 +17055,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.327Z",
+      "payout_ratio": 0.88,
       "days_left": 22,
       "gates": {
         "registration_open": true,
@@ -17105,6 +17180,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.629Z",
+      "payout_ratio": 0.34,
       "days_left": -2,
       "gates": {
         "registration_open": false,
@@ -17230,6 +17306,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:50.628Z",
+      "payout_ratio": 0.04,
       "days_left": 18,
       "gates": {
         "registration_open": true,
@@ -17355,6 +17432,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 2.22,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -17480,6 +17558,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.192Z",
+      "payout_ratio": 6.08,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -17604,6 +17683,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.851Z",
+      "payout_ratio": 10.71,
       "days_left": 42,
       "gates": {
         "registration_open": true,
@@ -17729,6 +17809,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.851Z",
+      "payout_ratio": 33.33,
       "days_left": 12,
       "gates": {
         "registration_open": true,
@@ -17854,6 +17935,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.327Z",
+      "payout_ratio": 0.96,
       "days_left": 65,
       "gates": {
         "registration_open": true,
@@ -17985,6 +18067,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.684Z",
+      "payout_ratio": 5.62,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -18110,6 +18193,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.11,
       "days_left": -3,
       "gates": {
         "registration_open": false,
@@ -18235,6 +18319,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.029Z",
+      "payout_ratio": 35.71,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -18478,6 +18563,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:52.029Z",
+      "payout_ratio": 9.09,
       "days_left": 31,
       "gates": {
         "registration_open": true,
@@ -18609,6 +18695,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.684Z",
+      "payout_ratio": 4.17,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -18976,6 +19063,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.42,
       "days_left": -3,
       "gates": {
         "registration_open": false,
@@ -19225,6 +19313,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.684Z",
+      "payout_ratio": 5,
       "days_left": 49,
       "gates": {
         "registration_open": true,
@@ -19480,6 +19569,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.143Z",
+      "payout_ratio": 0.78,
       "days_left": -3,
       "gates": {
         "registration_open": false,
@@ -20925,6 +21015,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.851Z",
+      "payout_ratio": 1.75,
       "days_left": 7,
       "gates": {
         "registration_open": true,
@@ -21052,6 +21143,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.851Z",
+      "payout_ratio": 1.89,
       "days_left": null,
       "gates": {
         "registration_open": null,
@@ -21179,6 +21271,7 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "observed_at": "2026-08-22T23:51:51.851Z",
+      "payout_ratio": 2.27,
       "days_left": 42,
       "gates": {
         "registration_open": true,
@@ -29266,7 +29359,11 @@
         "AgentMail"
       ],
       "open_to_all": true,
-      "prizes_counts": null,
+      "prizes_counts": {
+        "cash": 5,
+        "other": 5,
+        "total_winners": 10
+      },
       "open_state": "open",
       "winners_announced": false,
       "featured": false,
@@ -29342,10 +29439,10 @@
       "payout": {
         "paying_slots": {
           "p10": 3,
-          "p50": 6,
-          "p90": 12
+          "p50": 5,
+          "p90": 10
         },
-        "paying_slots_source": "assumed",
+        "paying_slots_source": "platform_reported",
         "baseline_any_payout": null,
         "p_paid": null,
         "ev_cash_heuristic": null,
@@ -29664,75 +29761,10 @@
       "reason": "in-person event (Unknown)"
     }
   ],
-  "changes": [
-    {
-      "id": "scan-dogfoodhack-com",
-      "type": "changed",
-      "field": "ends_at",
-      "old": "2026-09-28",
-      "new": "2026-09-28T18:00:00Z",
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-www-agenthon-net",
-      "type": "changed",
-      "field": "ends_at",
-      "old": "2026-10-12",
-      "new": "2026-09-28T23:59:00Z",
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-build-jigjoy-ai",
-      "type": "changed",
-      "field": "ends_at",
-      "old": "2026-09-06",
-      "new": "2026-09-06T18:00:00Z",
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-colosseum-com-eternal",
-      "type": "changed",
-      "field": "registrants",
-      "old": 257,
-      "new": 284,
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-colosseum-com-eternal",
-      "type": "changed",
-      "field": "ends_at",
-      "old": null,
-      "new": "2026-09-06T23:59:00Z",
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-webmcp-devpost-com",
-      "type": "changed",
-      "field": "registrants",
-      "old": 733,
-      "new": 2969,
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-webmcp-devpost-com",
-      "type": "changed",
-      "field": "ends_at",
-      "old": "2026-09-03",
-      "new": "2026-09-03T20:00:00Z",
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    },
-    {
-      "id": "scan-www-convex-dev-hackathons-all-gas",
-      "type": "changed",
-      "field": "ends_at",
-      "old": "2026-09-22",
-      "new": "2026-09-15T23:59:00Z",
-      "detected_at": "2026-08-28T02:49:58.024Z"
-    }
-  ],
+  "changes": [],
   "portfolio": {
     "specialism": "agentic systems, evolution kernels, verification pipelines",
-    "generated_at": "2026-08-28T02:49:58.026Z",
+    "generated_at": "2026-08-28T03:03:25.542Z",
     "path": [
       {
         "step": 1,

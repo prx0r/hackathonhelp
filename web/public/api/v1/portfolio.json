@@ -1,6 +1,6 @@
 {
   "specialism": "agentic systems, evolution kernels, verification pipelines",
-  "generated_at": "2026-08-28T01:59:00.486Z",
+  "generated_at": "2026-08-28T03:03:25.542Z",
   "path": [
     {
       "step": 1,
@@ -28,6 +28,18 @@
     },
     {
       "step": 3,
+      "slug": "webmcp-devpost-com",
+      "title": "The WebMCP Challenge",
+      "action": "SPRINT",
+      "deadline": "2026-09-03T20:00:00Z",
+      "days_left": 7,
+      "opportunity_score": 65,
+      "strategic_fit": 0.3,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "per official page"
+    },
+    {
+      "step": 4,
       "slug": "volthacks-volthacks",
       "title": "VoltHacks",
       "action": "SPRINT",
@@ -39,7 +51,7 @@
       "unique_work_remaining": "0 hard requirements"
     },
     {
-      "step": 4,
+      "step": 5,
       "slug": "prometheus-september-ai-2-prometheus-september-ai-2",
       "title": "Prometheus September AI Challenge 2",
       "action": "WATCH",
@@ -51,7 +63,7 @@
       "unique_work_remaining": "2 hard requirements"
     },
     {
-      "step": 5,
+      "step": 6,
       "slug": "nextstep2026-nextstep2026",
       "title": "NextStep Hacks 2026",
       "action": "WATCH",
@@ -63,7 +75,19 @@
       "unique_work_remaining": "0 hard requirements"
     },
     {
-      "step": 6,
+      "step": 7,
+      "slug": "www-kaggle-com-competitions-cuhk-x-competition-large-model-t",
+      "title": "CUHK-X Competition Large Model Track",
+      "action": "PREP",
+      "deadline": "2026-09-15",
+      "days_left": 18,
+      "opportunity_score": 67,
+      "strategic_fit": 0.52,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "per official page"
+    },
+    {
+      "step": 8,
       "slug": "agentsforhumans-agentsforhumans",
       "title": "Agents for Humans Hackathon",
       "action": "WATCH",
@@ -73,30 +97,6 @@
       "strategic_fit": 0.52,
       "effective_p80_hours": 34,
       "unique_work_remaining": "3 hard requirements"
-    },
-    {
-      "step": 7,
-      "slug": "ethonline-2026",
-      "title": "ETHOnline 2026",
-      "action": "PREP",
-      "deadline": "2026-09-16",
-      "days_left": 19,
-      "opportunity_score": 85,
-      "strategic_fit": 0.96,
-      "effective_p80_hours": 20,
-      "unique_work_remaining": "per official page"
-    },
-    {
-      "step": 8,
-      "slug": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
-      "title": "AI Builders Hackathon",
-      "action": "PREP",
-      "deadline": "2026-09-15T23:59:00.000Z",
-      "days_left": 19,
-      "opportunity_score": 65,
-      "strategic_fit": 0.3,
-      "effective_p80_hours": 34,
-      "unique_work_remaining": "0 hard requirements"
     }
   ],
   "reuse_between": [
@@ -107,8 +107,13 @@
     },
     {
       "from": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "to": "webmcp-devpost-com",
+      "reuse_pct": 40
+    },
+    {
+      "from": "webmcp-devpost-com",
       "to": "volthacks-volthacks",
-      "reuse_pct": 55
+      "reuse_pct": 45
     },
     {
       "from": "volthacks-volthacks",
@@ -122,17 +127,12 @@
     },
     {
       "from": "nextstep2026-nextstep2026",
+      "to": "www-kaggle-com-competitions-cuhk-x-competition-large-model-t",
+      "reuse_pct": 25
+    },
+    {
+      "from": "www-kaggle-com-competitions-cuhk-x-competition-large-model-t",
       "to": "agentsforhumans-agentsforhumans",
-      "reuse_pct": 55
-    },
-    {
-      "from": "agentsforhumans-agentsforhumans",
-      "to": "ethonline-2026",
-      "reuse_pct": 40
-    },
-    {
-      "from": "ethonline-2026",
-      "to": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
       "reuse_pct": 25
     }
   ]
