@@ -5196,18 +5196,14 @@
       "prize_raw": "$2,500",
       "registrants": null,
       "starts_at": "2026-09-25",
-      "ends_at": "2026-09-28",
+      "ends_at": "2026-09-28T18:00:00Z",
       "time_left": "about 5 weeks until the 72-hour build window",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "evaluation",
-        "verification",
-        "judging systems",
-        "reproducibility",
-        "anti-abuse",
-        "open source",
-        "developer infrastructure"
+        "hackathon-platform",
+        "judging",
+        "open-source"
       ],
       "open_to_all": true,
       "prizes_counts": null,
@@ -5218,7 +5214,8 @@
       "source_url": "https://dogfoodhack.com/",
       "source": "scan",
       "source_authority": "unverified",
-      "observed_at": "2026-08-27T00:00:00Z"
+      "observed_at": "2026-08-27T00:00:00Z",
+      "note": "72-hour hackathon. Build the submission/judging platform. Winner gets adopted. Self-hosted, docker-compose, API-first. 4 tiers."
     },
     {
       "id": "scan-www-hackquest-io-hackathons-arbitrum-open-house-singapore-on",
@@ -5291,22 +5288,19 @@
       "title": "Agenthon 2026",
       "organizer": "Society of Quantitative Analysts (SQA) and CEWIT at Stony Brook University",
       "prize_usd": null,
-      "prize_raw": null,
+      "prize_raw": "NeurIPS workshop + prizes TBA",
       "registrants": null,
-      "starts_at": "2026-08-17",
-      "ends_at": "2026-10-12",
+      "starts_at": "2026-08-28",
+      "ends_at": "2026-09-28T23:59:00Z",
       "time_left": "registration remains open until September 28; development runs August 28\u2013September 28 and sealed final evaluation runs September 29\u2013October 12",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "AI",
         "agents",
-        "evaluation",
-        "verification",
-        "quantitative finance",
+        "quant-finance",
         "forecasting",
         "simulation",
-        "evidence grounding"
+        "explainability"
       ],
       "open_to_all": true,
       "prizes_counts": null,
@@ -5317,7 +5311,8 @@
       "source_url": "https://www.agenthon.net/",
       "source": "scan",
       "source_authority": "unverified",
-      "observed_at": "2026-08-27T00:00:00Z"
+      "observed_at": "2026-08-27T00:00:00Z",
+      "note": "NeurIPS 2026 competition. 4 tracks: coding, forecasting, simulation, explainability. Docker-based eval. Aug 28 - Sep 28 dev, Sep 29 - Oct 12 final, NeurIPS Dec."
     },
     {
       "id": "scan-lablab-ai-ai-hackathons-assemblyai-voice-agent-hackathon",
@@ -5422,21 +5417,18 @@
       "slug": "build-jigjoy-ai",
       "title": "Build Systems of Concurrent Agents",
       "organizer": "JigJoy, daily.dev, and Hyperskill",
-      "prize_usd": 2900,
-      "prize_raw": "$2,900",
+      "prize_usd": 1000,
+      "prize_raw": "$1,000",
       "registrants": null,
       "starts_at": "2026-09-05",
-      "ends_at": "2026-09-06",
+      "ends_at": "2026-09-06T18:00:00Z",
       "time_left": "about 11 days until the September 5\u20136 online build weekend",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "AI",
         "agents",
-        "multi-agent systems",
-        "concurrency",
-        "agent orchestration",
-        "runtime reliability"
+        "concurrent",
+        "Mozaik"
       ],
       "open_to_all": true,
       "prizes_counts": null,
@@ -5447,7 +5439,8 @@
       "source_url": "https://build.jigjoy.ai/",
       "source": "scan",
       "source_authority": "unverified",
-      "observed_at": "2026-08-27T00:00:00Z"
+      "observed_at": "2026-08-27T00:00:00Z",
+      "note": "Concurrent agents. JigJoy + daily.dev. Free. Mozaik runtime for concurrent agents."
     },
     {
       "id": "scan-www-bnbchain-org-en-hackathons-smart-money-era",
@@ -5488,21 +5481,18 @@
       "slug": "colosseum-com-eternal",
       "title": "Eternal Challenge",
       "organizer": "Colosseum",
-      "prize_usd": 25000,
-      "prize_raw": "$25,000",
-      "registrants": 257,
-      "starts_at": null,
-      "ends_at": null,
+      "prize_usd": 250000,
+      "prize_raw": "$250,000 pre-seed funding",
+      "registrants": 284,
+      "starts_at": "2026-08-01",
+      "ends_at": "2026-09-06T23:59:00Z",
       "time_left": "about 13 days remain in the currently open Eternal window",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "developer challenge",
         "Solana",
-        "infrastructure",
-        "startups",
-        "developer tools",
-        "AI-agent infrastructure"
+        "crypto",
+        "web3"
       ],
       "open_to_all": true,
       "prizes_counts": null,
@@ -5513,7 +5503,8 @@
       "source_url": "https://colosseum.com/eternal",
       "source": "scan",
       "source_authority": "unverified",
-      "observed_at": "2026-08-27T00:00:00Z"
+      "observed_at": "2026-08-27T00:00:00Z",
+      "note": "Colosseum Eternal. 4-week build sprint. $250K pre-seed + accelerator cohort. Window closes in ~9 days."
     },
     {
       "id": "scan-apartresearch-com-sprints-ai-incident-response-sprint-2026-0",
@@ -5782,21 +5773,17 @@
       "title": "The WebMCP Challenge",
       "organizer": "OpenAI",
       "prize_usd": 35000,
-      "prize_raw": "$35,000",
-      "registrants": 733,
+      "prize_raw": "$35,000 in cash",
+      "registrants": 2969,
       "starts_at": "2026-08-25",
-      "ends_at": "2026-09-03",
+      "ends_at": "2026-09-03T20:00:00Z",
       "time_left": "about 8 days until the September 3, 2026 1:00 PM PDT submission deadline",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "AI",
-        "agents",
-        "WebMCP",
-        "agent-native web",
-        "tool use",
-        "agent reliability",
-        "open standards"
+        "Machine Learning/AI",
+        "E-commerce/Retail",
+        "Web"
       ],
       "open_to_all": true,
       "prizes_counts": null,
@@ -5807,7 +5794,8 @@
       "source_url": "https://webmcp.devpost.com/",
       "source": "scan",
       "source_authority": "official_rules_verified",
-      "observed_at": "2026-08-27T00:00:00Z"
+      "observed_at": "2026-08-27T00:00:00Z",
+      "note": "OpenAI-backed. Top10 get $3K cash + Codex Micro + ChatGPT Pro 1yr + Cloudflare/Vercel/Render credits"
     },
     {
       "id": "scan-zerodepshack-com",
@@ -5846,21 +5834,19 @@
       "slug": "www-convex-dev-hackathons-all-gas",
       "title": "Convex All Gas Hackathon",
       "organizer": "Convex, with OpenAI, Firecrawl, and AgentMail",
-      "prize_usd": 25000,
-      "prize_raw": "$25,000",
+      "prize_usd": 16500,
+      "prize_raw": "$16,500 cash + $8,500 Codex credits",
       "registrants": null,
       "starts_at": "2026-08-25",
-      "ends_at": "2026-09-22",
+      "ends_at": "2026-09-15T23:59:00Z",
       "time_left": "about 26 days until the September 22, 2026 12:00 PM PT submission deadline",
       "location_type": "online",
       "location": "Online",
       "themes": [
-        "AI",
-        "agents",
-        "full-stack apps",
-        "web data",
-        "agent email",
-        "real-time backends"
+        "Convex",
+        "OpenAI",
+        "Firecrawl",
+        "AgentMail"
       ],
       "open_to_all": true,
       "prizes_counts": null,
@@ -5871,7 +5857,8 @@
       "source_url": "https://www.convex.dev/hackathons/all-gas",
       "source": "scan",
       "source_authority": "official_rules_verified",
-      "observed_at": "2026-08-27T00:00:00Z"
+      "observed_at": "2026-08-27T00:00:00Z",
+      "note": "Convex + OpenAI + Firecrawl + AgentMail. New project required after Aug 25. 3 weeks."
     }
   ]
 }
