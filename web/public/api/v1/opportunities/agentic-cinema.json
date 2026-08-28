@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:09:57.409Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-agentic-cinema",
@@ -36,17 +36,15 @@
       "registration_open": true,
       "deadline_future": true,
       "remote_ok": true,
-      "age_confirmed": false,
+      "age_confirmed": null,
       "student_only": false,
       "country_restricted": null
     },
     "eligibility": {
-      "eligible": false,
-      "failed": [
-        "age-of-majority eligibility per official rules"
-      ],
-      "confidence": "official_rules",
-      "notes": "age-of-majority eligibility per official rules"
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
     },
     "prize": {
       "advertised_value": 75000,
@@ -80,7 +78,15 @@
       "effective_p80_hours": 34
     },
     "score_v01": {
-      "opportunity_score": null
+      "components": {
+        "expected_prize_value": 92,
+        "winnability": 25,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 56
     },
     "metrics": {
       "equal_share_naive": 8.81,
@@ -102,7 +108,7 @@
     },
     "decision": {
       "action": "SKIP",
-      "reason": "eligibility gate failed",
+      "reason": "weak opportunity for remaining time",
       "feasibility": 0.97,
       "feasibility_label": "10-14d",
       "latest_safe_start": "2026-08-29",
@@ -116,13 +122,19 @@
       },
       "opportunity_cost_usd": 850
     },
-    "mega": null,
-    "order_key": -100,
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$176.06 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": -34.6,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": null,
-      "formula": "SKIP - eligibility gate failed"
+      "score": 56,
+      "formula": "SKIP - weak opportunity for remaining time"
     }
   },
   "links": {

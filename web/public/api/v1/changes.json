@@ -1,16 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:09:57.409Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "schema_version": "hackathonhelp.api.v2",
-  "changes": [
-    {
-      "id": "dp-all-things-agentic",
-      "type": "added",
-      "detected_at": "2026-08-28T03:09:57.407Z"
-    },
-    {
-      "id": "dp-agentic-cinema",
-      "type": "added",
-      "detected_at": "2026-08-28T03:09:57.407Z"
-    }
-  ]
+  "changes": []
 }

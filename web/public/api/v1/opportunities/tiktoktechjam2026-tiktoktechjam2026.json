@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:09:57.409Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-tiktoktechjam2026-tiktoktechjam2026",
@@ -38,17 +38,15 @@
       "registration_open": true,
       "deadline_future": true,
       "remote_ok": true,
-      "age_confirmed": false,
+      "age_confirmed": null,
       "student_only": false,
       "country_restricted": null
     },
     "eligibility": {
-      "eligible": false,
-      "failed": [
-        "18+/college-student-only per official rules"
-      ],
-      "confidence": "official_rules",
-      "notes": "18+/college-student-only per official rules"
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
     },
     "prize": {
       "advertised_value": 34500,
@@ -82,7 +80,15 @@
       "effective_p80_hours": 34
     },
     "score_v01": {
-      "opportunity_score": null
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 43,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 65
     },
     "metrics": {
       "equal_share_naive": 16.23,
@@ -103,8 +109,8 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "SKIP",
-      "reason": "eligibility gate failed",
+      "action": "SPRINT",
+      "reason": "tight but real (3-5d finish prior 65%)",
       "feasibility": 0.65,
       "feasibility_label": "3-5d",
       "latest_safe_start": "2026-08-21",
@@ -118,13 +124,19 @@
       },
       "opportunity_cost_usd": 850
     },
-    "mega": null,
-    "order_key": -100,
-    "attention": -1,
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$325.47 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 35073.5,
+    "attention": 35073.5,
     "attention_breakdown": {
-      "action": "SKIP",
-      "score": null,
-      "formula": "SKIP - eligibility gate failed"
+      "action": "SPRINT",
+      "score": 65,
+      "formula": "SPRINT - tight but real (3-5d finish prior 65%)"
     }
   },
   "links": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:09:57.409Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-revenuecat-shipaton-2026-revenuecat-shipaton-2026",
@@ -38,17 +38,15 @@
       "registration_open": true,
       "deadline_future": true,
       "remote_ok": true,
-      "age_confirmed": false,
+      "age_confirmed": null,
       "student_only": false,
       "country_restricted": null
     },
     "eligibility": {
-      "eligible": false,
-      "failed": [
-        "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
-      ],
-      "confidence": "official_rules",
-      "notes": "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification"
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
     },
     "prize": {
       "advertised_value": 740000,
@@ -82,7 +80,15 @@
       "effective_p80_hours": 34
     },
     "score_v01": {
-      "opportunity_score": null
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 26,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 60
     },
     "metrics": {
       "equal_share_naive": 38,
@@ -103,8 +109,8 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "SKIP",
-      "reason": "eligibility gate failed",
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-09-20",
       "feasibility": 1,
       "feasibility_label": "14d+",
       "latest_safe_start": "2026-09-20",
@@ -118,13 +124,19 @@
       },
       "opportunity_cost_usd": 850
     },
-    "mega": null,
-    "order_key": -100,
+    "mega": {
+      "score": 35,
+      "reasons": [
+        "$759.75 normalized prize per estimated submission"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 20069,
     "attention": -1,
     "attention_breakdown": {
-      "action": "SKIP",
-      "score": null,
-      "formula": "SKIP - eligibility gate failed"
+      "action": "WATCH",
+      "score": 60,
+      "formula": "WATCH - far out; latest safe start 2026-09-20"
     }
   },
   "links": {

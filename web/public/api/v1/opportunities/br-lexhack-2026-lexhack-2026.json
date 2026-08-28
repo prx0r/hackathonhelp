@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-28T03:09:57.409Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-lexhack-2026-lexhack-2026",
@@ -31,17 +31,15 @@
       "registration_open": true,
       "deadline_future": true,
       "remote_ok": true,
-      "age_confirmed": false,
+      "age_confirmed": null,
       "student_only": false,
       "country_restricted": null
     },
     "eligibility": {
-      "eligible": false,
-      "failed": [
-        "project must be created during event window; verify before considering (official rules)"
-      ],
-      "confidence": "official_rules",
-      "notes": "project must be created during event window; verify before considering (official rules)"
+      "eligible": true,
+      "failed": [],
+      "confidence": "platform_metadata_unverified",
+      "notes": null
     },
     "prize": {
       "advertised_value": 43560,
@@ -75,7 +73,15 @@
       "effective_p80_hours": 34
     },
     "score_v01": {
-      "opportunity_score": null
+      "components": {
+        "expected_prize_value": 100,
+        "winnability": 60,
+        "historical_winner_quality": null,
+        "judging_tractability": null,
+        "organizer_quality": null
+      },
+      "known_components": 2,
+      "opportunity_score": 60
     },
     "metrics": {
       "equal_share_naive": 1281.18,
@@ -98,8 +104,8 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "SKIP",
-      "reason": "eligibility gate failed",
+      "action": "WATCH",
+      "reason": "marginal — recheck as field matures · capped: prize unconfirmed",
       "feasibility": 1,
       "feasibility_label": "14d+",
       "latest_safe_start": "2026-09-16",
@@ -113,13 +119,20 @@
       },
       "opportunity_cost_usd": 850
     },
-    "mega": null,
-    "order_key": -100,
+    "mega": {
+      "score": 65,
+      "reasons": [
+        "$3630 normalized prize per estimated submission",
+        "$44K cash with below-median registration"
+      ],
+      "category": "value_competition_gap"
+    },
+    "order_key": 20069,
     "attention": -1,
     "attention_breakdown": {
-      "action": "SKIP",
-      "score": null,
-      "formula": "SKIP - eligibility gate failed"
+      "action": "WATCH",
+      "score": 60,
+      "formula": "WATCH - marginal — recheck as field matures · capped: prize unconfirmed"
     }
   },
   "links": {

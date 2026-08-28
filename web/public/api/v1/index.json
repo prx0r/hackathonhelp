@@ -1,7 +1,7 @@
 {
   "api": "hackathonhelp",
   "version": "v2",
-  "generated_at": "2026-08-28T03:09:57.409Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "description": "Opportunity intelligence for online individual builders. Deterministic pipeline; unknown=null; official sources override metadata.",
   "endpoints": [
     {

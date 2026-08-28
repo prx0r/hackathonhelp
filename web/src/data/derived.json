@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:12:29.355Z",
+  "generated_at": "2026-08-28T03:17:51.134Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 200,
@@ -29916,7 +29916,7 @@
   "changes": [],
   "portfolio": {
     "specialism": "agentic systems, evolution kernels, verification pipelines",
-    "generated_at": "2026-08-28T03:12:29.355Z",
+    "generated_at": "2026-08-28T03:17:51.134Z",
     "path": [
       {
         "step": 1,
