@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T03:54:29.753Z",
+  "generated_at": "2026-08-28T04:06:19.058Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 203,
@@ -22866,7 +22866,7 @@
       "eligibility_flags": [
         "All"
       ],
-      "days_left": -4,
+      "days_left": -5,
       "gates": {
         "registration_open": false,
         "deadline_future": false,
@@ -22920,7 +22920,7 @@
       "metrics": {
         "equal_share_naive": null,
         "fair_share_serious": null,
-        "days_left": -4
+        "days_left": -5
       },
       "cautions": [
         "prize not published on platform card — see official page"
@@ -30300,21 +30300,5 @@
       "reason": "in-person event (Unknown)"
     }
   ],
-  "changes": [
-    {
-      "id": "scan-agents-everywhere",
-      "type": "added",
-      "detected_at": "2026-08-28T03:54:29.750Z"
-    },
-    {
-      "id": "scan-agents-league",
-      "type": "added",
-      "detected_at": "2026-08-28T03:54:29.750Z"
-    },
-    {
-      "id": "scan-anthropic-claude",
-      "type": "added",
-      "detected_at": "2026-08-28T03:54:29.750Z"
-    }
-  ]
+  "changes": []
 }

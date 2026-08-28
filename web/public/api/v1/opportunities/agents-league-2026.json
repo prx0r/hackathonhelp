@@ -3,41 +3,35 @@
   "generated_at": "2026-08-28T04:06:19.058Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
-    "id": "scan-kriyanative-com-events-hackathon",
-    "slug": "kriyanative-com-events-hackathon",
-    "title": "Kriyathon",
-    "organizer": "kriya",
-    "prize_usd": null,
-    "prize_raw": null,
+    "id": "scan-agents-league",
+    "slug": "agents-league-2026",
+    "title": "Agents League Hackathon 2026 — Enterprise Agents",
+    "organizer": "Microsoft",
+    "prize_usd": 50000,
+    "prize_raw": "$50K+",
     "registrants": null,
-    "starts_at": null,
-    "ends_at": "2026-09-12",
-    "time_left": "Submissions close September 12, 2026 at 23:59 IST.",
+    "starts_at": "2026-06-11",
+    "ends_at": null,
+    "time_left": null,
     "location_type": "online",
     "location": "Online",
     "themes": [
-      "AI",
       "agents",
-      "offline AI",
-      "governance",
-      "human approval",
-      "signed audit",
-      "MCP"
+      "Microsoft",
+      "Copilot",
+      "M365",
+      "enterprise",
+      "RAG"
     ],
     "open_to_all": true,
-    "prizes_counts": null,
-    "open_state": "open",
-    "winners_announced": false,
-    "featured": false,
-    "submission_gallery_url": null,
-    "source_url": "https://kriyanative.com/events/hackathon/",
+    "source_url": "https://devblogs.microsoft.com/microsoft365dev/agents-league-hackathon-2026-enterprise-agents/",
     "source": "scan",
-    "source_authority": "official_rules_verified",
-    "observed_at": "2026-08-27T00:00:00Z",
-    "days_left": 15,
+    "source_authority": "official_blog",
+    "note": "$50K+ prizes. Enterprise Agents category. Microsoft IQ integration (Foundry IQ, Work IQ, Fabric IQ, Web IQ). Multi-agent architectures, RAG, Copilot.",
+    "days_left": null,
     "gates": {
-      "registration_open": true,
-      "deadline_future": true,
+      "registration_open": null,
+      "deadline_future": null,
       "remote_ok": true,
       "age_confirmed": null,
       "student_only": false,
@@ -50,12 +44,12 @@
       "notes": null
     },
     "prize": {
-      "advertised_value": null,
-      "cash_value": null,
+      "advertised_value": 50000,
+      "cash_value": 50000,
       "credits_value": null,
       "hardware_value": null,
-      "normalized_value": null,
-      "headline_inflation": null
+      "normalized_value": 50000,
+      "headline_inflation": 0
     },
     "field": {
       "registrations": null,
@@ -94,11 +88,9 @@
     "metrics": {
       "equal_share_naive": null,
       "fair_share_serious": null,
-      "days_left": 15
+      "days_left": null
     },
-    "cautions": [
-      "prize not published on platform card — see official page"
-    ],
+    "cautions": [],
     "payout": {
       "paying_slots": {
         "p10": 3,
@@ -114,10 +106,10 @@
     "decision": {
       "action": "SKIP",
       "reason": "unscoreable",
-      "feasibility": 1,
-      "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-01",
-      "p_finish_proxy": 1,
+      "feasibility": 0.35,
+      "feasibility_label": "0.35",
+      "latest_safe_start": null,
+      "p_finish_proxy": 0.35,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -127,8 +119,14 @@
       },
       "opportunity_cost_usd": 850
     },
-    "mega": null,
-    "order_key": -100,
+    "mega": {
+      "score": 30,
+      "reasons": [
+        "$50K cash with below-median registration"
+      ],
+      "category": "high_fair_share"
+    },
+    "order_key": -85,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
@@ -137,8 +135,8 @@
     }
   },
   "links": {
-    "html": "/opps/kriyanative-com-events-hackathon",
-    "official": "https://kriyanative.com/events/hackathon/",
+    "html": "/opps/agents-league-2026",
+    "official": "https://devblogs.microsoft.com/microsoft365dev/agents-league-hackathon-2026-enterprise-agents/",
     "changes": "/api/v1/changes.json"
   }
 }

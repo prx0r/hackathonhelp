@@ -1,0 +1,234 @@
+---
+import Base from '../layouts/Base.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const ROOT = path.resolve(process.cwd(), '../');
+const activeDir = path.join(ROOT, 'data/active');
+const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/seed.json'), 'utf8'));
+const PROFILE = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/builder-profile.json'), 'utf8'));
+const NOW = Date.now();
+
+function loadActive(slug) {
+  const f = path.join(activeDir, `${slug}.json`);
+  if (!fs.existsSync(f)) return null;
+  return JSON.parse(fs.readFileSync(f, 'utf8'));
+}
+
+function skillMatch(data) {
+  const tags = [
+    ...(data.themes || []),
+    ...(data.tracks || []).map(t => `${t.name} ${t.description}`),
+    data.strategy_notes?.key_insight || '',
+    data.strategy_notes?.our_endpoint || '',
+    ...(data.rubric?.criteria || []).map(c => `${c.name} ${c.description} ${c.what_we_need}`),
+  ].join(' ').toLowerCase();
+  const thesisHits = PROFILE.thesis_tags.filter(t => tags.includes(t));
+  const assetHits = PROFILE.assets.filter(a => a.tags.some(t => tags.includes(t)));
+  const reuse = PROFILE.reuse_by_event[data.slug] || PROFILE.reuse_by_event._default || 0;
+  return Math.min(100, Math.round(thesisHits.length * 12 + assetHits.length * 8 + reuse * 40));
+}
+
+function daysLeft(dl) {
+  if (!dl) return null;
+  return Math.ceil((new Date(dl) - NOW) / 86400000);
+}
+
+function fmtDate(d) {
+  if (!d) return '?';
+  return new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+// Build entries from seed (all 203 hackathons)
+const entries = seed.opportunities.map(o => {
+  const active = loadActive(o.slug);
+  const dl = o.ends_at || active?.timeline?.build_deadline || active?.timeline?.registration_closes;
+  const days = daysLeft(dl);
+  const prize = o.prize_usd || active?.prizes?.total_usd || 0;
+  const hasActive = !!active;
+  const hasProject = !!active?.project?.repo_url;
+  const hasRubric = !!active?.rubric;
+
+  const data = active || { themes: o.themes || [], tracks: [], rubric: null, judging: null, strategy_notes: null };
+  const skill = skillMatch(data);
+
+  return {
+    slug: o.slug,
+    title: o.title,
+    organizer: o.organizer,
+    days_left: days,
+    deadline: dl,
+    deadline_fmt: fmtDate(dl),
+    prize,
+    skill,
+    has_active: hasActive,
+    has_project: hasProject,
+    has_rubric: hasRubric,
+    source: o.source,
+    is_new: o.source === 'scan',
+    color: days == null ? 'gray' : days <= 2 ? 'red' : days <= 5 ? 'orange' : days <= 10 ? 'yellow' : days <= 21 ? 'green' : 'dim',
+  };
+}).filter(e => e.days_left == null || e.days_left > 0); // Remove ended
+
+entries.sort((a, b) => (a.days_left ?? 999) - (b.days_left ?? 999));
+
+function scoreEntry(e, w) {
+  const urgScore = e.days_left != null ? Math.max(0, 100 - e.days_left * 3) : 20;
+  const prizeScore = Math.min(100, e.prize / 500);
+  const activeBonus = e.has_active ? 10 : 0;
+  return Math.round(e.skill * w.skill + urgScore * w.urgency + prizeScore * w.prize + activeBonus * w.existing);
+}
+
+const profiles = {
+  balanced: { skill: 0.4, urgency: 0.3, prize: 0.2, existing: 0.1 },
+  easy: { skill: 0.6, urgency: 0.1, prize: 0.1, existing: 0.2 },
+  risk: { skill: 0.2, urgency: 0.4, prize: 0.3, existing: 0.1 },
+  prize: { skill: 0.15, urgency: 0.15, prize: 0.6, existing: 0.1 },
+};
+
+// Score with all profiles
+for (const e of entries) {
+  e.scores = {};
+  for (const [name, w] of Object.entries(profiles)) {
+    e.scores[name] = scoreEntry(e, w);
+  }
+  e.total = e.scores.balanced; // default
+}
+---
+
+<Base title="Personal Pathway - HackathonHelp">
+  <section class="hero">
+    <div class="eyebrow">Your personalized route</div>
+    <h1>Pathway</h1>
+    <p class="subtitle">{entries.length} hackathons · {entries.filter(e => e.days_left != null && e.days_left <= 7).length} deadline within 7 days · {entries.filter(e => e.has_active).length} actively tracking</p>
+  </section>
+
+  <div class="controls panel">
+    <div class="label">Strategy</div>
+    <div class="profile-btns">
+      <button class="btn active" data-profile="balanced">Balanced</button>
+      <button class="btn" data-profile="easy">Easiest Path</button>
+      <button class="btn" data-profile="risk">High Risk / High Reward</button>
+      <button class="btn" data-profile="prize">Prize Maximizer</button>
+    </div>
+    <div class="profile-desc" id="profile-desc">Skill 40% · Urgency 30% · Prize 20% · Existing 10%</div>
+  </div>
+
+  <div id="entries" class="entries">
+    {entries.slice(0, 50).map(e => (
+      <div class={`entry ${e.color}`} data-scores={JSON.stringify(e.scores)} data-prize={e.prize} data-skill={e.skill} data-days={e.days_left ?? 999}>
+        <div class="entry-top">
+          <span class={`color-dot ${e.color}`}></span>
+          <span class="score" data-balanced={e.scores.balanced}>{e.scores.balanced}</span>
+          <div class="entry-info">
+            <a href={`/opps/${e.slug}`} class="entry-title">{e.title}</a>
+            <span class="entry-org">{e.organizer || ''}</span>
+          </div>
+          <div class="entry-meta">
+            {e.prize > 0 && <span class="prize">${e.prize.toLocaleString()}</span>}
+            <span class={`deadline ${e.color}`}>{e.deadline_fmt}</span>
+            {e.has_active && <span class="badge-active">TRACKING</span>}
+            {e.is_new && <span class="badge-new">NEW</span>}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <script is:inline define:vars={{ profiles: JSON.stringify(profiles) }}>
+    const profs = JSON.parse(profiles);
+    const btns = document.querySelectorAll('.btn[data-profile]');
+    const desc = document.getElementById('profile-desc');
+    const entries = document.querySelectorAll('.entry');
+
+    const labels = {
+      balanced: 'Skill 40% · Urgency 30% · Prize 20% · Existing 10%',
+      easy: 'Skill 60% · Urgency 10% · Prize 10% · Existing 20%',
+      risk: 'Skill 20% · Urgency 40% · Prize 30% · Existing 10%',
+      prize: 'Skill 15% · Urgency 15% · Prize 60% · Existing 10%',
+    };
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const p = btn.dataset.profile;
+        desc.textContent = labels[p];
+
+        // Re-score and re-sort
+        const arr = Array.from(entries);
+        arr.forEach(el => {
+          const scores = JSON.parse(el.dataset.scores);
+          el.querySelector('.score').textContent = scores[p];
+          el.querySelector('.score').dataset.balanced = scores[p];
+        });
+        arr.sort((a, b) => parseInt(b.querySelector('.score').dataset.balanced) - parseInt(a.querySelector('.score').dataset.balanced));
+        const container = document.getElementById('entries');
+        arr.forEach(el => container.appendChild(el));
+      });
+    });
+  </script>
+
+  <style>
+    .controls { margin-bottom: 24px; }
+    .profile-btns { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+    .btn {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
+      transition: all 0.15s;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+    .profile-desc { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+
+    .entries { display: flex; flex-direction: column; gap: 2px; }
+    .entry {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 6px; padding: 10px 14px; transition: all 0.15s;
+    }
+    .entry.red { border-left: 3px solid #ef4444; }
+    .entry.orange { border-left: 3px solid #f97316; }
+    .entry.yellow { border-left: 3px solid #eab308; }
+    .entry.green { border-left: 3px solid #22c55e; }
+    .entry.dim { border-left: 3px solid #6b7280; }
+    .entry.gray { border-left: 3px solid #374151; }
+    .entry-top { display: flex; align-items: center; gap: 10px; }
+    .color-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .color-dot.red { background: #ef4444; }
+    .color-dot.orange { background: #f97316; }
+    .color-dot.yellow { background: #eab308; }
+    .color-dot.green { background: #22c55e; }
+    .color-dot.dim { background: #6b7280; }
+    .color-dot.gray { background: #374151; }
+    .score {
+      font-family: monospace; font-size: 14px; font-weight: 700;
+      min-width: 28px; text-align: right; color: var(--text);
+    }
+    .entry-info { flex: 1; min-width: 0; }
+    .entry-title {
+      font-size: 14px; font-weight: 500; color: var(--text);
+      text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      display: block;
+    }
+    .entry-title:hover { color: var(--accent); }
+    .entry-org { font-size: 11px; color: var(--text-dim); }
+    .entry-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .prize { font-family: monospace; font-size: 12px; color: #86efac; font-weight: 600; }
+    .deadline { font-size: 12px; font-weight: 500; }
+    .deadline.red { color: #ef4444; }
+    .deadline.orange { color: #f97316; }
+    .deadline.yellow { color: #eab308; }
+    .deadline.green { color: #22c55e; }
+    .deadline.dim { color: #6b7280; }
+    .badge-active {
+      font-size: 9px; font-weight: 700; letter-spacing: 0.05em;
+      background: rgba(34,197,94,.15); color: #86efac; padding: 2px 6px;
+      border-radius: 4px; text-transform: uppercase;
+    }
+    .badge-new {
+      font-size: 9px; font-weight: 700; letter-spacing: 0.05em;
+      background: rgba(59,130,246,.15); color: #93c5fd; padding: 2px 6px;
+      border-radius: 4px; text-transform: uppercase;
+    }
+  </style>
+</Base>

@@ -3,44 +3,29 @@
   "generated_at": "2026-08-28T04:06:19.058Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
-    "id": "man-rise-of-ai-agents",
-    "slug": "rise-of-ai-agents",
-    "title": "The Rise of AI Agents Hackathon",
-    "organizer": "lablab.ai x Dubai AI Week",
-    "prize_usd": 9000,
-    "prize_raw": "Vultr $5k+$3k+$1k CASH + Gemini GCP credits $25k/$15k/$10k",
-    "registrants": 629,
+    "id": "scan-anthropic-claude",
+    "slug": "anthropic-claude-code-hackathon",
+    "title": "Anthropic Claude Code Hackathon (recurring)",
+    "organizer": "Anthropic",
+    "prize_usd": 100000,
+    "prize_raw": "$100K in API credits",
+    "registrants": 500,
     "starts_at": null,
     "ends_at": null,
-    "first_deadline": null,
-    "deadline_note": null,
-    "time_left": null,
+    "time_left": "Next edition TBA",
     "location_type": "online",
-    "location": "Hybrid - Dubai onsite by invitation",
+    "location": "Online",
     "themes": [
-      "ai-agents",
-      "autonomous-agents",
-      "multi-step-workflows"
+      "Claude",
+      "Anthropic",
+      "agents",
+      "Claude-Code"
     ],
     "open_to_all": true,
-    "source_url": "https://lablab.ai/ai-hackathons/the-rise-of-ai-agents-hackathon",
-    "source": "manual",
-    "source_authority": "official_rules",
-    "observed_at": "2026-08-22T23:52:03.133Z",
-    "manual": {
-      "prize_breakdown": {
-        "advertised": 62000,
-        "cash": 9000,
-        "credits": 53000,
-        "_note": "Vultr $5k+$3k+$1k CASH + Gemini GCP credits $25k/$15k/$10k"
-      },
-      "eligibility_note": null,
-      "field_note": null,
-      "judging": null,
-      "organizer_quality": 0.8,
-      "technical_depth_prior": null,
-      "family_prior_override": null
-    },
+    "source_url": "https://cerebralvalley.ai/e/claude-code-hackathon",
+    "source": "scan",
+    "source_authority": "unverified",
+    "note": "Recurring hackathon. $100K in API credits. 500 participants selected. Direct access to Claude team. Previous editions: Opus 4.6, 4.7, 4.8. Watch for next announcement.",
     "days_left": null,
     "gates": {
       "registration_open": null,
@@ -53,28 +38,28 @@
     "eligibility": {
       "eligible": true,
       "failed": [],
-      "confidence": "official_rules",
+      "confidence": "platform_metadata_unverified",
       "notes": null
     },
     "prize": {
-      "advertised_value": 62000,
-      "cash_value": 9000,
-      "credits_value": 53000,
+      "advertised_value": 100000,
+      "cash_value": 100000,
+      "credits_value": null,
       "hardware_value": null,
-      "normalized_value": 22250,
-      "headline_inflation": 64
+      "normalized_value": 100000,
+      "headline_inflation": 0
     },
     "field": {
-      "registrations": 629,
+      "registrations": 500,
       "family_prior": {
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
       "field_status": "usable",
-      "estimated_serious_field": 50,
-      "field_p10": 33,
-      "field_p50": 50,
-      "field_p90": 78,
+      "estimated_serious_field": 40,
+      "field_p10": 26,
+      "field_p50": 40,
+      "field_p90": 62,
       "funnel": null
     },
     "slots": {
@@ -93,19 +78,17 @@
         "winnability": 50,
         "historical_winner_quality": null,
         "judging_tractability": null,
-        "organizer_quality": 80
+        "organizer_quality": null
       },
-      "known_components": 3,
-      "opportunity_score": 74
+      "known_components": 2,
+      "opportunity_score": 67
     },
     "metrics": {
-      "equal_share_naive": 98.57,
-      "fair_share_serious": 445,
+      "equal_share_naive": 200,
+      "fair_share_serious": 2500,
       "days_left": null
     },
-    "cautions": [
-      "64% of headline is non-cash"
-    ],
+    "cautions": [],
     "payout": {
       "paying_slots": {
         "p10": 3,
@@ -113,9 +96,9 @@
         "p90": 12
       },
       "paying_slots_source": "assumed",
-      "baseline_any_payout": 0.12,
-      "p_paid": 0.12,
-      "ev_cash_heuristic": 2670,
+      "baseline_any_payout": 0.15,
+      "p_paid": 0.15,
+      "ev_cash_heuristic": 15000,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
@@ -137,22 +120,21 @@
     "mega": {
       "score": 35,
       "reasons": [
-        "$445 normalized prize per estimated submission",
-        "⚠ 64% of headline is non-cash"
+        "$2500 normalized prize per estimated submission"
       ],
       "category": "value_competition_gap"
     },
-    "order_key": 20081.6,
+    "order_key": 20075.3,
     "attention": -1,
     "attention_breakdown": {
       "action": "WATCH",
-      "score": 74,
+      "score": 67,
       "formula": "WATCH - deadline not published"
     }
   },
   "links": {
-    "html": "/opps/rise-of-ai-agents",
-    "official": "https://lablab.ai/ai-hackathons/the-rise-of-ai-agents-hackathon",
+    "html": "/opps/anthropic-claude-code-hackathon",
+    "official": "https://cerebralvalley.ai/e/claude-code-hackathon",
     "changes": "/api/v1/changes.json"
   }
 }

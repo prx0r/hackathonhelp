@@ -11,7 +11,7 @@ const fmt$ = v => v==null?'—':'$'+Math.round(v).toLocaleString();
 const dl = m.days_left;
 const ended = o.status==='ended' || (dl!=null && dl<0);
 function esc(x){return String(x??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,">")}
-const scoreNull = o.score_v01.opportunity_score == null;
+const scoreNull = o.score_v01?.opportunity_score == null;
 
 // Contract panel (v0.3): rendered only when an extracted contract exists
 let contractPanel = '';
@@ -62,14 +62,14 @@ if (o.contract) {
       {!scoreNull && <span class="score">{o.score_v01.opportunity_score}/100</span>}
       {ended && <span class="conf" style="color:var(--red)">submission closed</span>}
       {!ended && o.time_left && <span class="conf">{o.time_left}</span>}
-      {o.field.field_status==='forming' && !ended && <span class="pill-forming">field still forming</span>}
+      {o.field?.field_status==='forming' && !ended && <span class="pill-forming">field still forming</span>}
     </div>
   </section>
 
-  {!o.eligibility.eligible && (
+  {o.eligibility && !o.eligibility.eligible && (
     <section class="panel excluded-panel">
       <div class="label" style="color:var(--red)">Not eligible — excluded from rankings</div>
-      <p>{o.eligibility.failed.join(' · ')}</p>
+      <p>{o.eligibility?.failed?.join(' · ') || ''}</p>
       <p class="mathnote">Official rules override platform metadata. Listed for transparency.</p>
     </section>
   )}
@@ -148,7 +148,7 @@ if (o.contract) {
           <tr><td>Headline inflation</td><td style="color:var(--orange)">{o.prize.headline_inflation}% non-cash</td></tr>}
       </table>
       <a href={o.source_url} target="_blank" rel="noopener" class="src-link">Official event page →</a>
-      <div class="observed">Devpost API · observed {o.observed_at.slice(0,10)} · eligibility source: {o.eligibility.confidence.replace(/_/g,' ')}</div>
+      <div class="observed">{o.observed_at ? 'Devpost API · observed ' + o.observed_at.slice(0,10) : ''} {o.eligibility?.confidence ? '· eligibility source: ' + o.eligibility.confidence.replace(/_/g,' ') : ''}</div>
     </div>
 
     <div class="panel">
