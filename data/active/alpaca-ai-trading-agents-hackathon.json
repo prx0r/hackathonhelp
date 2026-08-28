@@ -232,21 +232,24 @@
       "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "2851 already registered."
+      "note": "2851 already registered.",
+      "type": "official"
     },
     {
       "task": "Get Alpaca API key",
       "url": "https://alpaca.markets/",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "Need paper + live trading keys."
+      "note": "Need paper + live trading keys.",
+      "type": "guide"
     },
     {
       "task": "Join lablab Discord",
       "url": "https://discord.gg/lablabai",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "Community support."
+      "note": "Community support.",
+      "type": "guide"
     }
   ]
 }

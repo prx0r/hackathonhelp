@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T04:48:53.505Z",
+  "generated_at": "2026-08-28T05:43:05.600Z",
   "hackathon": {
     "slug": "convex-all-gas",
     "title": "convex-all-gas",
@@ -168,35 +168,40 @@
         "url": "https://www.convex.dev/hackathons/all-gas",
         "deadline": "2026-09-01",
         "done": false,
-        "note": "New project required, started after Aug 25."
+        "note": "New project required, started after Aug 25.",
+        "type": "official"
       },
       {
         "task": "Get Convex account",
         "url": "https://convex.dev/",
         "deadline": "2026-09-01",
         "done": false,
-        "note": "Free tier available."
+        "note": "Free tier available.",
+        "type": "guide"
       },
       {
         "task": "Get OpenAI API key",
         "url": "https://platform.openai.com/",
         "deadline": "2026-09-01",
         "done": false,
-        "note": "Required partner."
+        "note": "Required partner.",
+        "type": "guide"
       },
       {
         "task": "Get Firecrawl API key",
         "url": "https://firecrawl.dev/",
         "deadline": "2026-09-01",
         "done": false,
-        "note": "Required partner."
+        "note": "Required partner.",
+        "type": "guide"
       },
       {
         "task": "Get AgentMail API key",
         "url": "https://agentmail.dev/",
         "deadline": "2026-09-01",
         "done": false,
-        "note": "Required partner."
+        "note": "Required partner.",
+        "type": "guide"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T04:48:53.505Z",
+  "generated_at": "2026-08-28T05:43:05.600Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
     "opportunities": 203,
@@ -13249,7 +13249,7 @@
       "eligibility_flags": [
         "All"
       ],
-      "days_left": 3,
+      "days_left": 2,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -13309,7 +13309,7 @@
       "metrics": {
         "equal_share_naive": 0.91,
         "fair_share_serious": 4.44,
-        "days_left": 3
+        "days_left": 2
       },
       "cautions": [],
       "payout": {
@@ -13327,10 +13327,10 @@
       "decision": {
         "action": "SKIP",
         "reason": "window reached, opportunity weak",
-        "feasibility": 0.45,
-        "feasibility_label": "2-3d",
+        "feasibility": 0.25,
+        "feasibility_label": "1-2d",
         "latest_safe_start": "2026-08-19",
-        "p_finish_proxy": 0.45,
+        "p_finish_proxy": 0.25,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
@@ -14131,7 +14131,7 @@
       "eligibility_flags": [
         "All"
       ],
-      "days_left": 10,
+      "days_left": 9,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -14191,7 +14191,7 @@
       "metrics": {
         "equal_share_naive": 0.43,
         "fair_share_serious": 2.14,
-        "days_left": 10
+        "days_left": 9
       },
       "cautions": [],
       "payout": {
@@ -14907,7 +14907,7 @@
         "Engineering Students",
         "Management"
       ],
-      "days_left": 3,
+      "days_left": 2,
       "gates": {
         "registration_open": true,
         "deadline_future": true,
@@ -14967,7 +14967,7 @@
       "metrics": {
         "equal_share_naive": 0,
         "fair_share_serious": 0.05,
-        "days_left": 3
+        "days_left": 2
       },
       "cautions": [],
       "payout": {
@@ -14985,10 +14985,10 @@
       "decision": {
         "action": "SKIP",
         "reason": "window reached, opportunity weak",
-        "feasibility": 0.45,
-        "feasibility_label": "2-3d",
+        "feasibility": 0.25,
+        "feasibility_label": "1-2d",
         "latest_safe_start": "2026-08-19",
-        "p_finish_proxy": 0.45,
+        "p_finish_proxy": 0.25,
         "build_model": {
           "p50_hours": 25,
           "p80_hours": 40,
@@ -30303,7 +30303,7 @@
   "changes": [],
   "portfolio": {
     "specialism": "agentic systems, evolution kernels, verification pipelines",
-    "generated_at": "2026-08-28T04:48:53.505Z",
+    "generated_at": "2026-08-28T05:43:05.600Z",
     "path": [
       {
         "step": 1,

@@ -7,7 +7,10 @@ const ROOT = path.resolve(process.cwd(), '../');
 const activeDir = path.join(ROOT, 'data/active');
 const files = fs.readdirSync(activeDir).filter(f => f.endsWith('.json') && !f.startsWith('_') && f !== 'selected.json');
 
-const allTasks: Array<{slug:string; title:string; task:any}> = [];
+interface Task { task: string; url: string; deadline: string; done: boolean; note: string; type: string; }
+interface Entry { slug: string; title: string; task: Task; }
+
+const allTasks: Entry[] = [];
 for (const f of files) {
   const data = JSON.parse(fs.readFileSync(path.join(activeDir, f), 'utf8'));
   if (data.human_queue) {
@@ -17,80 +20,105 @@ for (const f of files) {
   }
 }
 
-// Sort: undone first, then by deadline
-allTasks.sort((a, b) => {
-  if (a.task.done !== b.task.done) return a.task.done ? 1 : -1;
-  return (a.task.deadline || '9999').localeCompare(b.task.deadline || '9999');
-});
-
-const pending = allTasks.filter(t => !t.task.done);
+// Separate official deadlines from guide tasks
+const official = allTasks.filter(t => t.task.type === 'official' && !t.task.done).sort((a, b) => (a.task.deadline || '9999').localeCompare(b.task.deadline || '9999'));
+const guide = allTasks.filter(t => t.task.type === 'guide' && !t.task.done);
 const completed = allTasks.filter(t => t.task.done);
 
-// Group by hackathon
-const byHackathon: Record<string, Array<{slug:string; title:string; task:any}>> = {};
-for (const t of allTasks) {
-  if (!byHackathon[t.slug]) byHackathon[t.slug] = [];
-  byHackathon[t.slug].push(t);
+// Group guide by hackathon
+const guideByHack: Record<string, Entry[]> = {};
+for (const t of guide) {
+  if (!guideByHack[t.slug]) guideByHack[t.slug] = [];
+  guideByHack[t.slug].push(t);
 }
 ---
 
-<Base title="Human Tasks - HackathonHelp">
+<Base title="Tasks - HackathonHelp">
   <section class="hero">
     <div class="eyebrow">What only you can do</div>
-    <h1>Human Tasks</h1>
-    <p class="subtitle">{pending.length} pending · {completed.length} done · Links and instructions for each</p>
+    <h1>Tasks</h1>
+    <p class="subtitle">{official.length} deadlines · {guide.length} setup steps · {completed.length} done</p>
   </section>
 
-  {Object.entries(byHackathon).map(([slug, tasks]) => {
-    const hackPending = tasks.filter(t => !t.task.done);
-    const hackDone = tasks.filter(t => t.task.done);
-    const deadlines = hackPending.map(t => t.task.deadline).filter(Boolean).sort();
-    const earliest = deadlines[0] || '9999';
-    const urgency = earliest <= '2026-09-01' ? 'urgent' : earliest <= '2026-09-04' ? 'soon' : 'normal';
-    return (
-      <section class={`hack-group ${urgency}`}>
-        <div class="hack-header">
-          <a href={`/active/${slug}`} class="hack-title">{tasks[0]?.title || slug}</a>
-          <span class="hack-count">{hackPending.length} pending{hackDone.length > 0 ? ` · ${hackDone.length} done` : ''}</span>
-        </div>
-        {tasks.map(t => (
-          <div class={`task-row ${t.task.done ? 'done' : ''}`}>
-            <div class="task-check">{t.task.done ? '✓' : '☐'}</div>
-            <div class="task-body">
-              <div class="task-name">{t.task.task}</div>
-              {t.task.note && <div class="task-note">{t.task.note}</div>}
-            </div>
-            <div class="task-meta">
-              {t.task.deadline && <span class="task-dl">{t.task.deadline}</span>}
-              {t.task.url && <a href={t.task.url} target="_blank" rel="noopener" class="task-link">Open ↗</a>}
-            </div>
+  {/* OFFICIAL DEADLINES — hard cutoffs */}
+  {official.length > 0 && (
+  <section class="panel official-panel">
+    <div class="label" style="color:#ef4444">⏰ Official Deadlines — hard cutoffs</div>
+    <div class="official-grid">
+      {official.map(t => (
+        <div class="official-row">
+          <div class="od-date">{t.task.deadline}</div>
+          <div class="od-body">
+            <div class="od-hack"><a href={`/active/${t.slug}`}>{t.title}</a></div>
+            <div class="od-task">{t.task.task}</div>
           </div>
-        ))}
-      </section>
-    );
-  })}
+          {t.task.url && <a href={t.task.url} target="_blank" rel="noopener" class="od-link">Go ↗</a>}
+        </div>
+      ))}
+    </div>
+  </section>
+  )}
+
+  {/* GUIDE — setup steps grouped by hackathon */}
+  {Object.entries(guideByHack).map(([slug, tasks]) => (
+  <section class="panel guide-panel">
+    <div class="label">📋 Setup Guide — {tasks[0]?.title || slug}</div>
+    <div class="guide-list">
+      {tasks.map(t => (
+        <div class={`guide-row ${t.task.done ? 'done' : ''}`}>
+          <div class="gr-check">{t.task.done ? '✓' : '○'}</div>
+          <div class="gr-body">
+            <div class="gr-task">{t.task.task}</div>
+            {t.task.note && <div class="gr-note">{t.task.note}</div>}
+          </div>
+          {t.task.url && <a href={t.task.url} target="_blank" rel="noopener" class="gr-link">Open ↗</a>}
+        </div>
+      ))}
+    </div>
+  </section>
+  ))}
+
+  {completed.length > 0 && (
+  <details class="panel done-panel">
+    <summary class="label" style="color:#86efac">✓ Completed ({completed.length})</summary>
+    {completed.map(t => (
+      <div class="done-row">
+        <span class="dr-check">✓</span>
+        <span class="dr-text">{t.title}: {t.task.task}</span>
+      </div>
+    ))}
+  </details>
+  )}
 
   <style>
-    .hack-group{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px}
-    .hack-group.urgent{border-color:rgba(239,68,68,.4);background:linear-gradient(135deg,rgba(239,68,68,.05),rgba(239,68,68,.02))}
-    .hack-group.soon{border-color:rgba(249,115,22,.3);background:linear-gradient(135deg,rgba(249,115,22,.05),rgba(249,115,22,.02))}
-    .hack-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-    .hack-title{font-size:16px;font-weight:700;color:var(--text);text-decoration:none}
-    .hack-title:hover{color:var(--accent)}
-    .hack-count{font-size:12px;color:var(--text-dim)}
-    .task-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);align-items:flex-start}
-    .task-row:last-child{border-bottom:none}
-    .task-row.done{opacity:.45}
-    .task-check{font-size:18px;width:24px;text-align:center;color:var(--accent);flex-shrink:0}
-    .task-row.done .task-check{color:#86efac}
-    .task-body{flex:1;min-width:0}
-    .task-name{font-size:14px;font-weight:600;color:var(--text)}
-    .task-note{font-size:12px;color:var(--text-muted);margin-top:2px;line-height:1.4}
-    .task-meta{display:flex;gap:10px;align-items:center;flex-shrink:0}
-    .task-dl{font-size:11px;font-weight:600;color:var(--text-dim);font-family:monospace}
-    .task-dl.urgent{color:#ef4444}
-    .task-dl.soon{color:#f97316}
-    .task-link{font-size:11px;font-weight:700;color:var(--accent);text-decoration:none;white-space:nowrap}
-    .task-link:hover{text-decoration:underline}
+    .official-panel{border-color:rgba(239,68,68,.4);background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(239,68,68,.02))}
+    .official-grid{display:flex;flex-direction:column;gap:2px}
+    .official-row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);align-items:center}
+    .official-row:last-child{border-bottom:none}
+    .od-date{font-family:monospace;font-size:14px;font-weight:800;color:#ef4444;min-width:80px;flex-shrink:0}
+    .od-body{flex:1;min-width:0}
+    .od-hack{font-size:12px;color:var(--text-dim)}
+    .od-hack a{color:var(--text-dim);text-decoration:none}
+    .od-hack a:hover{color:var(--accent)}
+    .od-task{font-size:14px;font-weight:600;color:var(--text)}
+    .od-link{background:rgba(239,68,68,.15);color:#fca5a5;font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;text-decoration:none;white-space:nowrap}
+    .od-link:hover{background:rgba(239,68,68,.25)}
+
+    .guide-panel{border-color:var(--border)}
+    .guide-list{display:flex;flex-direction:column;gap:0}
+    .guide-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:flex-start}
+    .guide-row:last-child{border-bottom:none}
+    .guide-row.done{opacity:.4}
+    .gr-check{font-size:14px;width:20px;text-align:center;color:var(--text-dim);flex-shrink:0;padding-top:2px}
+    .guide-row.done .gr-check{color:#86efac}
+    .gr-body{flex:1;min-width:0}
+    .gr-task{font-size:13px;font-weight:500;color:var(--text)}
+    .gr-note{font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4}
+    .gr-link{font-size:11px;font-weight:600;color:var(--accent);text-decoration:none;white-space:nowrap;flex-shrink:0}
+    .gr-link:hover{text-decoration:underline}
+
+    .done-panel summary{cursor:pointer}
+    .done-row{display:flex;gap:8px;padding:4px 0;font-size:12px;color:var(--text-dim)}
+    .dr-check{color:#86efac}
   </style>
 </Base>

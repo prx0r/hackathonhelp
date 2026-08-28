@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T04:48:53.505Z",
+  "generated_at": "2026-08-28T05:43:05.600Z",
   "schema_version": "hackathonhelp.active.v1",
   "count": 9,
   "selected": [
@@ -251,21 +251,24 @@
           "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "2851 already registered."
+          "note": "2851 already registered.",
+          "type": "official"
         },
         {
           "task": "Get Alpaca API key",
           "url": "https://alpaca.markets/",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "Need paper + live trading keys."
+          "note": "Need paper + live trading keys.",
+          "type": "guide"
         },
         {
           "task": "Join lablab Discord",
           "url": "https://discord.gg/lablabai",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "Community support."
+          "note": "Community support.",
+          "type": "guide"
         }
       ]
     },
@@ -657,28 +660,32 @@
           "url": "https://hackathon.telegraphprotocol.com/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Required for judging. Get support."
+          "note": "Required for judging. Get support.",
+          "type": "guide"
         },
         {
           "task": "Register on Telegraph platform",
           "url": "https://hackathon.telegraphprotocol.com/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Register early for track access."
+          "note": "Register early for track access.",
+          "type": "official"
         },
         {
           "task": "Post first X update tagged @Telegraphprotoc",
           "url": "https://x.com",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "25% of score is X engagement. Start early."
+          "note": "25% of score is X engagement. Start early.",
+          "type": "guide"
         },
         {
           "task": "Choose Intent for Miner",
           "url": "https://hackathon.telegraphprotocol.com/supported-intents",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Pick an intent with few competitors."
+          "note": "Pick an intent with few competitors.",
+          "type": "guide"
         }
       ]
     },
@@ -839,21 +846,24 @@
           "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "1158 participants already."
+          "note": "1158 participants already.",
+          "type": "official"
         },
         {
           "task": "Pick sponsor track",
           "url": "https://api-cloud-ai-hackathon-2026.devpost.com/details/sponsors",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Xano track aligns with existing work. SerpApi good for AI."
+          "note": "Xano track aligns with existing work. SerpApi good for AI.",
+          "type": "guide"
         },
         {
           "task": "Get Xano API key (if Xano track)",
           "url": "https://go.xano.co/devpost-challenge",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Free month on Essential plan."
+          "note": "Free month on Essential plan.",
+          "type": "guide"
         }
       ]
     },
@@ -1251,35 +1261,40 @@
           "url": "https://algorand.co/global-x402-challenge",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Registration closes Sep 1. Need email to get submission form."
+          "note": "Registration closes Sep 1. Need email to get submission form.",
+          "type": "official"
         },
         {
           "task": "Join Algorand Discord",
           "url": "https://discord.com/invite/algorand",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "Get help, find collaborators."
+          "note": "Get help, find collaborators.",
+          "type": "guide"
         },
         {
           "task": "Set up GoPlausible facilitator account",
           "url": "https://facilitator.goplausible.xyz",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "Need to opt-in payTo address."
+          "note": "Need to opt-in payTo address.",
+          "type": "guide"
         },
         {
           "task": "Confirm USDC ASA on Algorand wallet",
           "url": "https://app.perawallet.app/",
           "deadline": "2026-08-30",
           "done": false,
-          "note": "ASA 31566704. Need Algorand wallet with USDC."
+          "note": "ASA 31566704. Need Algorand wallet with USDC.",
+          "type": "guide"
         },
         {
           "task": "Submit project details form",
           "url": "email from registration",
           "deadline": "2026-09-03",
           "done": false,
-          "note": "Form opens Sep 2 via email."
+          "note": "Form opens Sep 2 via email.",
+          "type": "official"
         }
       ]
     },
@@ -1472,14 +1487,16 @@
           "url": "https://ethglobal.com/events/ethonline2026",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Async hackathon, Sep 4-16."
+          "note": "Async hackathon, Sep 4-16.",
+          "type": "official"
         },
         {
           "task": "Join ETHGlobal Discord",
           "url": "https://discord.gg/ethglobal",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Community and sponsor track info."
+          "note": "Community and sponsor track info.",
+          "type": "guide"
         }
       ]
     },
@@ -1734,7 +1751,8 @@
           "url": "https://opencv26.devpost.com/",
           "deadline": "2026-09-15",
           "done": false,
-          "note": "Long runway, low urgency."
+          "note": "Long runway, low urgency.",
+          "type": "official"
         }
       ]
     },
@@ -1905,35 +1923,40 @@
           "url": "https://www.convex.dev/hackathons/all-gas",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "New project required, started after Aug 25."
+          "note": "New project required, started after Aug 25.",
+          "type": "official"
         },
         {
           "task": "Get Convex account",
           "url": "https://convex.dev/",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Free tier available."
+          "note": "Free tier available.",
+          "type": "guide"
         },
         {
           "task": "Get OpenAI API key",
           "url": "https://platform.openai.com/",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Required partner."
+          "note": "Required partner.",
+          "type": "guide"
         },
         {
           "task": "Get Firecrawl API key",
           "url": "https://firecrawl.dev/",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Required partner."
+          "note": "Required partner.",
+          "type": "guide"
         },
         {
           "task": "Get AgentMail API key",
           "url": "https://agentmail.dev/",
           "deadline": "2026-09-01",
           "done": false,
-          "note": "Required partner."
+          "note": "Required partner.",
+          "type": "guide"
         }
       ]
     },
@@ -2104,7 +2127,8 @@
           "url": "https://webmcp.devpost.com/",
           "deadline": "2026-09-10",
           "done": false,
-          "note": "MCP + web integration challenge."
+          "note": "MCP + web integration challenge.",
+          "type": "official"
         }
       ]
     },
@@ -2317,42 +2341,48 @@
           "url": "https://allthingsagentichackathon.devpost.com/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "DEADLINE TOMORROW. 10,634 already registered."
+          "note": "DEADLINE TOMORROW. 10,634 already registered.",
+          "type": "official"
         },
         {
           "task": "Pick a track",
           "url": "https://allthingsagentichackathon.devpost.com/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Taskmaster, Collaborative Partner, or Enterprise Fleet. Enterprise Fleet fits agent reliability best."
+          "note": "Taskmaster, Collaborative Partner, or Enterprise Fleet. Enterprise Fleet fits agent reliability best.",
+          "type": "guide"
         },
         {
           "task": "Get $150 Google Cloud credits",
           "url": "https://cloud.google.com/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Provided to all participants."
+          "note": "Provided to all participants.",
+          "type": "guide"
         },
         {
           "task": "Set up Gemini API access",
           "url": "https://aistudio.google.com/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Need Gemini 3.5 Flash access."
+          "note": "Need Gemini 3.5 Flash access.",
+          "type": "guide"
         },
         {
           "task": "Install Google ADK",
           "url": "https://google.github.io/adk-docs/",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Google Agent Development Kit. Required framework."
+          "note": "Google Agent Development Kit. Required framework.",
+          "type": "guide"
         },
         {
           "task": "Join Google Cloud Discord",
           "url": "https://discord.gg/google-cloud",
           "deadline": "2026-08-31",
           "done": false,
-          "note": "Community support and updates."
+          "note": "Community support and updates.",
+          "type": "guide"
         }
       ],
       "rubric": {

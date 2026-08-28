@@ -386,28 +386,32 @@
       "url": "https://hackathon.telegraphprotocol.com/",
       "deadline": "2026-08-31",
       "done": false,
-      "note": "Required for judging. Get support."
+      "note": "Required for judging. Get support.",
+      "type": "guide"
     },
     {
       "task": "Register on Telegraph platform",
       "url": "https://hackathon.telegraphprotocol.com/",
       "deadline": "2026-08-31",
       "done": false,
-      "note": "Register early for track access."
+      "note": "Register early for track access.",
+      "type": "official"
     },
     {
       "task": "Post first X update tagged @Telegraphprotoc",
       "url": "https://x.com",
       "deadline": "2026-09-01",
       "done": false,
-      "note": "25% of score is X engagement. Start early."
+      "note": "25% of score is X engagement. Start early.",
+      "type": "guide"
     },
     {
       "task": "Choose Intent for Miner",
       "url": "https://hackathon.telegraphprotocol.com/supported-intents",
       "deadline": "2026-08-31",
       "done": false,
-      "note": "Pick an intent with few competitors."
+      "note": "Pick an intent with few competitors.",
+      "type": "guide"
     }
   ]
 }

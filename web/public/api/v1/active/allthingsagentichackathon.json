@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T04:48:53.505Z",
+  "generated_at": "2026-08-28T05:43:05.600Z",
   "hackathon": {
     "slug": "allthingsagentichackathon",
     "title": "All Things Agentic Hackathon",
@@ -210,42 +210,48 @@
         "url": "https://allthingsagentichackathon.devpost.com/",
         "deadline": "2026-08-31",
         "done": false,
-        "note": "DEADLINE TOMORROW. 10,634 already registered."
+        "note": "DEADLINE TOMORROW. 10,634 already registered.",
+        "type": "official"
       },
       {
         "task": "Pick a track",
         "url": "https://allthingsagentichackathon.devpost.com/",
         "deadline": "2026-08-31",
         "done": false,
-        "note": "Taskmaster, Collaborative Partner, or Enterprise Fleet. Enterprise Fleet fits agent reliability best."
+        "note": "Taskmaster, Collaborative Partner, or Enterprise Fleet. Enterprise Fleet fits agent reliability best.",
+        "type": "guide"
       },
       {
         "task": "Get $150 Google Cloud credits",
         "url": "https://cloud.google.com/",
         "deadline": "2026-08-31",
         "done": false,
-        "note": "Provided to all participants."
+        "note": "Provided to all participants.",
+        "type": "guide"
       },
       {
         "task": "Set up Gemini API access",
         "url": "https://aistudio.google.com/",
         "deadline": "2026-08-31",
         "done": false,
-        "note": "Need Gemini 3.5 Flash access."
+        "note": "Need Gemini 3.5 Flash access.",
+        "type": "guide"
       },
       {
         "task": "Install Google ADK",
         "url": "https://google.github.io/adk-docs/",
         "deadline": "2026-08-31",
         "done": false,
-        "note": "Google Agent Development Kit. Required framework."
+        "note": "Google Agent Development Kit. Required framework.",
+        "type": "guide"
       },
       {
         "task": "Join Google Cloud Discord",
         "url": "https://discord.gg/google-cloud",
         "deadline": "2026-08-31",
         "done": false,
-        "note": "Community support and updates."
+        "note": "Community support and updates.",
+        "type": "guide"
       }
     ],
     "rubric": {

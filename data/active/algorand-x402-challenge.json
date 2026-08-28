@@ -392,35 +392,40 @@
       "url": "https://algorand.co/global-x402-challenge",
       "deadline": "2026-09-01",
       "done": false,
-      "note": "Registration closes Sep 1. Need email to get submission form."
+      "note": "Registration closes Sep 1. Need email to get submission form.",
+      "type": "official"
     },
     {
       "task": "Join Algorand Discord",
       "url": "https://discord.com/invite/algorand",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "Get help, find collaborators."
+      "note": "Get help, find collaborators.",
+      "type": "guide"
     },
     {
       "task": "Set up GoPlausible facilitator account",
       "url": "https://facilitator.goplausible.xyz",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "Need to opt-in payTo address."
+      "note": "Need to opt-in payTo address.",
+      "type": "guide"
     },
     {
       "task": "Confirm USDC ASA on Algorand wallet",
       "url": "https://app.perawallet.app/",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "ASA 31566704. Need Algorand wallet with USDC."
+      "note": "ASA 31566704. Need Algorand wallet with USDC.",
+      "type": "guide"
     },
     {
       "task": "Submit project details form",
       "url": "email from registration",
       "deadline": "2026-09-03",
       "done": false,
-      "note": "Form opens Sep 2 via email."
+      "note": "Form opens Sep 2 via email.",
+      "type": "official"
     }
   ]
 }

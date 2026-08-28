@@ -51,25 +51,46 @@ const buildClose = t.build_deadline ? Math.ceil((new Date(t.build_deadline) - Da
   </section>
 
   {/* Human Tasks — what YOU need to do */}
-  {h.human_queue?.length > 0 && (
-  <section class="panel human-panel">
-    <div class="label" style="color:#f97316">🧑 Human Tasks — do these yourself</div>
-    <p class="mathnote" style="margin-bottom:12px">These need your hands. Links and instructions included.</p>
-    {h.human_queue.map((task:any) => (
-      <div class={`human-task ${task.done ? 'done' : ''}`}>
-        <div class="ht-check">{task.done ? '✓' : '☐'}</div>
-        <div class="ht-body">
-          <div class="ht-title">{esc(task.task)}</div>
-          {task.note && <div class="ht-note">{esc(task.note)}</div>}
-          <div class="ht-meta">
-            {task.deadline && <span class={`ht-deadline ${task.deadline <= '2026-08-31' ? 'urgent' : ''}`}>Due: {esc(task.deadline)}</span>}
-            {task.url && <a href={task.url} target="_blank" rel="noopener" class="ht-link">Open ↗</a>}
-          </div>
-        </div>
-      </div>
-    ))}
-  </section>
-  )}
+  {h.human_queue?.length > 0 && (() => {
+    const officialTasks = h.human_queue.filter((t:any) => t.type === 'official' && !t.done);
+    const guideTasks = h.human_queue.filter((t:any) => t.type !== 'official' && !t.done);
+    return (
+      <>
+      {officialTasks.length > 0 && (
+        <section class="panel official-panel">
+          <div class="label" style="color:#ef4444">⏰ Official Deadlines</div>
+          {officialTasks.map((task:any) => (
+            <div class="official-task">
+              <div class="ot-date">{esc(task.deadline)}</div>
+              <div class="ot-body">
+                <div class="ot-title">{esc(task.task)}</div>
+                {task.note && <div class="ot-note">{esc(task.note)}</div>}
+              </div>
+              {task.url && <a href={task.url} target="_blank" rel="noopener" class="ot-link">Go ↗</a>}
+            </div>
+          ))}
+        </section>
+      )}
+      {guideTasks.length > 0 && (
+        <section class="panel guide-panel">
+          <div class="label">📋 Setup Guide</div>
+          {guideTasks.map((task:any) => (
+            <div class="guide-item">
+              <div class="gi-check">○</div>
+              <div class="gi-body">
+                <div class="gi-title">{esc(task.task)}</div>
+                {task.note && <div class="gi-note">{esc(task.note)}</div>}
+                <div class="gi-meta">
+                  {task.url && <a href={task.url} target="_blank" rel="noopener" class="gi-link">Open ↗</a>}
+                </div>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+      </>
+    );
+  })()}
 
   {/* Timeline */}
   <section class="panel">
@@ -244,20 +265,26 @@ const buildClose = t.build_deadline ? Math.ceil((new Date(t.build_deadline) - Da
   .mathnote{font-size:13px;color:var(--text-muted);line-height:1.6}
   .observed{font-size:11px;color:var(--text-dim);margin-top:6px}
 
-  .human-panel{border-color:rgba(249,115,22,.3);background:linear-gradient(135deg,rgba(249,115,22,.05),rgba(249,115,22,.02))}
-  .human-task{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
-  .human-task:last-child{border-bottom:none}
-  .human-task.done{opacity:.5}
-  .ht-check{font-size:18px;width:24px;text-align:center;color:var(--accent);flex-shrink:0;padding-top:2px}
-  .human-task.done .ht-check{color:#86efac}
-  .ht-body{flex:1;min-width:0}
-  .ht-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}
-  .ht-note{font-size:12px;color:var(--text-muted);line-height:1.5;margin-bottom:4px}
-  .ht-meta{display:flex;gap:12px;align-items:center}
-  .ht-deadline{font-size:11px;color:var(--text-dim);font-weight:600}
-  .ht-deadline.urgent{color:#ef4444}
-  .ht-link{font-size:11px;font-weight:700;color:var(--accent);text-decoration:none}
-  .ht-link:hover{text-decoration:underline}
+  .official-panel{border-color:rgba(239,68,68,.4);background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(239,68,68,.02))}
+  .official-task{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06);align-items:center}
+  .official-task:last-child{border-bottom:none}
+  .ot-date{font-family:monospace;font-size:13px;font-weight:800;color:#ef4444;min-width:70px;flex-shrink:0}
+  .ot-body{flex:1}
+  .ot-title{font-size:14px;font-weight:600;color:var(--text)}
+  .ot-note{font-size:11px;color:var(--text-muted);margin-top:2px}
+  .ot-link{background:rgba(239,68,68,.15);color:#fca5a5;font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;text-decoration:none;white-space:nowrap}
+  .ot-link:hover{background:rgba(239,68,68,.25)}
+
+  .guide-panel{border-color:var(--border)}
+  .guide-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:flex-start}
+  .guide-item:last-child{border-bottom:none}
+  .gi-check{font-size:14px;width:20px;text-align:center;color:var(--text-dim);flex-shrink:0;padding-top:2px}
+  .gi-body{flex:1}
+  .gi-title{font-size:13px;font-weight:500;color:var(--text)}
+  .gi-note{font-size:11px;color:var(--text-muted);margin-top:2px;line-height:1.4}
+  .gi-meta{margin-top:4px}
+  .gi-link{font-size:11px;font-weight:600;color:var(--accent);text-decoration:none}
+  .gi-link:hover{text-decoration:underline}
 
   .timeline-grid{display:flex;gap:16px;flex-wrap:wrap}
   .tl-item{flex:1;min-width:140px;background:rgba(255,255,255,.03);border-radius:8px;padding:12px}

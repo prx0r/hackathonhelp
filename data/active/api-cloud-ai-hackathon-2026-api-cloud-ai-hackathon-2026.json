@@ -155,21 +155,24 @@
       "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "deadline": "2026-08-30",
       "done": false,
-      "note": "1158 participants already."
+      "note": "1158 participants already.",
+      "type": "official"
     },
     {
       "task": "Pick sponsor track",
       "url": "https://api-cloud-ai-hackathon-2026.devpost.com/details/sponsors",
       "deadline": "2026-08-31",
       "done": false,
-      "note": "Xano track aligns with existing work. SerpApi good for AI."
+      "note": "Xano track aligns with existing work. SerpApi good for AI.",
+      "type": "guide"
     },
     {
       "task": "Get Xano API key (if Xano track)",
       "url": "https://go.xano.co/devpost-challenge",
       "deadline": "2026-08-31",
       "done": false,
-      "note": "Free month on Essential plan."
+      "note": "Free month on Essential plan.",
+      "type": "guide"
     }
   ]
 }

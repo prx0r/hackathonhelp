@@ -187,14 +187,16 @@
       "url": "https://ethglobal.com/events/ethonline2026",
       "deadline": "2026-09-01",
       "done": false,
-      "note": "Async hackathon, Sep 4-16."
+      "note": "Async hackathon, Sep 4-16.",
+      "type": "official"
     },
     {
       "task": "Join ETHGlobal Discord",
       "url": "https://discord.gg/ethglobal",
       "deadline": "2026-09-01",
       "done": false,
-      "note": "Community and sponsor track info."
+      "note": "Community and sponsor track info.",
+      "type": "guide"
     }
   ]
 }
