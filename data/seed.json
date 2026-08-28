@@ -6,7 +6,7 @@
     "brabble_kept": 72,
     "scan_discoveries": 44
   },
-  "count": 200,
+  "count": 203,
   "opportunities": [
     {
       "id": "dp-reverie-hacks-2026-reverie-hacks-2026",
@@ -5943,6 +5943,84 @@
       "source": "devpost",
       "source_authority": "official_platform_api",
       "note": "Google Cloud + Gemini Enterprise. Enterprise agent orchestration. Partner tracks. Media/entertainment focus."
+    },
+    {
+      "id": "scan-agents-everywhere",
+      "slug": "agents-everywhere",
+      "title": "Agents, Everywhere: Beyond The Chatbot \u2014 Global Hackathon",
+      "organizer": "OpenAI + AI Tinkerers",
+      "prize_usd": null,
+      "prize_raw": "Prizes TBA (global review + awards)",
+      "registrants": null,
+      "starts_at": "2026-09-01",
+      "ends_at": "2026-09-12",
+      "time_left": "15 days",
+      "location_type": "online",
+      "location": "Online (global, local build days)",
+      "themes": [
+        "agents",
+        "OpenAI",
+        "Codex",
+        "MCP",
+        "beyond-chatbot"
+      ],
+      "open_to_all": true,
+      "source_url": "https://atlanta.aitinkerers.org/p/agents-everywhere-beyond-the-chatbot-global-hackathon",
+      "source": "scan",
+      "source_authority": "unverified",
+      "note": "OpenAI headline partner. Build agents for Slack, email, mobile, browsers, wearables. Global submission pool. CopilotKit + OpenRouter sponsors. Application-only attendance."
+    },
+    {
+      "id": "scan-agents-league",
+      "slug": "agents-league-2026",
+      "title": "Agents League Hackathon 2026 \u2014 Enterprise Agents",
+      "organizer": "Microsoft",
+      "prize_usd": 50000,
+      "prize_raw": "$50K+",
+      "registrants": null,
+      "starts_at": "2026-06-11",
+      "ends_at": null,
+      "time_left": null,
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "agents",
+        "Microsoft",
+        "Copilot",
+        "M365",
+        "enterprise",
+        "RAG"
+      ],
+      "open_to_all": true,
+      "source_url": "https://devblogs.microsoft.com/microsoft365dev/agents-league-hackathon-2026-enterprise-agents/",
+      "source": "scan",
+      "source_authority": "official_blog",
+      "note": "$50K+ prizes. Enterprise Agents category. Microsoft IQ integration (Foundry IQ, Work IQ, Fabric IQ, Web IQ). Multi-agent architectures, RAG, Copilot."
+    },
+    {
+      "id": "scan-anthropic-claude",
+      "slug": "anthropic-claude-code-hackathon",
+      "title": "Anthropic Claude Code Hackathon (recurring)",
+      "organizer": "Anthropic",
+      "prize_usd": 100000,
+      "prize_raw": "$100K in API credits",
+      "registrants": 500,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Next edition TBA",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Claude",
+        "Anthropic",
+        "agents",
+        "Claude-Code"
+      ],
+      "open_to_all": true,
+      "source_url": "https://cerebralvalley.ai/e/claude-code-hackathon",
+      "source": "scan",
+      "source_authority": "unverified",
+      "note": "Recurring hackathon. $100K in API credits. 500 participants selected. Direct access to Claude team. Previous editions: Opus 4.6, 4.7, 4.8. Watch for next announcement."
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-28T03:17:51.134Z",
+  "generated_at": "2026-08-28T03:54:29.753Z",
   "schema_version": "hackathonhelp.api.v2",
   "counts": {
-    "opportunities": 200,
+    "opportunities": 203,
     "live": 15,
-    "mega": 37,
+    "mega": 39,
     "excluded": 48
   },
   "top": [
@@ -5560,6 +5560,136 @@
         "action": "WATCH",
         "score": 67,
         "formula": "WATCH - far out; latest safe start 2026-09-19 · capped: prize unconfirmed"
+      }
+    },
+    {
+      "id": "scan-anthropic-claude",
+      "slug": "anthropic-claude-code-hackathon",
+      "title": "Anthropic Claude Code Hackathon (recurring)",
+      "organizer": "Anthropic",
+      "prize_usd": 100000,
+      "prize_raw": "$100K in API credits",
+      "registrants": 500,
+      "starts_at": null,
+      "ends_at": null,
+      "time_left": "Next edition TBA",
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "Claude",
+        "Anthropic",
+        "agents",
+        "Claude-Code"
+      ],
+      "open_to_all": true,
+      "source_url": "https://cerebralvalley.ai/e/claude-code-hackathon",
+      "source": "scan",
+      "source_authority": "unverified",
+      "note": "Recurring hackathon. $100K in API credits. 500 participants selected. Direct access to Claude team. Previous editions: Opus 4.6, 4.7, 4.8. Watch for next announcement.",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": null,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 100000,
+        "cash_value": 100000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 100000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": 500,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "usable",
+        "estimated_serious_field": 40,
+        "field_p10": 26,
+        "field_p50": 40,
+        "field_p90": 62,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 0.52,
+        "code_reuse": 0.15,
+        "effective_p80_hours": 34
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": 100,
+          "winnability": 50,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": null
+        },
+        "known_components": 2,
+        "opportunity_score": 67
+      },
+      "metrics": {
+        "equal_share_naive": 200,
+        "fair_share_serious": 2500,
+        "days_left": null
+      },
+      "cautions": [],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "paying_slots_source": "assumed",
+        "baseline_any_payout": 0.15,
+        "p_paid": 0.15,
+        "ev_cash_heuristic": 15000,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "WATCH",
+        "reason": "deadline not published",
+        "feasibility": 0.35,
+        "feasibility_label": "0.35",
+        "latest_safe_start": null,
+        "p_finish_proxy": 0.35,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 850
+      },
+      "mega": {
+        "score": 35,
+        "reasons": [
+          "$2500 normalized prize per estimated submission"
+        ],
+        "category": "value_competition_gap"
+      },
+      "order_key": 20075.3,
+      "attention": -1,
+      "attention_breakdown": {
+        "action": "WATCH",
+        "score": 67,
+        "formula": "WATCH - deadline not published"
       }
     },
     {
@@ -17349,6 +17479,138 @@
         "score": 30,
         "reasons": [
           "$70K cash with below-median registration"
+        ],
+        "category": "high_fair_share"
+      },
+      "order_key": -85,
+      "attention": -1,
+      "attention_breakdown": {
+        "action": "SKIP",
+        "score": null,
+        "formula": "SKIP - unscoreable"
+      }
+    },
+    {
+      "id": "scan-agents-league",
+      "slug": "agents-league-2026",
+      "title": "Agents League Hackathon 2026 — Enterprise Agents",
+      "organizer": "Microsoft",
+      "prize_usd": 50000,
+      "prize_raw": "$50K+",
+      "registrants": null,
+      "starts_at": "2026-06-11",
+      "ends_at": null,
+      "time_left": null,
+      "location_type": "online",
+      "location": "Online",
+      "themes": [
+        "agents",
+        "Microsoft",
+        "Copilot",
+        "M365",
+        "enterprise",
+        "RAG"
+      ],
+      "open_to_all": true,
+      "source_url": "https://devblogs.microsoft.com/microsoft365dev/agents-league-hackathon-2026-enterprise-agents/",
+      "source": "scan",
+      "source_authority": "official_blog",
+      "note": "$50K+ prizes. Enterprise Agents category. Microsoft IQ integration (Foundry IQ, Work IQ, Fabric IQ, Web IQ). Multi-agent architectures, RAG, Copilot.",
+      "days_left": null,
+      "gates": {
+        "registration_open": null,
+        "deadline_future": null,
+        "remote_ok": true,
+        "age_confirmed": null,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": 50000,
+        "cash_value": 50000,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": 50000,
+        "headline_inflation": 0
+      },
+      "field": {
+        "registrations": null,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "field_p10": null,
+        "field_p50": null,
+        "field_p90": null,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 0.52,
+        "code_reuse": 0.15,
+        "effective_p80_hours": 34
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": null
+      },
+      "cautions": [],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "paying_slots_source": "assumed",
+        "baseline_any_payout": null,
+        "p_paid": null,
+        "ev_cash_heuristic": null,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "SKIP",
+        "reason": "unscoreable",
+        "feasibility": 0.35,
+        "feasibility_label": "0.35",
+        "latest_safe_start": null,
+        "p_finish_proxy": 0.35,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 850
+      },
+      "mega": {
+        "score": 30,
+        "reasons": [
+          "$50K cash with below-median registration"
         ],
         "category": "high_fair_share"
       },
@@ -29669,6 +29931,131 @@
         "score": null,
         "formula": "SKIP - unscoreable"
       }
+    },
+    {
+      "id": "scan-agents-everywhere",
+      "slug": "agents-everywhere",
+      "title": "Agents, Everywhere: Beyond The Chatbot — Global Hackathon",
+      "organizer": "OpenAI + AI Tinkerers",
+      "prize_usd": null,
+      "prize_raw": "Prizes TBA (global review + awards)",
+      "registrants": null,
+      "starts_at": "2026-09-01",
+      "ends_at": "2026-09-12",
+      "time_left": "15 days",
+      "location_type": "online",
+      "location": "Online (global, local build days)",
+      "themes": [
+        "agents",
+        "OpenAI",
+        "Codex",
+        "MCP",
+        "beyond-chatbot"
+      ],
+      "open_to_all": true,
+      "source_url": "https://atlanta.aitinkerers.org/p/agents-everywhere-beyond-the-chatbot-global-hackathon",
+      "source": "scan",
+      "source_authority": "unverified",
+      "note": "OpenAI headline partner. Build agents for Slack, email, mobile, browsers, wearables. Global submission pool. CopilotKit + OpenRouter sponsors. Application-only attendance.",
+      "days_left": 15,
+      "gates": {
+        "registration_open": true,
+        "deadline_future": true,
+        "remote_ok": true,
+        "age_confirmed": null,
+        "student_only": false,
+        "country_restricted": null
+      },
+      "eligibility": {
+        "eligible": true,
+        "failed": [],
+        "confidence": "platform_metadata_unverified",
+        "notes": null
+      },
+      "prize": {
+        "advertised_value": null,
+        "cash_value": null,
+        "credits_value": null,
+        "hardware_value": null,
+        "normalized_value": null,
+        "headline_inflation": null
+      },
+      "field": {
+        "registrations": null,
+        "family_prior": {
+          "submissions_per_registration": 0.05,
+          "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
+        },
+        "field_status": "forming",
+        "estimated_serious_field": null,
+        "field_p10": null,
+        "field_p50": null,
+        "field_p90": null,
+        "funnel": null
+      },
+      "slots": {
+        "p10": 3,
+        "p50": 6,
+        "p90": 12
+      },
+      "fit": {
+        "strategic_fit": 0.52,
+        "code_reuse": 0.15,
+        "effective_p80_hours": 34
+      },
+      "score_v01": {
+        "components": {
+          "expected_prize_value": null,
+          "winnability": null,
+          "historical_winner_quality": null,
+          "judging_tractability": null,
+          "organizer_quality": null
+        },
+        "known_components": 0,
+        "opportunity_score": null
+      },
+      "metrics": {
+        "equal_share_naive": null,
+        "fair_share_serious": null,
+        "days_left": 15
+      },
+      "cautions": [],
+      "payout": {
+        "paying_slots": {
+          "p10": 3,
+          "p50": 6,
+          "p90": 12
+        },
+        "paying_slots_source": "assumed",
+        "baseline_any_payout": null,
+        "p_paid": null,
+        "ev_cash_heuristic": null,
+        "note": "slot count assumed until prize ladders are verified on official pages"
+      },
+      "decision": {
+        "action": "SKIP",
+        "reason": "unscoreable",
+        "feasibility": 1,
+        "feasibility_label": "14d+",
+        "latest_safe_start": "2026-09-01",
+        "p_finish_proxy": 1,
+        "build_model": {
+          "p50_hours": 25,
+          "p80_hours": 40,
+          "hours_per_day": 4,
+          "buffer_days": 2,
+          "shadow_hour_value_usd": 25
+        },
+        "opportunity_cost_usd": 850
+      },
+      "mega": null,
+      "order_key": -100,
+      "attention": -1,
+      "attention_breakdown": {
+        "action": "SKIP",
+        "score": null,
+        "formula": "SKIP - unscoreable"
+      }
     }
   ],
   "excluded": [
@@ -29913,5 +30300,21 @@
       "reason": "in-person event (Unknown)"
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "id": "scan-agents-everywhere",
+      "type": "added",
+      "detected_at": "2026-08-28T03:54:29.750Z"
+    },
+    {
+      "id": "scan-agents-league",
+      "type": "added",
+      "detected_at": "2026-08-28T03:54:29.750Z"
+    },
+    {
+      "id": "scan-anthropic-claude",
+      "type": "added",
+      "detected_at": "2026-08-28T03:54:29.750Z"
+    }
+  ]
 }
