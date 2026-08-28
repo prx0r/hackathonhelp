@@ -1,14 +1,16 @@
 {
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "schema_version": "hackathonhelp.active.v1",
-  "count": 6,
+  "count": 8,
   "selected": [
     "alpaca-ai-trading-agents-hackathon",
     "telegraph-h1",
     "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
     "algorand-x402-challenge",
     "ethonline-2026",
-    "opencv26-opencv26"
+    "opencv26-opencv26",
+    "convex-all-gas",
+    "webmcp-challenge"
   ],
   "oncoming": [
     "ethonline-2026"
@@ -240,6 +242,29 @@
           "estimated_hours": 1,
           "completed_at": null,
           "output": null
+        }
+      ],
+      "human_queue": [
+        {
+          "task": "Register on lablab.ai",
+          "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "2851 already registered."
+        },
+        {
+          "task": "Get Alpaca API key",
+          "url": "https://alpaca.markets/",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "Need paper + live trading keys."
+        },
+        {
+          "task": "Join lablab Discord",
+          "url": "https://discord.gg/lablabai",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "Community support."
         }
       ]
     },
@@ -624,6 +649,36 @@
           "completed_at": null,
           "output": null
         }
+      ],
+      "human_queue": [
+        {
+          "task": "Join Telegraph Hackathon Discord",
+          "url": "https://hackathon.telegraphprotocol.com/",
+          "deadline": "2026-08-31",
+          "done": false,
+          "note": "Required for judging. Get support."
+        },
+        {
+          "task": "Register on Telegraph platform",
+          "url": "https://hackathon.telegraphprotocol.com/",
+          "deadline": "2026-08-31",
+          "done": false,
+          "note": "Register early for track access."
+        },
+        {
+          "task": "Post first X update tagged @Telegraphprotoc",
+          "url": "https://x.com",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "25% of score is X engagement. Start early."
+        },
+        {
+          "task": "Choose Intent for Miner",
+          "url": "https://hackathon.telegraphprotocol.com/supported-intents",
+          "deadline": "2026-08-31",
+          "done": false,
+          "note": "Pick an intent with few competitors."
+        }
       ]
     },
     {
@@ -776,7 +831,30 @@
         }
       ],
       "last_crawled": "2026-08-28T00:20:00Z",
-      "crawl_version": 1
+      "crawl_version": 1,
+      "human_queue": [
+        {
+          "task": "Register on Devpost",
+          "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "1158 participants already."
+        },
+        {
+          "task": "Pick sponsor track",
+          "url": "https://api-cloud-ai-hackathon-2026.devpost.com/details/sponsors",
+          "deadline": "2026-08-31",
+          "done": false,
+          "note": "Xano track aligns with existing work. SerpApi good for AI."
+        },
+        {
+          "task": "Get Xano API key (if Xano track)",
+          "url": "https://go.xano.co/devpost-challenge",
+          "deadline": "2026-08-31",
+          "done": false,
+          "note": "Free month on Essential plan."
+        }
+      ]
     },
     {
       "slug": "algorand-x402-challenge",
@@ -1165,7 +1243,44 @@
         "demo_script": null,
         "build_story": null,
         "notes": "Need to deploy before Sep 2 submission form opens. Registration closes Sep 1."
-      }
+      },
+      "human_queue": [
+        {
+          "task": "Register for x402 challenge",
+          "url": "https://algorand.co/global-x402-challenge",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Registration closes Sep 1. Need email to get submission form."
+        },
+        {
+          "task": "Join Algorand Discord",
+          "url": "https://discord.com/invite/algorand",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "Get help, find collaborators."
+        },
+        {
+          "task": "Set up GoPlausible facilitator account",
+          "url": "https://facilitator.goplausible.xyz",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "Need to opt-in payTo address."
+        },
+        {
+          "task": "Confirm USDC ASA on Algorand wallet",
+          "url": "https://app.perawallet.app/",
+          "deadline": "2026-08-30",
+          "done": false,
+          "note": "ASA 31566704. Need Algorand wallet with USDC."
+        },
+        {
+          "task": "Submit project details form",
+          "url": "email from registration",
+          "deadline": "2026-09-03",
+          "done": false,
+          "note": "Form opens Sep 2 via email."
+        }
+      ]
     },
     {
       "slug": "ethonline-2026",
@@ -1348,6 +1463,22 @@
           "estimated_hours": 2,
           "completed_at": null,
           "output": null
+        }
+      ],
+      "human_queue": [
+        {
+          "task": "Apply to attend ETHOnline",
+          "url": "https://ethglobal.com/events/ethonline2026",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Async hackathon, Sep 4-16."
+        },
+        {
+          "task": "Join ETHGlobal Discord",
+          "url": "https://discord.gg/ethglobal",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Community and sponsor track info."
         }
       ]
     },
@@ -1594,6 +1725,385 @@
           "estimated_hours": 1,
           "completed_at": null,
           "output": null
+        }
+      ],
+      "human_queue": [
+        {
+          "task": "Register on Devpost",
+          "url": "https://opencv26.devpost.com/",
+          "deadline": "2026-09-15",
+          "done": false,
+          "note": "Long runway, low urgency."
+        }
+      ]
+    },
+    {
+      "slug": "convex-all-gas",
+      "title": "convex-all-gas",
+      "url": "https://www.convex.dev/hackathons/all-gas",
+      "rules_url": null,
+      "status": "active",
+      "added_at": "2026-08-28T01:58:20.939Z",
+      "timeline": {
+        "opens": null,
+        "build_deadline": null,
+        "measurement_window": null,
+        "finals": null,
+        "finals_location": null
+      },
+      "prizes": {
+        "total_usd": null,
+        "breakdown": [],
+        "leaderboard_pool": null
+      },
+      "judging": {
+        "criteria": [],
+        "how_to_win": [],
+        "leaderboard_formula": null
+      },
+      "submission": {
+        "types": [],
+        "checklist": [],
+        "required_tech": [],
+        "submission_url": "https://www.convex.dev/hackathons/all-gas"
+      },
+      "tracks": [],
+      "eligibility": {
+        "open_to_all": true
+      },
+      "strategy_notes": {
+        "our_entry_type": null,
+        "our_endpoint": null,
+        "key_insight": null
+      },
+      "sources": [
+        {
+          "url": "https://www.convex.dev/hackathons/all-gas",
+          "quote": ""
+        }
+      ],
+      "last_crawled": "2026-08-28T01:58:20.939Z",
+      "crawl_version": 0,
+      "progress": {
+        "phase": "research",
+        "pct_complete": 0,
+        "blocks": [],
+        "last_update": "2026-08-28T01:58:20.939Z",
+        "updated_by": null
+      },
+      "tasks": [
+        {
+          "id": "convex-all-gas-research-rules",
+          "type": "research",
+          "title": "Deep-read official rules and scoring",
+          "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/convex-all-gas.json.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "critical",
+          "depends_on": [],
+          "deliverables": [
+            "data/active/convex-all-gas.json (updated)"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 1,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "convex-all-gas-research-tech",
+          "type": "research",
+          "title": "Document required tech/SDK/API",
+          "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "high",
+          "depends_on": [],
+          "deliverables": [
+            "tech docs",
+            "data/active/convex-all-gas-refs/"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 2,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "convex-all-gas-build-setup",
+          "type": "build",
+          "title": "Set up local dev environment",
+          "description": "Install SDKs, get things running locally, verify connectivity.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "high",
+          "depends_on": [
+            "convex-all-gas-research-tech"
+          ],
+          "deliverables": [
+            "running local env",
+            "smoke test passing"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 3,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "convex-all-gas-build-main",
+          "type": "build",
+          "title": "Build submission",
+          "description": "Implement the core submission. Focus on what the judging criteria reward.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "high",
+          "depends_on": [
+            "convex-all-gas-build-setup",
+            "convex-all-gas-research-rules"
+          ],
+          "deliverables": [
+            "working code",
+            "demo"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 12,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "convex-all-gas-submit-final",
+          "type": "submit",
+          "title": "Final submission",
+          "description": "Submit before deadline. Verify all requirements met. Double-check.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "critical",
+          "depends_on": [
+            "convex-all-gas-build-main"
+          ],
+          "deliverables": [
+            "submission confirmation"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 1,
+          "completed_at": null,
+          "output": null
+        }
+      ],
+      "human_queue": [
+        {
+          "task": "Register for Convex hackathon",
+          "url": "https://www.convex.dev/hackathons/all-gas",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "New project required, started after Aug 25."
+        },
+        {
+          "task": "Get Convex account",
+          "url": "https://convex.dev/",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Free tier available."
+        },
+        {
+          "task": "Get OpenAI API key",
+          "url": "https://platform.openai.com/",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Required partner."
+        },
+        {
+          "task": "Get Firecrawl API key",
+          "url": "https://firecrawl.dev/",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Required partner."
+        },
+        {
+          "task": "Get AgentMail API key",
+          "url": "https://agentmail.dev/",
+          "deadline": "2026-09-01",
+          "done": false,
+          "note": "Required partner."
+        }
+      ]
+    },
+    {
+      "slug": "webmcp-challenge",
+      "title": "webmcp-challenge",
+      "url": "https://webmcp.devpost.com/",
+      "rules_url": null,
+      "status": "active",
+      "added_at": "2026-08-28T01:58:20.992Z",
+      "timeline": {
+        "opens": null,
+        "build_deadline": null,
+        "measurement_window": null,
+        "finals": null,
+        "finals_location": null
+      },
+      "prizes": {
+        "total_usd": null,
+        "breakdown": [],
+        "leaderboard_pool": null
+      },
+      "judging": {
+        "criteria": [],
+        "how_to_win": [],
+        "leaderboard_formula": null
+      },
+      "submission": {
+        "types": [],
+        "checklist": [],
+        "required_tech": [],
+        "submission_url": "https://webmcp.devpost.com/"
+      },
+      "tracks": [],
+      "eligibility": {
+        "open_to_all": true
+      },
+      "strategy_notes": {
+        "our_entry_type": null,
+        "our_endpoint": null,
+        "key_insight": null
+      },
+      "sources": [
+        {
+          "url": "https://webmcp.devpost.com/",
+          "quote": ""
+        }
+      ],
+      "last_crawled": "2026-08-28T01:58:20.992Z",
+      "crawl_version": 0,
+      "progress": {
+        "phase": "research",
+        "pct_complete": 0,
+        "blocks": [],
+        "last_update": "2026-08-28T01:58:20.992Z",
+        "updated_by": null
+      },
+      "tasks": [
+        {
+          "id": "webmcp-challenge-research-rules",
+          "type": "research",
+          "title": "Deep-read official rules and scoring",
+          "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/webmcp-challenge.json.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "critical",
+          "depends_on": [],
+          "deliverables": [
+            "data/active/webmcp-challenge.json (updated)"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 1,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "webmcp-challenge-research-tech",
+          "type": "research",
+          "title": "Document required tech/SDK/API",
+          "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "high",
+          "depends_on": [],
+          "deliverables": [
+            "tech docs",
+            "data/active/webmcp-challenge-refs/"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 2,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "webmcp-challenge-build-setup",
+          "type": "build",
+          "title": "Set up local dev environment",
+          "description": "Install SDKs, get things running locally, verify connectivity.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "high",
+          "depends_on": [
+            "webmcp-challenge-research-tech"
+          ],
+          "deliverables": [
+            "running local env",
+            "smoke test passing"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 3,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "webmcp-challenge-build-main",
+          "type": "build",
+          "title": "Build submission",
+          "description": "Implement the core submission. Focus on what the judging criteria reward.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "high",
+          "depends_on": [
+            "webmcp-challenge-build-setup",
+            "webmcp-challenge-research-rules"
+          ],
+          "deliverables": [
+            "working code",
+            "demo"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 12,
+          "completed_at": null,
+          "output": null
+        },
+        {
+          "id": "webmcp-challenge-submit-final",
+          "type": "submit",
+          "title": "Final submission",
+          "description": "Submit before deadline. Verify all requirements met. Double-check.",
+          "status": "queued",
+          "assigned_to": null,
+          "claimed_at": null,
+          "priority": "critical",
+          "depends_on": [
+            "webmcp-challenge-build-main"
+          ],
+          "deliverables": [
+            "submission confirmation"
+          ],
+          "notes": null,
+          "deadline": null,
+          "estimated_hours": 1,
+          "completed_at": null,
+          "output": null
+        }
+      ],
+      "human_queue": [
+        {
+          "task": "Register on Devpost",
+          "url": "https://webmcp.devpost.com/",
+          "deadline": "2026-09-10",
+          "done": false,
+          "note": "MCP + web integration challenge."
         }
       ]
     }

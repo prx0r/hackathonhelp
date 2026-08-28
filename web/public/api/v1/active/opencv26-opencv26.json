@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "hackathon": {
     "slug": "opencv26-opencv26",
     "title": "OpenCV AI Competition 2026, powered by AWS",
@@ -244,6 +244,15 @@
         "estimated_hours": 1,
         "completed_at": null,
         "output": null
+      }
+    ],
+    "human_queue": [
+      {
+        "task": "Register on Devpost",
+        "url": "https://opencv26.devpost.com/",
+        "deadline": "2026-09-15",
+        "done": false,
+        "note": "Long runway, low urgency."
       }
     ]
   }

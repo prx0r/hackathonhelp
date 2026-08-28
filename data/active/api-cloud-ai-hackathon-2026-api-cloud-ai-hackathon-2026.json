@@ -3,10 +3,8 @@
   "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
   "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
   "rules_url": null,
-
   "status": "active",
   "added_at": "2026-08-26T20:00:00Z",
-
   "timeline": {
     "opens": "2026-08-17",
     "build_deadline": "2026-09-03T23:59:00Z",
@@ -14,102 +12,164 @@
     "finals": null,
     "finals_location": "Santa Clara Convention Center and Online"
   },
-
   "prizes": {
     "total_usd": 39500,
     "breakdown": [],
     "leaderboard_pool": null
   },
-
   "judging": {
     "criteria": [],
     "how_to_win": [],
     "leaderboard_formula": null
   },
-
   "submission": {
     "types": [],
     "checklist": [],
-    "required_tech": ["API", "Cloud", "AI"],
+    "required_tech": [
+      "API",
+      "Cloud",
+      "AI"
+    ],
     "submission_url": "https://api-cloud-ai-hackathon-2026.devpost.com/"
   },
-
   "tracks": [],
-  "eligibility": {"open_to_all": true},
-
+  "eligibility": {
+    "open_to_all": true
+  },
   "strategy_notes": {
     "our_entry_type": null,
     "our_endpoint": null,
-    "key_insight": "Largest prize pool of current batch — $39.5K. API/Cloud/AI aligns with agent infrastructure work."
+    "key_insight": "Largest prize pool of current batch \u2014 $39.5K. API/Cloud/AI aligns with agent infrastructure work."
   },
-
   "sources": [
-    {"url": "https://api-cloud-ai-hackathon-2026.devpost.com/", "quote": "Join the nation's largest challenge-driven API + Cloud + AI hackathon @ API World 2026!"},
-    {"url": "https://api-cloud-ai-hackathon-2026.devpost.com/rules", "quote": "Judging: Progress, Concept, Feasibility"}
+    {
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "quote": "Join the nation's largest challenge-driven API + Cloud + AI hackathon @ API World 2026!"
+    },
+    {
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/rules",
+      "quote": "Judging: Progress, Concept, Feasibility"
+    }
   ],
-
   "rubric": {
-    "generated_from": "Devpost page — 3 judging criteria",
+    "generated_from": "Devpost page \u2014 3 judging criteria",
     "track": "Open (multiple sponsor tracks)",
     "criteria": [
       {
         "name": "Progress",
         "weight": 40,
         "description": "How much progress did you make?",
-        "levels": {"100": "Fully working product, end-to-end", "50": "Core features working", "25": "Basic prototype", "0": "Just an idea"},
+        "levels": {
+          "100": "Fully working product, end-to-end",
+          "50": "Core features working",
+          "25": "Basic prototype",
+          "0": "Just an idea"
+        },
         "what_we_need": "Ship something that works. Progress > perfection.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Concept",
         "weight": 30,
         "description": "Does it solve a real problem?",
-        "levels": {"100": "Clear problem, elegant solution", "50": "Real problem, basic solution", "25": "Interesting but niche", "0": "No real problem"},
+        "levels": {
+          "100": "Clear problem, elegant solution",
+          "50": "Real problem, basic solution",
+          "25": "Interesting but niche",
+          "0": "No real problem"
+        },
         "what_we_need": "Pick a sponsor track that fits. API/Cloud/AI alignment.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Feasibility",
         "weight": 30,
         "description": "Could this become a startup or company?",
-        "levels": {"100": "Clear market, viable business model", "50": "Could work with more development", "25": "Interesting but unproven", "0": "Not viable"},
+        "levels": {
+          "100": "Clear market, viable business model",
+          "50": "Could work with more development",
+          "25": "Interesting but unproven",
+          "0": "Not viable"
+        },
         "what_we_need": "Show it could be a product, not just a demo.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       }
     ],
     "disqualifiers": [],
-    "total_possible": 100, "our_total_score": null, "our_confidence": null
+    "total_possible": 100,
+    "our_total_score": null,
+    "our_confidence": null
   },
-
   "project": {
-    "repo_url": null, "repo_local_path": null, "demo_url": null,
-    "intent": null, "what_it_does": null, "tech_stack": [],
-    "submission_files": [], "screenshots": [], "demo_script": null,
-    "build_story": null, "notes": null
+    "repo_url": null,
+    "repo_local_path": null,
+    "demo_url": null,
+    "intent": null,
+    "what_it_does": null,
+    "tech_stack": [],
+    "submission_files": [],
+    "screenshots": [],
+    "demo_script": null,
+    "build_story": null,
+    "notes": null
   },
-
   "progress": {
     "phase": "research",
     "pct_complete": 0,
-    "blocks": ["need to pick sponsor track", "deadline Sep 3 — tight"],
+    "blocks": [
+      "need to pick sponsor track",
+      "deadline Sep 3 \u2014 tight"
+    ],
     "last_update": "2026-08-28T00:00:00Z",
     "updated_by": null
   },
-
   "tasks": [
     {
       "id": "apicloud-crawl-rules",
       "type": "crawl",
       "title": "Read full rules + sponsor track details",
       "description": "Read api-cloud-ai-hackathon-2026.devpost.com/rules. Identify which sponsor track gives us best edge. Xano track aligns with our existing xano-hackathon work.",
-      "status": "queued", "assigned_to": null, "claimed_at": null,
-      "priority": "critical", "depends_on": [],
-      "deliverables": ["data/active/api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026.json (updated)"],
-      "notes": null, "deadline": "2026-08-29T00:00:00Z",
-      "estimated_hours": 1, "completed_at": null, "output": null
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-29T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
     }
   ],
-
   "last_crawled": "2026-08-28T00:20:00Z",
-  "crawl_version": 1
+  "crawl_version": 1,
+  "human_queue": [
+    {
+      "task": "Register on Devpost",
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "1158 participants already."
+    },
+    {
+      "task": "Pick sponsor track",
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/details/sponsors",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Xano track aligns with existing work. SerpApi good for AI."
+    },
+    {
+      "task": "Get Xano API key (if Xano track)",
+      "url": "https://go.xano.co/devpost-challenge",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Free month on Essential plan."
+    }
+  ]
 }

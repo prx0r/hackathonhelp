@@ -1,0 +1,171 @@
+{
+  "slug": "webmcp-challenge",
+  "title": "webmcp-challenge",
+  "url": "https://webmcp.devpost.com/",
+  "rules_url": null,
+  "status": "active",
+  "added_at": "2026-08-28T01:58:20.992Z",
+  "timeline": {
+    "opens": null,
+    "build_deadline": null,
+    "measurement_window": null,
+    "finals": null,
+    "finals_location": null
+  },
+  "prizes": {
+    "total_usd": null,
+    "breakdown": [],
+    "leaderboard_pool": null
+  },
+  "judging": {
+    "criteria": [],
+    "how_to_win": [],
+    "leaderboard_formula": null
+  },
+  "submission": {
+    "types": [],
+    "checklist": [],
+    "required_tech": [],
+    "submission_url": "https://webmcp.devpost.com/"
+  },
+  "tracks": [],
+  "eligibility": {
+    "open_to_all": true
+  },
+  "strategy_notes": {
+    "our_entry_type": null,
+    "our_endpoint": null,
+    "key_insight": null
+  },
+  "sources": [
+    {
+      "url": "https://webmcp.devpost.com/",
+      "quote": ""
+    }
+  ],
+  "last_crawled": "2026-08-28T01:58:20.992Z",
+  "crawl_version": 0,
+  "progress": {
+    "phase": "research",
+    "pct_complete": 0,
+    "blocks": [],
+    "last_update": "2026-08-28T01:58:20.992Z",
+    "updated_by": null
+  },
+  "tasks": [
+    {
+      "id": "webmcp-challenge-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/webmcp-challenge.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/webmcp-challenge.json (updated)"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "webmcp-challenge-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/webmcp-challenge-refs/"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "webmcp-challenge-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "webmcp-challenge-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "webmcp-challenge-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "webmcp-challenge-build-setup",
+        "webmcp-challenge-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "webmcp-challenge-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "webmcp-challenge-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    }
+  ],
+  "human_queue": [
+    {
+      "task": "Register on Devpost",
+      "url": "https://webmcp.devpost.com/",
+      "deadline": "2026-09-10",
+      "done": false,
+      "note": "MCP + web integration challenge."
+    }
+  ]
+}

@@ -3,10 +3,8 @@
   "title": "ETHOnline 2026",
   "url": "https://ethglobal.com/events/online2026",
   "rules_url": null,
-
   "status": "active",
   "added_at": "2026-08-26T20:00:00Z",
-
   "timeline": {
     "opens": null,
     "build_deadline": "2026-09-16",
@@ -14,98 +12,132 @@
     "finals": null,
     "finals_location": null
   },
-
   "prizes": {
     "total_usd": null,
     "breakdown": [],
     "leaderboard_pool": null
   },
-
   "judging": {
     "criteria": [],
     "how_to_win": [],
     "leaderboard_formula": null
   },
-
   "submission": {
     "types": [],
     "checklist": [],
-    "required_tech": ["Ethereum"],
+    "required_tech": [
+      "Ethereum"
+    ],
     "submission_url": "https://ethglobal.com/events/online2026"
   },
-
   "tracks": [],
-  "eligibility": {"open_to_all": true},
-
+  "eligibility": {
+    "open_to_all": true
+  },
   "strategy_notes": {
     "our_entry_type": null,
     "our_endpoint": null,
-    "key_insight": "ETHGlobal flagship — high organizer quality (0.95). Prizes TBA. Under-18 guardian route exists per overrides."
+    "key_insight": "ETHGlobal flagship \u2014 high organizer quality (0.95). Prizes TBA. Under-18 guardian route exists per overrides."
   },
-
   "sources": [
-    {"url": "https://ethglobal.com/events/ethonline2026", "quote": "ETHOnline 2026 — Async Hackathon, Sep 4-16"}
+    {
+      "url": "https://ethglobal.com/events/ethonline2026",
+      "quote": "ETHOnline 2026 \u2014 Async Hackathon, Sep 4-16"
+    }
   ],
-
   "rubric": {
-    "generated_from": "ETHGlobal typical judging (prizes TBA — placeholder until tracks announced)",
+    "generated_from": "ETHGlobal typical judging (prizes TBA \u2014 placeholder until tracks announced)",
     "track": "TBA",
     "criteria": [
       {
         "name": "Technical Innovation",
         "weight": 35,
         "description": "Novel use of Ethereum/blockchain technology",
-        "levels": {"100": "Breakthrough approach", "50": "Solid implementation", "25": "Standard approach", "0": "Trivial"},
-        "what_we_need": "Agent reliability on-chain — verification, evidence, routing. Our specialism.",
-        "our_score": null, "our_notes": null
+        "levels": {
+          "100": "Breakthrough approach",
+          "50": "Solid implementation",
+          "25": "Standard approach",
+          "0": "Trivial"
+        },
+        "what_we_need": "Agent reliability on-chain \u2014 verification, evidence, routing. Our specialism.",
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Completeness & Polish",
         "weight": 25,
         "description": "Working end-to-end, good UX, production-ready feel",
-        "levels": {"100": "Ship-ready product", "50": "Working prototype", "25": "Demo-quality", "0": "Incomplete"},
+        "levels": {
+          "100": "Ship-ready product",
+          "50": "Working prototype",
+          "25": "Demo-quality",
+          "0": "Incomplete"
+        },
         "what_we_need": "Clean demo, working integration, reproducible setup.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Impact & Usefulness",
         "weight": 25,
         "description": "Real-world applicability, potential adoption",
-        "levels": {"100": "Could be used tomorrow", "50": "Useful for specific cases", "25": "Interesting concept", "0": "No practical use"},
+        "levels": {
+          "100": "Could be used tomorrow",
+          "50": "Useful for specific cases",
+          "25": "Interesting concept",
+          "0": "No practical use"
+        },
         "what_we_need": "Solve a real problem for Ethereum developers/users.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Presentation",
         "weight": 15,
         "description": "Demo quality, pitch, documentation",
-        "levels": {"100": "Compelling story", "50": "Clear explanation", "25": "Basic walkthrough", "0": "None"},
+        "levels": {
+          "100": "Compelling story",
+          "50": "Clear explanation",
+          "25": "Basic walkthrough",
+          "0": "None"
+        },
         "what_we_need": "Good demo video and README.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       }
     ],
-    "disqualifiers": ["Does not use Ethereum/blockchain"],
-    "total_possible": 100, "our_total_score": null, "our_confidence": null
+    "disqualifiers": [
+      "Does not use Ethereum/blockchain"
+    ],
+    "total_possible": 100,
+    "our_total_score": null,
+    "our_confidence": null
   },
-
   "project": {
-    "repo_url": null, "repo_local_path": null, "demo_url": null,
-    "intent": null, "what_it_does": null, "tech_stack": [],
-    "submission_files": [], "screenshots": [], "demo_script": null,
-    "build_story": null, "notes": null
+    "repo_url": null,
+    "repo_local_path": null,
+    "demo_url": null,
+    "intent": null,
+    "what_it_does": null,
+    "tech_stack": [],
+    "submission_files": [],
+    "screenshots": [],
+    "demo_script": null,
+    "build_story": null,
+    "notes": null
   },
-
   "last_crawled": "2026-08-26T20:00:00Z",
   "crawl_version": 0,
-
   "progress": {
     "phase": "research",
     "pct_complete": 0,
-    "blocks": ["prizes TBA", "tracks unknown"],
+    "blocks": [
+      "prizes TBA",
+      "tracks unknown"
+    ],
     "last_update": "2026-08-28T00:00:00Z",
     "updated_by": null
   },
-
   "tasks": [
     {
       "id": "ethonline-crawl",
@@ -117,7 +149,9 @@
       "claimed_at": null,
       "priority": "high",
       "depends_on": [],
-      "deliverables": ["data/active/ethonline-2026.json (updated with tracks/prizes)"],
+      "deliverables": [
+        "data/active/ethonline-2026.json (updated with tracks/prizes)"
+      ],
       "notes": null,
       "deadline": "2026-09-01T00:00:00Z",
       "estimated_hours": 1,
@@ -133,13 +167,34 @@
       "assigned_to": null,
       "claimed_at": null,
       "priority": "medium",
-      "depends_on": ["ethonline-crawl"],
-      "deliverables": ["strategy recommendation", "data/active/ethonline-2026.json (strategy_notes)"],
+      "depends_on": [
+        "ethonline-crawl"
+      ],
+      "deliverables": [
+        "strategy recommendation",
+        "data/active/ethonline-2026.json (strategy_notes)"
+      ],
       "notes": null,
       "deadline": "2026-09-05T00:00:00Z",
       "estimated_hours": 2,
       "completed_at": null,
       "output": null
+    }
+  ],
+  "human_queue": [
+    {
+      "task": "Apply to attend ETHOnline",
+      "url": "https://ethglobal.com/events/ethonline2026",
+      "deadline": "2026-09-01",
+      "done": false,
+      "note": "Async hackathon, Sep 4-16."
+    },
+    {
+      "task": "Join ETHGlobal Discord",
+      "url": "https://discord.gg/ethglobal",
+      "deadline": "2026-09-01",
+      "done": false,
+      "note": "Community and sponsor track info."
     }
   ]
 }

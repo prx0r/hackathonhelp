@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "hackathon": {
     "slug": "algorand-x402-challenge",
     "title": "Algorand Global x402 Challenge",
@@ -388,6 +388,43 @@
       "demo_script": null,
       "build_story": null,
       "notes": "Need to deploy before Sep 2 submission form opens. Registration closes Sep 1."
-    }
+    },
+    "human_queue": [
+      {
+        "task": "Register for x402 challenge",
+        "url": "https://algorand.co/global-x402-challenge",
+        "deadline": "2026-09-01",
+        "done": false,
+        "note": "Registration closes Sep 1. Need email to get submission form."
+      },
+      {
+        "task": "Join Algorand Discord",
+        "url": "https://discord.com/invite/algorand",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "Get help, find collaborators."
+      },
+      {
+        "task": "Set up GoPlausible facilitator account",
+        "url": "https://facilitator.goplausible.xyz",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "Need to opt-in payTo address."
+      },
+      {
+        "task": "Confirm USDC ASA on Algorand wallet",
+        "url": "https://app.perawallet.app/",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "ASA 31566704. Need Algorand wallet with USDC."
+      },
+      {
+        "task": "Submit project details form",
+        "url": "email from registration",
+        "deadline": "2026-09-03",
+        "done": false,
+        "note": "Form opens Sep 2 via email."
+      }
+    ]
   }
 }

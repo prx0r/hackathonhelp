@@ -77,7 +77,7 @@
       "Generate real on-chain usage volume via GoPlausible facilitator",
       "Enable Bazaar discovery so your endpoint is findable",
       "Drive sustained traffic through the unannounced October measurement window",
-      "Top 50 on leaderboard → considered for 10 finalist spots",
+      "Top 50 on leaderboard \u2192 considered for 10 finalist spots",
       "10 finalists present live at Devcon 8, India (Nov 2)"
     ],
     "leaderboard_formula": "Real on-chain USDC volume settled through GoPlausible facilitator, measured over unannounced window in October 2026",
@@ -155,9 +155,9 @@
   },
   "strategy_notes": {
     "our_entry_type": "Composite",
-    "our_endpoint": "Domain verification, domain scoring, LLM pricing — multiple endpoints, same payTo",
-    "overlap_with_finalbuilds2": "high — factory deploys endpoints, volume flywheel, leaderboard aggregation",
-    "overlap_with_telegraph": "medium — both involve paid API endpoints, but different protocol",
+    "our_endpoint": "Domain verification, domain scoring, LLM pricing \u2014 multiple endpoints, same payTo",
+    "overlap_with_finalbuilds2": "high \u2014 factory deploys endpoints, volume flywheel, leaderboard aggregation",
+    "overlap_with_telegraph": "medium \u2014 both involve paid API endpoints, but different protocol",
     "key_insight": "Composite entry: multiple independent endpoints sharing one payTo. Leaderboard auto-aggregates volume. More endpoints = more surface area = more traffic. finalbuilds2 is the engine that decides WHAT to deploy.",
     "build_priority": "Deploy domain.verify as first x402 endpoint on Algorand MainNet before Sept 2 submission form opens",
     "platform_play": "finalbuilds2 factory monitors what gets traffic, deploys more winners. 402Arena evidence market proves calls are real. Anti-cheat proves volume isn't faked."
@@ -178,15 +178,16 @@
   ],
   "last_crawled": "2026-08-28T01:00:00Z",
   "crawl_version": 2,
-
   "progress": {
     "phase": "build",
     "pct_complete": 20,
-    "blocks": ["need to deploy domain.verify to MainNet", "submission form opens Sep 2"],
+    "blocks": [
+      "need to deploy domain.verify to MainNet",
+      "submission form opens Sep 2"
+    ],
     "last_update": "2026-08-28T01:00:00Z",
     "updated_by": null
   },
-
   "tasks": [
     {
       "id": "algorand-deploy-verify",
@@ -198,7 +199,10 @@
       "claimed_at": null,
       "priority": "critical",
       "depends_on": [],
-      "deliverables": ["MainNet endpoint live", "at least one real payment confirmed"],
+      "deliverables": [
+        "MainNet endpoint live",
+        "at least one real payment confirmed"
+      ],
       "notes": "repo at /root/x402-endpoints",
       "deadline": "2026-08-30T00:00:00Z",
       "estimated_hours": 4,
@@ -209,13 +213,18 @@
       "id": "algorand-deploy-score",
       "type": "build",
       "title": "Deploy domain.score as second endpoint",
-      "description": "Deploy domain.score endpoint on MainNet. Same payTo address — composite pattern. Volume auto-aggregates on leaderboard.",
+      "description": "Deploy domain.score endpoint on MainNet. Same payTo address \u2014 composite pattern. Volume auto-aggregates on leaderboard.",
       "status": "queued",
       "assigned_to": null,
       "claimed_at": null,
       "priority": "high",
-      "depends_on": ["algorand-deploy-verify"],
-      "deliverables": ["second endpoint live", "composite volume aggregating"],
+      "depends_on": [
+        "algorand-deploy-verify"
+      ],
+      "deliverables": [
+        "second endpoint live",
+        "composite volume aggregating"
+      ],
       "notes": null,
       "deadline": "2026-08-31T00:00:00Z",
       "estimated_hours": 3,
@@ -231,8 +240,13 @@
       "assigned_to": null,
       "claimed_at": null,
       "priority": "critical",
-      "depends_on": ["algorand-deploy-verify"],
-      "deliverables": ["endpoints visible in Bazaar", "leaderboard entry confirmed"],
+      "depends_on": [
+        "algorand-deploy-verify"
+      ],
+      "deliverables": [
+        "endpoints visible in Bazaar",
+        "leaderboard entry confirmed"
+      ],
       "notes": null,
       "deadline": "2026-08-30T00:00:00Z",
       "estimated_hours": 1,
@@ -248,8 +262,13 @@
       "assigned_to": null,
       "claimed_at": null,
       "priority": "high",
-      "depends_on": ["algorand-enable-bazaar"],
-      "deliverables": ["real volume on leaderboard", "sustained traffic pattern"],
+      "depends_on": [
+        "algorand-enable-bazaar"
+      ],
+      "deliverables": [
+        "real volume on leaderboard",
+        "sustained traffic pattern"
+      ],
       "notes": null,
       "deadline": "2026-09-15T00:00:00Z",
       "estimated_hours": 8,
@@ -265,8 +284,12 @@
       "assigned_to": null,
       "claimed_at": null,
       "priority": "critical",
-      "depends_on": ["algorand-deploy-verify"],
-      "deliverables": ["submission confirmation"],
+      "depends_on": [
+        "algorand-deploy-verify"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
       "notes": null,
       "deadline": "2026-09-03T00:00:00Z",
       "estimated_hours": 1,
@@ -274,9 +297,8 @@
       "output": null
     }
   ],
-
   "rubric": {
-    "generated_from": "Official Rules PDF — 4 criteria, equal weight",
+    "generated_from": "Official Rules PDF \u2014 4 criteria, equal weight",
     "track": "Composite",
     "criteria": [
       {
@@ -303,7 +325,7 @@
           "50": "Integrated but could work without it",
           "100": "Native x402 flow, clear agentic value"
         },
-        "what_we_need": "Domain verification as a paid API — agents pay per check. Natural x402 fit.",
+        "what_we_need": "Domain verification as a paid API \u2014 agents pay per check. Natural x402 fit.",
         "our_score": 60,
         "our_notes": "Domain verify is natural x402 fit"
       },
@@ -317,7 +339,7 @@
           "50": "Could work long-term",
           "100": "Real customers, ongoing demand"
         },
-        "what_we_need": "Domain verification has real demand — SEO, security, brand monitoring. Prove with usage data.",
+        "what_we_need": "Domain verification has real demand \u2014 SEO, security, brand monitoring. Prove with usage data.",
         "our_score": null,
         "our_notes": null
       },
@@ -363,5 +385,42 @@
     "demo_script": null,
     "build_story": null,
     "notes": "Need to deploy before Sep 2 submission form opens. Registration closes Sep 1."
-  }
+  },
+  "human_queue": [
+    {
+      "task": "Register for x402 challenge",
+      "url": "https://algorand.co/global-x402-challenge",
+      "deadline": "2026-09-01",
+      "done": false,
+      "note": "Registration closes Sep 1. Need email to get submission form."
+    },
+    {
+      "task": "Join Algorand Discord",
+      "url": "https://discord.com/invite/algorand",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "Get help, find collaborators."
+    },
+    {
+      "task": "Set up GoPlausible facilitator account",
+      "url": "https://facilitator.goplausible.xyz",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "Need to opt-in payTo address."
+    },
+    {
+      "task": "Confirm USDC ASA on Algorand wallet",
+      "url": "https://app.perawallet.app/",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "ASA 31566704. Need Algorand wallet with USDC."
+    },
+    {
+      "task": "Submit project details form",
+      "url": "email from registration",
+      "deadline": "2026-09-03",
+      "done": false,
+      "note": "Form opens Sep 2 via email."
+    }
+  ]
 }

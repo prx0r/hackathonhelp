@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "hackathon": {
     "slug": "telegraph-h1",
     "title": "Telegraph H1 Hackathon",
@@ -381,6 +381,36 @@
         "estimated_hours": 1,
         "completed_at": null,
         "output": null
+      }
+    ],
+    "human_queue": [
+      {
+        "task": "Join Telegraph Hackathon Discord",
+        "url": "https://hackathon.telegraphprotocol.com/",
+        "deadline": "2026-08-31",
+        "done": false,
+        "note": "Required for judging. Get support."
+      },
+      {
+        "task": "Register on Telegraph platform",
+        "url": "https://hackathon.telegraphprotocol.com/",
+        "deadline": "2026-08-31",
+        "done": false,
+        "note": "Register early for track access."
+      },
+      {
+        "task": "Post first X update tagged @Telegraphprotoc",
+        "url": "https://x.com",
+        "deadline": "2026-09-01",
+        "done": false,
+        "note": "25% of score is X engagement. Start early."
+      },
+      {
+        "task": "Choose Intent for Miner",
+        "url": "https://hackathon.telegraphprotocol.com/supported-intents",
+        "deadline": "2026-08-31",
+        "done": false,
+        "note": "Pick an intent with few competitors."
       }
     ]
   }

@@ -48,7 +48,6 @@
       "quote": "OpenCV AI Competition 2026, powered by AWS"
     }
   ],
-
   "rubric": {
     "generated_from": "Devpost page (needs rules page verification)",
     "track": "IoT / ML / Serverless",
@@ -57,44 +56,76 @@
         "name": "Technical Complexity",
         "weight": 35,
         "description": "Sophistication of the implementation",
-        "levels": {"100": "Advanced ML pipeline, edge deployment", "50": "Working model integration", "25": "Basic API call", "0": "No technical depth"},
+        "levels": {
+          "100": "Advanced ML pipeline, edge deployment",
+          "50": "Working model integration",
+          "25": "Basic API call",
+          "0": "No technical depth"
+        },
         "what_we_need": "Computer vision + edge deployment = our sweet spot.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Innovation",
         "weight": 30,
         "description": "Novel application of OpenCV/AI",
-        "levels": {"100": "New use case or approach", "50": "Creative twist", "25": "Standard application", "0": "Trivial"},
-        "what_we_need": "Verification/evidence angle — using CV for trust, not just detection.",
-        "our_score": null, "our_notes": null
+        "levels": {
+          "100": "New use case or approach",
+          "50": "Creative twist",
+          "25": "Standard application",
+          "0": "Trivial"
+        },
+        "what_we_need": "Verification/evidence angle \u2014 using CV for trust, not just detection.",
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Completeness",
         "weight": 20,
         "description": "Working end-to-end, polished",
-        "levels": {"100": "Production-ready", "50": "Working demo", "25": "Partial", "0": "Broken"},
+        "levels": {
+          "100": "Production-ready",
+          "50": "Working demo",
+          "25": "Partial",
+          "0": "Broken"
+        },
         "what_we_need": "Working demo with clear output.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Presentation",
         "weight": 15,
         "description": "Demo quality, documentation",
-        "levels": {"100": "Compelling video", "50": "Good walkthrough", "25": "Basic", "0": "None"},
+        "levels": {
+          "100": "Compelling video",
+          "50": "Good walkthrough",
+          "25": "Basic",
+          "0": "None"
+        },
         "what_we_need": "Clean demo video.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       }
     ],
     "disqualifiers": [],
-    "total_possible": 100, "our_total_score": null, "our_confidence": null
+    "total_possible": 100,
+    "our_total_score": null,
+    "our_confidence": null
   },
-
   "project": {
-    "repo_url": null, "repo_local_path": null, "demo_url": null,
-    "intent": null, "what_it_does": null, "tech_stack": [],
-    "submission_files": [], "screenshots": [], "demo_script": null,
-    "build_story": null, "notes": "Deadline Oct 27 — low priority, long runway"
+    "repo_url": null,
+    "repo_local_path": null,
+    "demo_url": null,
+    "intent": null,
+    "what_it_does": null,
+    "tech_stack": [],
+    "submission_files": [],
+    "screenshots": [],
+    "demo_script": null,
+    "build_story": null,
+    "notes": "Deadline Oct 27 \u2014 low priority, long runway"
   },
   "last_crawled": "2026-08-28T00:16:35.952Z",
   "crawl_version": 0,
@@ -210,6 +241,15 @@
       "estimated_hours": 1,
       "completed_at": null,
       "output": null
+    }
+  ],
+  "human_queue": [
+    {
+      "task": "Register on Devpost",
+      "url": "https://opencv26.devpost.com/",
+      "deadline": "2026-09-15",
+      "done": false,
+      "note": "Long runway, low urgency."
     }
   ]
 }

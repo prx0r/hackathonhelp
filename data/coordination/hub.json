@@ -61,6 +61,26 @@
       "entry_type": null,
       "priority": "LOW",
       "summary": "$12K, IoT/ML/AI/Serverless. Newly activated — details pending."
+    },
+    {
+      "slug": "convex-all-gas",
+      "title": "convex-all-gas",
+      "deadline": null,
+      "days_left": null,
+      "status": "active",
+      "entry_type": null,
+      "priority": "MEDIUM",
+      "summary": "Newly activated — details pending."
+    },
+    {
+      "slug": "webmcp-challenge",
+      "title": "webmcp-challenge",
+      "deadline": null,
+      "days_left": null,
+      "status": "active",
+      "entry_type": null,
+      "priority": "MEDIUM",
+      "summary": "Newly activated — details pending."
     }
   ],
   "agents": {},

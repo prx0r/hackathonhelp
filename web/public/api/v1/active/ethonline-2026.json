@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "hackathon": {
     "slug": "ethonline-2026",
     "title": "ETHOnline 2026",
@@ -182,6 +182,22 @@
         "estimated_hours": 2,
         "completed_at": null,
         "output": null
+      }
+    ],
+    "human_queue": [
+      {
+        "task": "Apply to attend ETHOnline",
+        "url": "https://ethglobal.com/events/ethonline2026",
+        "deadline": "2026-09-01",
+        "done": false,
+        "note": "Async hackathon, Sep 4-16."
+      },
+      {
+        "task": "Join ETHGlobal Discord",
+        "url": "https://discord.gg/ethglobal",
+        "deadline": "2026-09-01",
+        "done": false,
+        "note": "Community and sponsor track info."
       }
     ]
   }

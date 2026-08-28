@@ -105,6 +105,7 @@ async function handleRequest(req, res) {
       const hackathons = [];
       for (const h of hub.active_hackathons) {
         const data = loadActive(h.slug);
+        const hq = data?.human_queue || [];
         hackathons.push({
           slug: h.slug, title: h.title || data?.title, deadline: h.deadline || data?.timeline?.build_deadline,
           days_left: h.days_left, priority: h.priority,
@@ -113,6 +114,8 @@ async function handleRequest(req, res) {
           tasks_total: data?.tasks?.length || 0,
           tasks_done: data?.tasks?.filter(t => t.status === 'done').length || 0,
           progress_pct: data?.progress?.pct_complete || 0,
+          human_pending: hq.filter(t => !t.done).length,
+          human_total: hq.length,
         });
       }
       return json(200, { count: hackathons.length, hackathons, _agent: agent.id });

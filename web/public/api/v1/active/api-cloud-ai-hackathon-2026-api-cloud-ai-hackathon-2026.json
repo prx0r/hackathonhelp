@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "hackathon": {
     "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
     "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
@@ -151,6 +151,29 @@
       }
     ],
     "last_crawled": "2026-08-28T00:20:00Z",
-    "crawl_version": 1
+    "crawl_version": 1,
+    "human_queue": [
+      {
+        "task": "Register on Devpost",
+        "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "1158 participants already."
+      },
+      {
+        "task": "Pick sponsor track",
+        "url": "https://api-cloud-ai-hackathon-2026.devpost.com/details/sponsors",
+        "deadline": "2026-08-31",
+        "done": false,
+        "note": "Xano track aligns with existing work. SerpApi good for AI."
+      },
+      {
+        "task": "Get Xano API key (if Xano track)",
+        "url": "https://go.xano.co/devpost-challenge",
+        "deadline": "2026-08-31",
+        "done": false,
+        "note": "Free month on Essential plan."
+      }
+    ]
   }
 }

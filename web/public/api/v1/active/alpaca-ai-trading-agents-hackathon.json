@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.active.v1",
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "hackathon": {
     "slug": "alpaca-ai-trading-agents-hackathon",
     "title": "Alpaca AI Trading Agents Hackathon",
@@ -227,6 +227,29 @@
         "estimated_hours": 1,
         "completed_at": null,
         "output": null
+      }
+    ],
+    "human_queue": [
+      {
+        "task": "Register on lablab.ai",
+        "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "2851 already registered."
+      },
+      {
+        "task": "Get Alpaca API key",
+        "url": "https://alpaca.markets/",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "Need paper + live trading keys."
+      },
+      {
+        "task": "Join lablab Discord",
+        "url": "https://discord.gg/lablabai",
+        "deadline": "2026-08-30",
+        "done": false,
+        "note": "Community support."
       }
     ]
   }

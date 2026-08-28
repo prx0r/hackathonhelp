@@ -3,10 +3,8 @@
   "title": "Alpaca AI Trading Agents Hackathon",
   "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
   "rules_url": null,
-
   "status": "active",
   "added_at": "2026-08-26T20:00:00Z",
-
   "timeline": {
     "opens": "2026-08-28",
     "build_deadline": "2026-09-04",
@@ -14,39 +12,41 @@
     "finals": null,
     "finals_location": null
   },
-
   "prizes": {
     "total_usd": 6000,
     "breakdown": [],
     "leaderboard_pool": null
   },
-
   "judging": {
     "criteria": [],
     "how_to_win": [],
     "leaderboard_formula": null
   },
-
   "submission": {
     "types": [],
     "checklist": [],
-    "required_tech": ["Alpaca API", "trading agents"],
+    "required_tech": [
+      "Alpaca API",
+      "trading agents"
+    ],
     "submission_url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon"
   },
-
   "tracks": [],
-  "eligibility": {"open_to_all": true, "registrants": 2851},
-
+  "eligibility": {
+    "open_to_all": true,
+    "registrants": 2851
+  },
   "strategy_notes": {
     "our_entry_type": null,
     "our_endpoint": null,
-    "key_insight": "MCP + trading agents — aligns with agent reliability specialism"
+    "key_insight": "MCP + trading agents \u2014 aligns with agent reliability specialism"
   },
-
   "sources": [
-    {"url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon", "quote": "Build AI trading agents on Alpaca — autonomous agents and trading apps using Alpaca's Trading API, MCP server and CLI."}
+    {
+      "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
+      "quote": "Build AI trading agents on Alpaca \u2014 autonomous agents and trading apps using Alpaca's Trading API, MCP server and CLI."
+    }
   ],
-
   "rubric": {
     "generated_from": "lablab.ai page + Alpaca docs (needs verification from rules page)",
     "track": "Open",
@@ -55,57 +55,92 @@
         "name": "Trading Performance",
         "weight": 40,
         "description": "How well the trading agent performs (returns, risk management)",
-        "levels": {"100": "Top returns, conservative risk", "50": "Positive returns, reasonable risk", "25": "Break-even or basic strategy", "0": "No live trading or losses"},
+        "levels": {
+          "100": "Top returns, conservative risk",
+          "50": "Positive returns, reasonable risk",
+          "25": "Break-even or basic strategy",
+          "0": "No live trading or losses"
+        },
         "what_we_need": "Build a reliable trading agent with proper risk controls and audit trail.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Technical Execution",
         "weight": 30,
         "description": "Code quality, architecture, MCP integration depth",
-        "levels": {"100": "Production-grade, clean MCP integration, extensible", "50": "Working code, some architecture", "25": "Basic prototype", "0": "Doesn't work"},
+        "levels": {
+          "100": "Production-grade, clean MCP integration, extensible",
+          "50": "Working code, some architecture",
+          "25": "Basic prototype",
+          "0": "Doesn't work"
+        },
         "what_we_need": "Solid MCP integration with Alpaca API. Error handling, retries, logging.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Innovation & Usefulness",
         "weight": 20,
         "description": "Novel approach, real-world applicability",
-        "levels": {"100": "Novel strategy, could be a product", "50": "Interesting twist on known approach", "25": "Standard implementation", "0": "Trivial or derivative"},
-        "what_we_need": "Our angle: agent reliability — evaluation, evidence, verification of trading decisions.",
-        "our_score": null, "our_notes": null
+        "levels": {
+          "100": "Novel strategy, could be a product",
+          "50": "Interesting twist on known approach",
+          "25": "Standard implementation",
+          "0": "Trivial or derivative"
+        },
+        "what_we_need": "Our angle: agent reliability \u2014 evaluation, evidence, verification of trading decisions.",
+        "our_score": null,
+        "our_notes": null
       },
       {
         "name": "Presentation",
         "weight": 10,
         "description": "Demo quality, documentation, pitch",
-        "levels": {"100": "Compelling demo, clear pitch, good docs", "50": "Working demo, basic docs", "25": "Code only, no demo", "0": "Incomplete"},
+        "levels": {
+          "100": "Compelling demo, clear pitch, good docs",
+          "50": "Working demo, basic docs",
+          "25": "Code only, no demo",
+          "0": "Incomplete"
+        },
         "what_we_need": "Clean demo video showing the agent working end-to-end.",
-        "our_score": null, "our_notes": null
+        "our_score": null,
+        "our_notes": null
       }
     ],
-    "disqualifiers": ["Does not use Alpaca API", "No live trading component"],
-    "total_possible": 100, "our_total_score": null, "our_confidence": null
+    "disqualifiers": [
+      "Does not use Alpaca API",
+      "No live trading component"
+    ],
+    "total_possible": 100,
+    "our_total_score": null,
+    "our_confidence": null
   },
-
   "project": {
-    "repo_url": null, "repo_local_path": null, "demo_url": null,
-    "intent": null, "what_it_does": null, "tech_stack": [],
-    "submission_files": [], "screenshots": [], "demo_script": null,
-    "build_story": null, "notes": null
+    "repo_url": null,
+    "repo_local_path": null,
+    "demo_url": null,
+    "intent": null,
+    "what_it_does": null,
+    "tech_stack": [],
+    "submission_files": [],
+    "screenshots": [],
+    "demo_script": null,
+    "build_story": null,
+    "notes": null
   },
-
   "last_crawled": "2026-08-28T00:10:00Z",
   "crawl_version": 1,
-
   "progress": {
     "phase": "research",
     "pct_complete": 0,
-    "blocks": ["lablab.ai is CF-walled — need manual crawl", "judging criteria unknown"],
+    "blocks": [
+      "lablab.ai is CF-walled \u2014 need manual crawl",
+      "judging criteria unknown"
+    ],
     "last_update": "2026-08-28T00:00:00Z",
     "updated_by": null
   },
-
   "tasks": [
     {
       "id": "alpaca-crawl-rules",
@@ -117,7 +152,9 @@
       "claimed_at": null,
       "priority": "critical",
       "depends_on": [],
-      "deliverables": ["data/active/alpaca-ai-trading-agents-hackathon.json (updated)"],
+      "deliverables": [
+        "data/active/alpaca-ai-trading-agents-hackathon.json (updated)"
+      ],
       "notes": null,
       "deadline": "2026-08-29T00:00:00Z",
       "estimated_hours": 1,
@@ -134,7 +171,10 @@
       "claimed_at": null,
       "priority": "high",
       "depends_on": [],
-      "deliverables": ["strategy notes", "data/active/alpaca-ai-trading-agents-hackathon.json (updated strategy_notes)"],
+      "deliverables": [
+        "strategy notes",
+        "data/active/alpaca-ai-trading-agents-hackathon.json (updated strategy_notes)"
+      ],
       "notes": null,
       "deadline": "2026-08-30T00:00:00Z",
       "estimated_hours": 2,
@@ -150,8 +190,14 @@
       "assigned_to": null,
       "claimed_at": null,
       "priority": "medium",
-      "depends_on": ["alpaca-crawl-rules", "alpaca-research-mcp"],
-      "deliverables": ["working prototype", "test results"],
+      "depends_on": [
+        "alpaca-crawl-rules",
+        "alpaca-research-mcp"
+      ],
+      "deliverables": [
+        "working prototype",
+        "test results"
+      ],
       "notes": null,
       "deadline": "2026-09-02T00:00:00Z",
       "estimated_hours": 12,
@@ -167,13 +213,40 @@
       "assigned_to": null,
       "claimed_at": null,
       "priority": "high",
-      "depends_on": ["alpaca-build-prototype"],
-      "deliverables": ["submission confirmation"],
+      "depends_on": [
+        "alpaca-build-prototype"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
       "notes": null,
       "deadline": "2026-09-04T00:00:00Z",
       "estimated_hours": 1,
       "completed_at": null,
       "output": null
+    }
+  ],
+  "human_queue": [
+    {
+      "task": "Register on lablab.ai",
+      "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "2851 already registered."
+    },
+    {
+      "task": "Get Alpaca API key",
+      "url": "https://alpaca.markets/",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "Need paper + live trading keys."
+    },
+    {
+      "task": "Join lablab Discord",
+      "url": "https://discord.gg/lablabai",
+      "deadline": "2026-08-30",
+      "done": false,
+      "note": "Community support."
     }
   ]
 }

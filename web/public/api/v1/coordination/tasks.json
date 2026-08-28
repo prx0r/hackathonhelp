@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T01:31:16.097Z",
+  "generated_at": "2026-08-28T01:59:00.486Z",
   "tasks": [
     {
       "id": "alpaca-crawl-rules",
@@ -554,10 +554,240 @@
       "output": null,
       "_slug": "opencv26-opencv26",
       "_hackathon_title": "OpenCV AI Competition 2026, powered by AWS"
+    },
+    {
+      "id": "convex-all-gas-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/convex-all-gas.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/convex-all-gas.json (updated)"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "convex-all-gas",
+      "_hackathon_title": "convex-all-gas"
+    },
+    {
+      "id": "convex-all-gas-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/convex-all-gas-refs/"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "convex-all-gas",
+      "_hackathon_title": "convex-all-gas"
+    },
+    {
+      "id": "convex-all-gas-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "convex-all-gas-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null,
+      "_slug": "convex-all-gas",
+      "_hackathon_title": "convex-all-gas"
+    },
+    {
+      "id": "convex-all-gas-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "convex-all-gas-build-setup",
+        "convex-all-gas-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null,
+      "_slug": "convex-all-gas",
+      "_hackathon_title": "convex-all-gas"
+    },
+    {
+      "id": "convex-all-gas-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "convex-all-gas-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "convex-all-gas",
+      "_hackathon_title": "convex-all-gas"
+    },
+    {
+      "id": "webmcp-challenge-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/webmcp-challenge.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/webmcp-challenge.json (updated)"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "webmcp-challenge",
+      "_hackathon_title": "webmcp-challenge"
+    },
+    {
+      "id": "webmcp-challenge-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/webmcp-challenge-refs/"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "webmcp-challenge",
+      "_hackathon_title": "webmcp-challenge"
+    },
+    {
+      "id": "webmcp-challenge-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "webmcp-challenge-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null,
+      "_slug": "webmcp-challenge",
+      "_hackathon_title": "webmcp-challenge"
+    },
+    {
+      "id": "webmcp-challenge-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "webmcp-challenge-build-setup",
+        "webmcp-challenge-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null,
+      "_slug": "webmcp-challenge",
+      "_hackathon_title": "webmcp-challenge"
+    },
+    {
+      "id": "webmcp-challenge-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "webmcp-challenge-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "webmcp-challenge",
+      "_hackathon_title": "webmcp-challenge"
     }
   ],
   "summary": {
-    "queued": 23,
+    "queued": 33,
     "claimed": 0,
     "in_progress": 0,
     "review": 0,

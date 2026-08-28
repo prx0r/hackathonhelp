@@ -62,12 +62,12 @@
       {
         "name": "Normalized Performance",
         "weight": "75%",
-        "quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent)"
+        "quote": "75 points \u2014 Normalized Performance (your score relative to the best Miner in your specific Intent)"
       },
       {
         "name": "X Engagement",
         "weight": "25%",
-        "quote": "25 points — X Engagement & Transparency"
+        "quote": "25 points \u2014 X Engagement & Transparency"
       }
     ],
     "how_to_win": [
@@ -102,15 +102,15 @@
   "tracks": [
     {
       "name": "Miner Track",
-      "description": "Build or improve a Miner — $2K pool"
+      "description": "Build or improve a Miner \u2014 $2K pool"
     },
     {
       "name": "Script Author Track",
-      "description": "Evaluation scripts — $1K pool"
+      "description": "Evaluation scripts \u2014 $1K pool"
     },
     {
       "name": "Application Track",
-      "description": "Working apps using real Miners — $2K pool"
+      "description": "Working apps using real Miners \u2014 $2K pool"
     }
   ],
   "eligibility": {
@@ -120,8 +120,8 @@
   "strategy_notes": {
     "our_entry_type": "Application Track",
     "our_endpoint": "noslop AI detection / WASM scorers on Telegraph",
-    "overlap_with_algorand": "medium — paid API pattern, but different protocol",
-    "key_insight": "75% is normalized performance — build the best Miner integration, not just a cool app"
+    "overlap_with_algorand": "medium \u2014 paid API pattern, but different protocol",
+    "key_insight": "75% is normalized performance \u2014 build the best Miner integration, not just a cool app"
   },
   "rubric": {
     "generated_from": "judging.criteria + rules page",
@@ -131,13 +131,13 @@
         "name": "Normalized Performance",
         "weight": 75,
         "description": "Your score relative to the best Miner in your specific Intent",
-        "source_quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent)",
+        "source_quote": "75 points \u2014 Normalized Performance (your score relative to the best Miner in your specific Intent)",
         "levels": {
           "0": "No working Miner integration or mocked data",
-          "25": "Working integration — Miner runs and returns results, but not competitive",
-          "50": "Top 10 in Intent — solid performance, above median",
-          "75": "Top 3 in Intent — competitive with best, consistent high scores",
-          "100": "Best Miner in your Intent — top of leaderboard, highest canonical score"
+          "25": "Working integration \u2014 Miner runs and returns results, but not competitive",
+          "50": "Top 10 in Intent \u2014 solid performance, above median",
+          "75": "Top 3 in Intent \u2014 competitive with best, consistent high scores",
+          "100": "Best Miner in your Intent \u2014 top of leaderboard, highest canonical score"
         },
         "what_we_need": "Build a Miner that ranks highest in our chosen Intent. Focus on accuracy and consistency of responses.",
         "our_score": 25,
@@ -147,7 +147,7 @@
         "name": "X Engagement",
         "weight": 25,
         "description": "Quality, consistency, reach, and meaningful engagement of updates posted on X",
-        "source_quote": "25 points — X Engagement & Transparency",
+        "source_quote": "25 points \u2014 X Engagement & Transparency",
         "levels": {
           "0": "No X presence or engagement",
           "25": "1 post, minimal engagement, checkbox exercise",
@@ -173,7 +173,7 @@
       },
       {
         "name": "Real demand",
-        "description": "Applications building on your Miner — the flywheel effect",
+        "description": "Applications building on your Miner \u2014 the flywheel effect",
         "weight": "part of normalized performance"
       }
     ],
@@ -204,7 +204,7 @@
   "sources": [
     {
       "url": "https://hackathon.telegraphprotocol.com/",
-      "quote": "SEASON I · 2026 · OPEN TO ANY DEVELOPER"
+      "quote": "SEASON I \u00b7 2026 \u00b7 OPEN TO ANY DEVELOPER"
     },
     {
       "url": "https://hackathon.telegraphprotocol.com/rules",
@@ -378,6 +378,36 @@
       "estimated_hours": 1,
       "completed_at": null,
       "output": null
+    }
+  ],
+  "human_queue": [
+    {
+      "task": "Join Telegraph Hackathon Discord",
+      "url": "https://hackathon.telegraphprotocol.com/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Required for judging. Get support."
+    },
+    {
+      "task": "Register on Telegraph platform",
+      "url": "https://hackathon.telegraphprotocol.com/",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Register early for track access."
+    },
+    {
+      "task": "Post first X update tagged @Telegraphprotoc",
+      "url": "https://x.com",
+      "deadline": "2026-09-01",
+      "done": false,
+      "note": "25% of score is X engagement. Start early."
+    },
+    {
+      "task": "Choose Intent for Miner",
+      "url": "https://hackathon.telegraphprotocol.com/supported-intents",
+      "deadline": "2026-08-31",
+      "done": false,
+      "note": "Pick an intent with few competitors."
     }
   ]
 }

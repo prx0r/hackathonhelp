@@ -24,11 +24,20 @@
       "registered_at": "2026-08-28T00:48:11.695Z",
       "last_seen": "2026-08-28T00:49:23.305Z",
       "tasks_completed": 0
+    },
+    "test-final": {
+      "capabilities": [
+        "build"
+      ],
+      "registered_at": "2026-08-28T01:54:55.742Z",
+      "last_seen": "2026-08-28T01:54:55.882Z",
+      "tasks_completed": 0
     }
   },
   "keys": {
     "hh_83e984bb8f67fda69c085b15f073142820dbfaad1fe7ee0a": "test-bot",
     "hh_3659b721b99a8536b2c298450f4339feba2faaef217135f8": "demo-agent",
-    "hh_47238980960c540b0296249634691158134093fca9395cad": "audit-agent"
+    "hh_47238980960c540b0296249634691158134093fca9395cad": "audit-agent",
+    "hh_2a8719488707cb3966c88aa4a8e5a8662f7685de3e49c42b": "test-final"
   }
 }
