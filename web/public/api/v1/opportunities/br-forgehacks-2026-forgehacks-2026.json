@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-forgehacks-2026-forgehacks-2026",
@@ -26,7 +26,7 @@
       "Lifehacks",
       "Machine Learning/AI"
     ],
-    "days_left": 49,
+    "days_left": 44,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -55,11 +55,11 @@
         "submissions_per_registration": 0.05,
         "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
       },
-      "field_status": "forming",
-      "estimated_serious_field": null,
-      "field_p10": null,
-      "field_p50": null,
-      "field_p90": null,
+      "field_status": "usable",
+      "estimated_serious_field": 12,
+      "field_p10": 8,
+      "field_p50": 12,
+      "field_p90": 19,
       "funnel": null
     },
     "slots": {
@@ -69,24 +69,24 @@
     },
     "fit": {
       "strategic_fit": 0,
-      "code_reuse": 0.1,
-      "effective_p80_hours": 36
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
       "components": {
-        "expected_prize_value": null,
-        "winnability": null,
+        "expected_prize_value": 60,
+        "winnability": 60,
         "historical_winner_quality": null,
         "judging_tractability": null,
         "organizer_quality": null
       },
-      "known_components": 0,
-      "opportunity_score": null
+      "known_components": 2,
+      "opportunity_score": 50
     },
     "metrics": {
       "equal_share_naive": 5.15,
-      "fair_share_serious": null,
-      "days_left": 49
+      "fair_share_serious": 14.58,
+      "days_left": 44
     },
     "cautions": [],
     "payout": {
@@ -96,14 +96,14 @@
         "p90": 12
       },
       "paying_slots_source": "assumed",
-      "baseline_any_payout": null,
-      "p_paid": null,
-      "ev_cash_heuristic": null,
+      "baseline_any_payout": 0.5,
+      "p_paid": 0.5,
+      "ev_cash_heuristic": 88,
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "SKIP",
-      "reason": "unscoreable",
+      "action": "WATCH",
+      "reason": "far out; latest safe start 2026-09-29",
       "feasibility": 1,
       "feasibility_label": "14d+",
       "latest_safe_start": "2026-09-29",
@@ -115,15 +115,15 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 900
+      "opportunity_cost_usd": 850
     },
     "mega": null,
-    "order_key": -100,
+    "order_key": 20045,
     "attention": -1,
     "attention_breakdown": {
-      "action": "SKIP",
-      "score": null,
-      "formula": "SKIP - unscoreable"
+      "action": "WATCH",
+      "score": 50,
+      "formula": "WATCH - far out; latest safe start 2026-09-29"
     }
   },
   "links": {

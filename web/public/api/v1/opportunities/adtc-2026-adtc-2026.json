@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-adtc-2026-adtc-2026",
@@ -32,18 +32,20 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:50.629Z",
-    "days_left": 3,
+    "days_left": -2,
     "gates": {
-      "registration_open": true,
-      "deadline_future": true,
+      "registration_open": false,
+      "deadline_future": false,
       "remote_ok": true,
       "age_confirmed": null,
       "student_only": false,
       "country_restricted": null
     },
     "eligibility": {
-      "eligible": true,
-      "failed": [],
+      "eligible": false,
+      "failed": [
+        "deadline passed"
+      ],
       "confidence": "platform_metadata_unverified",
       "notes": null
     },
@@ -74,25 +76,17 @@
       "p90": 12
     },
     "fit": {
-      "strategic_fit": 0,
-      "code_reuse": 0.1,
-      "effective_p80_hours": 36
+      "strategic_fit": 0.3,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
-      "components": {
-        "expected_prize_value": 92,
-        "winnability": 43,
-        "historical_winner_quality": null,
-        "judging_tractability": null,
-        "organizer_quality": null
-      },
-      "known_components": 2,
-      "opportunity_score": 61
+      "opportunity_score": null
     },
     "metrics": {
       "equal_share_naive": 9.24,
       "fair_share_serious": 185.39,
-      "days_left": 3
+      "days_left": -2
     },
     "cautions": [],
     "payout": {
@@ -109,11 +103,11 @@
     },
     "decision": {
       "action": "SKIP",
-      "reason": "window reached, opportunity weak",
-      "feasibility": 0.45,
-      "feasibility_label": "2-3d",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.1,
+      "feasibility_label": "<1d",
       "latest_safe_start": "2026-08-14",
-      "p_finish_proxy": 0.45,
+      "p_finish_proxy": 0.1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -121,21 +115,15 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 900
+      "opportunity_cost_usd": 850
     },
-    "mega": {
-      "score": 35,
-      "reasons": [
-        "$185.39 normalized prize per estimated submission"
-      ],
-      "category": "value_competition_gap"
-    },
-    "order_key": -30.1,
+    "mega": null,
+    "order_key": -100,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 61,
-      "formula": "SKIP - window reached, opportunity weak"
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
     }
   },
   "links": {

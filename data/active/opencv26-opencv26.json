@@ -1,0 +1,215 @@
+{
+  "slug": "opencv26-opencv26",
+  "title": "OpenCV AI Competition 2026, powered by AWS",
+  "url": "https://opencv26.devpost.com/",
+  "rules_url": null,
+  "status": "active",
+  "added_at": "2026-08-28T00:16:35.952Z",
+  "timeline": {
+    "opens": "2026-08-26T00:00:00.000Z",
+    "build_deadline": "2026-10-27T23:59:00.000Z",
+    "measurement_window": null,
+    "finals": null,
+    "finals_location": null
+  },
+  "prizes": {
+    "total_usd": 12000,
+    "breakdown": [],
+    "leaderboard_pool": null
+  },
+  "judging": {
+    "criteria": [],
+    "how_to_win": [],
+    "leaderboard_formula": null
+  },
+  "submission": {
+    "types": [],
+    "checklist": [],
+    "required_tech": [
+      "IoT",
+      "Machine Learning/AI",
+      "Serverless"
+    ],
+    "submission_url": "https://opencv26.devpost.com/"
+  },
+  "tracks": [],
+  "eligibility": {
+    "open_to_all": true,
+    "notes": null
+  },
+  "strategy_notes": {
+    "our_entry_type": null,
+    "our_endpoint": null,
+    "key_insight": null
+  },
+  "sources": [
+    {
+      "url": "https://opencv26.devpost.com/",
+      "quote": "OpenCV AI Competition 2026, powered by AWS"
+    }
+  ],
+
+  "rubric": {
+    "generated_from": "Devpost page (needs rules page verification)",
+    "track": "IoT / ML / Serverless",
+    "criteria": [
+      {
+        "name": "Technical Complexity",
+        "weight": 35,
+        "description": "Sophistication of the implementation",
+        "levels": {"100": "Advanced ML pipeline, edge deployment", "50": "Working model integration", "25": "Basic API call", "0": "No technical depth"},
+        "what_we_need": "Computer vision + edge deployment = our sweet spot.",
+        "our_score": null, "our_notes": null
+      },
+      {
+        "name": "Innovation",
+        "weight": 30,
+        "description": "Novel application of OpenCV/AI",
+        "levels": {"100": "New use case or approach", "50": "Creative twist", "25": "Standard application", "0": "Trivial"},
+        "what_we_need": "Verification/evidence angle — using CV for trust, not just detection.",
+        "our_score": null, "our_notes": null
+      },
+      {
+        "name": "Completeness",
+        "weight": 20,
+        "description": "Working end-to-end, polished",
+        "levels": {"100": "Production-ready", "50": "Working demo", "25": "Partial", "0": "Broken"},
+        "what_we_need": "Working demo with clear output.",
+        "our_score": null, "our_notes": null
+      },
+      {
+        "name": "Presentation",
+        "weight": 15,
+        "description": "Demo quality, documentation",
+        "levels": {"100": "Compelling video", "50": "Good walkthrough", "25": "Basic", "0": "None"},
+        "what_we_need": "Clean demo video.",
+        "our_score": null, "our_notes": null
+      }
+    ],
+    "disqualifiers": [],
+    "total_possible": 100, "our_total_score": null, "our_confidence": null
+  },
+
+  "project": {
+    "repo_url": null, "repo_local_path": null, "demo_url": null,
+    "intent": null, "what_it_does": null, "tech_stack": [],
+    "submission_files": [], "screenshots": [], "demo_script": null,
+    "build_story": null, "notes": "Deadline Oct 27 — low priority, long runway"
+  },
+  "last_crawled": "2026-08-28T00:16:35.952Z",
+  "crawl_version": 0,
+  "progress": {
+    "phase": "research",
+    "pct_complete": 0,
+    "blocks": [],
+    "last_update": "2026-08-28T00:16:35.952Z",
+    "updated_by": null
+  },
+  "tasks": [
+    {
+      "id": "opencv26-opencv26-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/opencv26-opencv26.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/opencv26-opencv26.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-10-20T23:59:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "opencv26-opencv26-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/opencv26-opencv26-refs/"
+      ],
+      "notes": null,
+      "deadline": "2026-10-22T23:59:00.000Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "opencv26-opencv26-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "opencv26-opencv26-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": "2026-10-23T23:59:00.000Z",
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "opencv26-opencv26-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "opencv26-opencv26-build-setup",
+        "opencv26-opencv26-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": "2026-10-25T23:59:00.000Z",
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "opencv26-opencv26-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "opencv26-opencv26-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": "2026-10-27T22:59:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    }
+  ]
+}

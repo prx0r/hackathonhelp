@@ -1,23 +1,52 @@
 {
-  "specialism": "agent reliability and evaluation",
-  "thesis_tags": ["evaluation","verification","evidence","routing","benchmarks","provenance","observability","agents","api","machine-intelligence","vision-verification"],
+  "github": "prx0r",
+  "github_url": "https://github.com/prx0r",
+  "specialism": "agentic systems, evolution kernels, verification pipelines",
+  "thesis_tags": ["agents", "evaluation", "verification", "evidence", "evolution", "optimization", "api", "machine-intelligence", "payments", "blockchain", "deals", "automation"],
   "skills": {
-    "agent_evaluation":0.8,"evidence_systems":0.9,"rust_wasm":0.4,
-    "computer_vision":0.15,"aws":0.3,"benchmark_harness":0.75
+    "agent_architecture": 0.9,
+    "evolution_optimization": 0.85,
+    "verification_evidence": 0.9,
+    "api_design": 0.8,
+    "web_development": 0.7,
+    "blockchain_web3": 0.6,
+    "data_pipeline": 0.8,
+    "typescript": 0.7,
+    "python": 0.9,
+    "rust": 0.5,
+    "javascript": 0.75
   },
   "assets": [
-    {"name":"QDW adversarial verification","tags":["evaluation","adversarial","verification"]},
-    {"name":"Dell2 atomic claims/evidence","tags":["evidence","claims","provenance"]},
-    {"name":"Dell contextual routing","tags":["routing"]},
-    {"name":"llmdeals deterministic economics engine","tags":["normalization","pricing"]}
+    {"name": "get-me-money", "tags": ["agents", "earning", "evaluation", "verification"], "lang": "Python"},
+    {"name": "cge1/cge/cg", "tags": ["evolution", "optimization", "adversarial"], "lang": "Python"},
+    {"name": "finalbuilds2", "tags": ["agents", "factory", "automation", "deployment"], "lang": "JavaScript"},
+    {"name": "dell2", "tags": ["deals", "verification", "pipeline"], "lang": "Python"},
+    {"name": "agentseolab", "tags": ["agents", "seo", "evaluation"], "lang": "Python"},
+    {"name": "cancelme", "tags": ["agents", "automation", "subscription"], "lang": "HTML"},
+    {"name": "hackathonhelp", "tags": ["hackathons", "intelligence", "coordination"], "lang": "HTML"},
+    {"name": "x402-endpoints", "tags": ["blockchain", "payments", "algorand", "api"], "lang": "TypeScript"},
+    {"name": "unbundled", "tags": ["thesis", "platform", "capability"], "lang": "Python"},
+    {"name": "onething", "tags": ["web", "utility", "product"], "lang": "Astro"}
   ],
   "reuse_by_event": {
-    "telegraph-h1":0.55,
-    "alpaca-ai-trading-agents-hackathon":0.35,
-    "opencv26-opencv26":0.45,
-    "boss-battle-bitshala":0.40,
-    "ibm-bob-2-hackathon":0.30,
-    "_default":0.10
+    "telegraph-h1": 0.55,
+    "alpaca-ai-trading-agents-hackathon": 0.40,
+    "algorand-x402-challenge": 0.70,
+    "ethonline-2026": 0.50,
+    "api-cloud-ai-hackathon-2026": 0.45,
+    "opencv26-opencv26": 0.35,
+    "_default": 0.15
   },
-  "shadow_hour_value_usd": 25
+  "shadow_hour_value_usd": 25,
+  "last_crawled": "2026-08-28T01:30:00Z",
+  "repo_count": 98,
+  "languages": ["Python", "TypeScript", "JavaScript", "Rust", "Astro"],
+  "active_projects": [
+    "hackathonhelp",
+    "get-me-money",
+    "x402-endpoints",
+    "finalbuilds2",
+    "cge1",
+    "cancelme"
+  ]
 }

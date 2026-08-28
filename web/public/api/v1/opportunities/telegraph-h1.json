@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-telegraph-h1",
@@ -41,7 +41,7 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
-    "days_left": 8,
+    "days_left": 3,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -248,7 +248,7 @@
     "metrics": {
       "equal_share_naive": null,
       "fair_share_serious": null,
-      "days_left": 8
+      "days_left": 3
     },
     "cautions": [
       "prize not published on platform card — see official page"
@@ -266,12 +266,12 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "SPRINT",
-      "reason": "tight but real (7-10d finish prior 90%)",
-      "feasibility": 0.9,
-      "feasibility_label": "7-10d",
+      "action": "ENTER NOW",
+      "reason": "latest-safe-start reached — commit now or skip",
+      "feasibility": 0.45,
+      "feasibility_label": "2-3d",
       "latest_safe_start": "2026-08-31",
-      "p_finish_proxy": 0.9,
+      "p_finish_proxy": 0.45,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -282,12 +282,12 @@
       "opportunity_cost_usd": 450
     },
     "mega": null,
-    "order_key": 35068.4,
-    "attention": 35068.4,
+    "order_key": 40068.4,
+    "attention": 40068.4,
     "attention_breakdown": {
-      "action": "SPRINT",
+      "action": "ENTER NOW",
       "score": 76,
-      "formula": "SPRINT - tight but real (7-10d finish prior 90%)"
+      "formula": "ENTER NOW - latest-safe-start reached — commit now or skip"
     }
   },
   "links": {

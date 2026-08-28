@@ -1,0 +1,264 @@
+---
+import Base from '../../layouts/Base.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths(){
+  const activeDir = path.resolve(new URL(import.meta.url).pathname, '../../data/active');
+  const files = fs.readdirSync(activeDir).filter(f => f.endsWith('.json') && !f.startsWith('_'));
+  const active = files.map(f => {
+    const raw = fs.readFileSync(path.join(activeDir, f), 'utf8');
+    return JSON.parse(raw);
+  });
+  return active.map(h => ({params:{slug:h.slug}, props:{hackathon:h}}));
+}
+
+const { hackathon: h } = Astro.props;
+const t = h.timeline || {};
+const j = h.judging || {};
+const s = h.submission || {};
+const pr = h.prizes || {};
+const strat = h.strategy_notes || {};
+const tech = h.technical || {};
+const elig = h.eligibility || {};
+
+function esc(x){ return String(x??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function fmtDate(d){ return d ? new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : '—'; }
+
+const statusColors = {active:'#86efac',submitted:'#93c5fd',finalist:'#fdba74',won:'#86efac',lost:'#fca5a5',dropped:'var(--text-dim)'};
+const statusColor = statusColors[h.status] || 'var(--text-dim)';
+
+// Days until registration closes
+const regClose = t.registration_closes ? Math.ceil((new Date(t.registration_closes) - Date.now()) / 86400000) : null;
+const buildClose = t.build_deadline ? Math.ceil((new Date(t.build_deadline) - Date.now()) / 86400000) : null;
+---
+<Base title={`${h.title} - Active - HackathonHelp`}>
+  <a href="/active" class="back">← Active hackathons</a>
+
+  <section class="head">
+    <div class="provider-line">
+      <span class="status-dot" style={`background:${statusColor}`}></span>
+      <span style={`color:${statusColor};font-weight:700;text-transform:uppercase;font-size:11px`}>{h.status}</span>
+      {h.added_at && <span class="conf">· added {fmtDate(h.added_at)}</span>}
+    </div>
+    <h1>{h.title}</h1>
+    <div class="badges">
+      <a class="register-btn" href={h.url} target="_blank" rel="noopener">Official page ↗</a>
+      {h.rules_url && <a class="rules-btn" href={h.rules_url} target="_blank" rel="noopener">Rules PDF ↗</a>}
+      {regClose != null && regClose > 0 && <span class="pill">{regClose}d to register</span>}
+      {buildClose != null && buildClose > 0 && <span class="pill">{buildClose}d to build</span>}
+    </div>
+  </section>
+
+  {/* Timeline */}
+  <section class="panel">
+    <div class="label">Timeline</div>
+    <div class="timeline-grid">
+      {t.opens && <div class="tl-item"><div class="tl-date">{fmtDate(t.opens)}</div><div class="tl-label">Opens</div></div>}
+      {t.registration_closes && <div class="tl-item tl-urgent"><div class="tl-date">{fmtDate(t.registration_closes)}</div><div class="tl-label">Registration closes</div></div>}
+      {t.build_deadline && <div class="tl-item"><div class="tl-date">{fmtDate(t.build_deadline)}</div><div class="tl-label">Build deadline</div></div>}
+      {t.measurement_window && <div class="tl-item"><div class="tl-date">{esc(t.measurement_window)}</div><div class="tl-label">Leaderboard measurement</div></div>}
+      {t.finals && <div class="tl-item"><div class="tl-date">{fmtDate(t.finals)}{t.finals_location ? ` · ${esc(t.finals_location)}` : ''}</div><div class="tl-label">Finals</div></div>}
+      {t.winners_announced && <div class="tl-item"><div class="tl-date">{fmtDate(t.winners_announced)}</div><div class="tl-label">Winners announced</div></div>}
+    </div>
+  </section>
+
+  {/* Prizes */}
+  {pr.total_usd && (
+  <section class="panel">
+    <div class="label">Prizes</div>
+    <div class="prize-hero">
+      <span class="prize-big">${pr.total_usd.toLocaleString()}</span>
+      {pr.total_algo && <span class="prize-algo">+ {pr.total_algo.toLocaleString()} ALGO</span>}
+    </div>
+    {pr.breakdown?.length > 0 && (
+      <table class="math" style="margin-top:12px">
+        {pr.breakdown.map((p:any) => (
+          <tr>
+            <td>{esc(p.rank)}</td>
+            <td>{p.usd ? '$'+p.usd.toLocaleString() : p.algo ? p.algo.toLocaleString()+' ALGO' : '—'}</td>
+          </tr>
+        ))}
+      </table>
+    )}
+    {pr.leaderboard_pool && <p class="mathnote" style="margin-top:8px">{esc(pr.leaderboard_pool)}</p>}
+  </section>
+  )}
+
+  {/* How to win */}
+  {j.how_to_win?.length > 0 && (
+  <section class="panel verdict">
+    <div class="label">How to win</div>
+    <ol class="win-steps">
+      {j.how_to_win.map((step:string) => <li>{esc(step)}</li>)}
+    </ol>
+  </section>
+  )}
+
+  {/* Judging criteria */}
+  {j.criteria?.length > 0 && (
+  <section class="panel">
+    <div class="label">Judging criteria (equal weight)</div>
+    <div class="criteria-grid">
+      {j.criteria.map((c:any) => (
+        <div class="criterion">
+          <div class="criterion-name">{esc(c.name)}</div>
+          {c.quote && <div class="criterion-quote">"{esc(c.quote)}"</div>}
+        </div>
+      ))}
+    </div>
+    {j.leaderboard_formula && <p class="mathnote" style="margin-top:10px"><strong>Leaderboard:</strong> {esc(j.leaderboard_formula)}</p>}
+    {j.anti_fraud && <p class="mathnote" style="margin-top:6px;color:var(--orange)">{esc(j.anti_fraud)}</p>}
+  </section>
+  )}
+
+  {/* Submission checklist */}
+  {s.checklist?.length > 0 && (
+  <section class="panel">
+    <div class="label">Submission checklist</div>
+    <ul class="checklist">
+      {s.checklist.map((item:string) => <li>{esc(item)}</li>)}
+    </ul>
+    {s.types?.length > 0 && <p class="mathnote" style="margin-top:10px"><strong>Entry types:</strong> {s.types.map(esc).join(' · ')}</p>}
+    {s.required_tech?.length > 0 && <p class="mathnote"><strong>Required tech:</strong> {s.required_tech.map(esc).join(' · ')}</p>}
+    {s.submission_form && <p class="mathnote" style="margin-top:6px;color:var(--orange)">{esc(s.submission_form)}</p>}
+  </section>
+  )}
+
+  {/* Tracks */}
+  {h.tracks?.length > 0 && (
+  <section class="panel">
+    <div class="label">Tracks</div>
+    <div class="tracks-grid">
+      {h.tracks.map((tr:any) => (
+        <div class="track-card">
+          <div class="track-name">{esc(tr.name)}</div>
+          <div class="track-desc">{esc(tr.description)}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+  )}
+
+  {/* Technical config */}
+  {Object.keys(tech).length > 0 && (
+  <section class="panel">
+    <div class="label">Technical config</div>
+    <table class="math">
+      {tech.network && <tr><td>Network</td><td>{esc(tech.network)}</td></tr>}
+      {tech.usdc_asa && <tr><td>USDC ASA</td><td>{esc(tech.usdc_asa)}</td></tr>}
+      {tech.facilitator_url && <tr><td>Facilitator</td><td><a href={tech.facilitator_url} target="_blank" rel="noopener">{esc(tech.facilitator_url)}</a></td></tr>}
+      {tech.leaderboard_url && <tr><td>Leaderboard</td><td><a href={tech.leaderboard_url} target="_blank" rel="noopener">{esc(tech.leaderboard_url)}</a></td></tr>}
+      {tech.bazaar_url && <tr><td>Bazaar</td><td><a href={tech.bazaar_url} target="_blank" rel="noopener">{esc(tech.bazaar_url)}</a></td></tr>}
+      {tech.developer_guide && <tr><td>Developer guide</td><td><a href={tech.developer_guide} target="_blank" rel="noopener">{esc(tech.developer_guide)}</a></td></tr>}
+      {tech.reference_server && <tr><td>Reference server</td><td><a href={tech.reference_server} target="_blank" rel="noopener">GitHub ↗</a></td></tr>}
+      {tech.agent_skills && <tr><td>Agent skills</td><td><a href={tech.agent_skills} target="_blank" rel="noopener">GitHub ↗</a></td></tr>}
+    </table>
+  </section>
+  )}
+
+  {/* Eligibility */}
+  {Object.keys(elig).length > 0 && (
+  <section class="panel">
+    <div class="label">Eligibility</div>
+    <table class="math">
+      <tr><td>Open to all</td><td>{elig.open_to_all ? 'YES' : 'NO'}</td></tr>
+      {elig.age_requirement && <tr><td>Age</td><td>{esc(elig.age_requirement)}</td></tr>}
+      {elig.team_size && <tr><td>Team</td><td>{esc(elig.team_size)}</td></tr>}
+      {elig.ip && <tr><td>IP</td><td>{esc(elig.ip)}</td></tr>}
+    </table>
+    {elig.excluded_jurisdictions?.length > 0 && (
+      <p class="mathnote" style="margin-top:8px;color:var(--orange)">Excluded: {elig.excluded_jurisdictions.map(esc).join(', ')}</p>
+    )}
+    {elig.notes && <p class="mathnote" style="margin-top:6px">{esc(elig.notes)}</p>}
+  </section>
+  )}
+
+  {/* Strategy notes */}
+  {Object.keys(strat).length > 0 && (
+  <section class="panel strategy-panel">
+    <div class="label">Strategy notes</div>
+    <table class="math">
+      {strat.our_entry_type && <tr><td>Entry type</td><td>{esc(strat.our_entry_type)}</td></tr>}
+      {strat.our_endpoint && <tr><td>Our endpoint</td><td>{esc(strat.our_endpoint)}</td></tr>}
+      {strat.key_insight && <tr class="hl"><td>Key insight</td><td>{esc(strat.key_insight)}</td></tr>}
+      {Object.entries(strat).filter(([k])=>k.startsWith('overlap_')).map(([k,v]) => (
+        <tr><td>{esc(k.replace('overlap_with_','overlap → '))}</td><td>{esc(String(v))}</td></tr>
+      ))}
+    </table>
+  </section>
+  )}
+
+  {/* Sources */}
+  {h.sources?.length > 0 && (
+  <section class="panel">
+    <div class="label">Sources</div>
+    {h.sources.map((src:any) => (
+      <div class="source-item">
+        <a href={src.url} target="_blank" rel="noopener" class="src-url">{esc(src.url)}</a>
+        {src.quote && <div class="src-quote">"{esc(src.quote)}"</div>}
+      </div>
+    ))}
+    {h.last_crawled && <div class="observed">Last crawled: {fmtDate(h.last_crawled)} · v{h.crawl_version}</div>}
+  </section>
+  )}
+</Base>
+
+<style>
+  .back{font-size:13px;color:var(--text-dim);display:inline-block;margin-bottom:20px}
+  .provider-line{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:8px}
+  .status-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+  h1{font-size:clamp(24px,4vw,36px);letter-spacing:-.03em}
+  .badges{display:flex;gap:12px;align-items:center;margin-top:10px;flex-wrap:wrap}
+  .conf{color:var(--text-dim);font-size:12px}
+  .register-btn{background:var(--accent);color:#431407 !important;font-weight:800;font-size:12px;padding:6px 14px;border-radius:8px;text-decoration:none !important}
+  .rules-btn{background:rgba(59,130,246,.15);color:var(--blue) !important;font-weight:700;font-size:12px;padding:6px 14px;border-radius:8px;text-decoration:none !important}
+  .pill{background:rgba(148,163,163,.15);color:var(--text-dim);padding:4px 10px;border-radius:6px;font-size:12px;font-weight:600}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:14px}
+  .label{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--accent);margin-bottom:8px}
+  .verdict p{font-size:15px;line-height:1.6;color:var(--text)}
+  .math td{padding:5px 0;font-size:13px;color:var(--text-muted)}
+  .math td:last-child{text-align:right;color:var(--text);font-variant-numeric:tabular-nums;font-weight:600}
+  .math tr.hl td{color:var(--accent);font-weight:800}
+  .mathnote{font-size:13px;color:var(--text-muted);line-height:1.6}
+  .observed{font-size:11px;color:var(--text-dim);margin-top:6px}
+
+  .timeline-grid{display:flex;gap:16px;flex-wrap:wrap}
+  .tl-item{flex:1;min-width:140px;background:rgba(255,255,255,.03);border-radius:8px;padding:12px}
+  .tl-urgent{border:1px solid rgba(249,115,22,.3);background:rgba(249,115,22,.08)}
+  .tl-date{font-size:14px;font-weight:700;color:var(--text);margin-bottom:2px}
+  .tl-label{font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.04em}
+
+  .prize-hero{display:flex;align-items:baseline;gap:12px}
+  .prize-big{font-size:36px;font-weight:900;color:var(--accent);letter-spacing:-.03em}
+  .prize-algo{font-size:18px;font-weight:700;color:var(--text-muted)}
+
+  .win-steps{margin:0;padding-left:20px;counter-reset:step}
+  .win-steps li{font-size:14px;color:var(--text);margin-bottom:8px;line-height:1.5;list-style:decimal}
+  .win-steps li::marker{color:var(--accent);font-weight:800}
+
+  .criteria-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .criterion{background:rgba(255,255,255,.03);border-radius:8px;padding:14px}
+  .criterion-name{font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px}
+  .criterion-quote{font-size:12px;color:var(--text-muted);font-style:italic;line-height:1.5}
+
+  .checklist{margin:0;padding-left:20px}
+  .checklist li{font-size:13px;color:var(--text-muted);margin-bottom:6px;line-height:1.5;list-style:none;position:relative;padding-left:22px}
+  .checklist li::before{content:'☐';position:absolute;left:0;color:var(--accent)}
+
+  .tracks-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .track-card{background:rgba(255,255,255,.03);border-radius:8px;padding:14px}
+  .track-name{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:4px}
+  .track-desc{font-size:12px;color:var(--text-muted);line-height:1.5}
+
+  .strategy-panel{border-color:rgba(34,197,94,.3);background:linear-gradient(135deg,rgba(34,197,94,.05),rgba(59,130,246,.03))}
+
+  .source-item{margin-bottom:10px}
+  .src-url{font-size:12px;font-weight:600}
+  .src-quote{font-size:12px;color:var(--text-muted);font-style:italic;margin-top:3px;padding-left:12px;border-left:2px solid var(--border)}
+
+  @media(max-width:700px){
+    .criteria-grid,.tracks-grid{grid-template-columns:1fr}
+    .timeline-grid{flex-direction:column}
+  }
+</style>

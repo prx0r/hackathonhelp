@@ -446,13 +446,7 @@ fs.writeFileSync(path.join(ROOT,'web/public/rss.xml'),
 ${rssItems}
 </channel></rss>`);
 
-// sitemap
-const urls=['/','/opps','/changes','/methodology','/api',...rows.map(r=>'/opps/'+r.slug)];
-fs.writeFileSync(path.join(ROOT,'web/public/sitemap.xml'),
-`<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u=>`<url><loc>https://hackathonhelp.pages.dev${u}</loc></url>`).join('\n')}
-</urlset>`);
+// sitemap — written after active section (needs activeSlugs)
 
 // ---------- PORTFOLIO PLANNER (v0.3) ----------
 // Chain value: consecutive events with overlapping requirements make each next
@@ -500,9 +494,81 @@ payload.portfolio=portfolio;
 fs.writeFileSync(path.join(ROOT,'web/public/api/v1/portfolio.json'), JSON.stringify(portfolio,null,2));
 fs.writeFileSync(path.join(ROOT,'web/src/data/derived.json'), JSON.stringify(payload,null,2)); // refresh with portfolio
 
+// ---------- ACTIVE HACKATHONS ----------
+const ACTIVE_DIR=path.join(ROOT,'data/active');
+const activeSelected=JSON.parse(fs.readFileSync(path.join(ACTIVE_DIR,'selected.json'),'utf8'));
+const activeSlugs=activeSelected.selected||[];
+const activeHackathons=[];
+for(const slug of activeSlugs){
+  const f=path.join(ACTIVE_DIR,`${slug}.json`);
+  if(fs.existsSync(f)){
+    try{ activeHackathons.push(JSON.parse(fs.readFileSync(f,'utf8'))); }catch{}
+  }
+}
+// Write active API endpoints
+const activeApiDir=path.join(ROOT,'web/public/api/v1/active');
+fs.mkdirSync(activeApiDir,{recursive:true});
+fs.writeFileSync(path.join(activeApiDir,'index.json'),JSON.stringify({
+  generated_at:payload.generated_at,
+  schema_version:'hackathonhelp.active.v1',
+  count:activeHackathons.length,
+  selected:activeSlugs,
+  oncoming:activeSelected.oncoming||[],
+  hackathons:activeHackathons
+},null,2));
+for(const h of activeHackathons){
+  fs.writeFileSync(path.join(activeApiDir,`${h.slug}.json`),JSON.stringify({
+    schema_version:'hackathonhelp.active.v1',
+    generated_at:payload.generated_at,
+    hackathon:h
+  },null,2));
+}
+
+// ---------- COORDINATION API ----------
+const COORD_DIR=path.join(ROOT,'data/coordination');
+const hubPath=path.join(COORD_DIR,'hub.json');
+if(fs.existsSync(hubPath)){
+  const hub=JSON.parse(fs.readFileSync(hubPath,'utf8'));
+  // Enrich hub with live task data from active files
+  const allTasks=[];
+  const taskSummary={queued:0,claimed:0,in_progress:0,review:0,done:0,blocked:0};
+  for(const h of activeHackathons){
+    if(h.tasks){
+      for(const t of h.tasks){
+        allTasks.push({...t,_slug:h.slug,_hackathon_title:h.title});
+        taskSummary[t.status]=(taskSummary[t.status]||0)+1;
+      }
+    }
+  }
+  const coordPayload={
+    generated_at:payload.generated_at,
+    schema_version:'hackathonhelp.coordination.v1',
+    hub,
+    all_tasks:allTasks,
+    task_summary:taskSummary,
+    agents:Object.entries(hub.agents||{}).map(([id,a])=>({id,...a})),
+    conflicts:hub.conflicts||[],
+    recent_completions:hub.recent_completions||[],
+  };
+  const coordApiDir=path.join(ROOT,'web/public/api/v1/coordination');
+  fs.mkdirSync(coordApiDir,{recursive:true});
+  fs.writeFileSync(path.join(coordApiDir,'index.json'),JSON.stringify(coordPayload,null,2));
+  fs.writeFileSync(path.join(coordApiDir,'hub.json'),JSON.stringify({generated_at:payload.generated_at,...hub},null,2));
+  fs.writeFileSync(path.join(coordApiDir,'tasks.json'),JSON.stringify({generated_at:payload.generated_at,tasks:allTasks,summary:taskSummary},null,2));
+}
+
+// sitemap (after active section for activeSlugs)
+const activePages=['/active',...activeSlugs.map(s=>'/active/'+s)];
+const urls=['/','/opps','/changes','/methodology','/api',...activePages,...rows.map(r=>'/opps/'+r.slug),'/active/coordination'];
+fs.writeFileSync(path.join(ROOT,'web/public/sitemap.xml'),
+`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map(u=>`<url><loc>https://hackathonhelp.pages.dev${u}</loc></url>`).join('\n')}
+</urlset>`);
+
 // api docs payload for /api page
 fs.writeFileSync(path.join(ROOT,'web/src/data/apidocs.json'), JSON.stringify({generated_at:payload.generated_at,endpoints:[
-  {path:'/api/v1/top.json'},{path:'/api/v1/opportunities.json'},{path:'/api/v1/opportunities/<slug>.json'},{path:'/api/v1/changes.json'},{path:'/rss.xml'},{path:'/sitemap.xml'}
+  {path:'/api/v1/top.json'},{path:'/api/v1/opportunities.json'},{path:'/api/v1/opportunities/<slug>.json'},{path:'/api/v1/changes.json'},{path:'/api/v1/active/index.json'},{path:'/api/v1/active/<slug>.json'},{path:'/api/v1/coordination/index.json'},{path:'/api/v1/coordination/hub.json'},{path:'/api/v1/coordination/tasks.json'},{path:'/rss.xml'},{path:'/sitemap.xml'}
 ],fields:FIELD_DOCS},null,2));
 
 rows.forEach(r=>{ if(r.metrics.days_left==null) r.cautions=[...(r.cautions||[]),'deadline not published']; });

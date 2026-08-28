@@ -1,14 +1,14 @@
 {
-  "specialism": "agent reliability and evaluation",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "specialism": "agentic systems, evolution kernels, verification pipelines",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "path": [
     {
       "step": 1,
       "slug": "telegraph-h1",
       "title": "Telegraph H1 Hackathon",
-      "action": "SPRINT",
+      "action": "ENTER NOW",
       "deadline": "2026-09-07",
-      "days_left": 8,
+      "days_left": 3,
       "opportunity_score": 76,
       "strategic_fit": 1,
       "effective_p80_hours": 18,
@@ -16,39 +16,124 @@
     },
     {
       "step": 2,
+      "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "action": "SPRINT",
+      "deadline": "2026-09-03T23:59:00.000Z",
+      "days_left": 7,
+      "opportunity_score": 66,
+      "strategic_fit": 0.52,
+      "effective_p80_hours": 22,
+      "unique_work_remaining": "0 hard requirements"
+    },
+    {
+      "step": 3,
+      "slug": "volthacks-volthacks",
+      "title": "VoltHacks",
+      "action": "SPRINT",
+      "deadline": "2026-09-05T23:59:00.000Z",
+      "days_left": 9,
+      "opportunity_score": 65,
+      "strategic_fit": 0.3,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "0 hard requirements"
+    },
+    {
+      "step": 4,
+      "slug": "prometheus-september-ai-2-prometheus-september-ai-2",
+      "title": "Prometheus September AI Challenge 2",
+      "action": "WATCH",
+      "deadline": "2026-09-12T23:59:00.000Z",
+      "days_left": 16,
+      "opportunity_score": 59,
+      "strategic_fit": 0.3,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "2 hard requirements"
+    },
+    {
+      "step": 5,
+      "slug": "nextstep2026-nextstep2026",
+      "title": "NextStep Hacks 2026",
+      "action": "WATCH",
+      "deadline": "2026-09-13T23:59:00.000Z",
+      "days_left": 17,
+      "opportunity_score": 59,
+      "strategic_fit": 0.3,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "0 hard requirements"
+    },
+    {
+      "step": 6,
+      "slug": "agentsforhumans-agentsforhumans",
+      "title": "Agents for Humans Hackathon",
+      "action": "WATCH",
+      "deadline": "2026-09-14T23:59:00.000Z",
+      "days_left": 18,
+      "opportunity_score": 59,
+      "strategic_fit": 0.52,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "3 hard requirements"
+    },
+    {
+      "step": 7,
       "slug": "ethonline-2026",
       "title": "ETHOnline 2026",
       "action": "PREP",
       "deadline": "2026-09-16",
-      "days_left": 24,
+      "days_left": 19,
       "opportunity_score": 85,
-      "strategic_fit": 0.74,
-      "effective_p80_hours": 36,
+      "strategic_fit": 0.96,
+      "effective_p80_hours": 20,
       "unique_work_remaining": "per official page"
     },
     {
-      "step": 3,
-      "slug": "amd-developer-hackathon-act-iii",
-      "title": "AMD Developer Hackathon: ACT III",
-      "action": "WATCH",
-      "deadline": "2026-10-17",
-      "days_left": 55,
-      "opportunity_score": 78,
-      "strategic_fit": 0.44,
-      "effective_p80_hours": 36,
-      "unique_work_remaining": "per official page"
+      "step": 8,
+      "slug": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
+      "title": "AI Builders Hackathon",
+      "action": "PREP",
+      "deadline": "2026-09-15T23:59:00.000Z",
+      "days_left": 19,
+      "opportunity_score": 65,
+      "strategic_fit": 0.3,
+      "effective_p80_hours": 34,
+      "unique_work_remaining": "0 hard requirements"
     }
   ],
   "reuse_between": [
     {
       "from": "telegraph-h1",
+      "to": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "reuse_pct": 40
+    },
+    {
+      "from": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "to": "volthacks-volthacks",
+      "reuse_pct": 55
+    },
+    {
+      "from": "volthacks-volthacks",
+      "to": "prometheus-september-ai-2-prometheus-september-ai-2",
+      "reuse_pct": 65
+    },
+    {
+      "from": "prometheus-september-ai-2-prometheus-september-ai-2",
+      "to": "nextstep2026-nextstep2026",
+      "reuse_pct": 65
+    },
+    {
+      "from": "nextstep2026-nextstep2026",
+      "to": "agentsforhumans-agentsforhumans",
+      "reuse_pct": 55
+    },
+    {
+      "from": "agentsforhumans-agentsforhumans",
       "to": "ethonline-2026",
       "reuse_pct": 40
     },
     {
       "from": "ethonline-2026",
-      "to": "amd-developer-hackathon-act-iii",
-      "reuse_pct": 40
+      "to": "ai-builders-hackathon-2026-ai-builders-hackathon-2026",
+      "reuse_pct": 25
     }
   ]
 }

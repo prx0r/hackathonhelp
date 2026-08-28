@@ -26,11 +26,53 @@ Data: data/seed.json (single source) → scripts/build-data.mjs → derived JSON
 ## Daily/weekly loop
 ```
 node scripts/fetch-opportunities.mjs     # devpost + brabble + manual → seed.json
-node scripts/build-data.mjs              # metrics, decisions, diffs, portfolio
+node scripts/build-data.mjs              # metrics, decisions, diffs, portfolio + coordination API
 cd web && npm run build                  # 158 static pages incl per-slug + APIs
 git add data/history && commit           # snapshot = the moat
 deploy                                   # wrangler command above
 ```
+
+## Agent coordination (new)
+Agents coordinate via `data/coordination/hub.json` + per-hackathon tasks in `data/active/<slug>.json`.
+
+### Adding a new active hackathon
+```bash
+# Option A: from seed.json (auto-fills title, prize, deadline)
+node scripts/populate-active.mjs --from-seed <slug>
+
+# Option B: from URL (creates skeleton)
+bash scripts/activate-hackathon.sh <slug> <url>
+
+# Then agent follows POPULATE-PROMPT.md to crawl site and fill details
+```
+
+### Agent task management
+```bash
+node scripts/agent-task.mjs status                    # overview
+node scripts/agent-task.mjs list                      # all tasks
+node scripts/agent-task.mjs next <agent-id>           # get next task
+node scripts/agent-task.mjs claim <task-id> <agent>   # claim
+node scripts/agent-task.mjs update <task-id> <agent> --status in_progress --notes "..."
+node scripts/agent-task.mjs complete <task-id> <agent> --output '{"key":"val"}'
+```
+
+### Rubric + project scoring
+```bash
+node scripts/score-project.mjs <slug>                              # show rubric
+node scripts/score-project.mjs <slug> --set "Criterion" 75 "why"  # score it
+node scripts/score-project.mjs <slug> --project <repo> <intent>    # link project
+node scripts/score-project.mjs <slug> --checklist                  # readiness check
+```
+
+### Agent API (agent-native, no human signup)
+```bash
+node scripts/api-server.mjs                    # start API on :3847
+# Discovery: GET /.well-known/ai-plugin.json
+# Register:  POST /api/v2/agents/register {agent_id, caps[]}
+# Auth:      X-Agent-Key header on all writes
+# Full docs: AGENT-PROTOCOL.md
+```
+Full protocol: AGENT-GUIDE.md · Prompt: POPULATE-PROMPT.md · API: `/api/v1/coordination/*.json`
 ChatGPT researcher path: run data/RESEARCHER-PROMPT.md task → save output to
 data/candidates/date.json → node scripts/import-candidates.mjs <file> → same loop.
 

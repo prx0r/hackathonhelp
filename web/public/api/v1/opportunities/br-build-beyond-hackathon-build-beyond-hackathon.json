@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-build-beyond-hackathon-build-beyond-hackathon",
@@ -26,9 +26,9 @@
       "Low/No Code",
       "Open Ended"
     ],
-    "days_left": 0,
+    "days_left": -5,
     "gates": {
-      "registration_open": true,
+      "registration_open": false,
       "deadline_future": false,
       "remote_ok": true,
       "age_confirmed": null,
@@ -71,8 +71,8 @@
     },
     "fit": {
       "strategic_fit": 0,
-      "code_reuse": 0.1,
-      "effective_p80_hours": 36
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
       "opportunity_score": null
@@ -80,7 +80,7 @@
     "metrics": {
       "equal_share_naive": 0.37,
       "fair_share_serious": 7.46,
-      "days_left": 0
+      "days_left": -5
     },
     "cautions": [],
     "payout": {
@@ -109,7 +109,7 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 900
+      "opportunity_cost_usd": 850
     },
     "mega": null,
     "order_key": -100,

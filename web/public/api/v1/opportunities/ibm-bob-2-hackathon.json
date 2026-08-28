@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-ibm-bob-2-hackathon",
@@ -40,7 +40,7 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
-    "days_left": 35,
+    "days_left": 30,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -82,9 +82,9 @@
       "p90": 12
     },
     "fit": {
-      "strategic_fit": 0.22,
-      "code_reuse": 0.3,
-      "effective_p80_hours": 28
+      "strategic_fit": 0.52,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
       "components": {
@@ -100,7 +100,7 @@
     "metrics": {
       "equal_share_naive": 1.82,
       "fair_share_serious": 36.5,
-      "days_left": 35
+      "days_left": 30
     },
     "cautions": [
       "prize not published on platform card — see official page"
@@ -118,11 +118,11 @@
       "note": "slot count assumed until prize ladders are verified on official pages"
     },
     "decision": {
-      "action": "WATCH",
-      "reason": "far out; latest safe start 2026-09-18",
+      "action": "PREP",
+      "reason": "commit by 2026-09-16",
       "feasibility": 1,
       "feasibility_label": "14d+",
-      "latest_safe_start": "2026-09-18",
+      "latest_safe_start": "2026-09-16",
       "p_finish_proxy": 1,
       "build_model": {
         "p50_hours": 25,
@@ -131,15 +131,15 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 700
+      "opportunity_cost_usd": 850
     },
     "mega": null,
-    "order_key": 20056.7,
-    "attention": -1,
+    "order_key": 30056.7,
+    "attention": 30056.7,
     "attention_breakdown": {
-      "action": "WATCH",
+      "action": "PREP",
       "score": 63,
-      "formula": "WATCH - far out; latest safe start 2026-09-18"
+      "formula": "PREP - commit by 2026-09-16"
     }
   },
   "links": {

@@ -1,0 +1,71 @@
+{
+  "schema_version": "hackathonhelp.coordination.v1",
+  "generated_at": "2026-08-28T00:15:00Z",
+  "active_hackathons": [
+    {
+      "slug": "telegraph-h1",
+      "title": "Telegraph H1 Hackathon",
+      "deadline": "2026-09-07T23:59:00Z",
+      "days_left": 10,
+      "status": "active",
+      "entry_type": "Application Track",
+      "priority": "HIGH",
+      "summary": "$5K pool, 75% normalized performance + 25% X engagement. Must use real Telegraph Miners."
+    },
+    {
+      "slug": "alpaca-ai-trading-agents-hackathon",
+      "title": "Alpaca AI Trading Agents Hackathon",
+      "deadline": "2026-09-04",
+      "days_left": 7,
+      "status": "active",
+      "entry_type": null,
+      "priority": "HIGH",
+      "summary": "$6K, trading agents + MCP. 2851 registered. Just started Aug 28."
+    },
+    {
+      "slug": "ethonline-2026",
+      "title": "ETHOnline 2026",
+      "deadline": "2026-09-16",
+      "days_left": 19,
+      "status": "active",
+      "entry_type": null,
+      "priority": "MEDIUM",
+      "summary": "ETHGlobal async hackathon, Sep 4-16. Prizes TBA."
+    },
+    {
+      "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "title": "DevNetwork API + Cloud + AI Hackathon 2026",
+      "deadline": "2026-09-03T17:00:00Z",
+      "days_left": 6,
+      "status": "active",
+      "entry_type": null,
+      "priority": "HIGH",
+      "summary": "$39.5K, 1158 participants. Deadline Sep 3 10am PDT. Online + Santa Clara."
+    },
+    {
+      "slug": "algorand-x402-challenge",
+      "title": "Algorand Global x402 Challenge",
+      "deadline": "2026-09-01T23:45:00Z",
+      "days_left": 4,
+      "status": "active",
+      "entry_type": "Composite",
+      "priority": "CRITICAL",
+      "summary": "$100K USD + 500K ALGO. Registration closes Sep 1. Finals at Devcon 8 India."
+    },
+    {
+      "slug": "opencv26-opencv26",
+      "title": "OpenCV AI Competition 2026, powered by AWS",
+      "deadline": "2026-10-27T23:59:00Z",
+      "days_left": 61,
+      "status": "active",
+      "entry_type": null,
+      "priority": "LOW",
+      "summary": "$12K, IoT/ML/AI/Serverless. Newly activated — details pending."
+    }
+  ],
+  "agents": {},
+  "task_queue": [],
+  "recent_completions": [],
+  "conflicts": [],
+  "notes": "Agents: read this file first. Claim tasks via scripts/agent-task.mjs. Never modify another agent's claimed task without releasing it first."
+}

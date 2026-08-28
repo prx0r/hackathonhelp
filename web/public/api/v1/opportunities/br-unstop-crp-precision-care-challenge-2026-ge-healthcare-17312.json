@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "br-unstop-crp-precision-care-challenge-2026-ge-healthcare-17312",
@@ -26,18 +26,20 @@
       "Postgraduate",
       "Engineering Students"
     ],
-    "days_left": 4,
+    "days_left": -1,
     "gates": {
-      "registration_open": true,
-      "deadline_future": true,
+      "registration_open": false,
+      "deadline_future": false,
       "remote_ok": true,
       "age_confirmed": null,
       "student_only": false,
       "country_restricted": null
     },
     "eligibility": {
-      "eligible": true,
-      "failed": [],
+      "eligible": false,
+      "failed": [
+        "deadline passed"
+      ],
       "confidence": "platform_metadata_unverified",
       "notes": null
     },
@@ -69,24 +71,16 @@
     },
     "fit": {
       "strategic_fit": 0,
-      "code_reuse": 0.1,
-      "effective_p80_hours": 36
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
-      "components": {
-        "expected_prize_value": 25,
-        "winnability": 35,
-        "historical_winner_quality": null,
-        "judging_tractability": null,
-        "organizer_quality": null
-      },
-      "known_components": 2,
-      "opportunity_score": 25
+      "opportunity_score": null
     },
     "metrics": {
       "equal_share_naive": 0,
       "fair_share_serious": 0.01,
-      "days_left": 4
+      "days_left": -1
     },
     "cautions": [],
     "payout": {
@@ -103,11 +97,11 @@
     },
     "decision": {
       "action": "SKIP",
-      "reason": "weak opportunity for remaining time",
-      "feasibility": 0.65,
-      "feasibility_label": "3-5d",
+      "reason": "eligibility gate failed",
+      "feasibility": 0.1,
+      "feasibility_label": "<1d",
       "latest_safe_start": "2026-08-15",
-      "p_finish_proxy": 0.65,
+      "p_finish_proxy": 0.1,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -115,15 +109,15 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 900
+      "opportunity_cost_usd": 850
     },
     "mega": null,
-    "order_key": -77.5,
+    "order_key": -100,
     "attention": -1,
     "attention_breakdown": {
       "action": "SKIP",
-      "score": 25,
-      "formula": "SKIP - weak opportunity for remaining time"
+      "score": null,
+      "formula": "SKIP - eligibility gate failed"
     }
   },
   "links": {

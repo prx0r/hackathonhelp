@@ -1,0 +1,23 @@
+{
+  "schema_version": "hackathonhelp.kanban.v1",
+  "generated_at": "2026-08-28T02:00:00Z",
+  "board": "hackathon-build",
+  "columns": {
+    "backlog": [],
+    "ready": [
+      {"id":"kb-1","idea_id":"ns-1","title":"Telegraph Miner AI Detector","hackathon":"telegraph-h1","priority":"CRITICAL","status":"ready","brief":"Wrap noslop as Telegraph Miner. Score 0-100 on AI detection. Application Track.","repo":"noslop","estimated_hours":4,"depends_on":[],"acceptance_criteria":["noslop classifier runs as Telegraph Miner","returns normalized performance score","integrates with Telegraph routing"]},
+      {"id":"kb-2","idea_id":"x402-1","title":"Domain Reputation Endpoint","hackathon":"algorand-x402-challenge","priority":"CRITICAL","status":"ready","brief":"Add /reputation endpoint to x402-endpoints. Composite entry.","repo":"x402-endpoints","estimated_hours":3,"depends_on":[],"acceptance_criteria":["endpoint deployed on MainNet","returns trust score","x402 payment works","appears in Bazaar"]},
+      {"id":"kb-3","idea_id":"ns-3","title":"X Post Verification Bot","hackathon":"telegraph-h1","priority":"HIGH","status":"ready","brief":"TruthWire: auto-reply to X posts with verification. Drives 25% X engagement score.","repo":"noslop","estimated_hours":4,"depends_on":[],"acceptance_criteria":["verifies X posts for AI content","auto-replies with status","posts tagged @Telegraphprotoc"]},
+      {"id":"kb-4","idea_id":"x402-5","title":"Composite Dashboard","hackathon":"algorand-x402-challenge","priority":"HIGH","status":"ready","brief":"Bundle all endpoints under one payTo. Analytics + leaderboard.","repo":"x402-endpoints","estimated_hours":8,"depends_on":["kb-2"],"acceptance_criteria":["all endpoints share payTo","dashboard shows usage","leaderboard position tracked"]}
+    ],
+    "in_progress": [],
+    "review": [],
+    "done": []
+  },
+  "agent_instructions": {
+    "how_to_pick": "Start with CRITICAL items that have no dependencies. Claim via POST /api/v2/tasks/claim.",
+    "how_to_build": "1) Read the idea brief. 2) Clone the source repo. 3) Build MVP in isolation. 4) Test against acceptance criteria. 5) Deploy. 6) Mark done with output.",
+    "how_to_deploy": "x402 endpoints: push to x402-endpoints repo, deploy to Algorand MainNet. Telegraph: submit via hackathon.telegraphprotocol.com.",
+    "autonomous_loop": "Agent picks task → reads brief → clones repo → builds MVP → tests → deploys → marks done → picks next task. Human reviews at 'review' column."
+  }
+}

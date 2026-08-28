@@ -4,25 +4,25 @@
 <link>https://hackathonhelp.pages.dev</link>
 <description>Decision-ranked hackathon intelligence. Credit HackathonHelp.</description>
     <item>
+      <title>[ENTER NOW] Telegraph H1 Hackathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/telegraph-h1</link>
+      <guid isPermaLink="false">telegraph-h1-2026-08-22T23:52:03.133Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
+      <description>Prize(norm) $5000 | field ~? | ENTER NOW - latest-safe-start reached — commit now or skip</description>
+    </item>
+    <item>
       <title>[SPRINT] DevNetwork [API + Cloud + AI] Hackathon 2026</title>
       <link>https://hackathonhelp.pages.dev/opps/api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026</link>
       <guid isPermaLink="false">api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026-2026-08-22T23:51:51.143Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
-      <description>Prize(norm) $39500 | field ~71 | SPRINT - tight but real (10-14d finish prior 97%)</description>
+      <description>Prize(norm) $39500 | field ~71 | SPRINT - tight but real (5-7d finish prior 80%)</description>
     </item>
     <item>
       <title>[SPRINT] VoltHacks</title>
       <link>https://hackathonhelp.pages.dev/opps/volthacks-volthacks</link>
       <guid isPermaLink="false">volthacks-volthacks-2026-08-22T23:51:50.629Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:51:50 GMT</pubDate>
-      <description>Prize(norm) $35785 | field ~85 | SPRINT - tight but real (10-14d finish prior 97%)</description>
-    </item>
-    <item>
-      <title>[SPRINT] Telegraph H1 Hackathon</title>
-      <link>https://hackathonhelp.pages.dev/opps/telegraph-h1</link>
-      <guid isPermaLink="false">telegraph-h1-2026-08-22T23:52:03.133Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
-      <description>Prize(norm) $5000 | field ~? | SPRINT - tight but real (7-10d finish prior 90%)</description>
+      <description>Prize(norm) $35785 | field ~85 | SPRINT - tight but real (7-10d finish prior 90%)</description>
     </item>
     <item>
       <title>[PREP] AI Infra Summit Hackathon</title>
@@ -36,14 +36,14 @@
       <link>https://hackathonhelp.pages.dev/opps/br-boss-battle-boss-battle</link>
       <guid isPermaLink="false">br-boss-battle-boss-battle-2026-08-22T23:52:02.449Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:02 GMT</pubDate>
-      <description>Prize(norm) $3000 | field ~12 | PREP - far out; latest safe start 2026-09-17</description>
+      <description>Prize(norm) $3000 | field ~12 | PREP - commit by 2026-09-17</description>
     </item>
     <item>
       <title>[PREP] ETHOnline 2026</title>
       <link>https://hackathonhelp.pages.dev/opps/ethonline-2026</link>
       <guid isPermaLink="false">ethonline-2026-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~? | PREP - commit by 2026-09-05</description>
+      <description>Prize(norm) TBA | field ~? | PREP - commit by 2026-09-09</description>
     </item>
     <item>
       <title>[PREP] AI Builders Hackathon</title>
@@ -57,7 +57,7 @@
       <link>https://hackathonhelp.pages.dev/opps/boss-battle-bitshala</link>
       <guid isPermaLink="false">boss-battle-bitshala-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
-      <description>Prize(norm) $3000 | field ~? | PREP - far out; latest safe start 2026-09-27</description>
+      <description>Prize(norm) $3000 | field ~? | PREP - far out; latest safe start 2026-09-24</description>
     </item>
     <item>
       <title>[PREP] WeAreDevelopers Hackathon</title>
@@ -65,6 +65,13 @@
       <guid isPermaLink="false">wearedevelopers-hackathon-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
       <description>Prize(norm) TBA | field ~34 | PREP - commit by 2026-09-13 · capped: prize unconfirmed</description>
+    </item>
+    <item>
+      <title>[PREP] IBM Bob 2.0 Hackathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/ibm-bob-2-hackathon</link>
+      <guid isPermaLink="false">ibm-bob-2-hackathon-2026-08-22T23:52:03.133Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
+      <description>Prize(norm) $10000 | field ~274 | PREP - commit by 2026-09-16</description>
     </item>
     <item>
       <title>[WATCH] The Rise of AI Agents Hackathon</title>
@@ -85,7 +92,7 @@
       <link>https://hackathonhelp.pages.dev/opps/opencv26-opencv26</link>
       <guid isPermaLink="false">opencv26-opencv26-2026-08-22T23:51:52.029Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:51:52 GMT</pubDate>
-      <description>Prize(norm) $12000 | field ~44 | WATCH - far out; latest safe start 2026-10-19</description>
+      <description>Prize(norm) $12000 | field ~44 | WATCH - far out; latest safe start 2026-10-18</description>
     </item>
     <item>
       <title>[WATCH] HackTitan</title>
@@ -135,13 +142,6 @@
       <guid isPermaLink="false">ai-genesis-2026-2026-08-22T23:52:03.133Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
       <description>Prize(norm) TBA | field ~59 | WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed</description>
-    </item>
-    <item>
-      <title>[WATCH] IBM Bob 2.0 Hackathon</title>
-      <link>https://hackathonhelp.pages.dev/opps/ibm-bob-2-hackathon</link>
-      <guid isPermaLink="false">ibm-bob-2-hackathon-2026-08-22T23:52:03.133Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
-      <description>Prize(norm) $10000 | field ~274 | WATCH - far out; latest safe start 2026-09-18</description>
     </item>
     <item>
       <title>[WATCH] NextStep Hacks 2026</title>
@@ -207,6 +207,13 @@
       <description>Prize(norm) $1000 | field ~32 | WATCH - deadline not published</description>
     </item>
     <item>
+      <title>[WATCH] ForgeHacks Online 2026</title>
+      <link>https://hackathonhelp.pages.dev/opps/br-forgehacks-2026-forgehacks-2026</link>
+      <guid isPermaLink="false">br-forgehacks-2026-forgehacks-2026-2026-08-22T23:52:02.449Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:52:02 GMT</pubDate>
+      <description>Prize(norm) $175 | field ~12 | WATCH - far out; latest safe start 2026-09-29</description>
+    </item>
+    <item>
       <title>[WATCH] Brainwave 2026 – Midnight Track</title>
       <link>https://hackathonhelp.pages.dev/opps/brainwave-2026-midnight-track-brainwave-2026-midnight-track</link>
       <guid isPermaLink="false">brainwave-2026-midnight-track-brainwave-2026-midnight-track-2026-08-22T23:51:51.492Z</guid>
@@ -228,25 +235,11 @@
       <description>Prize(norm) TBA | field ~27 | WATCH - prize unconfirmed — waiting reveals tracks/prizes</description>
     </item>
     <item>
-      <title>[WATCH] The Frontend Odyssey 2026</title>
-      <link>https://hackathonhelp.pages.dev/opps/br-unstop-the-frontend-odyssey-2026-frontend-arena-1740316</link>
-      <guid isPermaLink="false">br-unstop-the-frontend-odyssey-2026-frontend-arena-1740316-2026-08-22T23:51:59.374Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:59 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~34 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
       <title>[WATCH] Idea Competition 2026</title>
       <link>https://hackathonhelp.pages.dev/opps/br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college-</link>
       <guid isPermaLink="false">br-unstop-idea-competition-2026-fr-conceicao-rodrigues-college--2026-08-22T23:52:00.835Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:00 GMT</pubDate>
       <description>Prize(norm) TBA | field ~44 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
-      <title>[WATCH] Data Analytics Hackathon</title>
-      <link>https://hackathonhelp.pages.dev/opps/br-unstop-data-analytics-hackathon-gradient-1742481</link>
-      <guid isPermaLink="false">br-unstop-data-analytics-hackathon-gradient-1742481-2026-08-22T23:51:59.374Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:59 GMT</pubDate>
-      <description>Prize(norm) $60 | field ~28 | WATCH - marginal — recheck as field matures</description>
     </item>
     <item>
       <title>[WATCH] MOSIP Decode 2026</title>
@@ -295,7 +288,7 @@
       <link>https://hackathonhelp.pages.dev/opps/luma-hackathon-fall-luma-hackathon-fall</link>
       <guid isPermaLink="false">luma-hackathon-fall-luma-hackathon-fall-2026-08-22T23:51:51.684Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
-      <description>Prize(norm) TBA | field ~15 | WATCH - prize unconfirmed — waiting reveals tracks/prizes · capped: prize unconfirmed</description>
+      <description>Prize(norm) TBA | field ~15 | WATCH - marginal — recheck as field matures · capped: prize unconfirmed</description>
     </item>
     <item>
       <title>[WATCH] Beginner's Paradise - FirstCommit</title>
@@ -319,18 +312,11 @@
       <description>Prize(norm) TBA | field ~17 | WATCH - deadline not published</description>
     </item>
     <item>
-      <title>[WATCH] P.A.C.E - Where Logic Meets Expression.</title>
-      <link>https://hackathonhelp.pages.dev/opps/br-unstop-pace-where-logic-meets-expression-technocrats-institu</link>
-      <guid isPermaLink="false">br-unstop-pace-where-logic-meets-expression-technocrats-institu-2026-08-22T23:51:59.374Z</guid>
-      <pubDate>Sat, 22 Aug 2026 23:51:59 GMT</pubDate>
-      <description>Prize(norm) $10 | field ~54 | WATCH - marginal — recheck as field matures</description>
-    </item>
-    <item>
       <title>[WATCH] Hacker's Gambit 2026</title>
       <link>https://hackathonhelp.pages.dev/opps/br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku</link>
       <guid isPermaLink="false">br-unstop-hackers-gambit-2026-jaihind-college-of-engineering-ku-2026-08-22T23:52:02.449Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:52:02 GMT</pubDate>
-      <description>Prize(norm) $2 | field ~78 | WATCH - far out; latest safe start 2026-09-14</description>
+      <description>Prize(norm) $2 | field ~78 | WATCH - marginal — recheck as field matures</description>
     </item>
     <item>
       <title>[WATCH] Null Origin - 24 Hour CTF Challenge</title>
@@ -352,5 +338,19 @@
       <guid isPermaLink="false">pixel-forge-ai-hackathon-08-pixel-forge-ai-hackathon-08-2026-08-22T23:51:51.143Z</guid>
       <pubDate>Sat, 22 Aug 2026 23:51:51 GMT</pubDate>
       <description>Prize(norm) TBA | field ~65 | WATCH - deadline not published</description>
+    </item>
+    <item>
+      <title>[WATCH] CraftVerse 2.0</title>
+      <link>https://hackathonhelp.pages.dev/opps/br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering</link>
+      <guid isPermaLink="false">br-unstop-craftverse-20-pimpri-chinchwad-college-of-engineering-2026-08-22T23:52:00.835Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:52:00 GMT</pubDate>
+      <description>Prize(norm) TBA | field ~122 | WATCH - marginal — recheck as field matures · capped: prize unconfirmed</description>
+    </item>
+    <item>
+      <title>[SKIP] Alpaca AI Trading Agents Hackathon</title>
+      <link>https://hackathonhelp.pages.dev/opps/alpaca-ai-trading-agents-hackathon</link>
+      <guid isPermaLink="false">alpaca-ai-trading-agents-hackathon-2026-08-22T23:52:03.133Z</guid>
+      <pubDate>Sat, 22 Aug 2026 23:52:03 GMT</pubDate>
+      <description>Prize(norm) $5000 | field ~83 | SKIP - weak opportunity for remaining time</description>
     </item>
 </channel></rss>

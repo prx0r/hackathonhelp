@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-08-28T01:45:00Z",
+  "profile": "prx0r",
+  "specialism": "agentic systems + verification + payments",
+
+  "technical_primitives": [
+    {
+      "name": "x402 Paid API Endpoint",
+      "description": "Wrap any capability as a pay-per-request API on Algorand using x402 protocol",
+      "repos": ["x402-endpoints", "finalbuilds2"],
+      "reusable_code": "GoPlausible facilitator integration, payTo address management, Bazaar discovery",
+      "applies_to": ["algorand-x402-challenge"],
+      "build_time_hours": 4,
+      "difficulty": "medium",
+      "what_you_need": "HTTPS endpoint + x402 payment handler + GoPlausible facilitator"
+    },
+    {
+      "name": "Domain Verification Endpoint",
+      "description": "Verify domain ownership, DNS records, SSL certs — useful for security, SEO, brand monitoring",
+      "repos": ["x402-endpoints", "domainnamechecker"],
+      "reusable_code": "DNS lookup, SSL verification, domain scoring logic",
+      "applies_to": ["algorand-x402-challenge", "api-cloud-ai-hackathon-2026", "ethonline-2026"],
+      "build_time_hours": 6,
+      "difficulty": "medium",
+      "what_you_need": "DNS resolution, WHOIS parsing, trust scoring"
+    },
+    {
+      "name": "Agent Reliability Framework",
+      "description": "Evaluate, verify, and score agent outputs — evidence trails, adversarial testing, ranking",
+      "repos": ["get-me-money", "agentseolab", "dell2"],
+      "reusable_code": "Evaluation pipeline, evidence collection, adversarial prompts, scoring",
+      "applies_to": ["telegraph-h1", "alpaca-ai-trading-agents-hackathon", "ethonline-2026"],
+      "build_time_hours": 8,
+      "difficulty": "high",
+      "what_you_need": "Evaluation harness, ground truth data, scoring rubric"
+    },
+    {
+      "name": "Evolution/Optimization Kernel",
+      "description": "Declarative spec + fitness function + constraint solver for live optimization",
+      "repos": ["cge1", "cge", "cg", "cogym"],
+      "reusable_code": "Fitness evaluation, constraint ledger, shrinkage detection",
+      "applies_to": ["alpaca-ai-trading-agents-hackathon", "ethonline-2026"],
+      "build_time_hours": 12,
+      "difficulty": "high",
+      "what_you_need": "Declarative spec, fitness function, iteration loop"
+    },
+    {
+      "name": "Subscription Escape / Automation Agent",
+      "description": "Automate cancellation flows, evaluate terms, negotiate — agent that does boring tasks",
+      "repos": ["cancelme", "get-me-money"],
+      "reusable_code": "Form filling, API integration, flow automation",
+      "applies_to": ["api-cloud-ai-hackathon-2026"],
+      "build_time_hours": 8,
+      "difficulty": "medium",
+      "what_you_need": "Service integrations, form parsing, automation"
+    },
+    {
+      "name": "Deal Intelligence Pipeline",
+      "description": "Crawl, evaluate, verify, and surface opportunities — the deal radar",
+      "repos": ["dell2", "hackathonhelp", "llmdeals"],
+      "reusable_code": "Crawling, normalization, scoring, diff detection",
+      "applies_to": ["hackathonhelp (this site)", "any opportunity-type hackathon"],
+      "build_time_hours": 4,
+      "difficulty": "low",
+      "what_you_need": "API integration, normalization, scoring formula"
+    }
+  ],
+
+  "cross_hackathon_clusters": [
+    {
+      "cluster": "Paid API / x402 / Agent Commerce",
+      "hackathons": ["algorand-x402-challenge", "api-cloud-ai-hackathon-2026", "ethonline-2026"],
+      "shared_primitives": ["x402 Paid API Endpoint", "Domain Verification Endpoint"],
+      "strategy": "Build one solid x402 endpoint (domain.verify), deploy to Algorand, reuse for API Cloud AI and ETHGlobal. Same codebase, different competitions.",
+      "combined_value": "$175K + $39.5K + ETHGlobal = $215K+ prize pool"
+    },
+    {
+      "cluster": "Agent Reliability / Evaluation",
+      "hackathons": ["telegraph-h1", "alpaca-ai-trading-agents-hackathon", "ethonline-2026"],
+      "shared_primitives": ["Agent Reliability Framework", "Evolution/Optimization Kernel"],
+      "strategy": "Build the evaluation framework once (ranking, evidence, adversarial testing). Apply to Telegraph Miner ranking, Alpaca trading evaluation, ETHGlobal agent quality.",
+      "combined_value": "$5K + $6K + ETHGlobal"
+    },
+    {
+      "cluster": "Automation / Agent-as-a-Service",
+      "hackathons": ["api-cloud-ai-hackathon-2026", "alpaca-ai-trading-agents-hackathon"],
+      "shared_primitives": ["Subscription Escape / Automation Agent", "Deal Intelligence Pipeline"],
+      "strategy": "Agent that does tasks (cancel subscriptions, manage trades, find deals). Same architecture, different verticals.",
+      "combined_value": "$39.5K + $6K = $45.5K"
+    }
+  ],
+
+  "recommended_niche": {
+    "name": "x402 Agent Commerce Infrastructure",
+    "why": "Overlaps with 3 hackathons, has existing code (x402-endpoints), high combined prize pool, natural fit for agent reliability specialism",
+    "what_to_build": "A suite of paid x402 endpoints: domain verification, agent scoring, deal intelligence. Each is a separate endpoint but they share the same payTo address (composite entry). The finalbuilds2 factory auto-deploys new endpoints based on what gets traffic.",
+    "entry_points": [
+      {"hackathon": "algorand-x402-challenge", "track": "Composite", "endpoints": ["domain.verify", "domain.score", "agent.score"]},
+      {"hackathon": "api-cloud-ai-hackathon-2026", "track": "Sponsor TBD", "reuse": "Same endpoints, different competition"},
+      {"hackathon": "ethonline-2026", "track": "TBA", "reuse": "Agent commerce on Ethereum"}
+    ],
+    "technical_stack": ["Algorand", "x402", "GoPlausible", "Node.js/TypeScript", "DNS/WHOIS APIs"],
+    "hours_to_first_endpoint": 6,
+    "hours_to_full_suite": 20
+  },
+
+  "mining_candidates": [
+    {"repo": "x402-endpoints", "value": "direct reuse for Algorand challenge", "action": "deploy to MainNet"},
+    {"repo": "finalbuilds2", "value": "factory that deploys new endpoints", "action": "integrate with x402 endpoints"},
+    {"repo": "domainnamechecker", "value": "domain verification logic", "action": "wrap as x402 endpoint"},
+    {"repo": "get-me-money", "value": "agent earning/evaluation framework", "action": "extract scoring logic"},
+    {"repo": "dell2", "value": "deal verification pipeline", "action": "wrap as x402 endpoint"},
+    {"repo": "cancelme", "value": "automation flows", "action": "agent-as-a-service demo"},
+    {"repo": "agentseolab", "value": "agent evaluation harness", "action": "Telegraph Miner scoring"},
+    {"repo": "cge1", "value": "evolution kernel", "action": "trading optimization for Alpaca"}
+  ]
+}

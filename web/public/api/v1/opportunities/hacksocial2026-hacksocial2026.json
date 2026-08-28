@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-hacksocial2026-hacksocial2026",
@@ -75,9 +75,9 @@
       "p90": 12
     },
     "fit": {
-      "strategic_fit": 0,
-      "code_reuse": 0.1,
-      "effective_p80_hours": 36
+      "strategic_fit": 0.3,
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
       "components": {
@@ -122,7 +122,7 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 900
+      "opportunity_cost_usd": 850
     },
     "mega": null,
     "order_key": 20051.3,

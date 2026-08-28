@@ -1,0 +1,387 @@
+{
+  "schema_version": "hackathonhelp.active.v1",
+  "generated_at": "2026-08-28T01:31:16.097Z",
+  "hackathon": {
+    "slug": "telegraph-h1",
+    "title": "Telegraph H1 Hackathon",
+    "url": "https://hackathon.telegraphprotocol.com/",
+    "rules_url": "https://hackathon.telegraphprotocol.com/rules",
+    "status": "active",
+    "added_at": "2026-08-26T20:00:00Z",
+    "timeline": {
+      "opens": "2026-08-17",
+      "track_1_2_deadline": "2026-08-31T23:59:00Z",
+      "build_deadline": "2026-09-07T23:59:00Z",
+      "measurement_window": null,
+      "finals": "2026-09-08 to 2026-09-18",
+      "finals_location": null,
+      "winners_announced": "2026-09-19 to 2026-09-25",
+      "note": "Track 1 (Miners) & Track 2 (Scripts) close Aug 31. Track 3 (Applications) opens Aug 31, closes Sep 7."
+    },
+    "prizes": {
+      "total_usd": 5000,
+      "breakdown": [
+        {
+          "rank": "Miner 1st",
+          "usd": 1000
+        },
+        {
+          "rank": "Miner 2nd",
+          "usd": 600
+        },
+        {
+          "rank": "Miner 3rd",
+          "usd": 400
+        },
+        {
+          "rank": "Script Author 1st",
+          "usd": 500
+        },
+        {
+          "rank": "Script Author 2nd",
+          "usd": 300
+        },
+        {
+          "rank": "Script Author 3rd",
+          "usd": 200
+        },
+        {
+          "rank": "Application 1st",
+          "usd": 1000
+        },
+        {
+          "rank": "Application 2nd",
+          "usd": 600
+        },
+        {
+          "rank": "Application 3rd",
+          "usd": 400
+        }
+      ],
+      "leaderboard_pool": null
+    },
+    "judging": {
+      "criteria": [
+        {
+          "name": "Normalized Performance",
+          "weight": "75%",
+          "quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent)"
+        },
+        {
+          "name": "X Engagement",
+          "weight": "25%",
+          "quote": "25 points — X Engagement & Transparency"
+        }
+      ],
+      "how_to_win": [
+        "Integrate real Telegraph Miners (no mocked data)",
+        "Build a working application or agent using Telegraph",
+        "Post progress updates on X, tagged properly",
+        "Join the official Hackathon Discord",
+        "Maximize normalized performance within your Intent"
+      ],
+      "leaderboard_formula": "Normalized performance within intent (75%) + X engagement (25%)"
+    },
+    "submission": {
+      "types": [
+        "miner",
+        "script-author",
+        "application"
+      ],
+      "checklist": [
+        "Join official Hackathon Discord",
+        "Integrate real Telegraph Miners",
+        "Build evaluation script or application",
+        "Post progress on X with proper tags",
+        "Submit before Sep 7 23:59 UTC"
+      ],
+      "required_tech": [
+        "Telegraph protocol",
+        "Telegraph Miners"
+      ],
+      "submission_url": "https://hackathon.telegraphprotocol.com/",
+      "submission_deadline": "2026-09-07T23:59:00Z"
+    },
+    "tracks": [
+      {
+        "name": "Miner Track",
+        "description": "Build or improve a Miner — $2K pool"
+      },
+      {
+        "name": "Script Author Track",
+        "description": "Evaluation scripts — $1K pool"
+      },
+      {
+        "name": "Application Track",
+        "description": "Working apps using real Miners — $2K pool"
+      }
+    ],
+    "eligibility": {
+      "open_to_all": true,
+      "notes": "Must use real Telegraph Miners. All updates must be posted on X."
+    },
+    "strategy_notes": {
+      "our_entry_type": "Application Track",
+      "our_endpoint": "noslop AI detection / WASM scorers on Telegraph",
+      "overlap_with_algorand": "medium — paid API pattern, but different protocol",
+      "key_insight": "75% is normalized performance — build the best Miner integration, not just a cool app"
+    },
+    "rubric": {
+      "generated_from": "judging.criteria + rules page",
+      "track": "Application Track",
+      "criteria": [
+        {
+          "name": "Normalized Performance",
+          "weight": 75,
+          "description": "Your score relative to the best Miner in your specific Intent",
+          "source_quote": "75 points — Normalized Performance (your score relative to the best Miner in your specific Intent)",
+          "levels": {
+            "0": "No working Miner integration or mocked data",
+            "25": "Working integration — Miner runs and returns results, but not competitive",
+            "50": "Top 10 in Intent — solid performance, above median",
+            "75": "Top 3 in Intent — competitive with best, consistent high scores",
+            "100": "Best Miner in your Intent — top of leaderboard, highest canonical score"
+          },
+          "what_we_need": "Build a Miner that ranks highest in our chosen Intent. Focus on accuracy and consistency of responses.",
+          "our_score": 25,
+          "our_notes": "No working integration yet"
+        },
+        {
+          "name": "X Engagement",
+          "weight": 25,
+          "description": "Quality, consistency, reach, and meaningful engagement of updates posted on X",
+          "source_quote": "25 points — X Engagement & Transparency",
+          "levels": {
+            "0": "No X presence or engagement",
+            "25": "1 post, minimal engagement, checkbox exercise",
+            "50": "2 posts/week, basic updates, some engagement",
+            "75": "3-4 posts/week, good reach, shows real progress",
+            "100": "Daily updates, technical depth, high engagement, community discussion sparked"
+          },
+          "what_we_need": "Post daily progress on X tagged @Telegraphprotoc. Show technical depth, not just 'working on it'. Share learnings.",
+          "our_score": 25,
+          "our_notes": "First post"
+        }
+      ],
+      "bonus_signals": [
+        {
+          "name": "Discord activity",
+          "description": "Active in hackathon Discord, helping others, sharing insights",
+          "weight": "implicit"
+        },
+        {
+          "name": "Open source",
+          "description": "Code public on GitHub, clean README, reproducible",
+          "weight": "implicit"
+        },
+        {
+          "name": "Real demand",
+          "description": "Applications building on your Miner — the flywheel effect",
+          "weight": "part of normalized performance"
+        }
+      ],
+      "disqualifiers": [
+        "Mocked or simulated data (must use real Telegraph Miners)",
+        "Artificial inflation of metrics or gaming",
+        "Not remaining live and operational through Track 3",
+        "Missing X updates (all judging updates must be public on X)"
+      ],
+      "total_possible": 100,
+      "our_total_score": 25,
+      "our_confidence": "scored"
+    },
+    "project": {
+      "repo_url": "https://github.com/prx0r/noslop",
+      "repo_local_path": null,
+      "demo_url": null,
+      "intent": "ai-detection",
+      "miner_name": null,
+      "what_it_does": null,
+      "tech_stack": [],
+      "submission_files": [],
+      "screenshots": [],
+      "demo_script": null,
+      "build_story": null,
+      "notes": null
+    },
+    "sources": [
+      {
+        "url": "https://hackathon.telegraphprotocol.com/",
+        "quote": "SEASON I · 2026 · OPEN TO ANY DEVELOPER"
+      },
+      {
+        "url": "https://hackathon.telegraphprotocol.com/rules",
+        "quote": "TOTAL PRIZE POOL $5,000 USD"
+      },
+      {
+        "url": "https://hackathon.telegraphprotocol.com/rules",
+        "quote": "Applications in Track 3 must use real Telegraph Miners. Simulated or mocked data is not allowed."
+      }
+    ],
+    "last_crawled": "2026-08-28T00:10:00Z",
+    "crawl_version": 2,
+    "progress": {
+      "phase": "research",
+      "pct_complete": 14,
+      "blocks": [
+        "need to join Discord",
+        "Miner integration approach TBD"
+      ],
+      "last_update": "2026-08-28T00:06:38.840Z",
+      "updated_by": "test-agent"
+    },
+    "tasks": [
+      {
+        "id": "telegraph-h1-research-rules",
+        "type": "research",
+        "title": "Deep-read official rules and scoring formula",
+        "description": "Read every word of hackathon.telegraphprotocol.com/rules. Extract exact scoring formula, submission requirements, disqualified behaviors, and any gotchas. Update this active JSON with findings.",
+        "status": "done",
+        "assigned_to": "test-agent",
+        "claimed_at": "2026-08-28T00:06:38.739Z",
+        "priority": "critical",
+        "depends_on": [],
+        "deliverables": [
+          "data/active/telegraph-h1.json (updated sources + judging)"
+        ],
+        "notes": "Started reading rules page",
+        "deadline": "2026-08-29T12:00:00Z",
+        "estimated_hours": 1,
+        "completed_at": "2026-08-28T00:06:38.840Z",
+        "output": {
+          "findings": "75% normalized perf + 25% X engagement. Must use real Miners."
+        }
+      },
+      {
+        "id": "telegraph-h1-research-miner-api",
+        "type": "research",
+        "title": "Document Telegraph Miner API + integration patterns",
+        "description": "Find the Miner SDK/docs. Document: how to run a Miner, what 'normalized performance' means technically, what intents exist, how to maximize score. Check Discord for hints.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "critical",
+        "depends_on": [],
+        "deliverables": [
+          "data/active/telegraph-h1.json (updated strategy_notes)",
+          "integration guide notes"
+        ],
+        "notes": null,
+        "deadline": "2026-08-30T00:00:00Z",
+        "estimated_hours": 3,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "telegraph-h1-crawl-discord",
+        "type": "crawl",
+        "title": "Join Discord and extract community intel",
+        "description": "Join the Telegraph Hackathon Discord. Find: what intents are popular, what other teams are building, any tips from organizers, submission tips. Log findings.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "high",
+        "depends_on": [],
+        "deliverables": [
+          "Discord intel notes",
+          "data/active/telegraph-h1.json (updated)"
+        ],
+        "notes": null,
+        "deadline": "2026-08-30T00:00:00Z",
+        "estimated_hours": 1,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "telegraph-h1-build-miner-setup",
+        "type": "build",
+        "title": "Set up local Miner environment",
+        "description": "Install Telegraph Miner SDK, get it running locally, connect to testnet if available. Verify we can produce normalized performance scores.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "high",
+        "depends_on": [
+          "telegraph-h1-research-miner-api"
+        ],
+        "deliverables": [
+          "running Miner locally",
+          "score output confirmed"
+        ],
+        "notes": null,
+        "deadline": "2026-09-01T00:00:00Z",
+        "estimated_hours": 4,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "telegraph-h1-build-app",
+        "type": "build",
+        "title": "Build application entry using real Miners",
+        "description": "Implement the application that uses real Telegraph Miners. Must demonstrate normalized performance. Our angle: AI detection / WASM scorers.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "high",
+        "depends_on": [
+          "telegraph-h1-build-miner-setup",
+          "telegraph-h1-research-rules"
+        ],
+        "deliverables": [
+          "working application",
+          "demo video/script"
+        ],
+        "notes": null,
+        "deadline": "2026-09-05T00:00:00Z",
+        "estimated_hours": 16,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "telegraph-h1-social-progress",
+        "type": "social",
+        "title": "Post X progress updates",
+        "description": "Post at least 2 progress updates on X with proper tags. 25% of score is X engagement. Document what tags/format to use.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "high",
+        "depends_on": [
+          "telegraph-h1-build-miner-setup"
+        ],
+        "deliverables": [
+          "X post URLs",
+          "engagement metrics"
+        ],
+        "notes": null,
+        "deadline": "2026-09-06T00:00:00Z",
+        "estimated_hours": 2,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "telegraph-h1-submit-final",
+        "type": "submit",
+        "title": "Final submission",
+        "description": "Submit before Sep 7 12:00 UTC. Verify all requirements met. Double-check normalized performance score. Post final X update.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "critical",
+        "depends_on": [
+          "telegraph-h1-build-app",
+          "telegraph-h1-social-progress"
+        ],
+        "deliverables": [
+          "submission confirmation",
+          "submission URL"
+        ],
+        "notes": null,
+        "deadline": "2026-09-07T23:00:00Z",
+        "estimated_hours": 1,
+        "completed_at": null,
+        "output": null
+      }
+    ]
+  }
+}

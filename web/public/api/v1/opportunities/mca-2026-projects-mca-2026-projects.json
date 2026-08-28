@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "dp-mca-2026-projects-mca-2026-projects",
@@ -31,7 +31,7 @@
     "source": "devpost",
     "source_authority": "official_platform_api",
     "observed_at": "2026-08-22T23:51:52.029Z",
-    "days_left": 125,
+    "days_left": 120,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -74,8 +74,8 @@
     },
     "fit": {
       "strategic_fit": 0,
-      "code_reuse": 0.1,
-      "effective_p80_hours": 36
+      "code_reuse": 0.15,
+      "effective_p80_hours": 34
     },
     "score_v01": {
       "components": {
@@ -91,7 +91,7 @@
     "metrics": {
       "equal_share_naive": null,
       "fair_share_serious": null,
-      "days_left": 125
+      "days_left": 120
     },
     "cautions": [
       "prize not published on platform card — see official page"
@@ -122,7 +122,7 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 900
+      "opportunity_cost_usd": 850
     },
     "mega": null,
     "order_key": -100,

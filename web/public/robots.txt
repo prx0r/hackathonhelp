@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# AI Agents: read AGENT-PROTOCOL.md for API access
+# Discovery: /.well-known/ai-plugin.json
+# No human signup needed — register via API key

@@ -1,0 +1,642 @@
+{
+  "generated_at": "2026-08-28T01:31:16.097Z",
+  "schema_version": "hackathonhelp.coordination.v1",
+  "hub": {
+    "schema_version": "hackathonhelp.coordination.v1",
+    "generated_at": "2026-08-28T00:15:00Z",
+    "active_hackathons": [
+      {
+        "slug": "telegraph-h1",
+        "title": "Telegraph H1 Hackathon",
+        "deadline": "2026-09-07T23:59:00Z",
+        "days_left": 10,
+        "status": "active",
+        "entry_type": "Application Track",
+        "priority": "HIGH",
+        "summary": "$5K pool, 75% normalized performance + 25% X engagement. Must use real Telegraph Miners."
+      },
+      {
+        "slug": "alpaca-ai-trading-agents-hackathon",
+        "title": "Alpaca AI Trading Agents Hackathon",
+        "deadline": "2026-09-04",
+        "days_left": 7,
+        "status": "active",
+        "entry_type": null,
+        "priority": "HIGH",
+        "summary": "$6K, trading agents + MCP. 2851 registered. Just started Aug 28."
+      },
+      {
+        "slug": "ethonline-2026",
+        "title": "ETHOnline 2026",
+        "deadline": "2026-09-16",
+        "days_left": 19,
+        "status": "active",
+        "entry_type": null,
+        "priority": "MEDIUM",
+        "summary": "ETHGlobal async hackathon, Sep 4-16. Prizes TBA."
+      },
+      {
+        "slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+        "title": "DevNetwork API + Cloud + AI Hackathon 2026",
+        "deadline": "2026-09-03T17:00:00Z",
+        "days_left": 6,
+        "status": "active",
+        "entry_type": null,
+        "priority": "HIGH",
+        "summary": "$39.5K, 1158 participants. Deadline Sep 3 10am PDT. Online + Santa Clara."
+      },
+      {
+        "slug": "algorand-x402-challenge",
+        "title": "Algorand Global x402 Challenge",
+        "deadline": "2026-09-01T23:45:00Z",
+        "days_left": 4,
+        "status": "active",
+        "entry_type": "Composite",
+        "priority": "CRITICAL",
+        "summary": "$100K USD + 500K ALGO. Registration closes Sep 1. Finals at Devcon 8 India."
+      },
+      {
+        "slug": "opencv26-opencv26",
+        "title": "OpenCV AI Competition 2026, powered by AWS",
+        "deadline": "2026-10-27T23:59:00Z",
+        "days_left": 61,
+        "status": "active",
+        "entry_type": null,
+        "priority": "LOW",
+        "summary": "$12K, IoT/ML/AI/Serverless. Newly activated — details pending."
+      }
+    ],
+    "agents": {},
+    "task_queue": [],
+    "recent_completions": [],
+    "conflicts": [],
+    "notes": "Agents: read this file first. Claim tasks via scripts/agent-task.mjs. Never modify another agent's claimed task without releasing it first."
+  },
+  "all_tasks": [
+    {
+      "id": "alpaca-crawl-rules",
+      "type": "crawl",
+      "title": "Manually crawl lablab.ai event page + rules",
+      "description": "lablab.ai is Cloudflare-walled for curl. Open the page in a browser or use browser-based fetch. Extract: exact prizes, judging criteria, submission requirements, timeline, tracks. Update this JSON.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/alpaca-ai-trading-agents-hackathon.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-29T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "alpaca-ai-trading-agents-hackathon",
+      "_hackathon_title": "Alpaca AI Trading Agents Hackathon"
+    },
+    {
+      "id": "alpaca-research-mcp",
+      "type": "research",
+      "title": "Research Alpaca API + MCP integration angle",
+      "description": "What does the Alpaca API offer? How could MCP-based trading agents be built? What's our angle for agent reliability? Map to our skills (evaluation, evidence, verification).",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "strategy notes",
+        "data/active/alpaca-ai-trading-agents-hackathon.json (updated strategy_notes)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-30T00:00:00Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "alpaca-ai-trading-agents-hackathon",
+      "_hackathon_title": "Alpaca AI Trading Agents Hackathon"
+    },
+    {
+      "id": "alpaca-build-prototype",
+      "type": "build",
+      "title": "Build trading agent prototype",
+      "description": "Implement an MCP-based trading agent using Alpaca API. Focus on: reliability (error handling, retries), evaluation (backtesting, paper trading), evidence (trade logging, audit trail).",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "medium",
+      "depends_on": [
+        "alpaca-crawl-rules",
+        "alpaca-research-mcp"
+      ],
+      "deliverables": [
+        "working prototype",
+        "test results"
+      ],
+      "notes": null,
+      "deadline": "2026-09-02T00:00:00Z",
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null,
+      "_slug": "alpaca-ai-trading-agents-hackathon",
+      "_hackathon_title": "Alpaca AI Trading Agents Hackathon"
+    },
+    {
+      "id": "alpaca-submit",
+      "type": "submit",
+      "title": "Submit to lablab.ai",
+      "description": "Final submission before Sep 4 deadline.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "alpaca-build-prototype"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": "2026-09-04T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "alpaca-ai-trading-agents-hackathon",
+      "_hackathon_title": "Alpaca AI Trading Agents Hackathon"
+    },
+    {
+      "id": "telegraph-h1-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring formula",
+      "description": "Read every word of hackathon.telegraphprotocol.com/rules. Extract exact scoring formula, submission requirements, disqualified behaviors, and any gotchas. Update this active JSON with findings.",
+      "status": "done",
+      "assigned_to": "test-agent",
+      "claimed_at": "2026-08-28T00:06:38.739Z",
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/telegraph-h1.json (updated sources + judging)"
+      ],
+      "notes": "Started reading rules page",
+      "deadline": "2026-08-29T12:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": "2026-08-28T00:06:38.840Z",
+      "output": {
+        "findings": "75% normalized perf + 25% X engagement. Must use real Miners."
+      },
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "telegraph-h1-research-miner-api",
+      "type": "research",
+      "title": "Document Telegraph Miner API + integration patterns",
+      "description": "Find the Miner SDK/docs. Document: how to run a Miner, what 'normalized performance' means technically, what intents exist, how to maximize score. Check Discord for hints.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/telegraph-h1.json (updated strategy_notes)",
+        "integration guide notes"
+      ],
+      "notes": null,
+      "deadline": "2026-08-30T00:00:00Z",
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null,
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "telegraph-h1-crawl-discord",
+      "type": "crawl",
+      "title": "Join Discord and extract community intel",
+      "description": "Join the Telegraph Hackathon Discord. Find: what intents are popular, what other teams are building, any tips from organizers, submission tips. Log findings.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "Discord intel notes",
+        "data/active/telegraph-h1.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-30T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "telegraph-h1-build-miner-setup",
+      "type": "build",
+      "title": "Set up local Miner environment",
+      "description": "Install Telegraph Miner SDK, get it running locally, connect to testnet if available. Verify we can produce normalized performance scores.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "telegraph-h1-research-miner-api"
+      ],
+      "deliverables": [
+        "running Miner locally",
+        "score output confirmed"
+      ],
+      "notes": null,
+      "deadline": "2026-09-01T00:00:00Z",
+      "estimated_hours": 4,
+      "completed_at": null,
+      "output": null,
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "telegraph-h1-build-app",
+      "type": "build",
+      "title": "Build application entry using real Miners",
+      "description": "Implement the application that uses real Telegraph Miners. Must demonstrate normalized performance. Our angle: AI detection / WASM scorers.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "telegraph-h1-build-miner-setup",
+        "telegraph-h1-research-rules"
+      ],
+      "deliverables": [
+        "working application",
+        "demo video/script"
+      ],
+      "notes": null,
+      "deadline": "2026-09-05T00:00:00Z",
+      "estimated_hours": 16,
+      "completed_at": null,
+      "output": null,
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "telegraph-h1-social-progress",
+      "type": "social",
+      "title": "Post X progress updates",
+      "description": "Post at least 2 progress updates on X with proper tags. 25% of score is X engagement. Document what tags/format to use.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "telegraph-h1-build-miner-setup"
+      ],
+      "deliverables": [
+        "X post URLs",
+        "engagement metrics"
+      ],
+      "notes": null,
+      "deadline": "2026-09-06T00:00:00Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "telegraph-h1-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before Sep 7 12:00 UTC. Verify all requirements met. Double-check normalized performance score. Post final X update.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "telegraph-h1-build-app",
+        "telegraph-h1-social-progress"
+      ],
+      "deliverables": [
+        "submission confirmation",
+        "submission URL"
+      ],
+      "notes": null,
+      "deadline": "2026-09-07T23:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "telegraph-h1",
+      "_hackathon_title": "Telegraph H1 Hackathon"
+    },
+    {
+      "id": "apicloud-crawl-rules",
+      "type": "crawl",
+      "title": "Read full rules + sponsor track details",
+      "description": "Read api-cloud-ai-hackathon-2026.devpost.com/rules. Identify which sponsor track gives us best edge. Xano track aligns with our existing xano-hackathon work.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-08-29T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "api-cloud-ai-hackathon-2026-api-cloud-ai-hackathon-2026",
+      "_hackathon_title": "DevNetwork [API + Cloud + AI] Hackathon 2026"
+    },
+    {
+      "id": "algorand-deploy-verify",
+      "type": "build",
+      "title": "Deploy domain.verify to Algorand MainNet",
+      "description": "Take the existing domain.verify endpoint and deploy it on Algorand MainNet with public HTTPS. Use GoPlausible facilitator. Add x402-global-challenge tag.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "MainNet endpoint live",
+        "at least one real payment confirmed"
+      ],
+      "notes": "repo at /root/x402-endpoints",
+      "deadline": "2026-08-30T00:00:00Z",
+      "estimated_hours": 4,
+      "completed_at": null,
+      "output": null,
+      "_slug": "algorand-x402-challenge",
+      "_hackathon_title": "Algorand Global x402 Challenge"
+    },
+    {
+      "id": "algorand-deploy-score",
+      "type": "build",
+      "title": "Deploy domain.score as second endpoint",
+      "description": "Deploy domain.score endpoint on MainNet. Same payTo address — composite pattern. Volume auto-aggregates on leaderboard.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "algorand-deploy-verify"
+      ],
+      "deliverables": [
+        "second endpoint live",
+        "composite volume aggregating"
+      ],
+      "notes": null,
+      "deadline": "2026-08-31T00:00:00Z",
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null,
+      "_slug": "algorand-x402-challenge",
+      "_hackathon_title": "Algorand Global x402 Challenge"
+    },
+    {
+      "id": "algorand-enable-bazaar",
+      "type": "build",
+      "title": "Enable Bazaar discovery",
+      "description": "Enable Bazaar discovery extension so endpoints are findable. Verify they appear on the leaderboard.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "algorand-deploy-verify"
+      ],
+      "deliverables": [
+        "endpoints visible in Bazaar",
+        "leaderboard entry confirmed"
+      ],
+      "notes": null,
+      "deadline": "2026-08-30T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "algorand-x402-challenge",
+      "_hackathon_title": "Algorand Global x402 Challenge"
+    },
+    {
+      "id": "algorand-drive-traffic",
+      "type": "build",
+      "title": "Drive real usage volume",
+      "description": "Use finalbuilds2 factory to route traffic to endpoints. Need real on-chain USDC volume for the leaderboard. Measurement window is unannounced in October.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "algorand-enable-bazaar"
+      ],
+      "deliverables": [
+        "real volume on leaderboard",
+        "sustained traffic pattern"
+      ],
+      "notes": null,
+      "deadline": "2026-09-15T00:00:00Z",
+      "estimated_hours": 8,
+      "completed_at": null,
+      "output": null,
+      "_slug": "algorand-x402-challenge",
+      "_hackathon_title": "Algorand Global x402 Challenge"
+    },
+    {
+      "id": "algorand-submit-form",
+      "type": "submit",
+      "title": "Submit project details via form",
+      "description": "Submission form opens Sep 2 (sent via email to registered entrants). Fill it out with project details, what the payment unlocks, proof of who is paying.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "algorand-deploy-verify"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": "2026-09-03T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "algorand-x402-challenge",
+      "_hackathon_title": "Algorand Global x402 Challenge"
+    },
+    {
+      "id": "ethonline-crawl",
+      "type": "crawl",
+      "title": "Crawl ETHGlobal page for tracks + prizes",
+      "description": "Check ethglobal.com/events/online2026 for any new info. Tracks, prizes, sponsors, bounties. ETHGlobal events often have sponsor tracks that are separate from main prizes.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/ethonline-2026.json (updated with tracks/prizes)"
+      ],
+      "notes": null,
+      "deadline": "2026-09-01T00:00:00Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "ethonline-2026",
+      "_hackathon_title": "ETHOnline 2026"
+    },
+    {
+      "id": "ethonline-strategy",
+      "type": "research",
+      "title": "Identify best ETHGlobal track for our specialism",
+      "description": "Map ETHGlobal sponsor tracks to our skills: evaluation, verification, evidence, routing. Find the highest-EV track where agent reliability expertise gives an edge.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "medium",
+      "depends_on": [
+        "ethonline-crawl"
+      ],
+      "deliverables": [
+        "strategy recommendation",
+        "data/active/ethonline-2026.json (strategy_notes)"
+      ],
+      "notes": null,
+      "deadline": "2026-09-05T00:00:00Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "ethonline-2026",
+      "_hackathon_title": "ETHOnline 2026"
+    },
+    {
+      "id": "opencv26-opencv26-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/opencv26-opencv26.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/opencv26-opencv26.json (updated)"
+      ],
+      "notes": null,
+      "deadline": "2026-10-20T23:59:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "opencv26-opencv26",
+      "_hackathon_title": "OpenCV AI Competition 2026, powered by AWS"
+    },
+    {
+      "id": "opencv26-opencv26-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/opencv26-opencv26-refs/"
+      ],
+      "notes": null,
+      "deadline": "2026-10-22T23:59:00.000Z",
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null,
+      "_slug": "opencv26-opencv26",
+      "_hackathon_title": "OpenCV AI Competition 2026, powered by AWS"
+    },
+    {
+      "id": "opencv26-opencv26-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install SDKs, get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "opencv26-opencv26-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": "2026-10-23T23:59:00.000Z",
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null,
+      "_slug": "opencv26-opencv26",
+      "_hackathon_title": "OpenCV AI Competition 2026, powered by AWS"
+    },
+    {
+      "id": "opencv26-opencv26-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "opencv26-opencv26-build-setup",
+        "opencv26-opencv26-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": "2026-10-25T23:59:00.000Z",
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null,
+      "_slug": "opencv26-opencv26",
+      "_hackathon_title": "OpenCV AI Competition 2026, powered by AWS"
+    },
+    {
+      "id": "opencv26-opencv26-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "opencv26-opencv26-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": "2026-10-27T22:59:00.000Z",
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null,
+      "_slug": "opencv26-opencv26",
+      "_hackathon_title": "OpenCV AI Competition 2026, powered by AWS"
+    }
+  ],
+  "task_summary": {
+    "queued": 23,
+    "claimed": 0,
+    "in_progress": 0,
+    "review": 0,
+    "done": 1,
+    "blocked": 0
+  },
+  "agents": [],
+  "conflicts": [],
+  "recent_completions": []
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": "hackathonhelp.active.v1",
+  "generated_at": "2026-08-28T01:31:16.097Z",
+  "hackathon": {
+    "slug": "algorand-x402-challenge",
+    "title": "Algorand Global x402 Challenge",
+    "url": "https://algorand.co/global-x402-challenge",
+    "rules_url": "https://algorand.co/hubfs/x402%20competition%20Official%20Rules.pdf",
+    "status": "active",
+    "added_at": "2026-08-26T20:00:00Z",
+    "timeline": {
+      "opens": "2026-06-12",
+      "registration_closes": "2026-09-01T23:45:00-04:00",
+      "final_presentation_opens": "2026-09-02T23:45:00-04:00",
+      "final_presentation_closes": "2026-09-29T23:45:00-04:00",
+      "shortlist_window": "2026-09-30 to 2026-10-08",
+      "finalist_notification": "2026-10-09",
+      "measurement_window": "unannounced window in October 2026",
+      "finals": "2026-11-02",
+      "finals_location": "Devcon 8, India",
+      "winners_announced": "no later than 2026-11-12"
+    },
+    "prizes": {
+      "total_usd": 100000,
+      "total_algo": 500000,
+      "breakdown": [
+        {
+          "rank": "1st",
+          "usd": 25000
+        },
+        {
+          "rank": "2nd",
+          "usd": 22500
+        },
+        {
+          "rank": "3rd",
+          "usd": 20000
+        },
+        {
+          "rank": "4th",
+          "usd": 17500
+        },
+        {
+          "rank": "5th",
+          "usd": 15000
+        },
+        {
+          "rank": "top-20",
+          "algo": 500000
+        }
+      ],
+      "leaderboard_pool": "500K ALGO distributed across top 20",
+      "payment_options": "USD, USDCa, or other comparable value at Administrator discretion"
+    },
+    "judging": {
+      "criteria": [
+        {
+          "name": "Volume",
+          "weight": "EQUAL",
+          "quote": "Total USDC processed through the endpoint during competition. Both total payment volume and real measurable activity."
+        },
+        {
+          "name": "Use Case Quality",
+          "weight": "EQUAL",
+          "quote": "x402 must be meaningfully integrated into the core payment flow (not bolted on). Clear value in pay-per-request, agentic payments, API monetization, data access, or digital services."
+        },
+        {
+          "name": "Sustained Potential",
+          "weight": "EQUAL",
+          "quote": "Could the endpoint remain active and generate usage post-competition? Credible path to long-term adoption/viability."
+        },
+        {
+          "name": "Innovation",
+          "weight": "EQUAL",
+          "quote": "Novel, thoughtful, or technically meaningful use of x402. New payment flows, agentic commerce patterns, infrastructure patterns, or practical implementations that expand x402."
+        }
+      ],
+      "how_to_win": [
+        "Ship a paid x402 endpoint on Algorand Mainnet",
+        "Generate real on-chain usage volume via GoPlausible facilitator",
+        "Enable Bazaar discovery so your endpoint is findable",
+        "Drive sustained traffic through the unannounced October measurement window",
+        "Top 50 on leaderboard → considered for 10 finalist spots",
+        "10 finalists present live at Devcon 8, India (Nov 2)"
+      ],
+      "leaderboard_formula": "Real on-chain USDC volume settled through GoPlausible facilitator, measured over unannounced window in October 2026",
+      "anti_fraud": "Administrator reviews for artificial volume, wash transactions, self-payments. Inauthentic activity may be excluded or adjusted."
+    },
+    "submission": {
+      "types": [
+        "standard",
+        "composite",
+        "orchestrator"
+      ],
+      "checklist": [
+        "Build and test x402 endpoint on Algorand TestNet",
+        "Deploy to Algorand MainNet with public HTTPS endpoint",
+        "Use GoPlausible facilitator (https://facilitator.goplausible.xyz)",
+        "Enable Bazaar discovery extension",
+        "Add x402-global-challenge tag in resource server config",
+        "Complete at least one real MainNet payment and confirm USDC received (ASA 31566704)",
+        "Ensure endpoint appears in Bazaar and on leaderboard",
+        "Drive real usage through early October (unannounced measurement window)",
+        "Submit project details via submission form (opens Sept 2, sent via email)"
+      ],
+      "required_tech": [
+        "x402",
+        "Algorand MainNet",
+        "GoPlausible facilitator",
+        "Bazaar discovery"
+      ],
+      "submission_url": "https://algorand.co/blog/the-x402-global-challenge-is-live-how-to-build-submit-your-entry",
+      "submission_form": "Sent via email to registered entrants after Sept 2"
+    },
+    "tracks": [
+      {
+        "name": "Standard",
+        "description": "One project, one endpoint, one price. Single paid capability."
+      },
+      {
+        "name": "Composite",
+        "description": "Multiple endpoints sharing the same payTo address. Volume auto-rolls-up on leaderboard."
+      },
+      {
+        "name": "Orchestrator",
+        "description": "Product calls other teams' endpoints. Your incoming payments count for you; outgoing payments count for both you AND the receiving endpoint."
+      }
+    ],
+    "technical": {
+      "network": "ALGORAND_Mainnet_CAIP2",
+      "usdc_asa": "31566704",
+      "facilitator_url": "https://facilitator.goplausible.xyz",
+      "leaderboard_url": "https://facilitator.goplausible.xyz/dashboard/leaderboards",
+      "bazaar_url": "https://facilitator.goplausible.xyz/dashboard/leaderboards?cat=resources",
+      "payto_must_be_opted_in": true,
+      "keep_same_payto": true,
+      "reference_server": "https://github.com/algorandfoundation/x402-demo/tree/main/x402-basic-tutorial/server",
+      "reference_client": "https://github.com/algorandfoundation/x402-demo/tree/main/x402-basic-tutorial/client",
+      "agent_skills": "https://github.com/algorand-devrel/algorand-agent-skills/tree/main/skills",
+      "developer_guide": "https://algorand.co/agentic-commerce/x402/developers"
+    },
+    "eligibility": {
+      "open_to_all": true,
+      "age_requirement": "18+ or age of majority",
+      "excluded_jurisdictions": [
+        "China",
+        "Cuba",
+        "Iran",
+        "North Korea",
+        "Russia",
+        "Venezuela",
+        "Crimea/Donetsk/Luhansk regions of Ukraine"
+      ],
+      "sanctions": "Cannot be under US/UN/EU sanctions or on OFAC lists",
+      "team_size": "Each participant may only be on one team; each team may submit one project",
+      "ip": "Entrants retain all IP in their submissions",
+      "notes": "No explicit US-person exclusion. Identity documents required to prove eligibility."
+    },
+    "strategy_notes": {
+      "our_entry_type": "Composite",
+      "our_endpoint": "Domain verification, domain scoring, LLM pricing — multiple endpoints, same payTo",
+      "overlap_with_finalbuilds2": "high — factory deploys endpoints, volume flywheel, leaderboard aggregation",
+      "overlap_with_telegraph": "medium — both involve paid API endpoints, but different protocol",
+      "key_insight": "Composite entry: multiple independent endpoints sharing one payTo. Leaderboard auto-aggregates volume. More endpoints = more surface area = more traffic. finalbuilds2 is the engine that decides WHAT to deploy.",
+      "build_priority": "Deploy domain.verify as first x402 endpoint on Algorand MainNet before Sept 2 submission form opens",
+      "platform_play": "finalbuilds2 factory monitors what gets traffic, deploys more winners. 402Arena evidence market proves calls are real. Anti-cheat proves volume isn't faked."
+    },
+    "sources": [
+      {
+        "url": "https://algorand.co/global-x402-challenge",
+        "quote": "Ship a paid x402 endpoint... The top 50 on the leaderboard are considered for the 10 finalist spots"
+      },
+      {
+        "url": "https://algorand.co/blog/the-x402-global-challenge-is-live-how-to-build-submit-your-entry",
+        "quote": "Build and test your x402 endpoint on TestNet. Deploy it to MainNet with a public HTTPS endpoint."
+      },
+      {
+        "url": "https://algorand.co/hubfs/x402%20competition%20Official%20Rules.pdf",
+        "quote": "The top 5 Finalist Pool: 1st $25,000, 2nd $22,500, 3rd $20,000, 4th $17,500, 5th $15,000"
+      }
+    ],
+    "last_crawled": "2026-08-28T01:00:00Z",
+    "crawl_version": 2,
+    "progress": {
+      "phase": "build",
+      "pct_complete": 20,
+      "blocks": [
+        "need to deploy domain.verify to MainNet",
+        "submission form opens Sep 2"
+      ],
+      "last_update": "2026-08-28T01:00:00Z",
+      "updated_by": null
+    },
+    "tasks": [
+      {
+        "id": "algorand-deploy-verify",
+        "type": "build",
+        "title": "Deploy domain.verify to Algorand MainNet",
+        "description": "Take the existing domain.verify endpoint and deploy it on Algorand MainNet with public HTTPS. Use GoPlausible facilitator. Add x402-global-challenge tag.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "critical",
+        "depends_on": [],
+        "deliverables": [
+          "MainNet endpoint live",
+          "at least one real payment confirmed"
+        ],
+        "notes": "repo at /root/x402-endpoints",
+        "deadline": "2026-08-30T00:00:00Z",
+        "estimated_hours": 4,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "algorand-deploy-score",
+        "type": "build",
+        "title": "Deploy domain.score as second endpoint",
+        "description": "Deploy domain.score endpoint on MainNet. Same payTo address — composite pattern. Volume auto-aggregates on leaderboard.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "high",
+        "depends_on": [
+          "algorand-deploy-verify"
+        ],
+        "deliverables": [
+          "second endpoint live",
+          "composite volume aggregating"
+        ],
+        "notes": null,
+        "deadline": "2026-08-31T00:00:00Z",
+        "estimated_hours": 3,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "algorand-enable-bazaar",
+        "type": "build",
+        "title": "Enable Bazaar discovery",
+        "description": "Enable Bazaar discovery extension so endpoints are findable. Verify they appear on the leaderboard.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "critical",
+        "depends_on": [
+          "algorand-deploy-verify"
+        ],
+        "deliverables": [
+          "endpoints visible in Bazaar",
+          "leaderboard entry confirmed"
+        ],
+        "notes": null,
+        "deadline": "2026-08-30T00:00:00Z",
+        "estimated_hours": 1,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "algorand-drive-traffic",
+        "type": "build",
+        "title": "Drive real usage volume",
+        "description": "Use finalbuilds2 factory to route traffic to endpoints. Need real on-chain USDC volume for the leaderboard. Measurement window is unannounced in October.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "high",
+        "depends_on": [
+          "algorand-enable-bazaar"
+        ],
+        "deliverables": [
+          "real volume on leaderboard",
+          "sustained traffic pattern"
+        ],
+        "notes": null,
+        "deadline": "2026-09-15T00:00:00Z",
+        "estimated_hours": 8,
+        "completed_at": null,
+        "output": null
+      },
+      {
+        "id": "algorand-submit-form",
+        "type": "submit",
+        "title": "Submit project details via form",
+        "description": "Submission form opens Sep 2 (sent via email to registered entrants). Fill it out with project details, what the payment unlocks, proof of who is paying.",
+        "status": "queued",
+        "assigned_to": null,
+        "claimed_at": null,
+        "priority": "critical",
+        "depends_on": [
+          "algorand-deploy-verify"
+        ],
+        "deliverables": [
+          "submission confirmation"
+        ],
+        "notes": null,
+        "deadline": "2026-09-03T00:00:00Z",
+        "estimated_hours": 1,
+        "completed_at": null,
+        "output": null
+      }
+    ],
+    "rubric": {
+      "generated_from": "Official Rules PDF — 4 criteria, equal weight",
+      "track": "Composite",
+      "criteria": [
+        {
+          "name": "Volume",
+          "weight": 25,
+          "description": "Total USDC processed through the endpoint during competition",
+          "levels": {
+            "0": "No volume",
+            "25": "Some real usage",
+            "50": "Top 50",
+            "100": "Top 10 on leaderboard"
+          },
+          "what_we_need": "Deploy domain.verify + domain.score endpoints. Drive real traffic via finalbuilds2 factory.",
+          "our_score": null,
+          "our_notes": null
+        },
+        {
+          "name": "Use Case Quality",
+          "weight": 25,
+          "description": "x402 meaningfully integrated into core payment flow, not bolted on",
+          "levels": {
+            "0": "Fake or forced",
+            "25": "Bolted on",
+            "50": "Integrated but could work without it",
+            "100": "Native x402 flow, clear agentic value"
+          },
+          "what_we_need": "Domain verification as a paid API — agents pay per check. Natural x402 fit.",
+          "our_score": 60,
+          "our_notes": "Domain verify is natural x402 fit"
+        },
+        {
+          "name": "Sustained Potential",
+          "weight": 25,
+          "description": "Could the endpoint remain active post-competition? Credible long-term adoption path",
+          "levels": {
+            "0": "Hackathon-only",
+            "25": "Maybe niche",
+            "50": "Could work long-term",
+            "100": "Real customers, ongoing demand"
+          },
+          "what_we_need": "Domain verification has real demand — SEO, security, brand monitoring. Prove with usage data.",
+          "our_score": null,
+          "our_notes": null
+        },
+        {
+          "name": "Innovation",
+          "weight": 25,
+          "description": "Novel use of x402, new payment flows, agentic commerce patterns",
+          "levels": {
+            "0": "Trivial",
+            "25": "Standard implementation",
+            "50": "Interesting twist",
+            "100": "New pattern others will copy"
+          },
+          "what_we_need": "Composite pattern: multiple endpoints, one payTo, auto-aggregated volume. Factory deploys winners.",
+          "our_score": null,
+          "our_notes": null
+        }
+      ],
+      "disqualifiers": [
+        "Artificial volume / wash transactions",
+        "Self-payments",
+        "Not using GoPlausible facilitator",
+        "Missing x402-global-challenge tag"
+      ],
+      "total_possible": 100,
+      "our_total_score": 15,
+      "our_confidence": "partial"
+    },
+    "project": {
+      "repo_url": "https://github.com/prx0r/x402-endpoints",
+      "repo_local_path": "/root/x402-endpoints",
+      "demo_url": null,
+      "intent": "Composite: domain.verify + domain.score",
+      "what_it_does": "Paid domain verification and scoring endpoints on Algorand via x402",
+      "tech_stack": [
+        "Algorand",
+        "x402",
+        "GoPlausible",
+        "Node.js"
+      ],
+      "submission_files": [],
+      "screenshots": [],
+      "demo_script": null,
+      "build_story": null,
+      "notes": "Need to deploy before Sep 2 submission form opens. Registration closes Sep 1."
+    }
+  }
+}

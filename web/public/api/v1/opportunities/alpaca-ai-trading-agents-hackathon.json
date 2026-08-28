@@ -1,6 +1,6 @@
 {
   "schema_version": "hackathonhelp.api.v2",
-  "generated_at": "2026-08-23T01:17:40.139Z",
+  "generated_at": "2026-08-28T01:31:16.097Z",
   "field_documentation": "see /api/v1/index.json",
   "opportunity": {
     "id": "man-alpaca-ai-trading-agents-hackathon",
@@ -40,7 +40,7 @@
       "technical_depth_prior": null,
       "family_prior_override": null
     },
-    "days_left": 12,
+    "days_left": 7,
     "gates": {
       "registration_open": true,
       "deadline_future": true,
@@ -82,9 +82,9 @@
       "p90": 12
     },
     "fit": {
-      "strategic_fit": 0.44,
-      "code_reuse": 0.35,
-      "effective_p80_hours": 26
+      "strategic_fit": 0.74,
+      "code_reuse": 0.4,
+      "effective_p80_hours": 24
     },
     "score_v01": {
       "components": {
@@ -100,7 +100,7 @@
     "metrics": {
       "equal_share_naive": 3.01,
       "fair_share_serious": 60.24,
-      "days_left": 12
+      "days_left": 7
     },
     "cautions": [
       "prize not published on platform card — see official page"
@@ -120,10 +120,10 @@
     "decision": {
       "action": "SKIP",
       "reason": "weak opportunity for remaining time",
-      "feasibility": 0.97,
-      "feasibility_label": "10-14d",
-      "latest_safe_start": "2026-08-26",
-      "p_finish_proxy": 0.97,
+      "feasibility": 0.8,
+      "feasibility_label": "5-7d",
+      "latest_safe_start": "2026-08-27",
+      "p_finish_proxy": 0.8,
       "build_model": {
         "p50_hours": 25,
         "p80_hours": 40,
@@ -131,7 +131,7 @@
         "buffer_days": 2,
         "shadow_hour_value_usd": 25
       },
-      "opportunity_cost_usd": 650
+      "opportunity_cost_usd": 600
     },
     "mega": null,
     "order_key": -42.4,
