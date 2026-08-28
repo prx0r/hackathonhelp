@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const ROOT = path.resolve(process.cwd(), '../..');
+const ROOT = path.resolve(process.cwd(), '../');
 const selected = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/active/selected.json'), 'utf8'));
 const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/seed.json'), 'utf8'));
 
@@ -13,7 +13,7 @@ const activeDir = path.join(ROOT, 'data/active');
 function esc(x){ return String(x??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 function fmtDate(d){ return d ? new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric'}) : null; }
 
-const tiles = selected.selected.map((slug:string) => {
+const tileData = selected.selected.map((slug:string) => {
   let data:any = null;
   const activePath = path.join(activeDir, `${slug}.json`);
   if (fs.existsSync(activePath)) {
@@ -35,7 +35,7 @@ const tiles = selected.selected.map((slug:string) => {
   const howToWin = data?.judging?.how_to_win || [];
   const hasDetail = !!data;
 
-  return `<a href="/active/${slug}" class="tile" style="background:${bg};border-color:${border}">
+  const html = `<a href="/active/${slug}" class="tile" style="background:${bg};border-color:${border}">
     <div class="tile-top">
       <span class="tile-status ${isOncoming ? 'status-oncoming' : 'status-active'}">${isOncoming ? 'ONCOMING' : 'BUILDING'}</span>
       <span class="tile-detail${hasDetail ? '' : ' dim'}">${hasDetail ? '●' : '○'}</span>
@@ -47,10 +47,12 @@ const tiles = selected.selected.map((slug:string) => {
     </div>
     ${howToWin.length > 0 ? '<div class="tile-preview">→ ' + esc(howToWin[0]) + '</div>' : ''}
   </a>`;
-}).join('');
+  return {html, isOncoming};
+});
 
-const activeCount = tiles.filter((_,i) => !selected.oncoming?.includes(selected.selected[i])).length;
-const oncomingCount = tiles.length - activeCount;
+const activeCount = tileData.filter((_,i) => !selected.oncoming?.includes(selected.selected[i])).length;
+const oncomingCount = tileData.length - activeCount;
+const tiles = tileData.map(t => t.html).join('');
 ---
 <Base title="Active - HackathonHelp">
   <section class="hero">

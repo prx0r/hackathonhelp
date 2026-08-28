@@ -4,8 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 export function getStaticPaths(){
-  const activeDir = path.resolve(new URL(import.meta.url).pathname, '../../data/active');
-  const files = fs.readdirSync(activeDir).filter(f => f.endsWith('.json') && !f.startsWith('_'));
+  const activeDir = path.resolve(process.cwd(), '../data/active');
+  const files = fs.readdirSync(activeDir).filter(f => f.endsWith('.json') && !f.startsWith('_') && f !== 'selected.json');
   const active = files.map(f => {
     const raw = fs.readFileSync(path.join(activeDir, f), 'utf8');
     return JSON.parse(raw);
