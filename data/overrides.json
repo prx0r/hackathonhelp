@@ -13,58 +13,7 @@
     "submissions_per_registration": 0.05,
     "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
   },
-  "exclusions": [
-    {
-      "match": "tiktok",
-      "reason": "18+/college-student-only per official rules",
-      "eligible": false
-    },
-    {
-      "match": "revenuecat-shipaton",
-      "reason": "Age eligibility conflict between Devpost card and official rules; main competition excluded pending verification",
-      "eligible": false
-    },
-    {
-      "match": "all-things-agentic",
-      "reason": "18+ / age-of-majority requirement per official rules",
-      "eligible": false
-    },
-    {
-      "match": "call-e",
-      "reason": "age-of-majority eligibility per official rules",
-      "eligible": false
-    },
-    {
-      "match": "agentic-cinema",
-      "reason": "age-of-majority eligibility per official rules",
-      "eligible": false
-    },
-    {
-      "match": "trainium",
-      "reason": "18+ age-of-majority per official rules (AWS Trainium Frontier)",
-      "eligible": false
-    },
-    {
-      "match": "rice-urban-sustainability",
-      "reason": "18+, college students only, US-only, team required (official rules)",
-      "eligible": false
-    },
-    {
-      "match": "gibc-v2",
-      "reason": "headline is sponsor products/credits not cash; student eligibility restrictions (official rules)",
-      "eligible": false
-    },
-    {
-      "match": "global-innovation-build",
-      "reason": "headline is sponsor products/credits not cash; student eligibility restrictions",
-      "eligible": false
-    },
-    {
-      "match": "lexhack",
-      "reason": "project must be created during event window; verify before considering (official rules)",
-      "eligible": false
-    }
-  ],
+  "exclusions": [],
   "patches": [
     {
       "match": "telegraph",
