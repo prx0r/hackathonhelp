@@ -295,10 +295,23 @@ async function handleTool(name, args) {
 
     case 'hackathonhelp_discover': {
       const profile = getOrCreateProfile(args.agent_id);
-      const hh = await hhRequest('GET', '/api/v1/opportunities.json');
-      // API returns {generated_at, opportunities:[...]} not a bare array
-      const opps = Array.isArray(hh) ? hh : (hh?.opportunities || []);
-      if (!opps.length) return { content: [{ type: 'text', text: 'No opportunities found' }] };
+      // Try live stream first, fall back to static API
+      let opps = [];
+      try {
+        const hh = await hhRequest('GET', '/api/v2/hackathons');
+        opps = hh?.fresh || [];
+      } catch {}
+      
+      if (!opps.length) {
+        // Fallback: try static opportunities
+        try {
+          const hh = await hhRequest('GET', '/api/v1/opportunities.json');
+          const raw = Array.isArray(hh) ? hh : (hh?.opportunities || []);
+          opps = raw;
+        } catch {}
+      }
+      
+      if (!opps.length) return { content: [{ type: 'text', text: 'No opportunities found. Run fetch-opportunities.mjs or live-stream.mjs first.' }] };
         .filter(o => o.decision?.action !== 'SKIP' && o.decision?.action !== 'ENDED')
         .filter(o => {
           const daysLeft = o.metrics?.days_left || 0;

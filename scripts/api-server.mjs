@@ -137,7 +137,7 @@ function authenticate(req) {
 async function handleRequest(req, res) {
   const url = new URL(req.url, `http://localhost:${PORT}`);
   const method = req.method;
-  const path = url.pathname;
+  const reqPath = url.pathname;
 
   // CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -151,8 +151,13 @@ async function handleRequest(req, res) {
   };
 
   try {
+    // ---- Health check (no auth) ----
+    if (reqPath === '/health' || reqPath === '/api/v2/health') {
+      return json(200, { status: 'ok', uptime: process.uptime(), pid: process.pid });
+    }
+
     // ---- Discovery (no auth) ----
-    if (path === '/api/v2' || path === '/api/v2/') {
+    if (reqPath === '/api/v2' || reqPath === '/api/v2/') {
       return json(200, {
         api: 'hackathonhelp', version: 'v2',
         description: 'Agent-native hackathon coordination. No human signup needed.',
@@ -163,7 +168,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Register (no auth) ----
-    if (path === '/api/v2/agents/register' && method === 'POST') {
+    if (reqPath === '/api/v2/agents/register' && method === 'POST') {
       const body = await readBody(req);
       const agentId = body.agent_id || body.id || `agent-${Date.now().toString(36)}`;
       const caps = body.capabilities || body.caps || [];
@@ -183,29 +188,31 @@ async function handleRequest(req, res) {
     if (!agent) return json(401, { error: 'Invalid or missing X-Agent-Key', hint: 'Register: POST /api/v2/agents/register' });
 
     // ---- List hackathons ----
-    if (path === '/api/v2/hackathons' && method === 'GET') {
+    if (reqPath === '/api/v2/hackathons' && method === 'GET') {
+      // Merge live stream + active hackathons
+      const streamPath = path.join(ROOT, 'data/stream.json');
+      const stream = fs.existsSync(streamPath) ? JSON.parse(fs.readFileSync(streamPath)) : { opportunities: [] };
       const hub = loadHub();
-      const hackathons = [];
+      const active = [];
       for (const h of hub.active_hackathons) {
         const data = loadActive(h.slug);
-        const hq = data?.human_queue || [];
-        hackathons.push({
-          slug: h.slug, title: h.title || data?.title, deadline: h.deadline || data?.timeline?.build_deadline,
-          days_left: h.days_left, priority: h.priority,
-          rubric_total: data?.rubric?.our_total_score,
-          project_repo: data?.project?.repo_url,
-          tasks_total: data?.tasks?.length || 0,
-          tasks_done: data?.tasks?.filter(t => t.status === 'done').length || 0,
-          progress_pct: data?.progress?.pct_complete || 0,
-          human_pending: hq.filter(t => !t.done).length,
-          human_total: hq.length,
+        active.push({
+          slug: h.slug, title: h.title || data?.title, deadline: h.deadline,
+          source: 'active', has_tasks: (data?.tasks?.length || 0) > 0,
+          has_rubric: !!data?.rubric,
         });
       }
-      return json(200, { count: hackathons.length, hackathons, _agent: agent.id });
+      const fresh = (stream.opportunities || []).filter(o => !active.find(a => a.slug === o.slug));
+      return json(200, {
+        count: active.length + fresh.length,
+        active,
+        fresh: fresh.slice(0, 20).map(o => ({ slug: o.slug, title: o.title, score: o.score, action: o.decision?.action, days_left: o.days_left })),
+        _agent: agent.id,
+      });
     }
 
     // ---- Get single hackathon ----
-    const hackMatch = path.match(/^\/api\/v2\/hackathons\/([^/]+)$/);
+    const hackMatch = match(/^\/api\/v2\/hackathons\/([^/]+)$/);
     if (hackMatch && method === 'GET') {
       const data = loadActive(hackMatch[1]);
       if (!data) return json(404, { error: 'Hackathon not found' });
@@ -213,7 +220,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Activate hackathon ----
-    if (path === '/api/v2/hackathons/activate' && method === 'POST') {
+    if (reqPath === '/api/v2/hackathons/activate' && method === 'POST') {
       const body = await readBody(req);
       const { slug, url: hackUrl, judging_criteria } = body;
       if (!slug || !hackUrl) return json(400, { error: 'Required: slug, url' });
@@ -250,7 +257,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Score against rubric ----
-    const scoreMatch = path.match(/^\/api\/v2\/hackathons\/([^/]+)\/score$/);
+    const scoreMatch = match(/^\/api\/v2\/hackathons\/([^/]+)\/score$/);
     if (scoreMatch && method === 'POST') {
       const body = await readBody(req);
       const data = loadActive(scoreMatch[1]);
@@ -278,7 +285,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Link project ----
-    const projectMatch = path.match(/^\/api\/v2\/hackathons\/([^/]+)\/project$/);
+    const projectMatch = match(/^\/api\/v2\/hackathons\/([^/]+)\/project$/);
     if (projectMatch && method === 'POST') {
       const body = await readBody(req);
       const data = loadActive(projectMatch[1]);
@@ -296,7 +303,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- List tasks ----
-    if (path === '/api/v2/tasks' && method === 'GET') {
+    if (reqPath === '/api/v2/tasks' && method === 'GET') {
       const hub = loadHub();
       const allTasks = [];
       for (const h of hub.active_hackathons) {
@@ -309,7 +316,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Claim task ----
-    if (path === '/api/v2/tasks/claim' && method === 'POST') {
+    if (reqPath === '/api/v2/tasks/claim' && method === 'POST') {
       const body = await readBody(req);
       const { task_id } = body;
       if (!task_id) return json(400, { error: 'Required: task_id' });
@@ -331,7 +338,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Update task ----
-    if (path === '/api/v2/tasks/update' && method === 'POST') {
+    if (reqPath === '/api/v2/tasks/update' && method === 'POST') {
       const body = await readBody(req);
       const { task_id, status, notes } = body;
       if (!task_id) return json(400, { error: 'Required: task_id' });
@@ -352,7 +359,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Complete task ----
-    if (path === '/api/v2/tasks/complete' && method === 'POST') {
+    if (reqPath === '/api/v2/tasks/complete' && method === 'POST') {
       const body = await readBody(req);
       const { task_id, output } = body;
       if (!task_id) return json(400, { error: 'Required: task_id' });
@@ -382,7 +389,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Rubric ----
-    const rubricMatch = path.match(/^\/api\/v2\/rubric\/([^/]+)$/);
+    const rubricMatch = match(/^\/api\/v2\/rubric\/([^/]+)$/);
     if (rubricMatch && method === 'GET') {
       const data = loadActive(rubricMatch[1]);
       if (!data?.rubric) return json(404, { error: 'No rubric' });
@@ -390,7 +397,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Checklist ----
-    const checkMatch = path.match(/^\/api\/v2\/checklist\/([^/]+)$/);
+    const checkMatch = match(/^\/api\/v2\/checklist\/([^/]+)$/);
     if (checkMatch && method === 'GET') {
       const data = loadActive(checkMatch[1]);
       if (!data) return json(404, { error: 'Hackathon not found' });

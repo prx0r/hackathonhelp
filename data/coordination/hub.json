@@ -91,6 +91,16 @@
       "entry_type": null,
       "priority": "HIGH",
       "summary": "Newly activated — details pending."
+    },
+    {
+      "slug": "debug-test",
+      "title": "debug-test",
+      "deadline": null,
+      "days_left": null,
+      "status": "active",
+      "entry_type": null,
+      "priority": "MEDIUM",
+      "summary": "Newly activated — details pending."
     }
   ],
   "agents": {},

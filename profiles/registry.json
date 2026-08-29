@@ -2,7 +2,12 @@
   "agents": {
     "hermes-1": {
       "agent_id": "hermes-1",
-      "capabilities": ["research", "build", "crawl", "submit"],
+      "capabilities": [
+        "research",
+        "build",
+        "crawl",
+        "submit"
+      ],
       "skills": {
         "agent_architecture": 0.9,
         "evolution_optimization": 0.85,
@@ -15,11 +20,40 @@
         "python": 0.9,
         "rust": 0.5
       },
-      "thesis_tags": ["agents", "evaluation", "verification", "evidence", "evolution", "payments"],
+      "thesis_tags": [
+        "agents",
+        "evaluation",
+        "verification",
+        "evidence",
+        "evolution",
+        "payments"
+      ],
       "assets": [
-        {"name": "get-me-money", "tags": ["agents", "earning", "evaluation"], "lang": "Python"},
-        {"name": "cge1", "tags": ["evolution", "optimization"], "lang": "Python"},
-        {"name": "hackathonhelp", "tags": ["hackathons", "intelligence"], "lang": "JavaScript"}
+        {
+          "name": "get-me-money",
+          "tags": [
+            "agents",
+            "earning",
+            "evaluation"
+          ],
+          "lang": "Python"
+        },
+        {
+          "name": "cge1",
+          "tags": [
+            "evolution",
+            "optimization"
+          ],
+          "lang": "Python"
+        },
+        {
+          "name": "hackathonhelp",
+          "tags": [
+            "hackathons",
+            "intelligence"
+          ],
+          "lang": "JavaScript"
+        }
       ],
       "hackathons_entered": [],
       "total_tasks_completed": 0,
@@ -27,6 +61,103 @@
       "shadow_hour_value_usd": 25,
       "created_at": "2026-08-28T23:45:00Z",
       "last_active": "2026-08-28T23:45:00Z"
+    },
+    "test-bot": {
+      "agent_id": "test-bot",
+      "capabilities": [
+        "research",
+        "build"
+      ],
+      "skills": {
+        "python": 0.9,
+        "research": 0.85
+      },
+      "thesis_tags": [
+        "agents",
+        "research"
+      ],
+      "assets": [
+        {
+          "name": "my-tool",
+          "tags": [
+            "agents"
+          ],
+          "lang": "Python"
+        }
+      ],
+      "hackathons_entered": [
+        {
+          "slug": "demo",
+          "entered_at": "2026-08-29T01:06:44.218Z"
+        }
+      ],
+      "total_tasks_completed": 1,
+      "total_earnings_usd": 0,
+      "created_at": "2026-08-29T01:06:44.208Z",
+      "last_active": "2026-08-29T01:06:44.209Z"
+    },
+    "mcp-test-bot": {
+      "agent_id": "mcp-test-bot",
+      "capabilities": [],
+      "skills": {
+        "python": 0.9
+      },
+      "thesis_tags": [
+        "agents",
+        "research"
+      ],
+      "assets": [],
+      "hackathons_entered": [],
+      "hackathons_won": [],
+      "total_earnings_usd": 0,
+      "created_at": "2026-08-29T01:13:10.659Z",
+      "last_active": "2026-08-29T01:13:10.659Z",
+      "total_tasks_completed": 0
+    },
+    "e2e-agent": {
+      "agent_id": "e2e-agent",
+      "capabilities": [
+        "research",
+        "build",
+        "crawl"
+      ],
+      "created_at": "2026-08-29T01:17:20.628Z",
+      "last_active": "2026-08-29T01:17:20.659Z",
+      "total_tasks_completed": 0,
+      "_api_key": "hh_76f47edde4bf07239bb825e0a4f7b2774262cf4aaef457fd",
+      "skills": {
+        "python": 0.9,
+        "research": 0.85,
+        "web": 0.8,
+        "typescript": 0.7
+      },
+      "thesis_tags": [
+        "agents",
+        "research",
+        "automation",
+        "web3"
+      ],
+      "assets": [
+        {
+          "name": "hackathonhelp",
+          "tags": [
+            "hackathons"
+          ],
+          "lang": "JavaScript"
+        }
+      ],
+      "hackathons_entered": [],
+      "total_earnings_usd": 0
+    },
+    "debug-agent": {
+      "agent_id": "debug-agent",
+      "capabilities": [
+        "research"
+      ],
+      "created_at": "2026-08-29T01:17:37.894Z",
+      "last_active": "2026-08-29T01:17:37.902Z",
+      "total_tasks_completed": 0,
+      "_api_key": "hh_caa03c1c9ae3720cc48ede711ad2c24fa81c731067e23ec8"
     }
   }
 }

@@ -1,0 +1,162 @@
+{
+  "slug": "debug-test",
+  "title": "debug-test",
+  "url": "https://x.com",
+  "rules_url": null,
+  "status": "active",
+  "added_at": "2026-08-29T01:18:08.267Z",
+  "timeline": {
+    "opens": null,
+    "build_deadline": null,
+    "measurement_window": null,
+    "finals": null,
+    "finals_location": null
+  },
+  "prizes": {
+    "total_usd": null,
+    "breakdown": [],
+    "leaderboard_pool": null
+  },
+  "judging": {
+    "criteria": [],
+    "how_to_win": [],
+    "leaderboard_formula": null
+  },
+  "submission": {
+    "types": [],
+    "checklist": [],
+    "required_tech": [],
+    "submission_url": "https://x.com"
+  },
+  "tracks": [],
+  "eligibility": {
+    "open_to_all": true
+  },
+  "strategy_notes": {
+    "our_entry_type": null,
+    "our_endpoint": null,
+    "key_insight": null
+  },
+  "sources": [
+    {
+      "url": "https://x.com",
+      "quote": ""
+    }
+  ],
+  "last_crawled": "2026-08-29T01:18:08.267Z",
+  "crawl_version": 0,
+  "progress": {
+    "phase": "research",
+    "pct_complete": 0,
+    "blocks": [],
+    "last_update": "2026-08-29T01:18:08.267Z",
+    "updated_by": null
+  },
+  "tasks": [
+    {
+      "id": "debug-test-research-rules",
+      "type": "research",
+      "title": "Deep-read official rules and scoring",
+      "description": "Read every word of the official rules page. Extract scoring formula, submission requirements, disqualified behaviors, gotchas. Update data/active/debug-test.json.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [],
+      "deliverables": [
+        "data/active/debug-test.json (updated)"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "debug-test-research-tech",
+      "type": "research",
+      "title": "Document required tech/SDK/API",
+      "description": "Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [],
+      "deliverables": [
+        "tech docs",
+        "data/active/debug-test-refs/"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 2,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "debug-test-build-setup",
+      "type": "build",
+      "title": "Set up local dev environment",
+      "description": "Install Get things running locally, verify connectivity.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "debug-test-research-tech"
+      ],
+      "deliverables": [
+        "running local env",
+        "smoke test passing"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 3,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "debug-test-build-main",
+      "type": "build",
+      "title": "Build submission",
+      "description": "Implement the core submission. Focus on what the judging criteria reward.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "high",
+      "depends_on": [
+        "debug-test-build-setup",
+        "debug-test-research-rules"
+      ],
+      "deliverables": [
+        "working code",
+        "demo"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 12,
+      "completed_at": null,
+      "output": null
+    },
+    {
+      "id": "debug-test-submit-final",
+      "type": "submit",
+      "title": "Final submission",
+      "description": "Submit before deadline. Verify all requirements met. Double-check.",
+      "status": "queued",
+      "assigned_to": null,
+      "claimed_at": null,
+      "priority": "critical",
+      "depends_on": [
+        "debug-test-build-main"
+      ],
+      "deliverables": [
+        "submission confirmation"
+      ],
+      "notes": null,
+      "deadline": null,
+      "estimated_hours": 1,
+      "completed_at": null,
+      "output": null
+    }
+  ]
+}
