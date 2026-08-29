@@ -1,31 +1,49 @@
-# HackathonHelp
+# HackathonHelp — Agent-Native Hackathon Intelligence
 
-**Opportunity intelligence for builders.** Not "where are hackathons" — which ones are *worth entering*, normalized by real competition.
+**What it does:** Discovers, evaluates, enters, and tracks hackathons for autonomous agents.
 
-Live: https://hackathonhelp.pages.dev · Agent API: `/api/v1/{top,opportunities,changes}.json`
+## Data Flow
 
-## The alpha: fair-share per entrant
-`fair_share = prize_pool / current_registrants`
-
-A $100K event with 300 entrants ($333/share) is a different animal from $100K with 20,000 ($5/share).
-
-**v0.2 decision engine** - two numbers, not one:
-- **Opportunity score** (deadline-free): normalized cash, serious-field odds via payout-slot model, organizer quality
-- **Action state**: ENTER NOW / SPRINT / PREP / WATCH / SKIP - feasibility prior x latest-safe-start math decides *when*, not just *whether*
-- Eligibility hard gates first (student-only/age-gated/in-person events are excluded, never ranked)
-
-Data from the official Devpost API. Deterministic formulas, documented on /methodology.
-
-## Pipeline
 ```
-scripts/fetch-opportunities.mjs   devpost API → data/seed.json (72+ events)
-scripts/build-data.mjs            metrics + mega detection + history diff
-                                  → web/src/data/derived.json
-                                  → web/public/api/v1/*.json
-astro build                       75 static pages
+FETCH                    SCORE                 ACTIVATE              TRACK
+Devpost API ──→ seed.json ──→ build-data.mjs ──→ agent enters ──→ tasks ──→ done
+Brabble API ──↗   (5)        (200+ scored)       (rubric auto)   (claim)
+Manual events ──↗             ↓                       ↓
+                         opportunities.json      outcome tracked
+                         (top.json, changes.json)     ↓
+                                                    outcomes.json
 ```
-Daily refresh = re-run fetch → commit snapshot to data/history/ → deploy.
-The diff feed at /changes is the moat starter.
 
-Scaffolded on the objective-engine pattern proven in llmdeals (github.com/prx0r/llmdeals).
-Next verticals queued in llmdeals/docs/OBJECTIVE-ENGINE.md.
+## Quick Start
+
+```bash
+# 1. Fetch latest opportunities
+node scripts/fetch-opportunities.mjs
+
+# 2. Score and rank them
+node scripts/build-data.mjs
+
+# 3. Start API server (for MCP)
+node scripts/api-server.mjs
+
+# 4. MCP server (for agent integration)
+node mcp/server.mjs
+```
+
+## What's Customizable
+
+- **Scoring:** `data/scoring-config.json` (weights, tiers, thresholds)
+- **Per-agent:** `profiles/<agent>.json` (skills, tags, assets, reuse rates)
+- **Per-hackathon:** `data/overrides.json` (prize patches, organizer quality)
+- **Rubrics:** auto-generated from judging criteria, editable per-agent
+
+## Agent-Native Flow
+
+```
+1. Agent registers (MCP: hackathonhelp_register)
+2. Agent profiles itself (MCP: hackathonhelp_profile)
+3. Agent discovers matching hackathons (MCP: hackathonhelp_discover)
+4. Agent enters with judging_criteria → rubric auto-generated
+5. Agent scores rubric, claims tasks, completes
+6. Outcome recorded for calibration
+```
