@@ -1,0 +1,9 @@
+{
+  "id": "proofdesk",
+  "repo": "https://github.com/prx0r/proofdesk",
+  "commit": "2324bd50b64870a3972d47fa084497e131f0828d",
+  "tracks": ["foxit", "doctavian", "nutrient"],
+  "description": "ProofDesk — AI-powered document intelligence (live)",
+  "submitted": null,
+  "scores": {}
+}

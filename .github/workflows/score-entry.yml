@@ -1,0 +1,57 @@
+name: Score Entry vs Sponsor Rubric
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/entries/**'
+      - 'scripts/score-entry.mjs'
+      - 'data/rubrics/**'
+  workflow_dispatch:
+    inputs:
+      entry:
+        description: 'Entry id (proofdesk, llmdeals, agentseolab)'
+        required: true
+        default: 'proofdesk'
+      track:
+        description: 'Sponsor track (foxit, doctavian, nutrient, serpapi, namecom)'
+        required: true
+        default: 'foxit'
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - entry: proofdesk
+            track: foxit
+          - entry: proofdesk
+            track: doctavian
+          - entry: proofdesk
+            track: nutrient
+          - entry: llmdeals
+            track: serpapi
+          - entry: agentseolab
+            track: namecom
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Score ${{ matrix.entry }} vs ${{ matrix.track }}
+        run: |
+          node scripts/score-entry.mjs --entry ${{ matrix.entry }} --track ${{ matrix.track }} 2>&1 | tee /tmp/score.txt
+          cat /tmp/score.txt
+          echo "--- machine ---"
+          cat data/scores/${{ matrix.entry }}-${{ matrix.track }}.json || true
+      - name: Comment PR
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: /tmp/score.txt
+      - name: Upload score artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: score-${{ matrix.entry }}-${{ matrix.track }}
+          path: |
+            data/scores/${{ matrix.entry }}-${{ matrix.track }}.md
+            data/scores/${{ matrix.entry }}-${{ matrix.track }}.json

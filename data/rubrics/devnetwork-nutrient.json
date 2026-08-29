@@ -1,0 +1,14 @@
+{
+  "track": "nutrient",
+  "sponsor": "Nutrient DWS",
+  "prize": {"cash": 1000, "credits": 500, "split": "1st $750+$250, 2nd $250+$250"},
+  "contact": "douglas@nutrient.io",
+  "requirement": "Turn messy documents into trustworthy, regulated-ready output via Nutrient DWS (REST APIs/SDKs + Viewer). Must use DWS for at least one core doc operation (parse/extract/convert/redact/sign/archive) meaningfully. Bonus for deterministic auditable pipeline with human in loop where guess isn't acceptable. Free DWS, top-up on ask. Creds: api.nutrient.io/campaigns/api-world-cloudx-ai-hackathon-2026 user api-world-cloudx-2026 pass 5746c8e69078fde0126109ce5f8c301f",
+  "rubric": [
+    {"criterion": "Nutrient DWS core operation used meaningfully (not throwaway call)", "weight": 0.30, "check": "grep -ri 'nutrient|dws|data.*extraction|viewer.*review|redact|sign.*archive' src/"},
+    {"criterion": "Pipeline: extract → confidence → human where needed → audit trail", "weight": 0.30, "check": "code has confidence scores + Viewer human review + audit log"},
+    {"criterion": "Deterministic auditable output + Viewer human sign-off", "weight": 0.20, "check": "Viewer used for human approval, signed/sealed output"},
+    {"criterion": "Regulated use case anchored (KYC/e-invoice/trade/mortgage/redact)", "weight": 0.20, "check": "README names regulation and DWS heavy lifting one-liner"}
+  ],
+  "must_have": ["Use Nutrient DWS API/SDK/Viewer for at least one core operation", "Public repo + demo 2-4 min", "One-liner on where DWS did heavy lifting"]
+}

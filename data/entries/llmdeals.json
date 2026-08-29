@@ -1,0 +1,9 @@
+{
+  "id": "llmdeals",
+  "repo": "https://github.com/prx0r/llmdeals",
+  "commit": "93fd71425e9025c591e7d974b8ec5c8340c825c2",
+  "tracks": ["serpapi"],
+  "description": "LLM Deals - Compare AI model pricing across providers",
+  "submitted": null,
+  "scores": {}
+}

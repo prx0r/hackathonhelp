@@ -1,0 +1,15 @@
+{
+  "id": "proofdesk-foxit-2026-09-01",
+  "source": "devpost",
+  "source_id": "proofdesk",
+  "objective": "Ship proofdesk that proves messy data → right doc → signed via Foxit/Doctavian/Nutrient",
+  "prize": 3500,
+  "participants": 120,
+  "tracks": ["foxit", "doctavian", "nutrient"],
+  "reuse": 0.35,
+  "p80_hours": 40,
+  "shadow_usd_per_h": 35,
+  "deadline": "2026-09-30",
+  "repo": "https://github.com/you/proofdesk",
+  "rubric": "data/rubrics/devnetwork-foxit.json"
+}

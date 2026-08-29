@@ -1,0 +1,14 @@
+{
+  "track": "doctavian",
+  "sponsor": "Doctavian",
+  "prize": {"cash": 700, "credits": 150, "split": "1st $500+$150, 2nd $200+$150"},
+  "contact": "hello@doctavian.com",
+  "requirement": "Bring messiest real-world data, build AI agent that turns it into a document that gets it right repeatedly via Doctavian generation API (templates with expressions that branch/loop/calculate). Must actually call Doctavian generation API to shape a real document.",
+  "rubric": [
+    {"criterion": "Doctavian generation API called (real document shaped, not mocked)", "weight": 0.35, "check": "grep -ri 'doctavian|doctavian.*generation|template.*branch|expression' src/"},
+    {"criterion": "Template intelligence (branch/loop/calc, not flat mail-merge)", "weight": 0.25, "check": "template file has {{#if}} / {{#each}} / expressions"},
+    {"criterion": "Messiest data handled repeatedly", "weight": 0.20, "check": "tests with varied data shapes, not one happy path"},
+    {"criterion": "One-line where Doctavian did real work + demo 2-4 min", "weight": 0.20, "check": "README has 'Where Doctavian did work' + video link"}
+  ],
+  "must_have": ["Call Doctavian generation API", "Public repo + setup instructions", "Demo video 2-4 min"]
+}

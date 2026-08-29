@@ -1,0 +1,14 @@
+{
+  "track": "serpapi",
+  "sponsor": "SerpApi",
+  "prize": {"cash": 1500, "credits": 1500, "split": "1st $1000+$1000, 2nd $500+$500"},
+  "contact": "alaa@serpapi.com",
+  "requirement": "Build innovative AI application using one or more SerpApi APIs to access reliable structured real-time web data. Solve meaningful real-world problem, show how live search data improves AI experience.",
+  "rubric": [
+    {"criterion": "SerpApi integration depth (one or more APIs, structured live data)", "weight": 0.30, "check": "grep -ri 'serpapi|search.*api|google.*search|serp' src/"},
+    {"criterion": "Originality & real-world problem solved", "weight": 0.20, "check": "README pitch names problem + why live data matters"},
+    {"criterion": "Technical execution & usability", "weight": 0.25, "check": "demo works end-to-end, error handling"},
+    {"criterion": "Potential impact", "weight": 0.25, "check": "peer Q: would you use this weekly?"}
+  ],
+  "must_have": ["Call SerpApi", "Public repo + demo"]
+}

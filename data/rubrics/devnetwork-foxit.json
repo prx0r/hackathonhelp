@@ -1,0 +1,15 @@
+{
+  "track": "foxit",
+  "sponsor": "Foxit Software",
+  "prize": {"cash": 1000, "split": "1st $700, 2nd $300"},
+  "contact": "theodore_castro@foxitsoftware.com",
+  "requirement": "Build an agent that starts from a plain prompt and ends with a signed document. MCP server wraps Foxit PDF Services API (40 tools for doc gen, conversion, merging, compression, OCR, extraction). Signing is NOT in catalog — agent must call Foxit eSign API directly with own credentials, person signs. Handoff is the challenge.",
+  "rubric": [
+    {"criterion": "Tool coverage (40 Foxit PDF Services tools used reversibly)", "weight": 0.25, "check": "grep -ri 'foxit|pdf.*service|document.*generation|ocr|compression' src/"},
+    {"criterion": "Signing handoff design (agent calls eSign API directly, person signs, boundary defended)", "weight": 0.30, "check": "grep -ri 'esign|Foxit.*eSign|sign.*document' src/ && human-in-loop documented"},
+    {"criterion": "Workflow defensibility (argue where signing belongs, boundary choice)", "weight": 0.20, "check": "README has section 'Boundary choice'"},
+    {"criterion": "Demo completeness (prompt → doc → signed)", "weight": 0.15, "check": "README has demo video link + repo public"},
+    {"criterion": "Code quality & reversibility", "weight": 0.10, "check": "tests pass, reversible ops tested"}
+  ],
+  "must_have": ["Call Foxit PDF Services API for doc work", "Call Foxit eSign API separately (not via MCP)", "Human signs, not agent"]
+}

@@ -259,6 +259,42 @@ const TOOLS = [
     description: 'See overall state: active hackathons, agent activity, task queue',
     inputSchema: { type: 'object', properties: {} },
   },
+  {
+    name: 'hackathonhelp_ai_tools',
+    description: 'Check AI tool costs for a hackathon (from LLMDeals data)',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        slug: { type: 'string', description: 'Hackathon slug to check tools for' },
+        budget: { type: 'number', description: 'Your budget in USD' },
+      },
+      required: ['slug'],
+    },
+  },
+  {
+    name: 'hackathonhelp_ip_check',
+    description: 'Check IP rights for a hackathon (what you own vs what organizer keeps)',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        slug: { type: 'string', description: 'Hackathon slug' },
+      },
+      required: ['slug'],
+    },
+  },
+  {
+    name: 'hackathonhelp_score_entry',
+    description: 'Score a GitHub repo entry against a sponsor track rubric (auto-check + peer template). Entry is a repo stored as data/entries/<id>.json.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        entry: { type: 'string', description: 'Entry id: proofdesk, llmdeals, agentseolab' },
+        track: { type: 'string', description: 'Sponsor track: foxit, doctavian, nutrient, serpapi, namecom, perfectcorp' },
+        repo: { type: 'string', description: 'Override repo URL (optional)' },
+      },
+      required: ['entry', 'track'],
+    },
+  },
 ];
 
 // ── Tool Handlers ──────────────────────────────────────────────────────────
@@ -312,6 +348,9 @@ async function handleTool(name, args) {
       }
       
       if (!opps.length) return { content: [{ type: 'text', text: 'No opportunities found. Run fetch-opportunities.mjs or live-stream.mjs first.' }] };
+
+      // Filter to live opportunities only
+      opps = opps
         .filter(o => o.decision?.action !== 'SKIP' && o.decision?.action !== 'ENDED')
         .filter(o => {
           const daysLeft = o.metrics?.days_left || 0;
@@ -455,6 +494,81 @@ async function handleTool(name, args) {
     case 'hackathonhelp_hub': {
       const hh = await hhRequest('GET', '/api/v1/coordination/hub.json');
       return { content: [{ type: 'text', text: JSON.stringify(hh, null, 2) }] };
+    }
+
+    case 'hackathonhelp_ai_tools': {
+      const intelPath = path.join(ROOT, 'data/ai-tool-intel.json');
+      if (!fs.existsSync(intelPath)) {
+        return { content: [{ type: 'text', text: 'No AI tool intel. Run scripts/llmdeals-adapter.mjs first.' }] };
+      }
+      const intel = JSON.parse(fs.readFileSync(intelPath, 'utf8'));
+      const slugInfo = intel.hackathons?.[args.slug];
+      if (!slugInfo) {
+        // Try to score from live deals
+        try {
+          const deals = await hhRequest('GET', '/api/v1/deals.json');
+          const allDeals = deals?.deals || [];
+          const themes = args.slug.split('-').slice(0, 3);
+          const relevant = allDeals.filter(d => {
+            const text = `${d.provider || ''} ${d.product || ''}`.toLowerCase();
+            return themes.some(t => text.includes(t));
+          });
+          return { content: [{ type: 'text', text: JSON.stringify({
+            slug: args.slug,
+            estimated_cost: 0,
+            relevant_deals: relevant.length,
+            budget_sufficient: true,
+            deals: relevant.slice(0, 3),
+          }, null, 2) }] };
+        } catch {
+          return { content: [{ type: 'text', text: `No intel for ${args.slug}. Run llmdeals-adapter.mjs.` }] };
+        }
+      }
+      if (args.budget) {
+        slugInfo.budget_sufficient = slugInfo.estimated_cost <= args.budget;
+      }
+      return { content: [{ type: 'text', text: JSON.stringify(slugInfo, null, 2) }] };
+    }
+
+    case 'hackathonhelp_ip_check': {
+      const overrides = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/overrides.json'), 'utf8'));
+      const ipTiers = overrides.ip_rights?.tiers || {};
+      // Try to find IP tier for this hackathon
+      let ipTier = overrides.patches?.find(p => args.slug?.includes(p.match))?.ip_tier;
+      if (!ipTier) {
+        // Check seed data
+        try {
+          const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/seed.json'), 'utf8'));
+          const opp = (seed.opportunities || []).find(o => o.slug === args.slug);
+          ipTier = opp?.ip_tier || 'unknown';
+        } catch { ipTier = 'unknown'; }
+      }
+      const tierInfo = ipTiers[ipTier] || ipTiers['limited_license'] || {};
+      return { content: [{ type: 'text', text: JSON.stringify({
+        slug: args.slug,
+        ip_tier: ipTier,
+        description: tierInfo.description || 'Not verified. Read official rules.',
+        risk_level: tierInfo.risk_level || 'unknown',
+        score_modifier: tierInfo.score_modifier || 0,
+        tip: 'Always read official rules before entering. IP terms may differ by track.',
+      }, null, 2) }] };
+    }
+
+    case 'hackathonhelp_score_entry': {
+      const { execSync } = await import('node:child_process');
+      const entry = args.entry;
+      const track = args.track;
+      const repo = args.repo ? ` --repo "${args.repo}"` : '';
+      try {
+        const out = execSync(`node ${path.join(ROOT, 'scripts/score-entry.mjs')} --entry ${entry} --track ${track}${repo} 2>&1`, { encoding: 'utf8', maxBuffer: 1024*1024 });
+        // Also read machine score
+        const scorePath = path.join(ROOT, `data/scores/${entry}-${track}.json`);
+        let machine = null;
+        if (fs.existsSync(scorePath)) machine = JSON.parse(fs.readFileSync(scorePath, 'utf8'));
+        return { content: [{ type: 'text', text: out.slice(0, 8000) + (machine ? `\n\nMachine: ${JSON.stringify(machine, null, 2).slice(0, 2000)}` : '') }] };
+      } catch (e) {
+        return { content: [{ type: 'text', text: `Score failed: ${e.message.slice(0, 500)}\n${e.stdout?.toString().slice(0, 2000) || ''}` }] };
+      }
     }
 
     default:

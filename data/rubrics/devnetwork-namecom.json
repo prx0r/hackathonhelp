@@ -1,0 +1,15 @@
+{
+  "track": "namecom",
+  "sponsor": "name.com (Identity Digital)",
+  "prize": {"cash": 2000, "split": "1st $1500 Amazon gift, 2nd $500"},
+  "contact": "daisy.edwards@identity.digital",
+  "requirement": "Build product powered by name.com API for domain search, availability checks, registration, or DNS management as core part of build. Format open, can extend existing project if name.com API is functionally central.",
+  "rubric": [
+    {"criterion": "API integration depth (multiple endpoints: search+register+DNS vs single call)", "weight": 0.35, "check": "grep -ri 'name\\.com|domain.*search|availability|register.*domain|dns.*manage' src/ | wc -l >=3"},
+    {"criterion": "Creativity & originality (unexpected use case vs incremental search tool)", "weight": 0.20, "check": "peer Q: have you seen this before?"},
+    {"criterion": "Technical execution (code quality, architecture, edge cases)", "weight": 0.20, "check": "tests pass, handles taken domains, DNS failures"},
+    {"criterion": "Real-world viability (plausible product, clear value prop)", "weight": 0.15, "check": "README has user + value prop"},
+    {"criterion": "Presentation & demo (integration in action, not slides)", "weight": 0.10, "check": "demo video 1-3 min shows API calls live"}
+  ],
+  "must_have": ["Call name.com API (search/availability/registration/DNS)", "Public repo + demo video"]
+}
