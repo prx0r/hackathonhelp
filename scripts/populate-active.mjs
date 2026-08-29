@@ -96,9 +96,13 @@ function buildSources(seed, url) {
   return sources;
 }
 
-function buildTasks(slug, deadline) {
+function buildTasks(slug, deadline, hackathonData) {
   const tasks = [];
   const dl = deadline ? new Date(deadline) : null;
+  const tracks = hackathonData?.tracks || [];
+  const requiredTech = hackathonData?.required_tech || [];
+  const themes = hackathonData?.themes || [];
+  const judging = hackathonData?.judging || {};
 
   // Research tasks - always first
   tasks.push({
@@ -113,11 +117,14 @@ function buildTasks(slug, deadline) {
     estimated_hours: 1, completed_at: null, output: null,
   });
 
+  // Tech research - include specific tech from hackathon requirements
+  const techDetail = requiredTech.length > 0
+    ? `Required: ${requiredTech.join(', ')}. ` : '';
   tasks.push({
     id: `${slug}-research-tech`,
     type: 'research',
     title: 'Document required tech/SDK/API',
-    description: `Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.`,
+    description: `${techDetail}Find official docs, SDKs, APIs. Document integration patterns, gotchas, requirements. Clone any official repos.`,
     status: 'queued', assigned_to: null, claimed_at: null,
     priority: 'high', depends_on: [], deliverables: ['tech docs', `data/active/${slug}-refs/`],
     notes: null,
@@ -125,12 +132,28 @@ function buildTasks(slug, deadline) {
     estimated_hours: 2, completed_at: null, output: null,
   });
 
+  // Competitor research - derived from themes
+  if (themes.length > 0) {
+    tasks.push({
+      id: `${slug}-research-competitors`,
+      type: 'research',
+      title: `Research competitors and past winners for ${themes.join(', ')}`,
+      description: `Analyze previous winners and current competitors in ${themes.join(', ')}. Find patterns in what judges reward.`,
+      status: 'queued', assigned_to: null, claimed_at: null,
+      priority: 'medium', depends_on: [`${slug}-research-rules`],
+      deliverables: ['competitor analysis', 'winner patterns'],
+      notes: null,
+      deadline: dl ? new Date(dl.getTime() - 4 * 86400000).toISOString() : null,
+      estimated_hours: 2, completed_at: null, output: null,
+    });
+  }
+
   // Build tasks
   tasks.push({
     id: `${slug}-build-setup`,
     type: 'build',
     title: 'Set up local dev environment',
-    description: 'Install SDKs, get things running locally, verify connectivity.',
+    description: `Install ${requiredTech.length > 0 ? requiredTech.join(', ') + '. ' : ''}Get things running locally, verify connectivity.`,
     status: 'queued', assigned_to: null, claimed_at: null,
     priority: 'high', depends_on: [`${slug}-research-tech`],
     deliverables: ['running local env', 'smoke test passing'],
@@ -139,18 +162,72 @@ function buildTasks(slug, deadline) {
     estimated_hours: 3, completed_at: null, output: null,
   });
 
-  tasks.push({
-    id: `${slug}-build-main`,
-    type: 'build',
-    title: 'Build submission',
-    description: 'Implement the core submission. Focus on what the judging criteria reward.',
-    status: 'queued', assigned_to: null, claimed_at: null,
-    priority: 'high', depends_on: [`${slug}-build-setup`, `${slug}-research-rules`],
-    deliverables: ['working code', 'demo'],
-    notes: null,
-    deadline: dl ? new Date(dl.getTime() - 2 * 86400000).toISOString() : null,
-    estimated_hours: 12, completed_at: null, output: null,
-  });
+  // Track-specific build tasks
+  for (const track of tracks) {
+    tasks.push({
+      id: `${slug}-build-${track.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+      type: 'build',
+      title: `Build for track: ${track}`,
+      description: `Implement submission for track "${track}". Focus on what judges in this track reward.`,
+      status: 'queued', assigned_to: null, claimed_at: null,
+      priority: 'high', depends_on: [`${slug}-build-setup`, `${slug}-research-rules`],
+      deliverables: [`working ${track} submission`],
+      notes: null,
+      deadline: dl ? new Date(dl.getTime() - 2 * 86400000).toISOString() : null,
+      estimated_hours: 8, completed_at: null, output: null,
+    });
+  }
+
+  // If no tracks, create a generic build task
+  if (tracks.length === 0) {
+    tasks.push({
+      id: `${slug}-build-main`,
+      type: 'build',
+      title: 'Build submission',
+      description: 'Implement the core submission. Focus on what the judging criteria reward.',
+      status: 'queued', assigned_to: null, claimed_at: null,
+      priority: 'high', depends_on: [`${slug}-build-setup`, `${slug}-research-rules`],
+      deliverables: ['working code', 'demo'],
+      notes: null,
+      deadline: dl ? new Date(dl.getTime() - 2 * 86400000).toISOString() : null,
+      estimated_hours: 12, completed_at: null, output: null,
+    });
+  }
+
+  // Judging-criteria-specific tasks
+  if (judging.criteria?.length > 0) {
+    for (const c of judging.criteria.slice(0, 5)) {
+      const name = typeof c === 'string' ? c : c.name;
+      tasks.push({
+        id: `${slug}-score-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+        type: 'document',
+        title: `Prepare evidence for: ${name}`,
+        description: `Gather and document evidence that scores high on "${name}". Update rubric with self-assessment.`,
+        status: 'queued', assigned_to: null, claimed_at: null,
+        priority: 'medium', depends_on: [`${slug}-build-main`],
+        deliverables: [`rubric score for ${name}`, 'supporting evidence'],
+        notes: null,
+        deadline: dl ? new Date(dl.getTime() - 1 * 86400000).toISOString() : null,
+        estimated_hours: 1, completed_at: null, output: null,
+      });
+    }
+  }
+
+  // Social tasks - if hackathon requires social presence
+  if (themes.some(t => ['social', 'community', 'outreach'].includes(t.toLowerCase()))) {
+    tasks.push({
+      id: `${slug}-social-announce`,
+      type: 'social',
+      title: 'Post announcement on X/Discord',
+      description: 'Share progress, tag organizers, engage with community.',
+      status: 'queued', assigned_to: null, claimed_at: null,
+      priority: 'medium', depends_on: [`${slug}-build-main`],
+      deliverables: ['post URL'],
+      notes: null,
+      deadline: dl ? new Date(dl.getTime() - 1 * 86400000).toISOString() : null,
+      estimated_hours: 1, completed_at: null, output: null,
+    });
+  }
 
   // Submit
   tasks.push({
@@ -243,7 +320,7 @@ if (cmd === '--from-seed') {
     last_crawled: NOW,
     crawl_version: 0,
     progress: buildProgress(),
-    tasks: buildTasks(slug, deadline),
+    tasks: buildTasks(slug, deadline, seed),
   };
 
   fs.mkdirSync(ACTIVE_DIR, { recursive: true });
@@ -307,7 +384,7 @@ if (cmd === '--from-seed') {
     last_crawled: NOW,
     crawl_version: 0,
     progress: buildProgress(),
-    tasks: buildTasks(slug, deadline),
+    tasks: buildTasks(slug, deadline, { tracks: [], required_tech: [], themes: [], judging: {} }),
   };
 
   fs.mkdirSync(ACTIVE_DIR, { recursive: true });

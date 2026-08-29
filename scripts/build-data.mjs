@@ -8,6 +8,11 @@ const seed = JSON.parse(fs.readFileSync(path.join(ROOT,'data/seed.json'),'utf8')
 const OV = JSON.parse(fs.readFileSync(path.join(ROOT,'data/overrides.json'),'utf8'));
 const now = Date.now();
 
+// --profile argument: use per-agent profile instead of default
+const profileArg = process.argv.find((a, i, arr) => arr[i-1] === '--profile');
+const PROFILE_PATH = profileArg || path.join(ROOT, 'data/builder-profile.json');
+const PROFILE = JSON.parse(fs.readFileSync(PROFILE_PATH, 'utf8'));
+
 function findOverride(o){
   // manual entries carry their own verified metadata
   if(o.source==='manual' && o.manual){

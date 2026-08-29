@@ -18,11 +18,52 @@ const ACTIVE_DIR = path.join(ROOT, 'data/active');
 const HUB_PATH = path.join(ROOT, 'data/coordination/hub.json');
 
 // ---- persistence ----
-function loadAgents() {
-  if (!fs.existsSync(AGENTS_PATH)) return { agents: {}, keys: {} };
-  return JSON.parse(fs.readFileSync(AGENTS_PATH, 'utf8'));
+// Single source of truth: profiles/registry.json
+const PROFILES_PATH = path.join(ROOT, 'profiles/registry.json');
+
+function loadProfiles() {
+  if (!fs.existsSync(PROFILES_PATH)) return { agents: {} };
+  return JSON.parse(fs.readFileSync(PROFILES_PATH, 'utf8'));
 }
-function saveAgents(d) { fs.writeFileSync(AGENTS_PATH, JSON.stringify(d, null, 2)); }
+function saveProfiles(d) {
+  fs.mkdirSync(path.dirname(PROFILES_PATH), { recursive: true });
+  fs.writeFileSync(PROFILES_PATH, JSON.stringify(d, null, 2));
+}
+
+// Backward-compat: loadAgents reads from profiles registry
+function loadAgents() {
+  const reg = loadProfiles();
+  // Convert profile format to agents.json format for API key lookup
+  const agents = { agents: {}, keys: {} };
+  for (const [id, profile] of Object.entries(reg.agents || {})) {
+    agents.agents[id] = {
+      capabilities: profile.capabilities || [],
+      registered_at: profile.created_at || new Date().toISOString(),
+      last_seen: profile.last_active || new Date().toISOString(),
+      tasks_completed: profile.total_tasks_completed || 0,
+    };
+    // Restore API key if stored
+    if (profile._api_key) {
+      agents.keys[profile._api_key] = id;
+    }
+  }
+  return agents;
+}
+function saveAgents(data) {
+  const reg = loadProfiles();
+  for (const [id, agentData] of Object.entries(data.agents || {})) {
+    if (!reg.agents[id]) reg.agents[id] = { agent_id: id };
+    reg.agents[id].capabilities = agentData.capabilities || reg.agents[id].capabilities || [];
+    reg.agents[id].created_at = agentData.registered_at || reg.agents[id].created_at;
+    reg.agents[id].last_active = agentData.last_seen || reg.agents[id].last_active;
+    reg.agents[id].total_tasks_completed = agentData.tasks_completed || reg.agents[id].total_tasks_completed || 0;
+  }
+  // Store API keys in profile
+  for (const [key, id] of Object.entries(data.keys || {})) {
+    if (reg.agents[id]) reg.agents[id]._api_key = key;
+  }
+  saveProfiles(reg);
+}
 
 // ---- scoring config ----
 function loadScoringConfig() {
@@ -55,7 +96,22 @@ function loadActive(slug) {
   if (!fs.existsSync(f)) return null;
   return JSON.parse(fs.readFileSync(f, 'utf8'));
 }
-function saveActive(slug, d) { fs.writeFileSync(path.join(ACTIVE_DIR, `${slug}.json`), JSON.stringify(d, null, 2)); }
+function saveActive(slug, d) {
+  const filePath = path.join(ACTIVE_DIR, `${slug}.json`);
+  // Optimistic concurrency: check version before write
+  if (d._version !== undefined) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (existing._version && existing._version !== d._version) {
+        throw new Error(`Conflict: file was modified (version ${existing._version} != ${d._version})`);
+      }
+    } catch (e) {
+      if (e.message.includes('Conflict')) throw e;
+    }
+    d._version = (d._version || 0) + 1;
+  }
+  fs.writeFileSync(filePath, JSON.stringify(d, null, 2));
+}
 function loadHub() {
   if (!fs.existsSync(HUB_PATH)) return { active_hackathons: [], agents: {} };
   return JSON.parse(fs.readFileSync(HUB_PATH, 'utf8'));
