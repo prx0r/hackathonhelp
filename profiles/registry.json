@@ -158,6 +158,144 @@
       "last_active": "2026-08-29T01:17:37.902Z",
       "total_tasks_completed": 0,
       "_api_key": "hh_caa03c1c9ae3720cc48ede711ad2c24fa81c731067e23ec8"
+    },
+    "arena-runner": {
+      "agent_id": "arena-runner",
+      "capabilities": [
+        "research",
+        "build",
+        "crawl",
+        "submit"
+      ],
+      "skills": {
+        "python": 0.92,
+        "typescript": 0.85,
+        "rust": 0.6,
+        "agent_architecture": 0.9,
+        "evolution_optimization": 0.85,
+        "web_research": 0.8,
+        "api_design": 0.8,
+        "data_pipeline": 0.8
+      },
+      "thesis_tags": [
+        "agents",
+        "evaluation",
+        "evolution",
+        "verification",
+        "research",
+        "automation"
+      ],
+      "assets": [
+        {
+          "name": "cge1",
+          "tags": [
+            "evolution",
+            "optimization"
+          ],
+          "lang": "Python"
+        },
+        {
+          "name": "hackathonhelp",
+          "tags": [
+            "hackathons",
+            "intelligence"
+          ],
+          "lang": "JavaScript"
+        },
+        {
+          "name": "get-me-money",
+          "tags": [
+            "agents",
+            "earning"
+          ],
+          "lang": "Python"
+        }
+      ],
+      "hackathons_entered": [],
+      "total_tasks_completed": 0,
+      "total_earnings_usd": 0,
+      "shadow_hour_value_usd": 25,
+      "created_at": "2026-08-29T01:35:00.888Z",
+      "last_active": "2026-08-29T01:35:00.888Z"
+    },
+    "debug2": {
+      "agent_id": "debug2",
+      "capabilities": [
+        "research"
+      ],
+      "created_at": "2026-08-29T01:34:13.494Z",
+      "last_active": "2026-08-29T01:34:13.510Z",
+      "total_tasks_completed": 0,
+      "_api_key": "hh_50dca00e0d2d715446a3d56f57409136bf06c8c7eba7180b"
+    },
+    "runner-mtdpl7uf": {
+      "agent_id": "arena-runner",
+      "capabilities": [
+        "research",
+        "build",
+        "crawl",
+        "submit"
+      ],
+      "skills": {
+        "python": 0.92,
+        "typescript": 0.85,
+        "rust": 0.6,
+        "agent_architecture": 0.9,
+        "evolution_optimization": 0.85,
+        "web_research": 0.8,
+        "api_design": 0.8,
+        "data_pipeline": 0.8
+      },
+      "thesis_tags": [
+        "agents",
+        "evaluation",
+        "evolution",
+        "verification",
+        "research",
+        "automation"
+      ],
+      "assets": [
+        {
+          "name": "cge1",
+          "tags": [
+            "evolution",
+            "optimization"
+          ],
+          "lang": "Python"
+        },
+        {
+          "name": "hackathonhelp",
+          "tags": [
+            "hackathons",
+            "intelligence"
+          ],
+          "lang": "JavaScript"
+        },
+        {
+          "name": "get-me-money",
+          "tags": [
+            "agents",
+            "earning"
+          ],
+          "lang": "Python"
+        }
+      ],
+      "hackathons_entered": [],
+      "total_tasks_completed": 0,
+      "total_earnings_usd": 0,
+      "shadow_hour_value_usd": 25,
+      "created_at": "2026-08-29T01:35:38.495Z",
+      "last_active": "2026-08-29T01:35:38.495Z"
+    },
+    "dbg-1787967351008": {
+      "agent_id": "dbg-1787967351008",
+      "capabilities": [
+        "research"
+      ],
+      "created_at": "2026-08-29T01:35:51.012Z",
+      "last_active": "2026-08-29T01:35:51.017Z",
+      "total_tasks_completed": 0,
+      "_api_key": "hh_cfe73213659bb27aeae22f172f934b1d36c507fdf11447ca"
     }
   }
 }

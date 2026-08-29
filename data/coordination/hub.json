@@ -101,6 +101,16 @@
       "entry_type": null,
       "priority": "MEDIUM",
       "summary": "Newly activated — details pending."
+    },
+    {
+      "slug": "dbg-hack-1787967351016",
+      "title": "dbg-hack-1787967351016",
+      "deadline": null,
+      "days_left": null,
+      "status": "active",
+      "entry_type": null,
+      "priority": "MEDIUM",
+      "summary": "Newly activated — details pending."
     }
   ],
   "agents": {},

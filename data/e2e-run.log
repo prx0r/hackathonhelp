@@ -1,0 +1,31 @@
+[2026-08-29T01:35:38.259Z] === STARTING API SERVER ===
+[2026-08-29T01:35:38.342Z] [server] HackathonHelp API running on http://localhost:3847
+[2026-08-29T01:35:38.342Z] [server] Discovery: http://localhost:3847/api/v2
+Register:  POST http://localhost:3847/api/v2/agents/register
+[2026-08-29T01:35:38.485Z] Server health: {
+  "status": "ok",
+  "uptime": 0.213542347,
+  "pid": 1271010
+}
+[2026-08-29T01:35:38.487Z] === SERVER READY ===
+
+[2026-08-29T01:35:38.487Z] --- Step 1: Register Agent ---
+[2026-08-29T01:35:38.494Z] Registered: runner-mtdpl7uf
+[2026-08-29T01:35:38.494Z] API Key: hh_c407466bb737b1adeab194ac16de6eabf36a3601c6663c72
+[2026-08-29T01:35:38.494Z] 
+--- Step 2: Create Profile ---
+[2026-08-29T01:35:38.495Z] Profile: 8 skills, 6 tags
+[2026-08-29T01:35:38.495Z] 
+--- Step 3: Discover Opportunities ---
+[2026-08-29T01:35:38.499Z] Active: 0, Fresh: 0
+[2026-08-29T01:35:38.499Z] 
+--- Step 4: Enter Hackathon ---
+[2026-08-29T01:35:38.502Z] Activated: undefined
+[2026-08-29T01:35:38.502Z] Tasks created: undefined
+[2026-08-29T01:35:38.502Z] Rubric generated: undefined (undefined criteria)
+[2026-08-29T01:35:38.502Z] 
+--- Step 5: View Tasks ---
+[2026-08-29T01:35:38.505Z] ERROR: Cannot read properties of undefined (reading 'filter')
+[2026-08-29T01:35:38.506Z] TypeError: Cannot read properties of undefined (reading 'filter')
+    at main (file:///root/hackathonhelp/scripts/e2e-run.mjs:131:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

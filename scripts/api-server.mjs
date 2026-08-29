@@ -212,7 +212,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Get single hackathon ----
-    const hackMatch = match(/^\/api\/v2\/hackathons\/([^/]+)$/);
+    const hackMatch = reqPath.match(/^\/api\/v2\/hackathons\/([^/]+)$/);
     if (hackMatch && method === 'GET') {
       const data = loadActive(hackMatch[1]);
       if (!data) return json(404, { error: 'Hackathon not found' });
@@ -257,7 +257,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Score against rubric ----
-    const scoreMatch = match(/^\/api\/v2\/hackathons\/([^/]+)\/score$/);
+    const scoreMatch = reqPath.match(/^\/api\/v2\/hackathons\/([^/]+)\/score$/);
     if (scoreMatch && method === 'POST') {
       const body = await readBody(req);
       const data = loadActive(scoreMatch[1]);
@@ -285,7 +285,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Link project ----
-    const projectMatch = match(/^\/api\/v2\/hackathons\/([^/]+)\/project$/);
+    const projectMatch = reqPath.match(/^\/api\/v2\/hackathons\/([^/]+)\/project$/);
     if (projectMatch && method === 'POST') {
       const body = await readBody(req);
       const data = loadActive(projectMatch[1]);
@@ -389,7 +389,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Rubric ----
-    const rubricMatch = match(/^\/api\/v2\/rubric\/([^/]+)$/);
+    const rubricMatch = reqPath.match(/^\/api\/v2\/rubric\/([^/]+)$/);
     if (rubricMatch && method === 'GET') {
       const data = loadActive(rubricMatch[1]);
       if (!data?.rubric) return json(404, { error: 'No rubric' });
@@ -397,7 +397,7 @@ async function handleRequest(req, res) {
     }
 
     // ---- Checklist ----
-    const checkMatch = match(/^\/api\/v2\/checklist\/([^/]+)$/);
+    const checkMatch = reqPath.match(/^\/api\/v2\/checklist\/([^/]+)$/);
     if (checkMatch && method === 'GET') {
       const data = loadActive(checkMatch[1]);
       if (!data) return json(404, { error: 'Hackathon not found' });
