@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "description": "Scoring configuration. Agents can override these values per-profile.",
+
+  "scoring": {
+    "skill_edge": 1.1,
+    "field_tiers": [
+      [50, 95], [150, 85], [400, 70], [1000, 50], [3000, 35]
+    ],
+    "ev_tiers": [
+      [200, 100], [100, 92], [50, 84], [25, 74], [10, 60], [4, 45]
+    ],
+    "score_weights": [0.25, 0.15, 0.15, 0.10, 0.10, 0.10, 0.15],
+    "score_weight_names": [
+      "expected_prize_value", "winnability", "historical_winner_quality",
+      "judging_tractability", "organizer_quality", "reusability_portfolio", "personal_fit"
+    ],
+    "confidence_multipliers": {
+      "official_rules": 1.0,
+      "platform_metadata_verified": 0.95,
+      "platform_metadata_unverified": 0.80,
+      "inferred": 0.65
+    },
+    "unconfirmed_prize_cap": 85
+  },
+
+  "build": {
+    "p50_hours": 25,
+    "p80_hours": 40,
+    "hours_per_day": 4,
+    "buffer_days": 2,
+    "shadow_hour_value_usd": 25
+  },
+
+  "feasibility": {
+    "prior_by_days": {
+      "0": 0.10, "1": 0.25, "2": 0.45, "3": 0.65,
+      "5": 0.80, "7": 0.90, "10": 0.97, "14": 1.0, "30": 1.0
+    },
+    "labels": {
+      "0.10": "<1d", "0.25": "1-2d", "0.45": "2-3d", "0.65": "3-5d",
+      "0.80": "5-7d", "0.90": "7-10d", "0.97": "10-14d", "1.00": "14d+"
+    }
+  },
+
+  "prize_multipliers": {
+    "cash": 1.0,
+    "hardware": 0.5,
+    "compute_credits": 0.25,
+    "saas_credits": 0.10,
+    "coupons": 0.02,
+    "funding_opportunity": 0.0
+  },
+
+  "mega_detection": {
+    "fair_share_threshold": [40, 100],
+    "large_cash_threshold": 5000,
+    "closing_soon_days": 5,
+    "bonus_score": 15
+  },
+
+  "default_rubric_template": {
+    "description": "Default rubric generated from hackathon judging criteria",
+    "criteria_defaults": {
+      "weight": 20,
+      "levels": {
+        "0": "Not attempted",
+        "25": "Basic implementation",
+        "50": "Functional but rough",
+        "75": "Polished and impressive",
+        "100": "Exceptional, could ship to production"
+      }
+    }
+  }
+}

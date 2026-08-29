@@ -23,6 +23,33 @@ function loadAgents() {
   return JSON.parse(fs.readFileSync(AGENTS_PATH, 'utf8'));
 }
 function saveAgents(d) { fs.writeFileSync(AGENTS_PATH, JSON.stringify(d, null, 2)); }
+
+// ---- scoring config ----
+function loadScoringConfig() {
+  const p = path.join(ROOT, 'data/scoring-config.json');
+  if (!fs.existsSync(p)) return {};
+  return JSON.parse(fs.readFileSync(p, 'utf8'));
+}
+
+// ---- rubric generation ----
+function generateRubric(criteria, template) {
+  const defaults = template?.criteria_defaults || { weight: 20, levels: { "0": "Not attempted", "25": "Basic", "50": "Functional", "75": "Polished", "100": "Exceptional" } };
+  const totalWeight = criteria.length * defaults.weight;
+  return {
+    criteria: criteria.map(c => ({
+      name: typeof c === 'string' ? c : c.name || c,
+      weight: typeof c === 'object' ? (c.weight || defaults.weight) : defaults.weight,
+      description: typeof c === 'object' ? (c.description || '') : '',
+      levels: typeof c === 'object' && c.levels ? c.levels : { ...defaults.levels },
+      what_we_need: typeof c === 'object' ? (c.what_we_need || '') : '',
+      our_score: null,
+      our_notes: null,
+    })),
+    disqualifiers: [],
+    our_total_score: null,
+    our_confidence: 'unscored',
+  };
+}
 function loadActive(slug) {
   const f = path.join(ACTIVE_DIR, `${slug}.json`);
   if (!fs.existsSync(f)) return null;
@@ -132,7 +159,7 @@ async function handleRequest(req, res) {
     // ---- Activate hackathon ----
     if (path === '/api/v2/hackathons/activate' && method === 'POST') {
       const body = await readBody(req);
-      const { slug, url: hackUrl } = body;
+      const { slug, url: hackUrl, judging_criteria } = body;
       if (!slug || !hackUrl) return json(400, { error: 'Required: slug, url' });
       const existing = loadActive(slug);
       if (existing) return json(409, { error: 'Already active', slug });
@@ -144,8 +171,26 @@ async function handleRequest(req, res) {
       } catch (e) {
         return json(500, { error: 'Failed to create entry', detail: e.message });
       }
+
       const data = loadActive(slug);
-      return json(201, { slug, message: 'Activated. Agent should follow POPULATE-PROMPT.md to fill details.', tasks: data?.tasks?.length || 0 });
+
+      // Auto-generate rubric from judging criteria (provided or from seed data)
+      const criteria = judging_criteria || data?.judging?.criteria || [];
+      if (criteria.length > 0 && !data.rubric) {
+        const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/scoring-config.json'), 'utf8'));
+        data.rubric = generateRubric(criteria, config.default_rubric_template);
+        saveActive(slug, data);
+      }
+
+      return json(201, {
+        slug,
+        message: data.rubric
+          ? 'Activated with rubric generated from judging criteria.'
+          : 'Activated. Add judging_criteria to generate rubric, or create manually.',
+        tasks: data?.tasks?.length || 0,
+        has_rubric: !!data.rubric,
+        rubric_criteria: data.rubric?.criteria?.length || 0,
+      });
     }
 
     // ---- Score against rubric ----

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent Profile",
+  "description": "Per-agent profile for hackathon participation. Each agent gets its own profile.",
+  "type": "object",
+  "required": ["agent_id"],
+  "properties": {
+    "agent_id": {
+      "type": "string",
+      "description": "Unique agent identifier"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "High-level capabilities: research, build, crawl, submit, social"
+    },
+    "skills": {
+      "type": "object",
+      "description": "Skill name → proficiency (0.0 to 1.0)",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "thesis_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Topics this agent specializes in"
+    },
+    "assets": {
+      "type": "array",
+      "description": "Reusable repos/tools this agent can leverage",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "lang": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "reuse_by_event": {
+      "type": "object",
+      "description": "Slug → estimated reuse fraction (0-1) for known events",
+      "additionalProperties": { "type": "number" }
+    },
+    "hackathons_entered": {
+      "type": "array",
+      "description": "History of hackathon participation",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": { "type": "string" },
+          "entered_at": { "type": "string", "format": "date-time" },
+          "won": { "type": "boolean" },
+          "earnings_usd": { "type": "number" }
+        }
+      }
+    },
+    "total_tasks_completed": {
+      "type": "number",
+      "description": "Lifetime tasks completed across all hackathons"
+    },
+    "total_earnings_usd": {
+      "type": "number",
+      "description": "Lifetime earnings across all hackathons"
+    },
+    "shadow_hour_value_usd": {
+      "type": "number",
+      "description": "Estimated hourly value for opportunity cost calculations"
+    }
+  }
+}
