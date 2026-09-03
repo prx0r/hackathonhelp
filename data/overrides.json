@@ -9,6 +9,49 @@
     "coupons": 0.02,
     "funding_opportunity": 0.0
   },
+  "ip_rights": {
+    "_comment": "IP rights tiers based on common hackathon organizer patterns",
+    "tiers": {
+      "builder_friendly": {
+        "description": "Builder retains full IP. Organizer gets demo/showcase rights only.",
+        "risk_level": "low",
+        "typical_organizers": ["MLH", "Devpost indie", "open-source focused"],
+        "score_modifier": 0
+      },
+      "limited_license": {
+        "description": "Builder retains IP but grants organizer non-exclusive license to use/promote.",
+        "risk_level": "low",
+        "typical_organizers": ["most Devpost events", "ETHGlobal"],
+        "score_modifier": 0
+      },
+      "broad_license": {
+        "description": "Organizer gets broad license (commercial use, derivative works). Builder retains ownership.",
+        "risk_level": "medium",
+        "typical_organizers": ["corporate-sponsored", "some accelerator programs"],
+        "score_modifier": -5
+      },
+      "copyright_transfer": {
+        "description": "Builder assigns copyright to organizer. May retain limited rights.",
+        "risk_level": "high",
+        "typical_organizers": ["enterprise hackathons", "defense/gov"],
+        "score_modifier": -15
+      },
+      "work_for_hire": {
+        "description": "Treated as work-for-hire. Organizer owns everything.",
+        "risk_level": "very_high",
+        "typical_organizers": ["rare", "check fine print"],
+        "score_modifier": -25
+      }
+    },
+    "default_tier": "limited_license",
+    "agents_should_know": [
+      "Always read the official rules before entering",
+      "IP terms may differ by track within the same hackathon",
+      "Some organizers retain IP but grant open-source licenses",
+      "Corporate sponsors sometimes have separate IP terms for their tracks",
+      "MVP/prototype vs production code may have different treatment"
+    ]
+  },
   "default_family_prior": {
     "submissions_per_registration": 0.05,
     "source": "lablab historicals: AMD I 4.5%, AMD II 5.6%, AI Genesis 5.3%"
@@ -19,6 +62,8 @@
       "match": "telegraph",
       "prize_cash": 5000,
       "organizer_quality": 0.8,
+      "ip_tier": "limited_license",
+      "ip_note": "Standard Devpost terms. Builder retains IP, organizer gets showcase rights.",
       "note": "$5K H1 season, open to developers per official site"
     },
     {

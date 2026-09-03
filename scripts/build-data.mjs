@@ -172,7 +172,14 @@ function computeScore(o, np, field){
   const confMul=CONF_MULT[o.eligibility.confidence] ?? 0.60;
   const known=Object.values(comps).filter(v=>v!=null).length;
   const completeness_bonus=Math.round((known/WEIGHTS.length)*8);
-  return {components:comps, known_components:known,
+  
+  // IP rights modifier
+  const ipTiers = OV.ip_rights?.tiers || {};
+  const ipTier = p?.ip_tier || 'limited_license';
+  const ipModifier = ipTiers[ipTier]?.score_modifier || 0;
+  score += ipModifier;
+  
+  return {components:comps, known_components:known, ip_tier: ipTier,
     opportunity_score:Math.round(score*confMul)+completeness_bonus};
 }
 function r_slots_p50(){ return SLOTS_DEFAULT.p50; }

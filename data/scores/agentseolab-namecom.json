@@ -1,0 +1,50 @@
+{
+  "entry": "agentseolab",
+  "track": "namecom",
+  "repo": "https://github.com/prx0r/agentseolab",
+  "scored_at": "2026-08-29T22:24:43.542Z",
+  "rubric": "namecom",
+  "sponsor": "name.com (Identity Digital)",
+  "auto_score": 65,
+  "must_have_fails": [],
+  "details": [
+    {
+      "criterion": "API integration depth (multiple endpoints: search+register+DNS vs single call)",
+      "weight": 0.35,
+      "score": 85,
+      "evidence": [
+        "/tmp/score-agentseolab-1788042279708/docs/FULL_DOCUMENTATION.md:| `world.py` | 252 | Resettable execution world with 4 tools that actually execute: domain_check (real DNS lookup), domain_scout (semantic decoy — web mention search), domain_cached (temporal decoy — stale cache), domain_enterprise (capability mirage — requires auth). Hidden deterministic verifier (`verify_task`) checks ACTUAL state after episode. Never consults agent self-report. Records every action and state transition. |",
+        "/tmp/score-agentseolab-1788042279708/docs/FULL_DOCUMENTATION.md:| OpenCode Go | ox-alpha-free ONLY | Free (weekly quota) | Intermittent availability. Wait for reset when exhausted. |"
+      ]
+    },
+    {
+      "criterion": "Creativity & originality (unexpected use case vs incremental search tool)",
+      "weight": 0.2,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "Technical execution (code quality, architecture, edge cases)",
+      "weight": 0.2,
+      "score": 75,
+      "evidence": [
+        "tests dir found"
+      ]
+    },
+    {
+      "criterion": "Real-world viability (plausible product, clear value prop)",
+      "weight": 0.15,
+      "score": 15,
+      "evidence": [
+        "no video link",
+        "no section"
+      ]
+    },
+    {
+      "criterion": "Presentation & demo (integration in action, not slides)",
+      "weight": 0.1,
+      "score": 60,
+      "evidence": []
+    }
+  ]
+}

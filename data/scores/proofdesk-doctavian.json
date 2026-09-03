@@ -1,0 +1,42 @@
+{
+  "entry": "proofdesk",
+  "track": "doctavian",
+  "repo": "https://github.com/prx0r/proofdesk",
+  "scored_at": "2026-08-29T22:24:23.534Z",
+  "rubric": "doctavian",
+  "sponsor": "Doctavian",
+  "auto_score": 60,
+  "must_have_fails": [],
+  "details": [
+    {
+      "criterion": "Doctavian generation API called (real document shaped, not mocked)",
+      "weight": 0.35,
+      "score": 85,
+      "evidence": [
+        "/tmp/score-proofdesk-1788042262730/docs/DOCTAVIAN_API_REFERENCE.md:# Doctavian API Reference (Canonical)",
+        "/tmp/score-proofdesk-1788042262730/docs/DOCTAVIAN_API_REFERENCE.md:**Source of truth:** Official Postman collection (provided by Doctavian, Aug 2026) + https://developers.doctavian.com/openapi/latest"
+      ]
+    },
+    {
+      "criterion": "Template intelligence (branch/loop/calc, not flat mail-merge)",
+      "weight": 0.25,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "Messiest data handled repeatedly",
+      "weight": 0.2,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "One-line where Doctavian did real work + demo 2-4 min",
+      "weight": 0.2,
+      "score": 15,
+      "evidence": [
+        "no video link",
+        "no section"
+      ]
+    }
+  ]
+}

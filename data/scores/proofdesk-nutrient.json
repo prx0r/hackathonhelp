@@ -1,0 +1,39 @@
+{
+  "entry": "proofdesk",
+  "track": "nutrient",
+  "repo": "https://github.com/prx0r/proofdesk",
+  "scored_at": "2026-08-29T22:24:27.759Z",
+  "rubric": "nutrient",
+  "sponsor": "Nutrient DWS",
+  "auto_score": 68,
+  "must_have_fails": [],
+  "details": [
+    {
+      "criterion": "Nutrient DWS core operation used meaningfully (not throwaway call)",
+      "weight": 0.3,
+      "score": 85,
+      "evidence": [
+        "/tmp/score-proofdesk-1788042267002/docs/DOCTAVIAN_INTEGRATION_SPEC.md:| What the facts are | Nutrient extraction | LLM free-write |",
+        "/tmp/score-proofdesk-1788042267002/docs/DOCTAVIAN_INTEGRATION_SPEC.md:transition SIGNED → ARCHIVED"
+      ]
+    },
+    {
+      "criterion": "Pipeline: extract → confidence → human where needed → audit trail",
+      "weight": 0.3,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "Deterministic auditable output + Viewer human sign-off",
+      "weight": 0.2,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "Regulated use case anchored (KYC/e-invoice/trade/mortgage/redact)",
+      "weight": 0.2,
+      "score": 60,
+      "evidence": []
+    }
+  ]
+}

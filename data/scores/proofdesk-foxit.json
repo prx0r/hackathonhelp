@@ -1,0 +1,56 @@
+{
+  "entry": "proofdesk",
+  "track": "foxit",
+  "repo": "https://github.com/prx0r/proofdesk",
+  "scored_at": "2026-08-29T22:24:22.659Z",
+  "rubric": "foxit",
+  "sponsor": "Foxit Software",
+  "auto_score": 60,
+  "must_have_fails": [],
+  "details": [
+    {
+      "criterion": "Tool coverage (40 Foxit PDF Services tools used reversibly)",
+      "weight": 0.25,
+      "score": 85,
+      "evidence": [
+        "/tmp/score-proofdesk-1788042261779/docs/DOCTAVIAN_INTEGRATION_SPEC.md:| How risky signing is | `foxit/` confidence module (CRC + per-field budgets) | Fixed thresholds |",
+        "/tmp/score-proofdesk-1788042261779/docs/DOCTAVIAN_INTEGRATION_SPEC.md:| What the final document contains/says | **Doctavian template logic** | LLM prose generation |"
+      ]
+    },
+    {
+      "criterion": "Signing handoff design (agent calls eSign API directly, person signs, boundary defended)",
+      "weight": 0.3,
+      "score": 85,
+      "evidence": [
+        "/tmp/score-proofdesk-1788042261779/docs/DOCTAVIAN_API_REFERENCE.md:| `/v1/signatures/document/upload` | POST | Upload doc for signing (`X-Storage-Type: document-input`) |",
+        "/tmp/score-proofdesk-1788042261779/docs/DOCTAVIAN_INTEGRATION_SPEC.md:## 4. SIGN Stage Workflow (replaces stubbed Foxit eSign)"
+      ]
+    },
+    {
+      "criterion": "Workflow defensibility (argue where signing belongs, boundary choice)",
+      "weight": 0.2,
+      "score": 15,
+      "evidence": [
+        "no video link",
+        "no section"
+      ]
+    },
+    {
+      "criterion": "Demo completeness (prompt → doc → signed)",
+      "weight": 0.15,
+      "score": 15,
+      "evidence": [
+        "no video link",
+        "no section"
+      ]
+    },
+    {
+      "criterion": "Code quality & reversibility",
+      "weight": 0.1,
+      "score": 75,
+      "evidence": [
+        "tests dir found"
+      ]
+    }
+  ]
+}

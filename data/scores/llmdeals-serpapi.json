@@ -1,0 +1,41 @@
+{
+  "entry": "llmdeals",
+  "track": "serpapi",
+  "repo": "https://github.com/prx0r/llmdeals",
+  "scored_at": "2026-08-29T22:24:39.532Z",
+  "rubric": "serpapi",
+  "sponsor": "SerpApi",
+  "auto_score": 55,
+  "must_have_fails": [
+    "Call SerpApi"
+  ],
+  "details": [
+    {
+      "criterion": "SerpApi integration depth (one or more APIs, structured live data)",
+      "weight": 0.3,
+      "score": 85,
+      "evidence": [
+        "/tmp/score-llmdeals-1788042267806/docs/OBJECTIVE-ENGINE.md:| 4 | **Agent-infra SaaS free tiers** (search: Exa/Tavily/Serper, email: Resend/Loops, auth: Clerk/Stytch, scraping: Firecrawl) | The MCP/API crowd needs this hourly; free-tier normalization is exactly our muscle | D4 P4 V5 W4 M3 → **20** |",
+        "/tmp/score-llmdeals-1788042267806/web/src/pages/changes.astro:      <p style=\"margin-top:8px\">History accrues automatically: each daily research run snapshots offers to <code>data/history/</code>, the build diffs them, and anything that moved shows up here — plus in <a href=\"/api/v1/changes.json\">changes.json</a> for agents.</p>"
+      ]
+    },
+    {
+      "criterion": "Originality & real-world problem solved",
+      "weight": 0.2,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "Technical execution & usability",
+      "weight": 0.25,
+      "score": 60,
+      "evidence": []
+    },
+    {
+      "criterion": "Potential impact",
+      "weight": 0.25,
+      "score": 60,
+      "evidence": []
+    }
+  ]
+}
